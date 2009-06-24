@@ -1,0 +1,41 @@
+<document>
+    <properties>
+        <title>What's Wrong With My NLP?</title>
+        <author email="blah@gmail.com">Sebastian Riedel</author>
+    </properties>
+    <body>
+
+        <release version="0.2.1" date="2009-16-01" description="Bug fixes">
+            <action dev="seb" type="fix">
+                When a format loader finishes before reaching the upper limit of instance index the progress bar
+                is properly closed now.
+            </action>
+            <action dev="seb" type="add">
+                The token filter text fields show example range expressions.
+            </action>
+        </release>
+
+        <release version="0.2.0" description="First maven based release">
+            <action dev="seb" type="add">
+                Project now mavenized.
+            </action>
+            <action dev="seb" type="add">
+                Added BioNLP 2009 Shared Task format.
+            </action>
+            <action dev="seb" type="add">
+                Tokens can now be filtered using an index range FROM-TO.
+            </action>
+            <action dev="seb" type="add">
+                Edge identities during diff can be different from edge identities for rendering: an edge can
+                appear differently but still be scored as the same edge. This allows clients to add information
+                to an edge that makes the graph more readable (for example, relation IDs) without changing the diff
+                semantics.
+            </action>
+            <action dev="seb" type="remove">
+                removed checkbox for drawing separation lines (always drawn).
+            </action>
+        </release>
+
+
+    </body>
+</document>
