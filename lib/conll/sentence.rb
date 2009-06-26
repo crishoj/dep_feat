@@ -3,19 +3,39 @@ require 'lib/conll/token'
 
 module Conll
   class Sentence
+    attr_accessor :corpus, :index
     attr_reader :tokens
 
     def self.parse(lines)
-      sentence = Sentence.new
-      lines.each do |line|
-        token = Token.parse(line)
-        token.sentence = sentence
+      Sentence.new do |sentence|
+        lines.each do |line|
+          sentence << Token.parse(line)
+        end
       end
-      sentence
     end
 
-    def initialize(tokens = [])
-      @tokens = tokens
+    def initialize
+      @tokens = []
+      yield self if block_given?
+      self
     end
+
+    def <<(token)
+      token.sentence = self
+      @tokens << token
+    end
+
+    def next
+      @corpus.sentences[@index.succ]
+    end
+
+    def forms
+      @tokens.collect { |tok| tok.form }
+    end
+
+    def last?
+      @index == (@corpus.sentences.size - 1)
+    end
+
   end
 end

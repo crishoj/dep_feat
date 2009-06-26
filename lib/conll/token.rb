@@ -1,24 +1,27 @@
 
 module Conll
-  FIELDS = [ :id, :form, :lemma, :cpos, :pos, :feats, :head_id, :deprel, :phead_id, :pdeprel ]
-  Token = Struct.new(*FIELDS)
+  Token = Struct.new(:id, :form, :lemma, :cpos, :pos, :feats, :head_id, :deprel, :phead_id, :pdeprel)
 
   class Token
+    attr_accessor :sentence
 
     def self.parse(line)
       fields = line.split(/\t/).collect do |f|
         # Interpret underscore as "missing value" and use nil instead
         (f == '_') ? nil : f
       end
-      # Split features
-      fields[5] = fields[5].split(/\|/) unless fields[5].nil?
       # Pass in a reference to the sentence
       Token.new(*fields)
     end
 
-    def sentence=(sentence)
-      @sentence = sentence
-      sentence.tokens << self
+    def initialize(*vals)
+      super(*vals)
+      # Split features
+      @features = vals[5].split(/\|/) unless vals[5].nil?
+    end
+
+    def features
+      @features ||= []
     end
 
     def head
@@ -27,6 +30,17 @@ module Conll
 
     def phead
       find_token(self.phead_id)
+    end
+
+    def to_s
+      if self.features.size > 0
+        self.feats = self.features.join('|')
+      else
+        self.feats = nil
+      end
+      self.values.collect { |val|
+        val.nil? ? '_' : val
+      }.join("\t")
     end
 
     private

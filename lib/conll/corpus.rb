@@ -6,15 +6,24 @@ module Conll
     attr_reader :sentences
 
     def self.parse(file)
-      sentences = []
-      File.new(file).each("\n\n") do |part|
-        sentences << Conll::Sentence.parse(part.split(/\n/))
+      corpus = Corpus.new do |corpus|
+        File.new(file).each("\n\n") do |part|
+          lines = part.split(/\n/)
+          corpus << Conll::Sentence.parse(lines)
+        end
       end
-      Corpus.new(sentences)
     end
 
-    def initialize(sentences)
-      @sentences = sentences
+    def <<(sentence)
+      sentence.corpus = self
+      sentence.index = @sentences.size
+      @sentences << sentence
+    end
+
+    def initialize
+      @sentences = []
+      yield self if block_given?
+      self
     end
   end
 end

@@ -28,10 +28,21 @@ describe Conll::Token do
     @token.pos.should match(/^AC$/)
   end
 
-  it "should register itself on assignment" do
-   sentence = Conll::Sentence.new
-   @token.sentence = sentence
-   sentence.tokens.last.should equal(@token)
+  it "should have enumerable features" do
+    @token.features.should be_kind_of(Enumerable)
+  end
+
+  it "should register itself on the sentence" do
+    sentence = Conll::Sentence.new
+    sentence << @token
+    sentence.tokens.last.should equal(@token)
+  end
+
+  it "should dump itself in the CoNLL format" do
+    @token.to_s.should be_kind_of(String)
+    # Best way to test string equality?
+    @token.to_s.should include(@token_line)
+    @token_line.should include(@token.to_s)
   end
 
 end

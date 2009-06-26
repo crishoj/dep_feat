@@ -5,15 +5,11 @@ require 'lib/conll/corpus'
 
 describe Conll::Sentence do
   before(:all) do
-    @corpus_parts = []
-    File.new(@corpus_filename).each("\n\n") do |part|
-      @corpus_parts << part
-    end
-    @sentence_lines = @corpus_parts[0].split(/\n/)
+    @corpus = Conll::Corpus.parse(@corpus_filename)
+    @sentence = @corpus.sentences.first
   end
 
   before(:each) do
-    @sentence = Conll::Sentence.parse(@sentence_lines)
   end
 
   it "should have 22 tokens" do
@@ -26,6 +22,23 @@ describe Conll::Sentence do
 
   it "should interpret dependencies correctly" do
     @sentence.tokens.first.head.form.should match(/tror/)
+  end
+
+  it "should have a reference to the next sentence" do
+    @sentence.next.should be_kind_of(Conll::Sentence)
+    @sentence.next.should_not equal @sentence
+  end
+
+  it "should refer to a sentence with adjacent index" do
+    @sentence.index.succ.should equal(@sentence.next.index)
+  end
+
+  it "should provide access to the word forms" do
+    @sentence.forms.should be_kind_of(Enumerable)
+  end
+
+  it "should know whether it is the last sentence" do
+    @sentence.last?.should_not be_true
   end
 
 end
