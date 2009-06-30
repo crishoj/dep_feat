@@ -18,8 +18,7 @@ module Annotation
       end
     end
 
-    def post_sentence
-    end
+    private
 
     def mark_span(first, last)
       last = (@sentence.tokens.size-1) if last == :end
