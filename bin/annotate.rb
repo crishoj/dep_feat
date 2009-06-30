@@ -49,6 +49,10 @@ command :directory do |c|
       Dir.glob("#{dir}/*/*.conll").each do |source|
         target = source.gsub(dir, target_dir)
         target_subdir = File.dirname(target)
+        if target_subdir =~ /system$/
+          say "      [skip] #{source}"
+          next
+        end
         make_directory(target_subdir)
         File.open(target, 'w') do |f|
           corpus = Conll::Corpus.parse(source)
