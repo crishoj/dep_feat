@@ -30,6 +30,7 @@ command :evaluate do |c|
       gold     = Conll::Corpus.parse Dir.glob("#{dir}/test/*.conll").first
       baseline = Conll::Corpus.parse Dir.glob("#{dir}/baseline/*.conll").first
       system   = Conll::Corpus.parse Dir.glob("#{dir}/system/*.conll").first
+      present_metrics 'gold',     $annotator_class.new(gold).evaluate(gold)
       present_metrics 'baseline', $annotator_class.new(baseline).evaluate(gold)
       present_metrics 'system',   $annotator_class.new(system).evaluate(gold)
     else
