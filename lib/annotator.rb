@@ -28,11 +28,15 @@ class Annotator
       for @token in @sentence.tokens
         @gold_token = @gold_sentence.tokens[@token.index]
         count_token(:total)
-        count_token(:crossing) if dep_crossing?
         if token_inside?
           count_token(:inside)
         else
           count_token(:outside)
+        end
+        if dep_crossing?
+          count_token(:crossing)
+        else
+          count_token(:non_crossing)
         end
       end
     end
