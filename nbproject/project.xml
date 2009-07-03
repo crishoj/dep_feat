@@ -6,7 +6,8 @@
             <name>dep_feat</name>
             <source-roots>
                 <root id="src.bin.dir"/>
-                <root id="src.dir"/>
+                <root id="src.lib.dir"/>
+                <root id="src.tasks.dir"/>
             </source-roots>
             <test-roots>
                 <root id="test.spec.dir"/>
