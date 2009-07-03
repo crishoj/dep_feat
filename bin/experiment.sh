@@ -1,4 +1,10 @@
 #!/bin/sh
+
+if [ $# -ne 1 ]; then
+    echo 1>&2 Usage: $0 DIR
+    exit 127
+fi
+
 CORPUS_DIR=$1
 MODEL_DIR=models/$CORPUS_DIR
 SYSTEM_DIR=$CORPUS_DIR/system
