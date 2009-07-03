@@ -6,9 +6,10 @@ module Conll
     attr_accessor :sentence
 
     def self.parse(line)
-      fields = line.split(/\t/).collect do |f|
-        # Interpret underscore as "missing value" and use nil instead
-        (f == '_') ? nil : f
+      fields = line.split(/\t/)
+      fields = fields[0..2] + fields[3..-1].collect do |f|
+        # Interpret dash/underscore as "missing value" and use nil instead
+        (f == '_' or f == '-') ? nil : f
       end
       # Pass in a reference to the sentence
       Token.new(*fields)
