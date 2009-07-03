@@ -4,7 +4,7 @@ require 'lib/conll/token'
 module Conll
   class Sentence
     attr_accessor :corpus, :index
-    attr_reader :tokens
+    attr_reader :tokens, :root
 
     def self.parse(lines)
       Sentence.new do |sentence|
@@ -15,6 +15,8 @@ module Conll
     end
 
     def initialize
+      @root   = RootToken.new
+      @root.sentence = self
       @tokens = []
       yield self if block_given?
       self

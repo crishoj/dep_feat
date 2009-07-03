@@ -18,6 +18,18 @@ module Annotation
       end
     end
 
+    def dep_crossing?
+      if @token.features.include? 'citation'
+        not @token.head.features.include? 'citation'
+      else
+        @token.head.features.include? 'citation'
+      end
+    end
+
+    def token_inside?
+      @gold_token.features.include? 'citation'
+    end
+
     private
 
     def mark_span(first, last)
