@@ -104,13 +104,13 @@ end
 def present_metrics(what, metrics)
   puts
   puts "[#{what}]"
-  puts sprintf("  %-10s %9s %6s %9s %6s %9s %6s", "",
+  puts sprintf("  %-15s %9s %6s %9s %6s %9s %6s", "",
     "tokens",  "in %",
     "head OK", "in %",
     "both OK", "in %")
   total_tokens = metrics[:total][:tokens]
   metrics.each do |category, results|
-    puts sprintf("  %-10s %9d %6.2f %9d %6.2f %9d %6.2f", category,
+    puts sprintf("  %-15s %9d %6.2f %9d %6.2f %9d %6.2f", category,
       results[:tokens],       results[:tokens].to_f / total_tokens.to_f * 100.0,
       results[:head_correct], results[:head_correct].to_f / results[:tokens].to_f * 100.0,
       results[:both_correct], results[:both_correct].to_f / results[:tokens].to_f * 100.0
