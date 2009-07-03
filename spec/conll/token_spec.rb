@@ -1,5 +1,5 @@
 
-require 'spec/conll/spec_helper'
+require 'spec/spec_helper'
 require 'lib/conll/token'
 
 describe Conll::Token do
@@ -43,6 +43,18 @@ describe Conll::Token do
     # Best way to test string equality?
     @token.to_s.should include(@token_line)
     @token_line.should include(@token.to_s)
+  end
+
+  it "should know of its dependents" do
+    @corpus = Conll::Corpus.parse(@corpus_filename)
+    @sentence = @corpus.sentences.first
+    @token = @sentence.tokens[14]
+    @token.form.should match(/kan/)
+    @token.should have(3).dependents
+    dep_forms = @token.dependents.map(&:form)
+    %w{Rusland udvikles uden}.each do |form|
+      dep_forms.should include(form)
+    end
   end
 
 end

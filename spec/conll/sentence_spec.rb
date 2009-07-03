@@ -1,5 +1,5 @@
 
-require 'spec/conll/spec_helper'
+require 'spec/spec_helper'
 require 'lib/conll/sentence'
 require 'lib/conll/corpus'
 

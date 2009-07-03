@@ -21,12 +21,21 @@ module Conll
       @features = vals[5].split(/\|/) unless vals[5].nil?
     end
 
+    # Gives the base-0 index of this token into the sentence
+    def index
+      self.id.to_i - 1
+    end
+
     def features
       @features ||= []
     end
 
     def head
       find_token(self.head_id)
+    end
+
+    def dependents
+      @sentence.tokens.find_all { |tok| tok.head_id == self.id }
     end
 
     def phead
@@ -47,10 +56,19 @@ module Conll
     private
 
     def find_token(id)
-      unless id == '0'
+      if id == '0'
+        @sentence.root
+      else
         @sentence.tokens[id.to_i - 1]
       end
     end
 
   end
+
+  class RootToken < Token
+    def initialize
+      super('0', 'ROOT')
+    end
+  end
+  
 end
