@@ -39,5 +39,9 @@ module Conll
       @index == (@corpus.sentences.size - 1)
     end
 
+    def to_s
+      @tokens.join("\n")
+    end
+
   end
 end

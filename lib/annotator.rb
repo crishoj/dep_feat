@@ -1,5 +1,6 @@
 
 require 'lib/annotation'
+require 'lib/conll/corpus'
 
 class Annotator
 
@@ -28,20 +29,23 @@ class Annotator
       for @token in @sentence.tokens
         @gold_token = @gold_sentence.tokens[@token.index]
         count_token(:total)
-        if token_inside?
-          count_token(:inside)
-        else
-          count_token(:outside)
-        end
-        if dep_crossing?
-          count_token(:crossing)
-        else
-          count_token(:non_crossing)
-        end
+        evaluate_token
       end
     end
     @counts
   end
+
+  def categorize(corpus)
+    parts = Hash.new { |hash, cat| hash[cat] = Conll::Corpus.new }
+    for @sentence in @corpus.sentences
+      # Use gold corpus for categorization, as features are missing in the parser output
+      category = categorize_sentence
+      parts[category] << corpus.sentences[@sentence.index]
+    end
+    parts
+  end
+
+  protected
 
   def pre_sentence
     # allow subclasses to do work here
@@ -55,7 +59,15 @@ class Annotator
     # allow subclasses to do work here
   end
 
-  protected
+  def evaluate_token
+    # allow subclasses to do work here
+  end
+
+  # Categorize a sentence according to presence of the feature handled by the
+  # annotator class
+  def categorize_sentence
+    # allow subclasses to do work here
+  end
 
   def head_correct?
     @token.head.id == @gold_token.head.id

@@ -18,5 +18,27 @@ module Annotation
       end
     end
 
+    def evaluate_token
+      if dep_crossing?
+        count_token(:crossing)
+      else
+        count_token(:non_crossing)
+      end
+    end
+
+    def dep_crossing?
+      clause = @gold_token.features.find { |f| f =~ /^clause=/ }
+      system_head_idx = @token.head.index
+      head = @gold_sentence.tokens[system_head_idx]
+      head_clause = head.features.find { |f| f =~ /^clause=/ }
+      if clause
+        # Check if the head is in another clause
+        head_clause != clause
+      else
+        # Check if the head is not in a clause
+        not head_clause.nil?
+      end
+    end
+
   end
 end
