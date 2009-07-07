@@ -18,7 +18,7 @@ class Annotator
       for @token in @sentence.tokens
         yield @token.to_s
       end
-      yield # blank line between sentences
+      yield '' # blank line between sentences
     end
   end
 
