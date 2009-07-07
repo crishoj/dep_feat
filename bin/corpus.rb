@@ -14,7 +14,7 @@ $annotator_class = Annotation::Null
 global_option '--kind ANNOTATION', String, 'Kind of annotation to perform' do |kind|
   filename = "lib/annotation/#{kind}"
   require filename
-  classname = kind[0].upcase + kind[1..-1]
+  classname = kind[0,1].upcase + kind[1..-1]
   $annotator_class = Annotation.const_get(classname)  
 end
 

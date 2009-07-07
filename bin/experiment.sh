@@ -5,6 +5,8 @@ if [ $# -ne 1 ]; then
     exit 127
 fi
 
+export MSTPARSER_DIR=vendor/mstparser
+export PATH=$PATH:$MSTPARSER_DIR/bin
 CORPUS_DIR=$1
 MODEL_DIR=models/$CORPUS_DIR
 SYSTEM_DIR=$CORPUS_DIR/system
