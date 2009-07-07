@@ -64,10 +64,7 @@ end
 
 command :evaluate do |c|
   c.syntax = 'corpus evaluate [options] DIR'
-  c.description = <<DESC
-Gather performance metrics related to the specified KIND of augmented feature
-DESC
-  
+  c.description = 'Gather performance metrics related to the specified KIND of augmented feature'
   c.when_called do |args, options|
     options.default :kind => 'null'
     if args.size == 0
@@ -88,12 +85,7 @@ end
 
 command :categorize do |c|
   c.syntax = 'corpus categorize --kind ANNOTATOR DIR'
-  c.description = <<DESC
-Split corpus into several parts according to the presence of the feature
-    introduced by the specified annotator. This is useful for evaluating the
-    effect of introducing the feature.'
-DESC
-
+  c.description = 'Split corpus into several parts according to the presence of the feature introduced by the specified annotator. This is useful for evaluating the effect of introducing the feature.'
   c.when_called do |args, options|
     if not options.kind
       say "Missing annotator class"
@@ -126,11 +118,7 @@ end
 
 command :compare do |c|
   c.syntax = 'corpus compare DIR CATEGORY'
-  c.description = <<DESC
-Use the CoNLL eval script to compare a baseline against the system output, in
-    order to determine the effect of the introduced feature.
-DESC
-
+  c.description = 'Use the CoNLL eval script to compare a baseline against the system output, in order to determine the effect of the introduced feature.'
   c.when_called do |args, options|
     if args.size < 1
       say "Missing corpus directory"
