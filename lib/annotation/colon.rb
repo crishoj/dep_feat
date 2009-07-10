@@ -21,14 +21,14 @@ module Annotation
       when ')'
         @in_paren = false
         @colon_in_paren = false
-      when ':'
+      end
+      @token.features << feature if (@colon or @colon_in_paren)
+      if @token.form == ':'
         if @in_paren
           @colon_in_paren = true
         else
           @colon = true
         end
-      else
-        @token.features << feature if (@colon or @colon_in_paren)
       end
     end
 
