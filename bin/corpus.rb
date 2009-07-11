@@ -192,7 +192,7 @@ end
 
 command :annotate_single do |c|
   c.syntax = 'corpus annotate [options] FILE'
-  c.description = 'Annotate singel corpus file'
+  c.description = 'Annotate single corpus file'
   c.when_called do |args, options|
     options.default :kind => 'null'
     if args.size > 0 and File.exists?(args[0])
