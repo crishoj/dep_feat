@@ -1,3 +1,0 @@
-spec=Run all specifications
-spec\:select=Run specific specification verbosely (specify SPEC)
-spec\:verbose=Run all specifications verbosely
