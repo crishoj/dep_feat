@@ -215,7 +215,9 @@ DESC
       Dir.glob("#{dir}/*/*.conll").each do |source|
         target = source.gsub(dir, target_dir)
         target_subdir = File.dirname(target)
-        if target_subdir =~ /system$/
+        if target_subdir =~ /baseline$/
+          next
+        elsif target_subdir =~ /system$/
           # Annotate a copy of the baseline system output (for evaluation)
           say "  [baseline] #{source}"
           target_subdir.gsub! /system/, 'baseline'
