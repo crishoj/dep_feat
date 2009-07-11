@@ -1,8 +1,8 @@
 
-require 'lib/annotation/span_annotator'
+require 'lib/annotation/span'
 
 module Annotation
-  class Quotation < SpanAnnotator
+  class QuotedPhrase < Span
     
     def feature
       'quote'
