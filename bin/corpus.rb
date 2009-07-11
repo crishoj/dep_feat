@@ -5,30 +5,63 @@ require 'lib/annotator'
 require 'lib/annotation/null'
 require 'rubygems'
 require 'commander'
+require 'activesupport'
 
 program :description, 'Process a corpus in different ways'
 program :version, '0.1'
+
+class String
+  include ActiveSupport::CoreExtensions::String::Inflections
+end
 
 $annotator_class = Annotation::Null
 
 global_option '--kind ANNOTATION', String, 'Kind of annotation to perform' do |kind|
   filename = "lib/annotation/#{kind}"
   require filename
-  classname = kind[0,1].upcase + kind[1..-1]
-  $annotator_class = Annotation.const_get(classname)  
+  $annotator_class = Annotation.const_get(kind.classify)
 end
 
-command :info do |c|
-  c.syntax = 'corpus info DIR'
-  c.description = 'Dump some statistics on the files in a corpus'
-  c.when_called do |args, options|    
+command :count do |c|
+  c.syntax = 'corpus count [options] DIR'
+  c.description = 'Count tokens/sentences, optionally restricted by occurrence of POS tags or word FORMs'
+  c.option '--pos TAG'
+  c.option '--cpos TAG'
+  c.option '--form WORD'
+  c.option '--form-re REGEX'
+  c.option '--feat FEAT'
+  c.option '--recursive', 'Also look for corpus files in subdirs'
+  c.option '--print', 'Print matched sentences'
+  c.when_called do |args, options|
     if args.size == 0
       say "Missing corpus directory"
     elsif File.directory?(args[0])
-      files = Dir.glob("#{args[0]}/*/*.conll") + Dir.glob("#{args[0]}/*/*/*.conll")
+      form_re = Regexp.compile(options.form_re) if options.form_re
+      files = Dir.glob("#{args[0]}/*/*.conll") 
+      files += Dir.glob("#{args[0]}/*/*/*.conll") if options.recursive
       files.each do |file|
         corpus = Conll::Corpus.parse(file)
-        puts "#{file.ljust 20}: #{corpus.sentences.size} sentences"
+        tc = sc = tt = ts = 0
+        for sentence in corpus.sentences
+          ts += 1
+          matched = false
+          for token in sentence.tokens
+            tt += 1
+            next if options.pos  and not token.pos == options.pos
+            next if options.cpos and not token.cpos == options.cpos
+            next if options.form and not token.form == options.form
+            next if options.feat and not token.features.include? options.feat
+            next if options.form_re and not token.form =~ form_re
+            matched = true
+            tc += 1
+          end
+          if matched
+            sc += 1
+            puts "#{sentence}\n\n" if options.print
+          end
+        end
+        puts sprintf("%-50s: %d/%d sentences (%d%%), %d/%d tokens (%d%%)",
+          file, sc, ts, sc.fdiv(ts)*100, tc, tt, tc.fdiv(tt)*100)
       end
     else
       say "Invalid corpus directory"
