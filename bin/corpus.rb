@@ -149,6 +149,16 @@ command :categorize do |c|
   end
 end
 
+command :eval do |c|
+  c.syntax = 'corpus eval DIR'
+  c.description = 'Run the CoNLL eval script on the given corpus'
+  c.when_called do |args, options|
+    system = Dir.glob("#{args[0]}/*.conll").first
+    gold   = Dir.glob("#{File.dirname(args[0])}/test/*.conll").first
+    say `bin/eval.pl -g #{gold} -s #{system}`
+  end
+end
+
 command :compare do |c|
   c.syntax = 'corpus compare DIR CATEGORY'
   c.description = 'Use the CoNLL eval script to compare a baseline against the system output, in order to determine the effect of the introduced feature.'
