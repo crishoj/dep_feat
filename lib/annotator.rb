@@ -66,7 +66,11 @@ class Annotator
   # Categorize a sentence according to presence of the feature handled by the
   # annotator class
   def categorize_sentence
-    # allow subclasses to do work here
+    if sentence_affected?
+      "has-#{self.feature}"
+    else
+      "no-#{self.feature}"
+    end
   end
 
   def head_correct?
@@ -84,6 +88,10 @@ class Annotator
       @counts[category][:head_correct] += 1
       @counts[category][:both_correct] += 1 if label_correct?
     end
+  end
+
+  def sentence_affected?
+    @sentence.tokens.find { |tok| tok.features.include? self.feature }
   end
   
 end

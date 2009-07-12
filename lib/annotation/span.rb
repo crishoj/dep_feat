@@ -46,17 +46,5 @@ module Annotation
       end
     end
 
-    def sentence_affected?
-      @sentence.tokens.find { |tok| tok.features.include? self.feature }
-    end
-
-    def categorize_sentence
-      if sentence_affected?
-        "has-#{self.feature}"
-      else
-        "no-#{self.feature}"
-      end
-    end
-
   end
 end
