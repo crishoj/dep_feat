@@ -30,6 +30,21 @@ module Conll
     def to_s
       @sentences.join("\n\n") + "\n"
     end
+
+    def grep(options)
+      form_re = Regexp.compile(options.form_re) if options.form_re
+      for sentence in @sentences
+        for token in sentence.tokens
+          next if options.pos  and not token.pos == options.pos
+          next if options.cpos and not token.cpos == options.cpos
+          next if options.form and not token.form == options.form
+          next if options.feat and not token.features.include? options.feat
+          next if options.form_re and not token.form =~ form_re
+          yield sentence
+          next
+        end
+      end
+    end
     
   end
 end

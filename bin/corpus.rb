@@ -22,49 +22,74 @@ global_option '--kind ANNOTATION', String, 'Kind of annotation to perform' do |k
   $annotator_class = Annotation.const_get(kind.classify)
 end
 
+GREP_OPTIONS = [
+  '--pos TAG',
+  '--cpos TAG',
+  '--form WORD',
+  '--form-re REGEX',
+  '--feat FEAT',
+]
+
 command :count do |c|
   c.syntax = 'corpus count [options] DIR'
   c.description = 'Count tokens/sentences, optionally restricted by occurrence of POS tags or word FORMs'
-  c.option '--pos TAG'
-  c.option '--cpos TAG'
-  c.option '--form WORD'
-  c.option '--form-re REGEX'
-  c.option '--feat FEAT'
   c.option '--recursive', 'Also look for corpus files in subdirs'
   c.option '--print', 'Print matched sentences'
+  GREP_OPTIONS.each { |o| c.option o }
   c.when_called do |args, options|
     if args.size == 0
       say "Missing corpus directory"
     elsif File.directory?(args[0])
-      form_re = Regexp.compile(options.form_re) if options.form_re
       files = Dir.glob("#{args[0]}/*/*.conll") 
       files += Dir.glob("#{args[0]}/*/*/*.conll") if options.recursive
       files.each do |file|
         corpus = Conll::Corpus.parse(file)
-        tc = sc = tt = ts = 0
-        for sentence in corpus.sentences
-          ts += 1
-          matched = false
-          for token in sentence.tokens
-            tt += 1
-            next if options.pos  and not token.pos == options.pos
-            next if options.cpos and not token.cpos == options.cpos
-            next if options.form and not token.form == options.form
-            next if options.feat and not token.features.include? options.feat
-            next if options.form_re and not token.form =~ form_re
-            matched = true
-            tc += 1
-          end
-          if matched
-            sc += 1
-            puts "#{sentence}\n\n" if options.print
-          end
+        ts = corpus.sentences.size
+        sc = 0
+        corpus.grep(options) do |sentence|
+          sc += 1
+          puts "#{sentence}\n\n" if options.print
         end
-        puts sprintf("%-50s: %d/%d sentences (%d%%), %d/%d tokens (%d%%)",
-          file, sc, ts, sc.fdiv(ts)*100, tc, tt, tc.fdiv(tt)*100)
+        puts sprintf("%-50s: %d/%d sentences (%d%%)", file, sc, ts, sc.fdiv(ts)*100)
       end
     else
       say "Invalid corpus directory"
+    end
+  end
+end
+
+command :grep do |c|
+  c.syntax = 'corpus grep [options] DIR'
+  c.description = 'Grep for sentences'
+  c.option '--recursive', 'Also look for corpus files in subdirs'
+  c.option '--save NAME', 'Save in subdir constructed from NAME'
+  GREP_OPTIONS.each { |o| c.option o }
+  c.when_called do |args, options|
+    if options.save
+      target_dir = args[0]+"-only-#{options.save}"
+      puts "   [save to] #{target_dir}"
+      make_directory(target_dir)
+    end
+    files = Dir.glob("#{args[0]}/*/*.conll")
+    files += Dir.glob("#{args[0]}/*/*/*.conll") if options.recursive
+    files.each do |file|
+      if options.save
+        target_file = file.sub(args[0], target_dir)
+        make_directory(File.dirname(target_file))
+        target = File.new(target_file, 'w')
+      end
+      corpus = Conll::Corpus.parse(file)
+      ts = corpus.sentences.size
+      sc = 0
+      corpus.grep(options) do |sentence|
+        sc += 1
+        target << "#{sentence}\n\n" if options.save
+      end
+      puts sprintf("%-50s: %d/%d sentences (%d%%)", file, sc, ts, sc.fdiv(ts)*100)
+      if options.save
+        puts "     [saved] #{target_file}"
+        target.close
+      end
     end
   end
 end
