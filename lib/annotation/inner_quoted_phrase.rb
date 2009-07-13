@@ -1,12 +1,10 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
 
 module Annotation
   class InnerQuotedPhrase < QuotedPhrase
 
     def mark_span(from, to)
-      from = from + 1
-      to = to - 1 if to < @sentece.tokens.last.index
+      from = from.next
+      to   = to.prev if to.index < @sentence.tokens.last.index
       super(from, to)
     end
 
