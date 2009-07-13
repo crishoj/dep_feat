@@ -26,6 +26,14 @@ module Conll
       self.id.to_i - 1
     end
 
+    def last?
+      self.index == @sentence.tokens.size - 1
+    end
+
+    def prev
+      @sentence.tokens[index - 1]
+    end
+
     def features
       @features ||= []
     end

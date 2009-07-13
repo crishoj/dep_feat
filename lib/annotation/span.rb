@@ -40,8 +40,7 @@ module Annotation
     protected
 
     def mark_span(first, last)
-      last = (@sentence.tokens.size-1) if last == :end
-      @sentence.tokens[first..last].each do |token|
+      @sentence.tokens[first.index .. last.index].each do |token|
         token.features << feature
       end
     end
