@@ -1,0 +1,2 @@
+#!/bin/sh
+open vendor/whatswrong/whatswrong-0.2.2-standalone.jar
