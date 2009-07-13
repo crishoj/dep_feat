@@ -2373,8 +2373,8 @@
 13	Lyngby	_	N	NP	case=unmarked	12	nobj	_	_
 14	.	_	X	XP	_	2	pnct	_	_
 
-1	Foto	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	0	ROOT	_	_
-2	:	_	X	XP	_	1	pnct	_	_
+1	Foto	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef|bullet	0	ROOT	_	_
+2	:	_	X	XP	bullet	1	pnct	_	_
 3	Palle	_	N	NP	case=unmarked	4	namef	_	_
 4	Hedemann	_	N	NP	case=unmarked	1	list	_	_
 
@@ -5345,8 +5345,8 @@
 26	EF	_	N	NP	case=unmarked	25	nobj	_	_
 27	.	_	X	XP	_	15	pnct	_	_
 
-1	ODENSE	_	N	NP	case=unmarked	0	ROOT	_	_
-2	:	_	X	XP	_	1	pnct	_	_
+1	ODENSE	_	N	NP	case=unmarked|bullet	0	ROOT	_	_
+2	:	_	X	XP	bullet	1	pnct	_	_
 3	De	_	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	4	subj	_	_
 4	er	_	V	VA	mood=indic|tense=present|voice=active	1	list	_	_
 5	begge	_	P	PD	gender=common/neuter|number=plur|case=unmarked|register=unmarked	4	mod	_	_
@@ -6057,8 +6057,8 @@
 16	Vester	_	N	NP	case=unmarked	13	subj	_	_
 17	.	_	X	XP	_	13	pnct	_	_
 
-1	Computermanden	_	N	NC	gender=common|number=sing|case=unmarked|def=def	0	ROOT	_	_
-2	:	_	X	XP	_	1	pnct	_	_
+1	Computermanden	_	N	NC	gender=common|number=sing|case=unmarked|def=def|bullet	0	ROOT	_	_
+2	:	_	X	XP	bullet	1	pnct	_	_
 3	"	_	X	XP	_	5	pnct	_	_
 4	Hvorfor	_	RG	RG	degree=unmarked	5	mod	_	_
 5	skulle	_	V	VA	mood=indic|tense=past|voice=active	1	qobj	_	_
