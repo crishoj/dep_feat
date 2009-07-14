@@ -34,15 +34,14 @@ module Conll
     def grep(options)
       form_re = Regexp.compile(options.form_re) if options.form_re
       for sentence in @sentences
-        for token in sentence.tokens
-          next if options.pos  and not token.pos == options.pos
-          next if options.cpos and not token.cpos == options.cpos
-          next if options.form and not token.form == options.form
-          next if options.feat and not token.features.include? options.feat
-          next if options.form_re and not token.form =~ form_re
-          yield sentence
-          next
-        end
+        yield sentence if sentence.tokens.find { |token|
+          return false if options.pos  and not token.pos == options.pos
+          return false if options.cpos and not token.cpos == options.cpos
+          return false if options.form and not token.form == options.form
+          return false if options.feat and not token.features.include? options.feat
+          return false if options.form_re and not token.form =~ form_re
+          true
+        }
       end
     end
     
