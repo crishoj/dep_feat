@@ -2,21 +2,25 @@
 module Annotation
   class Bullet < Annotator
 
-    LIST_COUNTER  = /^[0-9]+$/ # A numeral 
-    BULLET_MARKER = /^[).:]$/  # A closing parenthesis, a dot or a colon
+    def list_counter? token
+      token.form =~ /.+/ # Anything
+    end
+
+    def bullet_marker? token
+      token.form =~ /^[).:]$/  # A closing parenthesis, a dot or a colon
+    end
 
     def feature
       'bullet'
     end
 
     def pre_sentence
-      return if @sentence.tokens.size < 2
-#      if @sentence.tokens[0].form =~ LIST_COUNTER
-        if @sentence.tokens[1].form =~ BULLET_MARKER
-          @sentence.tokens[0].features << feature
-          @sentence.tokens[1].features << feature
-        end
-#      end
+      if @sentence.tokens.size >= 2 and
+          list_counter?  @sentence.tokens[0] and
+          bullet_marker? @sentence.tokens[1]
+        @sentence.tokens[0].features << feature
+        @sentence.tokens[1].features << feature
+      end
     end
 
   end
