@@ -2,14 +2,14 @@
 require 'lib/annotation/span'
 
 module Annotation
-  class Specification < Span
+  class Apposition < Span
 
     def markers
       %w{, -}
     end
 
     def feature
-      'spec'
+      'appos'
     end
 
     def mark_token

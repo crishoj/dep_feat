@@ -2,7 +2,7 @@
 require 'lib/annotation/specification'
 
 module Annotation
-  class SpecificationDash < Specification
+  class DashApposition < Apposition
 
     def markers
       %w{-}

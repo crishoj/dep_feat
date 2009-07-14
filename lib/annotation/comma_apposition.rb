@@ -2,7 +2,7 @@
 require 'lib/annotation/specification'
 
 module Annotation
-  class SpecificationComma < Specification
+  class CommaApposition < Apposition
 
     def markers
       %w{,}
