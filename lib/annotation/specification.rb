@@ -4,14 +4,16 @@ require 'lib/annotation/span'
 module Annotation
   class Specification < Span
 
-    MARKERS = %w{, -}
+    def markers
+      %w{, -}
+    end
 
     def feature
       'spec'
     end
 
     def mark_token
-      for marker in MARKERS
+      for marker in markers
         if @token.form == marker
           if @specifier = @token.next
             if @specifier.pos =~ /^N/i and @end = @specifier.next
