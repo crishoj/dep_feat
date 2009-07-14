@@ -19,12 +19,12 @@
 2	)	)	X	X	_	1	pnct	_	_
 3	Har	Har	V	V	_	0	ROOT	_	_
 4	ministeren	ministeren	N	N	_	3	subj	_	_
-5	løjet	løjet	V	V	_	3	vobj	_	_
+5	løjet	løjet	V	V	_	3	mod	_	_
 6	om	om	SP	SP	_	5	pobj	_	_
 7	sit	sit	P	P	_	6	nobj	_	_
 8	og	og	C	C	_	7	coord	_	_
 9	regeringens	regeringens	N	N	_	8	conj	_	_
-10	kendskab	kendskab	N	N	_	7	possd	_	_
+10	kendskab	kendskab	N	N	_	9	possd	_	_
 11	til	til	SP	SP	_	10	pobj	_	_
 12	virksomheden	virksomheden	N	N	_	11	nobj	_	_
 13	?	?	X	X	_	3	pnct	_	_
@@ -47,7 +47,7 @@
 
 1	<num>	<num>	A	A	_	0	ROOT	_	_
 2	)	)	X	X	_	1	pnct	_	_
-3	Hvis	Hvis	C	C	_	1	mod	_	_
+3	Hvis	Hvis	C	C	_	12	xtop	_	_
 4	det	det	P	P	_	5	subj	_	_
 5	er	er	V	V	_	3	vobj	_	_
 6	sket	sket	V	V	_	5	vobj	_	_
@@ -56,7 +56,7 @@
 9	vidende	vidende	N	N	_	8	possd	_	_
 10	,	,	X	X	_	5	pnct	_	_
 11	hvorfor	hvorfor	RG	RG	_	12	mod	_	_
-12	har	har	V	V	_	3	vobj	_	_
+12	har	har	V	V	_	1	rel	_	_
 13	man	man	P	P	_	12	subj	_	_
 14	så	så	RG	RG	_	12	mod	_	_
 15	ikke	ikke	RG	RG	_	12	mod	_	_
@@ -67,15 +67,15 @@
 1	<num>	<num>	A	A	_	0	ROOT	_	_
 2	)	)	X	X	_	1	pnct	_	_
 3	Eller	Eller	C	C	_	1	coord	_	_
-4	er	er	V	V	_	3	conj	_	_
+4	er	er	V	V	_	1	conj	_	_
 5	der	der	U	U	_	4	expl	_	_
 6	så	så	RG	RG	_	7	mod	_	_
 7	meget	meget	A	A	_	4	dobj	_	_
 8	kludder	kludder	N	N	_	7	nobj	_	_
-9	i	i	SP	SP	_	4	mod	_	_
+9	i	i	SP	SP	_	7	mod	_	_
 10	efterretningsvæsenet	efterretningsvæsenet	N	N	_	9	nobj	_	_
-11	,	,	X	X	_	4	pnct	_	_
-12	at	at	C	C	_	4	dobj	_	_
+11	,	,	X	X	_	7	pnct	_	_
+12	at	at	C	C	_	7	nobj	_	_
 13	man	man	P	P	_	14	subj	_	_
 14	kan	kan	V	V	_	12	vobj	_	_
 15	sende	sende	V	V	_	14	vobj	_	_
@@ -94,9 +94,9 @@
 7	privat	privat	A	A	_	6	mod	_	_
 8	efterretningsvæsen	efterretningsvæsen	N	N	_	6	nobj	_	_
 9	,	,	X	X	_	5	pnct	_	_
-10	kan	kan	V	V	_	1	conj	_	_
+10	kan	kan	V	V	_	1	xpl	_	_
 11	vi	vi	P	P	_	10	subj	_	_
-12	så	så	RG	RG	_	10	mod	_	_
+12	så	så	RG	RG	_	13	mod	_	_
 13	være	være	V	V	_	10	vobj	_	_
 14	sikre	sikre	A	A	_	13	pred	_	_
 15	på	på	SP	SP	_	14	pobj	_	_
@@ -113,4 +113,39 @@
 26	almindelige	almindelige	A	A	_	27	mod	_	_
 27	danskeres	danskeres	N	N	_	25	nobj	_	_
 28	forhold	forhold	N	N	_	27	possd	_	_
-29	?	?	X	X	_	1	pnct	_	_
+29	?	?	X	X	_	10	pnct	_	_
+
+1	Foto	Foto	N	N	_	0	ROOT	_	_
+2	:	:	X	X	_	1	pnct	_	_
+3	Palle	Palle	N	N	_	4	namef	_	_
+4	Hedemann	Hedemann	N	N	_	1	list	_	_
+
+1	ODENSE	ODENSE	N	N	_	0	ROOT	_	_
+2	:	:	X	X	_	1	pnct	_	_
+3	De	De	P	P	_	4	subj	_	_
+4	er	er	V	V	_	1	list	_	_
+5	begge	begge	P	P	_	4	pred	_	_
+6	fædre	fædre	N	N	_	5	nobj	_	_
+7	,	,	X	X	_	4	pnct	_	_
+8	<num>	<num>	A	A	_	10	mod	_	_
+9	år	år	N	N	_	8	nobj	_	_
+10	gamle	gamle	A	A	_	4	pred	_	_
+11	og	og	C	C	_	10	coord	_	_
+12	med	med	SP	SP	_	11	conj	_	_
+13	begyndende	begyndende	V	V	_	14	mod	_	_
+14	tendens	tendens	N	N	_	12	nobj	_	_
+15	til	til	SP	SP	_	14	pobj	_	_
+16	"	"	X	X	_	18	pnct	_	_
+17	høj	høj	A	A	_	18	mod	_	_
+18	pande	pande	N	N	_	15	nobj	_	_
+19	"	"	X	X	_	4	pnct	_	_
+20	.	.	X	X	_	4	pnct	_	_
+
+1	Computermanden	Computermanden	N	N	_	0	ROOT	_	_
+2	:	:	X	X	_	1	pnct	_	_
+3	"	"	X	X	_	5	pnct	_	_
+4	Hvorfor	Hvorfor	RG	RG	_	5	mod	_	_
+5	skulle	skulle	V	V	_	1	xpl	_	_
+6	den	den	P	P	_	5	subj	_	_
+7	det	det	P	P	_	5	dobj	_	_
+8	?	?	X	X	_	1	pnct	_	_

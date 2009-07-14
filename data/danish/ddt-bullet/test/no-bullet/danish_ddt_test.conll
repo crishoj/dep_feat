@@ -2256,11 +2256,6 @@
 13	Lyngby	_	N	NP	case=unmarked	12	nobj	_	_
 14	.	_	X	XP	_	2	pnct	_	_
 
-1	Foto	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	0	ROOT	_	_
-2	:	_	X	XP	_	1	pnct	_	_
-3	Palle	_	N	NP	case=unmarked	4	namef	_	_
-4	Hedemann	_	N	NP	case=unmarked	1	list	_	_
-
 1	På	_	SP	SP	_	17	mod	_	_
 2	samme	_	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	1	nobj	_	_
 3	tidspunkt	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	2	nobj	_	_
@@ -5228,27 +5223,6 @@
 26	EF	_	N	NP	case=unmarked	25	nobj	_	_
 27	.	_	X	XP	_	15	pnct	_	_
 
-1	ODENSE	_	N	NP	case=unmarked	0	ROOT	_	_
-2	:	_	X	XP	_	1	pnct	_	_
-3	De	_	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	4	subj	_	_
-4	er	_	V	VA	mood=indic|tense=present|voice=active	1	list	_	_
-5	begge	_	P	PD	gender=common/neuter|number=plur|case=unmarked|register=unmarked	4	mod	_	_
-6	fædre	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	4	pred	_	_
-7	,	_	X	XP	_	6	pnct	_	_
-8	31	_	A	AC	case=unmarked	10	mod	_	_
-9	år	_	N	NC	gender=neuter|number=plur|case=unmarked|def=indef	8	nobj	_	_
-10	gamle	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	6	conj	_	_
-11	og	_	C	CC	_	6	coord	_	_
-12	med	_	SP	SP	_	11	conj	_	_
-13	begyndende	_	V	VA	mood=partic|tense=present|number=sing/plur|gender=common/neuter|definiteness=def/indef|transcat=adject|case=unmarked	14	mod	_	_
-14	tendens	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	12	nobj	_	_
-15	til	_	SP	SP	_	14	pobj	_	_
-16	"	_	X	XP	_	18	pnct	_	_
-17	høj	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	18	mod	_	_
-18	pande	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	15	nobj	_	_
-19	"	_	X	XP	_	18	pnct	_	_
-20	.	_	X	XP	_	1	pnct	_	_
-
 1	Men	_	C	CC	_	0	ROOT	_	_
 2	de	_	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	3	subj	_	_
 3	er	_	V	VA	mood=indic|tense=present|voice=active	1	conj	_	_
@@ -5939,15 +5913,6 @@
 15	Annette	_	N	NP	case=unmarked	16	namef	_	_
 16	Vester	_	N	NP	case=unmarked	13	subj	_	_
 17	.	_	X	XP	_	13	pnct	_	_
-
-1	Computermanden	_	N	NC	gender=common|number=sing|case=unmarked|def=def	0	ROOT	_	_
-2	:	_	X	XP	_	1	pnct	_	_
-3	"	_	X	XP	_	5	pnct	_	_
-4	Hvorfor	_	RG	RG	degree=unmarked	5	mod	_	_
-5	skulle	_	V	VA	mood=indic|tense=past|voice=active	1	qobj	_	_
-6	den	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked	5	subj	_	_
-7	det	_	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked	5	dobj	_	_
-8	?	_	X	XP	_	5	pnct	_	_
 
 1	Jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	2	subj	_	_
 2	ville	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_

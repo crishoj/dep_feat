@@ -2256,11 +2256,6 @@
 13	Lyngby	Lyngby	N	N	_	12	nobj	_	_
 14	.	.	X	X	_	2	pnct	_	_
 
-1	Foto	Foto	N	N	_	0	ROOT	_	_
-2	:	:	X	X	_	1	pnct	_	_
-3	Palle	Palle	N	N	_	4	namef	_	_
-4	Hedemann	Hedemann	N	N	_	1	list	_	_
-
 1	På	På	SP	SP	_	17	mod	_	_
 2	samme	samme	A	A	_	1	nobj	_	_
 3	tidspunkt	tidspunkt	N	N	_	2	nobj	_	_
@@ -5228,27 +5223,6 @@
 26	EF	EF	N	N	_	25	nobj	_	_
 27	.	.	X	X	_	15	pnct	_	_
 
-1	ODENSE	ODENSE	N	N	_	0	ROOT	_	_
-2	:	:	X	X	_	1	pnct	_	_
-3	De	De	P	P	_	4	subj	_	_
-4	er	er	V	V	_	1	list	_	_
-5	begge	begge	P	P	_	4	mod	_	_
-6	fædre	fædre	N	N	_	5	nobj	_	_
-7	,	,	X	X	_	4	pnct	_	_
-8	<num>	<num>	A	A	_	10	mod	_	_
-9	år	år	N	N	_	8	nobj	_	_
-10	gamle	gamle	A	A	_	4	pred	_	_
-11	og	og	C	C	_	4	coord	_	_
-12	med	med	SP	SP	_	11	conj	_	_
-13	begyndende	begyndende	V	V	_	14	mod	_	_
-14	tendens	tendens	N	N	_	12	nobj	_	_
-15	til	til	SP	SP	_	14	pobj	_	_
-16	"	"	X	X	_	18	pnct	_	_
-17	høj	høj	A	A	_	18	mod	_	_
-18	pande	pande	N	N	_	15	nobj	_	_
-19	"	"	X	X	_	4	pnct	_	_
-20	.	.	X	X	_	4	pnct	_	_
-
 1	Men	Men	C	C	_	0	ROOT	_	_
 2	de	de	P	P	_	3	subj	_	_
 3	er	er	V	V	_	1	conj	_	_
@@ -5939,15 +5913,6 @@
 15	Annette	Annette	N	N	_	16	namef	_	_
 16	Vester	Vester	N	N	_	13	subj	_	_
 17	.	.	X	X	_	13	pnct	_	_
-
-1	Computermanden	Computermanden	N	N	_	5	subj	_	_
-2	:	:	X	X	_	1	pnct	_	_
-3	"	"	X	X	_	5	pnct	_	_
-4	Hvorfor	Hvorfor	RG	RG	_	5	mod	_	_
-5	skulle	skulle	V	V	_	0	ROOT	_	_
-6	den	den	P	P	_	5	subj	_	_
-7	det	det	P	P	_	5	dobj	_	_
-8	?	?	X	X	_	5	pnct	_	_
 
 1	Jeg	Jeg	P	P	_	2	subj	_	_
 2	ville	ville	V	V	_	0	ROOT	_	_
