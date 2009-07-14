@@ -30,6 +30,10 @@ module Conll
       self.index == @sentence.tokens.size - 1
     end
 
+    def next
+      @sentence.tokens[index + 1]
+    end
+
     def prev
       @sentence.tokens[index - 1]
     end
