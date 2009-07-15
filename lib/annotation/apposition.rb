@@ -1,6 +1,4 @@
 
-require 'lib/annotation/span'
-
 module Annotation
   class Apposition < Span
 

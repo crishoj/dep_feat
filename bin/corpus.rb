@@ -1,8 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'lib/conll/corpus'
-require 'lib/annotator'
-require 'lib/annotation/null'
 require 'rubygems'
 require 'commander'
 require 'activesupport'
@@ -10,16 +7,17 @@ require 'activesupport'
 program :description, 'Process a corpus in different ways'
 program :version, '0.1'
 
+# Autoloading
+ActiveSupport::Dependencies.load_paths << File.join(File.dirname(File.dirname(__FILE__)), 'lib')
+
 class String
   include ActiveSupport::CoreExtensions::String::Inflections
 end
 
-$annotator_class = Annotation::Null
-
 global_option '--kind ANNOTATION', String, 'Kind of annotation to perform' do |kind|
   filename = "lib/annotation/#{kind}"
   require filename
-  $annotator_class = Annotation.const_get(kind.classify)
+  $annotator_class = Annotation.const_get(kind.camelize)
 end
 
 GREP_OPTIONS = [
@@ -62,6 +60,7 @@ command :grep do |c|
   c.syntax = 'corpus grep [options] DIR'
   c.description = 'Grep for sentences'
   c.option '--recursive', 'Also look for corpus files in subdirs'
+  c.option '--show',      'Show matched sentences'
   c.option '--save NAME', 'Save in subdir constructed from NAME'
   GREP_OPTIONS.each { |o| c.option o }
   c.when_called do |args, options|
@@ -84,6 +83,7 @@ command :grep do |c|
       corpus.grep(options) do |sentence|
         sc += 1
         target << "#{sentence}\n\n" if options.save
+        puts sentence.forms.join(' ') if options.show
       end
       puts sprintf("%-50s: %d/%d sentences (%d%%)", file, sc, ts, sc.fdiv(ts)*100)
       if options.save

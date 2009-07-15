@@ -1,7 +1,7 @@
 
 module Annotation
 
-  class QuotationMark < Annotator
+  class QuotationMark < Base
 
     def mark_token
       if @token.form == '"'

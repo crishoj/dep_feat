@@ -1,4 +1,3 @@
-require 'lib/annotation/inner_quoted_phrase'
 
 module Annotation
   class InnerQuotedPhraseMark < InnerQuotedPhrase

@@ -1,7 +1,7 @@
 # encoding: UTF-8
 
 module Annotation
-  class Span < Annotator
+  class Span < Base
 
     def evaluate_token
       if token_inside?

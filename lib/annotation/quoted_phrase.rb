@@ -1,7 +1,5 @@
 # encoding: UTF-8
 
-require 'lib/annotation/span'
-
 module Annotation
   class QuotedPhrase < Span
 

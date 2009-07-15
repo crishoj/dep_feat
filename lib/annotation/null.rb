@@ -1,5 +1,5 @@
 # Do no modification of the corpus
 module Annotation
-  class Null < Annotator
+  class Null < Base
   end
 end

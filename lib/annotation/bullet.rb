@@ -1,6 +1,6 @@
 
 module Annotation
-  class Bullet < Annotator
+  class Bullet < Base
 
     def list_counter? token
       token.form =~ /.+/ # Anything

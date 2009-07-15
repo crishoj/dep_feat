@@ -1,7 +1,7 @@
 # encoding: UTF-8
 
 module Annotation
-  class Clause < Annotator
+  class Clause < Base
     BOUNDARIES = %w{, ; : - –}
     
     def pre_sentence

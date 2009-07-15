@@ -1,13 +1,14 @@
 
 module Annotation
-  class Suffix < Base
+  class Prefix < Base
 
     def feature
-      'suffix'
+      'prefix'
     end
 
     def mark_token
-      if @token.form =~ /^-.+/
+      if @token.form =~ /.+-$/
+        # Ends with hyphen
         @token.features << feature
       end
     end

@@ -1,6 +1,4 @@
 
-require 'lib/annotation/specification'
-
 module Annotation
   class CommaApposition < Apposition
 

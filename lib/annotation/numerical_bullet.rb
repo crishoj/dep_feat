@@ -1,6 +1,4 @@
 
-require 'lib/annotation/bullet'
-
 module Annotation
   class NumericalBullet < Bullet
 

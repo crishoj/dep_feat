@@ -1,7 +1,6 @@
-require 'lib/annotation/span_annotator'
 
 module Annotation
-  class Parenthesis < SpanAnnotator
+  class Parenthesis < Span
 
     def feature
       'paren'

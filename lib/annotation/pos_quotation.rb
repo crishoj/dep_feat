@@ -1,6 +1,4 @@
 
-require 'lib/annotation/quotation'
-
 module Annotation
 
   # As Quotation, but puts introduces special POS tags
