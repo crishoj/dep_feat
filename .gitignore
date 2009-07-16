@@ -1,3 +1,5 @@
 .DS_Store
 *~
 models/*
+data/*/*/*/has-*
+data/*/*/*/no-*
