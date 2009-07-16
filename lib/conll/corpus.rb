@@ -38,6 +38,7 @@ module Conll
           next if options.cpos    and not token.cpos == options.cpos
           next if options.form    and not token.form == options.form
           next if options.feat    and not token.features.include? options.feat
+          next if options.deprel  and not token.deprel == options.deprel
           next if options.form_re and not token.form =~ form_re
           matched = true
           break

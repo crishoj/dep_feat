@@ -26,6 +26,7 @@ GREP_OPTIONS = [
   '--form WORD',
   '--form-re REGEX',
   '--feat FEAT',
+  '--deprel DEP'
 ]
 
 command :count do |c|
