@@ -4498,9 +4498,9 @@
 2	го	_	P	Pp	ref=e|form=s|case=a|num=s|pers=3|gen=n	1	comp	1	comp
 3	и	_	C	Cp	_	4	conj	4	conj
 4	производители	_	N	Nc	gen=m|num=p|def=i	1	subj	1	subj
-5	,	_	Punct	Punct	enum|enum	6	punct	6	punct
-6	и	_	C	Cp	enum|enum	4	conj	4	conj
-7	търговци	_	N	Nc	gen=m|num=p|def=i|enum|enum	4	conjarg	4	conjarg
+5	,	_	Punct	Punct	enum	6	punct	6	punct
+6	и	_	C	Cp	enum	4	conj	4	conj
+7	търговци	_	N	Nc	gen=m|num=p|def=i|enum	4	conjarg	4	conjarg
 8	,	_	Punct	Punct	enum	9	punct	9	punct
 9	а	_	C	Cp	enum	1	conj	1	conj
 10	хората	_	N	Nc	num=pia_tantum|def=d|enum	12	subj	12	subj

@@ -18,7 +18,7 @@ module Conll
     def initialize(*vals)
       super(*vals)
       # Split features
-      @features = Set.new(vals[5].split(/\|/)) unless vals[5].nil?
+      @features = vals[5].split(/\|/) unless vals[5].nil?
     end
 
     # Gives the base-0 index of this token into the sentence
@@ -39,7 +39,7 @@ module Conll
     end
 
     def features
-      @features ||= Set.new
+      @features ||= []
     end
 
     def head
