@@ -52,5 +52,18 @@ module Conll
       @tokens.join("\n")
     end
 
+    def grep(options = {})
+      for token in tokens
+        next if options[:pos]     and not token.pos == options[:pos]
+        next if options[:cpos]    and not token.cpos == options[:cpos]
+        next if options[:form]    and not token.form == options[:form]
+        next if options[:feat]    and not token.features.include? options[:feat]
+        next if options[:deprel]  and not token.deprel == options[:deprel]
+        next if options[:form_re] and not token.form =~ options[:form_re]
+        # Matched
+        yield token
+      end
+    end
+
   end
 end
