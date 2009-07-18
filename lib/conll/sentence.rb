@@ -40,10 +40,6 @@ module Conll
       @corpus.sentences[@index.succ]
     end
 
-    def forms
-      @tokens.collect { |tok| tok.form }
-    end
-
     def last?
       @index == (@corpus.sentences.size - 1)
     end
