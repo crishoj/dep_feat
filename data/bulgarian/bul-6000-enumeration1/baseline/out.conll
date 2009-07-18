@@ -4497,10 +4497,10 @@
 1	Усетиха	Усетиха	V	V	_	0	ROOT	_	_
 2	го	го	P	P	_	1	comp	_	_
 3	и	и	C	C	_	4	conj	_	_
-4	производители	производители	N	N	enum|enum	1	subj	_	_
-5	,	,	Punct	Punct	enum|enum	6	punct	_	_
-6	и	и	C	C	enum|enum	4	conj	_	_
-7	търговци	търговци	N	N	enum|enum	4	conjarg	_	_
+4	производители	производители	N	N	enum	1	subj	_	_
+5	,	,	Punct	Punct	enum	6	punct	_	_
+6	и	и	C	C	enum	4	conj	_	_
+7	търговци	търговци	N	N	enum	4	conjarg	_	_
 8	,	,	Punct	Punct	enum	9	punct	_	_
 9	а	а	C	C	enum	1	conj	_	_
 10	хората	хората	N	N	enum	12	subj	_	_
