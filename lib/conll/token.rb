@@ -65,6 +65,10 @@ module Conll
       }.join("\t")
     end
 
+    def leading(n)
+      @sentence.tokens[self.index-n .. self.index-1]
+    end
+
     private
 
     def find_token(id)
