@@ -1,6 +1,10 @@
 
 module Annotation
-  class Enumeration < Base
+  class Enumeration < Span
+
+    def feature
+      'enum'
+    end
 
     def pre_sentence
       @sentence.grep(:cpos => 'C') do |tok|
@@ -8,10 +12,7 @@ module Annotation
           if leading_comma(tok)
             # Seems to be an enumeration
             first = first_comma(tok)
-            @sentence.tokens[first.index .. tok.next.index].each do |t|
-              puts "marking #{t.form}"
-              t.features << 'enum'
-            end
+            mark_span(first, tok.next)
           end
         end
       end
