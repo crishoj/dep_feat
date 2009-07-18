@@ -21,7 +21,10 @@ module Annotation
     protected
 
     def leading_comma(token)
-      token.leading(3).find { |t| t.form == ',' }
+      prev = token.prev
+      if prev.form != ','
+        prev.leading(2).find { |t| t.form == ',' }
+      end
     end
 
     def first_comma(token)
