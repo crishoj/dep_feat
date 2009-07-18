@@ -2,6 +2,15 @@
 require 'lib/conll/token'
 
 module Conll
+
+  class TokenList < Array
+
+    def forms
+      self.collect { |tok| tok.form }
+    end
+
+  end
+
   class Sentence
     attr_accessor :corpus, :index
     attr_reader :tokens, :root
@@ -17,7 +26,7 @@ module Conll
     def initialize
       @root   = RootToken.new
       @root.sentence = self
-      @tokens = []
+      @tokens = TokenList.new
       yield self if block_given?
       self
     end
