@@ -1,0 +1,6 @@
+#!/bin/sh
+set -o nounset -o errexit
+git pull
+bin/corpus.rb categorize --kind $1 $2
+bin/corpus.rb count --recursive $2
+bin/corpus.rb compare $2
