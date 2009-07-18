@@ -10,7 +10,7 @@ module Conll
       fields = fields[0..2] + fields[3..-1].collect do |f|
         # Interpret dash/underscore as "missing value" and use nil instead
         (f == '_' or f == '-') ? nil : f
-      end
+      end unless fields.size < 4
       # Pass in a reference to the sentence
       Token.new(*fields)
     end
