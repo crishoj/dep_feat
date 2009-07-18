@@ -125,11 +125,11 @@
 7	си	си	V	V	-	6	comp	-	-
 8	като	като	R	R	-	6	comp	-	-
 9	слепец	слепец	N	N	-	8	prepcomp	-	-
-10	в	в	R	R	-	6	adjunct	-	-
+10	в	в	R	R	-	9	mod	-	-
 11	стая	стая	N	N	-	10	prepcomp	-	-
-12	без	без	R	R	-	6	adjunct	-	-
+12	без	без	R	R	-	11	mod	-	-
 13	под	под	N	N	-	12	prepcomp	-	-
-14	,	,	Punct	Punct	-	15	punct	-	-
+14	,	,	Punct	Punct	-	8	punct	-	-
 15	без	без	R	R	-	6	adjunct	-	-
 16	таван	таван	N	N	-	15	prepcomp	-	-
 17	,	,	Punct	Punct	-	6	punct	-	-
@@ -137,14 +137,14 @@
 19	стени	стени	N	N	-	18	prepcomp	-	-
 20	,	,	Punct	Punct	-	6	punct	-	-
 21	дори	дори	T	T	-	22	pragadjunct	-	-
-22	без	без	R	R	-	29	adjunct	-	-
+22	без	без	R	R	-	6	adjunct	-	-
 23	ехото	ехото	N	N	-	22	prepcomp	-	-
 24	на	на	R	R	-	23	mod	-	-
 25	стъпките	стъпките	N	N	-	24	prepcomp	-	-
 26	,	,	Punct	Punct	-	29	punct	-	-
 27	които	които	P	P	-	29	subj	-	-
 28	ти	ти	P	P	-	29	subj	-	-
-29	указват	указват	V	V	-	6	comp	-	-
+29	указват	указват	V	V	-	25	xmod	-	-
 30	пътя	пътя	N	N	-	29	subj	-	-
 31	.	.	Punct	Punct	-	6	punct	-	-
 
@@ -217,7 +217,7 @@
 3	да	да	T	T	-	2	xcomp	-	-
 4	бъде	бъде	V	V	-	3	comp	-	-
 5	постоянна	постоянна	A	A	-	3	comp	-	-
-6	,	,	Punct	Punct	-	3	punct	-	-
+6	,	,	Punct	Punct	-	5	punct	-	-
 7	да	да	T	T	-	3	xsubj	-	-
 8	бъде	бъде	V	V	-	7	comp	-	-
 9	истинска	истинска	A	A	-	7	comp	-	-
@@ -237,11 +237,11 @@
 
 1	Няма	Няма	V	V	-	0	ROOT	-	-
 2	часове	часове	N	N	-	1	obj	-	-
-3	и	и	C	C	-	1	conj	-	-
-4	няма	няма	V	V	-	1	conjarg	-	-
+3	и	и	C	C	-	2	conj	-	-
+4	няма	няма	V	V	-	1	xadjunct	-	-
 5	календари	календари	N	N	-	4	obj	-	-
 6	,	,	Punct	Punct	-	9	punct	-	-
-7	върху	върху	R	R	-	9	adjunct	-	-
+7	върху	върху	R	R	-	9	indobj	-	-
 8	които	които	P	P	-	7	prepcomp	-	-
 9	да	да	T	T	-	5	xmod	-	-
 10	отбелязва	отбелязва	V	V	-	9	comp	-	-
@@ -249,9 +249,9 @@
 12	си	си	P	P	-	11	clitic	-	-
 13	.	.	Punct	Punct	-	1	punct	-	-
 
-1	Нищо	Нищо	P	P	-	0	ROOT	-	-
+1	Нищо	Нищо	P	P	-	3	punct	-	-
 2	,	,	Punct	Punct	-	3	punct	-	-
-3	освен	освен	R	R	-	1	adjunct	-	-
+3	освен	освен	R	R	-	0	ROOT	-	-
 4	една	една	P	P	-	6	mod	-	-
 5	изтощителна	изтощителна	A	A	-	6	mod	-	-
 6	работа	работа	N	N	-	3	prepcomp	-	-
@@ -331,24 +331,24 @@
 12	ефекти	ефекти	N	N	-	7	obj	-	-
 13	.	.	Punct	Punct	-	1	punct	-	-
 
-1	И	И	C	C	-	2	conj	-	-
-2	след_като	след_като	C	C	-	0	ROOT	-	-
+1	И	И	C	C	-	6	conj	-	-
+2	след_като	след_като	C	C	-	6	xadjunct	-	-
 3	ги	ги	P	P	-	4	comp	-	-
 4	реши	реши	V	V	-	2	marked	-	-
 5	,	,	Punct	Punct	-	2	punct	-	-
-6	да	да	T	T	-	2	marked	-	-
+6	да	да	T	T	-	0	ROOT	-	-
 7	се	се	P	P	-	6	comp	-	-
 8	справя	справя	V	V	-	6	comp	-	-
 9	с	с	R	R	-	6	adjunct	-	-
 10	още	още	D	D	-	9	prepcomp	-	-
 11	милиони	милиони	N	N	-	9	prepcomp	-	-
 12	други	други	A	A	-	11	mod	-	-
-13	,	,	Punct	Punct	-	14	punct	-	-
+13	,	,	Punct	Punct	-	9	punct	-	-
 14	с	с	R	R	-	6	adjunct	-	-
 15	още	още	D	D	-	14	prepcomp	-	-
 16	милиони	милиони	N	N	-	14	prepcomp	-	-
 17	други	други	A	A	-	16	mod	-	-
-18	...	...	Punct	Punct	-	2	punct	-	-
+18	...	...	Punct	Punct	-	6	punct	-	-
 
 1	Сътвори	Сътвори	V	V	-	0	ROOT	-	-
 2	си	си	P	P	-	1	comp	-	-
@@ -379,7 +379,7 @@
 21	учи	учи	V	V	-	19	comp	-	-
 22	отново	отново	D	D	-	19	adjunct	-	-
 23	и	и	C	C	-	22	conj	-	-
-24	отново	отново	D	D	-	22	conjarg	-	-
+24	отново	отново	D	D	-	22	adjunct	-	-
 25	.	.	Punct	Punct	-	1	punct	-	-
 
 1	Да	Да	T	T	-	0	ROOT	-	-
@@ -397,7 +397,7 @@
 1	И	И	C	C	-	2	conj	-	-
 2	ще	ще	T	T	-	0	ROOT	-	-
 3	има	има	V	V	-	2	comp	-	-
-4	безчет	безчет	D	D	-	5	mod	-	-
+4	безчет	безчет	D	D	-	2	adjunct	-	-
 5	малки	малки	A	A	-	6	mod	-	-
 6	конфликти	конфликти	N	N	-	2	obj	-	-
 7	в	в	R	R	-	2	adjunct	-	-
@@ -422,8 +422,8 @@
 
 1	Едва	Едва	D	D	-	2	mod	-	-
 2	тогава	тогава	P	P	-	5	adjunct	-	-
-3	разпадналото	разпадналото	V	V	-	5	xadjunct	-	-
-4	се	се	P	P	-	5	comp	-	-
+3	разпадналото	разпадналото	V	V	-	5	subj	-	-
+4	се	се	P	P	-	3	comp	-	-
 5	ще	ще	T	T	-	0	ROOT	-	-
 6	може	може	V	V	-	5	comp	-	-
 7	да	да	T	T	-	5	xcomp	-	-
@@ -492,7 +492,7 @@
 10	,	,	Punct	Punct	-	13	punct	-	-
 11	когато	когато	P	P	-	13	adjunct	-	-
 12	компанията	компанията	N	N	-	13	subj	-	-
-13	ще	ще	T	T	-	3	xcomp	-	-
+13	ще	ще	T	T	-	3	conjarg	-	-
 14	бъде	бъде	V	V	-	13	comp	-	-
 15	закрита	закрита	V	V	-	13	comp	-	-
 16	.	.	Punct	Punct	-	3	punct	-	-
@@ -542,8 +542,8 @@
 2	писмо	писмо	N	N	-	1	prepcomp	-	-
 3	до	до	R	R	-	2	mod	-	-
 4	премиера	премиера	N	N	-	3	prepcomp	-	-
-5	и	и	C	C	-	4	conj	-	-
-6	НС	НС	N	N	-	4	conjarg	-	-
+5	и	и	C	C	-	2	conj	-	-
+6	НС	НС	N	N	-	2	mod	-	-
 7	те	те	P	P	-	8	subj	-	-
 8	настояват	настояват	V	V	-	0	ROOT	-	-
 9	да	да	T	T	-	8	xcomp	-	-
@@ -641,9 +641,9 @@
 8	:	:	R	R	-	7	mod	-	-
 9	<num>	<num>	M	M	-	8	prepcomp	-	-
 10	контролата	контролата	N	N	-	8	prepcomp	-	-
-11	в	в	R	R	-	5	adjunct	-	-
+11	в	в	R	R	-	10	mod	-	-
 12	Дупница	Дупница	N	N	-	11	prepcomp	-	-
-13	срещу	срещу	R	R	-	5	adjunct	-	-
+13	срещу	срещу	R	R	-	10	mod	-	-
 14	представителния	представителния	A	A	-	17	mod	-	-
 15	ни	ни	P	P	-	14	clitic	-	-
 16	аматьорски	аматьорски	A	A	-	17	mod	-	-
@@ -691,10 +691,10 @@
 15	играчи	играчи	N	N	-	12	obj	-	-
 16	,	,	Punct	Punct	-	18	punct	-	-
 17	които	които	P	P	-	18	subj	-	-
-18	бях	бях	V	V	-	12	xadjunct	-	-
+18	бях	бях	V	V	-	15	xmod	-	-
 19	повикал	повикал	V	V	-	18	comp	-	-
-20	-	-	Punct	Punct	-	2	punct	-	-
-21	заяви	заяви	V	V	-	0	ROOT	-	-
+20	-	-	Punct	Punct	-	18	punct	-	-
+21	заяви	заяви	V	V	-	15	mod	-	-
 22	за	за	R	R	-	21	adjunct	-	-
 23	"	"	Punct	Punct	-	24	punct	-	-
 24	Новинар	Новинар	N	N	-	22	prepcomp	-	-
@@ -703,7 +703,7 @@
 27	на	на	R	R	-	26	mod	-	-
 28	младежите	младежите	N	N	-	27	prepcomp	-	-
 29	Димитър_Алексиев	Димитър_Алексиев	N	N	-	28	mod	-	-
-30	.	.	Punct	Punct	-	21	punct	-	-
+30	.	.	Punct	Punct	-	2	punct	-	-
 
 1	-	-	Punct	Punct	-	2	punct	-	-
 2	Имаме	Имаме	V	V	-	0	ROOT	-	-
@@ -736,11 +736,11 @@
 11	вторник	вторник	N	N	-	10	prepcomp	-	-
 12	,	,	Punct	Punct	-	13	punct	-	-
 13	спечелена	спечелена	V	V	-	11	mod	-	-
-14	с	с	R	R	-	13	mod	-	-
+14	с	с	R	R	-	13	adjunct	-	-
 15	<num>	<num>	M	M	-	14	prepcomp	-	-
 16	:	:	R	R	-	15	mod	-	-
 17	<num>	<num>	M	M	-	16	prepcomp	-	-
-18	от	от	R	R	-	17	mod	-	-
+18	от	от	R	R	-	15	mod	-	-
 19	нашите	нашите	P	P	-	18	prepcomp	-	-
 20	.	.	Punct	Punct	-	4	punct	-	-
 
@@ -763,7 +763,7 @@
 11	на	на	R	R	-	10	indobj	-	-
 12	всеки	всеки	P	P	-	13	mod	-	-
 13	пост	пост	N	N	-	11	prepcomp	-	-
-14	да	да	T	T	-	10	xadjunct	-	-
+14	да	да	T	T	-	10	xsubj	-	-
 15	разполагам	разполагам	V	V	-	14	comp	-	-
 16	поне	поне	D	D	-	17	prepcomp	-	-
 17	с	с	R	R	-	14	indobj	-	-
@@ -777,11 +777,11 @@
 5	на	на	R	R	-	4	mod	-	-
 6	"	"	Punct	Punct	-	7	punct	-	-
 7	новобранците	новобранците	N	N	-	5	prepcomp	-	-
-8	"	"	Punct	Punct	-	7	punct	-	-
+8	"	"	Punct	Punct	-	9	punct	-	-
 9	Св.	Св.	N	N	-	4	mod	-	-
 10	Петров	Петров	H	H	-	9	mod	-	-
-11	и	и	C	C	-	10	conj	-	-
-12	Янчев	Янчев	H	H	-	10	conjarg	-	-
+11	и	и	C	C	-	9	conj	-	-
+12	Янчев	Янчев	H	H	-	9	mod	-	-
 13	.	.	Punct	Punct	-	2	punct	-	-
 
 1	На	На	R	R	-	4	indobj	-	-
@@ -794,7 +794,7 @@
 8	не	не	T	T	-	9	mod	-	-
 9	е	е	V	V	-	7	marked	-	-
 10	титуляр	титуляр	N	N	-	9	comp	-	-
-11	в	в	R	R	-	9	adjunct	-	-
+11	в	в	R	R	-	10	mod	-	-
 12	"	"	Punct	Punct	-	13	punct	-	-
 13	Чарлтън	Чарлтън	N	N	-	11	prepcomp	-	-
 14	"	"	Punct	Punct	-	13	punct	-	-
@@ -861,16 +861,16 @@
 13	уморени	уморени	V	V	-	12	comp	-	-
 14	.	.	Punct	Punct	-	2	punct	-	-
 
-1	За	За	R	R	-	3	adjunct	-	-
+1	За	За	R	R	-	7	adjunct	-	-
 2	мен	мен	P	P	-	1	prepcomp	-	-
-3	няма	няма	V	V	-	0	ROOT	-	-
+3	няма	няма	V	V	-	7	adjunct	-	-
 4	значение	значение	N	N	-	3	obj	-	-
 5	кой	кой	P	P	-	7	subj	-	-
 6	ми	ми	P	P	-	7	comp	-	-
-7	партнира	партнира	V	V	-	4	xmod	-	-
+7	партнира	партнира	V	V	-	0	ROOT	-	-
 8	в	в	R	R	-	7	indobj	-	-
 9	атака	атака	N	N	-	8	prepcomp	-	-
-10	.	.	Punct	Punct	-	3	punct	-	-
+10	.	.	Punct	Punct	-	7	punct	-	-
 
 1	Важното	Важното	A	A	-	2	comp	-	-
 2	е	е	V	V	-	0	ROOT	-	-
@@ -879,7 +879,7 @@
 5	-	-	Punct	Punct	-	7	punct	-	-
 6	така	така	P	P	-	7	adjunct	-	-
 7	трупаме	трупаме	V	V	-	4	comp	-	-
-8	самочувствие	самочувствие	N	N	-	7	subj	-	-
+8	самочувствие	самочувствие	N	N	-	7	obj	-	-
 9	.	.	Punct	Punct	-	2	punct	-	-
 
 1	От	От	R	R	-	3	adjunct	-	-
@@ -891,14 +891,14 @@
 7	преговори	преговори	N	N	-	6	obj	-	-
 8	за	за	R	R	-	7	mod	-	-
 9	контрола	контрола	N	N	-	8	prepcomp	-	-
-10	в	в	R	R	-	7	mod	-	-
+10	в	в	R	R	-	6	adjunct	-	-
 11	Кипър	Кипър	N	N	-	10	prepcomp	-	-
-12	на	на	R	R	-	7	mod	-	-
+12	на	на	R	R	-	6	adjunct	-	-
 13	<num>	<num>	M	M	-	14	mod	-	-
 14	декември	декември	N	N	-	12	prepcomp	-	-
 15	,	,	Punct	Punct	-	16	punct	-	-
 16	но	но	C	C	-	6	conj	-	-
-17	още	още	D	D	-	18	adjunct	-	-
+17	още	още	D	D	-	18	mod	-	-
 18	няма	няма	V	V	-	5	marked	-	-
 19	нищо	нищо	P	P	-	18	obj	-	-
 20	сигурно	сигурно	A	A	-	19	mod	-	-
@@ -959,7 +959,7 @@
 8	ни	ни	P	P	-	7	clitic	-	-
 9	в	в	R	R	-	7	mod	-	-
 10	други	други	A	A	-	16	mod	-	-
-11	,	,	Punct	Punct	-	12	punct	-	-
+11	,	,	Punct	Punct	-	10	punct	-	-
 12	нежелани	нежелани	A	A	-	10	mod	-	-
 13	от	от	R	R	-	12	mod	-	-
 14	нас	нас	P	P	-	13	prepcomp	-	-
@@ -994,7 +994,7 @@
 25	проведе	проведе	V	V	-	7	xmod	-	-
 26	във	във	R	R	-	25	indobj	-	-
 27	Варшава	Варшава	N	N	-	26	prepcomp	-	-
-28	вчера	вчера	D	D	-	2	adjunct	-	-
+28	вчера	вчера	D	D	-	25	adjunct	-	-
 29	.	.	Punct	Punct	-	2	punct	-	-
 
 1	България	България	N	N	-	2	subj	-	-
@@ -1007,7 +1007,7 @@
 8	принцип	принцип	N	N	-	6	prepcomp	-	-
 9	,	,	Punct	Punct	-	10	punct	-	-
 10	заложен	заложен	V	V	-	8	mod	-	-
-11	в	в	R	R	-	10	mod	-	-
+11	в	в	R	R	-	10	adjunct	-	-
 12	решенията	решенията	N	N	-	11	prepcomp	-	-
 13	на	на	R	R	-	12	mod	-	-
 14	ЕС	ЕС	N	N	-	13	prepcomp	-	-
@@ -1088,15 +1088,15 @@
 26	Ройтерс	Ройтерс	N	N	-	25	subj	-	-
 27	.	.	Punct	Punct	-	25	punct	-	-
 
-1	Очаква	Очаква	V	V	-	17	pragadjunct	-	-
+1	Очаква	Очаква	V	V	-	17	xcomp	-	-
 2	се	се	P	P	-	1	comp	-	-
-3	поскъпването	поскъпването	N	N	-	1	obj	-	-
+3	поскъпването	поскъпването	N	N	-	9	subj	-	-
 4	на	на	R	R	-	3	mod	-	-
 5	нефта	нефта	N	N	-	4	prepcomp	-	-
 6	на	на	R	R	-	5	mod	-	-
 7	международните	международните	A	A	-	8	mod	-	-
 8	борси	борси	N	N	-	6	prepcomp	-	-
-9	да	да	T	T	-	3	xmod	-	-
+9	да	да	T	T	-	1	xsubj	-	-
 10	доведе	доведе	V	V	-	9	comp	-	-
 11	до	до	R	R	-	9	indobj	-	-
 12	скок	скок	N	N	-	11	prepcomp	-	-
@@ -1106,7 +1106,7 @@
 16	,	,	Punct	Punct	-	1	punct	-	-
 17	коментираха	коментираха	V	V	-	0	ROOT	-	-
 18	наши	наши	P	P	-	19	mod	-	-
-19	експерти	експерти	N	N	-	17	obj	-	-
+19	експерти	експерти	N	N	-	17	subj	-	-
 20	.	.	Punct	Punct	-	17	punct	-	-
 
 1	Увеличението	Увеличението	N	N	-	4	subj	-	-
@@ -1163,9 +1163,9 @@
 21	,	,	Punct	Punct	-	22	punct	-	-
 22	тъй_като	тъй_като	C	C	-	8	xadjunct	-	-
 23	тази	тази	P	P	-	26	mod	-	-
-24	и	и	C	C	-	23	conj	-	-
+24	и	и	C	C	-	26	conj	-	-
 25	идната	идната	A	A	-	26	mod	-	-
-26	седмица	седмица	N	N	-	30	subj	-	-
+26	седмица	седмица	N	N	-	30	adjunct	-	-
 27	в	в	R	R	-	26	mod	-	-
 28	САЩ	САЩ	N	N	-	27	prepcomp	-	-
 29	се	се	P	P	-	30	comp	-	-
@@ -1192,7 +1192,7 @@
 14	доставките	доставките	N	N	-	13	prepcomp	-	-
 15	на	на	R	R	-	14	mod	-	-
 16	нефт	нефт	N	N	-	15	prepcomp	-	-
-17	и	и	C	C	-	11	conj	-	-
+17	и	и	C	C	-	10	conj	-	-
 18	че	че	C	C	-	10	marked	-	-
 19	на	на	R	R	-	21	comp	-	-
 20	пазара	пазара	N	N	-	19	prepcomp	-	-
@@ -1265,7 +1265,7 @@
 11	диалог	диалог	N	N	-	9	obj	-	-
 12	между	между	R	R	-	11	mod	-	-
 13	тях	тях	P	P	-	12	prepcomp	-	-
-14	в	в	R	R	-	11	mod	-	-
+14	в	в	R	R	-	9	adjunct	-	-
 15	предстоящата	предстоящата	V	V	-	17	mod	-	-
 16	предизборна	предизборна	A	A	-	17	mod	-	-
 17	кампания	кампания	N	N	-	14	prepcomp	-	-
@@ -1275,10 +1275,10 @@
 2	на	на	R	R	-	1	mod	-	-
 3	президента	президента	N	N	-	2	prepcomp	-	-
 4	била	била	V	V	-	0	ROOT	-	-
-5	различна	различна	A	A	-	4	comp	-	-
-6	от	от	R	R	-	5	mod	-	-
+5	различна	различна	A	A	-	8	comp	-	-
+6	от	от	R	R	-	8	adjunct	-	-
 7	това	това	P	P	-	6	prepcomp	-	-
-8	да	да	T	T	-	6	prepcomp	-	-
+8	да	да	T	T	-	4	xcomp	-	-
 9	е	е	V	V	-	8	comp	-	-
 10	мандатьор	мандатьор	N	N	-	8	comp	-	-
 11	,	,	Punct	Punct	-	10	punct	-	-
@@ -1349,14 +1349,14 @@
 7	.	.	Punct	Punct	-	3	punct	-	-
 
 1	Президентът	Президентът	N	N	-	3	subj	-	-
-2	явно	явно	D	D	-	3	pragadjunct	-	-
+2	явно	явно	D	D	-	3	adjunct	-	-
 3	изпълнява	изпълнява	V	V	-	14	xcomp	-	-
 4	ролята	ролята	N	N	-	3	obj	-	-
 5	на	на	R	R	-	4	mod	-	-
 6	антена	антена	N	N	-	5	prepcomp	-	-
 7	,	,	Punct	Punct	-	9	punct	-	-
 8	когато	когато	P	P	-	9	adjunct	-	-
-9	няма	няма	V	V	-	6	conjarg	-	-
+9	няма	няма	V	V	-	6	xmod	-	-
 10	чуваемост	чуваемост	N	N	-	9	obj	-	-
 11	между	между	R	R	-	10	mod	-	-
 12	партиите	партиите	N	N	-	11	prepcomp	-	-
@@ -1394,7 +1394,7 @@
 10	сигурност	сигурност	N	N	-	7	prepcomp	-	-
 11	,	,	Punct	Punct	-	4	punct	-	-
 12	избухна	избухна	V	V	-	0	ROOT	-	-
-13	в	в	R	R	-	12	mod	-	-
+13	в	в	R	R	-	12	adjunct	-	-
 14	парламента	парламента	N	N	-	13	prepcomp	-	-
 15	вчера	вчера	D	D	-	12	adjunct	-	-
 16	.	.	Punct	Punct	-	12	punct	-	-
@@ -1511,7 +1511,7 @@
 1	Димитър_Луджев	Димитър_Луджев	N	N	-	3	subj	-	-
 2	се	се	P	P	-	3	comp	-	-
 3	закани	закани	V	V	-	0	ROOT	-	-
-4	до	до	R	R	-	3	indobj	-	-
+4	до	до	R	R	-	6	adjunct	-	-
 5	дни	дни	N	N	-	4	prepcomp	-	-
 6	да	да	T	T	-	3	xcomp	-	-
 7	заведе	заведе	V	V	-	6	comp	-	-
@@ -1529,7 +1529,7 @@
 2	гласовете	гласовете	N	N	-	1	prepcomp	-	-
 3	на	на	R	R	-	2	mod	-	-
 4	ОДС	ОДС	N	N	-	3	prepcomp	-	-
-5	Соколов	Соколов	H	H	-	4	mod	-	-
+5	Соколов	Соколов	H	H	-	6	subj	-	-
 6	остана	остана	V	V	-	0	ROOT	-	-
 7	шеф	шеф	N	N	-	6	obj	-	-
 8	на	на	R	R	-	7	mod	-	-
@@ -1551,13 +1551,13 @@
 8	ДПС	ДПС	N	N	-	7	prepcomp	-	-
 9	"	"	Punct	Punct	-	8	punct	-	-
 10	гласуваха	гласуваха	V	V	-	4	marked	-	-
-11	"	"	Punct	Punct	-	12	punct	-	-
+11	"	"	Punct	Punct	-	10	punct	-	-
 12	от	от	R	R	-	10	adjunct	-	-
 13	президентството	президентството	N	N	-	12	prepcomp	-	-
 14	,	,	Punct	Punct	-	17	punct	-	-
 15	където	където	P	P	-	17	adjunct	-	-
 16	се	се	P	P	-	17	comp	-	-
-17	срещнаха	срещнаха	V	V	-	13	xmod	-	-
+17	срещнаха	срещнаха	V	V	-	1	xadjunct	-	-
 18	с	с	R	R	-	17	indobj	-	-
 19	Петър	Петър	N	N	-	18	prepcomp	-	-
 20	Стоянов	Стоянов	H	H	-	19	mod	-	-
@@ -1585,7 +1585,7 @@
 8	да	да	T	T	-	7	xcomp	-	-
 9	се	се	P	P	-	8	comp	-	-
 10	отчитам	отчитам	V	V	-	8	comp	-	-
-11	пред	пред	R	R	-	8	indobj	-	-
+11	пред	пред	R	R	-	8	adjunct	-	-
 12	вас	вас	P	P	-	11	prepcomp	-	-
 13	,	,	Punct	Punct	-	1	punct	-	-
 14	много	много	M	M	-	16	adjunct	-	-
@@ -1604,10 +1604,10 @@
 27	,	,	Punct	Punct	-	30	punct	-	-
 28	които	които	P	P	-	30	subj	-	-
 29	го	го	P	P	-	30	comp	-	-
-30	попитаха	попитаха	V	V	-	18	xcomp	-	-
+30	попитаха	попитаха	V	V	-	18	comp	-	-
 31	къде	къде	P	P	-	33	comp	-	-
 32	му	му	P	P	-	33	comp	-	-
-33	е	е	V	V	-	30	xcomp	-	-
+33	е	е	V	V	-	30	conjarg	-	-
 34	картата	картата	N	N	-	33	comp	-	-
 35	.	.	Punct	Punct	-	18	punct	-	-
 
@@ -1624,7 +1624,7 @@
 11	парламента	парламента	N	N	-	10	prepcomp	-	-
 12	,	,	Punct	Punct	-	7	punct	-	-
 13	бил	бил	V	V	-	7	marked	-	-
-14	цензор	цензор	N	N	-	13	comp	-	-
+14	цензор	цензор	N	N	-	13	obj	-	-
 15	за	за	R	R	-	14	mod	-	-
 16	чуждите	чуждите	A	A	-	17	mod	-	-
 17	депутати	депутати	N	N	-	15	prepcomp	-	-
@@ -1659,13 +1659,13 @@
 15	различен	различен	A	A	-	16	mod	-	-
 16	час	час	N	N	-	14	obj	-	-
 17	и	и	C	C	-	14	conj	-	-
-18	пречат	пречат	V	V	-	9	marked	-	-
+18	пречат	пречат	V	V	-	14	conjarg	-	-
 19	да	да	T	T	-	18	xcomp	-	-
 20	се	се	P	P	-	19	comp	-	-
 21	отчита	отчита	V	V	-	19	comp	-	-
 22	кой	кой	P	P	-	24	subj	-	-
 23	колко	колко	P	P	-	24	adjunct	-	-
-24	е	е	V	V	-	19	comp	-	-
+24	е	е	V	V	-	14	xcomp	-	-
 25	говорил	говорил	V	V	-	24	comp	-	-
 26	.	.	Punct	Punct	-	7	punct	-	-
 
@@ -1709,11 +1709,11 @@
 9	бизнесмен	бизнесмен	N	N	-	7	prepcomp	-	-
 10	.	.	Punct	Punct	-	3	punct	-	-
 
-1	Съдия-изпълнител	Съдия-изпълнител	N	N	-	5	subj	-	-
+1	Съдия-изпълнител	Съдия-изпълнител	N	N	-	4	subj	-	-
 2	обаче	обаче	D	D	-	4	pragadjunct	-	-
 3	не	не	T	T	-	4	mod	-	-
-4	можел	можел	V	V	-	1	xmod	-	-
-5	да	да	T	T	-	0	ROOT	-	-
+4	можел	можел	V	V	-	0	ROOT	-	-
+5	да	да	T	T	-	4	xcomp	-	-
 6	ги	ги	P	P	-	5	comp	-	-
 7	възмезди	възмезди	V	V	-	5	comp	-	-
 8	,	,	Punct	Punct	-	9	punct	-	-
@@ -1733,7 +1733,7 @@
 22	несъстоятелност	несъстоятелност	N	N	-	21	prepcomp	-	-
 23	на	на	R	R	-	22	mod	-	-
 24	фирмата	фирмата	N	N	-	23	prepcomp	-	-
-25	.	.	Punct	Punct	-	13	punct	-	-
+25	.	.	Punct	Punct	-	4	punct	-	-
 
 1	Миналата	Миналата	V	V	-	2	mod	-	-
 2	година	година	N	N	-	5	adjunct	-	-
@@ -1808,10 +1808,10 @@
 
 1	Във	Във	R	R	-	5	adjunct	-	-
 2	вторник	вторник	N	N	-	1	prepcomp	-	-
-3	колата	колата	N	N	-	2	mod	-	-
+3	колата	колата	N	N	-	5	subj	-	-
 4	,	,	Punct	Punct	-	5	punct	-	-
 5	управлявана	управлявана	V	V	-	0	ROOT	-	-
-6	от	от	R	R	-	5	mod	-	-
+6	от	от	R	R	-	5	comp	-	-
 7	49-годишен	49-годишен	A	A	-	8	mod	-	-
 8	варналия	варналия	N	N	-	6	prepcomp	-	-
 9	,	,	Punct	Punct	-	11	punct	-	-
@@ -1867,13 +1867,13 @@
 4	приет	приет	V	V	-	3	comp	-	-
 5	друг	друг	A	A	-	6	mod	-	-
 6	мъж	мъж	N	N	-	3	subj	-	-
-7	пътувал	пътувал	V	V	-	6	xmod	-	-
+7	пътувал	пътувал	V	V	-	3	conjarg	-	-
 8	в	в	R	R	-	3	indobj	-	-
 9	аудито	аудито	N	N	-	8	prepcomp	-	-
 10	.	.	Punct	Punct	-	3	punct	-	-
 
 1	Останалите	Останалите	V	V	-	0	ROOT	-	-
-2	се	се	P	P	-	3	comp	-	-
+2	се	се	P	P	-	1	comp	-	-
 3	отървали	отървали	V	V	-	1	conjarg	-	-
 4	само	само	D	D	-	5	prepcomp	-	-
 5	с	с	R	R	-	3	adjunct	-	-
@@ -1959,7 +1959,7 @@
 2	него	него	P	P	-	1	prepcomp	-	-
 3	лек	лек	N	N	-	1	prepcomp	-	-
 4	няма	няма	V	V	-	0	ROOT	-	-
-5	открит	открит	V	V	-	4	conjarg	-	-
+5	открит	открит	V	V	-	4	obj	-	-
 6	,	,	Punct	Punct	-	7	punct	-	-
 7	но	но	C	C	-	4	conj	-	-
 8	неприятно	неприятно	D	D	-	9	adjunct	-	-
@@ -2002,8 +2002,8 @@
 10	доказателство	доказателство	N	N	-	7	obj	-	-
 11	?	?	Punct	Punct	-	4	punct	-	-
 
-1	Първо	Първо	D	D	-	4	pragadjunct	-	-
-2	,	,	Punct	Punct	-	1	punct	-	-
+1	Първо	Първо	D	D	-	4	adjunct	-	-
+2	,	,	Punct	Punct	-	4	punct	-	-
 3	може_би	може_би	D	D	-	4	adjunct	-	-
 4	е	е	V	V	-	0	ROOT	-	-
 5	искал	искал	V	V	-	4	comp	-	-
@@ -2013,8 +2013,8 @@
 9	на	на	R	R	-	8	mod	-	-
 10	колегите	колегите	N	N	-	9	prepcomp	-	-
 11	си	си	P	P	-	10	clitic	-	-
-12	,	,	Punct	Punct	-	13	punct	-	-
-13	пресичайки	пресичайки	V	V	-	6	conjarg	-	-
+12	,	,	Punct	Punct	-	4	punct	-	-
+13	пресичайки	пресичайки	V	V	-	4	conjarg	-	-
 14	репортерското	репортерското	A	A	-	15	mod	-	-
 15	любопитство	любопитство	N	N	-	13	obj	-	-
 16	.	.	Punct	Punct	-	4	punct	-	-
@@ -2025,13 +2025,13 @@
 4	пък	пък	T	T	-	5	pragadjunct	-	-
 5	да	да	T	T	-	0	ROOT	-	-
 6	е	е	V	V	-	5	comp	-	-
-7	бил	бил	V	V	-	5	comp	-	-
-8	изнервен	изнервен	V	V	-	7	comp	-	-
-9	от	от	R	R	-	7	indobj	-	-
+7	бил	бил	V	V	-	6	comp	-	-
+8	изнервен	изнервен	V	V	-	6	comp	-	-
+9	от	от	R	R	-	6	indobj	-	-
 10	разговорите	разговорите	N	N	-	9	prepcomp	-	-
 11	с	с	R	R	-	10	mod	-	-
 12	президента	президента	N	N	-	11	prepcomp	-	-
-13	?	?	Punct	Punct	-	5	punct	-	-
+13	?	?	Punct	Punct	-	6	punct	-	-
 
 1	Такива	Такива	P	P	-	2	mod	-	-
 2	реакции	реакции	N	N	-	4	subj	-	-
@@ -2076,7 +2076,7 @@
 
 1	Грози	Грози	V	V	-	0	ROOT	-	-
 2	ни	ни	P	P	-	1	comp	-	-
-3	суша	суша	N	N	-	1	obj	-	-
+3	суша	суша	N	N	-	1	subj	-	-
 4	,	,	Punct	Punct	-	1	punct	-	-
 5	пестите	пестите	V	V	-	1	conjarg	-	-
 6	ли	ли	T	T	-	5	mod	-	-
@@ -2132,7 +2132,7 @@
 1	Но	Но	C	C	-	6	conj	-	-
 2	когато	когато	P	P	-	4	adjunct	-	-
 3	кризата	кризата	N	N	-	4	subj	-	-
-4	започне	започне	V	V	-	1	conjarg	-	-
+4	започне	започне	V	V	-	1	conj	-	-
 5	,	,	Punct	Punct	-	1	punct	-	-
 6	ще	ще	T	T	-	0	ROOT	-	-
 7	се	се	P	P	-	6	comp	-	-
@@ -2163,7 +2163,7 @@
 1	-	-	Punct	Punct	-	2	punct	-	-
 2	Ограничаваме	Ограничаваме	V	V	-	0	ROOT	-	-
 3	се	се	P	P	-	2	comp	-	-
-4	най-вече	най-вече	D	D	-	2	adjunct	-	-
+4	най-вече	най-вече	D	D	-	5	prepcomp	-	-
 5	в	в	R	R	-	2	adjunct	-	-
 6	ползването	ползването	N	N	-	5	prepcomp	-	-
 7	на	на	R	R	-	6	mod	-	-
@@ -2406,7 +2406,7 @@
 10	живот	живот	N	N	-	9	prepcomp	-	-
 11	,	,	Punct	Punct	-	12	punct	-	-
 12	защото	защото	C	C	-	4	xadjunct	-	-
-13	постоянно	постоянно	D	D	-	14	adjunct	-	-
+13	постоянно	постоянно	D	D	-	14	comp	-	-
 14	ще	ще	T	T	-	12	marked	-	-
 15	сме	сме	V	V	-	14	comp	-	-
 16	в	в	R	R	-	14	comp	-	-
@@ -2414,8 +2414,8 @@
 18	дали	дали	T	T	-	14	comp	-	-
 19	имаме	имаме	V	V	-	14	comp	-	-
 20	вода	вода	N	N	-	19	obj	-	-
-21	или	или	C	C	-	4	conj	-	-
-22	не	не	T	T	-	23	mod	-	-
+21	или	или	C	C	-	14	conj	-	-
+22	не	не	T	T	-	14	comp	-	-
 23	.	.	Punct	Punct	-	4	punct	-	-
 
 1	Валентина_МИТКОВА	Валентина_МИТКОВА	N	N	-	0	ROOT	-	-
@@ -2438,21 +2438,21 @@
 7	вода	вода	N	N	-	5	obj	-	-
 8	.	.	Punct	Punct	-	5	punct	-	-
 
-1	За	За	R	R	-	10	adjunct	-	-
+1	За	За	R	R	-	5	adjunct	-	-
 2	водна	водна	A	A	-	3	mod	-	-
 3	криза	криза	N	N	-	1	prepcomp	-	-
 4	не	не	T	T	-	5	mod	-	-
-5	съм	съм	V	V	-	3	conjarg	-	-
+5	съм	съм	V	V	-	0	ROOT	-	-
 6	чула	чула	V	V	-	5	comp	-	-
 7	,	,	Punct	Punct	-	8	punct	-	-
 8	но	но	C	C	-	5	conj	-	-
 9	не	не	T	T	-	10	mod	-	-
-10	бих	бих	V	V	-	0	ROOT	-	-
+10	бих	бих	V	V	-	5	conjarg	-	-
 11	пестила	пестила	V	V	-	10	comp	-	-
 12	заради	заради	R	R	-	10	adjunct	-	-
 13	такова	такова	P	P	-	14	mod	-	-
 14	нещо	нещо	P	P	-	10	obj	-	-
-15	.	.	Punct	Punct	-	10	punct	-	-
+15	.	.	Punct	Punct	-	5	punct	-	-
 
 1	Новинар	Новинар	N	N	-	0	ROOT	-	-
 
@@ -2491,7 +2491,7 @@
 13	<num>	<num>	M	M	-	14	mod	-	-
 14	г.	г.	N	N	-	12	prepcomp	-	-
 15	,	,	Punct	Punct	-	16	punct	-	-
-16	цитиран	цитиран	V	V	-	6	mod	-	-
+16	цитиран	цитиран	V	V	-	14	mod	-	-
 17	от	от	R	R	-	16	comp	-	-
 18	АП	АП	N	N	-	17	prepcomp	-	-
 19	.	.	Punct	Punct	-	3	punct	-	-
@@ -2505,12 +2505,12 @@
 7	от	от	R	R	-	6	mod	-	-
 8	<num>	<num>	M	M	-	9	mod	-	-
 9	страници	страници	N	N	-	7	prepcomp	-	-
-10	,	,	Punct	Punct	-	14	punct	-	-
-11	в	в	R	R	-	14	indobj	-	-
+10	,	,	Punct	Punct	-	26	punct	-	-
+11	в	в	R	R	-	26	indobj	-	-
 12	който	който	P	P	-	11	prepcomp	-	-
 13	се	се	P	P	-	14	comp	-	-
-14	съдържа	съдържа	V	V	-	6	xmod	-	-
-15	график	график	N	N	-	14	obj	-	-
+14	съдържа	съдържа	V	V	-	26	subj	-	-
+15	график	график	N	N	-	26	subj	-	-
 16	за	за	R	R	-	15	mod	-	-
 17	извършването	извършването	N	N	-	16	prepcomp	-	-
 18	на	на	R	R	-	17	mod	-	-
@@ -2518,10 +2518,10 @@
 20	промени	промени	N	N	-	18	prepcomp	-	-
 21	в	в	R	R	-	20	mod	-	-
 22	апарата	апарата	N	N	-	21	prepcomp	-	-
-23	,	,	Punct	Punct	-	25	punct	-	-
-24	които	които	P	P	-	23	punct	-	-
-25	трябва	трябва	V	V	-	22	xmod	-	-
-26	да	да	T	T	-	25	xcomp	-	-
+23	,	,	Punct	Punct	-	26	punct	-	-
+24	които	които	P	P	-	26	subj	-	-
+25	трябва	трябва	V	V	-	26	subj	-	-
+26	да	да	T	T	-	6	xmod	-	-
 27	приключат	приключат	V	V	-	26	comp	-	-
 28	до	до	R	R	-	26	indobj	-	-
 29	края	края	N	N	-	28	prepcomp	-	-
@@ -2615,7 +2615,7 @@
 21	,	,	Punct	Punct	-	15	punct	-	-
 22	да	да	T	T	-	3	xmod	-	-
 23	обяснят	обяснят	V	V	-	22	comp	-	-
-24	защо	защо	P	P	-	22	adjunct	-	-
+24	защо	защо	P	P	-	22	obj	-	-
 25	не	не	T	T	-	26	mod	-	-
 26	са	са	V	V	-	22	conjarg	-	-
 27	спазили	спазили	V	V	-	26	comp	-	-
@@ -2636,14 +2636,14 @@
 4	писмени	писмени	A	A	-	5	mod	-	-
 5	обяснения	обяснения	N	N	-	2	obj	-	-
 6	кои	кои	P	P	-	7	mod	-	-
-7	факти	факти	N	N	-	2	obj	-	-
+7	факти	факти	N	N	-	10	subj	-	-
 8	и	и	C	C	-	7	conj	-	-
 9	обстоятелства	обстоятелства	N	N	-	7	conjarg	-	-
-10	са	са	V	V	-	2	conjarg	-	-
+10	са	са	V	V	-	5	xmod	-	-
 11	накарали	накарали	V	V	-	10	comp	-	-
 12	тези	тези	P	P	-	13	mod	-	-
-13	окръзи	окръзи	N	N	-	14	subj	-	-
-14	да	да	T	T	-	11	xcomp	-	-
+13	окръзи	окръзи	N	N	-	10	obj	-	-
+14	да	да	T	T	-	10	xcomp	-	-
 15	решат	решат	V	V	-	14	comp	-	-
 16	,	,	Punct	Punct	-	17	punct	-	-
 17	че	че	C	C	-	14	xcomp	-	-
@@ -2685,7 +2685,7 @@
 2	за	за	R	R	-	1	mod	-	-
 3	тях	тях	P	P	-	2	prepcomp	-	-
 4	изтича	изтича	V	V	-	0	ROOT	-	-
-5	в	в	R	R	-	4	indobj	-	-
+5	в	в	R	R	-	4	adjunct	-	-
 6	<num>	<num>	M	M	-	7	mod	-	-
 7	часа	часа	N	N	-	5	prepcomp	-	-
 8	по	по	R	R	-	7	mod	-	-
@@ -2745,8 +2745,8 @@
 6	(	(	Punct	Punct	-	8	punct	-	-
 7	<num>	<num>	M	M	-	8	mod	-	-
 8	ноември	ноември	N	N	-	5	mod	-	-
-9	)	)	Punct	Punct	-	3	punct	-	-
-10	в	в	R	R	-	3	adjunct	-	-
+9	)	)	Punct	Punct	-	5	punct	-	-
+10	в	в	R	R	-	5	mod	-	-
 11	Борисовата	Борисовата	A	A	-	12	mod	-	-
 12	градина	градина	N	N	-	10	prepcomp	-	-
 13	.	.	Punct	Punct	-	3	punct	-	-
@@ -2778,7 +2778,7 @@
 12	още	още	D	D	-	13	mod	-	-
 13	повече	повече	M	M	-	19	adjunct	-	-
 14	,	,	Punct	Punct	-	15	punct	-	-
-15	определяйки	определяйки	V	V	-	19	xsubj	-	-
+15	определяйки	определяйки	V	V	-	19	pragadjunct	-	-
 16	"	"	Punct	Punct	-	17	punct	-	-
 17	армейците	армейците	N	N	-	19	subj	-	-
 18	"	"	Punct	Punct	-	17	punct	-	-
@@ -2835,13 +2835,13 @@
 5	не	не	T	T	-	4	mod	-	-
 6	се	се	P	P	-	4	comp	-	-
 7	получи	получи	V	V	-	4	comp	-	-
-8	подценяване	подценяване	N	N	-	7	obj	-	-
+8	подценяване	подценяване	N	N	-	4	obj	-	-
 9	на	на	R	R	-	8	mod	-	-
 10	съперника	съперника	N	N	-	9	prepcomp	-	-
 11	,	,	Punct	Punct	-	13	punct	-	-
 12	каквото	каквото	P	P	-	13	subj	-	-
 13	стана	стана	V	V	-	10	xmod	-	-
-14	преди	преди	R	R	-	13	adjunct	-	-
+14	преди	преди	R	R	-	13	indobj	-	-
 15	мача	мача	N	N	-	14	prepcomp	-	-
 16	със	със	R	R	-	15	mod	-	-
 17	"	"	Punct	Punct	-	18	punct	-	-
@@ -2851,7 +2851,7 @@
 
 1	Все	Все	D	D	-	2	mod	-	-
 2	пак	пак	D	D	-	8	adjunct	-	-
-3	на	на	R	R	-	8	adjunct	-	-
+3	на	на	R	R	-	2	mod	-	-
 4	този	този	P	P	-	5	mod	-	-
 5	етап	етап	N	N	-	3	prepcomp	-	-
 6	от	от	R	R	-	5	mod	-	-
@@ -2966,7 +2966,7 @@
 4	тима	тима	N	N	-	2	prepcomp	-	-
 5	е	е	V	V	-	0	ROOT	-	-
 6	фаворит	фаворит	N	N	-	5	comp	-	-
-7	според	според	R	R	-	6	mod	-	-
+7	според	според	R	R	-	5	adjunct	-	-
 8	вас	вас	P	P	-	7	prepcomp	-	-
 9	?	?	Punct	Punct	-	5	punct	-	-
 
@@ -3000,7 +3000,7 @@
 2	Той	Той	P	P	-	3	subj	-	-
 3	да	да	T	T	-	0	ROOT	-	-
 4	ми	ми	P	P	-	3	comp	-	-
-5	е	е	V	V	-	3	comp	-	-
+5	е	е	V	V	-	3	conjarg	-	-
 6	опозицията	опозицията	N	N	-	3	comp	-	-
 7	!	!	Punct	Punct	-	3	punct	-	-
 
@@ -3106,14 +3106,14 @@
 5	бием	бием	V	V	-	4	comp	-	-
 6	съдиите	съдиите	N	N	-	4	obj	-	-
 7	не	не	T	T	-	8	mod	-	-
-8	само	само	D	D	-	4	adjunct	-	-
-9	по	по	R	R	-	8	mod	-	-
+8	само	само	D	D	-	9	prepcomp	-	-
+9	по	по	R	R	-	4	indobj	-	-
 10	футболните	футболните	A	A	-	11	mod	-	-
 11	терени	терени	N	N	-	9	prepcomp	-	-
 12	,	,	Punct	Punct	-	13	punct	-	-
-13	а	а	C	C	-	8	conj	-	-
-14	и	и	C	C	-	8	conj	-	-
-15	в	в	R	R	-	8	conjarg	-	-
+13	а	а	C	C	-	9	conj	-	-
+14	и	и	C	C	-	9	conj	-	-
+15	в	в	R	R	-	9	conjarg	-	-
 16	съдебната	съдебната	A	A	-	17	mod	-	-
 17	зала	зала	N	N	-	15	prepcomp	-	-
 18	.	.	Punct	Punct	-	3	punct	-	-
@@ -3158,16 +3158,16 @@
 8	Евладия_Славчева	Евладия_Славчева	N	N	-	4	conjarg	-	-
 9	ще	ще	T	T	-	0	ROOT	-	-
 10	закъснеят	закъснеят	V	V	-	9	comp	-	-
-11	за	за	R	R	-	9	adjunct	-	-
+11	за	за	R	R	-	9	indobj	-	-
 12	сбора	сбора	N	N	-	11	prepcomp	-	-
 13	.	.	Punct	Punct	-	9	punct	-	-
 
 1	Тази	Тази	P	P	-	2	mod	-	-
-2	сутрин	сутрин	N	N	-	15	subj	-	-
+2	сутрин	сутрин	N	N	-	4	subj	-	-
 3	се	се	P	P	-	4	comp	-	-
-4	връщат	връщат	V	V	-	2	xmod	-	-
+4	връщат	връщат	V	V	-	15	xadjunct	-	-
 5	и	и	C	C	-	6	conj	-	-
-6	състезателките	състезателките	N	N	-	15	subj	-	-
+6	състезателките	състезателките	N	N	-	4	subj	-	-
 7	на	на	R	R	-	6	mod	-	-
 8	"	"	Punct	Punct	-	9	punct	-	-
 9	Славия	Славия	N	N	-	7	prepcomp	-	-
@@ -3190,7 +3190,7 @@
 26	купа	купа	N	N	-	25	prepcomp	-	-
 27	"	"	Punct	Punct	-	28	punct	-	-
 28	Ронкети	Ронкети	H	H	-	26	mod	-	-
-29	"	"	Punct	Punct	-	30	punct	-	-
+29	"	"	Punct	Punct	-	28	punct	-	-
 30	със	със	R	R	-	15	adjunct	-	-
 31	<num>	<num>	M	M	-	30	prepcomp	-	-
 32	:	:	R	R	-	31	mod	-	-
@@ -3230,10 +3230,10 @@
 6	най-добрата	най-добрата	A	A	-	5	prepcomp	-	-
 7	,	,	Punct	Punct	-	6	punct	-	-
 8	най-справедливата	най-справедливата	A	A	-	6	conjarg	-	-
-9	,	,	Punct	Punct	-	8	punct	-	-
-10	най-обичащата	най-обичащата	V	V	-	8	conjarg	-	-
-11	и	и	C	C	-	8	conj	-	-
-12	най-търпеливата	най-търпеливата	A	A	-	8	conjarg	-	-
+9	,	,	Punct	Punct	-	6	punct	-	-
+10	най-обичащата	най-обичащата	V	V	-	6	conjarg	-	-
+11	и	и	C	C	-	6	conj	-	-
+12	най-търпеливата	най-търпеливата	A	A	-	6	conjarg	-	-
 13	,	,	Punct	Punct	-	14	punct	-	-
 14	за_да	за_да	C	C	-	4	xadjunct	-	-
 15	му	му	P	P	-	16	comp	-	-
@@ -3261,9 +3261,9 @@
 12	трудно	трудно	D	D	-	14	adjunct	-	-
 13	се	се	P	P	-	14	comp	-	-
 14	сприятелява	сприятелява	V	V	-	5	marked	-	-
-15	или	или	C	C	-	3	conj	-	-
+15	или	или	C	C	-	14	conj	-	-
 16	въобще	въобще	D	D	-	17	adjunct	-	-
-17	отбягва	отбягва	V	V	-	3	conjarg	-	-
+17	отбягва	отбягва	V	V	-	14	xadjunct	-	-
 18	шумните	шумните	A	A	-	20	mod	-	-
 19	си	си	P	P	-	18	clitic	-	-
 20	връстници	връстници	N	N	-	17	obj	-	-
@@ -3307,7 +3307,7 @@
 36	област	област	N	N	-	30	prepcomp	-	-
 37	.	.	Punct	Punct	-	15	punct	-	-
 
-1	Само	Само	A	A	-	2	comp	-	-
+1	Само	Само	A	A	-	2	mod	-	-
 2	ще	ще	T	T	-	0	ROOT	-	-
 3	съзнава	съзнава	V	V	-	2	comp	-	-
 4	,	,	Punct	Punct	-	5	punct	-	-
@@ -3320,7 +3320,7 @@
 11	да	да	T	T	-	10	xcomp	-	-
 12	има	има	V	V	-	11	comp	-	-
 13	самочувствието	самочувствието	N	N	-	11	obj	-	-
-14	да	да	T	T	-	11	xcomp	-	-
+14	да	да	T	T	-	13	xmod	-	-
 15	развива	развива	V	V	-	14	comp	-	-
 16	отликите	отликите	N	N	-	14	obj	-	-
 17	си	си	P	P	-	16	clitic	-	-
@@ -3342,7 +3342,7 @@
 11	си	си	P	P	-	10	clitic	-	-
 12	-	-	Punct	Punct	-	13	punct	-	-
 13	или	или	C	C	-	9	conj	-	-
-14	до	до	R	R	-	22	adjunct	-	-
+14	до	до	R	R	-	9	conjarg	-	-
 15	това	това	P	P	-	16	mod	-	-
 16	време	време	N	N	-	14	prepcomp	-	-
 17	влеченията	влеченията	N	N	-	22	subj	-	-
@@ -3371,7 +3371,7 @@
 40	сред	сред	R	R	-	38	conjarg	-	-
 41	тях	тях	P	P	-	40	prepcomp	-	-
 42	той	той	P	P	-	43	subj	-	-
-43	ще	ще	T	T	-	22	xadjunct	-	-
+43	ще	ще	T	T	-	22	ROOT	-	-
 44	води	води	V	V	-	43	comp	-	-
 45	свой	свой	P	P	-	47	mod	-	-
 46	собствен	собствен	A	A	-	47	mod	-	-
@@ -3412,7 +3412,7 @@
 26	му	му	P	P	-	25	clitic	-	-
 27	чувствителност	чувствителност	N	N	-	24	prepcomp	-	-
 28	,	,	Punct	Punct	-	29	punct	-	-
-29	за_да	за_да	C	C	-	27	xmod	-	-
+29	за_да	за_да	C	C	-	24	conjarg	-	-
 30	му	му	P	P	-	31	comp	-	-
 31	помогнете	помогнете	V	V	-	29	marked	-	-
 32	да	да	T	T	-	31	xcomp	-	-
@@ -3549,7 +3549,7 @@
 21	мед	мед	N	N	-	18	subj	-	-
 22	и	и	C	C	-	21	conj	-	-
 23	сода	сода	N	N	-	21	conjarg	-	-
-24	за	за	R	R	-	23	mod	-	-
+24	за	за	R	R	-	21	mod	-	-
 25	хляб	хляб	N	N	-	24	prepcomp	-	-
 26	.	.	Punct	Punct	-	2	punct	-	-
 
@@ -3584,14 +3584,14 @@
 12	-	-	Punct	Punct	-	3	punct	-	-
 13	предпочитат	предпочитат	V	V	-	3	conjarg	-	-
 14	парични	парични	A	A	-	15	mod	-	-
-15	дарения	дарения	N	N	-	13	subj	-	-
+15	дарения	дарения	N	N	-	13	obj	-	-
 16	на	на	R	R	-	15	mod	-	-
 17	името	името	N	N	-	16	prepcomp	-	-
 18	на	на	R	R	-	17	mod	-	-
 19	сина	сина	N	N	-	18	prepcomp	-	-
 20	им	им	P	P	-	19	clitic	-	-
 21	Дилън	Дилън	N	N	-	19	mod	-	-
-22	вместо	вместо	R	R	-	17	mod	-	-
+22	вместо	вместо	R	R	-	13	adjunct	-	-
 23	обичайните	обичайните	A	A	-	25	mod	-	-
 24	сватбени	сватбени	A	A	-	25	mod	-	-
 25	дарове	дарове	N	N	-	22	prepcomp	-	-
@@ -3602,7 +3602,7 @@
 3	който	който	P	P	-	4	subj	-	-
 4	е	е	V	V	-	0	ROOT	-	-
 5	заработил	заработил	V	V	-	4	comp	-	-
-6	около	около	R	R	-	4	indobj	-	-
+6	около	около	R	R	-	4	subj	-	-
 7	<num>	<num>	M	M	-	8	mod	-	-
 8	млн.	млн.	N	N	-	6	prepcomp	-	-
 9	долара	долара	N	N	-	8	mod	-	-
@@ -3636,7 +3636,7 @@
 14	Камерън	Камерън	N	N	-	11	mod	-	-
 15	Дъглас	Дъглас	H	H	-	14	mod	-	-
 16	-	-	Punct	Punct	-	17	punct	-	-
-17	син	син	N	N	-	14	mod	-	-
+17	син	син	N	N	-	15	conjarg	-	-
 18	на	на	R	R	-	17	mod	-	-
 19	Майкъл	Майкъл	N	N	-	18	prepcomp	-	-
 20	от	от	R	R	-	17	mod	-	-
@@ -3644,9 +3644,9 @@
 22	му	му	P	P	-	21	clitic	-	-
 23	съпруга	съпруга	N	N	-	20	prepcomp	-	-
 24	Даяндра	Даяндра	N	N	-	23	mod	-	-
-25	,	,	Punct	Punct	-	23	punct	-	-
+25	,	,	Punct	Punct	-	15	punct	-	-
 26	вече	вече	D	D	-	27	adjunct	-	-
-27	имал	имал	V	V	-	17	xmod	-	-
+27	имал	имал	V	V	-	14	conjarg	-	-
 28	<num>	<num>	M	M	-	29	mod	-	-
 29	милиона	милиона	N	N	-	27	obj	-	-
 30	долара	долара	N	N	-	29	mod	-	-
@@ -3667,13 +3667,13 @@
 11	няма	няма	V	V	-	8	marked	-	-
 12	да	да	T	T	-	11	xcomp	-	-
 13	е	е	V	V	-	12	comp	-	-
-14	материално	материално	A	A	-	12	comp	-	-
-15	осигурено	осигурено	V	V	-	12	comp	-	-
+14	материално	материално	A	A	-	13	comp	-	-
+15	осигурено	осигурено	V	V	-	13	comp	-	-
 16	.	.	Punct	Punct	-	3	punct	-	-
 
 1	Според	Според	R	R	-	4	adjunct	-	-
 2	Катрин	Катрин	N	N	-	1	prepcomp	-	-
-3	Дилън	Дилън	N	N	-	2	mod	-	-
+3	Дилън	Дилън	N	N	-	4	subj	-	-
 4	е	е	V	V	-	0	ROOT	-	-
 5	ощетен	ощетен	V	V	-	4	comp	-	-
 6	в	в	R	R	-	4	indobj	-	-
@@ -3684,7 +3684,7 @@
 
 1	,	,	Punct	Punct	-	2	punct	-	-
 2	обяви	обяви	V	V	-	0	ROOT	-	-
-3	приятел	приятел	N	N	-	2	subj	-	-
+3	приятел	приятел	N	N	-	2	obj	-	-
 4	на	на	R	R	-	3	mod	-	-
 5	двойката	двойката	N	N	-	4	prepcomp	-	-
 6	.	.	Punct	Punct	-	2	punct	-	-
@@ -3710,8 +3710,8 @@
 4	ще	ще	T	T	-	0	ROOT	-	-
 5	се	се	P	P	-	4	comp	-	-
 6	залежи	залежи	V	V	-	4	comp	-	-
-7	поне	поне	D	D	-	4	adjunct	-	-
-8	месец	месец	N	N	-	4	subj	-	-
+7	поне	поне	D	D	-	8	mod	-	-
+8	месец	месец	N	N	-	4	obj	-	-
 9	в	в	R	R	-	4	adjunct	-	-
 10	болница	болница	N	N	-	9	prepcomp	-	-
 11	в	в	R	R	-	10	mod	-	-
@@ -3736,26 +3736,26 @@
 14	рецепти	рецепти	N	N	-	13	prepcomp	-	-
 15	.	.	Punct	Punct	-	2	punct	-	-
 
-1	Съпругата	Съпругата	N	N	-	14	subj	-	-
+1	Съпругата	Съпругата	N	N	-	21	subj	-	-
 2	на	на	R	R	-	1	mod	-	-
 3	Антонио_Бандерас	Антонио_Бандерас	N	N	-	2	prepcomp	-	-
-4	,	,	Punct	Punct	-	14	punct	-	-
-5	която	която	P	P	-	14	subj	-	-
-6	злоупотребявала	злоупотребявала	V	V	-	14	xcomp	-	-
+4	,	,	Punct	Punct	-	6	punct	-	-
+5	която	която	P	P	-	6	subj	-	-
+6	злоупотребявала	злоупотребявала	V	V	-	3	xmod	-	-
 7	и	и	C	C	-	8	conj	-	-
-8	с	с	R	R	-	14	adjunct	-	-
+8	с	с	R	R	-	6	indobj	-	-
 9	таблетки	таблетки	N	N	-	8	prepcomp	-	-
 10	за	за	R	R	-	9	mod	-	-
 11	отслабване	отслабване	N	N	-	10	prepcomp	-	-
 12	,	,	Punct	Punct	-	13	punct	-	-
 13	щяла	щяла	V	V	-	11	xmod	-	-
-14	да	да	T	T	-	21	xcomp	-	-
+14	да	да	T	T	-	13	xcomp	-	-
 15	опита	опита	V	V	-	14	comp	-	-
 16	терапията	терапията	N	N	-	14	obj	-	-
 17	"	"	Punct	Punct	-	18	punct	-	-
 18	Талула_Банкхед	Талула_Банкхед	N	N	-	14	obj	-	-
 19	"	"	Punct	Punct	-	18	punct	-	-
-20	,	,	Punct	Punct	-	18	punct	-	-
+20	,	,	Punct	Punct	-	13	punct	-	-
 21	твърди	твърди	V	V	-	0	ROOT	-	-
 22	в.	в.	N	N	-	21	subj	-	-
 23	"	"	Punct	Punct	-	24	punct	-	-
@@ -3765,7 +3765,7 @@
 
 1	Преди	Преди	D	D	-	6	adjunct	-	-
 2	две	две	M	M	-	3	mod	-	-
-3	петилетки	петилетки	N	N	-	6	subj	-	-
+3	петилетки	петилетки	N	N	-	1	pragadjunct	-	-
 4	блондинката	блондинката	N	N	-	6	subj	-	-
 5	се	се	P	P	-	6	comp	-	-
 6	пребори	пребори	V	V	-	0	ROOT	-	-
@@ -3871,11 +3871,11 @@
 2	влюбени	влюбени	A	A	-	3	subj	-	-
 3	правят	правят	V	V	-	0	ROOT	-	-
 4	секс	секс	N	N	-	3	obj	-	-
-5	след	след	R	R	-	4	mod	-	-
+5	след	след	R	R	-	3	adjunct	-	-
 6	петата	петата	M	M	-	7	mod	-	-
 7	среща	среща	N	N	-	5	prepcomp	-	-
 
-1	Резултатите	Резултатите	N	N	-	12	obj	-	-
+1	Резултатите	Резултатите	N	N	-	12	subj	-	-
 2	от	от	R	R	-	1	mod	-	-
 3	изследването	изследването	N	N	-	2	prepcomp	-	-
 4	на	на	R	R	-	3	mod	-	-
@@ -4006,7 +4006,7 @@
 9	от	от	R	R	-	8	indobj	-	-
 10	<num>	<num>	M	M	-	11	mod	-	-
 11	%	%	N	N	-	9	prepcomp	-	-
-12	на	на	R	R	-	11	mod	-	-
+12	на	на	R	R	-	9	prepcomp	-	-
 13	<num>	<num>	M	M	-	14	mod	-	-
 14	%	%	N	N	-	12	prepcomp	-	-
 15	от	от	R	R	-	14	mod	-	-
@@ -4048,7 +4048,7 @@
 19	места	места	N	N	-	13	obj	-	-
 20	,	,	Punct	Punct	-	4	punct	-	-
 21	коментираха	коментираха	V	V	-	0	ROOT	-	-
-22	от	от	R	R	-	21	indobj	-	-
+22	от	от	R	R	-	21	comp	-	-
 23	института	института	N	N	-	22	prepcomp	-	-
 24	.	.	Punct	Punct	-	21	punct	-	-
 
@@ -4076,7 +4076,7 @@
 14	"	"	Punct	Punct	-	13	punct	-	-
 15	,	,	Punct	Punct	-	10	punct	-	-
 16	отвори	отвори	V	V	-	21	xcomp	-	-
-17	врати	врати	N	N	-	16	subj	-	-
+17	врати	врати	N	N	-	16	obj	-	-
 18	от	от	R	R	-	17	mod	-	-
 19	вчера	вчера	D	D	-	18	prepcomp	-	-
 20	,	,	Punct	Punct	-	16	punct	-	-
@@ -4114,7 +4114,7 @@
 8	курорта	курорта	N	N	-	7	prepcomp	-	-
 9	Анзер	Анзер	N	N	-	8	mod	-	-
 10	,	,	Punct	Punct	-	11	punct	-	-
-11	край	край	R	R	-	6	mod	-	-
+11	край	край	R	R	-	5	conjarg	-	-
 12	река	река	N	N	-	11	prepcomp	-	-
 13	Рона	Рона	N	N	-	12	mod	-	-
 14	.	.	Punct	Punct	-	4	punct	-	-
@@ -4176,7 +4176,7 @@
 15	приватизация	приватизация	N	N	-	13	prepcomp	-	-
 16	.	.	Punct	Punct	-	4	punct	-	-
 
-1	Това	Това	P	P	-	2	subj	-	-
+1	Това	Това	P	P	-	2	obj	-	-
 2	каза	каза	V	V	-	0	ROOT	-	-
 3	шефът	шефът	N	N	-	2	subj	-	-
 4	на	на	R	R	-	3	mod	-	-
@@ -4185,11 +4185,11 @@
 7	чуждестранните	чуждестранните	A	A	-	8	mod	-	-
 8	инвеститори	инвеститори	N	N	-	6	prepcomp	-	-
 9	(	(	Punct	Punct	-	10	punct	-	-
-10	БИБА	БИБА	N	N	-	8	mod	-	-
+10	БИБА	БИБА	N	N	-	5	mod	-	-
 11	)	)	Punct	Punct	-	10	punct	-	-
-12	у	у	R	R	-	8	mod	-	-
+12	у	у	R	R	-	5	mod	-	-
 13	нас	нас	P	P	-	12	prepcomp	-	-
-14	Джон_Мънри	Джон_Мънри	N	N	-	6	prepcomp	-	-
+14	Джон_Мънри	Джон_Мънри	N	N	-	3	mod	-	-
 15	на	на	R	R	-	14	mod	-	-
 16	премиера	премиера	N	N	-	15	prepcomp	-	-
 17	Иван	Иван	N	N	-	16	mod	-	-
@@ -4241,7 +4241,7 @@
 17	за	за	R	R	-	16	mod	-	-
 18	инвеститорите	инвеститорите	N	N	-	17	prepcomp	-	-
 19	,	,	Punct	Punct	-	2	punct	-	-
-20	коментирал	коментирал	V	V	-	2	comp	-	-
+20	коментирал	коментирал	V	V	-	2	conjarg	-	-
 21	премиерът	премиерът	N	N	-	20	subj	-	-
 22	.	.	Punct	Punct	-	2	punct	-	-
 
@@ -4331,7 +4331,7 @@
 5	прави	прави	V	V	-	11	xcomp	-	-
 6	само	само	D	D	-	7	mod	-	-
 7	хлебозаводът	хлебозаводът	N	N	-	5	subj	-	-
-8	в	в	R	R	-	5	indobj	-	-
+8	в	в	R	R	-	7	mod	-	-
 9	Казанлък	Казанлък	N	N	-	8	prepcomp	-	-
 10	,	,	Punct	Punct	-	5	punct	-	-
 11	предупреди	предупреди	V	V	-	0	ROOT	-	-
@@ -4346,7 +4346,7 @@
 6	търговската	търговската	A	A	-	7	mod	-	-
 7	мрежа	мрежа	N	N	-	5	prepcomp	-	-
 8	рекламни	рекламни	A	A	-	9	mod	-	-
-9	афиши	афиши	N	N	-	7	mod	-	-
+9	афиши	афиши	N	N	-	5	prepcomp	-	-
 10	,	,	Punct	Punct	-	13	punct	-	-
 11	върху	върху	R	R	-	13	indobj	-	-
 12	които	които	P	P	-	11	prepcomp	-	-
@@ -4354,7 +4354,7 @@
 14	"	"	Punct	Punct	-	15	punct	-	-
 15	Тонус	Тонус	N	N	-	13	obj	-	-
 16	"	"	Punct	Punct	-	15	punct	-	-
-17	като	като	R	R	-	4	adjunct	-	-
+17	като	като	R	R	-	13	adjunct	-	-
 18	менте	менте	N	N	-	17	prepcomp	-	-
 19	.	.	Punct	Punct	-	4	punct	-	-
 
@@ -4383,9 +4383,9 @@
 12	инфлацията	инфлацията	N	N	-	13	subj	-	-
 13	е	е	V	V	-	5	marked	-	-
 14	била	била	V	V	-	13	comp	-	-
-15	общо	общо	D	D	-	13	adjunct	-	-
+15	общо	общо	D	D	-	17	mod	-	-
 16	<num>	<num>	M	M	-	17	mod	-	-
-17	%	%	N	N	-	15	mod	-	-
+17	%	%	N	N	-	14	obj	-	-
 18	.	.	Punct	Punct	-	3	punct	-	-
 
 1	На	На	R	R	-	6	adjunct	-	-
@@ -4395,7 +4395,7 @@
 5	не	не	T	T	-	6	mod	-	-
 6	изглежда	изглежда	V	V	-	0	ROOT	-	-
 7	особено	особено	D	D	-	6	pragadjunct	-	-
-8	плашеща	плашеща	V	V	-	6	conjarg	-	-
+8	плашеща	плашеща	V	V	-	6	xadjunct	-	-
 9	,	,	Punct	Punct	-	10	punct	-	-
 10	въпреки	въпреки	R	R	-	6	adjunct	-	-
 11	че	че	C	C	-	10	xprepcomp	-	-
@@ -4452,7 +4452,7 @@
 8	,	,	Punct	Punct	-	5	punct	-	-
 9	вадят	вадят	V	V	-	5	conjarg	-	-
 10	повече	повече	M	M	-	11	mod	-	-
-11	стоки	стоки	N	N	-	9	subj	-	-
+11	стоки	стоки	N	N	-	9	obj	-	-
 12	за	за	R	R	-	11	mod	-	-
 13	пазара	пазара	N	N	-	12	prepcomp	-	-
 14	,	,	Punct	Punct	-	11	punct	-	-
@@ -4461,14 +4461,14 @@
 17	вземат	вземат	V	V	-	11	conjarg	-	-
 18	по-добри	по-добри	A	A	-	19	mod	-	-
 19	пари	пари	N	N	-	17	obj	-	-
-20	и	и	C	C	-	5	conj	-	-
-21	имат	имат	V	V	-	5	conjarg	-	-
+20	и	и	C	C	-	17	conj	-	-
+21	имат	имат	V	V	-	17	conjarg	-	-
 22	повече	повече	M	M	-	21	adjunct	-	-
 23	за	за	R	R	-	22	mod	-	-
 24	харчене	харчене	N	N	-	23	prepcomp	-	-
 25	.	.	Punct	Punct	-	5	punct	-	-
 
-1	Така	Така	P	P	-	3	comp	-	-
+1	Така	Така	P	P	-	3	adjunct	-	-
 2	обаче	обаче	D	D	-	3	pragadjunct	-	-
 3	е	е	V	V	-	0	ROOT	-	-
 4	само	само	D	D	-	5	prepcomp	-	-
@@ -4482,15 +4482,15 @@
 5	нас	нас	P	P	-	4	prepcomp	-	-
 6	бяха	бяха	V	V	-	0	ROOT	-	-
 7	придружени	придружени	V	V	-	6	comp	-	-
-8	от	от	R	R	-	6	adjunct	-	-
-9	още	още	D	D	-	11	mod	-	-
+8	от	от	R	R	-	6	indobj	-	-
+9	още	още	D	D	-	10	mod	-	-
 10	по-голямо	по-голямо	A	A	-	11	mod	-	-
 11	затягане	затягане	N	N	-	8	prepcomp	-	-
 12	на	на	R	R	-	11	mod	-	-
 13	колана	колана	N	N	-	12	prepcomp	-	-
 14	и	и	C	C	-	13	conj	-	-
 15	свиване	свиване	N	N	-	13	conjarg	-	-
-16	в	в	R	R	-	6	adjunct	-	-
+16	в	в	R	R	-	13	mod	-	-
 17	потреблението	потреблението	N	N	-	16	prepcomp	-	-
 18	.	.	Punct	Punct	-	6	punct	-	-
 
@@ -4499,7 +4499,7 @@
 3	и	и	C	C	-	4	conj	-	-
 4	производители	производители	N	N	-	1	conjarg	-	-
 5	,	,	Punct	Punct	-	6	punct	-	-
-6	и	и	C	C	-	7	conj	-	-
+6	и	и	C	C	-	4	conj	-	-
 7	търговци	търговци	N	N	-	4	conjarg	-	-
 8	,	,	Punct	Punct	-	9	punct	-	-
 9	а	а	C	C	-	1	conj	-	-
@@ -4525,7 +4525,7 @@
 8	на	на	R	R	-	7	mod	-	-
 9	цените	цените	N	N	-	8	prepcomp	-	-
 10	бе	бе	V	V	-	5	xmod	-	-
-11	сравнително	сравнително	D	D	-	10	pragadjunct	-	-
+11	сравнително	сравнително	D	D	-	10	comp	-	-
 12	слаб	слаб	A	A	-	10	comp	-	-
 13	,	,	Punct	Punct	-	14	punct	-	-
 14	защото	защото	C	C	-	10	xadjunct	-	-
@@ -4572,8 +4572,8 @@
 12	еврото	еврото	N	N	-	11	prepcomp	-	-
 13	.	.	Punct	Punct	-	3	punct	-	-
 
-1	И	И	C	C	-	2	conj	-	-
-2	ако	ако	C	C	-	24	xadjunct	-	-
+1	И	И	C	C	-	10	conj	-	-
+2	ако	ако	C	C	-	10	xadjunct	-	-
 3	в	в	R	R	-	10	adjunct	-	-
 4	началото	началото	N	N	-	3	prepcomp	-	-
 5	на	на	R	R	-	4	mod	-	-
@@ -4581,13 +4581,13 @@
 7	един	един	M	M	-	8	mod	-	-
 8	долар	долар	N	N	-	10	subj	-	-
 9	се	се	P	P	-	10	comp	-	-
-10	разменяше	разменяше	V	V	-	2	marked	-	-
+10	разменяше	разменяше	V	V	-	0	ROOT	-	-
 11	малко	малко	M	M	-	10	adjunct	-	-
 12	под	под	R	R	-	11	mod	-	-
 13	<num>	<num>	M	M	-	14	mod	-	-
 14	лева	лева	N	N	-	12	prepcomp	-	-
-15	,	,	Punct	Punct	-	2	punct	-	-
-16	в	в	R	R	-	24	adjunct	-	-
+15	,	,	Punct	Punct	-	11	punct	-	-
+16	в	в	R	R	-	10	adjunct	-	-
 17	края	края	N	N	-	16	prepcomp	-	-
 18	на	на	R	R	-	17	mod	-	-
 19	<num>	<num>	M	M	-	20	mod	-	-
@@ -4595,7 +4595,7 @@
 21	той	той	P	P	-	24	subj	-	-
 22	вече	вече	D	D	-	24	adjunct	-	-
 23	се	се	P	P	-	24	comp	-	-
-24	движи	движи	V	V	-	0	ROOT	-	-
+24	движи	движи	V	V	-	17	xmod	-	-
 25	около	около	R	R	-	24	indobj	-	-
 26	<num>	<num>	M	M	-	27	mod	-	-
 27	лв.	лв.	N	N	-	25	prepcomp	-	-
@@ -4609,7 +4609,7 @@
 35	до	до	R	R	-	25	prepcomp	-	-
 36	2,33-2,35	2,33-2,35	M	M	-	37	mod	-	-
 37	лв.	лв.	N	N	-	35	prepcomp	-	-
-38	.	.	Punct	Punct	-	24	punct	-	-
+38	.	.	Punct	Punct	-	10	punct	-	-
 
 1	Повечето	Повечето	M	M	-	2	mod	-	-
 2	суровини	суровини	N	N	-	20	subj	-	-
@@ -4659,7 +4659,7 @@
 4	цената	цената	N	N	-	6	subj	-	-
 5	му	му	P	P	-	4	clitic	-	-
 6	достигна	достигна	V	V	-	0	ROOT	-	-
-7	до	до	R	R	-	6	mod	-	-
+7	до	до	R	R	-	6	adjunct	-	-
 8	33-35	33-35	M	M	-	9	mod	-	-
 9	долара	долара	N	N	-	7	prepcomp	-	-
 10	за	за	R	R	-	9	mod	-	-
@@ -4671,13 +4671,13 @@
 16	,	,	Punct	Punct	-	18	punct	-	-
 17	което	което	P	P	-	18	obj	-	-
 18	рефлектира	рефлектира	V	V	-	11	xmod	-	-
-19	и	и	C	C	-	10	conj	-	-
+19	и	и	C	C	-	20	conj	-	-
 20	върху	върху	R	R	-	10	conjarg	-	-
 21	цените	цените	N	N	-	20	prepcomp	-	-
 22	на	на	R	R	-	21	mod	-	-
 23	течните	течните	A	A	-	24	mod	-	-
 24	горива	горива	N	N	-	22	prepcomp	-	-
-25	у	у	R	R	-	24	mod	-	-
+25	у	у	R	R	-	21	mod	-	-
 26	нас	нас	P	P	-	25	prepcomp	-	-
 27	.	.	Punct	Punct	-	6	punct	-	-
 
@@ -4743,7 +4743,7 @@
 13	вътрешния	вътрешния	A	A	-	14	mod	-	-
 14	пазар	пазар	N	N	-	12	prepcomp	-	-
 15	изненади	изненади	N	N	-	14	mod	-	-
-16	нямаше	нямаше	V	V	-	8	obj	-	-
+16	нямаше	нямаше	V	V	-	3	conjarg	-	-
 17	.	.	Punct	Punct	-	3	punct	-	-
 
 1	За	За	R	R	-	5	indobj	-	-
@@ -4779,7 +4779,7 @@
 13	на	на	R	R	-	12	mod	-	-
 14	хляба	хляба	N	N	-	13	prepcomp	-	-
 15	цяла	цяла	A	A	-	16	mod	-	-
-16	година	година	N	N	-	17	subj	-	-
+16	година	година	N	N	-	14	mod	-	-
 17	вървяха	вървяха	V	V	-	7	conjarg	-	-
 18	леко	леко	D	D	-	19	mod	-	-
 19	нагоре	нагоре	D	D	-	17	comp	-	-
@@ -4845,13 +4845,13 @@
 11	през	през	R	R	-	8	adjunct	-	-
 12	януари	януари	N	N	-	11	prepcomp	-	-
 13	,	,	Punct	Punct	-	14	punct	-	-
-14	но	но	C	C	-	11	conj	-	-
-15	на	на	R	R	-	11	conjarg	-	-
+14	но	но	C	C	-	8	conj	-	-
+15	на	на	R	R	-	20	adjunct	-	-
 16	това	това	P	P	-	15	prepcomp	-	-
 17	вече	вече	D	D	-	20	adjunct	-	-
 18	никой	никой	P	P	-	20	subj	-	-
 19	не	не	T	T	-	20	mod	-	-
-20	вярва	вярва	V	V	-	16	xmod	-	-
+20	вярва	вярва	V	V	-	8	comp	-	-
 21	.	.	Punct	Punct	-	3	punct	-	-
 
 1	Млечните	Млечните	A	A	-	2	mod	-	-
@@ -4893,7 +4893,7 @@
 
 1	Поскъпването	Поскъпването	N	N	-	4	subj	-	-
 2	при	при	R	R	-	1	mod	-	-
-3	свинското	свинското	A	A	-	4	mod	-	-
+3	свинското	свинското	A	A	-	2	prepcomp	-	-
 4	стигна	стигна	V	V	-	0	ROOT	-	-
 5	близо	близо	D	D	-	7	mod	-	-
 6	<num>	<num>	M	M	-	7	mod	-	-
@@ -4914,11 +4914,11 @@
 21	началото	началото	N	N	-	20	prepcomp	-	-
 22	на	на	R	R	-	21	mod	-	-
 23	годината	годината	N	N	-	22	prepcomp	-	-
-24	до	до	R	R	-	4	indobj	-	-
+24	до	до	R	R	-	15	mod	-	-
 25	над	над	R	R	-	24	prepcomp	-	-
 26	<num>	<num>	M	M	-	27	mod	-	-
 27	лв.	лв.	N	N	-	25	prepcomp	-	-
-28	сега	сега	D	D	-	4	mod	-	-
+28	сега	сега	D	D	-	27	mod	-	-
 29	.	.	Punct	Punct	-	4	punct	-	-
 
 1	През	През	R	R	-	7	adjunct	-	-
@@ -4937,17 +4937,17 @@
 14	тока	тока	N	N	-	13	prepcomp	-	-
 15	,	,	Punct	Punct	-	16	punct	-	-
 16	транспорта	транспорта	N	N	-	14	mod	-	-
-17	,	,	Punct	Punct	-	16	punct	-	-
-18	таксите	таксите	N	N	-	16	conjarg	-	-
+17	,	,	Punct	Punct	-	14	punct	-	-
+18	таксите	таксите	N	N	-	14	mod	-	-
 19	за	за	R	R	-	18	mod	-	-
 20	образование	образование	N	N	-	19	prepcomp	-	-
-21	,	,	Punct	Punct	-	16	punct	-	-
-22	лекарствата	лекарствата	N	N	-	14	mod	-	-
+21	,	,	Punct	Punct	-	18	punct	-	-
+22	лекарствата	лекарствата	N	N	-	18	mod	-	-
 23	,	,	Punct	Punct	-	22	punct	-	-
 24	телефонните	телефонните	A	A	-	25	mod	-	-
 25	услуги	услуги	N	N	-	22	conjarg	-	-
 26	,	,	Punct	Punct	-	22	punct	-	-
-27	учебниците	учебниците	N	N	-	14	mod	-	-
+27	учебниците	учебниците	N	N	-	22	conjarg	-	-
 28	.	.	Punct	Punct	-	7	punct	-	-
 
 1	И	И	C	C	-	3	conj	-	-
@@ -4979,17 +4979,17 @@
 5	като	като	R	R	-	4	adjunct	-	-
 6	опитни	опитни	A	A	-	7	mod	-	-
 7	мишки	мишки	N	N	-	5	prepcomp	-	-
-8	пациенти	пациенти	N	N	-	7	mod	-	-
+8	пациенти	пациенти	N	N	-	4	obj	-	-
 9	от	от	R	R	-	8	mod	-	-
 10	Третия	Третия	M	M	-	11	mod	-	-
 11	свят	свят	N	N	-	9	prepcomp	-	-
-12	и	и	C	C	-	7	conj	-	-
+12	и	и	C	C	-	11	conj	-	-
 13	Източна	Източна	A	A	-	14	mod	-	-
-14	Европа	Европа	N	N	-	5	prepcomp	-	-
+14	Европа	Европа	N	N	-	11	mod	-	-
 15	,	,	Punct	Punct	-	17	punct	-	-
-16	включително	включително	D	D	-	17	pragadjunct	-	-
-17	и	и	C	C	-	5	conj	-	-
-18	в	в	R	R	-	5	conjarg	-	-
+16	включително	включително	D	D	-	17	mod	-	-
+17	и	и	C	C	-	9	conj	-	-
+18	в	в	R	R	-	9	conjarg	-	-
 19	България	България	N	N	-	18	prepcomp	-	-
 20	.	.	Punct	Punct	-	4	punct	-	-
 
@@ -4997,7 +4997,7 @@
 2	последните	последните	A	A	-	4	mod	-	-
 3	десетина	десетина	M	M	-	4	mod	-	-
 4	години	години	N	N	-	1	prepcomp	-	-
-5	изпробването	изпробването	N	N	-	4	mod	-	-
+5	изпробването	изпробването	N	N	-	14	subj	-	-
 6	на	на	R	R	-	5	mod	-	-
 7	лекарства	лекарства	N	N	-	6	prepcomp	-	-
 8	върху	върху	R	R	-	7	mod	-	-
@@ -5062,7 +5062,7 @@
 4	Вайтвари	Вайтвари	H	H	-	3	mod	-	-
 5	например	например	D	D	-	6	pragadjunct	-	-
 6	получавал	получавал	V	V	-	0	ROOT	-	-
-7	по	по	R	R	-	6	indobj	-	-
+7	по	по	R	R	-	6	adjunct	-	-
 8	$	$	N	N	-	7	prepcomp	-	-
 9	1000-2000	1000-2000	M	M	-	8	mod	-	-
 10	за	за	R	R	-	8	mod	-	-
@@ -5079,7 +5079,7 @@
 2	е	е	V	V	-	0	ROOT	-	-
 3	институцията	институцията	N	N	-	2	comp	-	-
 4	,	,	Punct	Punct	-	7	punct	-	-
-5	от	от	R	R	-	7	indobj	-	-
+5	от	от	R	R	-	7	adjunct	-	-
 6	която	която	P	P	-	5	prepcomp	-	-
 7	зависи	зависи	V	V	-	3	xmod	-	-
 8	най-малко	най-малко	M	M	-	10	mod	-	-
@@ -5101,7 +5101,7 @@
 12	НС	НС	N	N	-	13	subj	-	-
 13	е	е	V	V	-	11	marked	-	-
 14	фактор	фактор	N	N	-	13	comp	-	-
-15	у	у	R	R	-	14	mod	-	-
+15	у	у	R	R	-	13	adjunct	-	-
 16	нас	нас	P	P	-	15	prepcomp	-	-
 17	.	.	Punct	Punct	-	9	punct	-	-
 
@@ -5124,7 +5124,7 @@
 6	че	че	C	C	-	4	xcomp	-	-
 7	най-влиятелни	най-влиятелни	A	A	-	8	comp	-	-
 8	са	са	V	V	-	6	marked	-	-
-9	тези	тези	P	P	-	8	comp	-	-
+9	тези	тези	P	P	-	8	subj	-	-
 10	,	,	Punct	Punct	-	12	punct	-	-
 11	които	които	P	P	-	12	subj	-	-
 12	дават	дават	V	V	-	9	xmod	-	-
@@ -5140,7 +5140,7 @@
 7	които	които	P	P	-	8	subj	-	-
 8	твърдят	твърдят	V	V	-	5	xmod	-	-
 9	,	,	Punct	Punct	-	10	punct	-	-
-10	че	че	C	C	-	5	xmod	-	-
+10	че	че	C	C	-	8	xcomp	-	-
 11	производителите	производителите	N	N	-	12	subj	-	-
 12	са	са	V	V	-	10	marked	-	-
 13	обществен	обществен	A	A	-	14	mod	-	-
@@ -5187,7 +5187,7 @@
 6	,	,	Punct	Punct	-	9	punct	-	-
 7	което	което	P	P	-	9	subj	-	-
 8	трябва	трябва	V	V	-	9	subj	-	-
-9	да	да	T	T	-	13	xcomp	-	-
+9	да	да	T	T	-	13	xsubj	-	-
 10	притежават	притежават	V	V	-	9	comp	-	-
 11	депутатите	депутатите	N	N	-	9	obj	-	-
 12	,	,	Punct	Punct	-	9	punct	-	-
@@ -5298,7 +5298,7 @@
 8	Варна	Варна	N	N	-	7	prepcomp	-	-
 9	,	,	Punct	Punct	-	12	punct	-	-
 10	преди	преди	D	D	-	12	adjunct	-	-
-11	това	това	P	P	-	10	mod	-	-
+11	това	това	P	P	-	12	subj	-	-
 12	пътувал	пътувал	V	V	-	8	xmod	-	-
 13	до	до	R	R	-	12	indobj	-	-
 14	Австрия	Австрия	N	N	-	13	prepcomp	-	-
@@ -5332,7 +5332,7 @@
 7	в	в	R	R	-	6	mod	-	-
 8	млекопреработвателни	млекопреработвателни	A	A	-	9	mod	-	-
 9	предприятия	предприятия	N	N	-	7	prepcomp	-	-
-10	в	в	R	R	-	6	mod	-	-
+10	в	в	R	R	-	9	mod	-	-
 11	Русе	Русе	N	N	-	10	prepcomp	-	-
 12	и	и	C	C	-	11	conj	-	-
 13	Омуртаг	Омуртаг	N	N	-	11	conjarg	-	-
@@ -5356,14 +5356,14 @@
 2	се	се	P	P	-	1	comp	-	-
 3	,	,	Punct	Punct	-	4	punct	-	-
 4	че	че	C	C	-	1	xsubj	-	-
-5	причина	причина	N	N	-	8	subj	-	-
+5	причина	причина	N	N	-	4	marked	-	-
 6	за	за	R	R	-	5	mod	-	-
 7	убийството	убийството	N	N	-	6	prepcomp	-	-
 8	може	може	V	V	-	4	marked	-	-
 9	да	да	T	T	-	8	xcomp	-	-
 10	са	са	V	V	-	9	comp	-	-
 11	засегнати	засегнати	V	V	-	9	comp	-	-
-12	бизнесинтереси	бизнесинтереси	N	N	-	9	obj	-	-
+12	бизнесинтереси	бизнесинтереси	N	N	-	9	subj	-	-
 13	на	на	R	R	-	12	mod	-	-
 14	конкуренти	конкуренти	N	N	-	13	prepcomp	-	-
 15	.	.	Punct	Punct	-	1	punct	-	-
@@ -5401,7 +5401,7 @@
 1	Съпругата	Съпругата	N	N	-	3	subj	-	-
 2	му	му	P	P	-	1	clitic	-	-
 3	работи	работи	V	V	-	0	ROOT	-	-
-4	в	в	R	R	-	3	indobj	-	-
+4	в	в	R	R	-	3	adjunct	-	-
 5	мандрата	мандрата	N	N	-	4	prepcomp	-	-
 6	в	в	R	R	-	5	mod	-	-
 7	Елена	Елена	N	N	-	6	prepcomp	-	-
@@ -5420,9 +5420,9 @@
 4	къща	къща	N	N	-	2	obj	-	-
 5	и	и	C	C	-	4	conj	-	-
 6	чейнчбюро	чейнчбюро	N	N	-	4	conjarg	-	-
-7	в	в	R	R	-	4	mod	-	-
+7	в	в	R	R	-	6	mod	-	-
 8	София	София	N	N	-	7	prepcomp	-	-
-9	вчера	вчера	D	D	-	4	mod	-	-
+9	вчера	вчера	D	D	-	6	mod	-	-
 10	,	,	Punct	Punct	-	2	punct	-	-
 11	съобщи	съобщи	V	V	-	0	ROOT	-	-
 12	МВР	МВР	N	N	-	11	subj	-	-
@@ -5440,7 +5440,7 @@
 10	"	"	Punct	Punct	-	12	punct	-	-
 11	Бели	Бели	A	A	-	12	mod	-	-
 12	брези	брези	N	N	-	9	mod	-	-
-13	"	"	Punct	Punct	-	12	punct	-	-
+13	"	"	Punct	Punct	-	14	punct	-	-
 14	към	към	R	R	-	2	adjunct	-	-
 15	<num>	<num>	M	M	-	16	mod	-	-
 16	ч.	ч.	N	N	-	14	prepcomp	-	-
@@ -5489,7 +5489,7 @@
 3	г.	г.	N	N	-	1	prepcomp	-	-
 4	той	той	P	P	-	5	subj	-	-
 5	дал	дал	V	V	-	0	ROOT	-	-
-6	под	под	R	R	-	5	adjunct	-	-
+6	под	под	R	R	-	5	indobj	-	-
 7	наем	наем	N	N	-	6	prepcomp	-	-
 8	част	част	N	N	-	5	obj	-	-
 9	от	от	R	R	-	8	mod	-	-
@@ -5551,7 +5551,7 @@
 4	на	на	R	R	-	3	mod	-	-
 5	НСБОП	НСБОП	N	N	-	4	prepcomp	-	-
 6	,	,	Punct	Punct	-	7	punct	-	-
-7	че	че	C	C	-	3	xmod	-	-
+7	че	че	C	C	-	2	xcomp	-	-
 8	незаконно	незаконно	D	D	-	9	adjunct	-	-
 9	са	са	V	V	-	7	marked	-	-
 10	били	били	V	V	-	9	comp	-	-
@@ -5587,10 +5587,10 @@
 7	Кърджалийският	Кърджалийският	A	A	-	9	mod	-	-
 8	окръжен	окръжен	A	A	-	9	mod	-	-
 9	съд	съд	N	N	-	10	subj	-	-
-10	върнал	върнал	V	V	-	6	marked	-	-
+10	върнал	върнал	V	V	-	13	mod	-	-
 11	за	за	R	R	-	10	indobj	-	-
 12	доразследване	доразследване	N	N	-	11	prepcomp	-	-
-13	дело	дело	N	N	-	12	mod	-	-
+13	дело	дело	N	N	-	4	mod	-	-
 14	срещу	срещу	R	R	-	13	mod	-	-
 15	Роко	Роко	N	N	-	14	prepcomp	-	-
 16	.	.	Punct	Punct	-	2	punct	-	-
@@ -5644,9 +5644,9 @@
 10	подпиране	подпиране	N	N	-	9	prepcomp	-	-
 11	на	на	R	R	-	10	mod	-	-
 12	банките	банките	N	N	-	11	prepcomp	-	-
-13	и	и	C	C	-	12	conj	-	-
-14	редене	редене	N	N	-	12	conjarg	-	-
-15	на	на	R	R	-	12	mod	-	-
+13	и	и	C	C	-	10	conj	-	-
+14	редене	редене	N	N	-	10	conjarg	-	-
+15	на	на	R	R	-	14	mod	-	-
 16	собствен	собствен	A	A	-	17	mod	-	-
 17	бизнес	бизнес	N	N	-	15	prepcomp	-	-
 18	под	под	R	R	-	8	mod	-	-
@@ -5703,7 +5703,7 @@
 1	При	При	R	R	-	7	adjunct	-	-
 2	това	това	P	P	-	1	prepcomp	-	-
 3	оттук	оттук	P	P	-	7	adjunct	-	-
-4	нататък	нататък	P	P	-	7	adjunct	-	-
+4	нататък	нататък	P	P	-	6	mod	-	-
 5	народните	народните	A	A	-	6	mod	-	-
 6	представители	представители	N	N	-	7	subj	-	-
 7	ще	ще	T	T	-	0	ROOT	-	-
@@ -5740,7 +5740,7 @@
 14	мислене	мислене	N	N	-	11	mod	-	-
 15	,	,	Punct	Punct	-	11	punct	-	-
 16	мижитурско	мижитурско	A	A	-	17	mod	-	-
-17	поведение	поведение	N	N	-	11	mod	-	-
+17	поведение	поведение	N	N	-	11	xmod	-	-
 18	и	и	C	C	-	17	conj	-	-
 19	бързина	бързина	N	N	-	17	conjarg	-	-
 20	при	при	R	R	-	17	mod	-	-
@@ -5751,12 +5751,12 @@
 25	.	.	Punct	Punct	-	6	punct	-	-
 
 1	Няма	Няма	V	V	-	0	ROOT	-	-
-2	какво	какво	P	P	-	3	subj	-	-
+2	какво	какво	P	P	-	3	comp	-	-
 3	да	да	T	T	-	1	xcomp	-	-
 4	се	се	P	P	-	3	comp	-	-
 5	чудим	чудим	V	V	-	3	comp	-	-
 6	тогава	тогава	P	P	-	3	adjunct	-	-
-7	защо	защо	P	P	-	3	adjunct	-	-
+7	защо	защо	P	P	-	3	comp	-	-
 8	сред	сред	R	R	-	3	adjunct	-	-
 9	имената	имената	N	N	-	8	prepcomp	-	-
 10	на	на	R	R	-	9	mod	-	-
@@ -5768,22 +5768,22 @@
 16	търкат	търкат	V	V	-	11	xmod	-	-
 17	банките	банките	N	N	-	16	obj	-	-
 18	,	,	Punct	Punct	-	16	punct	-	-
-19	има	има	V	V	-	16	conjarg	-	-
+19	има	има	V	V	-	11	xmod	-	-
 20	такива	такива	P	P	-	26	subj	-	-
 21	,	,	Punct	Punct	-	26	punct	-	-
 22	които	които	P	P	-	26	subj	-	-
 23	нито	нито	T	T	-	24	mod	-	-
 24	веднъж	веднъж	D	D	-	26	adjunct	-	-
 25	не	не	T	T	-	26	mod	-	-
-26	са	са	V	V	-	16	conjarg	-	-
+26	са	са	V	V	-	9	xmod	-	-
 27	влезли	влезли	V	V	-	26	comp	-	-
-28	в	в	R	R	-	26	indobj	-	-
+28	в	в	R	R	-	26	adjunct	-	-
 29	общественото	общественото	A	A	-	30	mod	-	-
 30	полезрение	полезрение	N	N	-	28	prepcomp	-	-
 31	.	.	Punct	Punct	-	1	punct	-	-
 
-1	Някой	Някой	P	P	-	31	subj	-	-
-2	да	да	T	T	-	1	xmod	-	-
+1	Някой	Някой	P	P	-	2	subj	-	-
+2	да	да	T	T	-	0	ROOT	-	-
 3	свързва	свързва	V	V	-	2	comp	-	-
 4	с	с	R	R	-	2	indobj	-	-
 5	гигантско	гигантско	A	A	-	6	mod	-	-
@@ -5793,7 +5793,7 @@
 9	Борислав	Борислав	N	N	-	6	mod	-	-
 10	Джолев	Джолев	H	H	-	9	mod	-	-
 11	,	,	Punct	Punct	-	12	punct	-	-
-12	водач	водач	N	N	-	9	mod	-	-
+12	водач	водач	N	N	-	10	conjarg	-	-
 13	на	на	R	R	-	12	mod	-	-
 14	листа	листа	N	N	-	13	prepcomp	-	-
 15	,	,	Punct	Punct	-	16	punct	-	-
@@ -5812,15 +5812,15 @@
 28	,	,	Punct	Punct	-	31	punct	-	-
 29	в	в	R	R	-	31	indobj	-	-
 30	която	която	P	P	-	29	prepcomp	-	-
-31	вписа	вписа	V	V	-	0	ROOT	-	-
+31	вписа	вписа	V	V	-	27	xmod	-	-
 32	"	"	Punct	Punct	-	33	punct	-	-
-33	доходи	доходи	N	N	-	31	obj	-	-
+33	доходи	доходи	N	N	-	24	prepcomp	-	-
 34	от	от	R	R	-	33	mod	-	-
 35	майчинство	майчинство	N	N	-	34	prepcomp	-	-
 36	"	"	Punct	Punct	-	33	punct	-	-
 37	)	)	Punct	Punct	-	33	punct	-	-
-38	,	,	Punct	Punct	-	33	punct	-	-
-39	Христо	Христо	N	N	-	33	mod	-	-
+38	,	,	Punct	Punct	-	22	punct	-	-
+39	Христо	Христо	N	N	-	10	conjarg	-	-
 40	Наплатаров	Наплатаров	H	H	-	39	mod	-	-
 41	,	,	Punct	Punct	-	39	punct	-	-
 42	Мария	Мария	N	N	-	39	mod	-	-
@@ -5830,13 +5830,13 @@
 46	,	,	Punct	Punct	-	42	punct	-	-
 47	Тома	Тома	N	N	-	39	mod	-	-
 48	Десподов	Десподов	H	H	-	47	mod	-	-
-49	,	,	Punct	Punct	-	39	punct	-	-
-50	Румен	Румен	N	N	-	39	mod	-	-
+49	,	,	Punct	Punct	-	10	punct	-	-
+50	Румен	Румен	N	N	-	10	conjarg	-	-
 51	Такоров	Такоров	H	H	-	50	mod	-	-
-52	,	,	Punct	Punct	-	39	punct	-	-
-53	Камен	Камен	N	N	-	39	mod	-	-
+52	,	,	Punct	Punct	-	10	punct	-	-
+53	Камен	Камен	N	N	-	10	conjarg	-	-
 54	Костадинов	Костадинов	H	H	-	53	mod	-	-
-55	?	?	Punct	Punct	-	39	punct	-	-
+55	?	?	Punct	Punct	-	10	punct	-	-
 
 1	Абсолютно	Абсолютно	D	D	-	2	mod	-	-
 2	безмълвни	безмълвни	A	A	-	6	comp	-	-
@@ -5852,9 +5852,9 @@
 12	Иван	Иван	N	N	-	9	mod	-	-
 13	Колев	Колев	H	H	-	12	mod	-	-
 14	(	(	Punct	Punct	-	15	punct	-	-
-15	независим	независим	A	A	-	12	mod	-	-
+15	независим	независим	A	A	-	18	mod	-	-
 16	)	)	Punct	Punct	-	15	punct	-	-
-17	,	,	Punct	Punct	-	9	punct	-	-
+17	,	,	Punct	Punct	-	15	punct	-	-
 18	Раденко_Пресолски	Раденко_Пресолски	N	N	-	9	conjarg	-	-
 19	(	(	Punct	Punct	-	20	punct	-	-
 20	СДС	СДС	N	N	-	9	conjarg	-	-
@@ -5896,13 +5896,13 @@
 28	шеф	шеф	N	N	-	23	mod	-	-
 29	Иван	Иван	N	N	-	28	mod	-	-
 30	Шиляшки	Шиляшки	H	H	-	29	mod	-	-
-31	,	,	Punct	Punct	-	22	punct	-	-
-32	зам.	зам.	N	N	-	22	mod	-	-
+31	,	,	Punct	Punct	-	32	punct	-	-
+32	зам.	зам.	N	N	-	29	mod	-	-
 33	военният	военният	A	A	-	34	mod	-	-
 34	министър	министър	N	N	-	32	mod	-	-
 35	Пламен_Радонов	Пламен_Радонов	N	N	-	34	mod	-	-
-36	,	,	Punct	Punct	-	32	punct	-	-
-37	Теодосий_Симеонов	Теодосий_Симеонов	N	N	-	32	mod	-	-
+36	,	,	Punct	Punct	-	29	punct	-	-
+37	Теодосий_Симеонов	Теодосий_Симеонов	N	N	-	29	mod	-	-
 38	.	.	Punct	Punct	-	10	punct	-	-
 
 1	Неколцина	Неколцина	P	P	-	10	subj	-	-
@@ -5968,8 +5968,8 @@
 25	мирясат	мирясат	V	V	-	24	comp	-	-
 26	,	,	Punct	Punct	-	27	punct	-	-
 27	мамка	мамка	N	N	-	24	obj	-	-
-28	им	им	P	P	-	24	comp	-	-
-29	"	"	Punct	Punct	-	3	punct	-	-
+28	им	им	P	P	-	27	mod	-	-
+29	"	"	Punct	Punct	-	27	punct	-	-
 30	.	.	Punct	Punct	-	3	punct	-	-
 
 1	С	С	R	R	-	4	adjunct	-	-
@@ -5996,7 +5996,7 @@
 14	,	,	Punct	Punct	-	17	punct	-	-
 15	когато	когато	P	P	-	17	adjunct	-	-
 16	се	се	P	P	-	17	comp	-	-
-17	гласуваха	гласуваха	V	V	-	13	conjarg	-	-
+17	гласуваха	гласуваха	V	V	-	8	xmod	-	-
 18	съответни	съответни	A	A	-	19	mod	-	-
 19	текстове	текстове	N	N	-	17	subj	-	-
 20	от	от	R	R	-	19	mod	-	-
@@ -6009,13 +6009,13 @@
 
 1	Знакът	Знакът	N	N	-	11	subj	-	-
 2	,	,	Punct	Punct	-	3	punct	-	-
-3	насочен	насочен	V	V	-	8	mod	-	-
-4	към	към	R	R	-	3	mod	-	-
+3	насочен	насочен	V	V	-	1	mod	-	-
+4	към	към	R	R	-	3	adjunct	-	-
 5	неразбиращите	неразбиращите	V	V	-	4	prepcomp	-	-
 6	материята	материята	N	N	-	4	prepcomp	-	-
 7	сини	сини	A	A	-	8	mod	-	-
-8	депутати	депутати	N	N	-	1	mod	-	-
-9	,	,	Punct	Punct	-	1	punct	-	-
+8	депутати	депутати	N	N	-	4	prepcomp	-	-
+9	,	,	Punct	Punct	-	3	punct	-	-
 10	се	се	P	P	-	11	comp	-	-
 11	наказва	наказва	V	V	-	0	ROOT	-	-
 12	сурово	сурово	D	D	-	11	adjunct	-	-
@@ -6053,11 +6053,11 @@
 26	си	си	P	P	-	27	comp	-	-
 27	измъкна	измъкна	V	V	-	25	marked	-	-
 28	и	и	C	C	-	29	conj	-	-
-29	ризата	ризата	N	N	-	27	obj	-	-
+29	ризата	ризата	N	N	-	27	subj	-	-
 30	.	.	Punct	Punct	-	5	punct	-	-
 
 1	Синият	Синият	A	A	-	2	mod	-	-
-2	депутат	депутат	N	N	-	32	subj	-	-
+2	депутат	депутат	N	N	-	31	mod	-	-
 3	д-р	д-р	N	N	-	2	mod	-	-
 4	Панайот	Панайот	N	N	-	3	mod	-	-
 5	Гърдев	Гърдев	H	H	-	4	mod	-	-
@@ -6183,8 +6183,8 @@
 7	получи	получи	V	V	-	0	ROOT	-	-
 8	между	между	R	R	-	7	indobj	-	-
 9	Жорж_Ганчев	Жорж_Ганчев	N	N	-	8	prepcomp	-	-
-10	и	и	C	C	-	9	conj	-	-
-11	колегата	колегата	N	N	-	9	conjarg	-	-
+10	и	и	C	C	-	7	conj	-	-
+11	колегата	колегата	N	N	-	7	obj	-	-
 12	му	му	P	P	-	11	clitic	-	-
 13	Христо_Петров	Христо_Петров	N	N	-	11	mod	-	-
 14	.	.	Punct	Punct	-	7	punct	-	-
@@ -6277,7 +6277,7 @@
 16	зад	зад	R	R	-	12	adjunct	-	-
 17	конституцията	конституцията	N	N	-	16	prepcomp	-	-
 18	,	,	Punct	Punct	-	19	punct	-	-
-19	я	я	C	C	-	16	conj	-	-
+19	я	я	C	C	-	16	conjarg	-	-
 20	зад	зад	R	R	-	16	conjarg	-	-
 21	раздухвани	раздухвани	V	V	-	22	mod	-	-
 22	страхове	страхове	N	N	-	20	prepcomp	-	-
@@ -6309,14 +6309,14 @@
 15	партията	партията	N	N	-	14	prepcomp	-	-
 16	.	.	Punct	Punct	-	4	punct	-	-
 
-1	И	И	C	C	-	2	conj	-	-
-2	понеже	понеже	C	C	-	0	ROOT	-	-
+1	И	И	C	C	-	4	conj	-	-
+2	понеже	понеже	C	C	-	4	xadjunct	-	-
 3	депутатите	депутатите	N	N	-	4	subj	-	-
-4	са	са	V	V	-	2	marked	-	-
+4	са	са	V	V	-	0	ROOT	-	-
 5	избраници	избраници	N	N	-	4	comp	-	-
 6	не	не	T	T	-	7	mod	-	-
 7	съвсем	съвсем	D	D	-	8	prepcomp	-	-
-8	на	на	R	R	-	4	indobj	-	-
+8	на	на	R	R	-	5	mod	-	-
 9	народа	народа	N	N	-	8	prepcomp	-	-
 10	,	,	Punct	Punct	-	11	punct	-	-
 11	а	а	C	C	-	8	conj	-	-
