@@ -39,13 +39,14 @@ command :count do |c|
     if args.size == 0
       say "Missing corpus directory"
     elsif File.directory?(args[0])
+      grep_args = extract_grep_args(options)
       files = Dir.glob("#{args[0]}/*/*.conll") 
       files += Dir.glob("#{args[0]}/*/*/*.conll") if options.recursive
       files.each do |file|
         corpus = Conll::Corpus.parse(file)
         ts = corpus.sentences.size
         sc = 0
-        corpus.grep(options) do |sentence|
+        corpus.grep(grep_args) do |sentence|
           sc += 1
           puts "#{sentence}\n\n" if options.print
         end
@@ -53,6 +54,22 @@ command :count do |c|
       end
     else
       say "Invalid corpus directory"
+    end
+  end
+end
+
+command :survey do |c|
+  c.when_called do |args, options|
+    categories = {
+      'quotes'      => { :form => '"' },
+      'parenthesis' => { :form => '(' },
+      'colon'       => { :form => ':' },
+      'hypen'       => { :form => '-' }
+    }
+    Dir.glob("#{args[0]}/test/*.conll").each do |file|
+      gold   = Conll::Corpus.parse(file)
+      system = Conll::Corpus.parse(file.sub(/test\/.+$/, 'system/out.conll'))
+      measure(file, system, gold, categories)
     end
   end
 end
@@ -284,21 +301,34 @@ def make_directory(dir)
   end
 end
 
-def measure(what, corpus, gold)
+def measure(what, corpus, gold, categories)
   puts
   puts "[#{what}]"
-  puts sprintf("  %-15s %9s %6s %9s %6s %9s %6s", "",
-    "tokens",  "in %",
-    "head OK", "in %",
-    "both OK", "in %")
-  metrics = $annotator_class.new(corpus).evaluate(gold)
-  total_tokens = metrics[:total][:tokens]
+  puts sprintf("  %-15s %9s %8s %9s %8s %9s %8s %9s %8s", "",
+    "sentences", "ratio",
+    "tokens",    "ratio",
+    "head OK",   "ratio",
+    "both OK",   "ratio")
+  metrics = corpus.evaluate(gold, categories)
   metrics.each do |category, results|
-    puts sprintf("  %-15s %9d %6.2f %9d %6.2f %9d %6.2f", category,
-      results[:tokens],       results[:tokens].to_f / total_tokens.to_f * 100.0,
-      results[:head_correct], results[:head_correct].to_f / results[:tokens].to_f * 100.0,
-      results[:both_correct], results[:both_correct].to_f / results[:tokens].to_f * 100.0
+    puts sprintf("  %-15s %9d %.6f %9d %.6f %9d %.6f %9d %.6f", category,
+      results[:sentences],    results[:sentences].to_f / metrics[:total][:sentences].to_f,
+      results[:tokens],       results[:tokens].to_f / metrics[:total][:tokens].to_f,
+      results[:head_correct], results[:head_correct].to_f / results[:tokens].to_f,
+      results[:both_correct], results[:both_correct].to_f / results[:tokens].to_f
     )
   end
 
+end
+
+def extract_grep_args(options)
+  args = {}
+  GREP_OPTIONS.collect {
+    |opt| opt.split(/ /).first.gsub(/^--/, '').gsub(/-/, '_')
+  }.each { |name|
+    if (val = eval("options.#{name}"))
+      args[name.to_sym] = (name =~ /-re$/) ? Regexp.compile(val) : val
+    end
+  }
+  args
 end

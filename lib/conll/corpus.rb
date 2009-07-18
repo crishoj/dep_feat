@@ -4,7 +4,7 @@ module Conll
     attr_reader :sentences, :filename
 
     def self.parse(file)
-      corpus = Corpus.new(file) do |corpus|
+      Corpus.new(file) do |corpus|
         File.new(file).each("\n\n") do |part|
           lines = part.split(/\n/)
           corpus << Conll::Sentence.parse(lines)
@@ -25,25 +25,59 @@ module Conll
       self
     end
 
+    def evaluate(gold, categories = {})
+      @counts = {}
+      for sent in @sentences
+        gold_sent = gold.sentences[sent.index]
+        count_sentence(:total)
+        for tok in sent.tokens
+          eval_token(:total, tok, gold_sent.tokens[tok.index])
+        end
+      end
+      categories.each_pair do |category, options|
+        grep(options) do |sent|
+          count_sentence(category)
+          gold_sent = gold.sentences[sent.index]
+          for tok in sent.tokens
+            eval_token(category, tok, gold_sent.tokens[tok.index])
+          end
+        end
+      end
+      @counts
+    end
+
+    def head_correct? token, gold_token
+      token.head.id == gold_token.head.id
+    end
+
+    def label_correct? token, gold_token
+      token.deprel == gold_token.deprel
+    end
+
+    def count_sentence(category)
+      @counts[category] ||= Hash.new(0)
+      @counts[category][:sentences] += 1
+    end
+
+    def eval_token(category, token, gold_token)
+      @counts[category] ||= Hash.new(0)
+      @counts[category][:tokens] += 1
+      if head_correct? token, gold_token
+        @counts[category][:head_correct] += 1
+        @counts[category][:both_correct] += 1 if label_correct? token, gold_token
+      end
+    end
+
     def to_s
       @sentences.join("\n\n") + "\n"
     end
 
-    def grep(options)
-      form_re = Regexp.compile(options.form_re) if options.form_re
+    def grep(options = {})
       for sentence in @sentences
-        matched = false
-        for token in sentence.tokens
-          next if options.pos     and not token.pos == options.pos
-          next if options.cpos    and not token.cpos == options.cpos
-          next if options.form    and not token.form == options.form
-          next if options.feat    and not token.features.include? options.feat
-          next if options.deprel  and not token.deprel == options.deprel
-          next if options.form_re and not token.form =~ form_re
-          matched = true
+        sentence.grep(options) do |tok|
+          yield sentence
           break
         end
-        yield sentence if matched
       end
     end
     

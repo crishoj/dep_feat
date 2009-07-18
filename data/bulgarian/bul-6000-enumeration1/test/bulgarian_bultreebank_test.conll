@@ -150,7 +150,7 @@
 
 1	Възприемаше	_	V	Vpi	trans=t|mood=i|tense=m|pers=3|num=s	0	ROOT	0	ROOT
 2	само	_	D	Dd	_	3	mod	3	mod
-3	едно	_	P	Pf	def=i|ref=e|case=n|num=s|gen=n	1	obj	1	obj
+3	едно	_	P	Pf	def=i|ref=e|case=n|num=s|gen=n|def=i	1	obj	1	obj
 4	-	_	Punct	Punct	_	5	punct	5	punct
 5	себе_си	_	P	Pp	ref=r|form=f|case=a	3	mod	3	mod
 6	.	_	Punct	Punct	_	1	punct	1	punct
@@ -252,7 +252,7 @@
 1	Нищо	_	P	Pn	_	0	ROOT	0	ROOT
 2	,	_	Punct	Punct	_	3	punct	3	punct
 3	освен	_	R	R	_	1	mod	1	mod
-4	една	_	P	Pf	def=i|ref=e|case=n|num=s|gen=f	6	mod	6	mod
+4	една	_	P	Pf	def=i|ref=e|case=n|num=s|gen=f|def=i	6	mod	6	mod
 5	изтощителна	_	A	Af	gen=f|num=s|def=i	6	mod	6	mod
 6	работа	_	N	Nc	_	3	prepcomp	3	prepcomp
 7	на	_	R	R	_	6	mod	6	mod
@@ -260,7 +260,7 @@
 9	.	_	Punct	Punct	_	1	punct	1	punct
 
 1	И	_	C	Cp	_	3	conj	3	conj
-2	едно	_	P	Pf	def=i|ref=e|case=n|num=s|gen=n	3	mod	3	mod
+2	едно	_	P	Pf	def=i|ref=e|case=n|num=s|gen=n|def=i	3	mod	3	mod
 3	правило	_	N	Nc	gen=n|num=s|def=i	0	ROOT	0	ROOT
 4	:	_	Punct	Punct	_	7	punct	7	punct
 5	всяка	_	P	Pc	ref=e|case=n|num=s|gen=f	6	mod	6	mod
@@ -707,7 +707,7 @@
 
 1	-	_	Punct	Punct	_	2	punct	2	punct
 2	Имаме	_	V	Vpi	trans=t|mood=i|tense=r|pers=1|num=p	0	ROOT	0	ROOT
-3	няколко	_	P	Pf	def=i|ref=q	4	mod	4	mod
+3	няколко	_	P	Pf	def=i|ref=q|def=i	4	mod	4	mod
 4	варианта	_	N	Nc	gen=m|num=t	2	subj	2	subj
 5	за	_	R	R	_	4	mod	4	mod
 6	контрола	_	N	Nc	_	5	prepcomp	5	prepcomp
@@ -1763,7 +1763,7 @@
 9	.	_	Punct	Punct	_	5	punct	5	punct
 
 1	За	_	R	R	_	7	adjunct	7	adjunct
-2	няколко	_	P	Pf	def=i|ref=q	3	mod	3	mod
+2	няколко	_	P	Pf	def=i|ref=q|def=i	3	mod	3	mod
 3	години	_	N	Nc	gen=f|num=p|def=i	1	prepcomp	1	prepcomp
 4	"	_	Punct	Punct	_	5	punct	5	punct
 5	Югоагент	_	N	Np	gen=m|num=s|def=i	7	subj	7	subj
@@ -2451,7 +2451,7 @@
 11	пестила	_	V	Vpi	trans=t|vform=c|voice=a|tense=o|num=s|gen=f|def=i	10	comp	10	comp
 12	заради	_	R	R	_	10	adjunct	10	adjunct
 13	такова	_	P	Pd	ref=a|num=s|gen=n	14	mod	14	mod
-14	нещо	_	P	Pf	def=i|ref=e|case=n|num=s|gen=n	12	prepcomp	12	prepcomp
+14	нещо	_	P	Pf	def=i|ref=e|case=n|num=s|gen=n|def=i	12	prepcomp	12	prepcomp
 15	.	_	Punct	Punct	_	5	punct	5	punct
 
 1	Новинар	_	N	Np	gen=m|num=s|def=i	0	ROOT	0	ROOT
@@ -4813,7 +4813,7 @@
 
 1	Пекарите	_	N	Nc	gen=m|num=p|def=d	5	subj	5	subj
 2	от	_	R	R	_	5	adjunct	5	adjunct
-3	няколко	_	P	Pf	def=i|ref=q	4	mod	4	mod
+3	няколко	_	P	Pf	def=i|ref=q|def=i	4	mod	4	mod
 4	месеца	_	N	Nc	gen=m|num=t	2	prepcomp	2	prepcomp
 5	плашат	_	V	Vpi	trans=t|mood=i|tense=r|pers=3|num=p|enum	0	ROOT	0	ROOT
 6	,	_	Punct	Punct	enum	7	punct	7	punct
@@ -5746,7 +5746,7 @@
 20	при	_	R	R	_	19	mod	19	mod
 21	боравенето	_	N	Nc	gen=n|num=s|def=d	20	prepcomp	20	prepcomp
 22	с	_	R	R	_	21	mod	21	mod
-23	няколко	_	P	Pf	def=i|ref=q	24	mod	24	mod
+23	няколко	_	P	Pf	def=i|ref=q|def=i	24	mod	24	mod
 24	карти	_	N	Nc	gen=f|num=p|def=i	22	prepcomp	22	prepcomp
 25	.	_	Punct	Punct	_	6	punct	6	punct
 
@@ -5905,7 +5905,7 @@
 37	Теодосий_Симеонов	_	N	Np	gen=m|num=s|def=i	22	conjarg	22	conjarg
 38	.	_	Punct	Punct	_	10	punct	10	punct
 
-1	Неколцина	_	P	Pf	def=i|ref=q	10	subj	10	subj
+1	Неколцина	_	P	Pf	def=i|ref=q|def=i	10	subj	10	subj
 2	измежду	_	R	R	_	1	mod	1	mod
 3	мълчаливите	_	A	A	num=p|def=d	6	mod	6	mod
 4	и	_	C	Cp	_	3	conj	3	conj
@@ -6175,7 +6175,7 @@
 10	.	_	Punct	Punct	_	3	punct	3	punct
 
 1	Така	_	P	Pd	ref=m	7	adjunct	7	adjunct
-2	нещо	_	P	Pf	def=i|ref=e|case=n|num=s|gen=n	7	subj	7	subj
+2	нещо	_	P	Pf	def=i|ref=e|case=n|num=s|gen=n|def=i	7	subj	7	subj
 3	"	_	Punct	Punct	_	4	punct	4	punct
 4	взривоопасно	_	A	An	gen=n|num=s|def=i	2	mod	2	mod
 5	"	_	Punct	Punct	_	4	punct	4	punct
