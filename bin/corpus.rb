@@ -45,6 +45,7 @@ command :count do |c|
       files.each do |file|
         corpus = Conll::Corpus.parse(file)
         ts = corpus.sentences.size
+        next if ts == 0
         sc = 0
         corpus.grep(grep_args) do |sentence|
           sc += 1
@@ -115,10 +116,12 @@ end
 command :truncate do |c|
   c.syntax = 'corpus truncate [options] DIR'
   c.description = 'Truncate corpus files to maximum N sentences'
-  c.option '--num N'
+  c.option '--take N'
+  c.option '--skip N'
   c.when_called do |args, options|
+    options.default :take => 2000, :skip => 0
     source_dir = args[0]
-    target_dir = "#{source_dir}-#{options.num}"
+    target_dir = "#{source_dir}-#{options.take}"
     make_directory(target_dir)
     Dir.glob("#{source_dir}/*/*.conll").each do |source|
       target = source.gsub(source_dir, target_dir)
@@ -126,7 +129,9 @@ command :truncate do |c|
       make_directory(target_subdir)
       File.open(target, 'w') do |f|
         corpus = Conll::Corpus.parse(source)
-        corpus.sentences[0 .. options.num.to_i].each do |sent|
+        from = options.skip.to_i
+        to   = from + options.take.to_i
+        (corpus.sentences[from .. to] || []).each do |sent|
           sent.tokens.each do |tok|
             f.puts tok.to_s
           end
