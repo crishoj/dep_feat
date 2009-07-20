@@ -1,0 +1,136 @@
+------------------------------
+Version 3.0 (10 December 2008)
+------------------------------
+Added UTF-8 capability, but only for the new type of flexrules.
+(Affix rules). A new option has been added, -eU (or -eu), telling that the
+input is in UTF-8 encoding.
+No case conversion is attempted when making an internal dictionary if -eU is
+specified, so it is important that the word list that is used for making the
+dictionary has the desired case for all words and lemmas. When a word is looked
+up in the internal dictionary, the word is first looked up "as is". If it isn't
+found, the word is converted to all lower case and a new look up is attempted.
+
+For the UNICODE case folding use has been made of CaseFolding-3.2.0.txt
+(http://unicode.org/Public/3.2-Update/CaseFolding-3.2.0.txt)
+
+Cstlemma can now effectively handle alphabetized input. Previously, words were
+stored in a binary tree as they were read, resulting in an enormously
+unbalanced data structure if the words came in alphabetical order, which again
+resulted in either stack overflow or long running times. From version 3.0 the
+words are stored in a hash.
+
+The tree - and now the hash - is used to build a list of types. Words (tokens)
+that occur more than once in the input are still only lemmatised once.
+------------------------------
+Version 2.13 (16 April 2008)
+------------------------------
+Added new command line option -en, n indicating ISO8859 encoding.
+n=1: Western European
+n=2: Central European
+n=7: Greek
+n=9: Turkish
+
+Also added support for new type of flexrules that allow wildcards anywhere in
+the pattern. These rules are stored in a binary file. The implementation of
+the algorithm that creates these rules is not part of CSTlemma (yet). No new
+command line option is added for the support of these new rules.
+
+------------------------------
+Version 2.12 (23 February 2007)
+------------------------------
+Added support for Turkish (ISO8859_9).
+
+------------------------------
+Version 2.11 (14 November 2005)
+------------------------------
+Change in basefrm::addFullForms that solves a problem with multiply listed full
+forms.
+Made a correction to Lemma::addFreq that makes the binary dictionary slightly
+smaller, but does not seem to have influence on the output.
+
+------------------------------
+Version 2.10 (9 December 2005)
+------------------------------
+Sorted output and tagged input didn't work well: the program went down.
+Added sorting routine for tagged words.
+Also added check in translate function in tags.cpp.
+
+------------------------------
+Version 2.9 (6 October 2005)
+------------------------------
+Addition of R and C flags. With the C flag you can discard the least well-
+supported rules after the generation of a set of flexrules. This decreases
+the size of the set and can solve problems with overfitting. The R flag adds
+each rule's support to the flex rule file, so that you can see how many words
+from the training set are lemmatised by a given rule.
+
+Changed the format of the flex rule file. Before, the base form ending was put
+between [ and ], which lead to problems if the base form contained these
+characters (as in CO[2]). The new format uses tab-characters to separate base
+form ending from full form endings. If you still want the old format, set
+TABASSEP = 0 in flex.cpp.
+
+Added code to explicitly delete some objects just before ending the program.
+
+------------------------------
+Version 2.8 (26 August 2005)
+------------------------------
+Solved error with lemma-based disambiguation.
+Updated version number and date.
+
+------------------------------
+Version 2.7 (23 August 2005)
+------------------------------
+New sorting option -q# which sorts output by frequency.
+Solved an error with reading text into lines. If there were trailing blanks
+at the end of a line, the first word of the next line was erroneously moved
+to the end of the current line.
+
+------------------------------
+Version 2.6 (03 August 2005)
+------------------------------
+Added support for ISO8859-7 (Greek)and for Unicode UTF-8 (not tested fully yet).
+Edit caseconv.h to select the encoding.
+
+------------------------------
+Version 2.5 (29 July 2005)
+------------------------------
+Solved two errors in flex rule generation. The most severe one caused half 
+of the lines in the input to be ignored if the input only had two columns
+(full form and base form). As a result of the fix, patterns must contain 
+one character (F, B or ?) per column and not, as before, have a ? for a
+non-existing column (because this caused every second line to be ignored).
+
+------------------------------
+Version 2.4 (3 March 2005)
+------------------------------
+Removed (undocumented) requirement that word classes must be capitalised.
+
+------------------------------
+Version 2.3 (24 February 2005)
+------------------------------
+Problem solved with -I option. (input format) 
+
+------------------------------
+Version 2.2 (23 February 2005)
+------------------------------
+Problems with generation of flex rules and dictionary solved.
+Addition of $s field (word separator that expands to blank or new line) in -c
+format.
+
+------------------------------
+Version 2.1 (27 January 2004)
+------------------------------
+General beautification of code.
+Introduction of C++ streams instead of file pointers (optional).
+Lemmata can contain uppercase characters.
+
+----------------------------
+Version 2.0 (5 January 2004)
+----------------------------
+Initial version under GPL
+
+-------------------------
+Version 1.0 (Autumn 2002)
+-------------------------
+Initial non-GPL version.
