@@ -14,10 +14,12 @@ module Annotation
         end
         post_sentence
         for @token in @sentence.tokens
-          yield @token.to_s
+          yield @token.to_s if block_given?
         end
-        yield '' # blank line between sentences
+        # blank line between sentences
+        yield '' if block_given?
       end
+      @corpus
     end
 
     def categorize(corpus)
