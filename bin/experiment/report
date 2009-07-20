@@ -1,0 +1,6 @@
+#!/bin/sh
+set -o nounset -o errexit
+git add $1
+git commit -m system
+git push
+
