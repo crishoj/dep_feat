@@ -14,11 +14,7 @@ class String
   include ActiveSupport::CoreExtensions::String::Inflections
 end
 
-global_option '--kind ANNOTATION', String, 'Kind of annotation to perform' do |kind|
-  filename = "lib/annotation/#{kind}"
-  require filename
-  $annotator_class = Annotation.const_get(kind.camelize)
-end
+global_option '--kind ANNOTATION', String, 'Kind of annotation to perform' 
 
 GREP_OPTIONS = [
   '--pos TAG',
@@ -179,7 +175,7 @@ command :categorize do |c|
       gold_file = Dir.glob("#{dir}/test/*.conll").first
       say "      [gold] #{gold_file}"
       gold = Conll::Corpus.parse gold_file
-      annotator = $annotator_class.new(gold)
+      annotator = find_annotator(options.kind).new(gold)
       %w{baseline test system}.each do |section|
         filename = Dir.glob("#{dir}/#{section}/*.conll").first
         corpus = Conll::Corpus.parse filename
@@ -245,7 +241,7 @@ command :annotate_single do |c|
     options.default :kind => 'null'
     if args.size > 0 and File.exists?(args[0])
       corpus = Conll::Corpus.parse(args[0])
-      annotator = $annotator_class.new(corpus)
+      annotator = find_annotator(options.kind).new(corpus)
       annotator.run do |line|
         puts line
       end
@@ -257,18 +253,18 @@ end
 
 command :annotate do |c|
   c.syntax = 'corpus annotate [options] DIR'
-  c.description = <<DESC
-Make a copy of DIR and augment each of its corpus files with the
-  specified KIND of feature.
-DESC
-
+  c.description = 'Make a copy of DIR and augment each of its corpus files with the specified KIND of feature.'
+  c.option '--kinds ANNOTATOR1+ANNOTATOR2', 'Apply multiple annotators'
   c.when_called do |args, options|
-    options.default :kind => 'null'
+    options.default :kinds => []
+    kinds = options.kinds.split(/\+/)
+    kinds << options.kind if options.kind
+    designation = kinds.join('+')
     if args.size == 0
       say "Missing corpus directory"
     elsif File.directory?(args[0])
       dir = args[0]
-      target_dir = "#{dir}-#{options.kind}"
+      target_dir = "#{dir}-#{designation}"
       make_directory(target_dir)
       Dir.glob("#{dir}/*/*.conll").each do |source|
         target = source.gsub(dir, target_dir)
@@ -282,13 +278,15 @@ DESC
           target.gsub!        /system/, 'baseline'
         end
         make_directory(target_subdir)
+        corpus = Conll::Corpus.parse(source)
+        kinds.each do |kind|
+          puts "  [annotate] #{source} (#{kind})"
+          annotator = find_annotator(kind).new(corpus)
+          corpus = annotator.run
+        end
         File.open(target, 'w') do |f|
-          corpus = Conll::Corpus.parse(source)
-          annotator = $annotator_class.new(corpus)
-          annotator.run do |line|
-            f.puts(line)
-          end
-          puts "  [annotate] #{source} => #{target}"
+          puts "      [save] #{source} => #{target}"
+          f << corpus
         end
       end
     else
@@ -336,4 +334,8 @@ def extract_grep_args(options)
     end
   }
   args
+end
+
+def find_annotator(kind)
+  Annotation.const_get(kind.camelize)
 end
