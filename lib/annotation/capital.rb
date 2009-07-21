@@ -7,9 +7,16 @@ module Annotation
       'capital'
     end
 
+    def pre_sentence
+      @first_alphabetical = true
+    end
+
     def mark_token
-      if alphabetical_token? and capitalized_token?
-        @token.features << feature
+      if alphabetical_token?
+        unless @first_alphabetical
+          @token.features << feature if capitalized_token?
+        end
+        @first_alphabetical = false
       end
     end
 
