@@ -4,8 +4,9 @@ module Annotation
   class QuotedPhrase < Span
 
     ENCLOSURES = {
-      '"' => '"',
-      '«' => '»'
+      '"'  => '"',
+      '«'  => '»',
+      '``' => "''"
     }
     OPENINGS = ENCLOSURES.keys
     CLOSINGS = ENCLOSURES.values
@@ -20,8 +21,11 @@ module Annotation
 
     def mark_token
       if @in_quote
-        if @token.form == @closing 
-          mark_span(@from, @token)
+        if @token.form == @closing
+          unless @token.last? and @from.first?
+            # Only annotate embedded quotations
+            mark_span(@from, @token)
+          end
           @in_quote = false
         elsif @token.last? 
           # End of sentence
