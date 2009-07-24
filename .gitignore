@@ -1,5 +1,7 @@
 .DS_Store
+*.class
 *~
-models/*
+models/data/*
 data/*/*/*/has-*
 data/*/*/*/no-*
+nbproject/private/rake-d.txt
