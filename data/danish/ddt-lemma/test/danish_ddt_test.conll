@@ -98,7 +98,7 @@
 19	.	.	X	XP	_	4	pnct	_	_
 
 1	Og	Og	C	CC	_	0	ROOT	_	_
-2	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	3	subj	_	_
+2	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	3	subj	_	_
 3	tilføjede	tilføje	V	VA	mood=indic|tense=past|voice=active	1	conj	_	_
 4	:	:	X	XP	_	3	pnct	_	_
 5	"	"	X	XP	_	18	pnct	_	_
@@ -243,7 +243,7 @@
 14	kommer	komme	V	VA	mood=indic|tense=present|voice=active	10	vobj	_	_
 15	med	med	RG	RG	degree=unmarked	14	mod	_	_
 16	i	i	SP	SP	_	14	mod	_	_
-17	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	16	nobj	_	_
+17	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	16	nobj	_	_
 18	ligebehandlingsnævn	ligebehandlingsnævn	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	17	nobj	_	_
 19	,	,	X	XP	_	17	pnct	_	_
 20	som	som	U	U	_	27	dobj	_	_
@@ -281,7 +281,7 @@
 7	i	i	SP	SP	_	5	pobj	_	_
 8	,	,	X	XP	_	7	pnct	_	_
 9	at	at	C	CS	_	7	nobj	_	_
-10	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	12	subj	_	_
+10	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	12	subj	_	_
 11	samme	samme	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	10	nobj	_	_
 12	skal	skulle	V	VA	mood=indic|tense=present|voice=active	9	vobj	_	_
 13	ske	ske	V	VA	mood=infin|voice=active	12	vobj	_	_
@@ -296,7 +296,7 @@
 1	Informationssekretær	Informationssekretær	N	NC	gender=common|number=sing|case=unmarked|def=indef	11	title	_	_
 2	i	i	SP	SP	_	1	mod	_	_
 3	Danmarks	danmark	N	NP	case=gen	2	nobj	_	_
-4	Socialdemokratiske	Socialdemokratiske	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	3	mod	_	_
+4	Socialdemokratiske	Socialdemokratisk	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	3	mod	_	_
 5	Ungdom	Ungdom	N	NC	gender=common|number=sing|case=unmarked|def=indef	3	possd	_	_
 6	(	(	X	XP	_	7	pnct	_	_
 7	DSU	DSU	N	NP	case=unmarked	3	appa	_	_
@@ -321,7 +321,7 @@
 7	at	at	C	CS	_	5	dobj	_	_
 8	Socialdemokratiet	Socialdemokratiet	N	NC	gender=neuter|number=sing|case=unmarked|def=def	9	subj	_	_
 9	deltog	deltage	V	VA	mood=indic|tense=past|voice=active	7	vobj	_	_
-10	alt	al	RG	RG	degree=unmarked	11	mod	_	_
+10	alt	alt	RG	RG	degree=unmarked	11	mod	_	_
 11	for	for	RG	RG	degree=unmarked	12	mod	_	_
 12	lidt	lidt	A	AN	degree=pos|transcat=adverbial	9	mod	_	_
 13	i	i	SP	SP	_	9	pobj	_	_
@@ -539,8 +539,8 @@
 8	af	af	SP	SP	_	7	pobj	_	_
 9	initiativtagerne	initiativtager	N	NC	gender=common|number=plur|case=unmarked|def=def	8	nobj	_	_
 10	til	til	SP	SP	_	9	pobj	_	_
-11	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	5	nobj	_	_
-12	grundtvigianske-socialdemokratiske	grundtvigianske-socialdemokratiske	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	11	mod	_	_
+11	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	5	nobj	_	_
+12	grundtvigianske-socialdemokratiske	grundtvigianske-socialdemokratisk	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	11	mod	_	_
 13	samarbejde	samarbejde	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	11	nobj	_	_
 14	,	,	X	XP	_	11	pnct	_	_
 15	der	der	U	U	_	16	subj	_	_
@@ -703,11 +703,11 @@
 11	vi	vi	P	PP	person=1|gender=common|number=plur|case=nom|reflexive=no|register=unmarked	10	subj	_	_
 12	så	så	RG	RG	degree=unmarked	10	mod	_	_
 13	være	være	V	VA	mood=infin|voice=active	10	vobj	_	_
-14	sikre	sikre	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	13	pred	_	_
+14	sikre	sikker	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	13	pred	_	_
 15	på	på	SP	SP	_	14	pobj	_	_
 16	,	,	X	XP	_	15	pnct	_	_
 17	at	at	C	CS	_	15	nobj	_	_
-18	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	21	subj	_	_
+18	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	21	subj	_	_
 19	ikke	ikke	RG	RG	degree=unmarked	21	mod	_	_
 20	også	også	RG	RG	degree=unmarked	21	mod	_	_
 21	render	rende	V	VA	mood=indic|tense=present|voice=active	17	vobj	_	_
@@ -770,7 +770,7 @@
 9	med	med	SP	SP	_	8	pobj	_	_
 10	redegørelsen	redegørelse	N	NC	gender=common|number=sing|case=unmarked|def=def	9	nobj	_	_
 11	i	i	SP	SP	_	8	mod	_	_
-12	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	11	nobj	_	_
+12	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	11	nobj	_	_
 13	udenrigspolitiske	udenrigspolitisk	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	12	mod	_	_
 14	nævn	nævn	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	12	nobj	_	_
 15	:	:	X	XP	_	8	pnct	_	_
@@ -944,7 +944,7 @@
 2	og	og	C	CC	_	1	coord	_	_
 3	Max	Max	N	NP	case=unmarked	2	conj	_	_
 4	er	være	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
-5	sikre	sikre	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	4	pred	_	_
+5	sikre	sikker	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	4	pred	_	_
 6	på	på	SP	SP	_	5	pobj	_	_
 7	at	at	U	U	_	6	nobj	_	_
 8	ryge	ryge	V	VA	mood=infin|voice=active	7	vobj	_	_
@@ -954,7 +954,7 @@
 12	omstændigheder	omstændighed	N	NC	gender=common|number=plur|case=unmarked|def=indef	11	nobj	_	_
 13	,	,	X	XP	_	4	pnct	_	_
 14	så	så	C	CS	_	4	mod	_	_
-15	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	16	subj	_	_
+15	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	16	subj	_	_
 16	er	være	V	VA	mood=indic|tense=present|voice=active	14	vobj	_	_
 17	ikke	ikke	RG	RG	degree=unmarked	16	mod	_	_
 18	længere	lang	RG	RG	degree=comp	16	mod	_	_
@@ -1040,11 +1040,11 @@
 2	Kunderne	Kunderne	N	NC	gender=common|number=plur|case=unmarked|def=def	3	subj	_	_
 3	skal	skulle	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 4	være	være	V	VA	mood=infin|voice=active	3	vobj	_	_
-5	sikre	sikre	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	4	pred	_	_
+5	sikre	sikker	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	4	pred	_	_
 6	på	på	SP	SP	_	5	pobj	_	_
 7	,	,	X	XP	_	6	pnct	_	_
 8	at	at	C	CS	_	6	nobj	_	_
-9	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	11	subj	_	_
+9	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	11	subj	_	_
 10	ikke	ikke	RG	RG	degree=unmarked	11	mod	_	_
 11	kan	kunne	V	VA	mood=indic|tense=present|voice=active	8	vobj	_	_
 12	købe	købe	V	VA	mood=infin|voice=active	11	vobj	_	_
@@ -1138,7 +1138,7 @@
 15	Super-Brugser	Super-Brugser	N	NC	gender=common|number=plur|case=unmarked|def=indef	13	nobj	_	_
 16	.	.	X	XP	_	2	pnct	_	_
 
-1	Tidligere	Tidligere	A	AN	degree=comp|transcat=adverbial	2	mod	_	_
+1	Tidligere	Tidlig	A	AN	degree=comp|transcat=adverbial	2	mod	_	_
 2	havde	have	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
 3	de	den	P	PD	gender=common/neuter|number=plur|case=unmarked|register=unmarked	2	subj	_	_
 4	store	stor	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	3	mod	_	_
@@ -1675,7 +1675,7 @@
 10	Potashinskas	Potashinskas	N	NP	case=gen	8	subj	_	_
 11	.	.	X	XP	_	8	pnct	_	_
 
-1	Et	Et	P	PI	gender=neuter|number=sing|case=unmarked|register=unmarked	0	ROOT	_	_
+1	Et	En	P	PI	gender=neuter|number=sing|case=unmarked|register=unmarked	0	ROOT	_	_
 2	andet	anden	P	PI	gender=neuter|number=sing|case=unmarked|register=unmarked	1	nobj	_	_
 3	øjenvidne	øjenvidne	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	2	nobj	_	_
 4	:	:	X	XP	_	1	pnct	_	_
@@ -1709,7 +1709,7 @@
 7	Sovjet-soldater	Sovjet-soldater	N	NC	gender=common|number=plur|case=unmarked|def=indef	6	nobj	_	_
 8	,	,	X	XP	_	4	pnct	_	_
 9	fordi	fordi	C	CS	_	4	mod	_	_
-10	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	11	subj	_	_
+10	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	11	subj	_	_
 11	havde	have	V	VA	mood=indic|tense=past|voice=active	9	vobj	_	_
 12	filmet	filme	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	11	vobj	_	_
 13	en	en	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	12	dobj	_	_
@@ -1836,7 +1836,7 @@
 13	.	.	X	XP	_	9	pnct	_	_
 
 1	"	"	X	XP	_	3	pnct	_	_
-2	Dette	Dette	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	3	subj	_	_
+2	Dette	Denne	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	3	subj	_	_
 3	har	have	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 4	været	være	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	3	vobj	_	_
 5	et	en	P	PI	gender=neuter|number=sing|case=unmarked|register=unmarked	4	pred	_	_
@@ -1902,7 +1902,7 @@
 7	sagtens	sagtens	RG	RG	degree=unmarked	5	mod	_	_
 8	have	have	V	VA	mood=infin|voice=active	5	vobj	_	_
 9	bombet	bombe	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	8	vobj	_	_
-10	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	9	dobj	_	_
+10	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	9	dobj	_	_
 11	meste	megen	A	AN	degree=sup|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	10	nobj	_	_
 12	af	af	SP	SP	_	11	pobj	_	_
 13	byen	by	N	NC	gender=common|number=sing|case=unmarked|def=def	12	nobj	_	_
@@ -1954,9 +1954,9 @@
 5	horisonten	horisont	N	NC	gender=common|number=sing|case=unmarked|def=def	4	nobj	_	_
 6	.	.	X	XP	_	2	pnct	_	_
 
-1	Dette	Dette	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	2	subj	_	_
+1	Dette	Denne	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	2	subj	_	_
 2	er	være	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
-3	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	2	pred	_	_
+3	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	2	pred	_	_
 4	voldsomste	voldsom	A	AN	degree=sup|gender=common/neuter|number=sing/plur|case=unmarked|def=def|transcat=unmarked	3	mod	_	_
 5	angreb	angreb	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	3	nobj	_	_
 6	hidtil	hidtil	RG	RG	degree=unmarked	2	mod	_	_
@@ -1988,10 +1988,10 @@
 24	.	.	X	XP	_	10	pnct	_	_
 
 1	På	På	SP	SP	_	4	mod	_	_
-2	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	1	nobj	_	_
+2	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	1	nobj	_	_
 3	tidspunkt	tidspunkt	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	2	nobj	_	_
 4	var	være	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
-5	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	4	subj	_	_
+5	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	4	subj	_	_
 6	lille	lille	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def/indef|transcat=unmarked	5	mod	_	_
 7	barns	barn	N	NC	gender=neuter|number=sing|case=gen|def=indef	5	nobj	_	_
 8	forældre	forælder	N	NC	gender=common|number=plur|case=unmarked|def=indef	5	possd	_	_
@@ -2136,7 +2136,7 @@
 9	hans	hans	P	PO	person=3|gender=common/neuter|number=sing/plur|case=unmarked|possessor=sing|reflexive=no|register=unmarked	11	subj	_	_
 10	nakke	nakke	N	NC	gender=common|number=sing|case=unmarked|def=indef	9	possd	_	_
 11	blev	blive	V	VA	mood=indic|tense=past|voice=active	8	conj	_	_
-12	slap	slippe	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	11	pred	_	_
+12	slap	slap	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	11	pred	_	_
 13	.	.	X	XP	_	2	pnct	_	_
 14	"	"	X	XP	_	2	pnct	_	_
 
@@ -2265,7 +2265,7 @@
 24	at	at	U	U	_	23	dobj	_	_
 25	fænge	fænge	V	VA	mood=infin|voice=active	24	vobj	_	_
 26	rent	ren	A	AN	degree=pos|transcat=adverbial	27	mod	_	_
-27	underholdningsmæssigt	underholdningsmæssigt	A	AN	degree=pos|transcat=adverbial	25	mod	_	_
+27	underholdningsmæssigt	underholdningsmæssig	A	AN	degree=pos|transcat=adverbial	25	mod	_	_
 28	.	.	X	XP	_	11	pnct	_	_
 
 1	"	"	X	XP	_	3	pnct	_	_
@@ -2358,7 +2358,7 @@
 1	Steen	Steen	N	NP	case=unmarked	2	namef	_	_
 2	Uno	Uno	N	NP	case=unmarked	0	ROOT	_	_
 
-1	Alle	Alle	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	2	subj	_	_
+1	Alle	Al	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	2	subj	_	_
 2	ville	ville	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
 3	ha'	ha'	V	VA	mood=infin|voice=active	2	vobj	_	_
 4	fat	fat	RG	RG	degree=unmarked	3	dobj	_	_
@@ -2793,7 +2793,7 @@
 14	stilen	stil	N	NC	gender=common|number=sing|case=unmarked|def=def	21	subj	_	_
 15	så	så	RG	RG	degree=unmarked	16	mod	_	_
 16	længe	længe	RG	RG	degree=pos	21	mod	_	_
-17	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	20	subj	_	_
+17	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	20	subj	_	_
 18	unikke	unik	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	17	mod	_	_
 19	varelager	varelager	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	17	nobj	_	_
 20	haves	have	V	VA	mood=indic|tense=present|voice=passive	16	vobj	_	_
@@ -2881,7 +2881,7 @@
 
 1	Sællerter	Sællerter	N	NC	gender=common|number=plur|case=unmarked|def=indef	0	ROOT	_	_
 
-1	Nedslidte	Nedslidte	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	2	mod	_	_
+1	Nedslidte	Nedslidt	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	2	mod	_	_
 2	Levi's	Levi's	N	NP	case=gen	11	subj	_	_
 3	jeans	jeans	N	NC	gender=common|number=plur|case=unmarked|def=indef	2	possd	_	_
 4	til	til	SP	SP	_	2	mod	_	_
@@ -2944,7 +2944,7 @@
 15	Eddie	Eddie	N	NP	case=unmarked	14	nobj	_	_
 16	.	.	X	XP	_	1	pnct	_	_
 
-1	Flere	Flere	A	AN	degree=comp|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	3	mod	_	_
+1	Flere	Fl	A	AN	degree=comp|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	3	mod	_	_
 2	gange	gang	N	NC	gender=common|number=plur|case=unmarked|def=indef	1	nobj	_	_
 3	har	have	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 4	Brian	Brian	N	NP	case=unmarked	5	namef	_	_
@@ -3001,7 +3001,7 @@
 10	for	for	SP	SP	_	9	conj	_	_
 11	at	at	U	U	_	10	nobj	_	_
 12	mildne	mildne	V	VA	mood=infin|voice=active	11	vobj	_	_
-13	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	12	dobj	_	_
+13	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	12	dobj	_	_
 14	lidt	lidt	A	AN	degree=pos|transcat=adverbial	15	mod	_	_
 15	voldsomme	voldsom	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	13	mod	_	_
 16	udseende	udseende	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	13	nobj	_	_
@@ -3053,7 +3053,7 @@
 2	for	for	SP	SP	_	15	mod	_	_
 3	at	at	U	U	_	2	nobj	_	_
 4	mildne	mildne	V	VA	mood=infin|voice=active	3	vobj	_	_
-5	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	4	dobj	_	_
+5	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	4	dobj	_	_
 6	bastante	bastant	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	5	mod	_	_
 7	udseende	udseende	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	5	nobj	_	_
 8	og	og	C	CC	_	4	coord	_	_
@@ -3083,7 +3083,7 @@
 4	.	.	X	XP	_	2	pnct	_	_
 
 1	Men	Men	C	CC	_	0	ROOT	_	_
-2	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	3	subj	_	_
+2	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	3	subj	_	_
 3	er	være	V	VA	mood=indic|tense=present|voice=active	1	conj	_	_
 4	jo	jo	RG	RG	degree=unmarked	3	mod	_	_
 5	smukke	smuk	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	3	pred	_	_
@@ -3180,7 +3180,7 @@
 10	sit	sin	P	PO	person=3|gender=neuter|number=sing|case=unmarked|possessor=sing|reflexive=yes|register=unmarked	9	dobj	_	_
 11	gennembrud	gennembrud	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	10	possd	_	_
 12	hos	hos	SP	SP	_	10	mod	_	_
-13	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	12	nobj	_	_
+13	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	12	nobj	_	_
 14	brede	bred	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	13	mod	_	_
 15	publikum	publikum	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	13	nobj	_	_
 16	med	med	SP	SP	_	9	mod	_	_
@@ -3213,7 +3213,7 @@
 3	fik	få	V	VA	mood=indic|tense=past|voice=active	1	conj	_	_
 4	han	han	P	PP	person=3|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	3	subj	_	_
 5	først	først	RG	RG	degree=unmarked	3	mod	_	_
-6	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	3	dobj	_	_
+6	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	3	dobj	_	_
 7	afgørende	afgørende	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	6	mod	_	_
 8	gennembrud	gennembrud	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	6	nobj	_	_
 9	i	i	SP	SP	_	3	mod	_	_
@@ -3329,7 +3329,7 @@
 22	Quo	Quo	N	NP	case=unmarked	21	mod	_	_
 23	har	have	V	VA	mood=indic|tense=present|voice=active	4	rel	_	_
 24	levet	leve	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	23	vobj	_	_
-25	fedt	fedt	A	AN	degree=pos|transcat=adverbial	24	mod	_	_
+25	fedt	fed	A	AN	degree=pos|transcat=adverbial	24	mod	_	_
 26	og	og	C	CC	_	25	coord	_	_
 27	fremragende	fremragende	A	AN	degree=pos|transcat=adverbial	26	conj	_	_
 28	af	af	SP	SP	_	24	pobj	_	_
@@ -3375,7 +3375,7 @@
 6	livsstil	livsstil	N	NC	gender=common|number=sing|case=unmarked|def=indef	5	conj	_	_
 7	.	.	X	XP	_	2	pnct	_	_
 
-1	Det	Det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	0	ROOT	_	_
+1	Det	Den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	0	ROOT	_	_
 2	bedste	god	A	AN	degree=sup|gender=common/neuter|number=sing/plur|case=unmarked|def=def|transcat=unmarked	1	mod	_	_
 3	vi	vi	P	PP	person=1|gender=common|number=plur|case=nom|reflexive=no|register=unmarked	4	subj	_	_
 4	har	have	V	VA	mood=indic|tense=present|voice=active	1	rel	_	_
@@ -3387,7 +3387,7 @@
 4	der	der	U	U	_	3	expl	_	_
 5	løs	løs	A	AN	degree=pos|transcat=adverbial	3	mod	_	_
 6	mod	mod	SP	SP	_	3	pobj	_	_
-7	Det	Det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	6	nobj	_	_
+7	Det	Den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	6	nobj	_	_
 8	kgl.	kgl.	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	7	mod	_	_
 9	Teaters	Teaters	N	NC	gender=neuter|number=sing|case=gen|def=indef	7	nobj	_	_
 10	repertoire	repertoire	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	7	possd	_	_
@@ -3470,7 +3470,7 @@
 8	ny	ny	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	7	mod	_	_
 9	skuespilchef	skuespilchef	N	NC	gender=common|number=sing|case=unmarked|def=indef	7	nobj	_	_
 10	på	på	SP	SP	_	3	mod	_	_
-11	Det	Det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	10	nobj	_	_
+11	Det	Den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	10	nobj	_	_
 12	Kgl.	Kgl.	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	11	mod	_	_
 13	en	en	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	2	dobj	_	_
 14	vis	vis	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	13	mod	_	_
@@ -3638,7 +3638,7 @@
 2	MAN	MAN	P	PI	gender=common|number=sing/plur|case=nom|register=unmarked	3	subj	_	_
 3	må	måtte	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 4	kritisere	kritisere	V	VA	mood=infin|voice=active	3	vobj	_	_
-5	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	4	dobj	_	_
+5	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	4	dobj	_	_
 6	kuldslåede	kuldslået	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	5	mod	_	_
 7	fornuftsægteskab	fornuftsægteskab	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	5	nobj	_	_
 8	med	med	SP	SP	_	7	pobj	_	_
@@ -3712,7 +3712,7 @@
 10	Danmark	danmark	N	NP	case=unmarked	9	nobj	_	_
 11	defineres	definere	V	VA	mood=indic|tense=present|voice=passive	2	xpl	_	_
 12	ved	ved	SP	SP	_	11	pobj	_	_
-13	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	12	nobj	_	_
+13	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	12	nobj	_	_
 14	navn	navn	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	13	nobj	_	_
 15	,	,	X	XP	_	13	pnct	_	_
 16	som	som	U	U	_	30	subj	_	_
@@ -3774,7 +3774,7 @@
 11	er	være	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 12	den	den	P	PD	gender=common|number=sing|case=unmarked|register=unmarked	11	subj	_	_
 13	lille	lille	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def/indef|transcat=unmarked	12	mod	_	_
-14	tre-årige	tre-årige	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	12	mod	_	_
+14	tre-årige	tre-årig	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	12	mod	_	_
 15	Pernille	Pernille	N	NP	case=unmarked	12	nobj	_	_
 16	atter	atter	RG	RG	degree=unmarked	11	mod	_	_
 17	helt	hel	A	AN	degree=pos|transcat=adverbial	18	mod	_	_
@@ -3911,7 +3911,7 @@
 3	enige	enig	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	2	mod	_	_
 4	dommere	dommer	N	NC	gender=common|number=plur|case=unmarked|def=indef	2	nobj	_	_
 5	i	i	SP	SP	_	2	mod	_	_
-6	Østre	Østre	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	7	mod	_	_
+6	Østre	Øster	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	7	mod	_	_
 7	Landsret	Landsret	N	NC	gender=common|number=sing|case=unmarked|def=indef	5	nobj	_	_
 8	underkendte	underkende	V	VA	mood=indic|tense=past|voice=active	1	conj	_	_
 9	hurtigt	hurtig	A	AN	degree=pos|transcat=adverbial	8	mod	_	_
@@ -3921,7 +3921,7 @@
 1	Og	Og	C	CC	_	0	ROOT	_	_
 2	onsdag	onsdag	N	NC	gender=common|number=sing|case=unmarked|def=indef	3	mod	_	_
 3	led	led	V	VA	mood=indic|tense=past|voice=active	1	conj	_	_
-4	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	3	subj	_	_
+4	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	3	subj	_	_
 5	offentlige	offentlig	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	4	mod	_	_
 6	i	i	SP	SP	_	4	mod	_	_
 7	Ejby	Ejby	N	NP	case=unmarked	6	nobj	_	_
@@ -3953,7 +3953,7 @@
 13	tvangsfjernelsen	tvangsfjernelse	N	NC	gender=common|number=sing|case=unmarked|def=def	12	dobj	_	_
 14	ud	ud	RG	RG	degree=unmarked	12	mod	_	_
 15	fra	fra	SP	SP	_	14	pobj	_	_
-16	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	15	nobj	_	_
+16	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	15	nobj	_	_
 17	samme	samme	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	16	nobj	_	_
 18	materiale	materiale	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	17	nobj	_	_
 19	,	,	X	XP	_	16	pnct	_	_
@@ -4304,7 +4304,7 @@
 35	på	på	SP	SP	_	34	pobj	_	_
 36	lederen	leder	N	NC	gender=common|number=sing|case=unmarked|def=def	35	nobj	_	_
 37	af	af	SP	SP	_	36	pobj	_	_
-38	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	37	nobj	_	_
+38	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	37	nobj	_	_
 39	største	stor	A	AN	degree=sup|gender=common/neuter|number=sing/plur|case=unmarked|def=def|transcat=unmarked	38	mod	_	_
 40	borgerlige	borgerlig	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	38	mod	_	_
 41	parti	parti	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	38	nobj	_	_
@@ -4363,7 +4363,7 @@
 25	Brusgaard	Brusgaard	N	NP	case=unmarked	23	subj	_	_
 26	.	.	X	XP	_	23	pnct	_	_
 
-1	Senere	Senere	A	AN	degree=comp|transcat=adverbial	4	mod	_	_
+1	Senere	Sen	A	AN	degree=comp|transcat=adverbial	4	mod	_	_
 2	på	på	SP	SP	_	1	mod	_	_
 3	dagen	dag	N	NC	gender=common|number=sing|case=unmarked|def=def	2	nobj	_	_
 4	var	være	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
@@ -4471,7 +4471,7 @@
 34	rytmen	rytme	N	NC	gender=common|number=sing|case=unmarked|def=def	32	dobj	_	_
 35	.	.	X	XP	_	2	pnct	_	_
 
-1	Mange	Mange	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	2	subj	_	_
+1	Mange	Mang	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	2	subj	_	_
 2	havde	have	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
 3	uheld	uheld	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	2	dobj	_	_
 4	.	.	X	XP	_	2	pnct	_	_
@@ -4504,7 +4504,7 @@
 4	om	om	SP	SP	_	3	pobj	_	_
 5	,	,	X	XP	_	4	pnct	_	_
 6	at	at	C	CS	_	4	nobj	_	_
-7	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	8	subj	_	_
+7	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	8	subj	_	_
 8	førte	føre	V	VA	mood=indic|tense=past|voice=active	6	vobj	_	_
 9	holdløbet	holdløbet	N	NC	gender=neuter|number=sing|case=unmarked|def=def	8	dobj	_	_
 10	.	.	X	XP	_	2	pnct	_	_
@@ -4519,7 +4519,7 @@
 8	over	over	SP	SP	_	6	mod	_	_
 9	evne	evne	N	NC	gender=common|number=sing|case=unmarked|def=indef	8	nobj	_	_
 10	i	i	SP	SP	_	6	mod	_	_
-11	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	10	nobj	_	_
+11	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	10	nobj	_	_
 12	sidste	sidste	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	11	mod	_	_
 13	sving	sving	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	11	nobj	_	_
 14	ca.	ca.	RG	RG	degree=unmarked	15	mod	_	_
@@ -4696,7 +4696,7 @@
 15	at	at	U	U	_	14	nobj	_	_
 16	tage	tage	V	VA	mood=infin|voice=active	15	vobj	_	_
 17	"	"	X	XP	_	18	pnct	_	_
-18	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	16	dobj	_	_
+18	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	16	dobj	_	_
 19	lette	let	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	18	mod	_	_
 20	"	"	X	XP	_	18	pnct	_	_
 21	alvorligt	alvorlig	A	AN	degree=pos|transcat=adverbial	16	aobj	_	_
@@ -5042,7 +5042,7 @@
 2	var	være	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
 3	tiden	tid	N	NC	gender=common|number=sing|case=unmarked|def=def	2	subj	_	_
 4	ikke	ikke	RG	RG	degree=unmarked	2	mod	_	_
-5	moden	mode	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	2	pred	_	_
+5	moden	moden	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	2	pred	_	_
 6	til	til	SP	SP	_	5	pobj	_	_
 7	et	en	P	PI	gender=neuter|number=sing|case=unmarked|register=unmarked	6	nobj	_	_
 8	så	så	RG	RG	degree=unmarked	9	mod	_	_
@@ -5124,7 +5124,7 @@
 12	politikere	politiker	N	NC	gender=common|number=plur|case=unmarked|def=indef	10	nobj	_	_
 13	.	.	X	XP	_	2	pnct	_	_
 
-1	Det	Det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	3	subj	_	_
+1	Det	Den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	3	subj	_	_
 2	hele	hel	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	1	mod	_	_
 3	skulle	skulle	V	VA	mood=indic|tense=past|voice=active	18	qobj	_	_
 4	nødigt	nødigt	RG	RG	degree=unmarked	3	mod	_	_
@@ -5263,7 +5263,7 @@
 11	udstyr	udstyr	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	9	nobj	_	_
 12	som	som	U	U	_	8	mod	_	_
 13	var	være	V	VA	mood=indic|tense=past|voice=active	12	vobj	_	_
-14	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	13	subj	_	_
+14	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	13	subj	_	_
 15	store	stor	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	16	mod	_	_
 16	eksportslagterier	eksportslagterier	N	NC	gender=neuter|number=plur|case=unmarked|def=indef	13	pred	_	_
 17	.	.	X	XP	_	6	pnct	_	_
@@ -5367,7 +5367,7 @@
 20	.	.	X	XP	_	1	pnct	_	_
 
 1	Men	Men	C	CC	_	0	ROOT	_	_
-2	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	3	subj	_	_
+2	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	3	subj	_	_
 3	er	være	V	VA	mood=indic|tense=present|voice=active	1	conj	_	_
 4	også	også	RG	RG	degree=unmarked	3	mod	_	_
 5	et	en	P	PI	gender=neuter|number=sing|case=unmarked|register=unmarked	3	pred	_	_
@@ -5383,7 +5383,7 @@
 1	Og	Og	C	CC	_	0	ROOT	_	_
 2	så	så	RG	RG	degree=unmarked	3	mod	_	_
 3	er	være	V	VA	mood=indic|tense=present|voice=active	1	conj	_	_
-4	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	3	subj	_	_
+4	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	3	subj	_	_
 5	i_øvrigt	i_øvrigt	RG	RG	degree=unmarked	3	mod	_	_
 6	to	to	A	AC	case=unmarked	3	pred	_	_
 7	af	af	SP	SP	_	6	pobj	_	_
@@ -5396,7 +5396,7 @@
 
 1	Nu	Nu	RG	RG	degree=unmarked	2	mod	_	_
 2	skal	skulle	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
-3	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	2	subj	_	_
+3	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	2	subj	_	_
 4	spille	spille	V	VA	mood=infin|voice=active	2	vobj	_	_
 5	Tvebak	Tvebak	N	NC	gender=common|number=sing|case=unmarked|def=indef	4	dobj	_	_
 6	og	og	C	CC	_	5	coord	_	_
@@ -5426,7 +5426,7 @@
 11	at	at	U	U	_	10	nobj	_	_
 12	genfinde	genfinde	V	VA	mood=infin|voice=active	11	vobj	_	_
 13	deres	deres	P	PO	person=3|gender=common/neuter|number=sing/plur|case=unmarked|possessor=plur|reflexive=no|register=unmarked	12	dobj	_	_
-14	barndommelige	barndommelige	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	13	mod	_	_
+14	barndommelige	barndommelig	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	13	mod	_	_
 15	sindelag	sindelag	N	NC	gender=neuter|number=plur|case=unmarked|def=indef	13	possd	_	_
 16	.	.	X	XP	_	6	pnct	_	_
 
@@ -5445,10 +5445,10 @@
 13	huske	huske	V	VA	mood=infin|voice=active	12	vobj	_	_
 14	,	,	X	XP	_	13	pnct	_	_
 15	hvordan	hvordan	RG	RG	degree=unmarked	13	dobj	_	_
-16	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	17	subj	_	_
+16	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	17	subj	_	_
 17	var	være	V	VA	mood=indic|tense=past|voice=active	15	rel	_	_
 18	da	da	C	CS	_	17	mod	_	_
-19	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	20	subj	_	_
+19	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	20	subj	_	_
 20	var	være	V	VA	mood=indic|tense=past|voice=active	18	vobj	_	_
 21	børn	barn	N	NC	gender=neuter|number=plur|case=unmarked|def=indef	20	pred	_	_
 22	.	.	X	XP	_	2	pnct	_	_
@@ -5462,7 +5462,7 @@
 7	,	,	X	XP	_	4	pnct	_	_
 8	så	så	RG	RG	degree=unmarked	9	mod	_	_
 9	kan	kunne	V	VA	mood=indic|tense=present|voice=active	1	conj	_	_
-10	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	9	subj	_	_
+10	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	9	subj	_	_
 11	hjælpe	hjælpe	V	VA	mood=infin|voice=active	9	vobj	_	_
 12	hinanden	hinanden	P	PC	number=plur|case=unmarked	11	dobj	_	_
 13	lidt	lidt	A	AN	degree=pos|transcat=adverbial	14	mod	_	_
@@ -5510,7 +5510,7 @@
 4	år	år	N	NC	gender=neuter|number=plur|case=unmarked|def=indef	3	nobj	_	_
 5	sammen	sammen	RG	RG	degree=unmarked	2	mod	_	_
 6	på	på	SP	SP	_	2	mod	_	_
-7	det	det	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	6	nobj	_	_
+7	det	den	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	6	nobj	_	_
 8	hold	hold	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	7	nobj	_	_
 9	,	,	X	XP	_	2	pnct	_	_
 10	"	"	X	XP	_	2	pnct	_	_
@@ -5715,7 +5715,7 @@
 
 1	Og	Og	C	CC	_	0	ROOT	_	_
 2	når	når	C	CS	_	7	mod	_	_
-3	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	4	subj	_	_
+3	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	4	subj	_	_
 4	var	være	V	VA	mood=indic|tense=past|voice=active	2	vobj	_	_
 5	det	det	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked	4	pred	_	_
 6	,	,	X	XP	_	2	pnct	_	_
@@ -6020,13 +6020,13 @@
 7	vennens	ven	N	NC	gender=common|number=sing|case=gen|def=def	6	nobj	_	_
 8	hotel	hotel	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	7	mod	_	_
 9	blev	blive	V	VA	mood=indic|tense=past|voice=active	1	conj	_	_
-10	de	den	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	9	subj	_	_
+10	de	de	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	9	subj	_	_
 11	enige	enig	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	9	pred	_	_
 12	om	om	SP	SP	_	11	pobj	_	_
 13	,	,	X	XP	_	12	pnct	_	_
 14	at	at	C	CS	_	12	nobj	_	_
 15	den	den	P	PD	gender=common|number=sing|case=unmarked|register=unmarked	17	subj	_	_
-16	24-årige	24-årige	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	15	mod	_	_
+16	24-årige	24-årig	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	15	mod	_	_
 17	skulle	skulle	V	VA	mood=indic|tense=past|voice=active	14	vobj	_	_
 18	finde	finde	V	VA	mood=infin|voice=active	17	vobj	_	_
 19	en	en	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	18	dobj	_	_

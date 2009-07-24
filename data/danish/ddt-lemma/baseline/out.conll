@@ -321,7 +321,7 @@
 7	at	at	C	C	_	5	dobj	_	_
 8	Socialdemokratiet	Socialdemokratiet	N	N	_	9	subj	_	_
 9	deltog	deltage	V	V	_	7	vobj	_	_
-10	alt	al	RG	RG	_	11	mod	_	_
+10	alt	alt	RG	RG	_	11	mod	_	_
 11	for	for	RG	RG	_	12	mod	_	_
 12	lidt	lidt	A	A	_	13	mod	_	_
 13	i	i	SP	SP	_	9	pobj	_	_
