@@ -1,8 +1,8 @@
 VERSION=4
 MINOR_NUMBER=0
 
-BIN=/var/csttools/bin/
-LIB=/usr/lib/
+BIN=../bin/
+LIB=../lib/
 
 PNAME=cstlemma
 
