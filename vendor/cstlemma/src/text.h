@@ -57,34 +57,92 @@ struct tallyStruct
 
 class field;
 
-class taggedText
+
+class text      
     {
 #ifdef COUNTOBJECTS
     public:
         static int COUNT;
 #endif
     private:
-#if TREE
-        Word * Root;
-#else
+        /*
+        token * Token;
+        */
+        virtual const char * convert(const char * s)
+            {
+            return s;
+            }
+    protected:
         int N;
         Word ** Root;
-#endif
         const Word ** tunsorted;
         unsigned long int * Lines;
-        bool sorted;
         unsigned long int lineno;
+        bool sorted;
         unsigned long int total;
         unsigned long int reducedtotal;
-        basefrm ** basefrmarrD;
-        basefrm ** basefrmarrL;
-        bool InputHasTags;
         field * fields;
         void AddField(field * fld);
         field * translateFormat(char * Iformat,field *& wordfield,field *& tagfield);
+    private:
+        basefrm ** basefrmarrD;
+        basefrm ** basefrmarrL;
+    protected:
+        bool InputHasTags;
+    private:
+/*
+        field * fields;
+        void AddField(field * fld);
+        field * translateFormat(char * Iformat,field *& wordfield,field *& tagfield);
+*/
+    protected:
         void insert(const char * w);
         void insert(const char * w, const char * tag);
+    private:
+/*
     public:
+        char * ch;
+    private:
+        char * startElement;
+        char * endElement;
+        char * startAttributeName;
+        char * endAttributeName;
+        char * startValue;
+        char * endValue;
+        const char * ancestor; // if not null, restrict lemmatisation to elements that are offspring of ancestor
+        const char * element; // if not null, analyse only element's attributes and/or PCDATA
+    public:
+        const char * wordAttribute; // if null, word is PCDATA
+    private:
+        const char * POSAttribute; // if null, POS is PCDATA
+        const char * lemmaAttribute; // if null, Lemma is PCDATA
+        const char * lemmaClassAttribute; // if null, lemma class is PCDATA
+        int wordAttributeLen;
+        int POSAttributeLen;
+        int lemmaAttributeLen;
+        int lemmaClassAttributeLen;
+        crumb * Crumbs;
+        bool ClosingTag;
+        bool WordPosComing;
+        bool POSPosComing;
+        bool LemmaPosComing;
+        bool LemmaClassPosComing;
+        char * alltext;
+*/
+    public:
+        /*
+        token * getCurrentToken();
+        void CallBackStartElementName();
+        void CallBackEndElementName();
+        void CallBackStartAttributeName();
+        void CallBackEndAttributeNameInserting();
+        void CallBackEndAttributeNameCounting();
+        void CallBackStartValue();
+        void CallBackEndValue();
+        void CallBackEndTag();
+        void CallBackEmptyTag();
+        void CallBackNoMoreAttributes();
+        */
         basefrm ** ppD;
         basefrm ** ppL;
         int cntD;
@@ -93,19 +151,29 @@ class taggedText
         int newcntTypes;
         int aConflict;
         int aConflictTypes;
+        void incTotal()
+            {
+            ++total;
+            }
+        void incTotal(unsigned long int inc)
+            {
+            total += inc;
+            }
         static bool setFormat(const char * format,const char * bformat,const char * Bformat,bool InputHasTags);
 #if STREAM
         void Lemmatise(ostream * fpo,/*FILE * fpnew,FILE * fpconflict,*/const char * Sep,
             tallyStruct * tally,
             unsigned int SortOutput,int UseLemmaFreqForDisambiguation,bool nice,bool DictUnique,bool baseformsAreLowercase,int listLemmas);
-        taggedText(istream * fpi,bool InputHasTags,char * Iformat,int keepPunctuation,bool nice,unsigned long int size,bool treatSlashAsAlternativeSeparator);
+        text(/*istream * fpi,*/bool InputHasTags/*,char * Iformat*/,int keepPunctuation,bool nice,unsigned long int size/*,bool treatSlashAsAlternativeSeparator*/
+            );
 #else
         void Lemmatise(FILE * fpo,/*FILE * fpnew,FILE * fpconflict,*/const char * Sep,
             tallyStruct * tally,
             unsigned int SortOutput,int UseLemmaFreqForDisambiguation,bool nice,bool DictUnique,bool baseformsAreLowercase,int listLemmas);
-        taggedText(FILE * fpi,bool InputHasTags,char * Iformat,int keepPunctuation,bool nice,unsigned long int size,bool treatSlashAsAlternativeSeparator);
+        text(/*FILE * fpi,*/bool InputHasTags/*,char * Iformat*/,int keepPunctuation,bool nice/*,unsigned long int size,bool treatSlashAsAlternativeSeparator*/
+            );
 #endif
-        ~taggedText();
+        virtual ~text();
         void createUnTaggedAlternatives(
 #ifndef CONSTSTRCHR
             const 
@@ -119,7 +187,17 @@ class taggedText
 
             char * w, const char * tag);
         void createTagged(const char * w, const char * tag);
+        virtual void printUnsorted(
+#if STREAM
+            ostream * fpo
+#else
+            FILE * fpo            
+#endif
+            ) = 0;
+        void makeList();
     };
 
+extern char * globIformat;
+extern int findSlashes(const char * buf);
 
 #endif

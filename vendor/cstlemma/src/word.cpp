@@ -38,9 +38,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 int Word::COUNT = 0;
 #endif
 
-#if !TREE
 Word * Word::Root = 0;
-#endif
 
 
 
@@ -56,15 +54,10 @@ bool Word::hasb = false;
 bool Word::hasB = false;
 const char * Word::sep;
 bool Word::DictUnique = true;
-bool Word::LastWordOfLine = false;
+int Word::NewLinesAfterWord = 0;
 int Word::LineNumber = 1;
-#if TREE
-ins_f Word::ins = 0;
-ins_ft taggedWord::inst = 0;
-#else
 cmp_f Word::cmp = &Word::cmpword;
 cmp_ft taggedWord::comp = &taggedWord::cmptaggedword;
-#endif
 
 /*
 The next function makes an >>uneducated<< guess at the type of the word.
@@ -166,6 +159,14 @@ function * Word::getUnTaggedWordFunctionNoBb(int character,bool & SortInput,int 
 void Word::print()const
     {
     funcs->printIt(this);
+    }
+
+void Word::printLemmaClass()const
+    {
+    if(pbfD)
+        pbfD->printFn(fp,&basefrm::T,sep);
+    else if(pbfL)
+        pbfL->printFn(fp,&basefrm::T,sep);
     }
 
 int Word::addBaseFormsL()
@@ -731,14 +732,8 @@ stem ende tp V baseTp ADJ
     return cnt;
     }
 
-#if TREE
-void Word::lookup(void * arg)
+void Word::lookup(text * txt)
     {
-    taggedText * txt = (taggedText *)arg;
-#else
-void Word::lookup(taggedText * txt)
-    {
-#endif
     bool conflict = false;
     tcount Pos;
     int Nmbr;
@@ -763,217 +758,5 @@ void Word::lookup(taggedText * txt)
         addFullForm();
     }
 
-#if TREE
-void Word::assign(void * arg)
-    {
-    taggedText * txt = (taggedText *)arg;
-    assignTo(txt->ppD,txt->ppL);
-    }
-void Word::traverse(trav fnc,void * arg)
-    {
-    if(left)
-        left->traverse(fnc,arg);
-    (this->*fnc)(arg);
-    if(right)
-        right->traverse(fnc,arg);
-    }
-
-void Word::traverse0(trav0 fnc)
-    {
-    if(left)
-        left->traverse0(fnc);
-    (this->*fnc)();
-    if(right)
-        right->traverse0(fnc);
-    }
-
-void taggedWord::traverse0T(trav0T fnc)
-    {
-    if(left)
-        ((taggedWord*)left)->traverse0T(fnc);
-    (this->*fnc)();
-    if(right)
-        ((taggedWord*)right)->traverse0T(fnc);
-    }
-
-void Word::traverse0C(trav0C fnc)
-    {
-    if(left)
-        left->traverse0C(fnc);
-    (this->*fnc)();
-    if(right)
-        right->traverse0C(fnc);
-    }
-
-Word * Word::sort_f(Word * root)
-    {
-    if(!root)
-        root = new Word(*this);
-    else
-        (root->*ins)(*this);
-    if(left)
-        left->sort_f(root);
-    if(right)
-        right->sort_f(root);
-    return root;
-    }
-
-Word * taggedWord::sort_f(Word * root)
-    {
-    if(!root)
-        root = new taggedWord(*this);
-    else
-        (((taggedWord*)root)->*inst)(*this);
-    if(left)
-        left->sort_f(root);
-    if(right)
-        right->sort_f(root);
-    return root;
-    }
-
-void Word::insert(const char * a_w,const Word *& ret)
-    {
-    int c = strcmp(m_word,a_w);
-    if(!c)
-        {
-        ++cnt;
-        ret = this;
-        }
-    else
-        {
-        if(c > 0)
-            {
-            if(left)
-                left->insert(a_w,ret);
-            else
-                {
-                ret = left = new Word(a_w);
-                }
-            }
-        else
-            {
-            if(right)
-                right->insert(a_w,ret);
-            else
-                {
-                ret = right = new Word(a_w);
-                }
-            }
-        }
-    }
-void taggedWord::insert(const char * a_w,const char * a_t,const taggedWord *& ret)
-    {
-    int c = strcmp(m_tag,a_t);
-    if(!c)
-        c = strcmp(m_word,a_w);
-    if(!c)
-        {
-        ++cnt;
-        ret = this;
-        }
-    else
-        {
-        if(c > 0)
-            {
-            if(left)
-                ((taggedWord*)left)->insert(a_w,a_t,ret);
-            else
-                {
-                taggedWord * tmp;
-                ret = tmp = new taggedWord(a_w,a_t);
-                left = tmp; 
-                }
-            }
-        else
-            {
-            if(right)
-                ((taggedWord*)right)->insert(a_w,a_t,ret);
-            else
-                {
-                taggedWord * tmp;
-                ret = tmp = new taggedWord(a_w,a_t);
-                right = tmp;
-                }
-            }
-        }
-    }
-void Word::insert_fw(Word & w)
-    {
-    int c = 0;
-    if(!c)c=w.cnt - cnt;
-    if(!c)c=strcmp(m_word,w.m_word);
-
-    if(c > 0)if(left)left->insert_fw(w);else left=new Word(w);else if(right)right->insert_fw(w);else right=new Word(w);
-    }
-
-void Word::insert_wf(Word & w)
-    {
-    int c = 0;
-    if(!c)c=strcmp(m_word,w.m_word);
-    if(!c)c=w.cnt - cnt;
-
-    if(c > 0)if(left)left->insert_wf(w);else left=new Word(w);else if(right)right->insert_wf(w);else right=new Word(w);
-    }
-
-void taggedWord::insert_ftw(taggedWord & w)
-    {
-    int c = 0;
-    if(!c)c=((taggedWord&)w).cnt - cnt;
-    if(!c)c=strcmp(m_tag,((taggedWord&)w).m_tag);
-    if(!c)c=strcmp(m_word,w.m_word);
-
-    if(c > 0)if(left)((taggedWord*)left)->insert_ftw(w);else left=new taggedWord(w);else if(right)((taggedWord*)right)->insert_ftw(w);else right=new taggedWord(w);
-    }
-
-void taggedWord::insert_fwt(taggedWord & w)
-    {
-    int c = 0;
-    if(!c)c=((taggedWord&)w).cnt - cnt;
-    if(!c)c=strcmp(m_word,w.m_word);
-    if(!c)c=strcmp(m_tag,((taggedWord&)w).m_tag);
-
-    if(c > 0)if(left)((taggedWord*)left)->insert_fwt(w);else left=new taggedWord(w);else if(right)((taggedWord*)right)->insert_fwt(w);else right=new taggedWord(w);
-    }
-
-void taggedWord::insert_wft(taggedWord & w)
-    {
-    int c = 0;
-    if(!c)c=strcmp(m_word,w.m_word);
-    if(!c)c=((taggedWord&)w).cnt - cnt;
-    if(!c)c=strcmp(m_tag,((taggedWord&)w).m_tag);
-
-    if(c > 0)if(left)((taggedWord*)left)->insert_wft(w);else left=new taggedWord(w);else if(right)((taggedWord*)right)->insert_wft(w);else right=new taggedWord(w);
-    }
-
-void taggedWord::insert_wtf(taggedWord & w)
-    {
-    int c = 0;
-    if(!c)c=strcmp(m_word,w.m_word);
-    if(!c)c=strcmp(m_tag,((taggedWord&)w).m_tag);
-    if(!c)c=((taggedWord&)w).cnt - cnt;
-
-    if(c > 0)if(left)((taggedWord*)left)->insert_wtf(w);else left=new taggedWord(w);else if(right)((taggedWord*)right)->insert_wtf(w);else right=new taggedWord(w);
-    }
-
-void taggedWord::insert_tfw(taggedWord & w)
-    {
-    int c = 0;
-    if(!c)c=strcmp(m_tag,((taggedWord&)w).m_tag);
-    if(!c)c=((taggedWord&)w).cnt - cnt;
-    if(!c)c=strcmp(m_word,w.m_word);
-
-    if(c > 0)if(left)((taggedWord*)left)->insert_tfw(w);else left=new taggedWord(w);else if(right)((taggedWord*)right)->insert_tfw(w);else right=new taggedWord(w);
-    }
-
-void taggedWord::insert_twf(taggedWord & w)
-    {
-    int c = 0;
-    if(!c)c=strcmp(m_tag,((taggedWord&)w).m_tag);
-    if(!c)c=strcmp(m_word,w.m_word);
-    if(!c)c=((taggedWord&)w).cnt - cnt;
-
-    if(c > 0)if(left)((taggedWord*)left)->insert_twf(w);else left=new taggedWord(w);else if(right)((taggedWord*)right)->insert_twf(w);else right=new taggedWord(w);
-    }
-#endif
 
 int Word::reducedtotal = 0;

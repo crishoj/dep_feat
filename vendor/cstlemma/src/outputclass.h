@@ -27,13 +27,16 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #define NUMBERTEST 1
 #define STRINGTEST 2
 
+#if defined PROGLEMMATISE
 class function;
 class functionTree;
 
 typedef function * (*getFunction)(int kar,bool & SortInput,int & testType);
+#endif
 
 class OutputClass
     {
+#if defined PROGLEMMATISE
 #ifdef COUNTOBJECTS
     public:
         static int COUNT;
@@ -53,6 +56,7 @@ class OutputClass
         //correctly downcasted.
         static const char * Format(const char * format,getFunction gfnc,functionTree & tree,const char * allFormat,bool & SortInput,int & testType);
         virtual bool skip() const{return false;}
+#endif
     };
 
 #endif

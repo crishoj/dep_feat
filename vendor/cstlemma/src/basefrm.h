@@ -36,6 +36,9 @@ using namespace std;
 
 class baseformpointer;
 class Word;
+class basefrm;
+
+
 class basefrm : public OutputClass
     {
 #ifdef COUNTOBJECTS
@@ -54,19 +57,15 @@ class basefrm : public OutputClass
         char * m_s;
         char * m_t;
         static int index;
+    public:
 #if STREAM
         static ostream * m_fp;
 #else
         static FILE * m_fp;
 #endif
-        void T() const
-            {
-#if STREAM
-            *m_fp << m_t;
-#else
-            fprintf(m_fp,"%s",m_t);
-#endif
-            }
+    public:
+        void T() const;
+    private:
         void F() const
             {
 #if STREAM
@@ -89,14 +88,7 @@ class basefrm : public OutputClass
             {
             fprintf(m_fp,"%u",freq); need sum of frequencies here
             }*/
-        void W() const
-            {
-#if STREAM
-            *m_fp << m_s;
-#else
-            fprintf(m_fp,"%s",m_s);
-#endif
-            }
+        void W() const;
         void L() const;
     public:
         static functionTree * bfuncs;// used if -W option set

@@ -32,9 +32,20 @@ using namespace std;
 # include <stdio.h>
 #endif
 
+extern void (*print)(
+#if STREAM
+              ostream * fpo
+#else
+              FILE * fpo
+#endif
+              ,const char * s);
+
+
 class basefrm;
 class functionTree;
 class Word;
+
+typedef void (basefrm::*bfn)(void)const;
 
 class baseformpointer
     {
@@ -62,8 +73,10 @@ class baseformpointer
             }
 #if STREAM
         void printfbf(ostream *fp,functionTree * fns,const char * sep);
+        void printFn(ostream *fp,bfn Fn,const char * sep);
 #else
         void printfbf(FILE *fp,functionTree * fns,const char * sep);
+        void printFn(FILE *fp,bfn Fn,const char * sep);
 #endif
 #if PFRQ || FREQ24
         baseformpointer(const char * s,const char * t,int len,/*int cnt,*/unsigned int frequency);

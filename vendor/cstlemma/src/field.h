@@ -23,6 +23,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #define FIELD_H
 
 #include "defines.h"
+#include <stdlib.h> // gcc: size_t
 
 class field
     {
@@ -63,7 +64,7 @@ class readValue : public field
     {
     private:
         char * word;
-        int len;
+        size_t len;
         int pos;
     public:
         const char * isA() //20080213

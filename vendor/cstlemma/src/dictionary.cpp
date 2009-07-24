@@ -1,7 +1,7 @@
 /*
 CSTLEMMA - trainable lemmatiser using word-end inflectional rules
 
-Copyright (C) 2002, 2005  Center for Sprogteknologi, University of Copenhagen
+Copyright (C) 2002, 2005, 2009  Center for Sprogteknologi, University of Copenhagen
 
 This file is part of CSTLEMMA.
 

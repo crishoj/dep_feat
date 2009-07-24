@@ -33,7 +33,6 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 int basefrm::COUNT = 0;
 #endif
 
-
 int basefrm::index = 0;
 functionTree * basefrm::bfuncs = 0;// used if -W option set
 functionTree * basefrm::Bfuncs = 0;// used if -W option set
@@ -159,10 +158,11 @@ void basefrm::L() const
 //        fullForm[i]->print();
         wfuncs->printIt(fullForm[i]);
         if(i < nfullForm - 1)
+            print(m_fp,sep);
 #if STREAM
-            *m_fp << sep;
+            //*m_fp << sep;
 #else
-            fprintf(m_fp,"%s",sep);
+            //fprintf(m_fp,"%s",sep);
 #endif
 //        fullForm[i]->printw(fp,wfuncs,sep);
         }
@@ -368,3 +368,39 @@ void basefrm::remove(baseformpointer * tobermoved)
             }
     }
     */
+
+
+
+static void printOther(
+#if STREAM
+                       ostream * fpo
+#else
+                       FILE * fpo
+#endif
+                       ,const char * s)
+    {
+#if STREAM
+    *fpo << s;
+#else
+    fprintf(fpo,"%s",s);
+#endif
+    }
+
+void (*print)(
+#if STREAM
+              ostream * fpo
+#else
+              FILE * fpo
+#endif
+              ,const char * s) = printOther;
+
+void basefrm::T() const
+    {
+    print(basefrm::m_fp,m_t);
+    }
+
+void basefrm::W() const
+    {
+    print(basefrm::m_fp,m_s);
+    }
+

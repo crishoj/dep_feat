@@ -41,7 +41,7 @@ const char * OutputClass::Format(const char * format,getFunction gfnc,functionTr
         {
         printf("format string missing.\n");
         exit(0);
-        return NULL;
+//        return NULL;
         }
     char buf[100];
     char * str = NULL;
@@ -81,7 +81,7 @@ const char * OutputClass::Format(const char * format,getFunction gfnc,functionTr
             printf("unknown field %c in format \"%s\"\n",*f,allFormat);
             printf("                            %*c\n",(int)(strlen(allFormat) - strlen(f)),'^');
             exit(0);
-            return NULL;
+//            return NULL;
             }
         tree.setFunction(tmp);
         ++f;
@@ -133,7 +133,7 @@ const char * OutputClass::Format(const char * format,getFunction gfnc,functionTr
             printf("format \"%s\" must have one or more digits after %c.\n",allFormat,*--f);
             printf("         %*c\n",(int)(strlen(allFormat) - strlen(f)),'^');
             exit(0);
-            return NULL;
+//            return NULL;
             }
         else
             {
@@ -203,7 +203,7 @@ const char * OutputClass::Format(const char * format,getFunction gfnc,functionTr
         printf("format \"%s\" has illegal test.\n",allFormat);
         printf("         %*c\n",(int)(strlen(allFormat) - strlen(f) - condition),'^');
         exit(0);
-        return NULL;
+//        return NULL;
         }
 
     testType |= loctestType;

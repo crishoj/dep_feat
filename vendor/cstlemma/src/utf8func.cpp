@@ -1,7 +1,7 @@
 /*
 CSTLEMMA - trainable lemmatiser using word-end inflectional rules
 
-Copyright (C) 2002, 2005  Center for Sprogteknologi, University of Copenhagen
+Copyright (C) 2002, 2005, 2009  Center for Sprogteknologi, University of Copenhagen
 
 This file is part of CSTLEMMA.
 
@@ -34,7 +34,7 @@ bool isUpperUTF8(const char * s)
     return upperEquivalent(S) == (unsigned int)S;
     }
 
-bool isAllUpper(const char * s,int len)
+bool isAllUpper(const char * s,size_t len)
     {
     bool UTF8 = true;
     int S;
@@ -110,6 +110,8 @@ void AllToUpper(char * s)
     i i İ U130>0x80  69
     The only character that will become shorter when uppercased is the Turcic ı
     ı ı I U49<0x80  131
+    if(Turcic)
+        printf("Turcic enabled, see letterfunc.h");
     */
     size_t len = strlen(s);
     size_t L = len;
@@ -132,7 +134,7 @@ void AllToUpper(char * s)
         }
     else
         {
-        fprintf(stderr,"UpperEquivalent(%s) [%s..] longer than %s\n",s,dest,s);
+        fprintf(stderr,"UpperEquivalent(%s) [%s..] longer than %s\n",s,start,s);
         }
     delete [] start;
     }
@@ -280,7 +282,7 @@ int copyUTF8char(const char * s,char * dest)
         {
         // Start of multibyte
         int i = 1;
-        while((*++s & 0xc0) == 0x80) // 10bbbbbb
+        while(i < 7 && (*++s & 0xc0) == 0x80) // 10bbbbbb
             {
             ++i;
             *++dest = *s;
@@ -309,7 +311,7 @@ int skipUTF8char(const char * s)
     }
 
 
-int Utf8ToUnicode(int * w,const char * s,int len)
+int Utf8ToUnicode(int * w,const char * s,size_t len)
     {
     int i = 0;
     int S;

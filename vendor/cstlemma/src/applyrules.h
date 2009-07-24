@@ -32,5 +32,6 @@ bool readRules(const char * flexFileName); // 20081107
 const char * applyRules(const char * word);
 const char * applyRules(const char * word,const char * tag);
 void deleteRules();
+extern bool oneAnswer;
 
 #endif

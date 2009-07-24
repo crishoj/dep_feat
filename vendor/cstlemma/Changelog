@@ -1,4 +1,14 @@
 ------------------------------
+Version 4.0 (23 July 2009)
+------------------------------
+Added the source for the training algorithm that produces affix rules.
+(See:
+  Bart Jongejan and Hercules Dalianis
+"Automatic training of lemmatization rules that handle morphological changes 
+in pre-, in- and suffixes alike"
+  ACL 2009 Singapore)
+Additionally, functionalities have been split in separate executable files.
+------------------------------
 Version 3.0 (10 December 2008)
 ------------------------------
 Added UTF-8 capability, but only for the new type of flexrules.

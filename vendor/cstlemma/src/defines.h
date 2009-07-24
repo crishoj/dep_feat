@@ -36,7 +36,6 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
         */ 
 
 
-#define TREE 0
 
 //#define COUNTOBJECTS  // Bart 20050916: for finding memory leak. 
                        // Printout of counts in ~flex()
@@ -71,5 +70,14 @@ non-const character strings.
 #if _MSC_VER >= 1400
 #define CONSTSTRCHR
 #endif
+#endif
+
+#if (defined PROGMAKEDICT)
+#elif (defined PROGMAKESUFFIXFLEX)
+#elif (defined PROGLEMMATISE)
+#else
+#define PROGMAKEDICT
+#define PROGMAKESUFFIXFLEX
+#define PROGLEMMATISE
 #endif
 #endif

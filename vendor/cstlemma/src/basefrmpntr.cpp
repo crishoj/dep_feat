@@ -85,6 +85,43 @@ baseformpointer::~baseformpointer()
     }
 
 #if STREAM
+void baseformpointer::printFn(ostream *fp,bfn Fn,const char * sep)
+#else
+void baseformpointer::printFn(FILE *fp,bfn Fn,const char * sep)
+#endif
+    {
+        bool doSep = false;
+        baseformpointer * bfp = this;
+        while(bfp)
+            {
+            while(bfp && bfp->hidden)
+                {
+                if(UseLemmaFreqForDisambiguation == 1)
+                    {
+                    if(doSep)
+                        print(fp,sep);
+                    else
+                        doSep = true;
+                    print(fp,"<<");
+                    (bfp->bf->*Fn)();
+                    print(fp,">>");
+                    }
+                bfp = bfp->next;
+                }
+            while(bfp && !bfp->hidden)
+                {
+                if(doSep)
+                    print(fp,sep);
+                else
+                    doSep = true;
+                (bfp->bf->*Fn)();
+                bfp = bfp->next;
+                }
+            }
+    }
+
+
+#if STREAM
 void baseformpointer::printfbf(ostream *fp,functionTree * fns,const char * sep)
 #else
 void baseformpointer::printfbf(FILE *fp,functionTree * fns,const char * sep)
@@ -101,33 +138,19 @@ void baseformpointer::printfbf(FILE *fp,functionTree * fns,const char * sep)
                 if(UseLemmaFreqForDisambiguation == 1)
                     {
                     if(doSep)
-#if STREAM
-                        *fp << sep;
-#else
-                        fprintf(fp,"%s",sep);
-#endif
+                        print(fp,sep);
                     else
                         doSep = true;
-#if STREAM
-                    *fp << "<<";
+                    print(fp,"<<");
                     fns->printIt(bfp->bf);
-                    *fp << ">>";
-#else
-                    fprintf(fp,"%s","<<");
-                    fns->printIt(bfp->bf);
-                    fprintf(fp,"%s",">>");
-#endif
+                    print(fp,">>");
                     }
                 bfp = bfp->next;
                 }
             while(bfp && !bfp->hidden)
                 {
                 if(doSep)
-#if STREAM
-                    *fp << sep;
-#else
-                    fprintf(fp,"%s",sep);
-#endif
+                    print(fp,sep);
                 else
                     doSep = true;
                 fns->printIt(bfp->bf);

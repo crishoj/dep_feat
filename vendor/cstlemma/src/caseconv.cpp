@@ -1,7 +1,7 @@
 /*
 CSTLEMMA - trainable lemmatiser using word-end inflectional rules
 
-Copyright (C) 2002, 2005  Center for Sprogteknologi, University of Copenhagen
+Copyright (C) 2002, 2005, 2009  Center for Sprogteknologi, University of Copenhagen
 
 This file is part of CSTLEMMA.
 
@@ -430,6 +430,13 @@ const bool * alpha = alphas[DEFAULTENCODING];
 const unsigned char * LowerEquivalent = lowerEquivalents[DEFAULTENCODING];
 const unsigned char * UpperEquivalent = upperEquivalents[DEFAULTENCODING];
 
+bool isAllUpperUTF8(const char * s)
+    {
+    return isAllUpper(s,0);
+    }
+
+bool (*IsAllUpper)(const char * s) = NULL;
+void (*allToUpper)(char * s) = NULL;
 
 void AllToLowerISO(char * s)
     {
@@ -484,13 +491,13 @@ void AllToUpperISO(char * s)
             }
         }
     }
-
+/*
 void toLower(char * s)
     {
     if(LowerEquivalent)
         *s = (char)LowerEquivalent[*s & 0xFF];
     }
-
+*/
 void toUpper(char * s)
     {
     if(UpperEquivalent)
@@ -530,7 +537,7 @@ unsigned int Upper19(int k){return UpperEquivalent[(int)(k & 0xFF)];}
 unsigned int Lower19(int k){return LowerEquivalent[(int)(k & 0xFF)];}
 
 bool (*is_Upper)(const char * s) = isUpper0;
-unsigned int (*Upper)(int k) = Upper0;
+//unsigned int (*Upper)(int k) = Upper0;
 unsigned int (*Lower)(int k) = Lower0;
 bool (*is_Alpha)(int k) = isAlphaISO;
 const char * (*allToLower)(const char * s);
@@ -557,16 +564,19 @@ void setEncoding(int encoding)
         / **/
         /**/
             is_Upper = isUpper0;
-            Upper = Upper0;
+//            Upper = Upper0;
             Lower = Lower0;
         /**/
 
-        alpha = alphas[DEFAULTENCODING];//0;
+        /*alpha = alphas[DEFAULTENCODING];//0;
         LowerEquivalent = lowerEquivalents[encoding];//0;
         UpperEquivalent = upperEquivalents[encoding];//0;
+        */
         is_Alpha = isAlpha;
         allToLower = allToLowerUTF8;
         AllToLower = AllToLowerUTF8;
+        allToUpper = AllToUpper;
+        IsAllUpper = isAllUpperUTF8;
         }
     else
         {
@@ -577,18 +587,20 @@ void setEncoding(int encoding)
         if(encoding == DEFAULTENCODING)
             {
             is_Upper = isUpper0;
-            Upper = Upper0;
+//            Upper = Upper0;
             Lower = Lower0;
             }
         else
             {
             is_Upper = isUpper19;
-            Upper = Upper19;
+//            Upper = Upper19;
             Lower = Lower19;
             }
         is_Alpha = isAlphaISO;
         allToLower = allToLowerISO;
         AllToLower = AllToLowerISO;
+        allToUpper = AllToUpperISO;
+        IsAllUpper = isAllUpper;
         }
     }
 

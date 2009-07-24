@@ -1,7 +1,7 @@
 /*
 CSTLEMMA - trainable lemmatiser using word-end inflectional rules
 
-Copyright (C) 2002, 2005  Center for Sprogteknologi, University of Copenhagen
+Copyright (C) 2002, 2005, 2009  Center for Sprogteknologi, University of Copenhagen
 
 This file is part of CSTLEMMA.
 
@@ -25,6 +25,8 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #define UNICODE_CAPABLE 1
 
 #if UNICODE_CAPABLE
+
+extern bool Turcic; // if true, upperEquivalent('i') = 'İ' and lowerEquivalent('I') = 'ı'
 
 class folded
     {

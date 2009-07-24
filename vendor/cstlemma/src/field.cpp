@@ -46,9 +46,9 @@ char * readValue::read(char * kar,field *& nextfield)
     char * nxt = kar;
     if(next)
         nxt = next->read(kar,nextfield);
-    if(nxt)
+    if(nxt && /*Bart 20081218*/*nxt)
         {
-        int ln = strlen(nxt);
+        size_t ln = strlen(nxt);
         if(pos + ln >= len)
             {
             len = pos + ln + 1;
@@ -59,6 +59,7 @@ char * readValue::read(char * kar,field *& nextfield)
             }
         strcpy(word + pos,nxt);
         pos += ln;
+        assert(strlen(word) < len);
         nextfield = this; // Bart 20050224
         }
 /*            else
@@ -68,8 +69,22 @@ char * readValue::read(char * kar,field *& nextfield)
 
 char * readWhiteSpace::read(char * kar,field *& nextfield)
     {
-    int k = *kar;
-    if(isspace(k))
+    int k = (unsigned char)*kar;
+    if(!k)
+        {
+        found = true;
+        if(next)
+            {
+            next->read(kar,nextfield);
+            return NULL;
+            }
+        else
+            {
+            nextfield = NULL;
+            return kar; 
+            }
+        }
+    else if(isspace(k))
         {
         found = true;
         nextfield = this;

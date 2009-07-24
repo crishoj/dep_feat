@@ -37,12 +37,17 @@ struct optionStruct
     public:
     static int COUNT;
 #endif
+#if defined PROGLEMMATISE
     static const char DefaultSep[]; // -s
     static const char DefaultCFormat[]; // -c
     static const char DefaultCFormat_NoTags[]; // -c
+    static const char DefaultCFormat_NoDict[];
+    static const char DefaultCFormat_NoTags_NoDict[];
+    static const char DefaultCFormatXML[]; // -c in combination with -Xl 
+    static const char DefaultCFormatXML_NoDict[];
     static const char Default_b_format[]; // -b
     static const char * Default_B_format; // -B
-
+#endif
     // program task
     whattodoTp whattodo; // -D, -F, -L
 
@@ -52,23 +57,37 @@ struct optionStruct
 
     // -L
     // linguistic resources
+#if defined PROGLEMMATISE
     const char * dictfile;  // -d
+#endif
+#if (defined PROGMAKESUFFIXFLEX || defined PROGLEMMATISE)
     const char * flx;       // -f
+#endif
+#if defined PROGLEMMATISE
     const char * v;         // -v
     const char * x;         // -x
     const char * z;         // -z
-
     // pre-run rule treatment
     bool RulesUnique; // -U removeAmbiguous
 
     // input text info
-    bool InputHasTags;                      // -t taggedText::taggedText
-    char * Iformat;                         // -I taggedText::taggedText
-    int keepPunctuation;                    // -p taggedText::taggedText
-    bool nice;                              // -y makedict, taggedText::taggedText, taggedText::Lemmatise
-    unsigned long int size;                 // -m taggedText::taggedText
-    bool treatSlashAsAlternativesSeparator; // -A taggedText::taggedText
+    bool InputHasTags;                      // -t text::text
+    char * Iformat;                         // -I text::text
+    int keepPunctuation;                    // -p text::text
+#endif
+    bool nice;                              // -y makedict, text::text, text::Lemmatise
+#if defined PROGLEMMATISE
+    unsigned long int size;                 // -m text::text
+    bool treatSlashAsAlternativesSeparator; // -A text::text
+    bool XML;                               // -X
 
+    char * ancestor;            // -Xaxyz if not null, restrict lemmatisation to elements that are offspring of ancestor
+    char * element;             // -Xexyz if null, analyse all PCDATA that is text
+    char * wordAttribute;       // -Xwxyz if null, word is PCDATA
+    char * POSAttribute;        // -Xpxyz if null, POS is PCDATA
+    char * lemmaAttribute;      // -Xlxyz if null, Lemma is PCDATA
+    char * lemmaClassAttribute; // -Xcxyz if null, lemma class is PCDATA
+#endif
     // input and output
     const char * argi; // -i
     const char * argo; // -o
@@ -76,26 +95,32 @@ struct optionStruct
 
     // output format
     char * cformat; // -c (also option for -D and -F tasks)
+#if defined PROGLEMMATISE
     char * Wformat; // -W
     char * bformat; // -b
     char * Bformat; // -B
 
     // output switches
-    char * Sep;                             // -s  taggedText::Lemmatise
-    unsigned int SortOutput;                // -q  taggedText::Lemmatise
-//    unsigned int SortFreq;                // -q#wp taggedText::Lemmatise
-    int UseLemmaFreqForDisambiguation;      // -H taggedText::Lemmatise
-    bool DictUnique;                        // -u taggedText::Lemmatise
-    bool baseformsAreLowercase;             // -l taggedText::Lemmatise
+    char * Sep;                             // -s  text::Lemmatise
+    unsigned int SortOutput;                // -q  text::Lemmatise
+//    unsigned int SortFreq;                // -q#wp text::Lemmatise
+    int UseLemmaFreqForDisambiguation;      // -H text::Lemmatise
+    bool DictUnique;                        // -u text::Lemmatise
+#endif
+    bool baseformsAreLowercase;             // -l text::Lemmatise
 
 
+#if defined PROGLEMMATISE
     bool defaultbformat;
     bool defaultBformat;
+#endif
     bool defaultCformat;
 
+#if defined PROGMAKESUFFIXFLEX
     long CutoffRefcount;
     bool showRefcount;
-
+#endif
+#if defined PROGLEMMATISE
     bool Defaultbformat()
         {
         return defaultbformat;
@@ -108,15 +133,19 @@ struct optionStruct
         {
         return defaultCformat;
         }
+#endif
     optionStruct();
     ~optionStruct();
     OptReturnTp doSwitch(int c,char * locoptarg,char * progname);
     OptReturnTp readOptsFromFile(char * locoptarg,char * progname);
     OptReturnTp readArgs(int argc, char * argv[]);
+#if defined PROGLEMMATISE
+    void setcformat(const char * format);            // -c
+#endif
+#if defined PROGLEMMATISE
     void setIformat(const char * format);            // -I
     void setBformat(const char * format);            // -B
     void setbformat(const char * format);            // -b
-    void setcformat(const char * format);            // -c
     void setWformat(const char * format);            // -W
     void setSep(const char * format);                // -s
     void setUseLemmaFreqForDisambiguation(int n);    // -H 0, 1 or 2
@@ -125,5 +154,6 @@ struct optionStruct
     void settreatSlashAsAlternativesSeparator(bool b);
     void setUseLemmaFreqForDisambiguation(bool b);
     void setDictUnique(bool b);
+#endif
     void setbaseformsAreLowercase(bool b);
     };

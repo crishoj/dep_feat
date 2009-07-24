@@ -35,7 +35,7 @@ const char * lext::constructBaseform(const char * fullform) const
     char * pbuf = buf;
     for(w = fullform;*w && off;--off)
         {
-        *pbuf++ = Lower(*w);
+        *pbuf++ = (char)Lower(*w);
         w++;
         }
     for(w = BaseFormSuffix;*w;)

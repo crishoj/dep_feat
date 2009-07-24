@@ -1,7 +1,7 @@
 /*
 CSTLEMMA - trainable lemmatiser using word-end inflectional rules
 
-Copyright (C) 2002, 2005  Center for Sprogteknologi, University of Copenhagen
+Copyright (C) 2002, 2005, 2009  Center for Sprogteknologi, University of Copenhagen
 
 This file is part of CSTLEMMA.
 
@@ -38,7 +38,7 @@ void setEncoding(int encoding);
 const char * allToLowerISO(const char * s);
 void AllToLowerISO(char * s);
 void AllToUpperISO(char * s);
-void toLower(char * s);
+//void toLower(char * s);
 void toUpper(char * s);
 bool isAllUpper(const char * s);
 extern const bool * space;
@@ -66,9 +66,11 @@ extern const unsigned char * lowerEquivalent;
 #endif
 
 extern bool (*is_Upper)(const char * s);
-extern unsigned int (*Upper)(int k);
+//extern unsigned int (*Upper)(int k);
 extern unsigned int (*Lower)(int k);
 extern bool (*is_Alpha)(int s);
 extern const char * (*allToLower)(const char * s);
 extern void (*AllToLower)(char * s);
+extern bool (*IsAllUpper)(const char * s);
+extern void (*allToUpper)(char * s);
 #endif

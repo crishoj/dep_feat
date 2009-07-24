@@ -942,8 +942,10 @@ static bool add(char * baseform,char * flexform,char * lextype)
         boguscnt++;
         printf("%d Comma detected in flex form. Type: %s Baseform: %s Flexform: %s\n",boguscnt,lextype,baseform,flexform);
         }
-    AllToLowerISO(baseform);// should be lower already, but some characters,
+    /*if(flex::baseformsAreLowercase) // test added Bart 20090203 and AllToLowerISO --> AllToLower
+        AllToLower(baseform);// should be lower already, but some characters,
                       // notably Ü (U umlaut), are not converted to lower case
+                      */
     for(i = 0;baseform[i] && flexform[i] == baseform[i];++i)
         ;
     if(root->add(flexform,lextype,baseform+i,i))
@@ -965,8 +967,10 @@ static void addFreq(int n,char * flexform,char * lextype,char * bf)
     int i = 0;
     if(bf)
         {
-        AllToLowerISO(bf);// should be lower already, but some characters,
+        /*if(flex::baseformsAreLowercase) // test added Bart 20090203 and AllToLowerISO --> AllToLower
+            AllToLower(bf);// should be lower already, but some characters,
                           // notably Ü (U umlaut), are not converted to lower case
+                          */
         for(i = 0;bf[i] && flexform[i] == bf[i];++i)
             ;
         }

@@ -33,7 +33,9 @@ using namespace std;
 
 
 struct optionStruct;
+#if defined PROGLEMMATISE
 class tagpairs;
+#endif
 struct tallyStruct;
 //class istream;
 //class std::ostream;
@@ -49,13 +51,18 @@ class Lemmatiser
         bool SortInput; // derived from other options
 
         static int instance;
+#if (defined PROGLEMMATISE || defined PROGMAKEDICT)
         dictionary dict;
+#endif
         optionStruct & Option;
         int status;
+#if defined PROGLEMMATISE
         static tagpairs * TextToDictTags;
+#endif
         bool changed;
     public:
         // functions to change Option on the fly
+        /*
         void setIformat(const char * format);            // -I
         void setBformat(const char * format);            // -B
         void setbformat(const char * format);            // -b
@@ -69,19 +76,26 @@ class Lemmatiser
         void setUseLemmaFreqForDisambiguation(bool b);
         void setDictUnique(bool b);
         void setbaseformsAreLowercase(bool b);
-
+        */
+#if defined PROGLEMMATISE
         static const char * translate(const char * tag);
+#endif
         int getStatus()
             {
             return status;
             }
         Lemmatiser(optionStruct & Option);
         ~Lemmatiser();
+#if defined PROGLEMMATISE
         int setFormats();
         int openFiles();
         void showSwitches();
+#endif
         int MakeDict();
+#if defined PROGMAKESUFFIXFLEX
         int MakeFlexPatterns();
+#endif
+#if defined PROGLEMMATISE
 #if STREAM
         void LemmatiseText(istream * fpin,ostream * fpout,tallyStruct * tally);
 #else
@@ -90,4 +104,5 @@ class Lemmatiser
         int LemmatiseFile();
         int LemmatiseInit();
         void LemmatiseEnd();
+#endif
     };

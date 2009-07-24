@@ -1,7 +1,7 @@
 /*
 CSTLEMMA - trainable lemmatiser using word-end inflectional rules
 
-Copyright (C) 2002, 2005  Center for Sprogteknologi, University of Copenhagen
+Copyright (C) 2002, 2005, 2009  Center for Sprogteknologi, University of Copenhagen
 
 This file is part of CSTLEMMA.
 
@@ -24,17 +24,37 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #if UNICODE_CAPABLE
 #include "letter.h"
 
+bool Turcic = false;
 
 bool isAlpha(int kar)
     {
-    int ind = kar % ARRSIZE;
+/*    int ind = kar % ARRSIZE;
     if((int)Letter[ind].Unfolded == kar)
-        return true;
-    /*
-    TODO:
-    Code for alphabets without upper/lower case distinction
-    */
-    return kar > 255; // Assume Unicode positions outside Latin-1 is all alphabetic
+        return true;*/
+
+/* From http://www.w3.org/TR/xml11/#NT-NameStartChar:
+NameStartChar	   ::=   	":" | [A-Z] | "_" | [a-z] | [#xC0-#xD6] 
+        | [#xD8-#xF6] | [#xF8-#x2FF] | [#x370-#x37D] | [#x37F-#x1FFF] 
+        | [#x200C-#x200D] | [#x2070-#x218F] | [#x2C00-#x2FEF] 
+        | [#x3001-#xD7FF] | [#xF900-#xFDCF] | [#xFDF0-#xFFFD] 
+        | [#x10000-#xEFFFF]
+*/
+    // 20090702
+    return 'A' <= kar && kar <= 'Z'
+        || 'a' <= kar && kar <= 'z'
+        || 0xC0 <= kar && kar <= 0xD6
+        || 0xD8 <= kar && kar <= 0xF6
+        || 0xF8 <= kar && kar <= 0x2FF
+        || 0x370 <= kar && kar <= 0x37D
+        || 0x37F <= kar && kar <= 0x1FFF
+        || 0x200C <= kar && kar <= 0x200D 
+        || 0x2070 <= kar && kar <= 0x218F 
+        || 0x2C00 <= kar && kar <= 0x2FEF 
+        || 0x3001 <= kar && kar <= 0xD7FF 
+        || 0xF900 <= kar && kar <= 0xFDCF 
+        || 0xFDF0 <= kar && kar <= 0xFFFD
+        || 0x10000 <= kar && kar <= 0xEFFFF;
+    //return kar > 255; // Assume Unicode positions outside Latin-1 is all alphabetic
     }
 
 bool isUpper(int kar)
@@ -51,12 +71,16 @@ bool isLower(int kar)
 
 unsigned int lowerEquivalent(int kar)
     {
+    if(kar == 'I' && !Turcic)
+        return 'i';
     int ind = kar % ARRSIZE;
     return ((int)Letter[ind].Unfolded == kar) && (Letter[ind].Simple) ? Letter[ind].Simple : kar;
     }
 
 unsigned int upperEquivalent(int kar)
     {
+    if(kar == 'i' && !Turcic)
+        return 'I';
     int ind = kar % ARRSIZE;
     return ((int)Letter[ind].Unfolded == kar) && (Letter[ind].Capital) ? Letter[ind].Capital : kar;
     }

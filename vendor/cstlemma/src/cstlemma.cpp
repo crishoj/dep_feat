@@ -22,14 +22,16 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //-L -eU -p+ -q- -t- -U- -H2 -fD:\projects\tvarsok\ru\rules_0utf8.lem -dD:\projects\lemmatiser\res.ru\dictrus -B$w -l- -c$w/$B$s -i D:\dokumenter\russisk\oetsjastiee.txt -o D:\dokumenter\russisk\oetsjastiee.lemmatised.txt -m0
 //-L -eU -p+ -q- -t- -U- -H2 -fD:\projects\tvarsok\ru\rules_0utf8.lem -B$w -l- -c$w/$B$s -i D:\dokumenter\russisk\oetsjastiee.txt -o D:\dokumenter\russisk\oetsjastiee.lemmatised.txt -m0
 //-L -e0 -p+ -q- -t- -U- -H2 -fD:\projects\tvarsok\ru\rules_0utf8.lem -B$w -l- -b$w -dD:\projects\lemmatiser\res.ru\dictrus -u- -c$i$w/$b1[[$b~1]?$B]$s -i D:\dokumenter\russisk\oetsjastiee.txt -o D:\dokumenter\russisk\oetsjastiee.lemmatised.txt -m0
-#define CSTLEMMAVERSION "3.0"
-#define CSTLEMMADATE "2008.12.10"
-#define CSTLEMMACOPYRIGHT "2002-2008 Center for Sprogteknologi"
+#define CSTLEMMAVERSION "3.2"
+#define CSTLEMMADATE "2009.05.27"
+#define CSTLEMMACOPYRIGHT "2002-2009 Center for Sprogteknologi"
 
 #include "lemmatiser.h"
 #include "option.h"
+#if defined PROGLEMMATISE
 #include "word.h"
 #include "caseconv.h"
+#endif
 #if STREAM
 # if defined __BORLANDC__
 #  include <strstrea.h>
@@ -97,6 +99,7 @@ int main(int argc, char * argv[])
                 }
             default:
                 {
+#if defined PROGLEMMATISE
 #define BATCH 1
 #if BATCH || !STREAM
                 ret = theLemmatiser.LemmatiseFile();
@@ -136,9 +139,12 @@ int main(int argc, char * argv[])
                         cout << str2.str();
                     }
 #endif
+#endif
                 }
             }
         }
+#if defined PROGLEMMATISE
     Word::deleteStaticMembers(); // Bart 20050916: memory leak. 
+#endif
     return ret;
     }

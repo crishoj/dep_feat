@@ -43,14 +43,9 @@ typedef void (taggedWord::*trav0T)();
 typedef void (Word::*trav0C)()const;
 typedef void (Word::*trav)(void *);
 
-#if TREE
-typedef void (Word::*ins_f)(Word &);
-typedef void (taggedWord::*ins_ft)(taggedWord &);
-#else
 typedef int (Word::*cmp_f)(const Word *) const;
 typedef int (taggedWord::*cmp_ft)(const taggedWord *) const;
-class taggedText;
-#endif
+class text;
 
 
 class basefrm;
@@ -66,20 +61,10 @@ class Word : public OutputClass
         static Word * Root;
         static int LineNumber; // Bart 20050221. The number of the line where the previous word was found. For line-wise output. 0 is initial value
         static bool DictUnique;
-        static bool LastWordOfLine;
+        static int NewLinesAfterWord;
 //  protected:
-#if TREE
-        Word * left;
-        Word * right;
-#endif
     public:
         static int reducedtotal;
-#if TREE
-        void traverse0(trav0);
-        void traverse0C(trav0C);
-        void traverse(trav,void *);
-        virtual Word * sort_f(Word * root); // Bart 20051209 added
-#endif
     protected:
         bool hasAddedItselfToBaseForm:1;
         bool FoundInDict:1;
@@ -133,10 +118,11 @@ class Word : public OutputClass
             }
         void w() const
             {
+            ::print(fp,m_word);
 #if STREAM
-            *fp << m_word;
+            //*fp << m_word;
 #else
-            fprintf(fp,"%s",m_word);
+            //fprintf(fp,"%s",m_word);
 #endif
             }
         void b() const
@@ -152,7 +138,7 @@ class Word : public OutputClass
         void s() const
             {
 #if STREAM
-            if(LastWordOfLine)
+            if(NewLinesAfterWord)
                 {
                 LineNumber++;
                 if(LineNumber > 1)
@@ -161,10 +147,13 @@ class Word : public OutputClass
             else
                 *fp << ' ';
 #else
-            if(LastWordOfLine)
+            if(NewLinesAfterWord)
                 {
                 if(LineNumber > 0)
-                    fputc('\n',fp);
+                    {
+                    for(int n = NewLinesAfterWord;n > 0;--n)
+                        fputc('\n',fp);
+                    }
                 LineNumber++;
                 }
             else
@@ -200,12 +189,6 @@ class Word : public OutputClass
         int itsCnt()const{return cnt;}
         const char * itsWord()const{return m_word;}
         int cmpword(const Word * other)const{return strcmp(m_word,other->m_word);}
-#if TREE
-        void insert(const char * wrd,const Word *& ret);
-        static ins_f ins;
-        void insert_fw(Word & w);
-        void insert_wf(Word & w);
-#else
         static cmp_f cmp;
         int comp_fw(const Word * w) const
             {
@@ -220,7 +203,6 @@ class Word : public OutputClass
             if(!c) c = w->cnt - cnt;
             return c;
             }
-#endif
         void assignTo(basefrm **& D,basefrm **& L)
             {
             if(pbfL && !FoundInDict)
@@ -243,6 +225,7 @@ class Word : public OutputClass
                 return 0;
             }
         virtual void print()const;
+        virtual void printLemmaClass()const;
         virtual void printnew()const
             {
             if(pbfL && !pbfD)
@@ -259,9 +242,6 @@ class Word : public OutputClass
             }
         Word(const char * word)
             : 
-#if TREE
-                left(NULL),right(NULL),
-#endif
                 hasAddedItselfToBaseForm(false),FoundInDict(false),owns(true)
                 ,pbfD(NULL),pbfL(NULL),cnt(1)
             {
@@ -274,9 +254,6 @@ class Word : public OutputClass
             }
         Word(const Word & w)
             : 
-#if TREE
-                left(NULL),right(NULL),
-#endif
                 hasAddedItselfToBaseForm(w.hasAddedItselfToBaseForm),
                 FoundInDict(w.FoundInDict),
                 owns(false),
@@ -303,10 +280,6 @@ class Word : public OutputClass
                 delete m_word;
                 deleteSecondaryStuff();
                 }
-#if TREE
-            delete left;
-            delete right;
-#endif
 #ifdef COUNTOBJECTS
             --COUNT;
 #endif
@@ -370,12 +343,7 @@ class Word : public OutputClass
                 pbfL->decFreq(this);
                 }
             }
-#if TREE
-        void lookup(void * arg);
-        void assign(void * arg);
-#else
-        void lookup(taggedText * txt);
-#endif
+        void lookup(text * txt);
     };
 
 class taggedWord : public Word
@@ -383,28 +351,17 @@ class taggedWord : public Word
     private:
         void t() const
             {
+            ::print(fp,m_tag);
 #if STREAM
-            *fp << m_tag;
+            //*fp << m_tag;
 #else
-            fprintf(fp,"%s",m_tag);
+            //fprintf(fp,"%s",m_tag);
 #endif
             }
     protected:
     public:
         static function * getTaggedWordFunction(int character,bool & SortInput,int & testType);
         static function * getTaggedWordFunctionNoBb(int character,bool & SortInput,int & testType);
-#if TREE
-        void traverse0T(trav0T);
-        virtual Word * sort_f(Word * root); // Bart 20051209 added "virtual"
-        void insert(const char * w,const char * tag,const taggedWord *& ret);
-        static ins_ft inst;
-        void insert_fwt(taggedWord & w);
-        void insert_wft(taggedWord & w);
-        void insert_ftw(taggedWord & w);
-        void insert_tfw(taggedWord & w);
-        void insert_twf(taggedWord & w);
-        void insert_wtf(taggedWord & w);
-#else
         static cmp_ft comp;
         int cmptaggedword(const taggedWord * other)const
             {
@@ -455,7 +412,6 @@ class taggedWord : public Word
             if(!c) c = ((taggedWord*)w)->cnt - cnt;
             return c;
             }
-#endif
         virtual bool skip()const
             {
             return false; 

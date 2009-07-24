@@ -1,7 +1,7 @@
 /*
 CSTLEMMA - trainable lemmatiser using word-end inflectional rules
 
-Copyright (C) 2002, 2005  Center for Sprogteknologi, University of Copenhagen
+Copyright (C) 2002, 2005, 2009  Center for Sprogteknologi, University of Copenhagen
 
 This file is part of CSTLEMMA.
 
@@ -25,9 +25,10 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #include "letterfunc.h"
 #include <stddef.h>
 #if UNICODE_CAPABLE
-bool isAllUpper(const char * s,int len);
+bool isAllUpper(const char * s,size_t len);
 bool isUpperUTF8(const char * s);
-int UnicodeToUtf8(int w,char * s,int len);
+//int UnicodeToUtf8(int w,char * s,int len);
+int UnicodeToUtf8(int w,char * s,size_t len);
 int Utf8ToUnicode(int * w,const char * s,size_t len);
 void AllToUpper(char * s);
 const char * allToLowerUTF8(const char * s);
@@ -47,7 +48,7 @@ int getUTF8char(const char *& s,bool & UTF8);
 const char * Inc(const char *& s);
 int copyUTF8char(const char * source,char * dest);
     // Copies one character from source to destination.
-    // Returns number of bytes copied.
+    // Returns number of bytes copied. (max 6)
     // Makes no check of validity of UTF8!
 int skipUTF8char(const char * s);
     // Makes no check of validity of UTF8!

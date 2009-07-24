@@ -21,7 +21,9 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
 #include "option.h"
+#if (defined PROGLEMMATISE || defined PROGMAKEDICT)
 #include "freqfile.h"
+#endif
 #include "caseconv.h"
 #include "argopt.h"
 #include <limits.h>
@@ -35,15 +37,21 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 int optionStruct::COUNT = 0;
 #endif
 
+#if defined PROGLEMMATISE
 const char optionStruct::DefaultSep[] = "|";
 //const char DefaultCFormat[] = "$w\\t[$b]1[$b0$B][$b>1$B]\\t$t\\n";
 const char optionStruct::DefaultCFormat[] = "$w\\t$b1[[$b?]~1$B]\\t$t\\n";
+const char optionStruct::DefaultCFormat_NoDict[] = "$w\\t$B\\t$t\\n";
 //const char DefaultCFormat_NoTags[] = "$w\\t[$b]1[$b0$B][$b>1$B]\\n";
 const char optionStruct::DefaultCFormat_NoTags[] = "$w\\t$b1[[$b?]~1$B]\\n";
+const char optionStruct::DefaultCFormat_NoTags_NoDict[] = "$w\\t$B\\n";
+const char optionStruct::DefaultCFormatXML[] = "$b1[[$b?]~1$B]";
+const char optionStruct::DefaultCFormatXML_NoDict[] = "$B";
 const char optionStruct::Default_b_format[] = "$w";
 const char * optionStruct::Default_B_format = optionStruct::Default_b_format;
+#endif
 
-static char opts[] = "?@:A:b:B:c:d:De:f:FH:hi:I:k:l:Lm:n:N:o:p:q:s:t:u:U:v:W:x:y:z:R:C:" /* GNU: */ "wr";
+static char opts[] = "?@:A:b:B:c:C:d:De:f:FH:hi:I:k:l:Lm:n:N:o:p:q:R:s:t:u:U:v:W:x:X:y:z:" /* GNU: */ "wr";
 /*
 static char ** poptions = NULL;
 static char * options = NULL;
@@ -61,28 +69,42 @@ char * dupl(const char * s)
 
 optionStruct::optionStruct()
     {
+#if defined PROGLEMMATISE
     defaultbformat = true;
     defaultBformat = true;
     defaultCformat = true;
     dictfile = NULL;
     v = NULL;
     x = NULL;
+    XML = false;
+    ancestor = NULL; // if not null, restrict lemmatisation to elements that are offspring of ancestor
+    element = NULL; // if null, analyse all PCDATA that is text
+    wordAttribute = NULL; // if null, word is PCDATA
+    POSAttribute = NULL; // if null, POS is PCDATA
+    lemmaAttribute = NULL; // if null, Lemma is PCDATA
+    lemmaClassAttribute = NULL; // if null, lemma class is PCDATA
     z = NULL;
+#endif
+#if (defined PROGMAKESUFFIXFLEX || defined PROGLEMMATISE)
     flx = NULL;
+#endif
+#if defined PROGLEMMATISE
     InputHasTags = true;
     CollapseHomographs = true;
     keepPunctuation = 1;
     Sep = dupl(DefaultSep);
+#endif
     whattodo = LEMMATISE;
     argi = NULL;
     argo = NULL;
     arge = NULL;
-    cformat = dupl(DefaultCFormat);
-    Wformat = NULL;
-    bformat = dupl(Default_b_format);
-    Bformat = dupl(Default_B_format);
-    freq = NULL;
+    cformat = NULL;//dupl(DefaultCFormat);
     nice = false;
+#if defined PROGLEMMATISE
+    Wformat = NULL;
+    bformat = NULL;//dupl(Default_b_format);
+    Bformat = NULL;//dupl(Default_B_format);
+    freq = NULL;
     SortOutput = 0;
     RulesUnique = true;
     DictUnique = true;
@@ -91,11 +113,14 @@ optionStruct::optionStruct()
     baseformsAreLowercase = true;
     size = ULONG_MAX;
     treatSlashAsAlternativesSeparator = false;
+#endif
 #ifdef COUNTOBJECTS
     ++COUNT;
 #endif
+#if defined PROGMAKESUFFIXFLEX
     showRefcount = false;
     CutoffRefcount = 0;
+#endif
     }
 
 optionStruct::~optionStruct()
@@ -108,11 +133,19 @@ optionStruct::~optionStruct()
     delete [] Poptions;
     delete [] Ppoptions;
     delete [] cformat;
+#if defined PROGLEMMATISE
     delete [] bformat;
     delete [] Bformat;
     delete [] Wformat;
     delete [] Iformat;
     delete [] Sep;
+    delete [] ancestor;
+    delete [] element;
+    delete [] wordAttribute;
+    delete [] POSAttribute;
+    delete [] lemmaAttribute;
+    delete [] lemmaClassAttribute;
+#endif
 #ifdef COUNTOBJECTS
     --COUNT;
 #endif
@@ -122,33 +155,10 @@ OptReturnTp optionStruct::doSwitch(int c,char * locoptarg,char * progname)
     {
     switch (c)
         {
-// GNU >>
-        case 'w':
-            printf("11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY\n");
-            printf("FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN\n");
-            printf("OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES\n");
-            printf("PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED\n");
-            printf("OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n");
-            printf("MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS\n");
-            printf("TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE\n");
-            printf("PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,\n");
-            printf("REPAIR OR CORRECTION.\n");
-            return Leave;
-        case 'r':
-            printf("12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\n");
-            printf("WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR\n");
-            printf("REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,\n");
-            printf("INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING\n");
-            printf("OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED\n");
-            printf("TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY\n");
-            printf("YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER\n");
-            printf("PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\n");
-            printf("POSSIBILITY OF SUCH DAMAGES.\n");
-            return Leave;
-// << GNU
         case '@':
             readOptsFromFile(locoptarg,progname);
             break;
+#if defined PROGLEMMATISE
         case 'A':
             if(locoptarg && *locoptarg == '-')
                 {
@@ -159,62 +169,70 @@ OptReturnTp optionStruct::doSwitch(int c,char * locoptarg,char * progname)
                 treatSlashAsAlternativesSeparator = true;
                 }	    
             break;
-        case 'D':
-            whattodo = MAKEDICT;
-            break;
-        case 'F':
-            whattodo = MAKEFLEXPATTERNS;
-            break;
-        case 'L':
-            whattodo = LEMMATISE; // default action
-            break;
-/*            case 'a':
-            if(locoptarg && *locoptarg == '-')
-                OutputHasFullForm = false;
-            else
-                OutputHasFullForm = true;
-            break;*/
         case 'b':
-            bformat = dupl(locoptarg); 
-            defaultbformat = false;
+            setbformat(locoptarg);
+//            bformat = dupl(locoptarg); 
+  //          defaultbformat = false;
             break;
         case 'B':
-            Bformat = dupl(locoptarg); 
-            defaultBformat = false;
+            setBformat(locoptarg);
+//            Bformat = dupl(locoptarg); 
+  //          defaultBformat = false;
             break;
+#endif
         case 'c':
             cformat = dupl(locoptarg);
             defaultCformat = false;
             break;
-        case 'W':
-            Wformat = dupl(locoptarg);
+#if defined PROGMAKESUFFIXFLEX
+        case 'C':
+            //CutoffRefcount = locoptarg == NULL  || *locoptarg != '-'; 
+            if(!locoptarg || *locoptarg == '-')
+                CutoffRefcount = 0;
+            else
+                CutoffRefcount = strtol(locoptarg,NULL,10);
             break;
+
+            break;
+#endif
+#if defined PROGLEMMATISE
         case 'd':
             dictfile = locoptarg;
             break;
+#endif
+        case 'D':
+            whattodo = MAKEDICT;
+            break;
+        case 'e':
+            arge = locoptarg;
+            switch(*arge)
+                {
+                case '0':
+                case '1':
+                case '2':
+                case '7':
+                case '9':
+                    setEncoding(*arge - '0');
+                    break;
+                case 'u':
+                case 'U':
+                    setEncoding(ENUNICODE);
+                    break;
+                }
+            break;
+#if (defined PROGMAKESUFFIXFLEX || defined PROGLEMMATISE)
         case 'f':
             flx = locoptarg;
             break;
-        case 'H':
-            if(locoptarg)
-                {
-                UseLemmaFreqForDisambiguation = *locoptarg - '0';
-                if(UseLemmaFreqForDisambiguation < 0 || UseLemmaFreqForDisambiguation > 2)
-                    {
-                    printf("-H option: specify -H0, -H1 or -H2 (found -H%s)\n",locoptarg);
-                    return Error;
-                    }
-                }
-            else
-                {   
-                printf("-H option: specify -H0, -H1 or -H2\n");
-                return Error;
-                }
+#endif
+        case 'F':
+            whattodo = MAKEFLEXPATTERNS;
             break;
         case 'h':
         case '?':
             printf("usage:\n");
             printf("============================\n");
+#if defined PROGMAKEDICT
             printf("    Create binary dictionary\n");
             printf("%s -D \\\n",progname);
             printf("         -c<format> [-N<frequency file> -n<format>] [-y[-]] \\\n"
@@ -230,6 +248,8 @@ OptReturnTp optionStruct::doSwitch(int c,char * locoptarg,char * progname)
                    "    -k- do not collapse homographs (keep \",n\" endings)\n");
 //                printf("--More--");getchar();
             printf("===============================\n");
+#endif
+#if defined PROGMAKESUFFIXFLEX
             printf("    Create or add flex patterns\n");
             printf("%s -F \\\n",progname);
             printf("         -c<format> [-y[-]] [-i<lemmafile>] \\\n"
@@ -245,6 +265,8 @@ OptReturnTp optionStruct::doSwitch(int c,char * locoptarg,char * progname)
             printf("    -C<n> Do not include rules with refcount <= <n>\n");// Bart 20050905
 //            printf("--More--");getchar();
             printf("=============\n");
+#endif
+#if defined PROGLEMMATISE
             printf("    Lemmatise\n");
 //                printf("%s [-L] -c<format> -b<format> -B<format> [-s[<sep>]] [-u[-]] -d<binarydictionary> -f<flexpatterns> [-z<type conversion table>] [-i<input text>] [-o<output text>] [-m<conflicts>] [-n<newlemmas>] [-x<Lexical type translation table>]\n",argv[0]);
             printf("%s [-L] \\\n",progname);
@@ -391,66 +413,59 @@ OptReturnTp optionStruct::doSwitch(int c,char * locoptarg,char * progname)
                    "        -B formats. Without conversion table, $t is the lexical type of the\n"
                    "        full form. With conversion table, $t is the lexical type of the base\n"
                    "        form, as defined by the table. Format:\n"
-                   "             {<base form type> <space> <full form type> <newline>}*\n");
+                   "             {<full form type> <space> <base form type> <newline>}*\n"); // Bart 20090203: wrongly stated <base form type> <space> <full form type>
             printf("    -m<size>: Max. number of words in input. Default: 0 (meaning: unlimited)\n");
             printf("    -A  Treat / as separator between alternative words.\n"); // Bart 20030108
             printf("    -A- Do not treat / as separator between alternative words (default)\n");// Bart 20030108
             printf("    -e<n> ISO8859 Character encoding. 'n' is one of 1,2,7 and 9 (ISO8859-1,2, etc).\n");// Bart 20080219
             printf("    -eU Unicode (UTF8) input.\n");// Bart 20081106
             printf("    -e  Don't use case conversion.\n");// Bart 20080219
+            printf("    -X  XML input. Leave XML elements unchanged.\n");// Bart 20081219
+            printf("    The next options do not allow space between option letters and argument!\n");// Bart 20090202
+            printf("    -Xa<ancestor>  Only analyse elements with specified ancestor. e.g -Xabody\n");// Bart 20090202
+            printf("    -Xe<element>  Only analyse specified element. e.g -Xpp\n");// Bart 20090202
+            printf("    -Xw<word>  Words are to be found in attribute. e.g -Xwword\n");// Bart 20090202
+            printf("    -Xp<pos>  Words' POS-tags are to be found in attribute. e.g -Xppos\n");// Bart 20090202
+            printf("    -Xl<lemma>  Destination of lemma is the specified attribute. e.g -Xllemma\n");// Bart 20090202
+            printf("    -Xc<lemmaclass>  Destination of lemma class is the specified attribute. e.g -Xllemmaclass\n");// Bart 20090202
+#endif
             return Leave;
-        case 'e':
-            arge = locoptarg;
-            switch(*arge)
+#if defined PROGLEMMATISE
+        case 'H':
+            if(locoptarg)
                 {
-                case '0':
-                case '1':
-                case '2':
-                case '7':
-                case '9':
-                    setEncoding(*arge - '0');
-                    break;
-                case 'u':
-                case 'U':
-                    setEncoding(ENUNICODE);
-                    break;
+                UseLemmaFreqForDisambiguation = *locoptarg - '0';
+                if(UseLemmaFreqForDisambiguation < 0 || UseLemmaFreqForDisambiguation > 2)
+                    {
+                    printf("-H option: specify -H0, -H1 or -H2 (found -H%s)\n",locoptarg);
+                    return Error;
+                    }
+                }
+            else
+                {   
+                printf("-H option: specify -H0, -H1 or -H2\n");
+                return Error;
                 }
             break;
+#endif
         case 'i':
             argi = locoptarg;
             break;
+#if defined PROGLEMMATISE
         case 'I':
             Iformat = dupl(locoptarg); 
             break;
-            /*
-        case 'm': // file containing conflicts
-            argm = locoptarg;
-            break;
-        case 'n': // file containing new words
-            argn = locoptarg;
-            break;
-            */
         case 'k':
-            if(locoptarg && *locoptarg == '-')
-                {
-                CollapseHomographs = false;
-                }
-            else
-                {
-                CollapseHomographs = true;
-                }
+            CollapseHomographs = locoptarg == NULL || *locoptarg != '-';
             break;
         case 'l':
-            if(locoptarg && *locoptarg == '-')
-                {
-                baseformsAreLowercase = false;
-                }
-            else
-                {
-                baseformsAreLowercase = true;
-                }
+            baseformsAreLowercase = !locoptarg || *locoptarg != '-';
             break;
-            
+#endif
+        case 'L':
+            whattodo = LEMMATISE; // default action
+            break;
+#if defined PROGLEMMATISE
         case 'm':
             if(locoptarg)
                 {
@@ -463,6 +478,8 @@ OptReturnTp optionStruct::doSwitch(int c,char * locoptarg,char * progname)
             else
                 size = ULONG_MAX;
             break;
+#endif
+#if defined PROGMAKEDICT
         case 'n':
 //Bart 20021223            if(freq)
                 {
@@ -483,9 +500,11 @@ OptReturnTp optionStruct::doSwitch(int c,char * locoptarg,char * progname)
                 (freq)->addName(locoptarg);
                 }
             break;
+#endif
         case 'o':
             argo = locoptarg;
             break;
+#if defined PROGLEMMATISE
         case 'p':
             if(locoptarg)
                 {
@@ -553,6 +572,26 @@ OptReturnTp optionStruct::doSwitch(int c,char * locoptarg,char * progname)
                 ++locoptarg;
                 }
             break;
+#endif
+// GNU >>
+        case 'r':
+            printf("12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\n");
+            printf("WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR\n");
+            printf("REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,\n");
+            printf("INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING\n");
+            printf("OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED\n");
+            printf("TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY\n");
+            printf("YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER\n");
+            printf("PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\n");
+            printf("POSSIBILITY OF SUCH DAMAGES.\n");
+            return Leave;
+// << GNU
+#if defined PROGMAKESUFFIXFLEX
+        case 'R':
+            showRefcount = locoptarg == NULL  || *locoptarg != '-';
+            break;
+#endif
+#if defined PROGLEMMATISE
         case 's':
             if(locoptarg && *locoptarg)
                 {
@@ -586,49 +625,85 @@ OptReturnTp optionStruct::doSwitch(int c,char * locoptarg,char * progname)
                 Sep = dupl(DefaultSep);
             break;
         case 't':
-            if(locoptarg && *locoptarg == '-')
-                InputHasTags = false;
-            else
-                InputHasTags = true;
-            break;
-        case 'U':
-            if(locoptarg && *locoptarg == '-')
-                RulesUnique = false;
-            else
-                RulesUnique = true;
+            InputHasTags = locoptarg == NULL || *locoptarg != '-';
             break;
         case 'u':
-            if(locoptarg && *locoptarg == '-')
-                DictUnique = false;
-            else
-                DictUnique = true;
+            DictUnique = locoptarg == NULL  || *locoptarg != '-';
+            break;
+        case 'U':
+            RulesUnique = locoptarg == NULL  || *locoptarg != '-';
             break;
         case 'v':
             v = locoptarg;
             break;
+#endif
+// GNU >>
+        case 'w':
+            printf("11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY\n");
+            printf("FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN\n");
+            printf("OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES\n");
+            printf("PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED\n");
+            printf("OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n");
+            printf("MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS\n");
+            printf("TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE\n");
+            printf("PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,\n");
+            printf("REPAIR OR CORRECTION.\n");
+            return Leave;
+// << GNU
+#if defined PROGLEMMATISE
+        case 'W':
+            Wformat = dupl(locoptarg);
+            break;
         case 'x':
             x = locoptarg;
             break;
-        case 'y':
-            if(locoptarg && *locoptarg == '-')
-                nice = false;
+        case 'X':
+            if(locoptarg)
+                {
+                if(*locoptarg == '-')
+                    {
+                    XML = false;
+                    }
+                else
+                    {
+                    XML = true;
+                    switch(*locoptarg)
+                        {
+                        case 'a':
+                            ancestor = dupl(locoptarg+1);
+                            break;
+                        case 'e':
+                            element = dupl(locoptarg+1);
+                            break;
+                        case 'w':
+                            wordAttribute = dupl(locoptarg+1);
+                            break;
+                        case 'p':
+                            POSAttribute = dupl(locoptarg+1);
+                            break;
+                        case 'l':
+                            lemmaAttribute = dupl(locoptarg+1);
+                            if(defaultCformat)
+                                {
+                                if(Bformat)
+                                    setcformat(DefaultCFormatXML);
+                                }
+                            break;
+                        case 'c':
+                            lemmaClassAttribute = dupl(locoptarg+1);
+                            break;
+                        }
+                    }
+                }
             else
-                nice = true;
-            break;
-        case 'R':
-            if(locoptarg && *locoptarg == '-')
-                showRefcount = false;
-            else
-                showRefcount = true;
-            break;
-        case 'C':
-            if(locoptarg && *locoptarg == '-')
-                CutoffRefcount = 0;
-            else
-                CutoffRefcount = strtol(locoptarg,NULL,10);
+                XML = true;
             break;
         case 'z':
             z = locoptarg;
+            break;
+#endif
+        case 'y':
+            nice = locoptarg == NULL  || *locoptarg != '-';
             break;
         }
     return GoOn;
@@ -840,8 +915,10 @@ OptReturnTp optionStruct::readOptsFromFile(char * locoptarg,char * progname)
 OptReturnTp optionStruct::readArgs(int argc, char * argv[])
     {
     int c;
+#if defined PROGLEMMATISE
     SortOutput = 0;
     Wformat = NULL;
+#endif
     OptReturnTp result = GoOn;
     while((c = getopt(argc,argv, opts)) != -1)
         {
@@ -856,6 +933,7 @@ OptReturnTp optionStruct::readArgs(int argc, char * argv[])
     return result;
     }
 
+#if defined PROGLEMMATISE
 void optionStruct::setIformat(const char * format)  // -I
     {
     delete [] Iformat;
@@ -866,22 +944,33 @@ void optionStruct::setBformat(const char * format)  // -B
     {
     delete [] Bformat;
     Bformat = dupl(format);
-    defaultBformat = format != Default_B_format;
+    defaultBformat = format == Default_B_format;
     }
 
 void optionStruct::setbformat(const char * format)  // -b
     {
     delete [] bformat;
     bformat = dupl(format);
-    defaultbformat = format != Default_b_format;
+    defaultbformat = format == Default_b_format;
     }
+#endif
 
+#if defined PROGLEMMATISE
 void optionStruct::setcformat(const char * format)  // -c
     {
     delete [] cformat;
     cformat = dupl(format);
-    defaultCformat = format != DefaultCFormat && format != DefaultCFormat_NoTags;
+#if defined PROGLEMMATISE
+    defaultCformat = 
+           format == DefaultCFormat 
+        || format == DefaultCFormat_NoTags 
+        || format == DefaultCFormatXML
+        || format == DefaultCFormatXML_NoDict;
+#endif
     }
+#endif
+
+#if defined PROGLEMMATISE
 
 void optionStruct::setWformat(const char * format)  // -W
     {
@@ -932,3 +1021,4 @@ void optionStruct::setbaseformsAreLowercase(bool b)
     baseformsAreLowercase = b;
     }
 
+#endif
