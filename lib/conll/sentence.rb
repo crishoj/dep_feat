@@ -1,4 +1,3 @@
-
 require 'lib/conll/token'
 
 module Conll
@@ -36,6 +35,10 @@ module Conll
       @tokens << token
     end
 
+    def [](*args)
+      @tokens[*args]
+    end
+
     def next
       @corpus.sentences[@index.succ]
     end
@@ -59,6 +62,15 @@ module Conll
         # Matched
         yield token
       end
+    end
+
+    def score(gold_sentence)
+      total = tokens.size
+      head_correct = tokens.find_all { |sent| sent.head_correct? gold_sentence[sent.index] }.size
+      both_correct = tokens.find_all { |sent| sent.correct? gold_sentence[sent.index] }.size
+      uas = head_correct.to_f / total.to_f
+      las = both_correct.to_f / total.to_f
+      [uas, las]
     end
 
   end

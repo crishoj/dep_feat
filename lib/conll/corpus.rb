@@ -18,6 +18,10 @@ module Conll
       @sentences << sentence
     end
 
+    def [](*args)
+      sentences[*args]
+    end
+
     def initialize(filename = '')
       @filename  = filename
       @sentences = []
@@ -46,14 +50,6 @@ module Conll
       @counts
     end
 
-    def head_correct? token, gold_token
-      token.head.id == gold_token.head.id
-    end
-
-    def label_correct? token, gold_token
-      token.deprel == gold_token.deprel
-    end
-
     def count_sentence(category)
       @counts[category] ||= Hash.new(0)
       @counts[category][:sentences] += 1
@@ -62,9 +58,9 @@ module Conll
     def eval_token(category, token, gold_token)
       @counts[category] ||= Hash.new(0)
       @counts[category][:tokens] += 1
-      if head_correct? token, gold_token
+      if token.head_correct? gold_token
         @counts[category][:head_correct] += 1
-        @counts[category][:both_correct] += 1 if label_correct? token, gold_token
+        @counts[category][:both_correct] += 1 if token.label_correct? gold_token
       end
     end
 

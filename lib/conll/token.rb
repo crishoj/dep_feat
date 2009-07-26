@@ -26,6 +26,10 @@ module Conll
       self.id.to_i - 1
     end
 
+    def first?
+      self.index == 0
+    end
+
     def last?
       self.index == @sentence.tokens.size - 1
     end
@@ -65,8 +69,24 @@ module Conll
       }.join("\t")
     end
 
+    def head_correct? gold_token
+      self.head.id == gold_token.head.id
+    end
+
+    def label_correct? gold_token
+      self.deprel == gold_token.deprel
+    end
+
+    def correct? gold_token
+      head_correct? gold_token and label_correct? gold_token
+    end
+
     def leading(n)
       @sentence.tokens[self.index-n .. self.index-1]
+    end
+
+    def trailing(n)
+      @sentence.tokens[self.index+1 .. self.index+n]
     end
 
     private
