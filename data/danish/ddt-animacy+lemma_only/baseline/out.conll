@@ -1,7 +1,7 @@
 1	To	_	A	A	_	10	subj	_	_
 2	kende	_	A	A	_	1	mod	_	_
 3	russisk	_	A	A	_	1	mod	_	_
-4	historiker	_	N	N	_	1	nobj	_	_
+4	historiker	_	N	N	anim	1	nobj	_	_
 5	Andronik	_	N	N	_	6	namef	_	_
 6	Mirganjan	_	N	N	_	10	subj	_	_
 7	og	_	C	C	_	6	coord	_	_
@@ -614,7 +614,7 @@
 2	ved	_	V	V	_	0	ROOT	_	_
 3	,	_	X	X	_	2	pnct	_	_
 4	at	_	C	C	_	2	dobj	_	_
-5	forsvarsminister	_	N	N	_	6	subj	_	_
+5	forsvarsminister	_	N	N	anim	6	subj	_	_
 6	have	_	V	V	_	4	vobj	_	_
 7	vide	_	V	V	_	6	vobj	_	_
 8	det	_	P	P	_	7	dobj	_	_
@@ -623,7 +623,7 @@
 1	<num>	_	A	A	_	3	subj	_	_
 2	)	_	X	X	_	1	pnct	_	_
 3	Har	_	V	V	_	0	ROOT	_	_
-4	minister	_	N	N	_	3	subj	_	_
+4	minister	_	N	N	anim	3	subj	_	_
 5	løjet	_	V	V	_	3	mod	_	_
 6	om	_	SP	SP	_	5	pobj	_	_
 7	sin	_	P	P	_	6	nobj	_	_
@@ -631,7 +631,7 @@
 9	regering	_	N	N	_	8	conj	_	_
 10	kendskab	_	N	N	_	9	possd	_	_
 11	til	_	SP	SP	_	10	pobj	_	_
-12	virksomhed	_	N	N	_	11	nobj	_	_
+12	virksomhed	_	N	N	anim	11	nobj	_	_
 13	?	_	X	X	_	3	pnct	_	_
 
 1	<num>	_	A	A	_	4	subj	_	_
@@ -716,7 +716,7 @@
 24	snage	_	V	V	_	23	conj	_	_
 25	i	_	SP	SP	_	24	mod	_	_
 26	almindelig	_	A	A	_	27	mod	_	_
-27	dansker	_	N	N	_	25	nobj	_	_
+27	dansker	_	N	N	anim	25	nobj	_	_
 28	forhold	_	N	N	_	27	possd	_	_
 29	?	_	X	X	_	10	pnct	_	_
 
@@ -927,7 +927,7 @@
 29	over	_	RG	RG	_	22	pred	_	_
 30	for	_	SP	SP	_	29	pobj	_	_
 31	nogen	_	P	P	_	30	nobj	_	_
-32	medarbejder	_	N	N	_	31	nobj	_	_
+32	medarbejder	_	N	N	anim	31	nobj	_	_
 33	,	_	X	X	_	31	pnct	_	_
 34	som	_	U	U	_	35	subj	_	_
 35	have	_	V	V	_	31	rel	_	_
@@ -1118,7 +1118,7 @@
 4	lukke	_	V	V	_	3	vobj	_	_
 5	,	_	X	X	_	3	pnct	_	_
 6	mene	_	V	V	_	0	ROOT	_	_
-7	ekspert	_	N	N	_	6	subj	_	_
+7	ekspert	_	N	N	anim	6	subj	_	_
 8	.	_	X	X	_	6	pnct	_	_
 
 1	Desuden	_	RG	RG	_	2	mod	_	_
@@ -1355,7 +1355,7 @@
 6	på	_	SP	SP	_	5	pobj	_	_
 7	,	_	X	X	_	6	pnct	_	_
 8	at	_	C	C	_	6	nobj	_	_
-9	virksomhed	_	N	N	_	12	subj	_	_
+9	virksomhed	_	N	N	anim	12	subj	_	_
 10	og	_	C	C	_	9	coord	_	_
 11	forretning	_	N	N	_	10	conj	_	_
 12	ville	_	V	V	_	8	vobj	_	_
@@ -1625,11 +1625,11 @@
 4	hun	_	P	P	anim	3	subj	_	_
 5	overfalde	_	V	V	_	3	vobj	_	_
 6	af	_	SP	SP	_	5	pobj	_	_
-7	soldat	_	N	N	_	6	nobj	_	_
+7	soldat	_	N	N	anim	6	nobj	_	_
 8	,	_	X	X	_	7	pnct	_	_
 9	der	_	U	U	_	10	subj	_	_
 10	slå	_	V	V	_	7	rel	_	_
-11	han	_	P	P	_	10	dobj	_	_
+11	han	_	P	P	anim	10	dobj	_	_
 12	i	_	SP	SP	_	10	mod	_	_
 13	ansigt	_	N	N	_	12	nobj	_	_
 14	med	_	SP	SP	_	10	mod	_	_
@@ -1642,7 +1642,7 @@
 3	på	_	SP	SP	_	1	mod	_	_
 4	TV-	_	X	X	_	3	nobj	_	_
 5	og	_	C	C	_	4	coord	_	_
-6	radiostation	_	N	N	_	7	subj	_	_
+6	radiostation	_	N	N	anim	7	subj	_	_
 7	følge	_	V	V	_	0	ROOT	_	_
 8	chokere	_	V	V	_	7	vobj	_	_
 9	massakre	_	N	N	_	8	dobj	_	_
@@ -1667,7 +1667,7 @@
 2	slå	_	V	V	_	8	qobj	_	_
 3	løs	_	A	A	_	2	mod	_	_
 4	på	_	SP	SP	_	2	mod	_	_
-5	kvinde	_	N	N	_	4	nobj	_	_
+5	kvinde	_	N	N	anim	4	nobj	_	_
 6	,	_	X	X	_	2	pnct	_	_
 7	"	_	X	X	_	2	pnct	_	_
 8	sige	_	V	V	_	0	ROOT	_	_
@@ -1692,7 +1692,7 @@
 15	om	_	C	C	_	7	dobj	_	_
 16	det	_	P	P	_	17	subj	_	_
 17	være	_	V	V	_	15	vobj	_	_
-18	kvinde	_	N	N	_	17	pred	_	_
+18	kvinde	_	N	N	anim	17	pred	_	_
 19	,	_	X	X	_	18	pnct	_	_
 20	barn	_	N	N	_	18	conj	_	_
 21	eller	_	C	C	_	18	coord	_	_
@@ -1743,7 +1743,7 @@
 10	,	_	X	X	_	9	pnct	_	_
 11	at	_	C	C	_	9	dobj	_	_
 12	sovjetisk	_	A	A	_	13	mod	_	_
-13	soldat	_	N	N	_	16	subj	_	_
+13	soldat	_	N	N	anim	16	subj	_	_
 14	efter	_	SP	SP	_	16	mod	_	_
 15	massakre	_	N	N	_	14	nobj	_	_
 16	have	_	V	V	_	11	vobj	_	_
@@ -1765,7 +1765,7 @@
 32	ud	_	RG	RG	_	31	dobj	_	_
 33	som	_	U	U	_	32	mod	_	_
 34	dræbe	_	V	V	_	35	mod	_	_
-35	soldat	_	N	N	_	33	nobj	_	_
+35	soldat	_	N	N	anim	33	nobj	_	_
 36	.	_	X	X	_	9	pnct	_	_
 
 1	Klokken	_	N	N	_	5	subj	_	_
@@ -1994,7 +1994,7 @@
 5	det	_	P	P	_	4	pred	_	_
 6	lille	_	A	A	_	5	mod	_	_
 7	barn	_	N	N	_	5	nobj	_	_
-8	forælder	_	N	N	_	4	pred	_	_
+8	forælder	_	N	N	anim	4	pred	_	_
 9	for	_	SP	SP	_	4	mod	_	_
 10	alvor	_	N	N	_	9	nobj	_	_
 11	ved	_	SP	SP	_	4	pred	_	_
@@ -2097,7 +2097,7 @@
 3	jeg	_	P	P	_	2	dobj	_	_
 4	,	_	X	X	_	2	pnct	_	_
 5	at	_	C	C	_	2	dobj	_	_
-6	dreng	_	N	N	_	7	subj	_	_
+6	dreng	_	N	N	anim	7	subj	_	_
 7	tude	_	V	V	_	5	vobj	_	_
 8	så	_	RG	RG	_	9	mod	_	_
 9	megen	_	A	A	_	7	mod	_	_
@@ -2106,7 +2106,7 @@
 12	jeg	_	P	P	_	13	subj	_	_
 13	ville	_	V	V	_	11	vobj	_	_
 14	vippe	_	V	V	_	13	vobj	_	_
-15	han	_	P	P	_	14	iobj	_	_
+15	han	_	P	P	anim	14	iobj	_	_
 16	én	_	P	P	_	14	dobj	_	_
 17	.	_	X	X	_	2	pnct	_	_
 
@@ -2174,7 +2174,7 @@
 14	gruelig	_	A	A	_	15	mod	_	_
 15	gal	_	A	A	_	13	pred	_	_
 16	-	_	X	X	_	13	pnct	_	_
-17	dreng	_	N	N	_	18	subj	_	_
+17	dreng	_	N	N	anim	18	subj	_	_
 18	have	_	V	V	_	11	vobj	_	_
 19	få	_	V	V	_	18	vobj	_	_
 20	krampe	_	N	N	_	19	dobj	_	_
@@ -2459,7 +2459,7 @@
 2	Sten	_	N	N	_	3	namef	_	_
 3	Baadsgaard	_	N	N	_	4	subj	_	_
 4	vise	_	V	V	_	0	ROOT	_	_
-5	hun	_	P	P	_	4	dobj	_	_
+5	hun	_	P	P	anim	4	dobj	_	_
 6	den	_	P	P	_	4	dobj	_	_
 7	før	_	SP	SP	_	4	mod	_	_
 8	interviewe	_	N	N	_	7	nobj	_	_
@@ -2590,7 +2590,7 @@
 26	mod	_	SP	SP	_	25	pobj	_	_
 27	den	_	P	P	_	26	nobj	_	_
 28	uskyldig	_	A	A	_	27	mod	_	_
-29	forælder	_	N	N	_	27	nobj	_	_
+29	forælder	_	N	N	anim	27	nobj	_	_
 30	.	_	X	X	_	13	pnct	_	_
 
 1	Forældrene	_	N	N	_	2	subj	_	_
@@ -2708,7 +2708,7 @@
 13	to	_	A	A	_	12	nobj	_	_
 14	eller	_	C	C	_	13	coord	_	_
 15	flere	_	A	A	_	14	conj	_	_
-16	pædagog	_	N	N	_	15	nobj	_	_
+16	pædagog	_	N	N	anim	15	nobj	_	_
 17	over	_	RG	RG	_	12	pred	_	_
 18	for	_	SP	SP	_	17	pobj	_	_
 19	staveplade	_	N	N	_	18	nobj	_	_
@@ -2876,7 +2876,7 @@
 26	af	_	SP	SP	_	25	pobj	_	_
 27	hus	_	N	N	_	26	nobj	_	_
 28	anden	_	P	P	_	27	possd	_	_
-29	badedragt	_	N	N	_	28	nobj	_	_
+29	badedragt	_	N	N	anim	28	nobj	_	_
 30	.	_	X	X	_	22	pnct	_	_
 
 1	Sællerter	_	N	N	_	0	ROOT	_	_
@@ -3151,7 +3151,7 @@
 12	men	_	C	C	_	2	coord	_	_
 13	han	_	P	P	anim	14	subj	_	_
 14	trække	_	V	V	_	12	conj	_	_
-15	hun	_	P	P	_	14	dobj	_	_
+15	hun	_	P	P	anim	14	dobj	_	_
 16	i	_	SP	SP	_	14	lobj	_	_
 17	frakke	_	N	N	_	16	nobj	_	_
 18	og	_	C	C	_	14	coord	_	_
@@ -3290,7 +3290,7 @@
 4	indflydelse	_	N	N	_	3	possd	_	_
 5	på	_	SP	SP	_	4	pobj	_	_
 6	anden	_	P	P	_	5	nobj	_	_
-7	musiker	_	N	N	_	6	nobj	_	_
+7	musiker	_	N	N	anim	6	nobj	_	_
 8	som	_	U	U	_	14	mod	_	_
 9	sanger	_	N	N	anim	8	nobj	_	_
 10	og	_	C	C	_	9	coord	_	_
@@ -3364,7 +3364,7 @@
 10	forkæle	_	V	V	_	9	conj	_	_
 11	af	_	SP	SP	_	10	pobj	_	_
 12	vi	_	P	P	_	11	nobj	_	_
-13	dansker	_	N	N	_	12	nobj	_	_
+13	dansker	_	N	N	anim	12	nobj	_	_
 14	.	_	X	X	_	3	pnct	_	_
 
 1	Den	_	P	P	_	2	subj	_	_
@@ -3401,7 +3401,7 @@
 6	bevilling	_	N	N	_	4	nobj	_	_
 7	,	_	X	X	_	2	pnct	_	_
 8	mens	_	C	C	_	2	mod	_	_
-9	forfatter	_	N	N	_	10	subj	_	_
+9	forfatter	_	N	N	anim	10	subj	_	_
 10	flå	_	V	V	_	8	vobj	_	_
 11	hoved	_	N	N	_	10	dobj	_	_
 12	af	_	SP	SP	_	11	pobj	_	_
@@ -3549,7 +3549,7 @@
 8	.	_	X	X	_	1	pnct	_	_
 
 1	DANSKE	_	A	A	_	2	mod	_	_
-2	rockmusiker	_	N	N	_	3	subj	_	_
+2	rockmusiker	_	N	N	anim	3	subj	_	_
 3	due	_	V	V	_	10	qobj	_	_
 4	ikke	_	RG	RG	_	3	mod	_	_
 5	til	_	SP	SP	_	3	pobj	_	_
@@ -3558,7 +3558,7 @@
 8	fra	_	RG	RG	_	7	pobj	_	_
 9	,	_	X	X	_	3	pnct	_	_
 10	mene	_	V	V	_	0	ROOT	_	_
-11	forfatter	_	N	N	_	10	subj	_	_
+11	forfatter	_	N	N	anim	10	subj	_	_
 12	.	_	X	X	_	10	pnct	_	_
 
 1	"	_	X	X	_	7	pnct	_	_
@@ -3566,7 +3566,7 @@
 3	digte	_	V	V	_	6	mod	_	_
 4	eller	_	C	C	_	3	coord	_	_
 5	male	_	V	V	_	4	conj	_	_
-6	kunstner	_	N	N	_	7	subj	_	_
+6	kunstner	_	N	N	anim	7	subj	_	_
 7	ville	_	V	V	_	22	qobj	_	_
 8	stå	_	V	V	_	7	vobj	_	_
 9	model	_	N	N	_	8	dobj	_	_
@@ -3593,7 +3593,7 @@
 3	og	_	C	C	_	2	coord	_	_
 4	postnummer	_	N	N	_	3	conj	_	_
 5	til	_	SP	SP	_	4	pobj	_	_
-6	rockmusiker	_	N	N	_	5	nobj	_	_
+6	rockmusiker	_	N	N	anim	5	nobj	_	_
 7	,	_	X	X	_	6	pnct	_	_
 8	der	_	U	U	_	9	subj	_	_
 9	stille	_	V	V	_	6	rel	_	_
@@ -3736,7 +3736,7 @@
 34	og	_	C	C	_	31	coord	_	_
 35	trække	_	V	V	_	34	conj	_	_
 36	mangen	_	A	A	_	37	mod	_	_
-37	seer	_	N	N	_	35	dobj	_	_
+37	seer	_	N	N	anim	35	dobj	_	_
 38	til	_	SP	SP	_	31	pobj	_	_
 39	skærm	_	N	N	_	38	nobj	_	_
 40	.	_	X	X	_	11	pnct	_	_
@@ -3770,7 +3770,7 @@
 7	politi	_	N	N	_	6	nobj	_	_
 8	og	_	C	C	_	7	coord	_	_
 9	social	_	A	A	_	10	mod	_	_
-10	myndighed	_	N	N	_	8	conj	_	_
+10	myndighed	_	N	N	anim	8	conj	_	_
 11	være	_	V	V	_	0	ROOT	_	_
 12	den	_	P	P	_	11	pred	_	_
 13	lille	_	A	A	_	12	mod	_	_
@@ -3865,7 +3865,7 @@
 13	vi	_	P	P	_	12	iobj	_	_
 14	som	_	U	U	_	12	pobj	_	_
 15	lovlydig	_	A	A	_	16	mod	_	_
-16	borger	_	N	N	_	14	nobj	_	_
+16	borger	_	N	N	anim	14	nobj	_	_
 17	,	_	X	X	_	9	pnct	_	_
 18	"	_	X	X	_	2	pnct	_	_
 19	sige	_	V	V	_	0	ROOT	_	_
@@ -3903,13 +3903,13 @@
 26	være	_	V	V	_	24	rel	_	_
 27	skjule	_	V	V	_	26	vobj	_	_
 28	for	_	SP	SP	_	27	pobj	_	_
-29	myndighed	_	N	N	_	28	nobj	_	_
+29	myndighed	_	N	N	anim	28	nobj	_	_
 30	.	_	X	X	_	4	pnct	_	_
 
 1	Men	_	C	C	_	0	ROOT	_	_
 2	tre	_	A	A	_	1	conj	_	_
 3	enig	_	A	A	_	2	mod	_	_
-4	dommer	_	N	N	_	2	nobj	_	_
+4	dommer	_	N	N	anim	2	nobj	_	_
 5	i	_	SP	SP	_	4	mod	_	_
 6	Østre	_	A	A	_	7	mod	_	_
 7	Landsret	_	N	N	_	5	nobj	_	_
@@ -4012,7 +4012,7 @@
 13	at	_	U	U	_	12	dobj	_	_
 14	krænke	_	V	V	_	13	vobj	_	_
 15	anden	_	P	P	_	14	dobj	_	_
-16	pige	_	N	N	_	15	nobj	_	_
+16	pige	_	N	N	anim	15	nobj	_	_
 17	,	_	X	X	_	15	pnct	_	_
 18	som	_	U	U	_	21	subj	_	_
 19	måske	_	RG	RG	_	21	mod	_	_
@@ -4043,7 +4043,7 @@
 6	opbakning	_	N	N	_	4	nobj	_	_
 7	fra	_	SP	SP	_	6	pobj	_	_
 8	både	_	RG	RG	_	16	mod	_	_
-9	læge	_	N	N	_	16	coord	_	_
+9	læge	_	N	N	anim	16	coord	_	_
 10	,	_	X	X	_	9	pnct	_	_
 11	politi	_	N	N	_	9	conj	_	_
 12	,	_	X	X	_	9	pnct	_	_
@@ -4087,7 +4087,7 @@
 21	så	_	RG	RG	_	22	mod	_	_
 22	høj	_	A	A	_	23	mod	_	_
 23	grad	_	N	N	_	18	nobj	_	_
-24	forælder	_	N	N	_	23	nobj	_	_
+24	forælder	_	N	N	anim	23	nobj	_	_
 25	og	_	C	C	_	24	coord	_	_
 26	søskende	_	N	N	_	25	conj	_	_
 27	,	_	X	X	_	26	pnct	_	_
@@ -4511,7 +4511,7 @@
 
 1	Det	_	P	P	_	2	dobj	_	_
 2	få	_	V	V	_	0	ROOT	_	_
-3	rytter	_	N	N	_	2	dobj	_	_
+3	rytter	_	N	N	anim	2	dobj	_	_
 4	til	_	SP	SP	_	2	pobj	_	_
 5	at	_	U	U	_	4	nobj	_	_
 6	stramme	_	V	V	_	5	vobj	_	_
@@ -4691,7 +4691,7 @@
 10	for	_	SP	SP	_	2	mod	_	_
 11	at	_	U	U	_	10	nobj	_	_
 12	få	_	V	V	_	11	vobj	_	_
-13	meningsdanner	_	N	N	_	12	dobj	_	_
+13	meningsdanner	_	N	N	anim	12	dobj	_	_
 14	til	_	SP	SP	_	12	pobj	_	_
 15	at	_	U	U	_	14	nobj	_	_
 16	tage	_	V	V	_	15	vobj	_	_
@@ -4970,7 +4970,7 @@
 5	klar	_	A	A	_	4	pred	_	_
 6	,	_	X	X	_	4	pnct	_	_
 7	gå	_	V	V	_	1	conj	_	_
-8	maskinchef	_	N	N	_	7	subj	_	_
+8	maskinchef	_	N	N	anim	7	subj	_	_
 9	hjem	_	RG	RG	_	7	lobj	_	_
 10	.	_	X	X	_	1	pnct	_	_
 
@@ -5121,7 +5121,7 @@
 9	generation	_	N	N	_	7	nobj	_	_
 10	af	_	SP	SP	_	9	pobj	_	_
 11	borgerlig	_	A	A	_	12	mod	_	_
-12	politiker	_	N	N	_	10	nobj	_	_
+12	politiker	_	N	N	anim	10	nobj	_	_
 13	.	_	X	X	_	2	pnct	_	_
 
 1	Det	_	P	P	_	3	subj	_	_
@@ -5134,7 +5134,7 @@
 8	,	_	X	X	_	3	pnct	_	_
 9	fordi	_	C	C	_	3	mod	_	_
 10	nogen	_	P	P	_	12	subj	_	_
-11	enkeltperson	_	N	N	_	10	nobj	_	_
+11	enkeltperson	_	N	N	anim	10	nobj	_	_
 12	have	_	V	V	_	9	vobj	_	_
 13	holde	_	V	V	_	12	vobj	_	_
 14	samarbejde	_	N	N	_	13	dobj	_	_
@@ -5191,7 +5191,7 @@
 9	binde	_	V	V	_	10	mod	_	_
 10	mandat	_	N	N	_	8	dobj	_	_
 11	til	_	SP	SP	_	10	pobj	_	_
-12	minister	_	N	N	_	11	nobj	_	_
+12	minister	_	N	N	anim	11	nobj	_	_
 13	,	_	X	X	_	12	pnct	_	_
 14	som	_	U	U	_	15	subj	_	_
 15	skulle	_	V	V	_	12	rel	_	_
@@ -5391,7 +5391,7 @@
 9	Teaters	_	N	N	_	8	nobj	_	_
 10	megen	_	A	A	_	11	mod	_	_
 11	talentfuld	_	A	A	_	9	mod	_	_
-12	skuespiller	_	N	N	_	9	possd	_	_
+12	skuespiller	_	N	N	anim	9	possd	_	_
 13	.	_	X	X	_	1	pnct	_	_
 
 1	Nu	_	RG	RG	_	2	mod	_	_
@@ -5566,7 +5566,7 @@
 15	jagt	_	N	N	_	14	possd	_	_
 16	på	_	SP	SP	_	15	pobj	_	_
 17	tidlig	_	A	A	_	18	mod	_	_
-18	nazist	_	N	N	_	16	nobj	_	_
+18	nazist	_	N	N	anim	16	nobj	_	_
 19	,	_	X	X	_	14	pnct	_	_
 20	der	_	U	U	_	21	subj	_	_
 21	gemme	_	V	V	_	14	rel	_	_
@@ -5601,7 +5601,7 @@
 24	,	_	X	X	_	22	pnct	_	_
 25	der	_	U	U	_	28	subj	_	_
 26	af	_	SP	SP	_	28	mod	_	_
-27	forfatter	_	N	N	_	26	nobj	_	_
+27	forfatter	_	N	N	anim	26	nobj	_	_
 28	regne	_	V	V	_	17	rel	_	_
 29	som	_	U	U	_	28	pobj	_	_
 30	hans	_	P	P	_	29	nobj	_	_
@@ -5636,7 +5636,7 @@
 14	.	_	X	X	_	1	pnct	_	_
 
 1	Som	_	U	U	_	4	mod	_	_
-2	forfatter	_	N	N	_	4	subj	_	_
+2	forfatter	_	N	N	anim	4	subj	_	_
 3	blandt_andet	_	RG	RG	_	4	mod	_	_
 4	skrive	_	V	V	_	0	ROOT	_	_
 5	i	_	SP	SP	_	4	mod	_	_
@@ -5705,7 +5705,7 @@
 15	<num>	_	A	A	_	19	subj	_	_
 16	af	_	SP	SP	_	15	pobj	_	_
 17	<num>	_	A	A	_	16	nobj	_	_
-18	jøde	_	N	N	_	17	nobj	_	_
+18	jøde	_	N	N	anim	17	nobj	_	_
 19	være	_	V	V	_	10	rel	_	_
 20	i	_	SP	SP	_	19	pred	_	_
 21	live	_	A	A	_	20	nobj	_	_
@@ -5725,7 +5725,7 @@
 10	enkelt	_	A	A	_	8	pred	_	_
 11	,	_	X	X	_	10	pnct	_	_
 12	at	_	C	C	_	8	nobj	_	_
-13	fangevogter	_	N	N	_	14	subj	_	_
+13	fangevogter	_	N	N	anim	14	subj	_	_
 14	bruge	_	V	V	_	12	vobj	_	_
 15	de	_	P	P	_	14	iobj	_	_
 16	som	_	U	U	_	14	pobj	_	_
@@ -5741,7 +5741,7 @@
 
 1	"	_	X	X	_	8	pnct	_	_
 2	Når	_	C	C	_	8	mod	_	_
-3	boligminister	_	N	N	_	5	subj	_	_
+3	boligminister	_	N	N	anim	5	subj	_	_
 4	ikke	_	RG	RG	_	5	mod	_	_
 5	ville	_	V	V	_	2	vobj	_	_
 6	,	_	X	X	_	5	pnct	_	_
@@ -5925,10 +5925,10 @@
 8	,	_	X	X	_	5	pnct	_	_
 9	og	_	C	C	_	5	coord	_	_
 10	mangen	_	A	A	_	9	conj	_	_
-11	lejer	_	N	N	_	10	nobj	_	_
+11	lejer	_	N	N	anim	10	nobj	_	_
 12	,	_	X	X	_	10	pnct	_	_
 13	flere	_	A	A	_	9	conj	_	_
-14	kommune	_	N	N	_	13	nobj	_	_
+14	kommune	_	N	N	anim	13	nobj	_	_
 15	,	_	X	X	_	13	pnct	_	_
 16	fagbevægelse	_	N	N	_	22	subj	_	_
 17	,	_	X	X	_	16	pnct	_	_
@@ -5974,7 +5974,7 @@
 6	mene	_	V	V	_	3	rel	_	_
 7	med	_	SP	SP	_	6	pobj	_	_
 8	"	_	X	X	_	9	pnct	_	_
-9	kunde	_	N	N	_	7	nobj	_	_
+9	kunde	_	N	N	anim	7	nobj	_	_
 10	"	_	X	X	_	9	pnct	_	_
 11	.	_	X	X	_	2	pnct	_	_
 
@@ -6072,7 +6072,7 @@
 4	ikke	_	RG	RG	_	2	mod	_	_
 5	snakke	_	V	V	_	2	vobj	_	_
 6	med	_	SP	SP	_	5	pobj	_	_
-7	han	_	P	P	_	6	nobj	_	_
+7	han	_	P	P	anim	6	nobj	_	_
 8	,	_	X	X	_	2	pnct	_	_
 9	hvis	_	C	C	_	2	mod	_	_
 10	der	_	U	U	_	11	expl	_	_

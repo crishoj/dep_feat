@@ -1,7 +1,7 @@
 1	To	_	A	AC	case=unmarked	10	subj	_	_
 2	kende	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	1	mod	_	_
 3	russisk	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	1	mod	_	_
-4	historiker	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	1	nobj	_	_
+4	historiker	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	1	nobj	_	_
 5	Andronik	_	N	NP	case=unmarked	6	namef	_	_
 6	Mirganjan	_	N	NP	case=unmarked	1	appr	_	_
 7	og	_	C	CC	_	6	coord	_	_
@@ -614,7 +614,7 @@
 2	ved	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 3	,	_	X	XP	_	2	pnct	_	_
 4	at	_	C	CS	_	2	dobj	_	_
-5	forsvarsminister	_	N	NC	gender=common|number=sing|case=unmarked|def=def	6	subj	_	_
+5	forsvarsminister	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	6	subj	_	_
 6	have	_	V	VA	mood=indic|tense=present|voice=active	4	vobj	_	_
 7	vide	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	6	vobj	_	_
 8	det	_	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked	7	dobj	_	_
@@ -623,7 +623,7 @@
 1	3	_	A	AC	case=unmarked	0	ROOT	_	_
 2	)	_	X	XP	_	1	pnct	_	_
 3	Har	_	V	VA	mood=indic|tense=present|voice=active	1	list	_	_
-4	minister	_	N	NC	gender=common|number=sing|case=unmarked|def=def	3	subj	_	_
+4	minister	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	3	subj	_	_
 5	løjet	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	3	vobj	_	_
 6	om	_	SP	SP	_	5	pobj	_	_
 7	sin	_	P	PO	person=3|gender=neuter|number=sing|case=unmarked|possessor=sing|reflexive=yes|register=unmarked	6	nobj	_	_
@@ -631,7 +631,7 @@
 9	regering	_	N	NC	gender=common|number=sing|case=gen|def=def	8	conj	_	_
 10	kendskab	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	7	possd	_	_
 11	til	_	SP	SP	_	10	pobj	_	_
-12	virksomhed	_	N	NC	gender=common|number=sing|case=unmarked|def=def	11	nobj	_	_
+12	virksomhed	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	11	nobj	_	_
 13	?	_	X	XP	_	1	pnct	_	_
 
 1	4	_	A	AC	case=unmarked	0	ROOT	_	_
@@ -716,7 +716,7 @@
 24	snage	_	V	VA	mood=indic|tense=present|voice=active	23	conj	_	_
 25	i	_	SP	SP	_	24	pobj	_	_
 26	almindelig	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	27	mod	_	_
-27	dansker	_	N	NC	gender=common|number=plur|case=gen|def=indef	25	nobj	_	_
+27	dansker	_	N	NC	gender=common|number=plur|case=gen|def=indef|anim	25	nobj	_	_
 28	forhold	_	N	NC	gender=neuter|number=plur|case=unmarked|def=indef	27	possd	_	_
 29	?	_	X	XP	_	1	pnct	_	_
 
@@ -927,7 +927,7 @@
 29	over	_	RG	RG	degree=unmarked	27	mod	_	_
 30	for	_	SP	SP	_	29	pobj	_	_
 31	nogen	_	P	PI	gender=common/neuter|number=plur|case=unmarked|register=unmarked	30	nobj	_	_
-32	medarbejder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	31	nobj	_	_
+32	medarbejder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	31	nobj	_	_
 33	,	_	X	XP	_	31	pnct	_	_
 34	som	_	U	U	_	35	subj	_	_
 35	have	_	V	VA	mood=indic|tense=present|voice=active	31	rel	_	_
@@ -1118,7 +1118,7 @@
 4	lukke	_	V	VA	mood=infin|voice=active	3	vobj	_	_
 5	,	_	X	XP	_	3	pnct	_	_
 6	mene	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
-7	ekspert	_	N	NC	gender=common|number=plur|case=unmarked|def=def	6	subj	_	_
+7	ekspert	_	N	NC	gender=common|number=plur|case=unmarked|def=def|anim	6	subj	_	_
 8	.	_	X	XP	_	6	pnct	_	_
 
 1	Desuden	_	RG	RG	degree=unmarked	2	mod	_	_
@@ -1355,7 +1355,7 @@
 6	på	_	SP	SP	_	3	pobj	_	_
 7	,	_	X	XP	_	6	pnct	_	_
 8	at	_	C	CS	_	6	nobj	_	_
-9	virksomhed	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	12	subj	_	_
+9	virksomhed	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	12	subj	_	_
 10	og	_	C	CC	_	9	coord	_	_
 11	forretning	_	N	NC	gender=common|number=plur|case=unmarked|def=def	10	conj	_	_
 12	ville	_	V	VA	mood=indic|tense=present|voice=active	8	vobj	_	_
@@ -1625,11 +1625,11 @@
 4	hun	_	P	PP	person=3|gender=common|number=sing|case=nom|reflexive=no|register=unmarked|anim	3	subj	_	_
 5	overfalde	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	3	vobj	_	_
 6	af	_	SP	SP	_	5	pobj	_	_
-7	soldat	_	N	NC	gender=common|number=sing|case=unmarked|def=def	6	nobj	_	_
+7	soldat	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	6	nobj	_	_
 8	,	_	X	XP	_	7	pnct	_	_
 9	der	_	U	U	_	10	subj	_	_
 10	slå	_	V	VA	mood=indic|tense=past|voice=active	7	rel	_	_
-11	han	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked	10	dobj	_	_
+11	han	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked|anim	10	dobj	_	_
 12	i	_	SP	SP	_	10	mod	_	_
 13	ansigt	_	N	NC	gender=neuter|number=sing|case=unmarked|def=def	12	nobj	_	_
 14	med	_	SP	SP	_	10	mod	_	_
@@ -1642,7 +1642,7 @@
 3	på	_	SP	SP	_	1	mod	_	_
 4	TV-	_	X	XX	_	3	nobj	_	_
 5	og	_	C	CC	_	4	coord	_	_
-6	radiostation	_	N	NC	gender=common|number=sing|case=unmarked|def=def	5	conj	_	_
+6	radiostation	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	5	conj	_	_
 7	følge	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
 8	chokere	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	7	mod	_	_
 9	massakre	_	N	NC	gender=common|number=sing|case=unmarked|def=def	7	dobj	_	_
@@ -1667,7 +1667,7 @@
 2	slå	_	V	VA	mood=indic|tense=present|voice=active	8	qobj	_	_
 3	løs	_	A	AN	degree=pos|transcat=adverbial	2	mod	_	_
 4	på	_	SP	SP	_	2	pobj	_	_
-5	kvinde	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	4	nobj	_	_
+5	kvinde	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	4	nobj	_	_
 6	,	_	X	XP	_	2	pnct	_	_
 7	"	_	X	XP	_	2	pnct	_	_
 8	sige	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
@@ -1692,7 +1692,7 @@
 15	om	_	C	CS	_	14	pobj	_	_
 16	det	_	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked	17	subj	_	_
 17	være	_	V	VA	mood=indic|tense=past|voice=active	15	vobj	_	_
-18	kvinde	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	17	pred	_	_
+18	kvinde	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	17	pred	_	_
 19	,	_	X	XP	_	18	pnct	_	_
 20	barn	_	N	NC	gender=neuter|number=plur|case=unmarked|def=indef	18	conj	_	_
 21	eller	_	C	CC	_	18	coord	_	_
@@ -1743,7 +1743,7 @@
 10	,	_	X	XP	_	9	pnct	_	_
 11	at	_	C	CS	_	9	dobj	_	_
 12	sovjetisk	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	13	mod	_	_
-13	soldat	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	16	subj	_	_
+13	soldat	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	16	subj	_	_
 14	efter	_	SP	SP	_	16	mod	_	_
 15	massakre	_	N	NC	gender=common|number=sing|case=unmarked|def=def	14	nobj	_	_
 16	have	_	V	VA	mood=indic|tense=past|voice=active	11	vobj	_	_
@@ -1765,7 +1765,7 @@
 32	ud	_	RG	RG	degree=unmarked	31	avobj	_	_
 33	som	_	U	U	_	32	pobj	_	_
 34	dræbe	_	V	VA	mood=partic|tense=past|number=plur|gender=common/neuter|definiteness=def/indef|transcat=adject|case=unmarked	35	mod	_	_
-35	soldat	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	33	nobj	_	_
+35	soldat	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	33	nobj	_	_
 36	.	_	X	XP	_	9	pnct	_	_
 
 1	Klokken	_	N	NC	gender=common|number=sing|case=unmarked|def=def	5	mod	_	_
@@ -1994,7 +1994,7 @@
 5	den	_	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	4	subj	_	_
 6	lille	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def/indef|transcat=unmarked	5	mod	_	_
 7	barn	_	N	NC	gender=neuter|number=sing|case=gen|def=indef	5	nobj	_	_
-8	forælder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	5	possd	_	_
+8	forælder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	5	possd	_	_
 9	for	_	SP	SP	_	4	mod	_	_
 10	alvor	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	9	nobj	_	_
 11	ved	_	SP	SP	_	4	pred	_	_
@@ -2097,7 +2097,7 @@
 3	jeg	_	P	PP	person=1|gender=common|number=sing|case=unmarked|reflexive=yes/no|register=unmarked	2	dobj	_	_
 4	,	_	X	XP	_	2	pnct	_	_
 5	at	_	C	CS	_	1	nobj	_	_
-6	dreng	_	N	NC	gender=common|number=sing|case=unmarked|def=def	7	subj	_	_
+6	dreng	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	7	subj	_	_
 7	tude	_	V	VA	mood=indic|tense=past|voice=active	5	vobj	_	_
 8	så	_	RG	RG	degree=unmarked	9	mod	_	_
 9	megen	_	A	AN	degree=pos|transcat=adverbial	7	mod	_	_
@@ -2106,7 +2106,7 @@
 12	jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	13	subj	_	_
 13	ville	_	V	VA	mood=indic|tense=past|voice=active	11	vobj	_	_
 14	vippe	_	V	VA	mood=infin|voice=active	13	vobj	_	_
-15	han	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked	14	iobj	_	_
+15	han	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked|anim	14	iobj	_	_
 16	én	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	14	dobj	_	_
 17	.	_	X	XP	_	2	pnct	_	_
 
@@ -2174,7 +2174,7 @@
 14	gruelig	_	A	AN	degree=pos|transcat=adverbial	15	mod	_	_
 15	gal	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	13	pred	_	_
 16	-	_	X	XP	_	13	pnct	_	_
-17	dreng	_	N	NC	gender=common|number=sing|case=unmarked|def=def	18	subj	_	_
+17	dreng	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	18	subj	_	_
 18	have	_	V	VA	mood=indic|tense=past|voice=active	13	conj	_	_
 19	få	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	18	vobj	_	_
 20	krampe	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	19	dobj	_	_
@@ -2459,7 +2459,7 @@
 2	Sten	_	N	NP	case=unmarked	3	namef	_	_
 3	Baadsgaard	_	N	NP	case=unmarked	1	possd	_	_
 4	vise	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
-5	hun	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked	4	iobj	_	_
+5	hun	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked|anim	4	iobj	_	_
 6	den	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked	4	dobj	_	_
 7	før	_	SP	SP	_	4	mod	_	_
 8	interviewe	_	N	NC	gender=neuter|number=sing|case=unmarked|def=def	7	nobj	_	_
@@ -2590,7 +2590,7 @@
 26	mod	_	SP	SP	_	25	pobj	_	_
 27	den	_	P	PD	gender=common/neuter|number=plur|case=unmarked|register=unmarked	26	nobj	_	_
 28	uskyldig	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	27	mod	_	_
-29	forælder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	27	nobj	_	_
+29	forælder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	27	nobj	_	_
 30	.	_	X	XP	_	13	pnct	_	_
 
 1	Forældrene	_	N	NC	gender=common|number=plur|case=unmarked|def=def	2	subj	_	_
@@ -2708,7 +2708,7 @@
 13	to	_	A	AC	case=unmarked	12	nobj	_	_
 14	eller	_	C	CC	_	13	coord	_	_
 15	flere	_	A	AN	degree=comp|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	14	conj	_	_
-16	pædagog	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	13	nobj	_	_
+16	pædagog	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	13	nobj	_	_
 17	over	_	RG	RG	degree=unmarked	10	lobj	_	_
 18	for	_	SP	SP	_	17	pobj	_	_
 19	staveplade	_	N	NC	gender=common|number=sing|case=unmarked|def=def	18	nobj	_	_
@@ -2876,7 +2876,7 @@
 26	af	_	SP	SP	_	25	pobj	_	_
 27	hus	_	N	NC	gender=neuter|number=sing|case=gen|def=def	26	nobj	_	_
 28	anden	_	P	PI	gender=common/neuter|number=plur|case=unmarked|register=unmarked	27	possd	_	_
-29	badedragt	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	28	nobj	_	_
+29	badedragt	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	28	nobj	_	_
 30	.	_	X	XP	_	2	pnct	_	_
 
 1	Sællerter	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	0	ROOT	_	_
@@ -3151,7 +3151,7 @@
 12	men	_	C	CC	_	7	coord	_	_
 13	han	_	P	PP	person=3|gender=common|number=sing|case=nom|reflexive=no|register=unmarked|anim	14	subj	_	_
 14	trække	_	V	VA	mood=indic|tense=past|voice=active	12	conj	_	_
-15	hun	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked	14	dobj	_	_
+15	hun	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked|anim	14	dobj	_	_
 16	i	_	SP	SP	_	14	mod	_	_
 17	frakke	_	N	NC	gender=common|number=sing|case=unmarked|def=def	16	nobj	_	_
 18	og	_	C	CC	_	14	coord	_	_
@@ -3290,7 +3290,7 @@
 4	indflydelse	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	3	possd	_	_
 5	på	_	SP	SP	_	4	pobj	_	_
 6	anden	_	P	PI	gender=common/neuter|number=plur|case=unmarked|register=unmarked	5	nobj	_	_
-7	musiker	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	6	nobj	_	_
+7	musiker	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	6	nobj	_	_
 8	som	_	U	U	_	3	mod	_	_
 9	sanger	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|anim	8	nobj	_	_
 10	og	_	C	CC	_	8	coord	_	_
@@ -3364,7 +3364,7 @@
 10	forkæle	_	V	VA	mood=infin|voice=passive	9	conj	_	_
 11	af	_	SP	SP	_	4	mod	_	_
 12	vi	_	P	PP	person=1|gender=common|number=plur|case=unmarked|reflexive=yes/no|register=unmarked	11	nobj	_	_
-13	dansker	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	12	nobj	_	_
+13	dansker	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	12	nobj	_	_
 14	.	_	X	XP	_	3	pnct	_	_
 
 1	Den	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked	2	subj	_	_
@@ -3401,7 +3401,7 @@
 6	bevilling	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	4	nobj	_	_
 7	,	_	X	XP	_	2	pnct	_	_
 8	mens	_	C	CS	_	2	mod	_	_
-9	forfatter	_	N	NC	gender=common|number=plur|case=unmarked|def=def	10	subj	_	_
+9	forfatter	_	N	NC	gender=common|number=plur|case=unmarked|def=def|anim	10	subj	_	_
 10	flå	_	V	VA	mood=indic|tense=present|voice=active	8	vobj	_	_
 11	hoved	_	N	NC	gender=neuter|number=sing|case=unmarked|def=def	10	dobj	_	_
 12	af	_	SP	SP	_	10	mod	_	_
@@ -3549,7 +3549,7 @@
 8	.	_	X	XP	_	1	pnct	_	_
 
 1	DANSKE	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	2	mod	_	_
-2	rockmusiker	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	3	subj	_	_
+2	rockmusiker	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	3	subj	_	_
 3	due	_	V	VA	mood=indic|tense=present|voice=active	10	qobj	_	_
 4	ikke	_	RG	RG	degree=unmarked	3	mod	_	_
 5	til	_	SP	SP	_	3	pobj	_	_
@@ -3558,7 +3558,7 @@
 8	fra	_	RG	RG	degree=unmarked	7	pobj	_	_
 9	,	_	X	XP	_	3	pnct	_	_
 10	mene	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
-11	forfatter	_	N	NC	gender=common|number=sing|case=unmarked|def=def	10	subj	_	_
+11	forfatter	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	10	subj	_	_
 12	.	_	X	XP	_	10	pnct	_	_
 
 1	"	_	X	XP	_	7	pnct	_	_
@@ -3566,7 +3566,7 @@
 3	digte	_	V	VA	mood=partic|tense=present|number=sing/plur|gender=common/neuter|definiteness=def/indef|transcat=adject|case=unmarked	6	mod	_	_
 4	eller	_	C	CC	_	3	coord	_	_
 5	male	_	V	VA	mood=partic|tense=present|number=sing/plur|gender=common/neuter|definiteness=def/indef|transcat=adject|case=unmarked	4	conj	_	_
-6	kunstner	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	7	subj	_	_
+6	kunstner	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	7	subj	_	_
 7	ville	_	V	VA	mood=indic|tense=past|voice=active	22	qobj	_	_
 8	stå	_	V	VA	mood=infin|voice=active	7	vobj	_	_
 9	model	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	8	dobj	_	_
@@ -3593,7 +3593,7 @@
 3	og	_	C	CC	_	2	coord	_	_
 4	postnummer	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	3	conj	_	_
 5	til	_	SP	SP	_	1	pred	_	_
-6	rockmusiker	_	N	NC	gender=common|number=plur|case=unmarked|def=def	5	nobj	_	_
+6	rockmusiker	_	N	NC	gender=common|number=plur|case=unmarked|def=def|anim	5	nobj	_	_
 7	,	_	X	XP	_	6	pnct	_	_
 8	der	_	U	U	_	9	subj	_	_
 9	stille	_	V	VA	mood=indic|tense=present|voice=active	6	rel	_	_
@@ -3736,7 +3736,7 @@
 34	og	_	C	CC	_	31	coord	_	_
 35	trække	_	V	VA	mood=infin|voice=active	34	conj	_	_
 36	mangen	_	A	AN	degree=sup|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	35	dobj	_	_
-37	seer	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	36	nobj	_	_
+37	seer	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	36	nobj	_	_
 38	til	_	SP	SP	_	35	lobj	_	_
 39	skærm	_	N	NC	gender=common|number=sing|case=unmarked|def=def	38	nobj	_	_
 40	.	_	X	XP	_	11	pnct	_	_
@@ -3770,7 +3770,7 @@
 7	politi	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	6	nobj	_	_
 8	og	_	C	CC	_	7	coord	_	_
 9	social	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	10	mod	_	_
-10	myndighed	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	8	conj	_	_
+10	myndighed	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	8	conj	_	_
 11	være	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 12	den	_	P	PD	gender=common|number=sing|case=unmarked|register=unmarked	11	subj	_	_
 13	lille	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def/indef|transcat=unmarked	12	mod	_	_
@@ -3865,7 +3865,7 @@
 13	vi	_	P	PP	person=1|gender=common|number=plur|case=unmarked|reflexive=yes/no|register=unmarked	12	dobj	_	_
 14	som	_	U	U	_	12	pobj	_	_
 15	lovlydig	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	16	mod	_	_
-16	borger	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	14	nobj	_	_
+16	borger	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	14	nobj	_	_
 17	,	_	X	XP	_	9	pnct	_	_
 18	"	_	X	XP	_	2	pnct	_	_
 19	sige	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
@@ -3903,13 +3903,13 @@
 26	være	_	V	VA	mood=indic|tense=past|voice=active	24	rel	_	_
 27	skjule	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	26	vobj	_	_
 28	for	_	SP	SP	_	27	pobj	_	_
-29	myndighed	_	N	NC	gender=common|number=plur|case=unmarked|def=def	28	nobj	_	_
+29	myndighed	_	N	NC	gender=common|number=plur|case=unmarked|def=def|anim	28	nobj	_	_
 30	.	_	X	XP	_	4	pnct	_	_
 
 1	Men	_	C	CC	_	0	ROOT	_	_
 2	tre	_	A	AC	case=unmarked	8	subj	_	_
 3	enig	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	2	mod	_	_
-4	dommer	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	2	nobj	_	_
+4	dommer	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	2	nobj	_	_
 5	i	_	SP	SP	_	2	mod	_	_
 6	Øster	_	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	7	mod	_	_
 7	Landsret	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	5	nobj	_	_
@@ -4012,7 +4012,7 @@
 13	at	_	U	U	_	12	dobj	_	_
 14	krænke	_	V	VA	mood=infin|voice=active	13	vobj	_	_
 15	anden	_	P	PI	gender=common/neuter|number=plur|case=unmarked|register=unmarked	14	dobj	_	_
-16	pige	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	15	nobj	_	_
+16	pige	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	15	nobj	_	_
 17	,	_	X	XP	_	15	pnct	_	_
 18	som	_	U	U	_	21	subj	_	_
 19	måske	_	RG	RG	degree=unmarked	21	mod	_	_
@@ -4043,7 +4043,7 @@
 6	opbakning	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	4	nobj	_	_
 7	fra	_	SP	SP	_	3	pobj	_	_
 8	både	_	RG	RG	degree=unmarked	16	mod	_	_
-9	læge	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	7	nobj	_	_
+9	læge	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	7	nobj	_	_
 10	,	_	X	XP	_	9	pnct	_	_
 11	politi	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	9	conj	_	_
 12	,	_	X	XP	_	9	pnct	_	_
@@ -4087,7 +4087,7 @@
 21	så	_	RG	RG	degree=unmarked	22	mod	_	_
 22	høj	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	23	mod	_	_
 23	grad	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	18	nobj	_	_
-24	forælder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	15	<dobj>	_	_
+24	forælder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	15	<dobj>	_	_
 25	og	_	C	CC	_	24	coord	_	_
 26	søskende	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	25	conj	_	_
 27	,	_	X	XP	_	24	pnct	_	_
@@ -4511,7 +4511,7 @@
 
 1	Det	_	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked	2	subj	_	_
 2	få	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
-3	rytter	_	N	NC	gender=common|number=plur|case=unmarked|def=def	2	dobj	_	_
+3	rytter	_	N	NC	gender=common|number=plur|case=unmarked|def=def|anim	2	dobj	_	_
 4	til	_	SP	SP	_	2	pobj	_	_
 5	at	_	U	U	_	4	nobj	_	_
 6	stramme	_	V	VA	mood=infin|voice=active	5	vobj	_	_
@@ -4691,7 +4691,7 @@
 10	for	_	SP	SP	_	2	mod	_	_
 11	at	_	U	U	_	10	nobj	_	_
 12	få	_	V	VA	mood=infin|voice=active	11	vobj	_	_
-13	meningsdanner	_	N	NC	gender=common|number=plur|case=unmarked|def=def	12	dobj	_	_
+13	meningsdanner	_	N	NC	gender=common|number=plur|case=unmarked|def=def|anim	12	dobj	_	_
 14	til	_	SP	SP	_	12	pobj	_	_
 15	at	_	U	U	_	14	nobj	_	_
 16	tage	_	V	VA	mood=infin|voice=active	15	vobj	_	_
@@ -4970,7 +4970,7 @@
 5	klar	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	4	pred	_	_
 6	,	_	X	XP	_	4	pnct	_	_
 7	gå	_	V	VA	mood=indic|tense=past|voice=active	1	conj	_	_
-8	maskinchef	_	N	NC	gender=common|number=sing|case=unmarked|def=def	7	subj	_	_
+8	maskinchef	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	7	subj	_	_
 9	hjem	_	RG	RG	degree=unmarked	7	lobj	_	_
 10	.	_	X	XP	_	1	pnct	_	_
 
@@ -5121,7 +5121,7 @@
 9	generation	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	7	nobj	_	_
 10	af	_	SP	SP	_	9	pobj	_	_
 11	borgerlig	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	12	mod	_	_
-12	politiker	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	10	nobj	_	_
+12	politiker	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	10	nobj	_	_
 13	.	_	X	XP	_	2	pnct	_	_
 
 1	Den	_	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	3	subj	_	_
@@ -5134,7 +5134,7 @@
 8	,	_	X	XP	_	3	pnct	_	_
 9	fordi	_	C	CS	_	3	mod	_	_
 10	nogen	_	P	PI	gender=common/neuter|number=plur|case=unmarked|register=unmarked	12	subj	_	_
-11	enkeltperson	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	10	nobj	_	_
+11	enkeltperson	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	10	nobj	_	_
 12	have	_	V	VA	mood=indic|tense=present|voice=active	9	vobj	_	_
 13	holde	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	12	vobj	_	_
 14	samarbejde	_	N	NC	gender=neuter|number=sing|case=unmarked|def=def	13	dobj	_	_
@@ -5191,7 +5191,7 @@
 9	binde	_	V	VA	mood=partic|tense=present|number=sing/plur|gender=common/neuter|definiteness=def/indef|transcat=adject|case=unmarked	10	mod	_	_
 10	mandat	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	8	dobj	_	_
 11	til	_	SP	SP	_	8	pobj	_	_
-12	minister	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	11	nobj	_	_
+12	minister	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	11	nobj	_	_
 13	,	_	X	XP	_	12	pnct	_	_
 14	som	_	U	U	_	15	subj	_	_
 15	skulle	_	V	VA	mood=indic|tense=present|voice=active	12	rel	_	_
@@ -5391,7 +5391,7 @@
 9	Teaters	_	N	NC	gender=neuter|number=sing|case=gen|def=indef	8	nobj	_	_
 10	megen	_	A	AN	degree=sup|transcat=adverbial	11	mod	_	_
 11	talentfuld	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	8	mod	_	_
-12	skuespiller	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	8	possd	_	_
+12	skuespiller	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	8	possd	_	_
 13	.	_	X	XP	_	1	pnct	_	_
 
 1	Nu	_	RG	RG	degree=unmarked	2	mod	_	_
@@ -5566,7 +5566,7 @@
 15	jagt	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	14	possd	_	_
 16	på	_	SP	SP	_	15	pobj	_	_
 17	tidlig	_	A	AN	degree=comp|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	18	mod	_	_
-18	nazist	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	16	nobj	_	_
+18	nazist	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	16	nobj	_	_
 19	,	_	X	XP	_	18	pnct	_	_
 20	der	_	U	U	_	21	subj	_	_
 21	gemme	_	V	VA	mood=indic|tense=present|voice=active	18	rel	_	_
@@ -5601,7 +5601,7 @@
 24	,	_	X	XP	_	17	pnct	_	_
 25	der	_	U	U	_	28	subj	_	_
 26	af	_	SP	SP	_	28	mod	_	_
-27	forfatter	_	N	NC	gender=common|number=sing|case=unmarked|def=def	26	nobj	_	_
+27	forfatter	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	26	nobj	_	_
 28	regne	_	V	VA	mood=indic|tense=present|voice=passive	17	rel	_	_
 29	som	_	U	U	_	28	pobj	_	_
 30	hans	_	P	PO	person=3|gender=common/neuter|number=sing/plur|case=unmarked|possessor=sing|reflexive=no|register=unmarked	29	pred	_	_
@@ -5636,7 +5636,7 @@
 14	.	_	X	XP	_	1	pnct	_	_
 
 1	Som	_	U	U	_	4	dobj	_	_
-2	forfatter	_	N	NC	gender=common|number=sing|case=unmarked|def=def	4	subj	_	_
+2	forfatter	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	4	subj	_	_
 3	blandt_andet	_	RG	RG	degree=unmarked	4	mod	_	_
 4	skrive	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 5	i	_	SP	SP	_	4	mod	_	_
@@ -5705,7 +5705,7 @@
 15	34	_	A	AC	case=unmarked	19	subj	_	_
 16	af	_	SP	SP	_	15	pobj	_	_
 17	149.000	_	A	AC	case=unmarked	16	nobj	_	_
-18	jøde	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	15	nobj	_	_
+18	jøde	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	15	nobj	_	_
 19	være	_	V	VA	mood=indic|tense=past|voice=active	11	rel	_	_
 20	i	_	SP	SP	_	19	pred	_	_
 21	live	_	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	20	nobj	_	_
@@ -5725,7 +5725,7 @@
 10	enkelt	_	A	AN	degree=pos|transcat=adverbial	7	mod	_	_
 11	,	_	X	XP	_	7	pnct	_	_
 12	at	_	C	CS	_	7	dobj	_	_
-13	fangevogter	_	N	NC	gender=common|number=plur|case=unmarked|def=def	14	subj	_	_
+13	fangevogter	_	N	NC	gender=common|number=plur|case=unmarked|def=def|anim	14	subj	_	_
 14	bruge	_	V	VA	mood=indic|tense=past|voice=active	12	vobj	_	_
 15	de	_	P	PP	person=3|gender=common/neuter|number=plur|case=unmarked|reflexive=no|register=unmarked	14	dobj	_	_
 16	som	_	U	U	_	14	pobj	_	_
@@ -5741,7 +5741,7 @@
 
 1	"	_	X	XP	_	8	pnct	_	_
 2	Når	_	C	CS	_	8	xtop	_	_
-3	boligminister	_	N	NC	gender=common|number=sing|case=unmarked|def=def	5	subj	_	_
+3	boligminister	_	N	NC	gender=common|number=sing|case=unmarked|def=def|anim	5	subj	_	_
 4	ikke	_	RG	RG	degree=unmarked	5	mod	_	_
 5	ville	_	V	VA	mood=indic|tense=present|voice=active	2	vobj	_	_
 6	,	_	X	XP	_	5	pnct	_	_
@@ -5925,10 +5925,10 @@
 8	,	_	X	XP	_	5	pnct	_	_
 9	og	_	C	CC	_	5	coord	_	_
 10	mangen	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	22	subj	_	_
-11	lejer	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	10	nobj	_	_
+11	lejer	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	10	nobj	_	_
 12	,	_	X	XP	_	10	pnct	_	_
 13	flere	_	A	AN	degree=comp|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	10	conj	_	_
-14	kommune	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	13	nobj	_	_
+14	kommune	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	13	nobj	_	_
 15	,	_	X	XP	_	10	pnct	_	_
 16	fagbevægelse	_	N	NC	gender=common|number=sing|case=unmarked|def=def	10	conj	_	_
 17	,	_	X	XP	_	10	pnct	_	_
@@ -5974,7 +5974,7 @@
 6	mene	_	V	VA	mood=indic|tense=past|voice=passive	3	rel	_	_
 7	med	_	SP	SP	_	6	pobj	_	_
 8	"	_	X	XP	_	9	pnct	_	_
-9	kunde	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	7	nobj	_	_
+9	kunde	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|anim	7	nobj	_	_
 10	"	_	X	XP	_	9	pnct	_	_
 11	.	_	X	XP	_	2	pnct	_	_
 
@@ -6072,7 +6072,7 @@
 4	ikke	_	RG	RG	degree=unmarked	2	mod	_	_
 5	snakke	_	V	VA	mood=infin|voice=active	2	vobj	_	_
 6	med	_	SP	SP	_	5	pobj	_	_
-7	han	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked	6	nobj	_	_
+7	han	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked|anim	6	nobj	_	_
 8	,	_	X	XP	_	2	pnct	_	_
 9	hvis	_	C	CS	_	2	mod	_	_
 10	der	_	U	U	_	11	expl	_	_
