@@ -540,7 +540,7 @@
 9	initiativtager	_	N	NC	gender=common|number=plur|case=unmarked|def=def	8	nobj	_	_
 10	til	_	SP	SP	_	9	pobj	_	_
 11	den	_	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked	5	nobj	_	_
-12	grundtvigianske-socialdemokratiske	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	11	mod	_	_
+12	grundtvigianske-socialdemokratisk	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	11	mod	_	_
 13	samarbejde	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	11	nobj	_	_
 14	,	_	X	XP	_	11	pnct	_	_
 15	der	_	U	U	_	16	subj	_	_
@@ -2265,7 +2265,7 @@
 24	at	_	U	U	_	23	dobj	_	_
 25	fænge	_	V	VA	mood=infin|voice=active	24	vobj	_	_
 26	ren	_	A	AN	degree=pos|transcat=adverbial	27	mod	_	_
-27	underholdningsmæssigt	_	A	AN	degree=pos|transcat=adverbial	25	mod	_	_
+27	underholdningsmæssig	_	A	AN	degree=pos|transcat=adverbial	25	mod	_	_
 28	.	_	X	XP	_	11	pnct	_	_
 
 1	"	_	X	XP	_	3	pnct	_	_
@@ -3774,7 +3774,7 @@
 11	være	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 12	den	_	P	PD	gender=common|number=sing|case=unmarked|register=unmarked	11	subj	_	_
 13	lille	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def/indef|transcat=unmarked	12	mod	_	_
-14	tre-årige	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	12	mod	_	_
+14	tre-årig	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	12	mod	_	_
 15	pernille	_	N	NP	case=unmarked	12	nobj	_	_
 16	atter	_	RG	RG	degree=unmarked	11	mod	_	_
 17	hel	_	A	AN	degree=pos|transcat=adverbial	18	mod	_	_
@@ -5426,7 +5426,7 @@
 11	at	_	U	U	_	10	nobj	_	_
 12	genfinde	_	V	VA	mood=infin|voice=active	11	vobj	_	_
 13	deres	_	P	PO	person=3|gender=common/neuter|number=sing/plur|case=unmarked|possessor=plur|reflexive=no|register=unmarked	12	dobj	_	_
-14	barndommelige	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	13	mod	_	_
+14	barndommelig	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	13	mod	_	_
 15	sindelag	_	N	NC	gender=neuter|number=plur|case=unmarked|def=indef	13	possd	_	_
 16	.	_	X	XP	_	6	pnct	_	_
 
@@ -6026,7 +6026,7 @@
 13	,	_	X	XP	_	12	pnct	_	_
 14	at	_	C	CS	_	12	nobj	_	_
 15	den	_	P	PD	gender=common|number=sing|case=unmarked|register=unmarked	17	subj	_	_
-16	24-årige	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	15	mod	_	_
+16	24-årig	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked	15	mod	_	_
 17	skulle	_	V	VA	mood=indic|tense=past|voice=active	14	vobj	_	_
 18	finde	_	V	VA	mood=infin|voice=active	17	vobj	_	_
 19	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	18	dobj	_	_

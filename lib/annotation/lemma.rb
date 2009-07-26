@@ -17,12 +17,12 @@ module Annotation
       @lemmas = []
       File.open(@input_file, 'w') do |f|
         for sent in @corpus.sentences
-          for token in sent.tokens
-            f.puts "#{token.form}/#{token.pos}"
-          end
+          f.puts sent.tokens.collect { |token|
+             "#{token.form}/#{token.pos}"
+          }.join(" ")
         end
       end
-      `#{@bin} -L -f #{@flex_file} -d #{@dict_file} -x #{@translation_file} -v #{@friends_file} -i #{@input_file} -o #{@output_file}`
+      `#{@bin} -L -eU -l -f #{@flex_file} -d #{@dict_file} -x #{@translation_file} -v #{@friends_file} -i #{@input_file} -o #{@output_file}`
       File.open(@output_file) do |f|
         while (line = f.gets)
           @lemmas.push line.split(/\t/)[1]
