@@ -2,11 +2,9 @@
 module Annotation
   class Base
 
-    def initialize(corpus)
+    def annotate(corpus)
       @corpus = corpus
-    end
-
-    def run
+      pre_corpus
       for @sentence in @corpus.sentences
         pre_sentence
         for @token in @sentence.tokens
@@ -14,25 +12,31 @@ module Annotation
         end
         post_sentence
         for @token in @sentence.tokens
-          yield @token.to_s if block_given?
-        end
+          yield @token.to_s 
+        end if block_given?
         # blank line between sentences
         yield '' if block_given?
       end
+      post_corpus
       @corpus
     end
 
-    def categorize(corpus)
+    def categorize(gold, system)
+      @corpus = gold
       parts = Hash.new { |hash, cat| hash[cat] = Conll::Corpus.new }
       for @sentence in @corpus.sentences
         # Use gold corpus for categorization, as features are missing in the parser output
         category = categorize_sentence
-        parts[category] << corpus.sentences[@sentence.index]
+        parts[category] << system.sentences[@sentence.index]
       end
       parts
     end
 
     protected
+
+    def pre_corpus
+      # allow subclasses to do work here
+    end
 
     def pre_sentence
       # allow subclasses to do work here
@@ -45,6 +49,11 @@ module Annotation
     def post_sentence
       # allow subclasses to do work here
     end
+
+    def post_corpus
+      # allow subclasses to do work here
+    end
+
 
     # Categorize a sentence according to presence of the feature handled by the
     # annotator class
