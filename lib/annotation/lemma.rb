@@ -22,7 +22,7 @@ module Annotation
           }.join(" ")
         end
       end
-      `#{@bin} -L -eU -l -f #{@flex_file} -d #{@dict_file} -x #{@translation_file} -v #{@friends_file} -i #{@input_file} -o #{@output_file}`
+      `#{@bin} -L -f #{@flex_file} -d #{@dict_file} -x #{@translation_file} -v #{@friends_file} -i #{@input_file} -o #{@output_file}`
       File.open(@output_file) do |f|
         while (line = f.gets)
           @lemmas.push line.split(/\t/)[1]
