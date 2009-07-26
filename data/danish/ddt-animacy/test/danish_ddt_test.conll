@@ -1392,7 +1392,7 @@
 7	med	_	SP	SP	_	2	pobj	_	_
 8	opgøret	_	N	NC	gender=neuter|number=sing|case=unmarked|def=def	7	nobj	_	_
 9	mellem	_	SP	SP	_	8	pobj	_	_
-10	AGF	_	N	NP	case=unmarked|anim	9	nobj	_	_
+10	AGF	_	N	NP	case=unmarked	9	nobj	_	_
 11	og	_	C	CC	_	10	coord	_	_
 12	Brøndby	_	N	NP	case=unmarked	11	conj	_	_
 13	,	_	X	XP	_	2	pnct	_	_
