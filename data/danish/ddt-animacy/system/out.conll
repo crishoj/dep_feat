@@ -91,7 +91,7 @@
 12	interesser	interesser	N	N	-	11	nobj	-	-
 13	og	og	C	C	-	12	coord	-	-
 14	følgelig	følgelig	RG	RG	-	13	conj	-	-
-15	for	for	SP	SP	-	4	mod	-	-
+15	for	for	SP	SP	-	13	conj	-	-
 16	demokratiske	demokratiske	A	A	-	17	mod	-	-
 17	reformer	reformer	N	N	-	15	nobj	-	-
 18	"	"	X	X	-	4	pnct	-	-
@@ -102,8 +102,8 @@
 3	tilføjede	tilføjede	V	V	-	1	conj	-	-
 4	:	:	X	X	-	3	pnct	-	-
 5	"	"	X	X	-	6	pnct	-	-
-6	Netop	Netop	RG	RG	-	18	mod	-	-
-7	fordi	fordi	C	C	-	18	mod	-	-
+6	Netop	Netop	RG	RG	-	7	mod	-	-
+7	fordi	fordi	C	C	-	3	mod	-	-
 8	vi	vi	P	P	-	11	subj	-	-
 9	end	end	RG	RG	-	10	mod	-	-
 10	ikke	ikke	RG	RG	-	11	mod	-	-
@@ -134,7 +134,7 @@
 
 1	Det	Det	P	P	-	2	subj	-	-
 2	kunne	kunne	V	V	-	0	ROOT	-	-
-3	den	den	P	P	-	2	dobj	-	-
+3	den	den	P	P	-	2	subj	-	-
 4	ikke	ikke	RG	RG	-	2	mod	-	-
 5	helt	helt	A	A	-	6	mod	-	-
 6	objektivt	objektivt	A	A	-	2	mod	-	-
@@ -144,7 +144,7 @@
 2	var	var	V	V	-	0	ROOT	-	-
 3	slet	slet	RG	RG	-	4	mod	-	-
 4	ikke	ikke	RG	RG	-	2	mod	-	-
-5	på_grund_af	på_grund_af	SP	SP	-	2	pred	-	-
+5	på_grund_af	på_grund_af	SP	SP	-	2	mod	-	-
 6	apparatets	apparatets	N	N	-	5	nobj	-	-
 7	lænker	lænker	N	N	-	6	possd	-	-
 8	.	.	X	X	-	2	pnct	-	-
@@ -227,7 +227,7 @@
 12	ansvar	ansvar	N	N	-	10	nobj	-	-
 13	.	.	X	X	-	2	pnct	-	-
 
-1	Det	Det	P	P	-	2	subj	-	-
+1	Det	Det	P	P	-	2	dobj	-	-
 2	mener	mener	V	V	-	0	ROOT	-	-
 3	Socialdemokratiets	Socialdemokratiets	N	N	-	2	dobj	-	-
 4	næstformand	næstformand	N	N	-	3	possd	-	-
@@ -261,10 +261,10 @@
 3	henviser	henviser	V	V	-	0	ROOT	-	-
 4	til	til	SP	SP	-	3	pobj	-	-
 5	Tyskland	Tyskland	N	N	-	4	nobj	-	-
-6	,	,	X	X	-	5	pnct	-	-
+6	,	,	X	X	-	3	pnct	-	-
 7	hvor	hvor	RG	RG	-	9	mod	-	-
 8	dialogen	dialogen	N	N	-	9	subj	-	-
-9	kortsluttes	kortsluttes	V	V	-	5	rel	-	-
+9	kortsluttes	kortsluttes	V	V	-	3	vobj	-	-
 10	af	af	SP	SP	-	9	pobj	-	-
 11	brandbomber	brandbomber	N	N	-	10	nobj	-	-
 12	og	og	C	C	-	11	coord	-	-
@@ -301,10 +301,10 @@
 6	(	(	X	X	-	7	pnct	-	-
 7	DSU	DSU	N	N	-	3	possd	-	-
 8	)	)	X	X	-	7	pnct	-	-
-9	,	,	X	X	-	3	pnct	-	-
+9	,	,	X	X	-	7	pnct	-	-
 10	Hans	Hans	N	N	-	11	namef	-	-
-11	Stavnsager	Stavnsager	N	N	-	3	appa	-	-
-12	,	,	X	X	-	11	pnct	-	-
+11	Stavnsager	Stavnsager	N	N	-	7	appa	-	-
+12	,	,	X	X	-	7	pnct	-	-
 13	er	er	V	V	-	0	ROOT	-	-
 14	positivt	positivt	A	A	-	15	mod	-	-
 15	overrasket	overrasket	V	V	-	13	vobj	-	-
@@ -367,9 +367,9 @@
 35	over	over	SP	SP	-	34	pobj	-	-
 36	billederne	billederne	N	N	-	35	nobj	-	-
 37	af	af	SP	SP	-	36	pobj	-	-
-38	Mogens	Mogens	N	N	-	37	nobj	-	-
-39	Glistrup	Glistrup	N	N	-	38	name	-	-
-40	og	og	C	C	-	38	coord	-	-
+38	Mogens	Mogens	N	N	-	39	namef	-	-
+39	Glistrup	Glistrup	N	N	-	37	nobj	-	-
+40	og	og	C	C	-	39	coord	-	-
 41	en	en	P	P	-	40	conj	-	-
 42	lille	lille	A	A	-	41	mod	-	-
 43	jugoslavisk	jugoslavisk	A	A	-	41	mod	-	-
@@ -386,7 +386,7 @@
 8	har	har	V	V	-	18	qobj	-	-
 9	hørt	hørt	V	V	-	8	vobj	-	-
 10	så	så	RG	RG	-	11	mod	-	-
-11	klar	klar	A	A	-	9	dobj	-	-
+11	klar	klar	A	A	-	9	mod	-	-
 12	en	en	P	P	-	9	dobj	-	-
 13	melding	melding	N	N	-	12	nobj	-	-
 14	fra	fra	SP	SP	-	12	mod	-	-
@@ -441,9 +441,9 @@
 9	ikke	ikke	RG	RG	-	8	mod	-	-
 10	et	et	P	P	-	8	pred	-	-
 11	sted	sted	N	N	-	10	nobj	-	-
-12	,	,	X	X	-	8	pnct	-	-
+12	,	,	X	X	-	10	pnct	-	-
 13	man	man	P	P	-	14	subj	-	-
-14	lod	lod	V	V	-	2	vobj	-	-
+14	lod	lod	V	V	-	10	rel	-	-
 15	sig	sig	P	P	-	14	dobj	-	-
 16	se	se	V	V	-	14	vobj	-	-
 17	,	,	X	X	-	14	pnct	-	-
@@ -452,7 +452,7 @@
 20	ville	ville	V	V	-	18	vobj	-	-
 21	være	være	V	V	-	20	vobj	-	-
 22	velset	velset	A	A	-	21	pred	-	-
-23	i	i	SP	SP	-	21	mod	-	-
+23	i	i	SP	SP	-	21	pred	-	-
 24	byens	byens	N	N	-	23	nobj	-	-
 25	herskende	herskende	V	V	-	24	rel	-	-
 26	indremissionske	indremissionske	A	A	-	27	mod	-	-
@@ -464,11 +464,11 @@
 3	samme	samme	A	A	-	2	pred	-	-
 4	år	år	N	N	-	3	nobj	-	-
 5	,	,	X	X	-	2	pnct	-	-
-6	at	at	C	C	-	2	dobj	-	-
+6	at	at	C	C	-	2	pred	-	-
 7	Poul-Erik	Poul-Erik	N	N	-	8	namef	-	-
 8	Billeskov	Billeskov	N	N	-	9	subj	-	-
 9	kom	kom	V	V	-	6	vobj	-	-
-10	til	til	SP	SP	-	9	lobj	-	-
+10	til	til	SP	SP	-	9	pobj	-	-
 11	byen	byen	N	N	-	10	nobj	-	-
 12	.	.	X	X	-	2	pnct	-	-
 
@@ -509,7 +509,7 @@
 7	.	.	X	X	-	1	pnct	-	-
 
 1	Og	Og	C	C	-	0	ROOT	-	-
-2	denne	denne	P	P	-	4	mod	-	-
+2	denne	denne	P	P	-	4	subj	-	-
 3	gang	gang	N	N	-	2	nobj	-	-
 4	kan	kan	V	V	-	1	conj	-	-
 5	Poul-Erik	Poul-Erik	N	N	-	6	namef	-	-
@@ -517,7 +517,7 @@
 7	ikke	ikke	RG	RG	-	4	mod	-	-
 8	sige	sige	V	V	-	4	vobj	-	-
 9	sig	sig	P	P	-	8	dobj	-	-
-10	fri	fri	A	A	-	8	mod	-	-
+10	fri	fri	A	A	-	8	pred	-	-
 11	for	for	SP	SP	-	10	pobj	-	-
 12	at	at	U	U	-	11	nobj	-	-
 13	have	have	V	V	-	12	vobj	-	-
@@ -533,7 +533,7 @@
 2	var	var	V	V	-	0	ROOT	-	-
 3	nemlig	nemlig	RG	RG	-	2	mod	-	-
 4	kandidat	kandidat	N	N	-	2	pred	-	-
-5	for-	for-	X	X	-	4	mod	-	-
+5	for-	for-	X	X	-	4	nobj	-	-
 6	og	og	C	C	-	5	coord	-	-
 7	en	en	P	P	-	6	conj	-	-
 8	af	af	SP	SP	-	7	pobj	-	-
@@ -547,7 +547,7 @@
 16	har	har	V	V	-	11	rel	-	-
 17	vundet	vundet	V	V	-	16	vobj	-	-
 18	flertallet	flertallet	N	N	-	17	dobj	-	-
-19	i	i	SP	SP	-	18	mod	-	-
+19	i	i	SP	SP	-	17	mod	-	-
 20	Skjerns	Skjerns	N	N	-	19	nobj	-	-
 21	menighedsråd	menighedsråd	N	N	-	20	possd	-	-
 22	.	.	X	X	-	2	pnct	-	-
@@ -565,13 +565,13 @@
 3	indtil	indtil	SP	SP	-	2	mod	-	-
 4	denne	denne	P	P	-	3	nobj	-	-
 5	uges	uges	N	N	-	4	nobj	-	-
-6	menighedsrådsvalg	menighedsrådsvalg	N	N	-	4	possd	-	-
+6	menighedsrådsvalg	menighedsrådsvalg	N	N	-	5	nobj	-	-
 7	.	.	X	X	-	2	pnct	-	-
 
 1	Nu	Nu	RG	RG	-	2	mod	-	-
 2	står	står	V	V	-	0	ROOT	-	-
 3	det	det	P	P	-	2	subj	-	-
-4	syv-seks	syv-seks	A	A	-	2	lobj	-	-
+4	syv-seks	syv-seks	A	A	-	2	iobj	-	-
 5	.	.	X	X	-	2	pnct	-	-
 
 1	Og	Og	C	C	-	0	ROOT	-	-
@@ -584,12 +584,12 @@
 8	disfavør	disfavør	N	N	-	6	nobj	-	-
 9	.	.	X	X	-	1	pnct	-	-
 
-1	<num>	<num>	A	A	-	6	subj	-	-
+1	<num>	<num>	A	A	-	0	ROOT	-	-
 2	)	)	X	X	-	1	pnct	-	-
 3	I	I	SP	SP	-	6	mod	-	-
 4	bekræftende	bekræftende	V	V	-	5	mod	-	-
 5	fald	fald	N	N	-	3	nobj	-	-
-6	findes	findes	V	V	-	0	ROOT	-	-
+6	findes	findes	V	V	-	1	list	-	-
 7	der	der	U	U	-	6	expl	-	-
 8	da	da	RG	RG	-	6	mod	-	-
 9	en	en	P	P	-	6	dobj	-	-
@@ -599,7 +599,7 @@
 13	siden	siden	N	N	-	12	nobj	-	-
 14	af	af	SP	SP	-	13	pobj	-	-
 15	FET	FET	N	N	-	14	nobj	-	-
-16	?	?	X	X	-	6	pnct	-	-
+16	?	?	X	X	-	1	pnct	-	-
 
 1	Det	Det	P	P	-	2	subj	-	-
 2	er	er	V	V	-	0	ROOT	-	-
@@ -629,15 +629,15 @@
 7	sit	sit	P	P	-	6	nobj	-	-
 8	og	og	C	C	-	7	coord	-	-
 9	regeringens	regeringens	N	N	-	8	conj	-	-
-10	kendskab	kendskab	N	N	-	7	possd	-	-
+10	kendskab	kendskab	N	N	-	9	possd	-	-
 11	til	til	SP	SP	-	10	pobj	-	-
 12	virksomheden	virksomheden	N	N	-	11	nobj	-	-
 13	?	?	X	X	-	3	pnct	-	-
 
-1	<num>	<num>	A	A	-	4	subj	-	-
+1	<num>	<num>	A	A	-	0	ROOT	-	-
 2	)	)	X	X	-	1	pnct	-	-
 3	Det	Det	P	P	-	4	subj	-	-
-4	er	er	V	V	-	0	ROOT	-	-
+4	er	er	V	V	-	1	list	-	-
 5	galt	galt	A	A	-	4	pred	-	-
 6	,	,	X	X	-	4	pnct	-	-
 7	hvis	hvis	C	C	-	4	mod	-	-
@@ -650,9 +650,9 @@
 14	vidende	vidende	N	N	-	12	possd	-	-
 15	.	.	X	X	-	4	pnct	-	-
 
-1	<num>	<num>	A	A	-	0	ROOT	-	-
+1	<num>	<num>	A	A	-	12	subj	-	-
 2	)	)	X	X	-	1	pnct	-	-
-3	Hvis	Hvis	C	C	-	12	mod	-	-
+3	Hvis	Hvis	C	C	-	12	xtop	-	-
 4	det	det	P	P	-	5	subj	-	-
 5	er	er	V	V	-	3	vobj	-	-
 6	sket	sket	V	V	-	5	vobj	-	-
@@ -661,13 +661,13 @@
 9	vidende	vidende	N	N	-	8	possd	-	-
 10	,	,	X	X	-	5	pnct	-	-
 11	hvorfor	hvorfor	RG	RG	-	12	mod	-	-
-12	har	har	V	V	-	1	rel	-	-
+12	har	har	V	V	-	0	ROOT	-	-
 13	man	man	P	P	-	12	subj	-	-
 14	så	så	RG	RG	-	12	mod	-	-
 15	ikke	ikke	RG	RG	-	12	mod	-	-
 16	grebet	grebet	V	V	-	12	vobj	-	-
 17	ind	ind	RG	RG	-	16	lobj	-	-
-18	?	?	X	X	-	1	pnct	-	-
+18	?	?	X	X	-	12	pnct	-	-
 
 1	<num>	<num>	A	A	-	0	ROOT	-	-
 2	)	)	X	X	-	1	pnct	-	-
@@ -677,10 +677,10 @@
 6	så	så	RG	RG	-	7	mod	-	-
 7	meget	meget	A	A	-	4	dobj	-	-
 8	kludder	kludder	N	N	-	7	nobj	-	-
-9	i	i	SP	SP	-	4	mod	-	-
+9	i	i	SP	SP	-	8	mod	-	-
 10	efterretningsvæsenet	efterretningsvæsenet	N	N	-	9	nobj	-	-
-11	,	,	X	X	-	4	pnct	-	-
-12	at	at	C	C	-	3	conj	-	-
+11	,	,	X	X	-	7	pnct	-	-
+12	at	at	C	C	-	7	nobj	-	-
 13	man	man	P	P	-	14	subj	-	-
 14	kan	kan	V	V	-	12	vobj	-	-
 15	sende	sende	V	V	-	14	vobj	-	-
@@ -690,7 +690,7 @@
 19	selvmordsmissioner	selvmordsmissioner	N	N	-	18	nobj	-	-
 20	?	?	X	X	-	1	pnct	-	-
 
-1	<num>	<num>	A	A	-	0	ROOT	-	-
+1	<num>	<num>	A	A	-	10	mod	-	-
 2	)	)	X	X	-	1	pnct	-	-
 3	Hvis	Hvis	C	C	-	10	mod	-	-
 4	der	der	U	U	-	5	expl	-	-
@@ -699,7 +699,7 @@
 7	privat	privat	A	A	-	6	mod	-	-
 8	efterretningsvæsen	efterretningsvæsen	N	N	-	6	nobj	-	-
 9	,	,	X	X	-	5	pnct	-	-
-10	kan	kan	V	V	-	1	conj	-	-
+10	kan	kan	V	V	-	0	ROOT	-	-
 11	vi	vi	P	P	-	10	subj	-	-
 12	så	så	RG	RG	-	10	mod	-	-
 13	være	være	V	V	-	10	vobj	-	-
@@ -732,13 +732,13 @@
 10	,	,	X	X	-	2	pnct	-	-
 11	undersøge	undersøge	V	V	-	2	conj	-	-
 12	sagen	sagen	N	N	-	11	dobj	-	-
-13	?	?	X	X	-	11	pnct	-	-
+13	?	?	X	X	-	2	pnct	-	-
 
 1	"	"	X	X	-	3	pnct	-	-
 2	Det	Det	P	P	-	3	subj	-	-
 3	virker	virker	V	V	-	0	ROOT	-	-
 4	"	"	X	X	-	5	pnct	-	-
-5	fåret	fåret	A	A	-	3	pred	-	-
+5	fåret	fåret	A	A	-	3	mod	-	-
 6	"	"	X	X	-	5	pnct	-	-
 7	,	,	X	X	-	3	pnct	-	-
 8	men	men	C	C	-	3	coord	-	-
@@ -764,17 +764,17 @@
 3	ligeledes	ligeledes	RG	RG	-	2	mod	-	-
 4	interessant	interessant	A	A	-	2	pred	-	-
 5	,	,	X	X	-	2	pnct	-	-
-6	hvad	hvad	P	P	-	2	pred	-	-
+6	hvad	hvad	P	P	-	11	mod	-	-
 7	regeringen	regeringen	N	N	-	8	subj	-	-
 8	vil	vil	V	V	-	6	rel	-	-
 9	med	med	SP	SP	-	8	mod	-	-
 10	redegørelsen	redegørelsen	N	N	-	9	nobj	-	-
-11	i	i	SP	SP	-	8	mod	-	-
+11	i	i	SP	SP	-	2	mod	-	-
 12	det	det	P	P	-	11	nobj	-	-
 13	udenrigspolitiske	udenrigspolitiske	A	A	-	12	mod	-	-
 14	nævn	nævn	N	N	-	12	nobj	-	-
-15	:	:	X	X	-	8	pnct	-	-
-16	Om	Om	C	C	-	8	mod	-	-
+15	:	:	X	X	-	2	pnct	-	-
+16	Om	Om	C	C	-	2	mod	-	-
 17	den	den	P	P	-	18	subj	-	-
 18	vil	vil	V	V	-	16	vobj	-	-
 19	søge	søge	V	V	-	18	vobj	-	-
@@ -795,8 +795,8 @@
 34	af	af	SP	SP	-	33	pobj	-	-
 35	,	,	X	X	-	34	pnct	-	-
 36	hvad	hvad	P	P	-	34	nobj	-	-
-37	FET	FET	N	N	-	38	subj	-	-
-38	går	går	V	V	-	36	rel	-	-
+37	FET	FET	N	N	-	34	nobj	-	-
+38	går	går	V	V	-	31	rel	-	-
 39	og	og	C	C	-	38	coord	-	-
 40	laver	laver	V	V	-	39	conj	-	-
 41	,	,	X	X	-	38	pnct	-	-
@@ -825,7 +825,7 @@
 3	ikke	ikke	RG	RG	-	4	mod	-	-
 4	var	var	V	V	-	1	vobj	-	-
 5	gået	gået	V	V	-	4	vobj	-	-
-6	i	i	SP	SP	-	5	lobj	-	-
+6	i	i	SP	SP	-	5	mod	-	-
 7	arbejde	arbejde	N	N	-	6	nobj	-	-
 8	,	,	X	X	-	4	pnct	-	-
 9	var	var	V	V	-	0	ROOT	-	-
@@ -850,7 +850,7 @@
 28	og	og	C	C	-	17	coord	-	-
 29	de	de	P	P	-	33	subj	-	-
 30	<num>	<num>	A	A	-	29	nobj	-	-
-31	på	på	SP	SP	-	29	mod	-	-
+31	på	på	SP	SP	-	33	mod	-	-
 32	fyringslisten	fyringslisten	N	N	-	31	nobj	-	-
 33	ville	ville	V	V	-	28	conj	-	-
 34	have	have	V	V	-	33	vobj	-	-
@@ -910,7 +910,7 @@
 12	,	,	X	X	-	8	pnct	-	-
 13	var	var	V	V	-	0	ROOT	-	-
 14	ingen	ingen	P	P	-	13	subj	-	-
-15	længere	længere	RG	RG	-	13	mod	-	-
+15	længere	længere	RG	RG	-	13	pred	-	-
 16	i	i	SP	SP	-	13	pred	-	-
 17	tvivl	tvivl	N	N	-	16	nobj	-	-
 18	om	om	SP	SP	-	17	pobj	-	-
@@ -924,7 +924,7 @@
 26	på	på	SP	SP	-	25	mod	-	-
 27	en	en	P	P	-	26	nobj	-	-
 28	straffeekspedition	straffeekspedition	N	N	-	27	nobj	-	-
-29	over	over	RG	RG	-	27	mod	-	-
+29	over	over	RG	RG	-	22	pred	-	-
 30	for	for	SP	SP	-	29	pobj	-	-
 31	nogle	nogle	P	P	-	30	nobj	-	-
 32	medarbejdere	medarbejdere	N	N	-	31	nobj	-	-
@@ -957,9 +957,9 @@
 15	de	de	P	P	-	16	subj	-	-
 16	er	er	V	V	-	14	vobj	-	-
 17	ikke	ikke	RG	RG	-	16	mod	-	-
-18	længere	længere	RG	RG	-	16	mod	-	-
+18	længere	længere	RG	RG	-	19	mod	-	-
 19	tilbageholdende	tilbageholdende	A	A	-	16	pred	-	-
-20	med	med	SP	SP	-	19	pobj	-	-
+20	med	med	SP	SP	-	16	mod	-	-
 21	at	at	U	U	-	20	nobj	-	-
 22	udtale	udtale	V	V	-	21	vobj	-	-
 23	sig	sig	P	P	-	22	dobj	-	-
@@ -970,7 +970,7 @@
 3	mange	mange	A	A	-	2	nobj	-	-
 4	andre	andre	P	P	-	3	nobj	-	-
 5	er	er	V	V	-	1	conj	-	-
-6	holdningen	holdningen	N	N	-	5	pred	-	-
+6	holdningen	holdningen	N	N	-	5	subj	-	-
 7	en	en	P	P	-	5	pred	-	-
 8	anden	anden	P	P	-	7	nobj	-	-
 9	:	:	X	X	-	7	pnct	-	-
@@ -1049,13 +1049,13 @@
 11	kan	kan	V	V	-	8	vobj	-	-
 12	købe	købe	V	V	-	11	vobj	-	-
 13	basis-varer	basis-varer	N	N	-	12	dobj	-	-
-14	billigere	billigere	A	A	-	15	mod	-	-
+14	billigere	billigere	A	A	-	12	mod	-	-
 15	andre	andre	P	P	-	12	dobj	-	-
 16	steder	steder	N	N	-	15	nobj	-	-
 17	.	.	X	X	-	3	pnct	-	-
 
 1	Går	Går	V	V	-	12	qobj	-	-
-2	konkurrenterne	konkurrenterne	N	N	-	1	dobj	-	-
+2	konkurrenterne	konkurrenterne	N	N	-	1	subj	-	-
 3	ned	ned	RG	RG	-	1	lobj	-	-
 4	i	i	SP	SP	-	3	mod	-	-
 5	pris	pris	N	N	-	4	nobj	-	-
@@ -1076,8 +1076,8 @@
 5	også	også	RG	RG	-	4	mod	-	-
 6	en	en	P	P	-	4	dobj	-	-
 7	anden	anden	P	P	-	6	nobj	-	-
-8	kedelig	kedelig	A	A	-	7	mod	-	-
-9	følge	følge	N	N	-	7	nobj	-	-
+8	kedelig	kedelig	A	A	-	6	mod	-	-
+9	følge	følge	N	N	-	6	nobj	-	-
 10	,	,	X	X	-	4	pnct	-	-
 11	set	set	V	V	-	4	vobj	-	-
 12	med	med	SP	SP	-	11	pobj	-	-
@@ -1143,7 +1143,7 @@
 3	de	de	P	P	-	2	dobj	-	-
 4	store	store	A	A	-	3	mod	-	-
 5	Brugser	Brugser	N	N	-	3	nobj	-	-
-6	<num>	<num>	A	A	-	3	nobj	-	-
+6	<num>	<num>	A	A	-	5	nobj	-	-
 7	forskellige	forskellige	A	A	-	6	mod	-	-
 8	varer	varer	N	N	-	6	nobj	-	-
 9	på	på	SP	SP	-	6	mod	-	-
@@ -1186,7 +1186,7 @@
 3	aggressiv	aggressiv	A	A	-	1	mod	-	-
 4	linje	linje	N	N	-	1	nobj	-	-
 5	præger	præger	V	V	-	0	ROOT	-	-
-6	Super-Brugsen	Super-Brugsen	N	N	-	5	dobj	-	-
+6	Super-Brugsen	Super-Brugsen	N	N	-	5	subj	-	-
 7	.	.	X	X	-	5	pnct	-	-
 
 1	Her	Her	RG	RG	-	2	mod	-	-
@@ -1209,7 +1209,7 @@
 10	finansloven	finansloven	N	N	-	9	nobj	-	-
 11	for	for	SP	SP	-	10	pobj	-	-
 12	<num>	<num>	A	A	-	11	nobj	-	-
-13	til	til	SP	SP	-	4	pobj	-	-
+13	til	til	SP	SP	-	4	mod	-	-
 14	murbrækker	murbrækker	N	N	-	13	nobj	-	-
 15	for	for	SP	SP	-	14	pobj	-	-
 16	,	,	X	X	-	15	pnct	-	-
@@ -1218,7 +1218,7 @@
 19	kan	kan	V	V	-	17	vobj	-	-
 20	opnås	opnås	V	V	-	19	vobj	-	-
 21	resultater	resultater	N	N	-	20	dobj	-	-
-22	på	på	SP	SP	-	20	mod	-	-
+22	på	på	SP	SP	-	21	pobj	-	-
 23	de	de	P	P	-	22	nobj	-	-
 24	andre	andre	P	P	-	23	nobj	-	-
 25	,	,	X	X	-	24	pnct	-	-
@@ -1240,7 +1240,7 @@
 5	at	at	U	U	-	4	nobj	-	-
 6	bruge	bruge	V	V	-	5	vobj	-	-
 7	forhandlingerne	forhandlingerne	N	N	-	6	dobj	-	-
-8	om	om	SP	SP	-	7	pobj	-	-
+8	om	om	SP	SP	-	6	pobj	-	-
 9	finansloven	finansloven	N	N	-	8	nobj	-	-
 10	som	som	U	U	-	6	mod	-	-
 11	murbrækker	murbrækker	N	N	-	10	nobj	-	-
@@ -1270,7 +1270,7 @@
 16	sikres	sikres	V	V	-	14	vobj	-	-
 17	en	en	P	P	-	16	dobj	-	-
 18	lav	lav	A	A	-	17	mod	-	-
-19	løn-	løn-	X	X	-	17	nobj	-	-
+19	løn-	løn-	X	X	-	16	dobj	-	-
 20	og	og	C	C	-	19	coord	-	-
 21	omkostningsudvikling	omkostningsudvikling	N	N	-	20	conj	-	-
 22	ved	ved	SP	SP	-	16	mod	-	-
@@ -1293,7 +1293,7 @@
 7	kommer	kommer	V	V	-	4	rel	-	-
 8	til	til	SP	SP	-	7	pobj	-	-
 9	førstebehandling	førstebehandling	N	N	-	8	nobj	-	-
-10	på	på	SP	SP	-	7	lobj	-	-
+10	på	på	SP	SP	-	9	mod	-	-
 11	torsdag	torsdag	N	N	-	10	nobj	-	-
 12	,	,	X	X	-	2	pnct	-	-
 13	fremlagt	fremlagt	V	V	-	2	vobj	-	-
@@ -1365,7 +1365,7 @@
 16	samme	samme	A	A	-	15	nobj	-	-
 17	omfang	omfang	N	N	-	16	nobj	-	-
 18	,	,	X	X	-	16	pnct	-	-
-19	som	som	U	U	-	16	pobj	-	-
+19	som	som	U	U	-	21	mod	-	-
 20	vi	vi	P	P	-	21	subj	-	-
 21	ville	ville	V	V	-	16	rel	-	-
 22	nedsætte	nedsætte	V	V	-	21	vobj	-	-
@@ -1397,7 +1397,7 @@
 12	Brøndby	Brøndby	N	N	-	11	conj	-	-
 13	,	,	X	X	-	2	pnct	-	-
 14	og	og	C	C	-	2	coord	-	-
-15	dagen	dagen	N	N	-	16	tobj	-	-
+15	dagen	dagen	N	N	-	17	subj	-	-
 16	efter	efter	RG	RG	-	17	mod	-	-
 17	følger	følger	V	V	-	14	conj	-	-
 18	kampene	kampene	N	N	-	17	subj	-	-
@@ -1433,7 +1433,7 @@
 20	runder	runder	N	N	-	19	nobj	-	-
 21	med	med	SP	SP	-	17	mod	-	-
 22	afslutning	afslutning	N	N	-	21	nobj	-	-
-23	den	den	P	P	-	17	dobj	-	-
+23	den	den	P	P	-	17	mod	-	-
 24	23.	23.	A	A	-	23	mod	-	-
 25	juni	juni	N	N	-	23	nobj	-	-
 26	,	,	X	X	-	23	pnct	-	-
@@ -1443,7 +1443,7 @@
 30	således	således	RG	RG	-	29	mod	-	-
 31	ud	ud	RG	RG	-	29	avobj	-	-
 32	:	:	X	X	-	29	pnct	-	-
-33	Lyngby-Brøndby	Lyngby-Brøndby	X	X	-	29	pobj	-	-
+33	Lyngby-Brøndby	Lyngby-Brøndby	X	X	-	29	conj	-	-
 34	,	,	X	X	-	29	pnct	-	-
 35	Silkeborg-AGF	Silkeborg-AGF	X	X	-	23	nobj	-	-
 36	,	,	X	X	-	35	pnct	-	-
@@ -1479,7 +1479,7 @@
 4	ligeledes	ligeledes	RG	RG	-	2	mod	-	-
 5	blive	blive	V	V	-	2	vobj	-	-
 6	afgjort	afgjort	V	V	-	5	vobj	-	-
-7	om	om	C	C	-	6	dobj	-	-
+7	om	om	C	C	-	5	pred	-	-
 8	turneringen	turneringen	N	N	-	9	subj	-	-
 9	skal	skal	V	V	-	7	vobj	-	-
 10	vendes	vendes	V	V	-	9	vobj	-	-
@@ -1492,12 +1492,12 @@
 17	hidtidig	hidtidig	A	A	-	18	mod	-	-
 18	praksis	praksis	N	N	-	16	nobj	-	-
 19	spilles	spilles	V	V	-	12	vobj	-	-
-20	efterår/forår	efterår/forår	X	X	-	19	pobj	-	-
+20	efterår/forår	efterår/forår	X	X	-	19	subj	-	-
 21	.	.	X	X	-	2	pnct	-	-
 
 1	Bliver	Bliver	V	V	-	4	mod	-	-
 2	det	det	P	P	-	1	subj	-	-
-3	tilfældet	tilfældet	N	N	-	1	dobj	-	-
+3	tilfældet	tilfældet	N	N	-	1	mod	-	-
 4	kåres	kåres	V	V	-	0	ROOT	-	-
 5	årets	årets	N	N	-	4	dobj	-	-
 6	danmarksmester	danmarksmester	N	N	-	5	possd	-	-
@@ -1514,10 +1514,10 @@
 6	mere	mere	A	A	-	5	nobj	-	-
 7	end	end	C	C	-	6	pobj	-	-
 8	æren	æren	N	N	-	7	nobj	-	-
-9	,	,	X	X	-	5	pnct	-	-
-10	fordi	fordi	C	C	-	5	mod	-	-
+9	,	,	X	X	-	4	pnct	-	-
+10	fordi	fordi	C	C	-	4	mod	-	-
 11	DM-guldet	DM-guldet	N	N	-	15	subj	-	-
-12	mod	mod	SP	SP	-	11	pobj	-	-
+12	mod	mod	SP	SP	-	11	mod	-	-
 13	sædvane	sædvane	N	N	-	12	nobj	-	-
 14	ikke	ikke	RG	RG	-	15	mod	-	-
 15	vil	vil	V	V	-	10	vobj	-	-
@@ -1541,7 +1541,7 @@
 10	at	at	U	U	-	9	dobj	-	-
 11	bibeholde	bibeholde	V	V	-	10	vobj	-	-
 12	turneringen	turneringen	N	N	-	11	dobj	-	-
-13	forår/efterår	forår/efterår	X	X	-	12	mod	-	-
+13	forår/efterår	forår/efterår	X	X	-	12	nobj	-	-
 14	rykker	rykker	V	V	-	0	ROOT	-	-
 15	to	to	A	A	-	14	dobj	-	-
 16	hold	hold	N	N	-	15	nobj	-	-
@@ -1689,7 +1689,7 @@
 12	...	...	X	X	-	7	pnct	-	-
 13	lige	lige	RG	RG	-	14	mod	-	-
 14	meget	meget	A	A	-	7	dobj	-	-
-15	om	om	C	C	-	14	nobj	-	-
+15	om	om	C	C	-	7	dobj	-	-
 16	det	det	P	P	-	17	subj	-	-
 17	var	var	V	V	-	15	vobj	-	-
 18	kvinder	kvinder	N	N	-	17	pred	-	-
@@ -1726,7 +1726,7 @@
 
 1	Bagefter	Bagefter	RG	RG	-	2	mod	-	-
 2	blev	blev	V	V	-	0	ROOT	-	-
-3	deres	deres	P	P	-	2	pred	-	-
+3	deres	deres	P	P	-	2	subj	-	-
 4	kamera	kamera	N	N	-	3	possd	-	-
 5	konfiskeret	konfiskeret	V	V	-	2	vobj	-	-
 6	.	.	X	X	-	2	pnct	-	-
@@ -1755,14 +1755,14 @@
 22	i	i	SP	SP	-	19	mod	-	-
 23	militært	militært	A	A	-	24	mod	-	-
 24	tøj	tøj	N	N	-	22	nobj	-	-
-25	for	for	SP	SP	-	19	pobj	-	-
+25	for	for	SP	SP	-	24	pobj	-	-
 26	at	at	U	U	-	25	nobj	-	-
 27	få	få	V	V	-	26	vobj	-	-
 28	dem	dem	P	P	-	27	dobj	-	-
 29	til	til	SP	SP	-	27	pobj	-	-
 30	at	at	U	U	-	29	nobj	-	-
 31	se	se	V	V	-	30	vobj	-	-
-32	ud	ud	RG	RG	-	31	dobj	-	-
+32	ud	ud	RG	RG	-	31	lobj	-	-
 33	som	som	U	U	-	31	dobj	-	-
 34	dræbte	dræbte	V	V	-	33	vobj	-	-
 35	soldater	soldater	N	N	-	33	nobj	-	-
@@ -1903,7 +1903,7 @@
 8	have	have	V	V	-	5	vobj	-	-
 9	bombet	bombet	V	V	-	8	vobj	-	-
 10	det	det	P	P	-	9	dobj	-	-
-11	meste	meste	A	A	-	10	nobj	-	-
+11	meste	meste	A	A	-	10	mod	-	-
 12	af	af	SP	SP	-	11	pobj	-	-
 13	byen	byen	N	N	-	12	nobj	-	-
 14	i	i	SP	SP	-	9	mod	-	-
@@ -1959,11 +1959,11 @@
 3	det	det	P	P	-	2	pred	-	-
 4	voldsomste	voldsomste	A	A	-	3	mod	-	-
 5	angreb	angreb	N	N	-	3	nobj	-	-
-6	hidtil	hidtil	RG	RG	-	2	pred	-	-
+6	hidtil	hidtil	RG	RG	-	2	mod	-	-
 7	.	.	X	X	-	2	pnct	-	-
 
 1	Bomberne	Bomberne	N	N	-	2	subj	-	-
-2	faldt	faldt	V	V	-	0	ROOT	-	-
+2	faldt	faldt	V	V	-	10	qobj	-	-
 3	en	en	P	P	-	2	dobj	-	-
 4	halv	halv	A	A	-	3	mod	-	-
 5	mil	mil	N	N	-	3	nobj	-	-
@@ -1995,7 +1995,7 @@
 6	lille	lille	A	A	-	5	mod	-	-
 7	barns	barns	N	N	-	5	nobj	-	-
 8	forældre	forældre	N	N	-	4	pred	-	-
-9	for	for	SP	SP	-	4	mod	-	-
+9	for	for	SP	SP	-	8	pobj	-	-
 10	alvor	alvor	N	N	-	9	nobj	-	-
 11	ved	ved	SP	SP	-	4	pred	-	-
 12	at	at	U	U	-	11	nobj	-	-
@@ -2150,8 +2150,8 @@
 8	at	at	U	U	-	7	dobj	-	-
 9	trække	trække	V	V	-	8	vobj	-	-
 10	vejret	vejret	N	N	-	9	dobj	-	-
-11	hæst	hæst	A	A	-	9	mod	-	-
-12	og	og	C	C	-	9	coord	-	-
+11	hæst	hæst	A	A	-	7	mod	-	-
+12	og	og	C	C	-	7	coord	-	-
 13	ringede	ringede	V	V	-	12	conj	-	-
 14	efter	efter	SP	SP	-	13	pobj	-	-
 15	en	en	P	P	-	14	nobj	-	-
@@ -2236,8 +2236,8 @@
 40	sammen	sammen	RG	RG	-	39	mod	-	-
 41	i	i	SP	SP	-	39	mod	-	-
 42	udlandet	udlandet	N	N	-	41	nobj	-	-
-43	.	.	X	X	-	27	pnct	-	-
-44	"	"	X	X	-	15	pnct	-	-
+43	.	.	X	X	-	9	pnct	-	-
+44	"	"	X	X	-	9	pnct	-	-
 
 1	På	På	SP	SP	-	11	mod	-	-
 2	linie	linie	N	N	-	1	nobj	-	-
@@ -2248,7 +2248,7 @@
 7	omlædningsrummets	omlædningsrummets	X	X	-	6	nobj	-	-
 8	øvrige	øvrige	A	A	-	7	mod	-	-
 9	festberuste	festberuste	X	X	-	8	mod	-	-
-10	Brøndby'ere	Brøndby'ere	N	N	-	9	nobj	-	-
+10	Brøndby'ere	Brøndby'ere	N	N	-	4	nobj	-	-
 11	var	var	V	V	-	0	ROOT	-	-
 12	Bjarne	Bjarne	N	N	-	13	namef	-	-
 13	Jensen	Jensen	N	N	-	11	subj	-	-
@@ -2324,7 +2324,7 @@
 13	hans	hans	P	P	-	12	conj	-	-
 14	kollegers	kollegers	N	N	-	13	possd	-	-
 15	vegne	vegne	N	N	-	14	possd	-	-
-16	,	,	X	X	-	4	pnct	-	-
+16	,	,	X	X	-	1	pnct	-	-
 17	er	er	V	V	-	0	ROOT	-	-
 18	både	både	RG	RG	-	19	mod	-	-
 19	uheldigt	uheldigt	A	A	-	17	pred	-	-
@@ -2348,7 +2348,7 @@
 11	ville	ville	V	V	-	7	rel	-	-
 12	have	have	V	V	-	11	vobj	-	-
 13	kostet	kostet	V	V	-	12	vobj	-	-
-14	synderen	synderen	N	N	-	13	iobj	-	-
+14	synderen	synderen	N	N	-	13	dobj	-	-
 15	en	en	P	P	-	13	dobj	-	-
 16	klækkelig	klækkelig	A	A	-	15	mod	-	-
 17	bøde	bøde	N	N	-	15	nobj	-	-
@@ -2407,7 +2407,7 @@
 27	og	og	C	C	-	23	coord	-	-
 28	skaffet	skaffet	V	V	-	27	conj	-	-
 29	sig	sig	P	P	-	28	dobj	-	-
-30	af	af	RG	RG	-	28	part	-	-
+30	af	af	RG	RG	-	28	pobj	-	-
 31	med	med	SP	SP	-	28	mod	-	-
 32	liget	liget	N	N	-	31	nobj	-	-
 33	ved	ved	SP	SP	-	28	mod	-	-
@@ -2429,7 +2429,7 @@
 9	"	"	X	X	-	3	pnct	-	-
 10	fastslog	fastslog	V	V	-	0	ROOT	-	-
 11	DR-Dokumentar	DR-Dokumentar	N	N	-	10	subj	-	-
-12	gruppen	gruppen	N	N	-	11	possd	-	-
+12	gruppen	gruppen	N	N	-	10	dobj	-	-
 13	i	i	SP	SP	-	10	mod	-	-
 14	sin	sin	P	P	-	13	nobj	-	-
 15	sønderlemmende	sønderlemmende	V	V	-	14	mod	-	-
@@ -2437,8 +2437,8 @@
 17	af	af	SP	SP	-	16	pobj	-	-
 18	Frederikshavns	Frederikshavns	N	N	-	17	nobj	-	-
 19	politis	politis	N	N	-	18	nobj	-	-
-20	efterforskningsarbejde	efterforskningsarbejde	N	N	-	18	possd	-	-
-21	i	i	SP	SP	-	14	mod	-	-
+20	efterforskningsarbejde	efterforskningsarbejde	N	N	-	19	possd	-	-
+21	i	i	SP	SP	-	18	mod	-	-
 22	Pedal-Ove-sagen	Pedal-Ove-sagen	N	N	-	21	nobj	-	-
 23	.	.	X	X	-	10	pnct	-	-
 
@@ -2499,7 +2499,7 @@
 6	mangle	mangle	V	V	-	5	vobj	-	-
 7	en	en	P	P	-	6	dobj	-	-
 8	side	side	N	N	-	7	nobj	-	-
-9	-	-	X	X	-	7	pnct	-	-
+9	-	-	X	X	-	6	pnct	-	-
 10	den	den	P	P	-	6	dobj	-	-
 11	med	med	SP	SP	-	10	mod	-	-
 12	hendes	hendes	P	P	-	11	nobj	-	-
@@ -2532,7 +2532,7 @@
 22	30.	30.	A	A	-	21	mod	-	-
 23	december	december	N	N	-	21	nobj	-	-
 24	<num>	<num>	A	A	-	23	nobj	-	-
-25	af	af	SP	SP	-	21	mod	-	-
+25	af	af	SP	SP	-	23	pobj	-	-
 26	Jane	Jane	N	N	-	27	namef	-	-
 27	Nielsen	Nielsen	N	N	-	25	nobj	-	-
 28	på	på	SP	SP	-	19	mod	-	-
@@ -2543,10 +2543,10 @@
 33	af	af	SP	SP	-	32	pobj	-	-
 34	hendes	hendes	P	P	-	33	nobj	-	-
 35	mand	mand	N	N	-	34	possd	-	-
-36	,	,	X	X	-	34	pnct	-	-
-37	imidlertid	imidlertid	RG	RG	-	34	mod	-	-
+36	,	,	X	X	-	4	pnct	-	-
+37	imidlertid	imidlertid	RG	RG	-	4	mod	-	-
 38	,	,	X	X	-	37	pnct	-	-
-39	at	at	C	C	-	34	dobj	-	-
+39	at	at	C	C	-	37	nobj	-	-
 40	hun	hun	P	P	-	41	subj	-	-
 41	skulle	skulle	V	V	-	39	vobj	-	-
 42	havde	havde	X	X	-	41	mod	-	-
@@ -2621,7 +2621,7 @@
 12	af	af	SP	SP	-	11	pobj	-	-
 13	Københavns	Københavns	N	N	-	12	nobj	-	-
 14	Amtsråd	Amtsråd	N	N	-	13	possd	-	-
-15	efter	efter	SP	SP	-	9	mod	-	-
+15	efter	efter	SP	SP	-	11	mod	-	-
 16	en	en	P	P	-	15	nobj	-	-
 17	voldsom	voldsom	A	A	-	16	mod	-	-
 18	debat	debat	N	N	-	16	nobj	-	-
@@ -2631,7 +2631,7 @@
 22	stavepladen	stavepladen	N	N	-	23	subj	-	-
 23	var	var	V	V	-	21	vobj	-	-
 24	fup	fup	N	N	-	23	pred	-	-
-25	eller	eller	C	C	-	16	coord	-	-
+25	eller	eller	C	C	-	24	coord	-	-
 26	et	et	P	P	-	25	conj	-	-
 27	værdifuldt	værdifuldt	A	A	-	26	mod	-	-
 28	middel	middel	N	N	-	26	nobj	-	-
@@ -2640,7 +2640,7 @@
 31	kommunikere	kommunikere	V	V	-	30	vobj	-	-
 32	med	med	SP	SP	-	31	pobj	-	-
 33	de	de	P	P	-	32	nobj	-	-
-34	såkaldt	såkaldt	A	A	-	31	mod	-	-
+34	såkaldt	såkaldt	A	A	-	33	mod	-	-
 35	"	"	X	X	-	37	pnct	-	-
 36	vidtgående	vidtgående	A	A	-	37	mod	-	-
 37	fysisk	fysisk	A	A	-	34	mod	-	-
@@ -2664,7 +2664,7 @@
 8	Københavns	Københavns	N	N	-	7	nobj	-	-
 9	Amts	Amts	N	N	-	8	possd	-	-
 10	sygehusafdeling	sygehusafdeling	N	N	-	8	possd	-	-
-11	for	for	SP	SP	-	4	mod	-	-
+11	for	for	SP	SP	-	4	pobj	-	-
 12	multihandicappede	multihandicappede	A	A	-	11	nobj	-	-
 13	,	,	X	X	-	12	pnct	-	-
 14	Vangedehuse	Vangedehuse	N	N	-	11	nobj	-	-
@@ -2708,7 +2708,7 @@
 13	to	to	A	A	-	12	nobj	-	-
 14	eller	eller	C	C	-	13	coord	-	-
 15	flere	flere	A	A	-	14	conj	-	-
-16	pædagoger	pædagoger	N	N	-	15	nobj	-	-
+16	pædagoger	pædagoger	N	N	-	13	nobj	-	-
 17	over	over	RG	RG	-	12	pred	-	-
 18	for	for	SP	SP	-	17	pobj	-	-
 19	stavepladen	stavepladen	N	N	-	18	nobj	-	-
@@ -2717,7 +2717,7 @@
 22	består	består	V	V	-	19	rel	-	-
 23	af	af	SP	SP	-	22	pobj	-	-
 24	alfabetet	alfabetet	N	N	-	23	nobj	-	-
-25	og	og	C	C	-	19	coord	-	-
+25	og	og	C	C	-	24	coord	-	-
 26	nogle	nogle	P	P	-	25	conj	-	-
 27	få	få	A	A	-	26	nobj	-	-
 28	andre	andre	P	P	-	27	nobj	-	-
@@ -2755,7 +2755,7 @@
 6	udvalg	udvalg	N	N	-	4	dobj	-	-
 7	af	af	SP	SP	-	6	pobj	-	-
 8	sko	sko	N	N	-	7	nobj	-	-
-9	i	i	SP	SP	-	4	mod	-	-
+9	i	i	SP	SP	-	8	mod	-	-
 10	denne	denne	P	P	-	9	nobj	-	-
 11	specielle	specielle	A	A	-	10	mod	-	-
 12	stil	stil	N	N	-	10	nobj	-	-
@@ -2792,21 +2792,21 @@
 13	sko	sko	N	N	-	20	subj	-	-
 14	stilen	stilen	N	N	-	20	subj	-	-
 15	så	så	RG	RG	-	16	mod	-	-
-16	længe	længe	RG	RG	-	17	mod	-	-
+16	længe	længe	RG	RG	-	20	mod	-	-
 17	det	det	P	P	-	20	subj	-	-
 18	unikke	unikke	A	A	-	17	mod	-	-
 19	varelager	varelager	N	N	-	17	nobj	-	-
 20	haves	haves	V	V	-	12	vobj	-	-
-21	fås	fås	V	V	-	12	vobj	-	-
-22	fra	fra	SP	SP	-	21	pobj	-	-
+21	fås	fås	V	V	-	20	vobj	-	-
+22	fra	fra	SP	SP	-	21	mod	-	-
 23	str.	str.	N	N	-	22	nobj	-	-
 24	<num>	<num>	A	A	-	23	nobj	-	-
 25	til	til	SP	SP	-	22	pobj	-	-
 26	<num>	<num>	A	A	-	25	nobj	-	-
-27	-	-	X	X	-	26	pnct	-	-
-28	eller	eller	C	C	-	25	coord	-	-
+27	-	-	X	X	-	20	pnct	-	-
+28	eller	eller	C	C	-	20	coord	-	-
 29	i_hvert_fald	i_hvert_fald	RG	RG	-	28	mod	-	-
-30	til	til	SP	SP	-	22	pobj	-	-
+30	til	til	SP	SP	-	28	<mod>	-	-
 31	str.	str.	N	N	-	30	nobj	-	-
 32	<num>	<num>	A	A	-	31	nobj	-	-
 33	.	.	X	X	-	2	pnct	-	-
@@ -2824,22 +2824,22 @@
 9	en	en	P	P	-	8	dobj	-	-
 10	og	og	C	C	-	9	coord	-	-
 11	anden	anden	P	P	-	10	conj	-	-
-12	vild	vild	A	A	-	11	mod	-	-
+12	vild	vild	A	A	-	9	mod	-	-
 13	i	i	SP	SP	-	8	mod	-	-
 14	varmen	varmen	N	N	-	13	nobj	-	-
 15	,	,	X	X	-	6	pnct	-	-
-16	hvis	hvis	C	C	-	20	mod	-	-
+16	hvis	hvis	C	C	-	6	mod	-	-
 17	den	den	P	P	-	18	subj	-	-
 18	kommer	kommer	V	V	-	16	vobj	-	-
 19	,	,	X	X	-	18	pnct	-	-
 20	er	er	V	V	-	0	ROOT	-	-
-21	fra	fra	SP	SP	-	20	pred	-	-
+21	fra	fra	SP	SP	-	20	mod	-	-
 22	samme	samme	A	A	-	21	nobj	-	-
 23	butik	butik	N	N	-	22	nobj	-	-
 24	,	,	X	X	-	22	pnct	-	-
 25	hvor	hvor	RG	RG	-	31	mod	-	-
-26	lak	lak	N	N	-	27	nobj	-	-
-27	pandebånd	pandebånd	N	N	-	31	subj	-	-
+26	lak	lak	N	N	-	31	subj	-	-
+27	pandebånd	pandebånd	N	N	-	26	possd	-	-
 28	i	i	SP	SP	-	31	mod	-	-
 29	mange	mange	A	A	-	28	nobj	-	-
 30	farver	farver	N	N	-	29	nobj	-	-
@@ -2853,9 +2853,9 @@
 3	<num>	<num>	A	A	-	9	mod	-	-
 4	kr.	kr.	N	N	-	3	nobj	-	-
 5	og	og	C	C	-	3	coord	-	-
-6	Marilyn	Marilyn	N	N	-	5	conj	-	-
-7	Monroe	Monroe	N	N	-	6	nobj	-	-
-8	badedragt	badedragt	N	N	-	6	possd	-	-
+6	Marilyn	Marilyn	N	N	-	7	namef	-	-
+7	Monroe	Monroe	N	N	-	5	conj	-	-
+8	badedragt	badedragt	N	N	-	7	possd	-	-
 9	i	i	SP	SP	-	22	mod	-	-
 10	kulørt	kulørt	A	A	-	11	mod	-	-
 11	Lycra	Lycra	N	N	-	9	nobj	-	-
@@ -2864,7 +2864,7 @@
 14	fotografier	fotografier	N	N	-	13	possd	-	-
 15	på	på	SP	SP	-	12	pred	-	-
 16	numsen	numsen	N	N	-	15	nobj	-	-
-17	<num>	<num>	A	A	-	16	nobj	-	-
+17	<num>	<num>	A	A	-	16	possd	-	-
 18	kr.	kr.	N	N	-	17	nobj	-	-
 19	-	-	X	X	-	17	pnct	-	-
 20	som	som	U	U	-	22	subj	-	-
@@ -2875,7 +2875,7 @@
 25	mange	mange	A	A	-	24	nobj	-	-
 26	af	af	SP	SP	-	25	pobj	-	-
 27	husets	husets	N	N	-	26	nobj	-	-
-28	andre	andre	P	P	-	27	nobj	-	-
+28	andre	andre	P	P	-	27	possd	-	-
 29	badedragter	badedragter	N	N	-	28	nobj	-	-
 30	.	.	X	X	-	22	pnct	-	-
 
@@ -2917,10 +2917,10 @@
 6	ankelremme	ankelremme	N	N	-	5	nobj	-	-
 7	også	også	RG	RG	-	2	mod	-	-
 8	,	,	X	X	-	2	pnct	-	-
-9	li'som	li'som	RG	RG	-	2	mod	-	-
+9	li'som	li'som	RG	RG	-	12	mod	-	-
 10	op-art	op-art	X	X	-	9	nobj	-	-
 11	lak	lak	N	N	-	10	nobj	-	-
-12	i	i	SP	SP	-	11	mod	-	-
+12	i	i	SP	SP	-	2	mod	-	-
 13	sort	sort	A	A	-	12	nobj	-	-
 14	med	med	SP	SP	-	13	mod	-	-
 15	hvid	hvid	A	A	-	16	mod	-	-
@@ -2930,9 +2930,9 @@
 1	Men	Men	C	C	-	0	ROOT	-	-
 2	der	der	U	U	-	3	expl	-	-
 3	er	er	V	V	-	1	conj	-	-
-4	et	et	P	P	-	3	dobj	-	-
+4	et	et	P	P	-	6	mod	-	-
 5	par	par	N	N	-	4	nobj	-	-
-6	hundrede	hundrede	N	N	-	5	nobj	-	-
+6	hundrede	hundrede	N	N	-	3	dobj	-	-
 7	at	at	U	U	-	6	nobj	-	-
 8	spare	spare	V	V	-	7	vobj	-	-
 9	på	på	SP	SP	-	8	pobj	-	-
@@ -3069,7 +3069,7 @@
 18	den	den	P	P	-	15	pred	-	-
 19	forhåndenværende	forhåndenværende	A	A	-	18	mod	-	-
 20	hund	hund	N	N	-	18	nobj	-	-
-21	Pølse	Pølse	N	N	-	18	possd	-	-
+21	Pølse	Pølse	N	N	-	18	nobj	-	-
 22	,	,	X	X	-	15	pnct	-	-
 23	når	når	C	C	-	15	mod	-	-
 24	vi	vi	P	P	-	25	subj	-	-
@@ -3094,12 +3094,12 @@
 10	"	"	X	X	-	1	pnct	-	-
 
 1	Brian	Brian	N	N	-	2	namef	-	-
-2	Sand	Sand	N	N	-	3	subj	-	-
-3	mindes	mindes	V	V	-	0	ROOT	-	-
+2	Sand	Sand	N	N	-	17	subj	-	-
+3	mindes	mindes	V	V	-	17	mod	-	-
 4	en	en	P	P	-	3	dobj	-	-
 5	anden	anden	P	P	-	4	nobj	-	-
-6	pudsig	pudsig	A	A	-	5	mod	-	-
-7	episode	episode	N	N	-	5	nobj	-	-
+6	pudsig	pudsig	A	A	-	4	mod	-	-
+7	episode	episode	N	N	-	4	nobj	-	-
 8	angående	angående	SP	SP	-	3	mod	-	-
 9	bull	bull	X	X	-	8	nobj	-	-
 10	terrierens	terrierens	N	N	-	8	nobj	-	-
@@ -3109,7 +3109,7 @@
 14	I	I	SP	SP	-	17	mod	-	-
 15	en	en	P	P	-	14	nobj	-	-
 16	strøgbutik	strøgbutik	N	N	-	15	nobj	-	-
-17	mødte	mødte	V	V	-	3	vobj	-	-
+17	mødte	mødte	V	V	-	0	ROOT	-	-
 18	jeg	jeg	P	P	-	17	subj	-	-
 19	en	en	P	P	-	17	dobj	-	-
 20	lille	lille	A	A	-	19	mod	-	-
@@ -3162,7 +3162,7 @@
 23	mor	mor	N	N	-	22	dobj	-	-
 24	,	,	X	X	-	22	pnct	-	-
 25	den	den	P	P	-	26	subj	-	-
-26	ligner	ligner	V	V	-	22	conj	-	-
+26	ligner	ligner	V	V	-	22	vobj	-	-
 27	en	en	P	P	-	26	dobj	-	-
 28	hund	hund	N	N	-	27	nobj	-	-
 29	.	.	X	X	-	2	pnct	-	-
@@ -3189,13 +3189,13 @@
 19	The	The	N	N	-	20	namef	-	-
 20	Healer	Healer	N	N	-	16	nobj	-	-
 21	"	"	X	X	-	20	pnct	-	-
-22	.	.	X	X	-	2	pnct	-	-
+22	.	.	X	X	-	9	pnct	-	-
 
 1	Hans	Hans	P	P	-	3	subj	-	-
 2	navn	navn	N	N	-	1	possd	-	-
 3	er	er	V	V	-	0	ROOT	-	-
 4	John	John	N	N	-	6	namef	-	-
-5	Lee	Lee	N	N	-	6	namel	-	-
+5	Lee	Lee	N	N	-	4	namef	-	-
 6	Hooker	Hooker	N	N	-	3	subj	-	-
 7	,	,	X	X	-	3	pnct	-	-
 8	født	født	V	V	-	3	pred	-	-
@@ -3233,8 +3233,8 @@
 23	men	men	C	C	-	3	coord	-	-
 24	elskere	elskere	N	N	-	50	subj	-	-
 25	af	af	SP	SP	-	24	pobj	-	-
-26	eksempelvis	eksempelvis	RG	RG	-	28	mod	-	-
-27	Johnny	Johnny	N	N	-	28	namef	-	-
+26	eksempelvis	eksempelvis	RG	RG	-	27	mod	-	-
+27	Johnny	Johnny	N	N	-	25	nobj	-	-
 28	Winter	Winter	N	N	-	25	nobj	-	-
 29	,	,	X	X	-	28	pnct	-	-
 30	Status	Status	N	N	-	31	namef	-	-
@@ -3274,10 +3274,10 @@
 64	,	,	X	X	-	63	pnct	-	-
 65	at	at	C	C	-	63	nobj	-	-
 66	John	John	N	N	-	68	namef	-	-
-67	Lee	Lee	N	N	-	68	namel	-	-
+67	Lee	Lee	N	N	-	66	namef	-	-
 68	Hooker	Hooker	N	N	-	69	subj	-	-
 69	kom	kom	V	V	-	65	vobj	-	-
-70	til	til	SP	SP	-	69	lobj	-	-
+70	til	til	SP	SP	-	69	pobj	-	-
 71	verden	verden	N	N	-	70	nobj	-	-
 72	dengang	dengang	RG	RG	-	69	mod	-	-
 73	i	i	SP	SP	-	69	mod	-	-
@@ -3291,15 +3291,15 @@
 5	på	på	SP	SP	-	4	pobj	-	-
 6	andre	andre	P	P	-	5	nobj	-	-
 7	musikere	musikere	N	N	-	6	nobj	-	-
-8	som	som	U	U	-	14	mod	-	-
+8	som	som	U	U	-	7	pobj	-	-
 9	sanger	sanger	N	N	-	8	nobj	-	-
-10	og	og	C	C	-	9	coord	-	-
-11	især	især	RG	RG	-	10	conj	-	-
+10	og	og	C	C	-	7	coord	-	-
+11	især	især	RG	RG	-	12	mod	-	-
 12	som	som	U	U	-	10	conj	-	-
 13	guitarist	guitarist	N	N	-	12	nobj	-	-
 14	har	har	V	V	-	6	rel	-	-
 15	været	været	V	V	-	14	vobj	-	-
-16	intet	intet	P	P	-	15	pred	-	-
+16	intet	intet	P	P	-	15	dobj	-	-
 17	mindre	mindre	A	A	-	16	mod	-	-
 18	end	end	C	C	-	17	pobj	-	-
 19	monumental	monumental	A	A	-	18	nobj	-	-
@@ -3332,7 +3332,7 @@
 25	fedt	fedt	A	A	-	24	mod	-	-
 26	og	og	C	C	-	25	coord	-	-
 27	fremragende	fremragende	A	A	-	26	conj	-	-
-28	af	af	SP	SP	-	27	pobj	-	-
+28	af	af	SP	SP	-	25	pobj	-	-
 29	gennem	gennem	SP	SP	-	30	mod	-	-
 30	fire	fire	A	A	-	28	nobj	-	-
 31	årtier	årtier	N	N	-	30	nobj	-	-
@@ -3357,7 +3357,7 @@
 3	skal	skal	V	V	-	0	ROOT	-	-
 4	skabes	skabes	V	V	-	3	vobj	-	-
 5	,	,	X	X	-	3	pnct	-	-
-6	forvaltes	forvaltes	V	V	-	3	vobj	-	-
+6	forvaltes	forvaltes	V	V	-	3	conj	-	-
 7	,	,	X	X	-	3	pnct	-	-
 8	plejes	plejes	V	V	-	3	conj	-	-
 9	og	og	C	C	-	8	coord	-	-
@@ -3371,7 +3371,7 @@
 2	er	er	V	V	-	0	ROOT	-	-
 3	vores	vores	P	P	-	2	pred	-	-
 4	egenart	egenart	N	N	-	3	possd	-	-
-5	og	og	C	C	-	4	coord	-	-
+5	og	og	C	C	-	3	coord	-	-
 6	livsstil	livsstil	N	N	-	5	conj	-	-
 7	.	.	X	X	-	2	pnct	-	-
 
@@ -3472,12 +3472,12 @@
 10	på	på	SP	SP	-	7	mod	-	-
 11	Det	Det	P	P	-	10	nobj	-	-
 12	Kgl.	Kgl.	A	A	-	11	mod	-	-
-13	en	en	P	P	-	15	mod	-	-
+13	en	en	P	P	-	11	nobj	-	-
 14	vis	vis	A	A	-	13	mod	-	-
-15	underholdningsværdi	underholdningsværdi	N	N	-	11	nobj	-	-
+15	underholdningsværdi	underholdningsværdi	N	N	-	13	nobj	-	-
 16	,	,	X	X	-	2	pnct	-	-
 17	og	og	C	C	-	2	coord	-	-
-18	sladder	sladder	N	N	-	19	subj	-	-
+18	sladder	sladder	N	N	-	17	conj	-	-
 19	er	er	V	V	-	17	conj	-	-
 20	jo	jo	RG	RG	-	19	mod	-	-
 21	heller	heller	RG	RG	-	22	mod	-	-
@@ -3525,7 +3525,7 @@
 3	ikke	ikke	RG	RG	-	2	mod	-	-
 4	god	god	A	A	-	5	mod	-	-
 5	tone	tone	N	N	-	2	pred	-	-
-6	blandt	blandt	SP	SP	-	2	pred	-	-
+6	blandt	blandt	SP	SP	-	2	mod	-	-
 7	os	os	P	P	-	6	nobj	-	-
 8	kulturformidlere	kulturformidlere	N	N	-	7	nobj	-	-
 9	at	at	U	U	-	6	nobj	-	-
@@ -3588,19 +3588,19 @@
 25	Jensen	Jensen	N	N	-	22	subj	-	-
 26	.	.	X	X	-	22	pnct	-	-
 
-1	MED	MED	SP	SP	-	9	lobj	-	-
+1	MED	MED	SP	SP	-	0	ROOT	-	-
 2	adresse	adresse	N	N	-	1	nobj	-	-
 3	og	og	C	C	-	2	coord	-	-
 4	postnummer	postnummer	N	N	-	3	conj	-	-
 5	til	til	SP	SP	-	2	pobj	-	-
 6	rockmusikerne	rockmusikerne	N	N	-	5	nobj	-	-
-7	,	,	X	X	-	2	pnct	-	-
+7	,	,	X	X	-	6	pnct	-	-
 8	der	der	U	U	-	9	subj	-	-
-9	stiller	stiller	V	V	-	0	ROOT	-	-
+9	stiller	stiller	V	V	-	6	rel	-	-
 10	op	op	RG	RG	-	9	lobj	-	-
 11	til	til	SP	SP	-	10	pobj	-	-
 12	interviews	interviews	N	N	-	11	nobj	-	-
-13	i	i	SP	SP	-	12	mod	-	-
+13	i	i	SP	SP	-	9	mod	-	-
 14	TV	TV	N	N	-	13	nobj	-	-
 15	og	og	C	C	-	14	coord	-	-
 16	aviser	aviser	N	N	-	15	conj	-	-
@@ -3631,7 +3631,7 @@
 41	ærlige	ærlige	A	A	-	36	mod	-	-
 42	og	og	C	C	-	41	coord	-	-
 43	oprigtige	oprigtige	A	A	-	42	conj	-	-
-44	"	"	X	X	-	11	pnct	-	-
+44	"	"	X	X	-	19	pnct	-	-
 45	.	.	X	X	-	9	pnct	-	-
 
 1	"	"	X	X	-	3	pnct	-	-
@@ -3647,7 +3647,7 @@
 11	branchen	branchen	N	N	-	10	conj	-	-
 12	.	.	X	X	-	3	pnct	-	-
 
-1	Den	Den	P	P	-	6	dobj	-	-
+1	Den	Den	P	P	-	6	subj	-	-
 2	måde	måde	N	N	-	1	nobj	-	-
 3	,	,	X	X	-	1	pnct	-	-
 4	hvorpå	hvorpå	RG	RG	-	6	mod	-	-
@@ -3658,11 +3658,11 @@
 9	ved	ved	SP	SP	-	6	mod	-	-
 10	at	at	U	U	-	9	nobj	-	-
 11	vinde	vinde	V	V	-	10	vobj	-	-
-12	så	så	RG	RG	-	13	mod	-	-
+12	så	så	RG	RG	-	11	mod	-	-
 13	megen	megen	A	A	-	14	mod	-	-
-14	overfladeopmærksomhed	overfladeopmærksomhed	N	N	-	11	dobj	-	-
-15	,	,	X	X	-	11	pnct	-	-
-16	at	at	C	C	-	11	dobj	-	-
+14	overfladeopmærksomhed	overfladeopmærksomhed	N	N	-	12	nobj	-	-
+15	,	,	X	X	-	12	pnct	-	-
+16	at	at	C	C	-	12	nobj	-	-
 17	ingen	ingen	P	P	-	19	subj	-	-
 18	længere	længere	RG	RG	-	19	mod	-	-
 19	er	er	V	V	-	16	vobj	-	-
@@ -3681,7 +3681,7 @@
 32	målet	målet	N	N	-	31	pred	-	-
 33	og	og	C	C	-	32	coord	-	-
 34	meningen	meningen	N	N	-	33	conj	-	-
-35	med	med	SP	SP	-	32	mod	-	-
+35	med	med	SP	SP	-	31	mod	-	-
 36	musikken	musikken	N	N	-	35	nobj	-	-
 37	,	,	X	X	-	31	pnct	-	-
 38	"	"	X	X	-	19	pnct	-	-
@@ -3705,12 +3705,12 @@
 3	en	en	P	P	-	2	dobj	-	-
 4	sidste	sidste	A	A	-	3	mod	-	-
 5	opsang	opsang	N	N	-	3	nobj	-	-
-6	:	:	X	X	-	5	pnct	-	-
-7	"	"	X	X	-	8	pnct	-	-
-8	ROCKMUSIK	ROCKMUSIK	N	N	-	3	nobj	-	-
+6	:	:	X	X	-	2	pnct	-	-
+7	"	"	X	X	-	11	pnct	-	-
+8	ROCKMUSIK	ROCKMUSIK	N	N	-	11	subj	-	-
 9	i	i	SP	SP	-	8	mod	-	-
 10	Danmark	Danmark	N	N	-	9	nobj	-	-
-11	defineres	defineres	V	V	-	3	rel	-	-
+11	defineres	defineres	V	V	-	2	vobj	-	-
 12	ved	ved	SP	SP	-	11	mod	-	-
 13	det	det	P	P	-	12	nobj	-	-
 14	navn	navn	N	N	-	13	nobj	-	-
@@ -3726,7 +3726,7 @@
 24	,	,	X	X	-	18	pnct	-	-
 25	sit	sit	P	P	-	18	nobj	-	-
 26	privatliv	privatliv	N	N	-	25	possd	-	-
-27	og	og	C	C	-	18	coord	-	-
+27	og	og	C	C	-	25	coord	-	-
 28	sin	sin	P	P	-	27	conj	-	-
 29	popularitet	popularitet	N	N	-	28	possd	-	-
 30	kan	kan	V	V	-	27	conj	-	-
@@ -3778,14 +3778,14 @@
 15	Pernille	Pernille	N	N	-	12	nobj	-	-
 16	atter	atter	RG	RG	-	11	mod	-	-
 17	helt	helt	A	A	-	18	mod	-	-
-18	legalt	legalt	A	A	-	11	pred	-	-
-19	sammen	sammen	RG	RG	-	11	pred	-	-
+18	legalt	legalt	A	A	-	19	mod	-	-
+19	sammen	sammen	RG	RG	-	11	mod	-	-
 20	med	med	SP	SP	-	19	pobj	-	-
 21	sin	sin	P	P	-	20	nobj	-	-
 22	mor	mor	N	N	-	21	possd	-	-
 23	,	,	X	X	-	21	pnct	-	-
 24	Yvonne	Yvonne	N	N	-	25	namef	-	-
-25	Sølyst	Sølyst	N	N	-	21	appr	-	-
+25	Sølyst	Sølyst	N	N	-	21	appa	-	-
 26	,	,	X	X	-	25	pnct	-	-
 27	<num>	<num>	A	A	-	25	list	-	-
 28	,	,	X	X	-	27	pnct	-	-
@@ -3848,7 +3848,7 @@
 9	kampen	kampen	N	N	-	8	dobj	-	-
 10	om	om	SP	SP	-	9	pobj	-	-
 11	Pernille	Pernille	N	N	-	10	nobj	-	-
-12	.	.	X	X	-	8	pnct	-	-
+12	.	.	X	X	-	3	pnct	-	-
 
 1	Det	Det	P	P	-	2	subj	-	-
 2	var	var	V	V	-	19	qobj	-	-
@@ -3955,16 +3955,16 @@
 15	fra	fra	SP	SP	-	14	mod	-	-
 16	det	det	P	P	-	15	nobj	-	-
 17	samme	samme	A	A	-	16	nobj	-	-
-18	materiale	materiale	N	N	-	17	nobj	-	-
+18	materiale	materiale	N	N	-	16	nobj	-	-
 19	,	,	X	X	-	16	pnct	-	-
-20	som	som	U	U	-	27	nobj	-	-
-21	socialudvalget	socialudvalget	N	N	-	27	nobj	-	-
+20	som	som	U	U	-	24	subj	-	-
+21	socialudvalget	socialudvalget	N	N	-	24	subj	-	-
 22	i	i	SP	SP	-	21	mod	-	-
 23	Ejby	Ejby	N	N	-	22	nobj	-	-
-24	havde	havde	V	V	-	21	rel	-	-
+24	havde	havde	V	V	-	16	rel	-	-
 25	vurderet	vurderet	V	V	-	24	vobj	-	-
 26	ud	ud	RG	RG	-	25	lobj	-	-
-27	fra	fra	SP	SP	-	15	pobj	-	-
+27	fra	fra	SP	SP	-	26	mod	-	-
 28	.	.	X	X	-	8	pnct	-	-
 
 1	Hun	Hun	P	P	-	2	subj	-	-
@@ -4000,7 +4000,7 @@
 1	Jeg	Jeg	P	P	-	2	subj	-	-
 2	håber	håber	V	V	-	0	ROOT	-	-
 3	,	,	X	X	-	2	pnct	-	-
-4	politiet	politiet	N	N	-	2	dobj	-	-
+4	politiet	politiet	N	N	-	5	subj	-	-
 5	fanger	fanger	V	V	-	2	vobj	-	-
 6	dig	dig	P	P	-	5	dobj	-	-
 7	hurtigt	hurtigt	A	A	-	5	mod	-	-
@@ -4025,7 +4025,7 @@
 26	min	min	P	P	-	25	nobj	-	-
 27	pige	pige	N	N	-	26	possd	-	-
 28	,	,	X	X	-	21	pnct	-	-
-29	og	og	C	C	-	12	coord	-	-
+29	og	og	C	C	-	21	coord	-	-
 30	derfor	derfor	RG	RG	-	31	mod	-	-
 31	risikerer	risikerer	V	V	-	29	conj	-	-
 32	at	at	U	U	-	31	dobj	-	-
@@ -4043,7 +4043,7 @@
 6	opbakning	opbakning	N	N	-	4	nobj	-	-
 7	fra	fra	SP	SP	-	6	pobj	-	-
 8	både	både	RG	RG	-	16	mod	-	-
-9	læger	læger	N	N	-	16	mod	-	-
+9	læger	læger	N	N	-	16	coord	-	-
 10	,	,	X	X	-	9	pnct	-	-
 11	politi	politi	N	N	-	9	conj	-	-
 12	,	,	X	X	-	9	pnct	-	-
@@ -4109,15 +4109,15 @@
 6	godt	godt	A	A	-	4	pred	-	-
 7	til	til	SP	SP	-	6	pobj	-	-
 8	folk	folk	N	N	-	7	nobj	-	-
-9	som	som	U	U	-	4	pred	-	-
+9	som	som	U	U	-	8	mod	-	-
 10	dig	dig	P	P	-	9	nobj	-	-
 11	.	.	X	X	-	4	pnct	-	-
 
 1	Rejs	Rejs	V	V	-	38	qobj	-	-
 2	tilbage	tilbage	RG	RG	-	1	mod	-	-
-3	hvor	hvor	RG	RG	-	5	mod	-	-
+3	hvor	hvor	RG	RG	-	1	mod	-	-
 4	du	du	P	P	-	5	subj	-	-
-5	kom	kom	V	V	-	2	mod	-	-
+5	kom	kom	V	V	-	1	vobj	-	-
 6	fra	fra	SP	SP	-	5	pobj	-	-
 7	,	,	X	X	-	1	pnct	-	-
 8	vi	vi	P	P	-	9	subj	-	-
@@ -4125,7 +4125,7 @@
 10	nemlig	nemlig	RG	RG	-	9	mod	-	-
 11	ikke	ikke	RG	RG	-	9	mod	-	-
 12	interesserede	interesserede	V	V	-	9	vobj	-	-
-13	i	i	SP	SP	-	9	pred	-	-
+13	i	i	SP	SP	-	12	pobj	-	-
 14	at	at	U	U	-	13	nobj	-	-
 15	give	give	V	V	-	14	vobj	-	-
 16	ophold	ophold	N	N	-	15	dobj	-	-
@@ -4142,7 +4142,7 @@
 27	de	de	P	P	-	25	mod	-	-
 28	aller	aller	X	X	-	27	mod	-	-
 29	simpleste	simpleste	X	X	-	28	err	-	-
-30	adfærdsnormer	adfærdsnormer	N	N	-	29	possd	-	-
+30	adfærdsnormer	adfærdsnormer	N	N	-	29	nobj	-	-
 31	,	,	X	X	-	24	pnct	-	-
 32	nemlig	nemlig	RG	RG	-	33	mod	-	-
 33	respekten	respekten	N	N	-	15	dobj	-	-
@@ -4151,7 +4151,7 @@
 36	,	,	X	X	-	1	pnct	-	-
 37	"	"	X	X	-	1	pnct	-	-
 38	skriver	skriver	V	V	-	0	ROOT	-	-
-39	faderen	faderen	N	N	-	38	dobj	-	-
+39	faderen	faderen	N	N	-	38	subj	-	-
 40	,	,	X	X	-	39	pnct	-	-
 41	der	der	U	U	-	42	subj	-	-
 42	slutter	slutter	V	V	-	39	rel	-	-
@@ -4183,7 +4183,7 @@
 14	det	det	P	P	-	15	subj	-	-
 15	er	er	V	V	-	13	conj	-	-
 16	Mogens	Mogens	N	N	-	17	namef	-	-
-17	Lykketoft	Lykketoft	N	N	-	15	pred	-	-
+17	Lykketoft	Lykketoft	N	N	-	15	subj	-	-
 18	fra	fra	SP	SP	-	17	mod	-	-
 19	Socialdemokratiet	Socialdemokratiet	N	N	-	18	nobj	-	-
 20	,	,	X	X	-	15	pnct	-	-
@@ -4230,7 +4230,7 @@
 5	borgerlige	borgerlige	A	A	-	4	dobj	-	-
 6	regeringer	regeringer	N	N	-	5	nobj	-	-
 7	end	end	C	C	-	5	pobj	-	-
-8	socialdemokratiske	socialdemokratiske	A	A	-	7	obl	-	-
+8	socialdemokratiske	socialdemokratiske	A	A	-	7	nobj	-	-
 9	,	,	X	X	-	2	pnct	-	-
 10	men	men	C	C	-	2	coord	-	-
 11	KV-regeringen	KV-regeringen	N	N	-	12	subj	-	-
@@ -4245,7 +4245,7 @@
 2	har	har	V	V	-	19	qobj	-	-
 3	derfor	derfor	RG	RG	-	2	mod	-	-
 4	få	få	A	A	-	2	dobj	-	-
-5	stærke	stærke	A	A	-	4	mod	-	-
+5	stærke	stærke	A	A	-	6	mod	-	-
 6	følelser	følelser	N	N	-	4	nobj	-	-
 7	specielt	specielt	A	A	-	8	mod	-	-
 8	forbundet	forbundet	V	V	-	2	vobj	-	-
@@ -4264,7 +4264,7 @@
 21	gruppeformand	gruppeformand	N	N	-	20	possd	-	-
 22	,	,	X	X	-	20	pnct	-	-
 23	Aage	Aage	N	N	-	24	namef	-	-
-24	Brusgaard	Brusgaard	N	N	-	20	appr	-	-
+24	Brusgaard	Brusgaard	N	N	-	20	appa	-	-
 25	.	.	X	X	-	19	pnct	-	-
 
 1	I	I	SP	SP	-	11	mod	-	-
@@ -4330,7 +4330,7 @@
 3	gode	gode	A	A	-	4	mod	-	-
 4	holdninger	holdninger	N	N	-	2	dobj	-	-
 5	,	,	X	X	-	2	pnct	-	-
-6	er	er	V	V	-	2	vobj	-	-
+6	er	er	V	V	-	0	ROOT	-	-
 7	flittig	flittig	A	A	-	6	pred	-	-
 8	og	og	C	C	-	7	coord	-	-
 9	ordholdende	ordholdende	A	A	-	8	conj	-	-
@@ -4364,7 +4364,7 @@
 26	.	.	X	X	-	23	pnct	-	-
 
 1	Senere	Senere	A	A	-	4	mod	-	-
-2	på	på	SP	SP	-	1	pobj	-	-
+2	på	på	SP	SP	-	1	mod	-	-
 3	dagen	dagen	N	N	-	2	nobj	-	-
 4	var	var	V	V	-	0	ROOT	-	-
 5	der	der	U	U	-	4	expl	-	-
@@ -4379,7 +4379,7 @@
 14	i	i	SP	SP	-	12	pred	-	-
 15	<num>	<num>	A	A	-	14	nobj	-	-
 16	minut	minut	N	N	-	15	nobj	-	-
-17	for	for	SP	SP	-	10	pobj	-	-
+17	for	for	SP	SP	-	15	mod	-	-
 18	<num>	<num>	A	A	-	17	nobj	-	-
 19	km.	km.	N	N	-	18	nobj	-	-
 20	.	.	X	X	-	4	pnct	-	-
@@ -4401,22 +4401,22 @@
 1	Så	Så	RG	RG	-	2	mod	-	-
 2	fulgte	fulgte	V	V	-	0	ROOT	-	-
 3	Panasonic	Panasonic	N	N	-	2	subj	-	-
-4	,	,	X	X	-	2	pnct	-	-
-5	PDM	PDM	N	N	-	2	subj	-	-
-6	,	,	X	X	-	5	pnct	-	-
-7	Clas	Clas	N	N	-	5	voc	-	-
-8	,	,	X	X	-	5	pnct	-	-
-9	Buckler	Buckler	N	N	-	5	conj	-	-
+4	,	,	X	X	-	3	pnct	-	-
+5	PDM	PDM	N	N	-	3	conj	-	-
+6	,	,	X	X	-	3	pnct	-	-
+7	Clas	Clas	N	N	-	3	conj	-	-
+8	,	,	X	X	-	3	pnct	-	-
+9	Buckler	Buckler	N	N	-	3	conj	-	-
 10	og	og	C	C	-	2	coord	-	-
 11	overraskende	overraskende	V	V	-	10	conj	-	-
-12	kun	kun	RG	RG	-	2	mod	-	-
-13	som	som	U	U	-	19	mod	-	-
+12	kun	kun	RG	RG	-	11	mod	-	-
+13	som	som	U	U	-	11	mod	-	-
 14	nr.	nr.	N	N	-	13	nobj	-	-
 15	syv	syv	A	A	-	14	nobj	-	-
 16	"	"	X	X	-	17	pnct	-	-
 17	Z	Z	N	N	-	14	appa	-	-
 18	"	"	X	X	-	17	pnct	-	-
-19	med	med	SP	SP	-	2	pobj	-	-
+19	med	med	SP	SP	-	14	mod	-	-
 20	Lemond	Lemond	N	N	-	19	nobj	-	-
 21	.	.	X	X	-	2	pnct	-	-
 
@@ -4424,11 +4424,11 @@
 2	næste	næste	A	A	-	1	mod	-	-
 3	var	var	V	V	-	0	ROOT	-	-
 4	Motorola	Motorola	N	N	-	3	pred	-	-
-5	,	,	X	X	-	4	pnct	-	-
-6	Gatorade-Chateau_d'Ax	Gatorade-Chateau_d'Ax	N	N	-	4	conj	-	-
-7	,	,	X	X	-	4	pnct	-	-
-8	Banesto	Banesto	N	N	-	4	conj	-	-
-9	og	og	C	C	-	4	coord	-	-
+5	,	,	X	X	-	3	pnct	-	-
+6	Gatorade-Chateau_d'Ax	Gatorade-Chateau_d'Ax	N	N	-	3	pred	-	-
+7	,	,	X	X	-	6	pnct	-	-
+8	Banesto	Banesto	N	N	-	6	conj	-	-
+9	og	og	C	C	-	6	coord	-	-
 10	Amaya	Amaya	N	N	-	9	conj	-	-
 11	med	med	SP	SP	-	10	mod	-	-
 12	Per	Per	N	N	-	13	namef	-	-
@@ -4449,10 +4449,10 @@
 12	klare	klare	V	V	-	11	vobj	-	-
 13	en	en	P	P	-	12	dobj	-	-
 14	topplacering	topplacering	N	N	-	13	nobj	-	-
-15	,	,	X	X	-	11	pnct	-	-
+15	,	,	X	X	-	13	pnct	-	-
 16	hvorved	hvorved	RG	RG	-	18	mod	-	-
 17	Skibby	Skibby	N	N	-	18	subj	-	-
-18	var	var	V	V	-	6	vobj	-	-
+18	var	var	V	V	-	13	rel	-	-
 19	kommet	kommet	V	V	-	18	vobj	-	-
 20	langt	langt	A	A	-	21	mod	-	-
 21	op	op	RG	RG	-	19	lobj	-	-
@@ -4461,7 +4461,7 @@
 24	samlede	samlede	V	V	-	23	mod	-	-
 25	stilling	stilling	N	N	-	23	nobj	-	-
 26	,	,	X	X	-	18	pnct	-	-
-27	men	men	C	C	-	2	coord	-	-
+27	men	men	C	C	-	11	coord	-	-
 28	holdet	holdet	N	N	-	29	subj	-	-
 29	havde	havde	V	V	-	27	conj	-	-
 30	uheld	uheld	N	N	-	29	dobj	-	-
@@ -4532,7 +4532,7 @@
 1	Her	Her	RG	RG	-	2	mod	-	-
 2	gled	gled	V	V	-	0	ROOT	-	-
 3	Rolf	Rolf	N	N	-	4	namef	-	-
-4	Sørensens	Sørensens	N	N	-	2	subj	-	-
+4	Sørensens	Sørensens	N	N	-	2	dobj	-	-
 5	baghjul	baghjul	N	N	-	4	possd	-	-
 6	,	,	X	X	-	2	pnct	-	-
 7	så	så	C	C	-	2	mod	-	-
@@ -4541,8 +4541,8 @@
 10	og	og	C	C	-	9	coord	-	-
 11	rev	rev	V	V	-	10	conj	-	-
 12	både	både	RG	RG	-	15	mod	-	-
-13	Moreno	Moreno	N	N	-	15	namef	-	-
-14	Argentin	Argentin	N	N	-	13	conj	-	-
+13	Moreno	Moreno	N	N	-	14	namef	-	-
+14	Argentin	Argentin	N	N	-	12	nobj	-	-
 15	og	og	C	C	-	11	coord	-	-
 16	Cassani	Cassani	N	N	-	15	conj	-	-
 17	med	med	RG	RG	-	11	mod	-	-
@@ -4559,8 +4559,8 @@
 9	hovederne	hovederne	N	N	-	8	nobj	-	-
 10	på	på	SP	SP	-	9	pobj	-	-
 11	os	os	P	P	-	10	nobj	-	-
-12	,	,	X	X	-	6	pnct	-	-
-13	at	at	C	C	-	6	dobj	-	-
+12	,	,	X	X	-	8	pnct	-	-
+13	at	at	C	C	-	7	nobj	-	-
 14	noget	noget	P	P	-	15	subj	-	-
 15	er	er	V	V	-	13	vobj	-	-
 16	kunst	kunst	N	N	-	15	pred	-	-
@@ -4570,7 +4570,7 @@
 20	og	og	C	C	-	16	coord	-	-
 21	kultur	kultur	N	N	-	20	conj	-	-
 22	-	-	X	X	-	15	pnct	-	-
-23	noget	noget	P	P	-	15	mod	-	-
+23	noget	noget	P	P	-	25	mod	-	-
 24	andet	andet	P	P	-	23	nobj	-	-
 25	ikke	ikke	RG	RG	-	15	mod	-	-
 26	.	.	X	X	-	3	pnct	-	-
@@ -4611,12 +4611,12 @@
 6	værdsætte	værdsætte	V	V	-	5	vobj	-	-
 7	os	os	P	P	-	6	dobj	-	-
 8	selv	selv	P	P	-	7	mod	-	-
-9	og	og	C	C	-	6	coord	-	-
+9	og	og	C	C	-	3	coord	-	-
 10	hinanden	hinanden	P	P	-	9	conj	-	-
-11	,	,	X	X	-	4	pnct	-	-
-12	som	som	U	U	-	4	mod	-	-
+11	,	,	X	X	-	3	pnct	-	-
+12	som	som	U	U	-	17	dobj	-	-
 13	mennesker	mennesker	N	N	-	12	nobj	-	-
-14	,	,	X	X	-	3	pnct	-	-
+14	,	,	X	X	-	12	pnct	-	-
 15	der	der	U	U	-	17	subj	-	-
 16	både	både	RG	RG	-	17	mod	-	-
 17	har	har	V	V	-	0	ROOT	-	-
@@ -4627,7 +4627,7 @@
 22	blade	blade	N	N	-	38	subj	-	-
 23	,	,	X	X	-	22	pnct	-	-
 24	klassisk	klassisk	A	A	-	25	mod	-	-
-25	musik	musik	N	N	-	22	possd	-	-
+25	musik	musik	N	N	-	22	conj	-	-
 26	,	,	X	X	-	22	pnct	-	-
 27	pop	pop	N	N	-	30	title	-	-
 28	,	,	X	X	-	27	pnct	-	-
@@ -4675,8 +4675,8 @@
 17	vedblive	vedblive	V	V	-	16	vobj	-	-
 18	at	at	U	U	-	17	dobj	-	-
 19	være	være	V	V	-	18	vobj	-	-
-20	hele	hele	A	A	-	21	mod	-	-
-21	mennesker	mennesker	N	N	-	19	pred	-	-
+20	hele	hele	A	A	-	17	dobj	-	-
+21	mennesker	mennesker	N	N	-	20	nobj	-	-
 22	.	.	X	X	-	2	pnct	-	-
 
 1	Alligevel	Alligevel	RG	RG	-	2	mod	-	-
@@ -4720,7 +4720,7 @@
 
 1	Tiden	Tiden	N	N	-	2	subj	-	-
 2	har	har	V	V	-	0	ROOT	-	-
-3	for	for	SP	SP	-	2	mod	-	-
+3	for	for	SP	SP	-	4	mod	-	-
 4	længst	længst	RG	RG	-	2	mod	-	-
 5	været	været	V	V	-	2	vobj	-	-
 6	inde	inde	RG	RG	-	5	pred	-	-
@@ -4739,8 +4739,8 @@
 19	vor	vor	P	P	-	18	nobj	-	-
 20	fælles	fælles	A	A	-	19	mod	-	-
 21	nutidskultur	nutidskultur	N	N	-	19	possd	-	-
-22	,	,	X	X	-	5	pnct	-	-
-23	og	og	C	C	-	5	coord	-	-
+22	,	,	X	X	-	2	pnct	-	-
+23	og	og	C	C	-	2	coord	-	-
 24	fordomsfri	fordomsfri	A	A	-	25	mod	-	-
 25	bedømmelse	bedømmelse	N	N	-	23	conj	-	-
 26	af	af	SP	SP	-	25	pobj	-	-
@@ -4790,15 +4790,15 @@
 3	været	været	V	V	-	2	vobj	-	-
 4	med	med	RG	RG	-	3	pred	-	-
 5	til	til	SP	SP	-	4	pobj	-	-
-6	over	over	RG	RG	-	9	mod	-	-
+6	over	over	RG	RG	-	3	pred	-	-
 7	for	for	SP	SP	-	6	pobj	-	-
 8	DSB	DSB	N	N	-	7	nobj	-	-
-9	at	at	U	U	-	5	nobj	-	-
+9	at	at	U	U	-	6	pobj	-	-
 10	fastslå	fastslå	V	V	-	9	vobj	-	-
 11	,	,	X	X	-	10	pnct	-	-
 12	at	at	C	C	-	10	dobj	-	-
 13	både	både	RG	RG	-	15	mod	-	-
-14	Ask	Ask	N	N	-	15	coord	-	-
+14	Ask	Ask	N	N	-	13	nobj	-	-
 15	og	og	C	C	-	12	coord	-	-
 16	Urd	Urd	N	N	-	15	conj	-	-
 17	var	var	V	V	-	12	vobj	-	-
@@ -4827,7 +4827,7 @@
 19	at	at	U	U	-	18	nobj	-	-
 20	skubbe	skubbe	V	V	-	19	vobj	-	-
 21	sig	sig	P	P	-	20	dobj	-	-
-22	fra	fra	SP	SP	-	20	pobj	-	-
+22	fra	fra	SP	SP	-	20	mod	-	-
 23	reparationskaj	reparationskaj	N	N	-	22	nobj	-	-
 24	til	til	SP	SP	-	22	pobj	-	-
 25	lastekaj	lastekaj	N	N	-	24	nobj	-	-
@@ -4858,11 +4858,11 @@
 12	at	at	U	U	-	11	nobj	-	-
 13	komme	komme	V	V	-	12	vobj	-	-
 14	rundt	rundt	RG	RG	-	13	lobj	-	-
-15	om	om	SP	SP	-	14	mod	-	-
+15	om	om	SP	SP	-	13	pobj	-	-
 16	hjørnet	hjørnet	N	N	-	15	nobj	-	-
-17	på	på	SP	SP	-	16	mod	-	-
+17	på	på	SP	SP	-	16	pobj	-	-
 18	,	,	X	X	-	8	pnct	-	-
-19	og	og	C	C	-	8	coord	-	-
+19	og	og	C	C	-	3	coord	-	-
 20	vi	vi	P	P	-	21	subj	-	-
 21	har	har	V	V	-	19	conj	-	-
 22	jo	jo	RG	RG	-	21	mod	-	-
@@ -5016,15 +5016,15 @@
 26	tidl.	tidl.	A	A	-	27	mod	-	-
 27	statsminister	statsminister	N	N	-	29	title	-	-
 28	Erik	Erik	N	N	-	29	namef	-	-
-29	Eriksen	Eriksen	N	N	-	20	subj	-	-
-30	,	,	X	X	-	20	pnct	-	-
+29	Eriksen	Eriksen	N	N	-	31	subj	-	-
+30	,	,	X	X	-	29	pnct	-	-
 31	rollen	rollen	N	N	-	20	dobj	-	-
 32	som	som	U	U	-	31	mod	-	-
 33	sit	sit	P	P	-	32	nobj	-	-
 34	partis	partis	N	N	-	33	possd	-	-
 35	frontfigur	frontfigur	N	N	-	34	possd	-	-
-36	,	,	X	X	-	20	pnct	-	-
-37	at	at	C	C	-	20	dobj	-	-
+36	,	,	X	X	-	34	pnct	-	-
+37	at	at	C	C	-	33	dobj	-	-
 38	han	han	P	P	-	40	subj	-	-
 39	direkte	direkte	A	A	-	40	mod	-	-
 40	gik	gik	V	V	-	37	vobj	-	-
@@ -5052,7 +5052,7 @@
 12	"	"	X	X	-	14	pnct	-	-
 13	Det	Det	P	P	-	14	subj	-	-
 14	er	er	V	V	-	2	vobj	-	-
-15	den	den	P	P	-	14	dobj	-	-
+15	den	den	P	P	-	14	subj	-	-
 16	for	for	SP	SP	-	14	mod	-	-
 17	så	så	RG	RG	-	18	mod	-	-
 18	vidt	vidt	RG	RG	-	16	avobj	-	-
@@ -5076,20 +5076,20 @@
 13	de	de	P	P	-	17	subj	-	-
 14	to	to	A	A	-	13	nobj	-	-
 15	partiers	partiers	N	N	-	14	nobj	-	-
-16	folk	folk	N	N	-	15	nobj	-	-
+16	folk	folk	N	N	-	14	possd	-	-
 17	kan	kan	V	V	-	6	rel	-	-
 18	lære	lære	V	V	-	17	vobj	-	-
 19	hinandens	hinandens	P	P	-	18	dobj	-	-
-20	kemi	kemi	N	N	-	18	dobj	-	-
+20	kemi	kemi	N	N	-	19	possd	-	-
 21	at	at	U	U	-	18	dobj	-	-
 22	kende	kende	V	V	-	21	vobj	-	-
 23	.	.	X	X	-	2	pnct	-	-
 
 1	Her	Her	RG	RG	-	2	mod	-	-
 2	kunne	kunne	V	V	-	0	ROOT	-	-
-3	jævnlige	jævnlige	A	A	-	8	mod	-	-
-4	fælles	fælles	A	A	-	8	mod	-	-
-5	gruppe-	gruppe-	X	X	-	4	nobj	-	-
+3	jævnlige	jævnlige	A	A	-	4	mod	-	-
+4	fælles	fælles	A	A	-	2	mod	-	-
+5	gruppe-	gruppe-	X	X	-	2	subj	-	-
 6	og	og	C	C	-	5	coord	-	-
 7	hovedbestyrelsesmøder	hovedbestyrelsesmøder	N	N	-	6	conj	-	-
 8	være	være	V	V	-	2	vobj	-	-
@@ -5150,7 +5150,7 @@
 3	weekend	weekend	N	N	-	2	nobj	-	-
 4	hos	hos	SP	SP	-	2	mod	-	-
 5	familien	familien	N	N	-	4	nobj	-	-
-6	på	på	SP	SP	-	2	mod	-	-
+6	på	på	SP	SP	-	5	mod	-	-
 7	Fanø	Fanø	N	N	-	6	nobj	-	-
 8	har	har	V	V	-	0	ROOT	-	-
 9	han	han	P	P	-	8	subj	-	-
@@ -5282,7 +5282,7 @@
 3	vedtaget	vedtaget	V	V	-	2	vobj	-	-
 4	i	i	SP	SP	-	3	mod	-	-
 5	juli	juli	N	N	-	4	nobj	-	-
-6	i_år	i_år	RG	RG	-	5	mod	-	-
+6	i_år	i_år	RG	RG	-	3	mod	-	-
 7	.	.	X	X	-	2	pnct	-	-
 
 1	Men	Men	C	C	-	0	ROOT	-	-
@@ -5349,7 +5349,7 @@
 2	:	:	X	X	-	1	pnct	-	-
 3	De	De	P	P	-	4	subj	-	-
 4	er	er	V	V	-	1	list	-	-
-5	begge	begge	P	P	-	4	mod	-	-
+5	begge	begge	P	P	-	4	pred	-	-
 6	fædre	fædre	N	N	-	5	nobj	-	-
 7	,	,	X	X	-	4	pnct	-	-
 8	<num>	<num>	A	A	-	10	mod	-	-
@@ -5385,12 +5385,12 @@
 3	er	er	V	V	-	1	conj	-	-
 4	de	de	P	P	-	3	subj	-	-
 5	i_øvrigt	i_øvrigt	RG	RG	-	3	mod	-	-
-6	to	to	A	A	-	3	pred	-	-
+6	to	to	A	A	-	3	dobj	-	-
 7	af	af	SP	SP	-	6	pobj	-	-
 8	Odense	Odense	N	N	-	7	nobj	-	-
 9	Teaters	Teaters	N	N	-	8	nobj	-	-
 10	mest	mest	A	A	-	11	mod	-	-
-11	talentfulde	talentfulde	A	A	-	6	mod	-	-
+11	talentfulde	talentfulde	A	A	-	9	mod	-	-
 12	skuespillere	skuespillere	N	N	-	6	nobj	-	-
 13	.	.	X	X	-	1	pnct	-	-
 
@@ -5401,16 +5401,16 @@
 5	Tvebak	Tvebak	N	N	-	4	dobj	-	-
 6	og	og	C	C	-	5	coord	-	-
 7	Jonathan	Jonathan	N	N	-	6	conj	-	-
-8	i	i	SP	SP	-	4	mod	-	-
+8	i	i	SP	SP	-	2	mod	-	-
 9	dramatiseringen	dramatiseringen	N	N	-	8	nobj	-	-
 10	af	af	SP	SP	-	9	pobj	-	-
 11	Astrid	Astrid	N	N	-	12	namef	-	-
 12	Lindgrens	Lindgrens	N	N	-	10	nobj	-	-
 13	eventyr	eventyr	N	N	-	12	possd	-	-
 14	"	"	X	X	-	15	pnct	-	-
-15	Brødrene	Brødrene	N	N	-	10	nobj	-	-
+15	Brødrene	Brødrene	N	N	-	12	list	-	-
 16	Løvehjerte	Løvehjerte	N	N	-	15	possd	-	-
-17	"	"	X	X	-	15	pnct	-	-
+17	"	"	X	X	-	2	pnct	-	-
 18	.	.	X	X	-	2	pnct	-	-
 
 1	Kim	Kim	N	N	-	2	namef	-	-
@@ -5439,7 +5439,7 @@
 7	granske	granske	V	V	-	6	vobj	-	-
 8	i	i	SP	SP	-	7	mod	-	-
 9	hukommelsen	hukommelsen	N	N	-	8	nobj	-	-
-10	og	og	C	C	-	7	coord	-	-
+10	og	og	C	C	-	2	coord	-	-
 11	prøve	prøve	V	V	-	10	conj	-	-
 12	at	at	U	U	-	11	dobj	-	-
 13	huske	huske	V	V	-	12	vobj	-	-
@@ -5541,9 +5541,9 @@
 17	bakker	bakker	V	V	-	16	conj	-	-
 18	på	på	SP	SP	-	17	pobj	-	-
 19	piben	piben	N	N	-	18	nobj	-	-
-20	-	-	X	X	-	22	pnct	-	-
+20	-	-	X	X	-	17	pnct	-	-
 21	man	man	P	P	-	22	subj	-	-
-22	er	er	V	V	-	19	rel	-	-
+22	er	er	V	V	-	16	conj	-	-
 23	vel	vel	RG	RG	-	22	mod	-	-
 24	blevet	blevet	V	V	-	22	vobj	-	-
 25	voksen	voksen	A	A	-	24	pred	-	-
@@ -5567,11 +5567,11 @@
 16	på	på	SP	SP	-	15	pobj	-	-
 17	tidligere	tidligere	A	A	-	18	mod	-	-
 18	nazister	nazister	N	N	-	16	nobj	-	-
-19	,	,	X	X	-	14	pnct	-	-
+19	,	,	X	X	-	18	pnct	-	-
 20	der	der	U	U	-	21	subj	-	-
-21	gemmer	gemmer	V	V	-	14	rel	-	-
+21	gemmer	gemmer	V	V	-	18	rel	-	-
 22	sig	sig	P	P	-	21	iobj	-	-
-23	verden	verden	N	N	-	21	dobj	-	-
+23	verden	verden	N	N	-	24	nobj	-	-
 24	over	over	SP	SP	-	21	pobj	-	-
 25	.	.	X	X	-	3	pnct	-	-
 
@@ -5582,10 +5582,10 @@
 5	aktiv	aktiv	A	A	-	2	pred	-	-
 6	som	som	U	U	-	5	mod	-	-
 7	forfatter	forfatter	N	N	-	6	nobj	-	-
-8	:	:	X	X	-	2	pnct	-	-
+8	:	:	X	X	-	5	pnct	-	-
 9	Munksgaards	Munksgaards	N	N	-	11	subj	-	-
 10	forlag	forlag	N	N	-	9	possd	-	-
-11	har	har	V	V	-	2	vobj	-	-
+11	har	har	V	V	-	5	rel	-	-
 12	netop	netop	RG	RG	-	11	mod	-	-
 13	udsendt	udsendt	V	V	-	11	vobj	-	-
 14	andet	andet	A	A	-	15	mod	-	-
@@ -5604,7 +5604,7 @@
 27	forfatteren	forfatteren	N	N	-	26	nobj	-	-
 28	regnes	regnes	V	V	-	17	rel	-	-
 29	som	som	U	U	-	28	pobj	-	-
-30	hans	hans	P	P	-	29	pred	-	-
+30	hans	hans	P	P	-	29	nobj	-	-
 31	sidste	sidste	A	A	-	30	mod	-	-
 32	bog	bog	N	N	-	30	possd	-	-
 33	.	.	X	X	-	2	pnct	-	-
@@ -5615,7 +5615,7 @@
 4	sit	sit	P	P	-	2	dobj	-	-
 5	arbejde	arbejde	N	N	-	4	possd	-	-
 6	helt	helt	A	A	-	7	mod	-	-
-7	op	op	RG	RG	-	2	avobj	-	-
+7	op	op	RG	RG	-	2	part	-	-
 8	til	til	SP	SP	-	7	mod	-	-
 9	<num>	<num>	A	A	-	8	nobj	-	-
 10	.	.	X	X	-	2	pnct	-	-
@@ -5627,7 +5627,7 @@
 5	,	,	X	X	-	3	pnct	-	-
 6	som	som	U	U	-	3	pred	-	-
 7	man	man	P	P	-	8	subj	-	-
-8	kunne	kunne	V	V	-	6	vobj	-	-
+8	kunne	kunne	V	V	-	1	conj	-	-
 9	tro	tro	V	V	-	8	vobj	-	-
 10	,	,	X	X	-	9	pnct	-	-
 11	negativ	negativ	A	A	-	9	dobj	-	-
@@ -5658,7 +5658,7 @@
 12	at	at	C	C	-	10	dobj	-	-
 13	intolerancen	intolerancen	N	N	-	17	subj	-	-
 14	kun	kun	RG	RG	-	17	mod	-	-
-15	i	i	SP	SP	-	17	mod	-	-
+15	i	i	SP	SP	-	14	mod	-	-
 16	perioder	perioder	N	N	-	15	nobj	-	-
 17	er	er	V	V	-	12	vobj	-	-
 18	i	i	SP	SP	-	17	pred	-	-
@@ -5697,16 +5697,16 @@
 7	koncentrationslejre	koncentrationslejre	N	N	-	5	nobj	-	-
 8	i_alt	i_alt	RG	RG	-	5	mod	-	-
 9	,	,	X	X	-	2	pnct	-	-
-10	heriblandt	heriblandt	RG	RG	-	19	mod	-	-
+10	heriblandt	heriblandt	RG	RG	-	2	conj	-	-
 11	Lvov	Lvov	N	N	-	19	subj	-	-
 12	,	,	X	X	-	11	pnct	-	-
-13	hvor	hvor	RG	RG	-	19	mod	-	-
+13	hvor	hvor	RG	RG	-	15	mod	-	-
 14	kun	kun	RG	RG	-	15	mod	-	-
 15	<num>	<num>	A	A	-	19	subj	-	-
 16	af	af	SP	SP	-	15	pobj	-	-
 17	<num>	<num>	A	A	-	16	nobj	-	-
 18	jøder	jøder	N	N	-	17	nobj	-	-
-19	var	var	V	V	-	2	pred	-	-
+19	var	var	V	V	-	10	rel	-	-
 20	i	i	SP	SP	-	19	pred	-	-
 21	live	live	A	A	-	20	nobj	-	-
 22	efter	efter	SP	SP	-	21	mod	-	-
@@ -5722,7 +5722,7 @@
 7	skyldtes	skyldtes	V	V	-	1	conj	-	-
 8	det	det	P	P	-	7	subj	-	-
 9	ganske	ganske	RG	RG	-	10	mod	-	-
-10	enkelt	enkelt	A	A	-	8	pred	-	-
+10	enkelt	enkelt	A	A	-	8	mod	-	-
 11	,	,	X	X	-	10	pnct	-	-
 12	at	at	C	C	-	8	nobj	-	-
 13	fangevogterne	fangevogterne	N	N	-	14	subj	-	-
@@ -5735,12 +5735,12 @@
 20	at	at	U	U	-	18	nobj	-	-
 21	blive	blive	V	V	-	20	vobj	-	-
 22	sendt	sendt	V	V	-	21	vobj	-	-
-23	til	til	SP	SP	-	22	lobj	-	-
+23	til	til	SP	SP	-	22	pobj	-	-
 24	fronten	fronten	N	N	-	23	nobj	-	-
 25	.	.	X	X	-	1	pnct	-	-
 
 1	"	"	X	X	-	8	pnct	-	-
-2	Når	Når	C	C	-	8	xtop	-	-
+2	Når	Når	C	C	-	8	mod	-	-
 3	boligministeren	boligministeren	N	N	-	5	subj	-	-
 4	ikke	ikke	RG	RG	-	5	mod	-	-
 5	vil	vil	V	V	-	2	vobj	-	-
@@ -5755,7 +5755,7 @@
 14	siger	siger	V	V	-	0	ROOT	-	-
 15	Kirsten	Kirsten	N	N	-	16	namef	-	-
 16	Jacobsen	Jacobsen	N	N	-	14	subj	-	-
-17	med	med	SP	SP	-	14	mod	-	-
+17	med	med	SP	SP	-	14	pobj	-	-
 18	henvisning	henvisning	N	N	-	17	nobj	-	-
 19	til	til	SP	SP	-	18	pobj	-	-
 20	,	,	X	X	-	19	pnct	-	-
@@ -5774,7 +5774,7 @@
 33	sig	sig	P	P	-	32	iobj	-	-
 34	noget	noget	P	P	-	32	dobj	-	-
 35	,	,	X	X	-	29	pnct	-	-
-36	før	før	C	C	-	14	mod	-	-
+36	før	før	C	C	-	29	mod	-	-
 37	kammeradvokaten	kammeradvokaten	N	N	-	38	subj	-	-
 38	har	har	V	V	-	36	vobj	-	-
 39	vurderet	vurderet	V	V	-	38	vobj	-	-
@@ -5814,7 +5814,7 @@
 31	til	til	SP	SP	-	30	mod	-	-
 32	en	en	P	P	-	31	nobj	-	-
 33	dommer	dommer	N	N	-	32	nobj	-	-
-34	at	at	U	U	-	29	pred	-	-
+34	at	at	U	U	-	31	nobj	-	-
 35	afgøre	afgøre	V	V	-	34	vobj	-	-
 36	,	,	X	X	-	35	pnct	-	-
 37	om	om	C	C	-	35	dobj	-	-
@@ -5899,21 +5899,21 @@
 37	op	op	RG	RG	-	36	avobj	-	-
 38	.	.	X	X	-	17	pnct	-	-
 
-1	En	En	P	P	-	0	ROOT	-	-
+1	En	En	P	P	-	11	subj	-	-
 2	stor	stor	A	A	-	1	mod	-	-
 3	del	del	N	N	-	1	nobj	-	-
 4	af	af	SP	SP	-	3	pobj	-	-
 5	Ungbos	Ungbos	N	N	-	4	nobj	-	-
-6	<num>	<num>	A	A	-	5	possd	-	-
+6	<num>	<num>	A	A	-	11	subj	-	-
 7	ungdomsboliger	ungdomsboliger	N	N	-	6	nobj	-	-
 8	og	og	C	C	-	6	coord	-	-
 9	<num>	<num>	A	A	-	8	conj	-	-
 10	hybler	hybler	N	N	-	9	nobj	-	-
-11	er	er	V	V	-	5	rel	-	-
+11	er	er	V	V	-	0	ROOT	-	-
 12	truet	truet	V	V	-	11	vobj	-	-
 13	af	af	SP	SP	-	12	pobj	-	-
 14	tvangsauktion	tvangsauktion	N	N	-	13	nobj	-	-
-15	.	.	X	X	-	1	pnct	-	-
+15	.	.	X	X	-	11	pnct	-	-
 
 1	<num>	<num>	A	A	-	5	subj	-	-
 2	ansatte	ansatte	V	V	-	1	mod	-	-
@@ -5927,9 +5927,9 @@
 10	mange	mange	A	A	-	9	conj	-	-
 11	lejere	lejere	N	N	-	10	nobj	-	-
 12	,	,	X	X	-	10	pnct	-	-
-13	flere	flere	A	A	-	10	modp	-	-
+13	flere	flere	A	A	-	22	subj	-	-
 14	kommuner	kommuner	N	N	-	13	nobj	-	-
-15	,	,	X	X	-	10	pnct	-	-
+15	,	,	X	X	-	13	pnct	-	-
 16	fagbevægelsen	fagbevægelsen	N	N	-	22	subj	-	-
 17	,	,	X	X	-	16	pnct	-	-
 18	en	en	P	P	-	22	subj	-	-
@@ -5937,7 +5937,7 @@
 20	og	og	C	C	-	19	coord	-	-
 21	staten	staten	N	N	-	20	conj	-	-
 22	har	har	V	V	-	9	conj	-	-
-23	alle	alle	A	A	-	22	dobj	-	-
+23	alle	alle	A	A	-	22	subj	-	-
 24	penge	penge	N	N	-	23	nobj	-	-
 25	til_gode	til_gode	RG	RG	-	22	mod	-	-
 26	.	.	X	X	-	5	pnct	-	-
@@ -5959,7 +5959,7 @@
 15	at	at	C	C	-	13	dobj	-	-
 16	han	han	P	P	-	17	subj	-	-
 17	skulle	skulle	V	V	-	15	vobj	-	-
-18	i	i	SP	SP	-	17	mod	-	-
+18	i	i	SP	SP	-	17	lobj	-	-
 19	lag	lag	N	N	-	18	nobj	-	-
 20	med	med	SP	SP	-	19	pobj	-	-
 21	nogle	nogle	P	P	-	20	nobj	-	-
@@ -5978,7 +5978,7 @@
 10	"	"	X	X	-	9	pnct	-	-
 11	.	.	X	X	-	2	pnct	-	-
 
-1	Klokken	Klokken	N	N	-	5	mod	-	-
+1	Klokken	Klokken	N	N	-	5	subj	-	-
 2	<num>	<num>	A	A	-	1	nobj	-	-
 3	samme	samme	A	A	-	2	nobj	-	-
 4	dag	dag	N	N	-	3	nobj	-	-
@@ -6007,7 +6007,7 @@
 7	"	"	X	X	-	2	pnct	-	-
 8	sagde	sagde	V	V	-	0	ROOT	-	-
 9	"	"	X	X	-	10	pnct	-	-
-10	Mercedesmanden	Mercedesmanden	N	N	-	8	subj	-	-
+10	Mercedesmanden	Mercedesmanden	N	N	-	8	dobj	-	-
 11	"	"	X	X	-	10	pnct	-	-
 12	.	.	X	X	-	8	pnct	-	-
 
@@ -6016,7 +6016,7 @@
 3	en	en	P	P	-	2	nobj	-	-
 4	hurtig	hurtig	A	A	-	3	mod	-	-
 5	opringning	opringning	N	N	-	3	nobj	-	-
-6	til	til	SP	SP	-	2	mod	-	-
+6	til	til	SP	SP	-	3	mod	-	-
 7	vennens	vennens	N	N	-	6	nobj	-	-
 8	hotel	hotel	N	N	-	7	possd	-	-
 9	blev	blev	V	V	-	1	conj	-	-
@@ -6107,12 +6107,12 @@
 23	"	"	X	X	-	2	pnct	-	-
 
 1	"	"	X	X	-	2	pnct	-	-
-2	Mercedes-manden	Mercedes-manden	N	N	-	7	subj	-	-
+2	Mercedes-manden	Mercedes-manden	N	N	-	0	ROOT	-	-
 3	"	"	X	X	-	2	pnct	-	-
 4	:	:	X	X	-	2	pnct	-	-
 5	"	"	X	X	-	7	pnct	-	-
 6	Jeg	Jeg	P	P	-	7	subj	-	-
-7	skulle	skulle	V	V	-	0	ROOT	-	-
+7	skulle	skulle	V	V	-	2	rel	-	-
 8	gå	gå	V	V	-	7	vobj	-	-
 9	til	til	SP	SP	-	8	lobj	-	-
 10	en	en	P	P	-	9	nobj	-	-
@@ -6129,7 +6129,7 @@
 21	i	i	SP	SP	-	17	mod	-	-
 22	Holland	Holland	N	N	-	21	nobj	-	-
 23	.	.	X	X	-	7	pnct	-	-
-24	"	"	X	X	-	7	pnct	-	-
+24	"	"	X	X	-	2	pnct	-	-
 
 1	Inden	Inden	C	C	-	7	mod	-	-
 2	computermanden	computermanden	N	N	-	3	subj	-	-
@@ -6165,8 +6165,8 @@
 9	at	at	U	U	-	8	nobj	-	-
 10	hente	hente	V	V	-	9	vobj	-	-
 11	noget	noget	P	P	-	10	dobj	-	-
-12	,	,	X	X	-	3	pnct	-	-
-13	inden	inden	C	C	-	3	mod	-	-
+12	,	,	X	X	-	2	pnct	-	-
+13	inden	inden	C	C	-	2	mod	-	-
 14	det	det	P	P	-	15	subj	-	-
 15	blev	blev	V	V	-	13	vobj	-	-
 16	mørkt	mørkt	A	A	-	15	pred	-	-
