@@ -1,13 +1,13 @@
-1	l'	_	ART	ART	_	20	SUBJ	_	_
+1	L'	_	ART	ART	_	20	SUBJ	_	_
 2	impossibilità	_	NOUN	NOUN	_	1	ARG	_	_
-3	die	_	ADV	ADV	_	4	RMOD	_	_
-4	die	_	PREP	PREP	_	2	RMOD	_	_
+3	di	_	ADV	ADV	_	4	RMOD	_	_
+4	di	_	PREP	PREP	_	2	RMOD	_	_
 5	usare	_	VERB	VERB	_	4	ARG	_	_
 6	della	_	PREP	PREP	_	5	INDCOMPL	_	_
 7	della	_	ART	ART	_	6	ARG	_	_
 8	servitù	_	NOUN	NOUN	_	7	ARG	_	_
 9	e	_	CONJ	CONJ	_	1	COORD+BASE	_	_
-10	ile	_	ART	ART	_	9	COORD2ND+BASE	_	_
+10	il	_	ART	ART	_	9	COORD2ND+BASE	_	_
 11	venir	_	VERB	VERB	_	10	ARG	_	_
 12	meno	_	PRON	PRON	_	11	OBJ	_	_
 13	dell'	_	PREP	PREP	_	11	SUBJ	_	_
@@ -26,16 +26,16 @@
 26	non	_	ADV	ADV	_	28	RMOD	_	_
 27	è	_	VERB	VERB	_	28	AUX+TENSE	_	_
 28	decorso	_	VERB	VERB	_	25	ARG	_	_
-29	ile	_	ART	ART	_	28	OBJ	_	_
+29	il	_	ART	ART	_	28	OBJ	_	_
 30	termine	_	NOUN	NOUN	_	29	ARG	_	_
 31	indicato	_	VERB	VERB	_	30	RMOD+RELCL+REDUC	_	_
 32	dall'	_	PREP	PREP	_	31	SUBJ/INDCOMPL	_	_
 33	dall'	_	ART	ART	_	32	ARG	_	_
 34	articolo	_	NOUN	NOUN	_	33	ARG	_	_
-35	precedent	_	ADJ	ADJ	_	34	RMOD	_	_
+35	precedente	_	ADJ	ADJ	_	34	RMOD	_	_
 36	.	_	PUNCT	PUNCT	_	20	END	_	_
 
-1	la	_	ART	ART	_	3	SUBJ	_	_
+1	La	_	ART	ART	_	3	SUBJ	_	_
 2	servitù	_	NOUN	NOUN	_	1	ARG	_	_
 3	esercitata	_	VERB	VERB	_	0	TOP	_	_
 4	in	_	CONJ	CONJ	_	3	RMOD	_	_
@@ -45,8 +45,8 @@
 8	trarne	_	PRON	PRON	_	7	OBJ	_	_
 9	un'	_	ART	ART	_	7	OBJ	_	_
 10	utilità	_	NOUN	NOUN	_	9	ARG	_	_
-11	minor	_	ADJ	ADJ	_	10	RMOD	_	_
-12	die	_	PREP	PREP	_	11	COORD+COMPAR	_	_
+11	minore	_	ADJ	ADJ	_	10	RMOD	_	_
+12	di	_	PREP	PREP	_	11	COORD+COMPAR	_	_
 13	quella	_	PRON	PRON	_	12	ARG	_	_
 14	indicata	_	VERB	VERB	_	13	RMOD+RELCL+REDUC	_	_
 15	dal	_	PREP	PREP	_	14	SUBJ/INDCOMPL	_	_
@@ -62,12 +62,12 @@
 25	)	_	PUNCT	PUNCT	_	19	CLOSE+PARENTHETICAL	_	_
 26	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	esercizio	_	NOUN	NOUN	_	0	TOP	_	_
+1	Esercizio	_	NOUN	NOUN	_	0	TOP	_	_
 2	della	_	PREP	PREP	_	1	RMOD	_	_
 3	della	_	ART	ART	_	2	ARG	_	_
 4	servitù	_	NOUN	NOUN	_	3	ARG	_	_
 5	non	_	ADV	ADV	_	6	RMOD	_	_
-6	conform	_	ADJ	ADJ	_	4	RMOD	_	_
+6	conforme	_	ADJ	ADJ	_	4	RMOD	_	_
 7	al	_	PREP	PREP	_	6	ARG	_	_
 8	al	_	ART	ART	_	7	ARG	_	_
 9	titolo	_	NOUN	NOUN	_	8	ARG	_	_
@@ -77,9 +77,9 @@
 13	possesso	_	NOUN	NOUN	_	12	ARG	_	_
 14	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	l'	_	ART	ART	_	21	SUBJ	_	_
+1	L'	_	ART	ART	_	21	SUBJ	_	_
 2	esercizio	_	NOUN	NOUN	_	1	ARG	_	_
-3	die	_	PREP	PREP	_	2	OBJ	_	_
+3	di	_	PREP	PREP	_	2	OBJ	_	_
 4	una	_	ART	ART	_	3	ARG	_	_
 5	servitù	_	NOUN	NOUN	_	4	ARG	_	_
 6	in	_	PREP	PREP	_	5	RMOD	_	_
@@ -104,7 +104,7 @@
 25	prescrizione	_	NOUN	NOUN	_	24	ARG	_	_
 26	.	_	PUNCT	PUNCT	_	21	END	_	_
 
-1	servitù	_	NOUN	NOUN	_	0	TOP	_	_
+1	Servitù	_	NOUN	NOUN	_	0	TOP	_	_
 2	costituite	_	VERB	VERB	_	1	RMOD+RELCL+REDUC	_	_
 3	sul	_	PREP	PREP	_	2	RMOD	_	_
 4	sul	_	ART	ART	_	3	ARG	_	_
@@ -112,7 +112,7 @@
 6	enfiteutico	_	ADJ	ADJ	_	5	RMOD	_	_
 7	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	le	_	ART	ART	_	11	SUBJ	_	_
+1	Le	_	ART	ART	_	11	SUBJ	_	_
 2	servitù	_	NOUN	NOUN	_	1	ARG	_	_
 3	costituite	_	VERB	VERB	_	2	RMOD+RELCL+REDUC	_	_
 4	dall'	_	PREP	PREP	_	3	SUBJ/INDCOMPL	_	_
@@ -148,7 +148,7 @@
 34	)	_	PUNCT	PUNCT	_	16	CLOSE+PARENTHETICAL	_	_
 35	.	_	PUNCT	PUNCT	_	16	END	_	_
 
-1	servitù	_	NOUN	NOUN	_	0	TOP	_	_
+1	Servitù	_	NOUN	NOUN	_	0	TOP	_	_
 2	costituite	_	VERB	VERB	_	1	RMOD+RELCL+REDUC	_	_
 3	a	_	PREP	PREP	_	2	RMOD	_	_
 4	favore	_	PREP	PREP	_	3	CONTIN+LOCUT	_	_
@@ -157,13 +157,13 @@
 7	fondo	_	NOUN	NOUN	_	6	ARG	_	_
 8	enfiteutico	_	ADJ	ADJ	_	7	RMOD	_	_
 9	,	_	PUNCT	PUNCT	_	8	COORD+BASE	_	_
-10	dotal	_	ADJ	ADJ	_	7	RMOD	_	_
+10	dotale	_	ADJ	ADJ	_	7	RMOD	_	_
 11	o	_	CONJ	CONJ	_	3	COORD+BASE	_	_
 12	in	_	PREP	PREP	_	11	COORD2ND+BASE	_	_
 13	usufrutto	_	NOUN	NOUN	_	12	ARG	_	_
 14	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	le	_	ART	ART	_	14	SUBJ	_	_
+1	Le	_	ART	ART	_	14	SUBJ	_	_
 2	servitù	_	NOUN	NOUN	_	1	ARG	_	_
 3	costituite	_	VERB	VERB	_	2	RMOD+RELCL+REDUC	_	_
 4	dall'	_	PREP	PREP	_	3	SUBJ/INDCOMPL	_	_
@@ -186,8 +186,8 @@
 21	enfiteusi	_	NOUN	NOUN	_	20	ARG	_	_
 22	.	_	PUNCT	PUNCT	_	14	END	_	_
 
-1	delle	_	PREP	PREP	_	0	TOP	_	_
-2	delle	_	ART	ART	_	1	ARG	_	_
+1	Delle	_	PREP	PREP	_	0	TOP	_	_
+2	Delle	_	ART	ART	_	1	ARG	_	_
 3	azioni	_	NOUN	NOUN	_	2	ARG	_	_
 4	a	_	PREP	PREP	_	3	RMOD	_	_
 5	difesa	_	NOUN	NOUN	_	4	ARG	_	_
@@ -196,18 +196,18 @@
 8	servitù	_	NOUN	NOUN	_	7	ARG	_	_
 9	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	accertamento	_	NOUN	NOUN	_	0	TOP	_	_
+1	Accertamento	_	NOUN	NOUN	_	0	TOP	_	_
 2	della	_	PREP	PREP	_	1	RMOD	_	_
 3	della	_	ART	ART	_	2	ARG	_	_
 4	servitù	_	NOUN	NOUN	_	3	ARG	_	_
 5	e	_	CONJ	CONJ	_	1	COORD+BASE	_	_
 6	altri	_	ADJ	ADJ	_	5	COORD2ND+BASE	_	_
 7	provvedimenti	_	NOUN	NOUN	_	6	ARG	_	_
-8	die	_	PREP	PREP	_	7	RMOD	_	_
+8	di	_	PREP	PREP	_	7	RMOD	_	_
 9	tutela	_	NOUN	NOUN	_	8	ARG	_	_
 10	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	ile	_	ART	ART	_	6	SUBJ	_	_
+1	Il	_	ART	ART	_	6	SUBJ	_	_
 2	titolare	_	NOUN	NOUN	_	1	ARG	_	_
 3	della	_	PREP	PREP	_	2	RMOD	_	_
 4	della	_	ART	ART	_	3	ARG	_	_
@@ -245,7 +245,7 @@
 36	)	_	PUNCT	PUNCT	_	6	CLOSE+PARENTHETICAL	_	_
 37	.	_	PUNCT	PUNCT	_	6	END	_	_
 
-1	può	_	VERB	VERB	_	0	TOP	_	_
+1	Può	_	VERB	VERB	_	0	TOP	_	_
 2	anche	_	ADV	ADV	_	1	RMOD	_	_
 3	chiedere	_	VERB	VERB	_	1	INDCOMPL	_	_
 4	la	_	ART	ART	_	3	OBJ	_	_
@@ -257,7 +257,7 @@
 10	pristino	_	NOUN	NOUN	_	9	ARG	_	_
 11	,	_	PUNCT	PUNCT	_	1	SEPARATOR	_	_
 12	oltre	_	PREP	PREP	_	1	RMOD	_	_
-13	ile	_	ART	ART	_	12	ARG	_	_
+13	il	_	ART	ART	_	12	ARG	_	_
 14	risarcimento	_	NOUN	NOUN	_	13	ARG	_	_
 15	dei	_	PREP	PREP	_	14	OBJ	_	_
 16	dei	_	ART	ART	_	15	ARG	_	_
@@ -267,28 +267,28 @@
 20	)	_	PUNCT	PUNCT	_	1	CLOSE+PARENTHETICAL	_	_
 21	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	die	_	PREP	PREP	_	0	TOP	_	_
-2	alcun	_	ADJ	ADJ	_	1	ARG	_	_
+1	Di	_	PREP	PREP	_	0	TOP	_	_
+2	alcune	_	ADJ	ADJ	_	1	ARG	_	_
 3	servitù	_	NOUN	NOUN	_	2	ARG	_	_
 4	in	_	PREP	PREP	_	3	RMOD	_	_
 5	materia	_	NOUN	NOUN	_	4	ARG	_	_
-6	die	_	PREP	PREP	_	5	RMOD	_	_
+6	di	_	PREP	PREP	_	5	RMOD	_	_
 7	acque	_	NOUN	NOUN	_	6	ARG	_	_
 8	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	della	_	PREP	PREP	_	0	TOP	_	_
-2	della	_	ART	ART	_	1	ARG	_	_
+1	Della	_	PREP	PREP	_	0	TOP	_	_
+2	Della	_	ART	ART	_	1	ARG	_	_
 3	servitù	_	NOUN	NOUN	_	2	ARG	_	_
-4	die	_	PREP	PREP	_	3	RMOD	_	_
+4	di	_	PREP	PREP	_	3	RMOD	_	_
 5	presa	_	NOUN	NOUN	_	4	ARG	_	_
 6	o	_	CONJ	CONJ	_	4	COORD+BASE	_	_
-7	die	_	PREP	PREP	_	6	COORD2ND+BASE	_	_
+7	di	_	PREP	PREP	_	6	COORD2ND+BASE	_	_
 8	derivazione	_	NOUN	NOUN	_	7	ARG	_	_
-9	die	_	PREP	PREP	_	8	RMOD	_	_
+9	di	_	PREP	PREP	_	8	RMOD	_	_
 10	acqua	_	NOUN	NOUN	_	9	ARG	_	_
 11	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	ile	_	ART	ART	_	10	SUBJ	_	_
+1	Il	_	ART	ART	_	10	SUBJ	_	_
 2	diritto	_	NOUN	NOUN	_	1	ARG	_	_
 3	alla	_	PREP	PREP	_	2	RMOD	_	_
 4	alla	_	ART	ART	_	3	ARG	_	_
@@ -304,8 +304,8 @@
 14	istante	_	NOUN	NOUN	_	13	ARG	_	_
 15	.	_	PUNCT	PUNCT	_	10	END	_	_
 
-1	nelle	_	PREP	PREP	_	7	RMOD	_	_
-2	nelle	_	ART	ART	_	1	ARG	_	_
+1	Nelle	_	PREP	PREP	_	7	RMOD	_	_
+2	Nelle	_	ART	ART	_	1	ARG	_	_
 3	servitù	_	NOUN	NOUN	_	2	ARG	_	_
 4	in	_	PREP	PREP	_	7	RMOD	_	_
 5	cui	_	PRON	PRON	_	4	ARG	_	_
@@ -314,9 +314,9 @@
 8	ed	_	CONJ	CONJ	_	7	COORD+BASE	_	_
 9	espressa	_	VERB	VERB	_	8	COORD2ND+BASE	_	_
 10	una	_	ART	ART	_	9	OBJ	_	_
-11	costant	_	ADJ	ADJ	_	12	RMOD	_	_
+11	costante	_	ADJ	ADJ	_	12	RMOD	_	_
 12	quantità	_	NOUN	NOUN	_	10	ARG	_	_
-13	die	_	PREP	PREP	_	12	RMOD	_	_
+13	di	_	PREP	PREP	_	12	RMOD	_	_
 14	acqua	_	NOUN	NOUN	_	13	ARG	_	_
 15	,	_	PUNCT	PUNCT	_	18	SEPARATOR	_	_
 16	la	_	ART	ART	_	18	SUBJ	_	_
@@ -331,20 +331,20 @@
 25	modulo	_	NOUN	NOUN	_	24	ARG	_	_
 26	.	_	PUNCT	PUNCT	_	7	END	_	_
 
-1	ile	_	ART	ART	_	3	SUBJ	_	_
+1	Il	_	ART	ART	_	3	SUBJ	_	_
 2	modulo	_	NOUN	NOUN	_	1	ARG	_	_
 3	è	_	VERB	VERB	_	0	TOP	_	_
 4	l'	_	ART	ART	_	3	SUBJ	_	_
 5	unità	_	NOUN	NOUN	_	4	ARG	_	_
-6	die	_	PREP	PREP	_	5	RMOD	_	_
+6	di	_	PREP	PREP	_	5	RMOD	_	_
 7	misura	_	NOUN	NOUN	_	6	ARG	_	_
 8	dell'	_	PREP	PREP	_	7	RMOD	_	_
 9	dell'	_	ART	ART	_	8	ARG	_	_
 10	acqua	_	NOUN	NOUN	_	9	ARG	_	_
-11	corrent	_	ADJ	ADJ	_	10	RMOD	_	_
+11	corrente	_	ADJ	ADJ	_	10	RMOD	_	_
 12	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	esso	_	PRON	PRON	_	2	SUBJ	_	_
+1	Esso	_	PRON	PRON	_	2	SUBJ	_	_
 2	è	_	VERB	VERB	_	0	TOP	_	_
 3	un	_	ART	ART	_	2	SUBJ	_	_
 4	corpo	_	NOUN	NOUN	_	3	ARG	_	_
@@ -354,9 +354,9 @@
 8	scorre	_	VERB	VERB	_	4	RMOD+RELCL	_	_
 9	nella	_	PREP	PREP	_	8	RMOD	_	_
 10	nella	_	ART	ART	_	9	ARG	_	_
-11	costant	_	ADJ	ADJ	_	12	RMOD	_	_
+11	costante	_	ADJ	ADJ	_	12	RMOD	_	_
 12	quantità	_	NOUN	NOUN	_	10	ARG	_	_
-13	die	_	PREP	PREP	_	12	RMOD	_	_
+13	di	_	PREP	PREP	_	12	RMOD	_	_
 14	cento	_	NUM	NUM	_	13	ARG	_	_
 15	litri	_	NOUN	NOUN	_	14	ARG	_	_
 16	al	_	PREP	PREP	_	15	RMOD	_	_
@@ -374,7 +374,7 @@
 28	millesimi	_	ADJ	ADJ	_	27	COORD2ND+BASE	_	_
 29	.	_	PUNCT	PUNCT	_	2	END	_	_
 
-1	forma	_	NOUN	NOUN	_	0	TOP	_	_
+1	Forma	_	NOUN	NOUN	_	0	TOP	_	_
 2	della	_	PREP	PREP	_	1	RMOD	_	_
 3	della	_	ART	ART	_	2	ARG	_	_
 4	bocca	_	NOUN	NOUN	_	3	ARG	_	_
@@ -382,23 +382,23 @@
 6	dell'	_	PREP	PREP	_	5	COORD2ND+BASE	_	_
 7	dell'	_	ART	ART	_	6	ARG	_	_
 8	edificio	_	NOUN	NOUN	_	7	ARG	_	_
-9	derivator	_	ADJ	ADJ	_	8	RMOD	_	_
+9	derivatore	_	ADJ	ADJ	_	8	RMOD	_	_
 10	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	quando	_	CONJ	CONJ	_	18	RMOD	_	_
+1	Quando	_	CONJ	CONJ	_	18	RMOD	_	_
 2	,	_	PUNCT	PUNCT	_	18	OPEN+PARENTHETICAL	_	_
 3	per	_	PREP	PREP	_	18	RMOD	_	_
 4	la	_	ART	ART	_	3	ARG	_	_
 5	derivazione	_	NOUN	NOUN	_	4	ARG	_	_
-6	die	_	PREP	PREP	_	5	RMOD	_	_
+6	di	_	PREP	PREP	_	5	RMOD	_	_
 7	una	_	ART	ART	_	6	ARG	_	_
 8	data	_	NOUN	NOUN	_	7	ARG	_	_
 9	e	_	CONJ	CONJ	_	7	COORD+BASE	_	_
-10	costant	_	ADJ	ADJ	_	9	COORD2ND+BASE	_	_
+10	costante	_	ADJ	ADJ	_	9	COORD2ND+BASE	_	_
 11	quantità	_	NOUN	NOUN	_	9	COORD2ND+BASE	_	_
-12	die	_	PREP	PREP	_	11	RMOD	_	_
+12	di	_	PREP	PREP	_	11	RMOD	_	_
 13	acqua	_	NOUN	NOUN	_	12	ARG	_	_
-14	corrent	_	ADJ	ADJ	_	13	RMOD	_	_
+14	corrente	_	ADJ	ADJ	_	13	RMOD	_	_
 15	,	_	PUNCT	PUNCT	_	18	SEPARATOR	_	_
 16	è	_	VERB	VERB	_	17	AUX+TENSE	_	_
 17	stata	_	VERB	VERB	_	18	AUX+PASSIVE	_	_
@@ -412,7 +412,7 @@
 25	dell'	_	PREP	PREP	_	24	COORD2ND+BASE	_	_
 26	dell'	_	ART	ART	_	25	ARG	_	_
 27	edificio	_	NOUN	NOUN	_	26	ARG	_	_
-28	derivator	_	ADJ	ADJ	_	27	RMOD	_	_
+28	derivatore	_	ADJ	ADJ	_	27	RMOD	_	_
 29	,	_	PUNCT	PUNCT	_	33	SEPARATOR	_	_
 30	le	_	ART	ART	_	33	SUBJ	_	_
 31	parti	_	NOUN	NOUN	_	30	ARG	_	_
@@ -424,7 +424,7 @@
 37	modificazione	_	NOUN	NOUN	_	36	ARG	_	_
 38	.	_	PUNCT	PUNCT	_	18	END	_	_
 
-1	se	_	CONJ	CONJ	_	18	RMOD	_	_
+1	Se	_	CONJ	CONJ	_	18	RMOD	_	_
 2	la	_	ART	ART	_	7	SUBJ	_	_
 3	forma	_	NOUN	NOUN	_	2	ARG	_	_
 4	non	_	ADV	ADV	_	7	RMOD	_	_
@@ -438,7 +438,7 @@
 12	e	_	CONJ	CONJ	_	10	COORD+BASE	_	_
 13	l'	_	ART	ART	_	12	COORD2ND+BASE	_	_
 14	edificio	_	NOUN	NOUN	_	13	ARG	_	_
-15	derivator	_	ADJ	ADJ	_	14	RMOD	_	_
+15	derivatore	_	ADJ	ADJ	_	14	RMOD	_	_
 16	sono	_	VERB	VERB	_	17	AUX+TENSE	_	_
 17	stati	_	VERB	VERB	_	18	AUX+PASSIVE	_	_
 18	costruiti	_	VERB	VERB	_	0	TOP	_	_
@@ -462,12 +462,12 @@
 36	parti	_	NOUN	NOUN	_	35	ARG	_	_
 37	.	_	PUNCT	PUNCT	_	18	END	_	_
 
-1	in	_	PREP	PREP	_	12	RMOD	_	_
+1	In	_	PREP	PREP	_	12	RMOD	_	_
 2	mancanza	_	NOUN	NOUN	_	1	ARG	_	_
-3	die	_	PREP	PREP	_	2	SUBJ	_	_
+3	di	_	PREP	PREP	_	2	SUBJ	_	_
 4	titolo	_	NOUN	NOUN	_	3	ARG	_	_
 5	o	_	CONJ	CONJ	_	3	COORD+BASE	_	_
-6	die	_	PREP	PREP	_	5	COORD2ND+BASE	_	_
+6	di	_	PREP	PREP	_	5	COORD2ND+BASE	_	_
 7	possesso	_	NOUN	NOUN	_	6	ARG	_	_
 8	,	_	PUNCT	PUNCT	_	12	SEPARATOR	_	_
 9	la	_	ART	ART	_	12	OBJ/SUBJ	_	_
@@ -480,7 +480,7 @@
 16	giudiziaria	_	ADJ	ADJ	_	15	RMOD	_	_
 17	.	_	PUNCT	PUNCT	_	12	END	_	_
 
-1	quando	_	CONJ	CONJ	_	16	RMOD	_	_
+1	Quando	_	CONJ	CONJ	_	16	RMOD	_	_
 2	la	_	ART	ART	_	16	OBJ/SUBJ	_	_
 3	quantità	_	NOUN	NOUN	_	2	ARG	_	_
 4	d'	_	PREP	PREP	_	3	RMOD	_	_
@@ -508,18 +508,18 @@
 26	quantità	_	NOUN	NOUN	_	25	ARG	_	_
 27	necessaria	_	ADJ	ADJ	_	26	RMOD	_	_
 28	per	_	PREP	PREP	_	27	ARG	_	_
-29	le	_	ART	ART	_	28	ARG	_	_
+29	lo	_	ART	ART	_	28	ARG	_	_
 30	scopo	_	NOUN	NOUN	_	29	ARG	_	_
 31	medesimo	_	ADJ	ADJ	_	30	RMOD	_	_
 32	.	_	PUNCT	PUNCT	_	16	END	_	_
 
-1	per	_	PREP	PREP	_	31	RMOD	_	_
+1	Per	_	PREP	PREP	_	31	RMOD	_	_
 2	l'	_	ART	ART	_	1	ARG	_	_
 3	esercizio	_	NOUN	NOUN	_	2	ARG	_	_
 4	della	_	PREP	PREP	_	3	OBJ	_	_
 5	della	_	ART	ART	_	4	ARG	_	_
 6	servitù	_	NOUN	NOUN	_	5	ARG	_	_
-7	die	_	PREP	PREP	_	6	RMOD	_	_
+7	di	_	PREP	PREP	_	6	RMOD	_	_
 8	presa	_	NOUN	NOUN	_	7	ARG	_	_
 9	d'	_	PREP	PREP	_	8	RMOD	_	_
 10	acqua	_	NOUN	NOUN	_	9	ARG	_	_
@@ -527,12 +527,12 @@
 12	quando	_	CONJ	CONJ	_	31	RMOD	_	_
 13	non	_	ADV	ADV	_	14	RMOD	_	_
 14	dispone	_	VERB	VERB	_	12	ARG	_	_
-15	ile	_	ART	ART	_	14	OBJ	_	_
+15	il	_	ART	ART	_	14	OBJ	_	_
 16	titolo	_	NOUN	NOUN	_	15	ARG	_	_
 17	o	_	CONJ	CONJ	_	14	COORD+BASE	_	_
 18	non	_	ADV	ADV	_	19	RMOD	_	_
 19	è	_	VERB	VERB	_	17	COORD2ND+BASE	_	_
-20	possibil	_	ADJ	ADJ	_	19	PREDCOMPL+SUBJ	_	_
+20	possibile	_	ADJ	ADJ	_	19	PREDCOMPL+SUBJ	_	_
 21	riferirsi	_	VERB	VERB	_	19	SUBJ	_	_
 22	riferirsi	_	PRON	PRON	_	21	OBJ	_	_
 23	al	_	PREP	PREP	_	21	INDCOMPL	_	_
@@ -549,9 +549,9 @@
 34	locali	_	ADJ	ADJ	_	33	RMOD	_	_
 35	.	_	PUNCT	PUNCT	_	31	END	_	_
 
-1	in	_	PREP	PREP	_	7	RMOD	_	_
+1	In	_	PREP	PREP	_	7	RMOD	_	_
 2	mancanza	_	NOUN	NOUN	_	1	ARG	_	_
-3	die	_	PREP	PREP	_	2	SUBJ	_	_
+3	di	_	PREP	PREP	_	2	SUBJ	_	_
 4	tali	_	ADJ	ADJ	_	3	ARG	_	_
 5	usi	_	NOUN	NOUN	_	4	ARG	_	_
 6	si	_	PRON	PRON	_	7	SUBJ/SUBJ+IMPERS	_	_
@@ -565,7 +565,7 @@
 14	seguenti	_	ADJ	ADJ	_	13	RMOD	_	_
 15	.	_	PUNCT	PUNCT	_	7	END	_	_
 
-1	ile	_	ART	ART	_	9	SUBJ	_	_
+1	Il	_	ART	ART	_	9	SUBJ	_	_
 2	diritto	_	NOUN	NOUN	_	1	ARG	_	_
 3	alla	_	PREP	PREP	_	2	RMOD	_	_
 4	alla	_	ART	ART	_	3	ARG	_	_
@@ -583,7 +583,7 @@
 16	dall'	_	PREP	PREP	_	9	RMOD	_	_
 17	dall'	_	ART	ART	_	16	ARG	_	_
 18	equinozio	_	NOUN	NOUN	_	17	ARG	_	_
-19	die	_	PREP	PREP	_	18	RMOD	_	_
+19	di	_	PREP	PREP	_	18	RMOD	_	_
 20	primavera	_	NOUN	NOUN	_	19	ARG	_	_
 21	a	_	PREP	PREP	_	16	ARG	_	_
 22	quello	_	PRON	PRON	_	21	ARG	_	_
@@ -591,7 +591,7 @@
 24	autunno	_	NOUN	NOUN	_	23	ARG	_	_
 25	;	_	PUNCT	PUNCT	_	9	END	_	_
 
-1	la	_	ART	ART	_	11	SUBJ	_	_
+1	La	_	ART	ART	_	11	SUBJ	_	_
 2	distribuzione	_	NOUN	NOUN	_	1	ARG	_	_
 3	d'	_	PREP	PREP	_	2	RMOD	_	_
 4	acqua	_	NOUN	NOUN	_	3	ARG	_	_
@@ -612,7 +612,7 @@
 19	naturali	_	ADJ	ADJ	_	18	RMOD	_	_
 20	.	_	PUNCT	PUNCT	_	11	END	_	_
 
-1	l'	_	ART	ART	_	11	OBJ/SUBJ	_	_
+1	L'	_	ART	ART	_	11	OBJ/SUBJ	_	_
 2	uso	_	NOUN	NOUN	_	1	ARG	_	_
 3	delle	_	PREP	PREP	_	2	OBJ	_	_
 4	delle	_	ART	ART	_	3	ARG	_	_
@@ -626,7 +626,7 @@
 12	dalle	_	PREP	PREP	_	11	SUBJ/INDCOMPL	_	_
 13	dalle	_	ART	ART	_	12	ARG	_	_
 14	feste	_	NOUN	NOUN	_	13	ARG	_	_
-15	die	_	PREP	PREP	_	14	RMOD	_	_
+15	di	_	PREP	PREP	_	14	RMOD	_	_
 16	precetto	_	NOUN	NOUN	_	15	ARG	_	_
 17	vigenti	_	VERB	VERB	_	14	RMOD+RELCL+REDUC	_	_
 18	al	_	PREP	PREP	_	17	INDOBJ	_	_
@@ -648,12 +648,12 @@
 34	possedere	_	VERB	VERB	_	33	ARG	_	_
 35	.	_	PUNCT	PUNCT	_	11	END	_	_
 
-1	nelle	_	PREP	PREP	_	9	RMOD	_	_
-2	nelle	_	ART	ART	_	1	ARG	_	_
+1	Nelle	_	PREP	PREP	_	9	RMOD	_	_
+2	Nelle	_	ART	ART	_	1	ARG	_	_
 3	distribuzioni	_	NOUN	NOUN	_	2	ARG	_	_
 4	per	_	PREP	PREP	_	3	RMOD	_	_
 5	ruota	_	NOUN	NOUN	_	4	ARG	_	_
-6	ile	_	ART	ART	_	9	SUBJ	_	_
+6	il	_	ART	ART	_	9	SUBJ	_	_
 7	tempo	_	NOUN	NOUN	_	6	ARG	_	_
 8	che	_	PRON	PRON	_	9	SUBJ	_	_
 9	impiega	_	VERB	VERB	_	0	TOP	_	_
@@ -664,7 +664,7 @@
 14	alla	_	PREP	PREP	_	13	INDOBJ	_	_
 15	alla	_	ART	ART	_	14	ARG	_	_
 16	bocca	_	NOUN	NOUN	_	15	ARG	_	_
-17	die	_	PREP	PREP	_	16	RMOD	_	_
+17	di	_	PREP	PREP	_	16	RMOD	_	_
 18	derivazione	_	NOUN	NOUN	_	17	ARG	_	_
 19	dell'	_	PREP	PREP	_	18	RMOD	_	_
 20	dell'	_	ART	ART	_	19	ARG	_	_
@@ -684,15 +684,15 @@
 34	appartiene	_	VERB	VERB	_	28	COORD2ND+BASE	_	_
 35	a	_	PREP	PREP	_	34	INDOBJ	_	_
 36	quello	_	PRON	PRON	_	35	ARG	_	_
-37	die	_	PREP	PREP	_	36	RMOD	_	_
+37	di	_	PREP	PREP	_	36	RMOD	_	_
 38	cui	_	PRON	PRON	_	37	ARG	_	_
 39	cessa	_	VERB	VERB	_	36	RMOD+RELCL	_	_
-40	ile	_	ART	ART	_	39	OBJ	_	_
+40	il	_	ART	ART	_	39	OBJ	_	_
 41	turno	_	NOUN	NOUN	_	40	ARG	_	_
 42	.	_	PUNCT	PUNCT	_	9	END	_	_
 
-1	nei	_	PREP	PREP	_	25	RMOD	_	_
-2	nei	_	ART	ART	_	1	ARG	_	_
+1	Nei	_	PREP	PREP	_	25	RMOD	_	_
+2	Nei	_	ART	ART	_	1	ARG	_	_
 3	canali	_	NOUN	NOUN	_	2	ARG	_	_
 4	soggetti	_	ADJ	ADJ	_	3	RMOD	_	_
 5	a	_	PREP	PREP	_	4	ARG	_	_
@@ -734,7 +734,7 @@
 41	turno	_	NOUN	NOUN	_	39	ARG	_	_
 42	.	_	PUNCT	PUNCT	_	25	END	_	_
 
-1	gli	_	ART	ART	_	7	SUBJ	_	_
+1	Gli	_	ART	ART	_	7	SUBJ	_	_
 2	utenti	_	NOUN	NOUN	_	1	ARG	_	_
 3	dei	_	PREP	PREP	_	2	RMOD	_	_
 4	dei	_	ART	ART	_	3	ARG	_	_
@@ -746,7 +746,7 @@
 10	permutare	_	VERB	VERB	_	9	COORD2ND+BASE	_	_
 11	tra	_	PREP	PREP	_	10	RMOD	_	_
 12	loro	_	PRON	PRON	_	11	ARG	_	_
-13	ile	_	ART	ART	_	10	OBJ	_	_
+13	il	_	ART	ART	_	10	OBJ	_	_
 14	turno	_	NOUN	NOUN	_	13	ARG	_	_
 15	,	_	PUNCT	PUNCT	_	8	SEPARATOR	_	_
 16	purché	_	CONJ	CONJ	_	8	RMOD	_	_
@@ -760,10 +760,10 @@
 24	altri	_	PRON	PRON	_	23	ARG	_	_
 25	.	_	PUNCT	PUNCT	_	7	END	_	_
 
-1	chi	_	PRON	PRON	_	14	SUBJ	_	_
+1	Chi	_	PRON	PRON	_	14	SUBJ	_	_
 2	ha	_	VERB	VERB	_	1	RMOD+RELCL	_	_
 3	diritto	_	NOUN	NOUN	_	2	OBJ*LOCUT	_	_
-4	die	_	PREP	PREP	_	2	INDCOMPL	_	_
+4	di	_	PREP	PREP	_	2	INDCOMPL	_	_
 5	servirsi	_	VERB	VERB	_	4	ARG	_	_
 6	servirsi	_	PRON	PRON	_	5	EMPTYCOMPL	_	_
 7	dell'	_	PREP	PREP	_	5	INDCOMPL	_	_
@@ -787,11 +787,11 @@
 25	o	_	CONJ	CONJ	_	23	COORD+BASE	_	_
 26	rallentarne	_	VERB	VERB	_	25	COORD2ND+BASE	_	_
 27	rallentarne	_	PRON	PRON	_	26	OBJ	_	_
-28	ile	_	ART	ART	_	26	OBJ	_	_
+28	il	_	ART	ART	_	26	OBJ	_	_
 29	corso	_	NOUN	NOUN	_	28	ARG	_	_
 30	.	_	PUNCT	PUNCT	_	14	END	_	_
 
-1	obblighi	_	NOUN	NOUN	_	0	TOP	_	_
+1	Obblighi	_	NOUN	NOUN	_	0	TOP	_	_
 2	del	_	PREP	PREP	_	1	RMOD	_	_
 3	del	_	ART	ART	_	2	ARG	_	_
 4	concedente	_	VERB	VERB	_	3	ARG	_	_
@@ -799,14 +799,14 @@
 6	al	_	PREP	PREP	_	5	CONTIN+PREP	_	_
 7	al	_	ART	ART	_	6	ARG	_	_
 8	luogo	_	NOUN	NOUN	_	7	ARG	_	_
-9	die	_	PREP	PREP	_	8	RMOD	_	_
+9	di	_	PREP	PREP	_	8	RMOD	_	_
 10	consegna	_	NOUN	NOUN	_	9	ARG	_	_
 11	dell'	_	PREP	PREP	_	10	RMOD	_	_
 12	dell'	_	ART	ART	_	11	ARG	_	_
 13	acqua	_	NOUN	NOUN	_	12	ARG	_	_
 14	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	la	_	ART	ART	_	6	SUBJ	_	_
+1	La	_	ART	ART	_	6	SUBJ	_	_
 2	deficienza	_	NOUN	NOUN	_	1	ARG	_	_
 3	dell'	_	PREP	PREP	_	2	RMOD	_	_
 4	dell'	_	ART	ART	_	3	ARG	_	_
@@ -818,11 +818,11 @@
 10	chi	_	PRON	PRON	_	9	ARG	_	_
 11	ha	_	VERB	VERB	_	10	RMOD+RELCL	_	_
 12	diritto	_	NOUN	NOUN	_	11	OBJ*LOCUT	_	_
-13	die	_	PREP	PREP	_	11	INDCOMPL	_	_
+13	di	_	PREP	PREP	_	11	INDCOMPL	_	_
 14	prenderla	_	VERB	VERB	_	13	ARG	_	_
 15	prenderla	_	PRON	PRON	_	14	OBJ	_	_
 16	e	_	CONJ	CONJ	_	13	COORD+BASE	_	_
-17	die	_	PREP	PREP	_	16	COORD2ND+BASE	_	_
+17	di	_	PREP	PREP	_	16	COORD2ND+BASE	_	_
 18	usarla	_	VERB	VERB	_	17	ARG	_	_
 19	usarla	_	PRON	PRON	_	18	OBJ	_	_
 20	nel	_	PREP	PREP	_	18	RMOD	_	_
@@ -836,7 +836,7 @@
 28	verifica	_	VERB	VERB	_	22	RMOD+RELCL	_	_
 29	.	_	PUNCT	PUNCT	_	6	END	_	_
 
-1	ile	_	ART	ART	_	7	OBJ/SUBJ	_	_
+1	Il	_	ART	ART	_	7	OBJ/SUBJ	_	_
 2	concedente	_	VERB	VERB	_	1	ARG	_	_
 3	dell'	_	PREP	PREP	_	7	RMOD	_	_
 4	dell'	_	ART	ART	_	3	ARG	_	_
@@ -845,7 +845,7 @@
 7	tenuto	_	VERB	VERB	_	0	TOP	_	_
 8	a	_	PREP	PREP	_	7	INDCOMPL	_	_
 9	una	_	ART	ART	_	8	ARG	_	_
-10	proporzional	_	ADJ	ADJ	_	11	RMOD	_	_
+10	proporzionale	_	ADJ	ADJ	_	11	RMOD	_	_
 11	diminuzione	_	NOUN	NOUN	_	9	ARG	_	_
 12	del	_	PREP	PREP	_	11	RMOD	_	_
 13	del	_	ART	ART	_	12	ARG	_	_
@@ -860,19 +860,19 @@
 22	verificatasi	_	PRON	PRON	_	21	OBJ	_	_
 23	per	_	PREP	PREP	_	21	RMOD	_	_
 24	causa	_	NOUN	NOUN	_	23	ARG	_	_
-25	natural	_	ADJ	ADJ	_	24	RMOD	_	_
+25	naturale	_	ADJ	ADJ	_	24	RMOD	_	_
 26	o	_	CONJ	CONJ	_	18	COORD+BASE	_	_
 27	per	_	PREP	PREP	_	26	COORD2ND+BASE	_	_
 28	fatto	_	NOUN	NOUN	_	27	ARG	_	_
 29	altrui	_	ADJ	ADJ	_	28	RMOD	_	_
 30	.	_	PUNCT	PUNCT	_	7	END	_	_
 
-1	parimenti	_	ADV	ADV	_	3	RMOD	_	_
+1	Parimenti	_	ADV	ADV	_	3	RMOD	_	_
 2	si	_	PRON	PRON	_	3	SUBJ/SUBJ+IMPERS	_	_
 3	fa	_	VERB	VERB	_	0	TOP	_	_
 4	luogo	_	NOUN	NOUN	_	3	OBJ*LOCUT	_	_
-5	al	_	PREP	PREP	_	3	INDCOMPL	_	_
-6	al	_	ART	ART	_	5	ARG	_	_
+5	alle	_	PREP	PREP	_	3	INDCOMPL	_	_
+6	alle	_	ART	ART	_	5	ARG	_	_
 7	dovute	_	VERB	VERB	_	8	RMOD+RELCL+REDUC	_	_
 8	indennità	_	NOUN	NOUN	_	6	ARG	_	_
 9	in	_	PREP	PREP	_	8	RMOD	_	_
@@ -882,7 +882,7 @@
 13	modificazioni	_	NOUN	NOUN	_	12	ARG	_	_
 14	o	_	CONJ	CONJ	_	13	COORD+BASE	_	_
 15	limitazioni	_	NOUN	NOUN	_	14	COORD2ND+BASE	_	_
-16	die	_	PREP	PREP	_	15	RMOD	_	_
+16	di	_	PREP	PREP	_	15	RMOD	_	_
 17	turni	_	NOUN	NOUN	_	16	ARG	_	_
 18	,	_	PUNCT	PUNCT	_	17	SEPARATOR	_	_
 19	che	_	PRON	PRON	_	22	SUBJ	_	_
@@ -895,7 +895,7 @@
 26	giudiziaria	_	ADJ	ADJ	_	25	RMOD	_	_
 27	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	in	_	PREP	PREP	_	5	RMOD	_	_
+1	In	_	PREP	PREP	_	5	RMOD	_	_
 2	questo	_	ADJ	ADJ	_	1	ARG	_	_
 3	caso	_	NOUN	NOUN	_	2	ARG	_	_
 4	è	_	VERB	VERB	_	5	AUX+PASSIVE	_	_
@@ -909,11 +909,11 @@
 12	del	_	PREP	PREP	_	11	RMOD	_	_
 13	del	_	ART	ART	_	12	ARG	_	_
 14	fondo	_	NOUN	NOUN	_	13	ARG	_	_
-15	dominant	_	VERB	VERB	_	14	RMOD+RELCL+REDUC	_	_
+15	dominante	_	VERB	VERB	_	14	RMOD+RELCL+REDUC	_	_
 16	.	_	PUNCT	PUNCT	_	5	END	_	_
 
-1	della	_	PREP	PREP	_	0	TOP	_	_
-2	della	_	ART	ART	_	1	ARG	_	_
+1	Della	_	PREP	PREP	_	0	TOP	_	_
+2	Della	_	ART	ART	_	1	ARG	_	_
 3	servitù	_	NOUN	NOUN	_	2	ARG	_	_
 4	degli	_	PREP	PREP	_	3	RMOD	_	_
 5	degli	_	ART	ART	_	4	ARG	_	_
@@ -922,11 +922,11 @@
 8	degli	_	PREP	PREP	_	7	COORD2ND+BASE	_	_
 9	degli	_	ART	ART	_	8	ARG	_	_
 10	avanzi	_	NOUN	NOUN	_	9	ARG	_	_
-11	die	_	PREP	PREP	_	10	RMOD	_	_
+11	di	_	PREP	PREP	_	10	RMOD	_	_
 12	acqua	_	NOUN	NOUN	_	11	ARG	_	_
 13	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	usucapione	_	NOUN	NOUN	_	0	TOP	_	_
+1	Usucapione	_	NOUN	NOUN	_	0	TOP	_	_
 2	della	_	PREP	PREP	_	1	RMOD	_	_
 3	della	_	ART	ART	_	2	ARG	_	_
 4	servitù	_	NOUN	NOUN	_	3	ARG	_	_
@@ -936,7 +936,7 @@
 8	scoli	_	NOUN	NOUN	_	7	ARG	_	_
 9	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	si	_	PRON	PRON	_	2	SUBJ/SUBJ+IMPERS	_	_
+1	Si	_	PRON	PRON	_	2	SUBJ/SUBJ+IMPERS	_	_
 2	reputa	_	VERB	VERB	_	0	TOP	_	_
 3	segno	_	NOUN	NOUN	_	2	OBJ	_	_
 4	contrario	_	ADJ	ADJ	_	3	RMOD	_	_
@@ -945,7 +945,7 @@
 7	sul	_	PREP	PREP	_	6	RMOD	_	_
 8	sul	_	ART	ART	_	7	ARG	_	_
 9	cavo	_	NOUN	NOUN	_	8	ARG	_	_
-10	die	_	PREP	PREP	_	9	RMOD	_	_
+10	di	_	PREP	PREP	_	9	RMOD	_	_
 11	opere	_	NOUN	NOUN	_	10	ARG	_	_
 12	costruite	_	VERB	VERB	_	11	RMOD+RELCL+REDUC	_	_
 13	o	_	CONJ	CONJ	_	12	COORD+BASE	_	_
@@ -958,13 +958,13 @@
 20	fondo	_	NOUN	NOUN	_	19	ARG	_	_
 21	in	_	PREP	PREP	_	26	RMOD	_	_
 22	cui	_	PRON	PRON	_	21	ARG	_	_
-23	ile	_	ART	ART	_	26	SUBJ	_	_
+23	il	_	ART	ART	_	26	SUBJ	_	_
 24	cavo	_	NOUN	NOUN	_	23	ARG	_	_
 25	è	_	VERB	VERB	_	26	AUX+PASSIVE	_	_
 26	aperto	_	VERB	VERB	_	20	RMOD+RELCL	_	_
 27	.	_	PUNCT	PUNCT	_	2	END	_	_
 
-1	diritti	_	NOUN	NOUN	_	0	TOP	_	_
+1	Diritti	_	NOUN	NOUN	_	0	TOP	_	_
 2	del	_	PREP	PREP	_	1	RMOD	_	_
 3	del	_	ART	ART	_	2	ARG	_	_
 4	proprietario	_	NOUN	NOUN	_	3	ARG	_	_
@@ -974,7 +974,7 @@
 8	servente	_	VERB	VERB	_	7	RMOD+RELCL+REDUC	_	_
 9	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	la	_	ART	ART	_	7	SUBJ	_	_
+1	La	_	ART	ART	_	7	SUBJ	_	_
 2	servitù	_	NOUN	NOUN	_	1	ARG	_	_
 3	degli	_	PREP	PREP	_	2	RMOD	_	_
 4	degli	_	ART	ART	_	3	ARG	_	_
@@ -988,9 +988,9 @@
 12	del	_	ART	ART	_	11	ARG	_	_
 13	fondo	_	NOUN	NOUN	_	12	ARG	_	_
 14	servente	_	VERB	VERB	_	13	RMOD+RELCL+REDUC	_	_
-15	ile	_	ART	ART	_	14	OBJ	_	_
+15	il	_	ART	ART	_	14	OBJ	_	_
 16	diritto	_	NOUN	NOUN	_	15	ARG	_	_
-17	die	_	PREP	PREP	_	16	RMOD	_	_
+17	di	_	PREP	PREP	_	16	RMOD	_	_
 18	usare	_	VERB	VERB	_	17	ARG	_	_
 19	liberamente	_	ADV	ADV	_	18	RMOD	_	_
 20	l'	_	ART	ART	_	18	OBJ	_	_
@@ -1002,14 +1002,14 @@
 26	suo	_	ADJ	ADJ	_	27	RMOD	_	_
 27	fondo	_	NOUN	NOUN	_	25	ARG	_	_
 28	,	_	PUNCT	PUNCT	_	7	COORD+BASE	_	_
-29	die	_	PREP	PREP	_	28	COORD2ND+BASE	_	_
+29	di	_	PREP	PREP	_	28	COORD2ND+BASE	_	_
 30	cambiare	_	VERB	VERB	_	29	ARG	_	_
 31	la	_	ART	ART	_	30	OBJ	_	_
 32	coltivazione	_	NOUN	NOUN	_	31	ARG	_	_
-33	die	_	PREP	PREP	_	32	RMOD	_	_
+33	di	_	PREP	PREP	_	32	RMOD	_	_
 34	questo	_	PRON	PRON	_	33	ARG	_	_
 35	e	_	CONJ	CONJ	_	33	COORD+BASE	_	_
-36	die	_	PREP	PREP	_	35	COORD2ND+BASE	_	_
+36	di	_	PREP	PREP	_	35	COORD2ND+BASE	_	_
 37	abbandonare	_	VERB	VERB	_	36	ARG	_	_
 38	in	_	PREP	PREP	_	37	RMOD	_	_
 39	tutto	_	PRON	PRON	_	38	ARG	_	_
@@ -1020,7 +1020,7 @@
 44	irrigazione	_	NOUN	NOUN	_	43	ARG	_	_
 45	.	_	PUNCT	PUNCT	_	7	END	_	_
 
-1	quando	_	CONJ	CONJ	_	35	RMOD	_	_
+1	Quando	_	CONJ	CONJ	_	35	RMOD	_	_
 2	l'	_	ART	ART	_	5	SUBJ	_	_
 3	acqua	_	NOUN	NOUN	_	2	ARG	_	_
 4	è	_	VERB	VERB	_	5	AUX+PASSIVE	_	_
@@ -1045,7 +1045,7 @@
 23	o	_	CONJ	CONJ	_	18	COORD+BASE	_	_
 24	ad	_	PREP	PREP	_	23	COORD2ND+BASE	_	_
 25	altri	_	PRON	PRON	_	24	ARG	_	_
-26	die	_	PREP	PREP	_	25	RMOD	_	_
+26	di	_	PREP	PREP	_	25	RMOD	_	_
 27	ciò	_	PRON	PRON	_	26	ARG	_	_
 28	che	_	PRON	PRON	_	30	SUBJ	_	_
 29	ne	_	PRON	PRON	_	30	RMOD	_	_
@@ -1064,7 +1064,7 @@
 42	fondo	_	NOUN	NOUN	_	41	ARG	_	_
 43	.	_	PUNCT	PUNCT	_	35	END	_	_
 
-1	ile	_	ART	ART	_	19	SUBJ	_	_
+1	Il	_	ART	ART	_	19	SUBJ	_	_
 2	proprietario	_	NOUN	NOUN	_	1	ARG	_	_
 3	del	_	PREP	PREP	_	2	RMOD	_	_
 4	del	_	ART	ART	_	3	ARG	_	_
@@ -1098,8 +1098,8 @@
 32	al	_	PREP	PREP	_	31	RMOD	_	_
 33	al	_	ART	ART	_	32	ARG	_	_
 34	fondo	_	NOUN	NOUN	_	33	ARG	_	_
-35	dominant	_	VERB	VERB	_	34	RMOD+RELCL+REDUC	_	_
-36	die	_	PREP	PREP	_	34	RMOD	_	_
+35	dominante	_	VERB	VERB	_	34	RMOD+RELCL+REDUC	_	_
+36	di	_	PREP	PREP	_	34	RMOD	_	_
 37	un	_	ART	ART	_	36	ARG	_	_
 38	corpo	_	NOUN	NOUN	_	37	ARG	_	_
 39	d'	_	PREP	PREP	_	38	RMOD	_	_
@@ -1107,7 +1107,7 @@
 41	viva	_	ADJ	ADJ	_	40	RMOD	_	_
 42	.	_	PUNCT	PUNCT	_	19	END	_	_
 
-1	le	_	ART	ART	_	10	SUBJ	_	_
+1	Le	_	ART	ART	_	10	SUBJ	_	_
 2	quote	_	NOUN	NOUN	_	1	ARG	_	_
 3	dei	_	PREP	PREP	_	2	RMOD	_	_
 4	dei	_	ART	ART	_	3	ARG	_	_
@@ -1120,7 +1120,7 @@
 11	uguali	_	ADJ	ADJ	_	10	PREDCOMPL+SUBJ	_	_
 12	.	_	PUNCT	PUNCT	_	10	END	_	_
 
-1	ile	_	ART	ART	_	19	SUBJ	_	_
+1	Il	_	ART	ART	_	19	SUBJ	_	_
 2	concorso	_	NOUN	NOUN	_	1	ARG	_	_
 3	dei	_	PREP	PREP	_	2	RMOD	_	_
 4	dei	_	ART	ART	_	3	ARG	_	_
@@ -1143,11 +1143,11 @@
 21	proporzione	_	NOUN	NOUN	_	20	ARG	_	_
 22	delle	_	PREP	PREP	_	21	RMOD	_	_
 23	delle	_	ART	ART	_	22	ARG	_	_
-24	rispettiv	_	ADJ	ADJ	_	25	RMOD	_	_
+24	rispettive	_	ADJ	ADJ	_	25	RMOD	_	_
 25	quote	_	NOUN	NOUN	_	23	ARG	_	_
 26	.	_	PUNCT	PUNCT	_	19	END	_	_
 
-1	ciascun	_	ADJ	ADJ	_	3	SUBJ	_	_
+1	Ciascun	_	ADJ	ADJ	_	3	SUBJ	_	_
 2	partecipante	_	NOUN	NOUN	_	1	ARG	_	_
 3	può	_	VERB	VERB	_	0	TOP	_	_
 4	servirsi	_	VERB	VERB	_	3	INDCOMPL	_	_
@@ -1155,7 +1155,7 @@
 6	della	_	PREP	PREP	_	4	INDCOMPL	_	_
 7	della	_	ART	ART	_	6	ARG	_	_
 8	cosa	_	NOUN	NOUN	_	7	ARG	_	_
-9	comun	_	ADJ	ADJ	_	8	RMOD	_	_
+9	comune	_	ADJ	ADJ	_	8	RMOD	_	_
 10	,	_	PUNCT	PUNCT	_	3	SEPARATOR	_	_
 11	purché	_	CONJ	CONJ	_	3	RMOD	_	_
 12	non	_	ADV	ADV	_	14	RMOD	_	_
@@ -1170,49 +1170,49 @@
 21	agli	_	ART	ART	_	20	ARG	_	_
 22	altri	_	ADJ	ADJ	_	23	RMOD	_	_
 23	partecipanti	_	NOUN	NOUN	_	21	ARG	_	_
-24	die	_	PREP	PREP	_	23	RMOD	_	_
+24	di	_	PREP	PREP	_	23	RMOD	_	_
 25	farne	_	VERB	VERB	_	24	ARG	_	_
 26	farne	_	PRON	PRON	_	25	OBJ	_	_
 27	parimenti	_	ADV	ADV	_	25	RMOD	_	_
 28	uso	_	NOUN	NOUN	_	27	ARG	_	_
 29	secondo	_	PREP	PREP	_	25	RMOD	_	_
-30	ile	_	ART	ART	_	29	ARG	_	_
+30	il	_	ART	ART	_	29	ARG	_	_
 31	loro	_	ADJ	ADJ	_	32	RMOD	_	_
 32	diritto	_	NOUN	NOUN	_	30	ARG	_	_
 33	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	a	_	PREP	PREP	_	4	RMOD	_	_
+1	A	_	PREP	PREP	_	4	RMOD	_	_
 2	tal	_	ADJ	ADJ	_	1	ARG	_	_
-3	fin	_	NOUN	NOUN	_	2	ARG	_	_
+3	fine	_	NOUN	NOUN	_	2	ARG	_	_
 4	può	_	VERB	VERB	_	0	TOP	_	_
 5	apportare	_	VERB	VERB	_	4	INDCOMPL	_	_
 6	a	_	PREP	PREP	_	5	RMOD	_	_
-7	propri	_	ADJ	ADJ	_	6	ARG	_	_
+7	proprie	_	ADJ	ADJ	_	6	ARG	_	_
 8	spese	_	NOUN	NOUN	_	7	ARG	_	_
 9	le	_	ART	ART	_	5	OBJ	_	_
 10	modificazioni	_	NOUN	NOUN	_	9	ARG	_	_
-11	necessari	_	ADJ	ADJ	_	10	RMOD	_	_
+11	necessarie	_	ADJ	ADJ	_	10	RMOD	_	_
 12	per	_	PREP	PREP	_	11	ARG	_	_
-13	ile	_	ART	ART	_	12	ARG	_	_
-14	miglior	_	ADJ	ADJ	_	15	RMOD	_	_
+13	il	_	ART	ART	_	12	ARG	_	_
+14	migliore	_	ADJ	ADJ	_	15	RMOD	_	_
 15	godimento	_	NOUN	NOUN	_	13	ARG	_	_
 16	della	_	PREP	PREP	_	15	OBJ	_	_
 17	della	_	ART	ART	_	16	ARG	_	_
 18	cosa	_	NOUN	NOUN	_	17	ARG	_	_
 19	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	ile	_	ART	ART	_	4	SUBJ	_	_
+1	Il	_	ART	ART	_	4	SUBJ	_	_
 2	partecipante	_	NOUN	NOUN	_	1	ARG	_	_
 3	non	_	ADV	ADV	_	4	RMOD	_	_
 4	può	_	VERB	VERB	_	0	TOP	_	_
 5	estendere	_	VERB	VERB	_	4	INDCOMPL	_	_
-6	ile	_	ART	ART	_	5	OBJ	_	_
+6	il	_	ART	ART	_	5	OBJ	_	_
 7	suo	_	ADJ	ADJ	_	8	RMOD	_	_
 8	diritto	_	NOUN	NOUN	_	6	ARG	_	_
 9	sulla	_	PREP	PREP	_	5	RMOD	_	_
 10	sulla	_	ART	ART	_	9	ARG	_	_
 11	cosa	_	NOUN	NOUN	_	10	ARG	_	_
-12	comun	_	ADJ	ADJ	_	11	RMOD	_	_
+12	comune	_	ADJ	ADJ	_	11	RMOD	_	_
 13	in	_	PREP	PREP	_	11	RMOD	_	_
 14	danno	_	NOUN	NOUN	_	13	ARG	_	_
 15	degli	_	PREP	PREP	_	14	RMOD	_	_
@@ -1227,7 +1227,7 @@
 24	idonei	_	ADJ	ADJ	_	23	CONTIN+LOCUT	_	_
 25	a	_	PREP	PREP	_	22	RMOD	_	_
 26	mutare	_	VERB	VERB	_	25	ARG	_	_
-27	ile	_	ART	ART	_	26	OBJ	_	_
+27	il	_	ART	ART	_	26	OBJ	_	_
 28	titolo	_	NOUN	NOUN	_	27	ARG	_	_
 29	del	_	PREP	PREP	_	28	RMOD	_	_
 30	del	_	ART	ART	_	29	ARG	_	_
@@ -1238,7 +1238,7 @@
 35	)	_	PUNCT	PUNCT	_	4	CLOSE+PARENTHETICAL	_	_
 36	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	ciascun	_	ADJ	ADJ	_	3	SUBJ	_	_
+1	Ciascun	_	ADJ	ADJ	_	3	SUBJ	_	_
 2	partecipante	_	NOUN	NOUN	_	1	ARG	_	_
 3	può	_	VERB	VERB	_	0	TOP	_	_
 4	disporre	_	VERB	VERB	_	3	INDCOMPL	_	_
@@ -1250,7 +1250,7 @@
 10	cedere	_	VERB	VERB	_	9	COORD2ND+BASE	_	_
 11	ad	_	PREP	PREP	_	10	INDCOMPL	_	_
 12	altri	_	PRON	PRON	_	11	ARG	_	_
-13	ile	_	ART	ART	_	4	OBJ	_	_
+13	il	_	ART	ART	_	4	OBJ	_	_
 14	godimento	_	NOUN	NOUN	_	13	ARG	_	_
 15	della	_	PREP	PREP	_	14	OBJ	_	_
 16	della	_	ART	ART	_	15	ARG	_	_
@@ -1264,7 +1264,7 @@
 24	quota	_	NOUN	NOUN	_	22	ARG	_	_
 25	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	per	_	PREP	PREP	_	11	RMOD	_	_
+1	Per	_	PREP	PREP	_	11	RMOD	_	_
 2	le	_	ART	ART	_	1	ARG	_	_
 3	ipoteche	_	NOUN	NOUN	_	2	ARG	_	_
 4	costituite	_	VERB	VERB	_	3	RMOD+RELCL+REDUC	_	_
@@ -1277,43 +1277,43 @@
 11	osservano	_	VERB	VERB	_	0	TOP	_	_
 12	le	_	ART	ART	_	11	OBJ	_	_
 13	disposizioni	_	NOUN	NOUN	_	12	ARG	_	_
-14	contenut	_	ADJ	ADJ	_	13	RMOD	_	_
+14	contenute	_	ADJ	ADJ	_	13	RMOD	_	_
 15	nel	_	PREP	PREP	_	13	RMOD	_	_
 16	nel	_	ART	ART	_	15	ARG	_	_
 17	capo	_	NOUN	NOUN	_	16	ARG	_	_
-18	iv	_	ADJ	ADJ	_	17	RMOD	_	_
+18	IV	_	ADJ	ADJ	_	17	RMOD	_	_
 19	del	_	PREP	PREP	_	17	RMOD	_	_
 20	del	_	ART	ART	_	19	ARG	_	_
 21	titolo	_	NOUN	NOUN	_	20	ARG	_	_
-22	iii	_	ADJ	ADJ	_	21	RMOD	_	_
+22	III	_	ADJ	ADJ	_	21	RMOD	_	_
 23	del	_	PREP	PREP	_	21	RMOD	_	_
 24	del	_	ART	ART	_	23	ARG	_	_
 25	libro	_	NOUN	NOUN	_	24	ARG	_	_
-26	vi	_	NOUN	NOUN	_	25	APPOSITION	_	_
+26	VI	_	NOUN	NOUN	_	25	APPOSITION	_	_
 27	(	_	PUNCT	PUNCT	_	11	OPEN+PARENTHETICAL	_	_
 28	<num>	_	NUM	NUM	_	11	APPOSITION	_	_
 29	)	_	PUNCT	PUNCT	_	11	CLOSE+PARENTHETICAL	_	_
 30	.	_	PUNCT	PUNCT	_	11	END	_	_
 
-1	ciascun	_	ADJ	ADJ	_	3	SUBJ	_	_
+1	Ciascun	_	ADJ	ADJ	_	3	SUBJ	_	_
 2	partecipante	_	NOUN	NOUN	_	1	ARG	_	_
 3	deve	_	VERB	VERB	_	0	TOP	_	_
 4	contribuire	_	VERB	VERB	_	3	INDCOMPL	_	_
 5	nelle	_	PREP	PREP	_	4	RMOD	_	_
 6	nelle	_	ART	ART	_	5	ARG	_	_
 7	spese	_	NOUN	NOUN	_	6	ARG	_	_
-8	necessari	_	ADJ	ADJ	_	7	RMOD	_	_
+8	necessarie	_	ADJ	ADJ	_	7	RMOD	_	_
 9	per	_	PREP	PREP	_	8	ARG	_	_
 10	la	_	ART	ART	_	9	ARG	_	_
 11	conservazione	_	NOUN	NOUN	_	10	ARG	_	_
 12	e	_	CONJ	CONJ	_	9	COORD+BASE	_	_
 13	per	_	PREP	PREP	_	12	COORD2ND+BASE	_	_
-14	ile	_	ART	ART	_	13	ARG	_	_
+14	il	_	ART	ART	_	13	ARG	_	_
 15	godimento	_	NOUN	NOUN	_	14	ARG	_	_
 16	della	_	PREP	PREP	_	15	OBJ	_	_
 17	della	_	ART	ART	_	16	ARG	_	_
 18	cosa	_	NOUN	NOUN	_	17	ARG	_	_
-19	comun	_	ADJ	ADJ	_	18	RMOD	_	_
+19	comune	_	ADJ	ADJ	_	18	RMOD	_	_
 20	e	_	CONJ	CONJ	_	13	COORD+BASE	_	_
 21	nelle	_	PREP	PREP	_	20	COORD2ND+BASE	_	_
 22	nelle	_	ART	ART	_	21	ARG	_	_
@@ -1330,7 +1330,7 @@
 33	seguenti	_	ADJ	ADJ	_	32	RMOD	_	_
 34	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	la	_	ART	ART	_	4	SUBJ	_	_
+1	La	_	ART	ART	_	4	SUBJ	_	_
 2	rinunzia	_	NOUN	NOUN	_	1	ARG	_	_
 3	non	_	ADV	ADV	_	4	RMOD	_	_
 4	giova	_	VERB	VERB	_	0	TOP	_	_
@@ -1346,7 +1346,7 @@
 14	spesa	_	NOUN	NOUN	_	13	ARG	_	_
 15	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	ile	_	ART	ART	_	10	OBJ/SUBJ	_	_
+1	Il	_	ART	ART	_	10	OBJ/SUBJ	_	_
 2	cessionario	_	NOUN	NOUN	_	1	ARG	_	_
 3	(	_	PUNCT	PUNCT	_	10	OPEN+PARENTHETICAL	_	_
 4	<num>	_	NUM	NUM	_	10	APPOSITION	_	_
@@ -1364,7 +1364,7 @@
 16	seguenti	_	ADJ	ADJ	_	15	COORD2ND+BASE	_	_
 17	)	_	PUNCT	PUNCT	_	10	CLOSE+PARENTHETICAL	_	_
 18	con	_	PREP	PREP	_	10	RMOD	_	_
-19	ile	_	ART	ART	_	18	ARG	_	_
+19	il	_	ART	ART	_	18	ARG	_	_
 20	cedente	_	VERB	VERB	_	19	ARG	_	_
 21	a	_	PREP	PREP	_	20	INDCOMPL	_	_
 22	pagare	_	VERB	VERB	_	21	ARG	_	_
@@ -1378,12 +1378,12 @@
 30	versati	_	VERB	VERB	_	28	COORD2ND+BASE	_	_
 31	.	_	PUNCT	PUNCT	_	10	END	_	_
 
-1	tutti	_	PREDET	PREDET	_	2	RMOD	_	_
+1	Tutti	_	PREDET	PREDET	_	2	RMOD	_	_
 2	i	_	ART	ART	_	4	SUBJ	_	_
 3	partecipanti	_	NOUN	NOUN	_	2	ARG	_	_
 4	hanno	_	VERB	VERB	_	0	TOP	_	_
 5	diritto	_	NOUN	NOUN	_	4	OBJ*LOCUT	_	_
-6	die	_	PREP	PREP	_	4	INDCOMPL	_	_
+6	di	_	PREP	PREP	_	4	INDCOMPL	_	_
 7	concorrere	_	VERB	VERB	_	6	ARG	_	_
 8	nell'	_	PREP	PREP	_	7	RMOD	_	_
 9	nell'	_	ART	ART	_	8	ARG	_	_
@@ -1391,16 +1391,16 @@
 11	della	_	PREP	PREP	_	10	RMOD	_	_
 12	della	_	ART	ART	_	11	ARG	_	_
 13	cosa	_	NOUN	NOUN	_	12	ARG	_	_
-14	comun	_	ADJ	ADJ	_	13	RMOD	_	_
+14	comune	_	ADJ	ADJ	_	13	RMOD	_	_
 15	(	_	PUNCT	PUNCT	_	13	OPEN+PARENTHETICAL	_	_
 16	<num>	_	NUM	NUM	_	13	APPOSITION	_	_
 17	)	_	PUNCT	PUNCT	_	13	CLOSE+PARENTHETICAL	_	_
 18	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	per	_	PREP	PREP	_	25	RMOD	_	_
+1	Per	_	PREP	PREP	_	25	RMOD	_	_
 2	gli	_	ART	ART	_	1	ARG	_	_
 3	atti	_	NOUN	NOUN	_	2	ARG	_	_
-4	die	_	PREP	PREP	_	3	RMOD	_	_
+4	di	_	PREP	PREP	_	3	RMOD	_	_
 5	ordinaria	_	ADJ	ADJ	_	6	RMOD	_	_
 6	amministrazione	_	NOUN	NOUN	_	4	ARG	_	_
 7	le	_	ART	ART	_	16	SUBJ	_	_
@@ -1414,7 +1414,7 @@
 15	,	_	PUNCT	PUNCT	_	7	COORD+BASE	_	_
 16	calcolata	_	VERB	VERB	_	3	RMOD+RELCL+REDUC	_	_
 17	secondo	_	PREP	PREP	_	16	RMOD	_	_
-18	ile	_	ART	ART	_	17	ARG	_	_
+18	il	_	ART	ART	_	17	ARG	_	_
 19	valore	_	NOUN	NOUN	_	18	ARG	_	_
 20	delle	_	PREP	PREP	_	19	RMOD	_	_
 21	delle	_	ART	ART	_	20	ARG	_	_
@@ -1422,14 +1422,14 @@
 23	quote	_	NOUN	NOUN	_	21	ARG	_	_
 24	,	_	PUNCT	PUNCT	_	25	CLOSE+PARENTHETICAL	_	_
 25	sono	_	VERB	VERB	_	0	TOP	_	_
-26	obbligatori	_	ADJ	ADJ	_	25	PREDCOMPL+SUBJ	_	_
+26	obbligatorie	_	ADJ	ADJ	_	25	PREDCOMPL+SUBJ	_	_
 27	per	_	PREP	PREP	_	25	RMOD	_	_
 28	la	_	ART	ART	_	27	ARG	_	_
 29	minoranza	_	NOUN	NOUN	_	28	ARG	_	_
-30	dissenzient	_	ADJ	ADJ	_	29	RMOD	_	_
+30	dissenziente	_	ADJ	ADJ	_	29	RMOD	_	_
 31	.	_	PUNCT	PUNCT	_	25	END	_	_
 
-1	per	_	PREP	PREP	_	11	RMOD	_	_
+1	Per	_	PREP	PREP	_	11	RMOD	_	_
 2	la	_	ART	ART	_	1	ARG	_	_
 3	validità	_	NOUN	NOUN	_	2	ARG	_	_
 4	delle	_	PREP	PREP	_	3	RMOD	_	_
@@ -1456,7 +1456,7 @@
 25	deliberazione	_	NOUN	NOUN	_	24	ARG	_	_
 26	.	_	PUNCT	PUNCT	_	11	END	_	_
 
-1	se	_	CONJ	CONJ	_	33	RMOD	_	_
+1	Se	_	CONJ	CONJ	_	33	RMOD	_	_
 2	non	_	ADV	ADV	_	4	RMOD	_	_
 3	si	_	PRON	PRON	_	4	SUBJ/SUBJ+IMPERS	_	_
 4	prendono	_	VERB	VERB	_	1	ARG	_	_
@@ -1469,7 +1469,7 @@
 11	della	_	PREP	PREP	_	10	RMOD	_	_
 12	della	_	ART	ART	_	11	ARG	_	_
 13	cosa	_	NOUN	NOUN	_	12	ARG	_	_
-14	comun	_	ADJ	ADJ	_	13	RMOD	_	_
+14	comune	_	ADJ	ADJ	_	13	RMOD	_	_
 15	o	_	CONJ	CONJ	_	14	COORD+BASE	_	_
 16	non	_	ADV	ADV	_	18	RMOD	_	_
 17	si	_	PRON	PRON	_	18	SUBJ/SUBJ+IMPERS	_	_
@@ -1496,11 +1496,11 @@
 38	giudiziaria	_	ADJ	ADJ	_	37	RMOD	_	_
 39	.	_	PUNCT	PUNCT	_	33	END	_	_
 
-1	questa	_	PRON	PRON	_	2	SUBJ	_	_
+1	Questa	_	PRON	PRON	_	2	SUBJ	_	_
 2	provvede	_	VERB	VERB	_	0	TOP	_	_
 3	in	_	PREP	PREP	_	2	RMOD	_	_
 4	camera	_	NOUN	NOUN	_	3	ARG	_	_
-5	die	_	PREP	PREP	_	4	RMOD	_	_
+5	di	_	PREP	PREP	_	4	RMOD	_	_
 6	consiglio	_	NOUN	NOUN	_	5	ARG	_	_
 7	e	_	CONJ	CONJ	_	2	COORD+BASE	_	_
 8	può	_	VERB	VERB	_	7	COORD2ND+BASE	_	_
@@ -1513,17 +1513,17 @@
 15	)	_	PUNCT	PUNCT	_	2	CLOSE+PARENTHETICAL	_	_
 16	.	_	PUNCT	PUNCT	_	2	END	_	_
 
-1	regolamento	_	NOUN	NOUN	_	0	TOP	_	_
+1	Regolamento	_	NOUN	NOUN	_	0	TOP	_	_
 2	della	_	PREP	PREP	_	1	RMOD	_	_
 3	della	_	ART	ART	_	2	ARG	_	_
 4	comunione	_	NOUN	NOUN	_	3	ARG	_	_
 5	e	_	CONJ	CONJ	_	4	COORD+BASE	_	_
 6	nomina	_	NOUN	NOUN	_	5	COORD2ND+BASE	_	_
-7	die	_	PREP	PREP	_	6	RMOD	_	_
+7	di	_	PREP	PREP	_	6	RMOD	_	_
 8	amministratore	_	NOUN	NOUN	_	7	ARG	_	_
 9	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	con	_	PREP	PREP	_	14	RMOD	_	_
+1	Con	_	PREP	PREP	_	14	RMOD	_	_
 2	la	_	ART	ART	_	1	ARG	_	_
 3	maggioranza	_	NOUN	NOUN	_	2	ARG	_	_
 4	calcolata	_	VERB	VERB	_	3	RMOD+RELCL+REDUC	_	_
@@ -1534,7 +1534,7 @@
 9	dall'	_	PREP	PREP	_	8	SUBJ/INDCOMPL	_	_
 10	dall'	_	ART	ART	_	9	ARG	_	_
 11	articolo	_	NOUN	NOUN	_	10	ARG	_	_
-12	precedent	_	ADJ	ADJ	_	11	RMOD	_	_
+12	precedente	_	ADJ	ADJ	_	11	RMOD	_	_
 13	,	_	PUNCT	PUNCT	_	14	SEPARATOR	_	_
 14	può	_	VERB	VERB	_	0	TOP	_	_
 15	essere	_	VERB	VERB	_	16	AUX+PASSIVE	_	_
@@ -1547,17 +1547,17 @@
 22	amministrazione	_	NOUN	NOUN	_	20	ARG	_	_
 23	e	_	CONJ	CONJ	_	19	COORD+BASE	_	_
 24	per	_	PREP	PREP	_	23	COORD2ND+BASE	_	_
-25	ile	_	ART	ART	_	24	ARG	_	_
+25	il	_	ART	ART	_	24	ARG	_	_
 26	miglior	_	ADJ	ADJ	_	27	RMOD	_	_
 27	godimento	_	NOUN	NOUN	_	25	ARG	_	_
 28	della	_	PREP	PREP	_	27	OBJ	_	_
 29	della	_	ART	ART	_	28	ARG	_	_
 30	cosa	_	NOUN	NOUN	_	29	ARG	_	_
-31	comun	_	ADJ	ADJ	_	30	RMOD	_	_
+31	comune	_	ADJ	ADJ	_	30	RMOD	_	_
 32	.	_	PUNCT	PUNCT	_	14	END	_	_
 
-1	nello	_	PREP	PREP	_	7	RMOD	_	_
-2	nello	_	ART	ART	_	1	ARG	_	_
+1	Nello	_	PREP	PREP	_	7	RMOD	_	_
+2	Nello	_	ART	ART	_	1	ARG	_	_
 3	stesso	_	ADJ	ADJ	_	4	RMOD	_	_
 4	modo	_	NOUN	NOUN	_	2	ARG	_	_
 5	l'	_	ART	ART	_	7	SUBJ	_	_
@@ -1589,7 +1589,7 @@
 31	amministratore	_	NOUN	NOUN	_	30	ARG	_	_
 32	.	_	PUNCT	PUNCT	_	7	END	_	_
 
-1	ciascuno	_	PRON	PRON	_	6	SUBJ	_	_
+1	Ciascuno	_	PRON	PRON	_	6	SUBJ	_	_
 2	dei	_	PREP	PREP	_	1	RMOD	_	_
 3	dei	_	ART	ART	_	2	ARG	_	_
 4	partecipanti	_	NOUN	NOUN	_	3	ARG	_	_
@@ -1601,7 +1601,7 @@
 10	all'	_	ART	ART	_	9	ARG	_	_
 11	autorità	_	NOUN	NOUN	_	10	ARG	_	_
 12	giudiziaria	_	ADJ	ADJ	_	11	RMOD	_	_
-13	ile	_	ART	ART	_	6	SUBJ	_	_
+13	il	_	ART	ART	_	6	SUBJ	_	_
 14	regolamento	_	NOUN	NOUN	_	13	ARG	_	_
 15	della	_	PREP	PREP	_	14	OBJ	_	_
 16	della	_	ART	ART	_	15	ARG	_	_
@@ -1616,15 +1616,15 @@
 25	dalla	_	ART	ART	_	24	ARG	_	_
 26	deliberazione	_	NOUN	NOUN	_	25	ARG	_	_
 27	che	_	PRON	PRON	_	30	SUBJ	_	_
-28	le	_	PRON	PRON	_	30	OBJ	_	_
+28	lo	_	PRON	PRON	_	30	OBJ	_	_
 29	ha	_	VERB	VERB	_	30	AUX+TENSE	_	_
 30	approvato	_	VERB	VERB	_	26	RMOD+RELCL	_	_
 31	.	_	PUNCT	PUNCT	_	6	END	_	_
 
-1	per	_	PREP	PREP	_	6	RMOD	_	_
+1	Per	_	PREP	PREP	_	6	RMOD	_	_
 2	gli	_	PRON	PRON	_	1	ARG	_	_
 3	assenti	_	VERB	VERB	_	1	ARG	_	_
-4	ile	_	ART	ART	_	6	SUBJ	_	_
+4	il	_	ART	ART	_	6	SUBJ	_	_
 5	termine	_	NOUN	NOUN	_	4	ARG	_	_
 6	decorre	_	VERB	VERB	_	0	TOP	_	_
 7	dal	_	PREP	PREP	_	6	RMOD	_	_
@@ -1640,7 +1640,7 @@
 17	deliberazione	_	NOUN	NOUN	_	16	ARG	_	_
 18	.	_	PUNCT	PUNCT	_	6	END	_	_
 
-1	l'	_	ART	ART	_	4	SUBJ	_	_
+1	L'	_	ART	ART	_	4	SUBJ	_	_
 2	autorità	_	NOUN	NOUN	_	1	ARG	_	_
 3	giudiziaria	_	ADJ	ADJ	_	2	RMOD	_	_
 4	decide	_	VERB	VERB	_	0	TOP	_	_
@@ -1656,17 +1656,17 @@
 14	)	_	PUNCT	PUNCT	_	4	CLOSE+PARENTHETICAL	_	_
 15	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	decorso	_	VERB	VERB	_	0	TOP	_	_
-2	ile	_	ART	ART	_	1	OBJ	_	_
+1	Decorso	_	VERB	VERB	_	0	TOP	_	_
+2	il	_	ART	ART	_	1	OBJ	_	_
 3	termine	_	NOUN	NOUN	_	2	ARG	_	_
 4	indicato	_	VERB	VERB	_	3	RMOD+RELCL+REDUC	_	_
 5	dal	_	PREP	PREP	_	4	SUBJ/INDCOMPL	_	_
 6	dal	_	ART	ART	_	5	ARG	_	_
 7	comma	_	NOUN	NOUN	_	6	ARG	_	_
-8	precedent	_	ADJ	ADJ	_	7	RMOD	_	_
+8	precedente	_	ADJ	ADJ	_	7	RMOD	_	_
 9	senza	_	PREP	PREP	_	4	RMOD	_	_
 10	che	_	CONJ	CONJ	_	9	ARG	_	_
-11	ile	_	ART	ART	_	15	SUBJ	_	_
+11	il	_	ART	ART	_	15	SUBJ	_	_
 12	regolamento	_	NOUN	NOUN	_	11	ARG	_	_
 13	sia	_	VERB	VERB	_	14	AUX+TENSE	_	_
 14	stato	_	VERB	VERB	_	15	AUX+PASSIVE	_	_
@@ -1689,7 +1689,7 @@
 31	partecipanti	_	NOUN	NOUN	_	29	ARG	_	_
 32	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	innovazioni	_	NOUN	NOUN	_	0	TOP	_	_
+1	Innovazioni	_	NOUN	NOUN	_	0	TOP	_	_
 2	e	_	CONJ	CONJ	_	1	COORD+BASE	_	_
 3	altri	_	ADJ	ADJ	_	2	COORD2ND+BASE	_	_
 4	atti	_	NOUN	NOUN	_	3	ARG	_	_
@@ -1699,7 +1699,7 @@
 8	amministrazione	_	NOUN	NOUN	_	6	ARG	_	_
 9	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	con	_	PREP	PREP	_	24	RMOD	_	_
+1	Con	_	PREP	PREP	_	24	RMOD	_	_
 2	deliberazione	_	NOUN	NOUN	_	1	ARG	_	_
 3	della	_	PREP	PREP	_	2	RMOD	_	_
 4	della	_	ART	ART	_	3	ARG	_	_
@@ -1719,7 +1719,7 @@
 18	della	_	PREP	PREP	_	16	RMOD	_	_
 19	della	_	ART	ART	_	18	ARG	_	_
 20	cosa	_	NOUN	NOUN	_	19	ARG	_	_
-21	comun	_	ADJ	ADJ	_	20	RMOD	_	_
+21	comune	_	ADJ	ADJ	_	20	RMOD	_	_
 22	,	_	PUNCT	PUNCT	_	16	SEPARATOR	_	_
 23	si	_	PRON	PRON	_	24	SUBJ/SUBJ+IMPERS	_	_
 24	possono	_	VERB	VERB	_	0	TOP	_	_
@@ -1727,7 +1727,7 @@
 26	tutte	_	PREDET	PREDET	_	27	RMOD	_	_
 27	le	_	ART	ART	_	25	OBJ	_	_
 28	innovazioni	_	NOUN	NOUN	_	27	ARG	_	_
-29	diret	_	ADJ	ADJ	_	28	RMOD	_	_
+29	dirette	_	ADJ	ADJ	_	28	RMOD	_	_
 30	al	_	PREP	PREP	_	25	RMOD	_	_
 31	al	_	ART	ART	_	30	ARG	_	_
 32	miglioramento	_	NOUN	NOUN	_	31	ARG	_	_
@@ -1736,18 +1736,18 @@
 35	cosa	_	NOUN	NOUN	_	34	ARG	_	_
 36	o	_	CONJ	CONJ	_	30	COORD	_	_
 37	a	_	PREP	PREP	_	36	COORD2ND+BASE	_	_
-38	rende	_	VERB	VERB	_	37	ARG	_	_
-39	rende	_	PRON	PRON	_	38	OBJ	_	_
+38	renderne	_	VERB	VERB	_	37	ARG	_	_
+39	renderne	_	PRON	PRON	_	38	OBJ	_	_
 40	più	_	ADJ	ADJ	_	38	RMOD	_	_
 41	comodo	_	ADJ	ADJ	_	38	RMOD	_	_
 42	o	_	CONJ	CONJ	_	41	COORD+BASE	_	_
 43	redditizio	_	ADJ	ADJ	_	42	COORD2ND+BASE	_	_
-44	ile	_	ART	ART	_	38	OBJ	_	_
+44	il	_	ART	ART	_	38	OBJ	_	_
 45	godimento	_	NOUN	NOUN	_	44	ARG	_	_
 46	.	_	PUNCT	PUNCT	_	24	END	_	_
 
-1	nello	_	PREP	PREP	_	6	RMOD	_	_
-2	nello	_	ART	ART	_	1	ARG	_	_
+1	Nello	_	PREP	PREP	_	6	RMOD	_	_
+2	Nello	_	ART	ART	_	1	ARG	_	_
 3	stesso	_	ADJ	ADJ	_	4	RMOD	_	_
 4	modo	_	NOUN	NOUN	_	2	ARG	_	_
 5	si	_	PRON	PRON	_	6	SUBJ/SUBJ+IMPERS	_	_
@@ -1769,49 +1769,49 @@
 21	all'	_	PREP	PREP	_	20	ARG	_	_
 22	all'	_	ART	ART	_	21	ARG	_	_
 23	interesse	_	NOUN	NOUN	_	22	ARG	_	_
-24	die	_	PREP	PREP	_	23	RMOD	_	_
+24	di	_	PREP	PREP	_	23	RMOD	_	_
 25	alcuno	_	PRON	PRON	_	24	ARG	_	_
 26	dei	_	PREP	PREP	_	25	RMOD	_	_
 27	dei	_	ART	ART	_	26	ARG	_	_
 28	partecipanti	_	NOUN	NOUN	_	27	ARG	_	_
 29	.	_	PUNCT	PUNCT	_	6	END	_	_
 
-1	e'	_	VERB	VERB	_	0	TOP	_	_
+1	E'	_	VERB	VERB	_	0	TOP	_	_
 2	necessario	_	ADJ	ADJ	_	1	PREDCOMPL+SUBJ	_	_
-3	ile	_	ART	ART	_	1	SUBJ	_	_
+3	il	_	ART	ART	_	1	SUBJ	_	_
 4	consenso	_	NOUN	NOUN	_	3	ARG	_	_
-5	die	_	PREP	PREP	_	4	SUBJ	_	_
+5	di	_	PREP	PREP	_	4	SUBJ	_	_
 6	tutti	_	PREDET	PREDET	_	7	RMOD	_	_
 7	i	_	ART	ART	_	5	ARG	_	_
 8	partecipanti	_	NOUN	NOUN	_	7	ARG	_	_
 9	per	_	PREP	PREP	_	8	RMOD	_	_
 10	gli	_	ART	ART	_	9	ARG	_	_
 11	atti	_	NOUN	NOUN	_	10	ARG	_	_
-12	die	_	PREP	PREP	_	11	RMOD	_	_
+12	di	_	PREP	PREP	_	11	RMOD	_	_
 13	alienazione	_	NOUN	NOUN	_	12	ARG	_	_
 14	o	_	CONJ	CONJ	_	12	COORD+BASE	_	_
-15	die	_	PREP	PREP	_	14	COORD2ND+BASE	_	_
+15	di	_	PREP	PREP	_	14	COORD2ND+BASE	_	_
 16	costituzione	_	NOUN	NOUN	_	15	ARG	_	_
-17	die	_	PREP	PREP	_	16	OBJ	_	_
+17	di	_	PREP	PREP	_	16	OBJ	_	_
 18	diritti	_	NOUN	NOUN	_	17	ARG	_	_
 19	reali	_	ADJ	ADJ	_	18	RMOD	_	_
 20	sul	_	PREP	PREP	_	18	RMOD	_	_
 21	sul	_	ART	ART	_	20	ARG	_	_
 22	fondo	_	NOUN	NOUN	_	21	ARG	_	_
-23	comun	_	ADJ	ADJ	_	22	RMOD	_	_
+23	comune	_	ADJ	ADJ	_	22	RMOD	_	_
 24	e	_	CONJ	CONJ	_	15	COORD+BASE	_	_
 25	per	_	PREP	PREP	_	24	COORD2ND+BASE	_	_
 26	le	_	ART	ART	_	25	ARG	_	_
 27	locazioni	_	NOUN	NOUN	_	26	ARG	_	_
-28	die	_	PREP	PREP	_	27	RMOD	_	_
+28	di	_	PREP	PREP	_	27	RMOD	_	_
 29	durata	_	NOUN	NOUN	_	28	ARG	_	_
-30	superior	_	ADJ	ADJ	_	29	RMOD	_	_
+30	superiore	_	ADJ	ADJ	_	29	RMOD	_	_
 31	a	_	PREP	PREP	_	30	ARG	_	_
 32	nove	_	NUM	NUM	_	31	ARG	_	_
 33	anni	_	NOUN	NOUN	_	32	ARG	_	_
 34	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	l'	_	ART	ART	_	3	SUBJ	_	_
+1	L'	_	ART	ART	_	3	SUBJ	_	_
 2	ipoteca	_	NOUN	NOUN	_	1	ARG	_	_
 3	può	_	VERB	VERB	_	0	TOP	_	_
 4	essere	_	VERB	VERB	_	6	AUX+PASSIVE	_	_
@@ -1828,9 +1828,9 @@
 15	,	_	PUNCT	PUNCT	_	3	SEPARATOR	_	_
 16	qualora	_	CONJ	CONJ	_	3	RMOD	_	_
 17	abbia	_	VERB	VERB	_	16	ARG	_	_
-18	le	_	ART	ART	_	17	OBJ	_	_
+18	lo	_	ART	ART	_	17	OBJ	_	_
 19	scopo	_	NOUN	NOUN	_	18	ARG	_	_
-20	die	_	PREP	PREP	_	19	RMOD	_	_
+20	di	_	PREP	PREP	_	19	RMOD	_	_
 21	garantire	_	VERB	VERB	_	20	ARG	_	_
 22	la	_	ART	ART	_	21	OBJ	_	_
 23	restituzione	_	NOUN	NOUN	_	22	ARG	_	_
@@ -1843,21 +1843,21 @@
 30	ricostruzione	_	NOUN	NOUN	_	29	ARG	_	_
 31	o	_	CONJ	CONJ	_	28	COORD+BASE	_	_
 32	per	_	PREP	PREP	_	31	COORD2ND+BASE	_	_
-33	ile	_	ART	ART	_	32	ARG	_	_
+33	il	_	ART	ART	_	32	ARG	_	_
 34	miglioramento	_	NOUN	NOUN	_	33	ARG	_	_
 35	della	_	PREP	PREP	_	34	OBJ	_	_
 36	della	_	ART	ART	_	35	ARG	_	_
 37	cosa	_	NOUN	NOUN	_	36	ARG	_	_
-38	comun	_	ADJ	ADJ	_	37	RMOD	_	_
+38	comune	_	ADJ	ADJ	_	37	RMOD	_	_
 39	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	ciascuno	_	PRON	PRON	_	8	SUBJ	_	_
+1	Ciascuno	_	PRON	PRON	_	8	SUBJ	_	_
 2	dei	_	PREP	PREP	_	1	RMOD	_	_
 3	dei	_	ART	ART	_	2	ARG	_	_
 4	componenti	_	NOUN	NOUN	_	3	ARG	_	_
 5	la	_	ART	ART	_	8	SUBJ	_	_
 6	minoranza	_	NOUN	NOUN	_	5	ARG	_	_
-7	dissenzient	_	ADJ	ADJ	_	6	RMOD	_	_
+7	dissenziente	_	ADJ	ADJ	_	6	RMOD	_	_
 8	può	_	VERB	VERB	_	0	TOP	_	_
 9	impugnare	_	VERB	VERB	_	8	INDCOMPL	_	_
 10	davanti	_	PREP	PREP	_	9	RMOD	_	_
@@ -1872,7 +1872,7 @@
 19	maggioranza	_	NOUN	NOUN	_	18	ARG	_	_
 20	:	_	PUNCT	PUNCT	_	8	END	_	_
 
-1	l'	_	ART	ART	_	3	SUBJ	_	_
+1	L'	_	ART	ART	_	3	SUBJ	_	_
 2	impugnazione	_	NOUN	NOUN	_	1	ARG	_	_
 3	deve	_	VERB	VERB	_	0	TOP	_	_
 4	essere	_	VERB	VERB	_	5	AUX+PASSIVE	_	_
@@ -1880,7 +1880,7 @@
 6	,	_	PUNCT	PUNCT	_	5	OPEN+PARENTHETICAL	_	_
 7	sotto	_	PREP	PREP	_	5	RMOD	_	_
 8	pena	_	NOUN	NOUN	_	7	ARG	_	_
-9	die	_	PREP	PREP	_	8	RMOD	_	_
+9	di	_	PREP	PREP	_	8	RMOD	_	_
 10	decadenza	_	NOUN	NOUN	_	9	ARG	_	_
 11	(	_	PUNCT	PUNCT	_	3	OPEN+PARENTHETICAL	_	_
 12	<num>	_	NUM	NUM	_	3	APPOSITION	_	_
@@ -1896,10 +1896,10 @@
 22	deliberazione	_	NOUN	NOUN	_	21	ARG	_	_
 23	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	per	_	PREP	PREP	_	6	RMOD	_	_
+1	Per	_	PREP	PREP	_	6	RMOD	_	_
 2	gli	_	PRON	PRON	_	1	ARG	_	_
 3	assenti	_	VERB	VERB	_	1	ARG	_	_
-4	ile	_	ART	ART	_	6	SUBJ	_	_
+4	il	_	ART	ART	_	6	SUBJ	_	_
 5	termine	_	NOUN	NOUN	_	4	ARG	_	_
 6	decorre	_	VERB	VERB	_	0	TOP	_	_
 7	dal	_	PREP	PREP	_	6	RMOD	_	_
@@ -1915,7 +1915,7 @@
 17	deliberazione	_	NOUN	NOUN	_	16	ARG	_	_
 18	.	_	PUNCT	PUNCT	_	6	END	_	_
 
-1	in	_	PREP	PREP	_	10	RMOD	_	_
+1	In	_	PREP	PREP	_	10	RMOD	_	_
 2	pendenza	_	NOUN	NOUN	_	1	ARG	_	_
 3	del	_	PREP	PREP	_	2	RMOD	_	_
 4	del	_	ART	ART	_	3	ARG	_	_
@@ -1934,14 +1934,14 @@
 17	deliberato	_	VERB	VERB	_	16	RMOD+RELCL+REDUC	_	_
 18	.	_	PUNCT	PUNCT	_	10	END	_	_
 
-1	ciascuno	_	PRON	PRON	_	5	SUBJ	_	_
+1	Ciascuno	_	PRON	PRON	_	5	SUBJ	_	_
 2	dei	_	PREP	PREP	_	1	RMOD	_	_
 3	dei	_	ART	ART	_	2	ARG	_	_
 4	partecipanti	_	NOUN	NOUN	_	3	ARG	_	_
 5	può	_	VERB	VERB	_	0	TOP	_	_
 6	sempre	_	ADV	ADV	_	5	RMOD	_	_
 7	domandare	_	VERB	VERB	_	5	INDCOMPL	_	_
-8	le	_	ART	ART	_	7	OBJ	_	_
+8	lo	_	ART	ART	_	7	OBJ	_	_
 9	scioglimento	_	NOUN	NOUN	_	8	ARG	_	_
 10	della	_	PREP	PREP	_	9	RMOD	_	_
 11	della	_	ART	ART	_	10	ARG	_	_
@@ -1964,7 +1964,7 @@
 11	ogni	_	ADJ	ADJ	_	10	ARG	_	_
 12	caso	_	NOUN	NOUN	_	11	ARG	_	_
 13	non	_	ADV	ADV	_	14	RMOD	_	_
-14	superior	_	ADJ	ADJ	_	12	RMOD	_	_
+14	superiore	_	ADJ	ADJ	_	12	RMOD	_	_
 15	a	_	PREP	PREP	_	14	ARG	_	_
 16	cinque	_	NUM	NUM	_	15	ARG	_	_
 17	anni	_	NOUN	NOUN	_	16	ARG	_	_
@@ -1985,9 +1985,9 @@
 32	)	_	PUNCT	PUNCT	_	4	CLOSE+PARENTHETICAL	_	_
 33	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	ile	_	ART	ART	_	15	SUBJ	_	_
+1	Il	_	ART	ART	_	15	SUBJ	_	_
 2	patto	_	NOUN	NOUN	_	1	ARG	_	_
-3	die	_	PREP	PREP	_	2	RMOD	_	_
+3	di	_	PREP	PREP	_	2	RMOD	_	_
 4	rimanere	_	VERB	VERB	_	3	ARG	_	_
 5	in	_	PREP	PREP	_	4	RMOD	_	_
 6	comunione	_	NOUN	NOUN	_	5	ARG	_	_
@@ -1995,8 +1995,8 @@
 8	un	_	ART	ART	_	7	ARG	_	_
 9	tempo	_	NOUN	NOUN	_	8	ARG	_	_
 10	non	_	ADV	ADV	_	11	RMOD	_	_
-11	maggior	_	ADJ	ADJ	_	9	RMOD	_	_
-12	die	_	PREP	PREP	_	11	COORD+COMPAR	_	_
+11	maggiore	_	ADJ	ADJ	_	9	RMOD	_	_
+12	di	_	PREP	PREP	_	11	COORD+COMPAR	_	_
 13	dieci	_	NUM	NUM	_	12	ARG	_	_
 14	anni	_	NOUN	NOUN	_	13	ARG	_	_
 15	è	_	VERB	VERB	_	0	TOP	_	_
@@ -2014,15 +2014,15 @@
 27	partecipanti	_	NOUN	NOUN	_	26	ARG	_	_
 28	.	_	PUNCT	PUNCT	_	15	END	_	_
 
-1	se	_	CONJ	CONJ	_	12	RMOD	_	_
+1	Se	_	CONJ	CONJ	_	12	RMOD	_	_
 2	è	_	VERB	VERB	_	3	AUX+TENSE	_	_
 3	stato	_	VERB	VERB	_	4	AUX+PASSIVE	_	_
 4	stipulato	_	VERB	VERB	_	1	ARG	_	_
 5	per	_	PREP	PREP	_	4	RMOD	_	_
 6	un	_	ART	ART	_	5	ARG	_	_
 7	termine	_	NOUN	NOUN	_	6	ARG	_	_
-8	maggior	_	ADJ	ADJ	_	7	RMOD	_	_
-9	die	_	PREP	PREP	_	8	COORD+COMPAR	_	_
+8	maggiore	_	ADJ	ADJ	_	7	RMOD	_	_
+9	di	_	PREP	PREP	_	8	COORD+COMPAR	_	_
 10	questo	_	PRON	PRON	_	9	ARG	_	_
 11	si	_	PRON	PRON	_	12	SUBJ/SUBJ+IMPERS	_	_
 12	riduce	_	VERB	VERB	_	0	TOP	_	_
@@ -2031,10 +2031,10 @@
 15	anni	_	NOUN	NOUN	_	14	ARG	_	_
 16	.	_	PUNCT	PUNCT	_	12	END	_	_
 
-1	se	_	CONJ	CONJ	_	10	RMOD	_	_
+1	Se	_	CONJ	CONJ	_	10	RMOD	_	_
 2	gravi	_	ADJ	ADJ	_	3	RMOD	_	_
 3	circostanze	_	NOUN	NOUN	_	5	SUBJ	_	_
-4	le	_	PRON	PRON	_	5	OBJ	_	_
+4	lo	_	PRON	PRON	_	5	OBJ	_	_
 5	richiedono	_	VERB	VERB	_	1	ARG	_	_
 6	,	_	PUNCT	PUNCT	_	10	SEPARATOR	_	_
 7	l'	_	ART	ART	_	10	SUBJ	_	_
@@ -2042,7 +2042,7 @@
 9	giudiziaria	_	ADJ	ADJ	_	8	RMOD	_	_
 10	può	_	VERB	VERB	_	0	TOP	_	_
 11	ordinare	_	VERB	VERB	_	10	INDCOMPL	_	_
-12	le	_	ART	ART	_	11	OBJ	_	_
+12	lo	_	ART	ART	_	11	OBJ	_	_
 13	scioglimento	_	NOUN	NOUN	_	12	ARG	_	_
 14	della	_	PREP	PREP	_	13	RMOD	_	_
 15	della	_	ART	ART	_	14	ARG	_	_
@@ -2054,7 +2054,7 @@
 21	convenuto	_	VERB	VERB	_	20	RMOD+RELCL+REDUC	_	_
 22	.	_	PUNCT	PUNCT	_	10	END	_	_
 
-1	le	_	ART	ART	_	7	SUBJ	_	_
+1	Lo	_	ART	ART	_	7	SUBJ	_	_
 2	scioglimento	_	NOUN	NOUN	_	1	ARG	_	_
 3	della	_	PREP	PREP	_	2	RMOD	_	_
 4	della	_	ART	ART	_	3	ARG	_	_
@@ -2066,7 +2066,7 @@
 10	quando	_	CONJ	CONJ	_	9	RMOD	_	_
 11	si	_	PRON	PRON	_	12	EMPTYCOMPL	_	_
 12	tratta	_	VERB	VERB	_	10	ARG	_	_
-13	die	_	PREP	PREP	_	12	INDCOMPL	_	_
+13	di	_	PREP	PREP	_	12	INDCOMPL	_	_
 14	cose	_	NOUN	NOUN	_	13	ARG	_	_
 15	che	_	PRON	PRON	_	12	SUBJ	_	_
 16	,	_	PUNCT	PUNCT	_	7	SEPARATOR	_	_
@@ -2074,7 +2074,7 @@
 18	divise	_	VERB	VERB	_	17	ARG	_	_
 19	,	_	PUNCT	PUNCT	_	20	SEPARATOR	_	_
 20	cesserebbero	_	VERB	VERB	_	17	ARG	_	_
-21	die	_	PREP	PREP	_	20	OBJ	_	_
+21	di	_	PREP	PREP	_	20	OBJ	_	_
 22	servire	_	VERB	VERB	_	21	ARG	_	_
 23	all'	_	PREP	PREP	_	22	INDOBJ	_	_
 24	all'	_	ART	ART	_	23	ARG	_	_
@@ -2085,7 +2085,7 @@
 29	destinate	_	VERB	VERB	_	25	RMOD+RELCL	_	_
 30	.	_	PUNCT	PUNCT	_	7	END	_	_
 
-1	i	_	ART	ART	_	10	SUBJ	_	_
+1	I	_	ART	ART	_	10	SUBJ	_	_
 2	creditori	_	NOUN	NOUN	_	1	ARG	_	_
 3	e	_	CONJ	CONJ	_	1	COORD+BASE	_	_
 4	gli	_	ART	ART	_	10	SUBJ	_	_
@@ -2100,7 +2100,7 @@
 13	nella	_	ART	ART	_	12	ARG	_	_
 14	divisione	_	NOUN	NOUN	_	13	ARG	_	_
 15	a	_	PREP	PREP	_	11	RMOD	_	_
-16	propri	_	ADJ	ADJ	_	15	ARG	_	_
+16	proprie	_	ADJ	ADJ	_	15	ARG	_	_
 17	spese	_	NOUN	NOUN	_	16	ARG	_	_
 18	,	_	PUNCT	PUNCT	_	11	SEPARATOR	_	_
 19	ma	_	CONJ	CONJ	_	10	COORD+ADVERS	_	_
@@ -2121,7 +2121,7 @@
 34	opposizione	_	NOUN	NOUN	_	33	ARG	_	_
 35	.	_	PUNCT	PUNCT	_	10	END	_	_
 
-1	la	_	ART	ART	_	3	SUBJ	_	_
+1	La	_	ART	ART	_	3	SUBJ	_	_
 2	divisione	_	NOUN	NOUN	_	1	ARG	_	_
 3	ha	_	VERB	VERB	_	0	TOP	_	_
 4	luogo	_	NOUN	NOUN	_	3	OBJ*LOCUT	_	_
@@ -2138,8 +2138,8 @@
 15	in	_	PREP	PREP	_	14	RMOD	_	_
 16	parti	_	NOUN	NOUN	_	15	ARG	_	_
 17	corrispondenti	_	VERB	VERB	_	16	RMOD+RELCL+REDUC	_	_
-18	al	_	PREP	PREP	_	17	INDOBJ	_	_
-19	al	_	ART	ART	_	18	ARG	_	_
+18	alle	_	PREP	PREP	_	17	INDOBJ	_	_
+19	alle	_	ART	ART	_	18	ARG	_	_
 20	quote	_	NOUN	NOUN	_	19	ARG	_	_
 21	dei	_	PREP	PREP	_	20	RMOD	_	_
 22	dei	_	ART	ART	_	21	ARG	_	_
@@ -2151,7 +2151,7 @@
 28	)	_	PUNCT	PUNCT	_	11	CLOSE+PARENTHETICAL	_	_
 29	.	_	PUNCT	PUNCT	_	11	END	_	_
 
-1	ciascun	_	ADJ	ADJ	_	3	SUBJ	_	_
+1	Ciascun	_	ADJ	ADJ	_	3	SUBJ	_	_
 2	partecipante	_	NOUN	NOUN	_	1	ARG	_	_
 3	può	_	VERB	VERB	_	0	TOP	_	_
 4	esigere	_	VERB	VERB	_	3	INDCOMPL	_	_
@@ -2169,7 +2169,7 @@
 16	per	_	PREP	PREP	_	15	RMOD	_	_
 17	la	_	ART	ART	_	16	ARG	_	_
 18	cosa	_	NOUN	NOUN	_	17	ARG	_	_
-19	comun	_	ADJ	ADJ	_	18	RMOD	_	_
+19	comune	_	ADJ	ADJ	_	18	RMOD	_	_
 20	,	_	PUNCT	PUNCT	_	24	SEPARATOR	_	_
 21	le	_	ART	ART	_	24	OBJ/SUBJ	_	_
 22	quali	_	PRON	PRON	_	21	ARG	_	_
@@ -2183,16 +2183,16 @@
 30	dalla	_	PREP	PREP	_	26	RMOD	_	_
 31	dalla	_	ART	ART	_	30	ARG	_	_
 32	domanda	_	NOUN	NOUN	_	31	ARG	_	_
-33	die	_	PREP	PREP	_	32	OBJ	_	_
+33	di	_	PREP	PREP	_	32	OBJ	_	_
 34	divisione	_	NOUN	NOUN	_	33	ARG	_	_
 35	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	ile	_	ART	ART	_	15	SUBJ	_	_
+1	Il	_	ART	ART	_	15	SUBJ	_	_
 2	partecipante	_	NOUN	NOUN	_	1	ARG	_	_
 3	che	_	PRON	PRON	_	5	SUBJ	_	_
 4	ha	_	VERB	VERB	_	5	AUX+TENSE	_	_
 5	pagato	_	VERB	VERB	_	2	RMOD+RELCL	_	_
-6	ile	_	ART	ART	_	5	OBJ	_	_
+6	il	_	ART	ART	_	5	OBJ	_	_
 7	debito	_	NOUN	NOUN	_	6	ARG	_	_
 8	in	_	ADJ	ADJ	_	7	RMOD	_	_
 9	solido	_	ADJ	ADJ	_	8	CONTIN+LOCUT	_	_
@@ -2207,7 +2207,7 @@
 18	divisione	_	NOUN	NOUN	_	17	ARG	_	_
 19	per	_	PREP	PREP	_	18	RMOD	_	_
 20	una	_	ART	ART	_	19	ARG	_	_
-21	maggior	_	ADJ	ADJ	_	22	RMOD	_	_
+21	maggiore	_	ADJ	ADJ	_	22	RMOD	_	_
 22	quota	_	NOUN	NOUN	_	20	ARG	_	_
 23	corrispondente	_	VERB	VERB	_	22	RMOD+RELCL+REDUC	_	_
 24	al	_	PREP	PREP	_	23	INDOBJ	_	_
@@ -2220,8 +2220,8 @@
 31	condividenti	_	VERB	VERB	_	30	RMOD+RELCL+REDUC	_	_
 32	.	_	PUNCT	PUNCT	_	15	END	_	_
 
-1	alla	_	PREP	PREP	_	9	RMOD	_	_
-2	alla	_	ART	ART	_	1	ARG	_	_
+1	Alla	_	PREP	PREP	_	9	RMOD	_	_
+2	Alla	_	ART	ART	_	1	ARG	_	_
 3	divisione	_	NOUN	NOUN	_	2	ARG	_	_
 4	delle	_	PREP	PREP	_	3	RMOD	_	_
 5	delle	_	ART	ART	_	4	ARG	_	_
@@ -2259,11 +2259,11 @@
 37	stabilite	_	VERB	VERB	_	35	RMOD+RELCL+REDUC	_	_
 38	.	_	PUNCT	PUNCT	_	9	END	_	_
 
-1	sono	_	VERB	VERB	_	0	TOP	_	_
+1	Sono	_	VERB	VERB	_	0	TOP	_	_
 2	oggetto	_	NOUN	NOUN	_	1	PREDCOMPL+SUBJ	_	_
-3	die	_	PREP	PREP	_	2	RMOD	_	_
+3	di	_	PREP	PREP	_	2	RMOD	_	_
 4	proprietà	_	NOUN	NOUN	_	3	ARG	_	_
-5	comun	_	ADJ	ADJ	_	4	RMOD	_	_
+5	comune	_	ADJ	ADJ	_	4	RMOD	_	_
 6	dei	_	PREP	PREP	_	4	RMOD	_	_
 7	dei	_	ART	ART	_	6	ARG	_	_
 8	proprietari	_	NOUN	NOUN	_	7	ARG	_	_
@@ -2273,14 +2273,14 @@
 12	piani	_	NOUN	NOUN	_	10	ARG	_	_
 13	o	_	CONJ	CONJ	_	12	COORD+BASE	_	_
 14	porzioni	_	NOUN	NOUN	_	13	COORD2ND+BASE	_	_
-15	die	_	PREP	PREP	_	14	RMOD	_	_
+15	di	_	PREP	PREP	_	14	RMOD	_	_
 16	piani	_	NOUN	NOUN	_	15	ARG	_	_
-17	die	_	PREP	PREP	_	16	RMOD	_	_
+17	di	_	PREP	PREP	_	16	RMOD	_	_
 18	un	_	ART	ART	_	17	ARG	_	_
 19	edificio	_	NOUN	NOUN	_	18	ARG	_	_
 20	,	_	PUNCT	PUNCT	_	16	SEPARATOR	_	_
 21	se	_	CONJ	CONJ	_	1	RMOD	_	_
-22	ile	_	ART	ART	_	25	SUBJ	_	_
+22	il	_	ART	ART	_	25	SUBJ	_	_
 23	contrario	_	NOUN	NOUN	_	22	ARG	_	_
 24	non	_	ADV	ADV	_	25	RMOD	_	_
 25	risulta	_	VERB	VERB	_	21	ARG	_	_
@@ -2289,7 +2289,7 @@
 28	titolo	_	NOUN	NOUN	_	27	ARG	_	_
 29	:	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	diritti	_	NOUN	NOUN	_	0	TOP	_	_
+1	Diritti	_	NOUN	NOUN	_	0	TOP	_	_
 2	dei	_	PREP	PREP	_	1	RMOD	_	_
 3	dei	_	ART	ART	_	2	ARG	_	_
 4	partecipanti	_	NOUN	NOUN	_	3	ARG	_	_
@@ -2299,9 +2299,9 @@
 8	comuni	_	ADJ	ADJ	_	7	RMOD	_	_
 9	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	ile	_	ART	ART	_	14	SUBJ	_	_
+1	Il	_	ART	ART	_	14	SUBJ	_	_
 2	diritto	_	NOUN	NOUN	_	1	ARG	_	_
-3	die	_	PREP	PREP	_	2	RMOD	_	_
+3	di	_	PREP	PREP	_	2	RMOD	_	_
 4	ciascun	_	ADJ	ADJ	_	3	ARG	_	_
 5	condomino	_	NOUN	NOUN	_	4	ARG	_	_
 6	sulle	_	PREP	PREP	_	2	RMOD	_	_
@@ -2311,7 +2311,7 @@
 10	dall'	_	PREP	PREP	_	9	SUBJ/INDCOMPL	_	_
 11	dall'	_	ART	ART	_	10	ARG	_	_
 12	articolo	_	NOUN	NOUN	_	11	ARG	_	_
-13	precedent	_	ADJ	ADJ	_	12	RMOD	_	_
+13	precedente	_	ADJ	ADJ	_	12	RMOD	_	_
 14	è	_	VERB	VERB	_	0	TOP	_	_
 15	proporzionato	_	ADJ	ADJ	_	14	PREDCOMPL+SUBJ	_	_
 16	al	_	PREP	PREP	_	15	ARG	_	_
@@ -2322,21 +2322,21 @@
 21	piano	_	NOUN	NOUN	_	20	ARG	_	_
 22	o	_	CONJ	CONJ	_	21	COORD+BASE	_	_
 23	porzione	_	NOUN	NOUN	_	22	COORD2ND+BASE	_	_
-24	die	_	PREP	PREP	_	23	RMOD	_	_
+24	di	_	PREP	PREP	_	23	RMOD	_	_
 25	piano	_	NOUN	NOUN	_	24	ARG	_	_
 26	che	_	PRON	PRON	_	28	SUBJ	_	_
 27	gli	_	PRON	PRON	_	28	INDOBJ	_	_
 28	appartiene	_	VERB	VERB	_	25	RMOD+RELCL	_	_
 29	,	_	PUNCT	PUNCT	_	14	SEPARATOR	_	_
 30	se	_	CONJ	CONJ	_	14	RMOD	_	_
-31	ile	_	ART	ART	_	34	SUBJ	_	_
+31	il	_	ART	ART	_	34	SUBJ	_	_
 32	titolo	_	NOUN	NOUN	_	31	ARG	_	_
 33	non	_	ADV	ADV	_	34	RMOD	_	_
 34	dispone	_	VERB	VERB	_	30	ARG	_	_
 35	altrimenti	_	ADV	ADV	_	34	RMOD	_	_
 36	.	_	PUNCT	PUNCT	_	14	END	_	_
 
-1	ile	_	ART	ART	_	4	SUBJ	_	_
+1	Il	_	ART	ART	_	4	SUBJ	_	_
 2	condomino	_	NOUN	NOUN	_	1	ARG	_	_
 3	non	_	ADV	ADV	_	4	RMOD	_	_
 4	può	_	VERB	VERB	_	0	TOP	_	_
@@ -2348,7 +2348,7 @@
 10	sulle	_	PREP	PREP	_	6	RMOD	_	_
 11	sulle	_	ART	ART	_	10	ARG	_	_
 12	cose	_	NOUN	NOUN	_	11	ARG	_	_
-13	anzidet	_	ADJ	ADJ	_	12	RMOD	_	_
+13	anzidette	_	ADJ	ADJ	_	12	RMOD	_	_
 14	,	_	PUNCT	PUNCT	_	4	CLOSE+PARENTHETICAL	_	_
 15	sottrarsi	_	VERB	VERB	_	4	RMOD	_	_
 16	sottrarsi	_	PRON	PRON	_	15	OBJ	_	_
@@ -2367,7 +2367,7 @@
 29	)	_	PUNCT	PUNCT	_	4	CLOSE+PARENTHETICAL	_	_
 30	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	le	_	ART	ART	_	8	SUBJ	_	_
+1	Le	_	ART	ART	_	8	SUBJ	_	_
 2	parti	_	NOUN	NOUN	_	1	ARG	_	_
 3	comuni	_	ADJ	ADJ	_	2	RMOD	_	_
 4	dell'	_	PREP	PREP	_	2	RMOD	_	_
@@ -2375,7 +2375,7 @@
 6	edificio	_	NOUN	NOUN	_	5	ARG	_	_
 7	non	_	ADV	ADV	_	8	RMOD	_	_
 8	sono	_	VERB	VERB	_	0	TOP	_	_
-9	sogget	_	ADJ	ADJ	_	8	PREDCOMPL+SUBJ	_	_
+9	soggette	_	ADJ	ADJ	_	8	PREDCOMPL+SUBJ	_	_
 10	a	_	PREP	PREP	_	9	ARG	_	_
 11	divisione	_	NOUN	NOUN	_	10	ARG	_	_
 12	,	_	PUNCT	PUNCT	_	10	COORD+BASE	_	_
@@ -2401,7 +2401,7 @@
 32	condomino	_	NOUN	NOUN	_	31	ARG	_	_
 33	.	_	PUNCT	PUNCT	_	8	END	_	_
 
-1	i	_	ART	ART	_	17	SUBJ	_	_
+1	I	_	ART	ART	_	17	SUBJ	_	_
 2	condomini	_	NOUN	NOUN	_	1	ARG	_	_
 3	,	_	PUNCT	PUNCT	_	17	OPEN+PARENTHETICAL	_	_
 4	con	_	PREP	PREP	_	17	RMOD	_	_
@@ -2422,7 +2422,7 @@
 19	tutte	_	PREDET	PREDET	_	20	RMOD	_	_
 20	le	_	ART	ART	_	18	OBJ	_	_
 21	innovazioni	_	NOUN	NOUN	_	20	ARG	_	_
-22	diret	_	ADJ	ADJ	_	21	RMOD	_	_
+22	dirette	_	ADJ	ADJ	_	21	RMOD	_	_
 23	al	_	PREP	PREP	_	18	RMOD	_	_
 24	al	_	ART	ART	_	23	ARG	_	_
 25	miglioramento	_	NOUN	NOUN	_	24	ARG	_	_
@@ -2446,7 +2446,7 @@
 43	)	_	PUNCT	PUNCT	_	17	CLOSE+PARENTHETICAL	_	_
 44	.	_	PUNCT	PUNCT	_	17	END	_	_
 
-1	sono	_	VERB	VERB	_	2	AUX+TENSE	_	_
+1	Sono	_	VERB	VERB	_	2	AUX+TENSE	_	_
 2	vietate	_	VERB	VERB	_	0	TOP	_	_
 3	le	_	ART	ART	_	2	OBJ	_	_
 4	innovazioni	_	NOUN	NOUN	_	3	ARG	_	_
@@ -2468,13 +2468,13 @@
 20	che	_	PRON	PRON	_	22	SUBJ	_	_
 21	ne	_	PRON	PRON	_	22	RMOD	_	_
 22	alterino	_	VERB	VERB	_	18	RMOD+RELCL	_	_
-23	ile	_	ART	ART	_	22	OBJ	_	_
+23	il	_	ART	ART	_	22	OBJ	_	_
 24	decoro	_	NOUN	NOUN	_	23	ARG	_	_
 25	architettonico	_	ADJ	ADJ	_	24	RMOD	_	_
 26	o	_	CONJ	CONJ	_	22	COORD+BASE	_	_
 27	che	_	PRON	PRON	_	28	SUBJ	_	_
 28	rendano	_	VERB	VERB	_	26	COORD2ND+BASE	_	_
-29	talun	_	ADJ	ADJ	_	28	OBJ	_	_
+29	talune	_	ADJ	ADJ	_	28	OBJ	_	_
 30	parti	_	NOUN	NOUN	_	29	ARG	_	_
 31	comuni	_	ADJ	ADJ	_	30	RMOD	_	_
 32	dell'	_	PREP	PREP	_	30	RMOD	_	_
@@ -2490,13 +2490,13 @@
 42	godimento	_	NOUN	NOUN	_	41	ARG	_	_
 43	.	_	PUNCT	PUNCT	_	2	END	_	_
 
-1	se	_	CONJ	CONJ	_	13	RMOD	_	_
+1	Se	_	CONJ	CONJ	_	13	RMOD	_	_
 2	l'	_	ART	ART	_	6	SUBJ	_	_
 3	utilizzazione	_	NOUN	NOUN	_	2	ARG	_	_
 4	separata	_	ADJ	ADJ	_	3	RMOD	_	_
 5	non	_	ADV	ADV	_	6	RMOD	_	_
 6	è	_	VERB	VERB	_	1	ARG	_	_
-7	possibil	_	ADJ	ADJ	_	6	PREDCOMPL+SUBJ	_	_
+7	possibile	_	ADJ	ADJ	_	6	PREDCOMPL+SUBJ	_	_
 8	,	_	PUNCT	PUNCT	_	13	SEPARATOR	_	_
 9	l'	_	ART	ART	_	13	SUBJ	_	_
 10	innovazione	_	NOUN	NOUN	_	9	ARG	_	_
@@ -2525,8 +2525,8 @@
 33	spesa	_	NOUN	NOUN	_	32	ARG	_	_
 34	.	_	PUNCT	PUNCT	_	13	END	_	_
 
-1	nel	_	PREP	PREP	_	18	RMOD	_	_
-2	nel	_	ART	ART	_	1	ARG	_	_
+1	Nel	_	PREP	PREP	_	18	RMOD	_	_
+2	Nel	_	ART	ART	_	1	ARG	_	_
 3	caso	_	NOUN	NOUN	_	2	ARG	_	_
 4	previsto	_	VERB	VERB	_	3	RMOD+RELCL+REDUC	_	_
 5	dal	_	PREP	PREP	_	4	SUBJ/INDCOMPL	_	_
@@ -2546,7 +2546,7 @@
 19	tuttavia	_	ADV	ADV	_	18	RMOD	_	_
 20	,	_	PUNCT	PUNCT	_	18	SEPARATOR	_	_
 21	in	_	PREP	PREP	_	18	RMOD	_	_
-22	qualunqu	_	ADJ	ADJ	_	21	ARG	_	_
+22	qualunque	_	ADJ	ADJ	_	21	ARG	_	_
 23	tempo	_	NOUN	NOUN	_	22	ARG	_	_
 24	,	_	PUNCT	PUNCT	_	18	SEPARATOR	_	_
 25	partecipare	_	VERB	VERB	_	24	COORD2ND+BASE	_	_
@@ -2561,29 +2561,29 @@
 34	nelle	_	PREP	PREP	_	33	RMOD	_	_
 35	nelle	_	ART	ART	_	34	ARG	_	_
 36	spese	_	NOUN	NOUN	_	35	ARG	_	_
-37	die	_	PREP	PREP	_	36	RMOD	_	_
+37	di	_	PREP	PREP	_	36	RMOD	_	_
 38	esecuzione	_	NOUN	NOUN	_	37	ARG	_	_
 39	e	_	CONJ	CONJ	_	34	COORD+BASE	_	_
-40	die	_	PREP	PREP	_	39	COORD2ND+BASE	_	_
+40	di	_	PREP	PREP	_	39	COORD2ND+BASE	_	_
 41	manutenzione	_	NOUN	NOUN	_	40	ARG	_	_
 42	dell'	_	PREP	PREP	_	41	RMOD	_	_
 43	dell'	_	ART	ART	_	42	ARG	_	_
 44	opera	_	NOUN	NOUN	_	43	ARG	_	_
 45	.	_	PUNCT	PUNCT	_	18	END	_	_
 
-1	opere	_	NOUN	NOUN	_	0	TOP	_	_
+1	Opere	_	NOUN	NOUN	_	0	TOP	_	_
 2	sulle	_	PREP	PREP	_	1	RMOD	_	_
 3	sulle	_	ART	ART	_	2	ARG	_	_
 4	parti	_	NOUN	NOUN	_	3	ARG	_	_
 5	dell'	_	PREP	PREP	_	4	RMOD	_	_
 6	dell'	_	ART	ART	_	5	ARG	_	_
 7	edificio	_	NOUN	NOUN	_	6	ARG	_	_
-8	die	_	PREP	PREP	_	7	RMOD	_	_
+8	di	_	PREP	PREP	_	7	RMOD	_	_
 9	proprietà	_	NOUN	NOUN	_	8	ARG	_	_
-10	comun	_	ADJ	ADJ	_	9	RMOD	_	_
+10	comune	_	ADJ	ADJ	_	9	RMOD	_	_
 11	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	ciascun	_	ADJ	ADJ	_	16	SUBJ	_	_
+1	Ciascun	_	ADJ	ADJ	_	16	SUBJ	_	_
 2	condomino	_	NOUN	NOUN	_	1	ARG	_	_
 3	,	_	PUNCT	PUNCT	_	16	SEPARATOR	_	_
 4	nel	_	PREP	PREP	_	16	RMOD	_	_
@@ -2591,9 +2591,9 @@
 6	piano	_	NOUN	NOUN	_	5	ARG	_	_
 7	o	_	CONJ	CONJ	_	6	COORD+BASE	_	_
 8	porzione	_	NOUN	NOUN	_	7	COORD2ND+BASE	_	_
-9	die	_	PREP	PREP	_	8	RMOD	_	_
+9	di	_	PREP	PREP	_	8	RMOD	_	_
 10	piano	_	NOUN	NOUN	_	9	ARG	_	_
-11	die	_	PREP	PREP	_	10	RMOD	_	_
+11	di	_	PREP	PREP	_	10	RMOD	_	_
 12	sua	_	ADJ	ADJ	_	11	ARG	_	_
 13	proprietà	_	NOUN	NOUN	_	12	ARG	_	_
 14	,	_	PUNCT	PUNCT	_	16	SEPARATOR	_	_
@@ -2604,8 +2604,8 @@
 19	che	_	PRON	PRON	_	20	SUBJ	_	_
 20	rechino	_	VERB	VERB	_	18	RMOD+RELCL	_	_
 21	danno	_	NOUN	NOUN	_	20	OBJ	_	_
-22	al	_	PREP	PREP	_	20	INDOBJ	_	_
-23	al	_	ART	ART	_	22	ARG	_	_
+22	alle	_	PREP	PREP	_	20	INDOBJ	_	_
+23	alle	_	ART	ART	_	22	ARG	_	_
 24	parti	_	NOUN	NOUN	_	23	ARG	_	_
 25	comuni	_	ADJ	ADJ	_	24	RMOD	_	_
 26	dell'	_	PREP	PREP	_	24	RMOD	_	_
@@ -2613,10 +2613,10 @@
 28	edificio	_	NOUN	NOUN	_	27	ARG	_	_
 29	.	_	PUNCT	PUNCT	_	16	END	_	_
 
-1	se	_	CONJ	CONJ	_	18	RMOD	_	_
+1	Se	_	CONJ	CONJ	_	18	RMOD	_	_
 2	si	_	PRON	PRON	_	3	EMPTYCOMPL	_	_
 3	tratta	_	VERB	VERB	_	1	ARG	_	_
-4	die	_	PREP	PREP	_	3	INDCOMPL	_	_
+4	di	_	PREP	PREP	_	3	INDCOMPL	_	_
 5	cose	_	NOUN	NOUN	_	4	ARG	_	_
 6	destinate	_	VERB	VERB	_	5	RMOD+RELCL+REDUC	_	_
 7	a	_	PREP	PREP	_	6	INDCOMPL	_	_
@@ -2643,7 +2643,7 @@
 28	farne	_	PRON	PRON	_	27	OBJ	_	_
 29	.	_	PUNCT	PUNCT	_	18	END	_	_
 
-1	le	_	ART	ART	_	4	OBJ/SUBJ	_	_
+1	Le	_	ART	ART	_	4	OBJ/SUBJ	_	_
 2	scale	_	NOUN	NOUN	_	1	ARG	_	_
 3	sono	_	VERB	VERB	_	4	AUX+PASSIVE	_	_
 4	mantenute	_	VERB	VERB	_	0	TOP	_	_
@@ -2661,9 +2661,9 @@
 16	servono	_	VERB	VERB	_	13	RMOD+RELCL	_	_
 17	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	al	_	PREP	PREP	_	16	RMOD	_	_
-2	al	_	ART	ART	_	1	ARG	_	_
-3	fin	_	NOUN	NOUN	_	2	ARG	_	_
+1	Al	_	PREP	PREP	_	16	RMOD	_	_
+2	Al	_	ART	ART	_	1	ARG	_	_
+3	fine	_	NOUN	NOUN	_	2	ARG	_	_
 4	del	_	PREP	PREP	_	3	SUBJ	_	_
 5	del	_	ART	ART	_	4	ARG	_	_
 6	concorso	_	NOUN	NOUN	_	5	ARG	_	_
@@ -2705,14 +2705,14 @@
 42	lastrici	_	NOUN	NOUN	_	41	ARG	_	_
 43	.	_	PUNCT	PUNCT	_	16	END	_	_
 
-1	una	_	ART	ART	_	21	OBJ/SUBJ	_	_
+1	Una	_	ART	ART	_	21	OBJ/SUBJ	_	_
 2	truffa	_	NOUN	NOUN	_	1	ARG	_	_
 3	ai	_	PREP	PREP	_	2	RMOD	_	_
 4	ai	_	ART	ART	_	3	ARG	_	_
 5	danni	_	NOUN	NOUN	_	4	ARG	_	_
 6	dell'	_	PREP	PREP	_	5	RMOD	_	_
 7	dell'	_	ART	ART	_	6	ARG	_	_
-8	unione	_	NOUN	NOUN	_	7	ARG	_	_
+8	Unione	_	NOUN	NOUN	_	7	ARG	_	_
 9	europea	_	ADJ	ADJ	_	8	RMOD	_	_
 10	è	_	VERB	VERB	_	11	AUX+TENSE	_	_
 11	stata	_	VERB	VERB	_	12	AUX+PASSIVE	_	_
@@ -2721,29 +2721,29 @@
 14	carabinieri	_	NOUN	NOUN	_	13	ARG	_	_
 15	e	_	CONJ	CONJ	_	14	COORD+BASE	_	_
 16	guardia	_	NOUN	NOUN	_	15	COORD2ND+BASE	_	_
-17	die	_	PREP	PREP	_	16	RMOD	_	_
+17	di	_	PREP	PREP	_	16	RMOD	_	_
 18	finanza	_	NOUN	NOUN	_	17	ARG	_	_
 19	che	_	PRON	PRON	_	21	OBJ/SUBJ	_	_
 20	stanno	_	VERB	VERB	_	21	AUX+PROGRESSIVE	_	_
 21	eseguendo	_	VERB	VERB	_	0	TOP	_	_
 22	in	_	PREP	PREP	_	21	RMOD	_	_
-23	calabria	_	NOUN	NOUN	_	22	ARG	_	_
+23	Calabria	_	NOUN	NOUN	_	22	ARG	_	_
 24	,	_	PUNCT	PUNCT	_	23	COORD+BASE	_	_
-25	lazio	_	NOUN	NOUN	_	24	COORD2ND+BASE	_	_
+25	Lazio	_	NOUN	NOUN	_	24	COORD2ND+BASE	_	_
 26	,	_	PUNCT	PUNCT	_	25	COORD+BASE	_	_
-27	toscana	_	NOUN	NOUN	_	26	COORD2ND+BASE	_	_
+27	Toscana	_	NOUN	NOUN	_	26	COORD2ND+BASE	_	_
 28	e	_	CONJ	CONJ	_	27	COORD+BASE	_	_
-29	piemonte	_	NOUN	NOUN	_	28	COORD2ND+BASE	_	_
+29	Piemonte	_	NOUN	NOUN	_	28	COORD2ND+BASE	_	_
 30	<num>	_	NUM	NUM	_	29	APPOSITION	_	_
 31	ordinanze	_	NOUN	NOUN	_	30	ARG	_	_
-32	die	_	PREP	PREP	_	31	RMOD	_	_
+32	di	_	PREP	PREP	_	31	RMOD	_	_
 33	custodia	_	NOUN	NOUN	_	32	ARG	_	_
-34	cautelar	_	ADJ	ADJ	_	33	RMOD	_	_
+34	cautelare	_	ADJ	ADJ	_	33	RMOD	_	_
 35	in	_	PREP	PREP	_	33	RMOD	_	_
 36	carcere	_	NOUN	NOUN	_	35	ARG	_	_
 37	.	_	PUNCT	PUNCT	_	21	END	_	_
 
-1	tra	_	PREP	PREP	_	4	RMOD	_	_
+1	Tra	_	PREP	PREP	_	4	RMOD	_	_
 2	gli	_	ART	ART	_	1	ARG	_	_
 3	arrestati	_	VERB	VERB	_	2	ARG	_	_
 4	figurano	_	VERB	VERB	_	0	TOP	_	_
@@ -2753,17 +2753,17 @@
 8	regionali	_	ADJ	ADJ	_	7	RMOD	_	_
 9	,	_	PUNCT	PUNCT	_	7	SEPARATOR	_	_
 10	presidenti	_	NOUN	NOUN	_	7	APPOSITION	_	_
-11	die	_	PREP	PREP	_	10	RMOD	_	_
+11	di	_	PREP	PREP	_	10	RMOD	_	_
 12	cooperative	_	NOUN	NOUN	_	11	ARG	_	_
 13	,	_	PUNCT	PUNCT	_	10	COORD+BASE	_	_
 14	amministratori	_	NOUN	NOUN	_	13	COORD2ND+BASE	_	_
 15	e	_	CONJ	CONJ	_	14	COORD+BASE	_	_
 16	soci	_	NOUN	NOUN	_	15	COORD2ND+BASE	_	_
-17	die	_	PREP	PREP	_	16	RMOD	_	_
+17	di	_	PREP	PREP	_	16	RMOD	_	_
 18	organizzazioni	_	NOUN	NOUN	_	17	ARG	_	_
 19	ed	_	CONJ	CONJ	_	18	COORD+BASE	_	_
 20	unioni	_	NOUN	NOUN	_	19	COORD2ND+BASE	_	_
-21	die	_	PREP	PREP	_	20	RMOD	_	_
+21	di	_	PREP	PREP	_	20	RMOD	_	_
 22	produttori	_	NOUN	NOUN	_	21	ARG	_	_
 23	nel	_	PREP	PREP	_	5	RMOD	_	_
 24	nel	_	ART	ART	_	23	ARG	_	_
@@ -2773,7 +2773,7 @@
 28	ortofrutta	_	NOUN	NOUN	_	27	ARG	_	_
 29	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	le	_	ART	ART	_	3	SUBJ	_	_
+1	Le	_	ART	ART	_	3	SUBJ	_	_
 2	accuse	_	NOUN	NOUN	_	1	ARG	_	_
 3	variano	_	VERB	VERB	_	0	TOP	_	_
 4	dall'	_	PREP	PREP	_	3	SUBJ/INDCOMPL	_	_
@@ -2791,7 +2791,7 @@
 16	tentata	_	VERB	VERB	_	15	COORD2ND+BASE	_	_
 17	all'	_	PREP	PREP	_	16	INDCOMPL	_	_
 18	all'	_	ART	ART	_	17	ARG	_	_
-19	ue	_	NOUN	NOUN	_	18	ARG	_	_
+19	Ue	_	NOUN	NOUN	_	18	ARG	_	_
 20	,	_	PUNCT	PUNCT	_	12	SEPARATOR	_	_
 21	corruzione	_	NOUN	NOUN	_	20	COORD2ND+BASE	_	_
 22	e	_	CONJ	CONJ	_	21	COORD+BASE	_	_
@@ -2807,7 +2807,7 @@
 32	privati	_	ADJ	ADJ	_	31	COORD2ND+BASE	_	_
 33	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	ile	_	ART	ART	_	21	SUBJ	_	_
+1	Il	_	ART	ART	_	21	SUBJ	_	_
 2	valore	_	NOUN	NOUN	_	1	ARG	_	_
 3	complessivo	_	ADJ	ADJ	_	2	RMOD	_	_
 4	dei	_	PREP	PREP	_	2	RMOD	_	_
@@ -2815,8 +2815,8 @@
 6	contributi	_	NOUN	NOUN	_	5	ARG	_	_
 7	dell'	_	PREP	PREP	_	6	RMOD	_	_
 8	dell'	_	ART	ART	_	7	ARG	_	_
-9	unione	_	NOUN	NOUN	_	8	ARG	_	_
-10	europea	_	NOUN	NOUN	_	9	CONTIN+DENOM	_	_
+9	Unione	_	NOUN	NOUN	_	8	ARG	_	_
+10	Europea	_	NOUN	NOUN	_	9	CONTIN+DENOM	_	_
 11	percepiti	_	VERB	VERB	_	6	RMOD+RELCL+REDUC	_	_
 12	illegalmente	_	ADV	ADV	_	11	RMOD	_	_
 13	dagli	_	PREP	PREP	_	11	SUBJ/INDCOMPL	_	_
@@ -2831,18 +2831,18 @@
 22	a	_	PREP	PREP	_	21	RMOD	_	_
 23	<num>	_	NUM	NUM	_	22	ARG	_	_
 24	milioni	_	NOUN	NOUN	_	23	ARG	_	_
-25	die	_	PREP	PREP	_	24	RMOD	_	_
+25	di	_	PREP	PREP	_	24	RMOD	_	_
 26	euro	_	NOUN	NOUN	_	25	ARG	_	_
 27	.	_	PUNCT	PUNCT	_	21	END	_	_
 
-1	la	_	ART	ART	_	3	SUBJ	_	_
+1	La	_	ART	ART	_	3	SUBJ	_	_
 2	truffa	_	NOUN	NOUN	_	1	ARG	_	_
 3	riguardava	_	VERB	VERB	_	0	TOP	_	_
 4	i	_	ART	ART	_	3	OBJ	_	_
 5	finanziamenti	_	NOUN	NOUN	_	4	ARG	_	_
 6	erogati	_	VERB	VERB	_	5	RMOD+RELCL+REDUC	_	_
 7	per	_	PREP	PREP	_	6	RMOD	_	_
-8	ile	_	ART	ART	_	7	ARG	_	_
+8	il	_	ART	ART	_	7	ARG	_	_
 9	ritiro	_	NOUN	NOUN	_	8	ARG	_	_
 10	dal	_	PREP	PREP	_	6	RMOD	_	_
 11	dal	_	ART	ART	_	10	ARG	_	_
@@ -2857,7 +2857,7 @@
 20	agricolo	_	ADJ	ADJ	_	19	RMOD	_	_
 21	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	gli	_	ART	ART	_	8	SUBJ	_	_
+1	Gli	_	ART	ART	_	8	SUBJ	_	_
 2	indagati	_	VERB	VERB	_	1	ARG	_	_
 3	,	_	PUNCT	PUNCT	_	2	OPEN+PARENTHETICAL	_	_
 4	secondo	_	PREP	PREP	_	2	RMOD	_	_
@@ -2866,8 +2866,8 @@
 7	,	_	PUNCT	PUNCT	_	8	SEPARATOR	_	_
 8	gonfiavano	_	VERB	VERB	_	0	TOP	_	_
 9	le	_	ART	ART	_	8	OBJ	_	_
-10	ciffer	_	NOUN	NOUN	_	9	ARG	_	_
-11	relativ	_	ADJ	ADJ	_	10	RMOD	_	_
+10	cifre	_	NOUN	NOUN	_	9	ARG	_	_
+11	relative	_	ADJ	ADJ	_	10	RMOD	_	_
 12	alla	_	PREP	PREP	_	11	ARG	_	_
 13	alla	_	ART	ART	_	12	ARG	_	_
 14	produzione	_	NOUN	NOUN	_	13	ARG	_	_
@@ -2888,50 +2888,50 @@
 29	finanziamenti	_	NOUN	NOUN	_	28	ARG	_	_
 30	.	_	PUNCT	PUNCT	_	8	END	_	_
 
-1	le	_	ART	ART	_	4	SUBJ	_	_
+1	Le	_	ART	ART	_	4	SUBJ	_	_
 2	indagini	_	NOUN	NOUN	_	1	ARG	_	_
 3	,	_	PUNCT	PUNCT	_	1	COORD+BASE	_	_
 4	condotte	_	VERB	VERB	_	0	TOP	_	_
 5	dal	_	PREP	PREP	_	4	SUBJ/INDCOMPL	_	_
 6	dal	_	ART	ART	_	5	ARG	_	_
-7	comando	_	NOUN	NOUN	_	6	ARG	_	_
+7	Comando	_	NOUN	NOUN	_	6	ARG	_	_
 8	carabinieri	_	NOUN	NOUN	_	7	APPOSITION	_	_
-9	politich	_	ADJ	ADJ	_	8	RMOD	_	_
-10	agricol	_	ADJ	ADJ	_	8	RMOD	_	_
-11	die	_	PREP	PREP	_	8	RMOD	_	_
-12	roma	_	NOUN	NOUN	_	11	ARG	_	_
+9	politiche	_	ADJ	ADJ	_	8	RMOD	_	_
+10	agricole	_	ADJ	ADJ	_	8	RMOD	_	_
+11	di	_	PREP	PREP	_	8	RMOD	_	_
+12	Roma	_	NOUN	NOUN	_	11	ARG	_	_
 13	e	_	CONJ	CONJ	_	5	COORD+BASE	_	_
 14	dai	_	PREP	PREP	_	13	COORD2ND+BASE	_	_
 15	dai	_	ART	ART	_	14	ARG	_	_
-16	comandi	_	NOUN	NOUN	_	15	ARG	_	_
+16	Comandi	_	NOUN	NOUN	_	15	ARG	_	_
 17	provinciali	_	ADJ	ADJ	_	16	RMOD	_	_
 18	della	_	PREP	PREP	_	16	RMOD	_	_
 19	della	_	ART	ART	_	18	ARG	_	_
-20	guardia	_	NOUN	NOUN	_	19	ARG	_	_
-21	die	_	PREP	PREP	_	20	RMOD	_	_
+20	Guardia	_	NOUN	NOUN	_	19	ARG	_	_
+21	di	_	PREP	PREP	_	20	RMOD	_	_
 22	finanza	_	NOUN	NOUN	_	21	ARG	_	_
-23	die	_	PREP	PREP	_	22	RMOD	_	_
-24	catanzaro	_	NOUN	NOUN	_	23	ARG	_	_
+23	di	_	PREP	PREP	_	22	RMOD	_	_
+24	Catanzaro	_	NOUN	NOUN	_	23	ARG	_	_
 25	e	_	CONJ	CONJ	_	24	COORD+BASE	_	_
-26	reggio	_	NOUN	NOUN	_	25	COORD2ND+BASE	_	_
-27	calabria	_	NOUN	NOUN	_	26	CONTIN+DENOM	_	_
+26	Reggio	_	NOUN	NOUN	_	25	COORD2ND+BASE	_	_
+27	Calabria	_	NOUN	NOUN	_	26	CONTIN+DENOM	_	_
 28	sono	_	VERB	VERB	_	29	AUX+TENSE	_	_
 29	state	_	VERB	VERB	_	30	AUX+PASSIVE	_	_
 30	coordinate	_	VERB	VERB	_	25	COORD2ND+BASE	_	_
 31	dalla	_	PREP	PREP	_	30	SUBJ/INDCOMPL	_	_
 32	dalla	_	ART	ART	_	31	ARG	_	_
-33	procura	_	NOUN	NOUN	_	32	ARG	_	_
+33	Procura	_	NOUN	NOUN	_	32	ARG	_	_
 34	della	_	PREP	PREP	_	33	RMOD	_	_
 35	della	_	ART	ART	_	34	ARG	_	_
-36	repubblica	_	NOUN	NOUN	_	35	ARG	_	_
-37	die	_	PREP	PREP	_	36	RMOD	_	_
-38	palmi	_	NOUN	NOUN	_	37	ARG	_	_
+36	Repubblica	_	NOUN	NOUN	_	35	ARG	_	_
+37	di	_	PREP	PREP	_	36	RMOD	_	_
+38	Palmi	_	NOUN	NOUN	_	37	ARG	_	_
 39	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	carabinieri	_	NOUN	NOUN	_	0	TOP	_	_
+1	Carabinieri	_	NOUN	NOUN	_	0	TOP	_	_
 2	e	_	CONJ	CONJ	_	1	COORD+BASE	_	_
 3	guardia	_	NOUN	NOUN	_	2	COORD2ND+BASE	_	_
-4	die	_	PREP	PREP	_	3	RMOD	_	_
+4	di	_	PREP	PREP	_	3	RMOD	_	_
 5	finanza	_	NOUN	NOUN	_	4	ARG	_	_
 6	stanno	_	VERB	VERB	_	8	AUX+PASSIVE	_	_
 7	anche	_	ADV	ADV	_	8	RMOD	_	_
@@ -2941,16 +2941,16 @@
 11	patrimoniali	_	ADJ	ADJ	_	10	RMOD	_	_
 12	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	si	_	PRON	PRON	_	2	SUBJ/SUBJ+IMPERS	_	_
+1	Si	_	PRON	PRON	_	2	SUBJ/SUBJ+IMPERS	_	_
 2	apre	_	VERB	VERB	_	0	TOP	_	_
-3	ile	_	ART	ART	_	2	OBJ	_	_
+3	il	_	ART	ART	_	2	OBJ	_	_
 4	confronto	_	NOUN	NOUN	_	3	ARG	_	_
 5	sulle	_	PREP	PREP	_	4	RMOD	_	_
 6	sulle	_	ART	ART	_	5	ARG	_	_
 7	pensioni	_	NOUN	NOUN	_	6	ARG	_	_
 8	.	_	PUNCT	PUNCT	_	2	END	_	_
 
-1	a	_	PREP	PREP	_	14	RMOD	_	_
+1	A	_	PREP	PREP	_	14	RMOD	_	_
 2	maggio	_	NOUN	NOUN	_	1	ARG	_	_
 3	,	_	PUNCT	PUNCT	_	14	SEPARATOR	_	_
 4	subito	_	ADV	ADV	_	5	RMOD	_	_
@@ -2961,7 +2961,7 @@
 9	dei	_	ART	ART	_	8	ARG	_	_
 10	lavoratori	_	NOUN	NOUN	_	9	ARG	_	_
 11	,	_	PUNCT	PUNCT	_	14	SEPARATOR	_	_
-12	ile	_	ART	ART	_	14	SUBJ	_	_
+12	il	_	ART	ART	_	14	SUBJ	_	_
 13	governo	_	NOUN	NOUN	_	12	ARG	_	_
 14	presenterà	_	VERB	VERB	_	0	TOP	_	_
 15	al	_	PREP	PREP	_	14	INDOBJ	_	_
@@ -2971,23 +2971,23 @@
 19	del	_	ART	ART	_	18	ARG	_	_
 20	welfare	_	NOUN	NOUN	_	19	ARG	_	_
 21	le	_	ART	ART	_	14	SUBJ	_	_
-22	su	_	ADJ	ADJ	_	23	RMOD	_	_
+22	sue	_	ADJ	ADJ	_	23	RMOD	_	_
 23	proposte	_	NOUN	NOUN	_	21	ARG	_	_
 24	.	_	PUNCT	PUNCT	_	14	END	_	_
 
 1	"	_	PUNCT	PUNCT	_	5	OPEN+QUOTES	_	_
-2	per	_	PREP	PREP	_	5	RMOD	_	_
+2	Per	_	PREP	PREP	_	5	RMOD	_	_
 3	noi	_	PRON	PRON	_	2	ARG	_	_
 4	-	_	PUNCT	PUNCT	_	5	OPEN+PARENTHETICAL	_	_
 5	precisa	_	VERB	VERB	_	0	TOP	_	_
-6	ile	_	ART	ART	_	5	OBJ	_	_
+6	il	_	ART	ART	_	5	OBJ	_	_
 7	ministro	_	NOUN	NOUN	_	6	ARG	_	_
 8	del	_	PREP	PREP	_	7	RMOD	_	_
 9	del	_	ART	ART	_	8	ARG	_	_
-10	lavoro	_	NOUN	NOUN	_	9	ARG	_	_
+10	Lavoro	_	NOUN	NOUN	_	9	ARG	_	_
 11	,	_	PUNCT	PUNCT	_	18	SEPARATOR	_	_
-12	cesare	_	NOUN	NOUN	_	11	COORD2ND+BASE	_	_
-13	damiano	_	NOUN	NOUN	_	12	CONTIN+DENOM	_	_
+12	Cesare	_	NOUN	NOUN	_	11	COORD2ND+BASE	_	_
+13	Damiano	_	NOUN	NOUN	_	12	CONTIN+DENOM	_	_
 14	-	_	PUNCT	PUNCT	_	18	SEPARATOR	_	_
 15	la	_	ART	ART	_	18	OBJ/SUBJ	_	_
 16	priorità	_	NOUN	NOUN	_	15	ARG	_	_
@@ -3013,17 +3013,17 @@
 36	"	_	PUNCT	PUNCT	_	29	CLOSE+QUOTES	_	_
 37	.	_	PUNCT	PUNCT	_	18	END	_	_
 
-1	padoa	_	NOUN	NOUN	_	5	SUBJ	_	_
+1	Padoa	_	NOUN	NOUN	_	5	SUBJ	_	_
 2	-	_	PUNCT	PUNCT	_	1	SEPARATOR	_	_
-3	schioppa	_	NOUN	NOUN	_	5	SUBJ	_	_
+3	Schioppa	_	NOUN	NOUN	_	5	SUBJ	_	_
 4	ha	_	VERB	VERB	_	5	AUX+TENSE	_	_
 5	ottenuto	_	VERB	VERB	_	0	TOP	_	_
-6	ile	_	ART	ART	_	5	OBJ	_	_
+6	il	_	ART	ART	_	5	OBJ	_	_
 7	via	_	NOUN	NOUN	_	6	ARG	_	_
 8	libera	_	NOUN	NOUN	_	7	CONTIN+LOCUT	_	_
 9	dell'	_	PREP	PREP	_	7	RMOD	_	_
 10	dell'	_	ART	ART	_	9	ARG	_	_
-11	ecofin	_	NOUN	NOUN	_	10	ARG	_	_
+11	Ecofin	_	NOUN	NOUN	_	10	ARG	_	_
 12	sul	_	PREP	PREP	_	5	RMOD	_	_
 13	sul	_	ART	ART	_	12	ARG	_	_
 14	suo	_	ADJ	ADJ	_	15	RMOD	_	_
@@ -3047,10 +3047,10 @@
 32	maggioranza	_	NOUN	NOUN	_	31	ARG	_	_
 33	.	_	PUNCT	PUNCT	_	5	END	_	_
 
-1	ieri	_	ADV	ADV	_	6	RMOD	_	_
-2	rifondazione	_	NOUN	NOUN	_	1	ARG	_	_
+1	Ieri	_	ADV	ADV	_	6	RMOD	_	_
+2	Rifondazione	_	NOUN	NOUN	_	1	ARG	_	_
 3	e	_	CONJ	CONJ	_	2	COORD+BASE	_	_
-4	verdi	_	NOUN	NOUN	_	3	COORD2ND+BASE	_	_
+4	Verdi	_	NOUN	NOUN	_	3	COORD2ND+BASE	_	_
 5	sono	_	VERB	VERB	_	6	AUX+PASSIVE	_	_
 6	tornati	_	VERB	VERB	_	0	TOP	_	_
 7	all'	_	PREP	PREP	_	6	INDCOMPL	_	_
@@ -3059,26 +3059,26 @@
 10	.	_	PUNCT	PUNCT	_	6	END	_	_
 
 1	"	_	PUNCT	PUNCT	_	10	OPEN+QUOTES	_	_
-2	una	_	ART	ART	_	6	SUBJ	_	_
+2	Una	_	ART	ART	_	6	SUBJ	_	_
 3	verifica	_	NOUN	NOUN	_	2	ARG	_	_
-4	die	_	PREP	PREP	_	3	RMOD	_	_
+4	di	_	PREP	PREP	_	3	RMOD	_	_
 5	governo	_	NOUN	NOUN	_	4	ARG	_	_
 6	sarebbe	_	VERB	VERB	_	10	RMOD	_	_
 7	impropria	_	ADJ	ADJ	_	6	PREDCOMPL+SUBJ	_	_
 8	-	_	PUNCT	PUNCT	_	10	SEPARATOR	_	_
 9	ha	_	VERB	VERB	_	10	AUX+TENSE	_	_
 10	detto	_	VERB	VERB	_	0	TOP	_	_
-11	ile	_	ART	ART	_	10	OBJ	_	_
+11	il	_	ART	ART	_	10	OBJ	_	_
 12	segretario	_	NOUN	NOUN	_	11	ARG	_	_
 13	del	_	PREP	PREP	_	12	RMOD	_	_
 14	del	_	ART	ART	_	13	ARG	_	_
-15	prc	_	NOUN	NOUN	_	14	ARG	_	_
+15	Prc	_	NOUN	NOUN	_	14	ARG	_	_
 16	,	_	PUNCT	PUNCT	_	12	SEPARATOR	_	_
-17	franco	_	NOUN	NOUN	_	12	APPOSITION	_	_
-18	giordano	_	NOUN	NOUN	_	17	CONTIN+DENOM	_	_
+17	Franco	_	NOUN	NOUN	_	12	APPOSITION	_	_
+18	Giordano	_	NOUN	NOUN	_	17	CONTIN+DENOM	_	_
 19	-	_	PUNCT	PUNCT	_	12	SEPARATOR	_	_
 20	ma	_	CONJ	CONJ	_	11	COORD+ADVERS	_	_
-21	ile	_	ART	ART	_	24	SUBJ	_	_
+21	il	_	ART	ART	_	24	SUBJ	_	_
 22	problema	_	NOUN	NOUN	_	21	ARG	_	_
 23	si	_	PRON	PRON	_	24	SUBJ/SUBJ+IMPERS	_	_
 24	pone	_	VERB	VERB	_	20	COORD2ND+ADVERS	_	_
@@ -3090,19 +3090,19 @@
 30	tesoretto	_	NOUN	NOUN	_	29	ARG	_	_
 31	prospettato	_	VERB	VERB	_	30	RMOD+RELCL+REDUC	_	_
 32	da	_	PREP	PREP	_	31	SUBJ/INDCOMPL	_	_
-33	padoa	_	NOUN	NOUN	_	32	ARG	_	_
+33	Padoa	_	NOUN	NOUN	_	32	ARG	_	_
 34	-	_	PUNCT	PUNCT	_	27	SEPARATOR	_	_
-35	schioppa	_	NOUN	NOUN	_	36	SUBJ	_	_
+35	Schioppa	_	NOUN	NOUN	_	36	SUBJ	_	_
 36	è	_	VERB	VERB	_	25	ARG	_	_
-37	insoddisfacent	_	ADJ	ADJ	_	36	PREDCOMPL+SUBJ	_	_
+37	insoddisfacente	_	ADJ	ADJ	_	36	PREDCOMPL+SUBJ	_	_
 38	"	_	PUNCT	PUNCT	_	10	CLOSE+QUOTES	_	_
 39	.	_	PUNCT	PUNCT	_	10	END	_	_
 
-1	da	_	PREP	PREP	_	3	RMOD	_	_
+1	Da	_	PREP	PREP	_	3	RMOD	_	_
 2	qui	_	ADV	ADV	_	1	ARG	_	_
 3	l'	_	ART	ART	_	0	TOP	_	_
 4	annuncio	_	NOUN	NOUN	_	3	ARG	_	_
-5	die	_	PREP	PREP	_	4	RMOD	_	_
+5	di	_	PREP	PREP	_	4	RMOD	_	_
 6	"	_	PUNCT	PUNCT	_	5	ARG	_	_
 7	un	_	ART	ART	_	4	APPOSITION	_	_
 8	confronto	_	NOUN	NOUN	_	7	ARG	_	_
@@ -3118,23 +3118,23 @@
 18	del	_	PREP	PREP	_	17	RMOD	_	_
 19	del	_	ART	ART	_	18	ARG	_	_
 20	risarcimento	_	NOUN	NOUN	_	19	ARG	_	_
-21	social	_	ADJ	ADJ	_	20	RMOD	_	_
+21	sociale	_	ADJ	ADJ	_	20	RMOD	_	_
 22	"	_	PUNCT	PUNCT	_	7	CLOSE+QUOTES	_	_
 23	.	_	PUNCT	PUNCT	_	7	END	_	_
 
-1	pur	_	ADV	ADV	_	2	RMOD	_	_
+1	Pure	_	ADV	ADV	_	2	RMOD	_	_
 2	i	_	ART	ART	_	15	SUBJ	_	_
-3	verdi	_	NOUN	NOUN	_	2	ARG	_	_
+3	Verdi	_	NOUN	NOUN	_	2	ARG	_	_
 4	,	_	PUNCT	PUNCT	_	15	OPEN+PARENTHETICAL	_	_
 5	con	_	PREP	PREP	_	15	RMOD	_	_
-6	ile	_	ART	ART	_	5	ARG	_	_
+6	il	_	ART	ART	_	5	ARG	_	_
 7	capogruppo	_	NOUN	NOUN	_	6	ARG	_	_
 8	alla	_	PREP	PREP	_	7	RMOD	_	_
 9	alla	_	ART	ART	_	8	ARG	_	_
-10	camera	_	NOUN	NOUN	_	9	ARG	_	_
+10	Camera	_	NOUN	NOUN	_	9	ARG	_	_
 11	,	_	PUNCT	PUNCT	_	7	SEPARATOR	_	_
-12	angelo	_	NOUN	NOUN	_	7	APPOSITION	_	_
-13	bonelli	_	NOUN	NOUN	_	12	CONTIN+DENOM	_	_
+12	Angelo	_	NOUN	NOUN	_	7	APPOSITION	_	_
+13	Bonelli	_	NOUN	NOUN	_	12	CONTIN+DENOM	_	_
 14	,	_	PUNCT	PUNCT	_	15	SEPARATOR	_	_
 15	chiedono	_	VERB	VERB	_	0	TOP	_	_
 16	un	_	ART	ART	_	15	OBJ	_	_
@@ -3146,12 +3146,12 @@
 22	essere	_	VERB	VERB	_	21	INDCOMPL	_	_
 23	certo	_	ADV	ADV	_	22	RMOD	_	_
 24	l'	_	ART	ART	_	22	OBJ	_	_
-25	ue	_	NOUN	NOUN	_	24	ARG	_	_
+25	Ue	_	NOUN	NOUN	_	24	ARG	_	_
 26	a	_	PREP	PREP	_	22	INDCOMPL	_	_
 27	condizionare	_	VERB	VERB	_	26	ARG	_	_
 28	le	_	ART	ART	_	27	OBJ	_	_
 29	politiche	_	NOUN	NOUN	_	28	ARG	_	_
-30	economich	_	ADJ	ADJ	_	29	RMOD	_	_
+30	economiche	_	ADJ	ADJ	_	29	RMOD	_	_
 31	,	_	PUNCT	PUNCT	_	21	COORD+BASE	_	_
 32	sociali	_	ADJ	ADJ	_	31	COORD2ND+BASE	_	_
 33	,	_	PUNCT	PUNCT	_	21	COORD+BASE	_	_
@@ -3163,7 +3163,7 @@
 39	"	_	PUNCT	PUNCT	_	21	CLOSE+QUOTES	_	_
 40	.	_	PUNCT	PUNCT	_	21	END	_	_
 
-1	a	_	PREP	PREP	_	8	RMOD	_	_
+1	A	_	PREP	PREP	_	8	RMOD	_	_
 2	quel	_	ADJ	ADJ	_	1	ARG	_	_
 3	punto	_	NOUN	NOUN	_	2	ARG	_	_
 4	le	_	ART	ART	_	8	SUBJ	_	_
@@ -3194,12 +3194,12 @@
 29	)	_	PUNCT	PUNCT	_	8	CLOSE+PARENTHETICAL	_	_
 30	.	_	PUNCT	PUNCT	_	8	END	_	_
 
-1	sul	_	PREP	PREP	_	11	RMOD	_	_
-2	sul	_	ART	ART	_	1	ARG	_	_
+1	Sul	_	PREP	PREP	_	11	RMOD	_	_
+2	Sul	_	ART	ART	_	1	ARG	_	_
 3	tappeto	_	NOUN	NOUN	_	2	ARG	_	_
 4	l'	_	ART	ART	_	11	SUBJ	_	_
 5	ipotesi	_	NOUN	NOUN	_	4	ARG	_	_
-6	die	_	PREP	PREP	_	5	RMOD	_	_
+6	di	_	PREP	PREP	_	5	RMOD	_	_
 7	un	_	ART	ART	_	6	ARG	_	_
 8	decreto	_	NOUN	NOUN	_	7	ARG	_	_
 9	legge	_	NOUN	NOUN	_	8	APPOSITION	_	_
@@ -3209,14 +3209,14 @@
 13	priorità	_	NOUN	NOUN	_	12	ARG	_	_
 14	indicate	_	VERB	VERB	_	13	RMOD+RELCL+REDUC	_	_
 15	da	_	PREP	PREP	_	14	SUBJ/INDCOMPL	_	_
-16	damiano	_	NOUN	NOUN	_	15	ARG	_	_
+16	Damiano	_	NOUN	NOUN	_	15	ARG	_	_
 17	.	_	PUNCT	PUNCT	_	11	END	_	_
 
-1	l'	_	ART	ART	_	10	OBJ/SUBJ	_	_
+1	L'	_	ART	ART	_	10	OBJ/SUBJ	_	_
 2	intervento	_	NOUN	NOUN	_	1	ARG	_	_
 3	sull'	_	PREP	PREP	_	2	RMOD	_	_
 4	sull'	_	ART	ART	_	3	ARG	_	_
-5	ici	_	NOUN	NOUN	_	4	ARG	_	_
+5	Ici	_	NOUN	NOUN	_	4	ARG	_	_
 6	,	_	PUNCT	PUNCT	_	10	OPEN+PARENTHETICAL	_	_
 7	invece	_	ADV	ADV	_	10	RMOD	_	_
 8	,	_	PUNCT	PUNCT	_	10	CLOSE+PARENTHETICAL	_	_
@@ -3226,7 +3226,7 @@
 12	slittare	_	VERB	VERB	_	11	ARG	_	_
 13	.	_	PUNCT	PUNCT	_	10	END	_	_
 
-1	per	_	PREP	PREP	_	18	RMOD	_	_
+1	Per	_	PREP	PREP	_	18	RMOD	_	_
 2	aumentare	_	VERB	VERB	_	1	ARG	_	_
 3	le	_	ART	ART	_	2	OBJ	_	_
 4	pensioni	_	NOUN	NOUN	_	3	ARG	_	_
@@ -3234,14 +3234,14 @@
 6	(	_	PUNCT	PUNCT	_	8	OPEN+PARENTHETICAL	_	_
 7	non	_	ADV	ADV	_	8	RMOD	_	_
 8	quelle	_	PRON	PRON	_	18	RMOD	_	_
-9	minim	_	ADJ	ADJ	_	8	RMOD	_	_
+9	minime	_	ADJ	ADJ	_	8	RMOD	_	_
 10	che	_	PRON	PRON	_	11	SUBJ	_	_
 11	hanno	_	VERB	VERB	_	8	RMOD+RELCL	_	_
 12	natura	_	NOUN	NOUN	_	11	OBJ	_	_
-13	assistenzial	_	ADJ	ADJ	_	12	RMOD	_	_
+13	assistenziale	_	ADJ	ADJ	_	12	RMOD	_	_
 14	e	_	CONJ	CONJ	_	13	COORD+BASE	_	_
 15	non	_	ADV	ADV	_	16	RMOD	_	_
-16	previdenzial	_	ADJ	ADJ	_	14	COORD2ND+BASE	_	_
+16	previdenziale	_	ADJ	ADJ	_	14	COORD2ND+BASE	_	_
 17	)	_	PUNCT	PUNCT	_	8	CLOSE+PARENTHETICAL	_	_
 18	potrebbero	_	VERB	VERB	_	0	TOP	_	_
 19	essere	_	VERB	VERB	_	20	AUX+PASSIVE	_	_
@@ -3252,7 +3252,7 @@
 24	miliardi	_	NOUN	NOUN	_	23	ARG	_	_
 25	.	_	PUNCT	PUNCT	_	18	END	_	_
 
-1	ed	_	CONJ	CONJ	_	0	TOP	_	_
+1	Ed	_	CONJ	CONJ	_	0	TOP	_	_
 2	è	_	VERB	VERB	_	1	COORD2ND+BASE	_	_
 3	chiaro	_	ADJ	ADJ	_	2	PREDCOMPL+SUBJ	_	_
 4	che	_	CONJ	CONJ	_	2	SUBJ	_	_
@@ -3272,7 +3272,7 @@
 18	beneficiari	_	NOUN	NOUN	_	17	ARG	_	_
 19	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	un	_	ART	ART	_	4	SUBJ	_	_
+1	Un	_	ART	ART	_	4	SUBJ	_	_
 2	altro	_	ADJ	ADJ	_	3	RMOD	_	_
 3	miliardo	_	NOUN	NOUN	_	1	ARG	_	_
 4	servirà	_	VERB	VERB	_	0	TOP	_	_
@@ -3280,11 +3280,11 @@
 6	innalzare	_	VERB	VERB	_	5	ARG	_	_
 7	l'	_	ART	ART	_	6	OBJ	_	_
 8	indennità	_	NOUN	NOUN	_	7	ARG	_	_
-9	die	_	PREP	PREP	_	8	RMOD	_	_
+9	di	_	PREP	PREP	_	8	RMOD	_	_
 10	disoccupazione	_	NOUN	NOUN	_	9	ARG	_	_
 11	dall'	_	PREP	PREP	_	8	RMOD	_	_
 12	dall'	_	ART	ART	_	11	ARG	_	_
-13	attual	_	ADJ	ADJ	_	14	RMOD	_	_
+13	attuale	_	ADJ	ADJ	_	14	RMOD	_	_
 14	<num>	_	NUM	NUM	_	12	ARG	_	_
 15	per	_	PREP	PREP	_	14	ARG	_	_
 16	cento	_	NUM	NUM	_	15	ARG	_	_
@@ -3299,7 +3299,7 @@
 25	cento	_	NUM	NUM	_	24	ARG	_	_
 26	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	ile	_	ART	ART	_	11	SUBJ	_	_
+1	Il	_	ART	ART	_	11	SUBJ	_	_
 2	restante	_	VERB	VERB	_	1	ARG	_	_
 3	-	_	PUNCT	PUNCT	_	11	OPEN+PARENTHETICAL	_	_
 4	nel	_	PREP	PREP	_	11	RMOD	_	_
@@ -3318,17 +3318,17 @@
 17	con	_	PREP	PREP	_	14	RMOD	_	_
 18	la	_	ART	ART	_	17	ARG	_	_
 19	leva	_	NOUN	NOUN	_	18	ARG	_	_
-20	fiscal	_	ADJ	ADJ	_	19	RMOD	_	_
+20	fiscale	_	ADJ	ADJ	_	19	RMOD	_	_
 21	)	_	PUNCT	PUNCT	_	14	CLOSE+PARENTHETICAL	_	_
 22	la	_	ART	ART	_	14	OBJ	_	_
 23	contrattazione	_	NOUN	NOUN	_	22	ARG	_	_
-24	die	_	PREP	PREP	_	23	RMOD	_	_
+24	di	_	PREP	PREP	_	23	RMOD	_	_
 25	secondo	_	PREP	PREP	_	24	CONTIN+PREP	_	_
 26	livello	_	NOUN	NOUN	_	25	ARG	_	_
 27	(	_	PUNCT	PUNCT	_	26	OPEN+PARENTHETICAL	_	_
-28	aziendal	_	ADJ	ADJ	_	26	RMOD	_	_
+28	aziendale	_	ADJ	ADJ	_	26	RMOD	_	_
 29	o	_	CONJ	CONJ	_	28	COORD+BASE	_	_
-30	territorial	_	ADJ	ADJ	_	29	COORD2ND+BASE	_	_
+30	territoriale	_	ADJ	ADJ	_	29	COORD2ND+BASE	_	_
 31	)	_	PUNCT	PUNCT	_	26	CLOSE+PARENTHETICAL	_	_
 32	,	_	PUNCT	PUNCT	_	26	SEPARATOR	_	_
 33	legata	_	VERB	VERB	_	23	RMOD+RELCL+REDUC	_	_
@@ -3337,15 +3337,15 @@
 36	produttività	_	NOUN	NOUN	_	35	ARG	_	_
 37	.	_	PUNCT	PUNCT	_	11	END	_	_
 
-1	l'	_	ART	ART	_	4	SUBJ	_	_
+1	L'	_	ART	ART	_	4	SUBJ	_	_
 2	approccio	_	NOUN	NOUN	_	1	ARG	_	_
-3	sov	_	ADJ	ADJ	_	2	RMOD	_	_
+3	soft	_	ADJ	ADJ	_	2	RMOD	_	_
 4	dovrebbe	_	VERB	VERB	_	0	TOP	_	_
 5	portare	_	VERB	VERB	_	4	INDCOMPL	_	_
 6	anche	_	ADV	ADV	_	7	RMOD	_	_
 7	a	_	PREP	PREP	_	5	INDCOMPL	_	_
 8	sostituire	_	VERB	VERB	_	7	ARG	_	_
-9	le	_	ART	ART	_	8	OBJ	_	_
+9	lo	_	ART	ART	_	8	OBJ	_	_
 10	scalone	_	NOUN	NOUN	_	9	ARG	_	_
 11	che	_	PRON	PRON	_	19	SUBJ	_	_
 12	dal	_	PREP	PREP	_	19	RMOD	_	_
@@ -3358,11 +3358,11 @@
 19	innalza	_	VERB	VERB	_	10	RMOD+RELCL	_	_
 20	l'	_	ART	ART	_	19	OBJ	_	_
 21	età	_	NOUN	NOUN	_	20	ARG	_	_
-22	minimum	_	ADJ	ADJ	_	21	RMOD	_	_
+22	minima	_	ADJ	ADJ	_	21	RMOD	_	_
 23	per	_	PREP	PREP	_	19	RMOD	_	_
 24	la	_	ART	ART	_	23	ARG	_	_
 25	pensione	_	NOUN	NOUN	_	24	ARG	_	_
-26	die	_	PREP	PREP	_	25	RMOD	_	_
+26	di	_	PREP	PREP	_	25	RMOD	_	_
 27	anzianità	_	NOUN	NOUN	_	26	ARG	_	_
 28	dagli	_	PREP	PREP	_	25	RMOD	_	_
 29	dagli	_	ART	ART	_	28	ARG	_	_
@@ -3373,7 +3373,7 @@
 34	<num>	_	NUM	NUM	_	33	ARG	_	_
 35	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	arriveranno	_	VERB	VERB	_	0	TOP	_	_
+1	Arriveranno	_	VERB	VERB	_	0	TOP	_	_
 2	alcuni	_	ADJ	ADJ	_	1	SUBJ	_	_
 3	scalini	_	NOUN	NOUN	_	2	ARG	_	_
 4	che	_	PRON	PRON	_	12	SUBJ	_	_
@@ -3388,14 +3388,14 @@
 13	l'	_	ART	ART	_	12	OBJ	_	_
 14	età	_	NOUN	NOUN	_	13	ARG	_	_
 15	o	_	CONJ	CONJ	_	12	COORD+BASE	_	_
-16	die	_	PREP	PREP	_	15	COORD2ND+BASE	_	_
+16	di	_	PREP	PREP	_	15	COORD2ND+BASE	_	_
 17	un	_	ART	ART	_	16	ARG	_	_
 18	anno	_	NOUN	NOUN	_	17	ARG	_	_
 19	ogni	_	ADJ	ADJ	_	18	RMOD	_	_
 20	due	_	NUM	NUM	_	16	ARG	_	_
 21	,	_	PUNCT	PUNCT	_	20	SEPARATOR	_	_
 22	oppure	_	CONJ	CONJ	_	16	COORD+CORRELAT	_	_
-23	die	_	PREP	PREP	_	22	COORD2ND+BASE	_	_
+23	di	_	PREP	PREP	_	22	COORD2ND+BASE	_	_
 24	un	_	ART	ART	_	23	ARG	_	_
 25	anno	_	NOUN	NOUN	_	24	ARG	_	_
 26	ogni	_	ADJ	ADJ	_	25	RMOD	_	_
@@ -3403,19 +3403,19 @@
 28	mesi	_	NOUN	NOUN	_	26	ARG	_	_
 29	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	tende	_	VERB	VERB	_	0	TOP	_	_
+1	Tende	_	VERB	VERB	_	0	TOP	_	_
 2	a	_	PREP	PREP	_	1	INDCOMPL	_	_
 3	stemperarsi	_	VERB	VERB	_	2	ARG	_	_
 4	stemperarsi	_	PRON	PRON	_	3	OBJ	_	_
 5	,	_	PUNCT	PUNCT	_	1	OPEN+PARENTHETICAL	_	_
 6	infine	_	ADV	ADV	_	1	RMOD	_	_
 7	,	_	PUNCT	PUNCT	_	1	CLOSE+PARENTHETICAL	_	_
-8	le	_	ART	ART	_	1	OBJ	_	_
+8	lo	_	ART	ART	_	1	OBJ	_	_
 9	scontro	_	NOUN	NOUN	_	8	ARG	_	_
 10	sui	_	PREP	PREP	_	9	RMOD	_	_
 11	sui	_	ART	ART	_	10	ARG	_	_
 12	coefficienti	_	NOUN	NOUN	_	11	ARG	_	_
-13	die	_	PREP	PREP	_	12	RMOD	_	_
+13	di	_	PREP	PREP	_	12	RMOD	_	_
 14	trasformazione	_	NOUN	NOUN	_	13	ARG	_	_
 15	:	_	PUNCT	PUNCT	_	1	END	_	_
 
@@ -3431,10 +3431,10 @@
 10	rafforza	_	VERB	VERB	_	8	COORD2ND+BASE	_	_
 11	la	_	ART	ART	_	10	OBJ	_	_
 12	tesi	_	NOUN	NOUN	_	11	ARG	_	_
-13	die	_	PREP	PREP	_	12	RMOD	_	_
+13	di	_	PREP	PREP	_	12	RMOD	_	_
 14	chi	_	PRON	PRON	_	13	ARG	_	_
 15	propone	_	VERB	VERB	_	14	RMOD+RELCL	_	_
-16	die	_	PREP	PREP	_	15	OBJ	_	_
+16	di	_	PREP	PREP	_	15	OBJ	_	_
 17	congelare	_	VERB	VERB	_	16	ARG	_	_
 18	per	_	PREP	PREP	_	17	RMOD	_	_
 19	un	_	ADV	ADV	_	18	ARG	_	_
@@ -3443,25 +3443,25 @@
 22	argomento	_	NOUN	NOUN	_	21	ARG	_	_
 23	.	_	PUNCT	PUNCT	_	10	END	_	_
 
-1	ile	_	ART	ART	_	4	SUBJ	_	_
+1	Il	_	ART	ART	_	4	SUBJ	_	_
 2	conservatore	_	NOUN	NOUN	_	1	ARG	_	_
-3	sarkozy	_	NOUN	NOUN	_	2	APPOSITION	_	_
+3	Sarkozy	_	NOUN	NOUN	_	2	APPOSITION	_	_
 4	riparte	_	VERB	VERB	_	0	TOP	_	_
 5	da	_	PREP	PREP	_	4	RMOD	_	_
 6	questa	_	ADJ	ADJ	_	5	ARG	_	_
-7	serum	_	NOUN	NOUN	_	6	ARG	_	_
+7	sera	_	NOUN	NOUN	_	6	ARG	_	_
 8	da	_	PREP	PREP	_	7	RMOD	_	_
-9	digione	_	NOUN	NOUN	_	8	ARG	_	_
+9	Digione	_	NOUN	NOUN	_	8	ARG	_	_
 10	,	_	PUNCT	PUNCT	_	9	COORD+BASE	_	_
 11	comizio	_	NOUN	NOUN	_	9	APPOSITION	_	_
-12	al	_	PREP	PREP	_	11	RMOD	_	_
-13	al	_	ART	ART	_	12	ARG	_	_
+12	alle	_	PREP	PREP	_	11	RMOD	_	_
+13	alle	_	ART	ART	_	12	ARG	_	_
 14	<num>	_	NUM	NUM	_	13	ARG	_	_
 15	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	la	_	ART	ART	_	15	SUBJ	_	_
+1	La	_	ART	ART	_	15	SUBJ	_	_
 2	socialista	_	ADJ	ADJ	_	3	RMOD	_	_
-3	royal	_	NOUN	NOUN	_	1	ARG	_	_
+3	Royal	_	NOUN	NOUN	_	1	ARG	_	_
 4	,	_	PUNCT	PUNCT	_	15	SEPARATOR	_	_
 5	la	_	ART	ART	_	15	SUBJ	_	_
 6	prima	_	ADJ	ADJ	_	7	RMOD	_	_
@@ -3471,15 +3471,15 @@
 10	un	_	ART	ART	_	9	OBJ	_	_
 11	ballottaggio	_	NOUN	NOUN	_	10	ARG	_	_
 12	in	_	PREP	PREP	_	9	RMOD	_	_
-13	francia	_	NOUN	NOUN	_	12	ARG	_	_
+13	Francia	_	NOUN	NOUN	_	12	ARG	_	_
 14	,	_	PUNCT	PUNCT	_	15	SEPARATOR	_	_
 15	sarà	_	VERB	VERB	_	0	TOP	_	_
 16	invece	_	ADV	ADV	_	15	RMOD	_	_
 17	a	_	PREP	PREP	_	15	PREDCOMPL+SUBJ	_	_
-18	valence	_	NOUN	NOUN	_	17	ARG	_	_
+18	Valence	_	NOUN	NOUN	_	17	ARG	_	_
 19	.	_	PUNCT	PUNCT	_	15	END	_	_
 
-1	e	_	CONJ	CONJ	_	0	TOP	_	_
+1	E	_	CONJ	CONJ	_	0	TOP	_	_
 2	già	_	ADV	ADV	_	4	RMOD	_	_
 3	si	_	PRON	PRON	_	4	SUBJ/SUBJ+IMPERS	_	_
 4	annuncia	_	VERB	VERB	_	1	COORD2ND+BASE	_	_
@@ -3491,10 +3491,10 @@
 10	televisivo	_	ADJ	ADJ	_	9	RMOD	_	_
 11	,	_	PUNCT	PUNCT	_	7	SEPARATOR	_	_
 12	su	_	PREP	PREP	_	11	COORD2ND+BASE	_	_
-13	tf1	_	NOUN	NOUN	_	12	ARG	_	_
+13	Tf1	_	NOUN	NOUN	_	12	ARG	_	_
 14	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	i	_	ART	ART	_	8	SUBJ	_	_
+1	I	_	ART	ART	_	8	SUBJ	_	_
 2	risultati	_	NOUN	NOUN	_	1	ARG	_	_
 3	definitivi	_	ADJ	ADJ	_	2	RMOD	_	_
 4	del	_	PREP	PREP	_	2	RMOD	_	_
@@ -3503,12 +3503,12 @@
 7	turno	_	NOUN	NOUN	_	5	ARG	_	_
 8	danno	_	VERB	VERB	_	0	TOP	_	_
 9	a	_	PREP	PREP	_	8	RMOD	_	_
-10	sarkozy	_	NOUN	NOUN	_	9	ARG	_	_
+10	Sarkozy	_	NOUN	NOUN	_	9	ARG	_	_
 11	un	_	ART	ART	_	8	OBJ	_	_
 12	punteggio	_	NOUN	NOUN	_	11	ARG	_	_
-13	eccellent	_	ADJ	ADJ	_	12	RMOD	_	_
+13	eccellente	_	ADJ	ADJ	_	12	RMOD	_	_
 14	con	_	PREP	PREP	_	8	RMOD	_	_
-15	ile	_	ART	ART	_	14	ARG	_	_
+15	il	_	ART	ART	_	14	ARG	_	_
 16	<num>	_	NUM	NUM	_	15	ARG	_	_
 17	%	_	SPECIAL	SPECIAL	_	16	ARG	_	_
 18	dei	_	PREP	PREP	_	16	ARG	_	_
@@ -3516,12 +3516,12 @@
 20	voti	_	NOUN	NOUN	_	19	ARG	_	_
 21	.	_	PUNCT	PUNCT	_	8	END	_	_
 
-1	manca	_	VERB	VERB	_	0	TOP	_	_
+1	Manca	_	VERB	VERB	_	0	TOP	_	_
 2	ancora	_	ADV	ADV	_	1	RMOD	_	_
-3	ile	_	ART	ART	_	1	SUBJ	_	_
+3	il	_	ART	ART	_	1	SUBJ	_	_
 4	quasi	_	ADV	ADV	_	5	RMOD	_	_
 5	milione	_	NOUN	NOUN	_	3	ARG	_	_
-6	die	_	PREP	PREP	_	5	RMOD	_	_
+6	di	_	PREP	PREP	_	5	RMOD	_	_
 7	schede	_	NOUN	NOUN	_	6	ARG	_	_
 8	degli	_	PREP	PREP	_	7	RMOD	_	_
 9	degli	_	ART	ART	_	8	ARG	_	_
@@ -3531,9 +3531,9 @@
 13	estero	_	NOUN	NOUN	_	12	ARG	_	_
 14	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	crucial	_	ADJ	ADJ	_	2	PREDCOMPL+SUBJ	_	_
+1	Cruciale	_	ADJ	ADJ	_	2	PREDCOMPL+SUBJ	_	_
 2	è	_	VERB	VERB	_	0	TOP	_	_
-3	ile	_	ART	ART	_	2	PREDCOMPL+SUBJ	_	_
+3	il	_	ART	ART	_	2	PREDCOMPL+SUBJ	_	_
 4	<num>	_	NUM	NUM	_	3	ARG	_	_
 5	%	_	SPECIAL	SPECIAL	_	4	ARG	_	_
 6	raccolto	_	VERB	VERB	_	4	ARG	_	_
@@ -3543,13 +3543,13 @@
 10	centrista	_	ADJ	ADJ	_	9	RMOD	_	_
 11	dell'	_	PREP	PREP	_	9	RMOD	_	_
 12	dell'	_	ART	ART	_	11	ARG	_	_
-13	udf	_	NOUN	NOUN	_	12	ARG	_	_
+13	Udf	_	NOUN	NOUN	_	12	ARG	_	_
 14	,	_	PUNCT	PUNCT	_	9	SEPARATOR	_	_
-15	francois	_	NOUN	NOUN	_	9	APPOSITION	_	_
-16	bayrou	_	NOUN	NOUN	_	15	CONTIN+DENOM	_	_
+15	Francois	_	NOUN	NOUN	_	9	APPOSITION	_	_
+16	Bayrou	_	NOUN	NOUN	_	15	CONTIN+DENOM	_	_
 17	.	_	PUNCT	PUNCT	_	2	END	_	_
 
-1	deluso	_	ADJ	ADJ	_	3	VISITOR	_	_
+1	Deluso	_	ADJ	ADJ	_	3	VISITOR	_	_
 2	-	_	PUNCT	PUNCT	_	3	SEPARATOR	_	_
 3	sognava	_	VERB	VERB	_	0	TOP	_	_
 4	una	_	ART	ART	_	3	OBJ	_	_
@@ -3558,7 +3558,7 @@
 7	al	_	ART	ART	_	6	ARG	_	_
 8	ballottaggio	_	NOUN	NOUN	_	7	ARG	_	_
 9	-	_	PUNCT	PUNCT	_	8	SEPARATOR	_	_
-10	bayrou	_	NOUN	NOUN	_	8	APPOSITION	_	_
+10	Bayrou	_	NOUN	NOUN	_	8	APPOSITION	_	_
 11	si	_	PRON	PRON	_	14	SUBJ/SUBJ+IMPERS	_	_
 12	è	_	VERB	VERB	_	14	AUX+PASSIVE	_	_
 13	comunque	_	ADV	ADV	_	14	RMOD	_	_
@@ -3567,7 +3567,7 @@
 16	gli	_	ART	ART	_	15	ARG	_	_
 17	elettori	_	NOUN	NOUN	_	16	ARG	_	_
 18	per	_	PREP	PREP	_	14	RMOD	_	_
-19	ave	_	VERB	VERB	_	20	AUX+TENSE	_	_
+19	aver	_	VERB	VERB	_	20	AUX+TENSE	_	_
 20	fatto	_	VERB	VERB	_	18	ARG	_	_
 21	nascere	_	VERB	VERB	_	20	INDCOMPL	_	_
 22	"	_	PUNCT	PUNCT	_	23	OPEN+QUOTES	_	_
@@ -3576,10 +3576,10 @@
 25	centro	_	NOUN	NOUN	_	23	ARG	_	_
 26	"	_	PUNCT	PUNCT	_	21	CLOSE+QUOTES	_	_
 27	in	_	PREP	PREP	_	21	RMOD	_	_
-28	francia	_	NOUN	NOUN	_	27	ARG	_	_
+28	Francia	_	NOUN	NOUN	_	27	ARG	_	_
 29	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	potrebbero	_	VERB	VERB	_	0	TOP	_	_
+1	Potrebbero	_	VERB	VERB	_	0	TOP	_	_
 2	però	_	ADV	ADV	_	1	RMOD	_	_
 3	essere	_	VERB	VERB	_	1	PREDCOMPL+SUBJ	_	_
 4	voti	_	NOUN	NOUN	_	3	PREDCOMPL+SUBJ	_	_
@@ -3594,10 +3594,10 @@
 13	rassicurante	_	VERB	VERB	_	12	RMOD+RELCL+REDUC	_	_
 14	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	secondo	_	PREP	PREP	_	0	TOP	_	_
+1	Secondo	_	PREP	PREP	_	0	TOP	_	_
 2	un'	_	ART	ART	_	1	ARG	_	_
 3	analisi	_	NOUN	NOUN	_	2	ARG	_	_
-4	ipsos	_	NOUN	NOUN	_	3	APPOSITION	_	_
+4	Ipsos	_	NOUN	NOUN	_	3	APPOSITION	_	_
 5	,	_	PUNCT	PUNCT	_	3	SEPARATOR	_	_
 6	i	_	ART	ART	_	5	COORD2ND+BASE	_	_
 7	suoi	_	ADJ	ADJ	_	8	RMOD	_	_
@@ -3618,9 +3618,9 @@
 22	sinistra	_	NOUN	NOUN	_	10	ARG	_	_
 23	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	lui	_	PRON	PRON	_	11	SUBJ	_	_
+1	Lui	_	PRON	PRON	_	11	SUBJ	_	_
 2	,	_	PUNCT	PUNCT	_	11	SEPARATOR	_	_
-3	ile	_	ART	ART	_	11	SUBJ	_	_
+3	il	_	ART	ART	_	11	SUBJ	_	_
 4	centrista	_	NOUN	NOUN	_	3	ARG	_	_
 5	,	_	PUNCT	PUNCT	_	3	COORD+BASE	_	_
 6	per	_	ADV	ADV	_	11	RMOD	_	_
@@ -3633,46 +3633,46 @@
 13	dal	_	ART	ART	_	12	ARG	_	_
 14	dare	_	VERB	VERB	_	13	ARG	_	_
 15	indicazioni	_	NOUN	NOUN	_	14	OBJ	_	_
-16	die	_	PREP	PREP	_	15	RMOD	_	_
+16	di	_	PREP	PREP	_	15	RMOD	_	_
 17	voto	_	NOUN	NOUN	_	16	ARG	_	_
 18	.	_	PUNCT	PUNCT	_	11	END	_	_
 
-1	ile	_	ART	ART	_	7	SUBJ	_	_
+1	Il	_	ART	ART	_	7	SUBJ	_	_
 2	suo	_	ADJ	ADJ	_	3	RMOD	_	_
 3	partito	_	NOUN	NOUN	_	1	ARG	_	_
-4	udf	_	NOUN	NOUN	_	3	CONTIN+DENOM	_	_
+4	Udf	_	NOUN	NOUN	_	3	CONTIN+DENOM	_	_
 5	è	_	VERB	VERB	_	7	AUX+PASSIVE	_	_
 6	però	_	ADV	ADV	_	7	RMOD	_	_
 7	alleato	_	VERB	VERB	_	0	TOP	_	_
-8	tradizional	_	ADJ	ADJ	_	7	PREDCOMPL+SUBJ	_	_
+8	tradizionale	_	ADJ	ADJ	_	7	PREDCOMPL+SUBJ	_	_
 9	dell'	_	PREP	PREP	_	8	ARG	_	_
 10	dell'	_	ART	ART	_	9	ARG	_	_
-11	ump	_	NOUN	NOUN	_	10	ARG	_	_
-12	die	_	PREP	PREP	_	11	RMOD	_	_
-13	sarkozy	_	NOUN	NOUN	_	12	ARG	_	_
+11	Ump	_	NOUN	NOUN	_	10	ARG	_	_
+12	di	_	PREP	PREP	_	11	RMOD	_	_
+13	Sarkozy	_	NOUN	NOUN	_	12	ARG	_	_
 14	.	_	PUNCT	PUNCT	_	7	END	_	_
 
-1	ile	_	ART	ART	_	6	SUBJ	_	_
+1	Il	_	ART	ART	_	6	SUBJ	_	_
 2	presidente	_	NOUN	NOUN	_	1	ARG	_	_
-3	jacques	_	NOUN	NOUN	_	2	APPOSITION	_	_
-4	chirac	_	NOUN	NOUN	_	3	CONTIN+DENOM	_	_
+3	Jacques	_	NOUN	NOUN	_	2	APPOSITION	_	_
+4	Chirac	_	NOUN	NOUN	_	3	CONTIN+DENOM	_	_
 5	ha	_	VERB	VERB	_	6	AUX+TENSE	_	_
 6	ricevuto	_	VERB	VERB	_	0	TOP	_	_
 7	questa	_	ADJ	ADJ	_	6	OBJ	_	_
 8	mattina	_	NOUN	NOUN	_	7	ARG	_	_
 9	all'	_	PREP	PREP	_	8	RMOD	_	_
 10	all'	_	ART	ART	_	9	ARG	_	_
-11	eliseo	_	NOUN	NOUN	_	10	ARG	_	_
-12	ile	_	ART	ART	_	11	APPOSITION	_	_
+11	Eliseo	_	NOUN	NOUN	_	10	ARG	_	_
+12	il	_	ART	ART	_	11	APPOSITION	_	_
 13	candidato	_	NOUN	NOUN	_	12	ARG	_	_
 14	dell'	_	PREP	PREP	_	13	RMOD	_	_
 15	dell'	_	ART	ART	_	14	ARG	_	_
-16	ump	_	NOUN	NOUN	_	15	ARG	_	_
-17	nicolas	_	NOUN	NOUN	_	13	APPOSITION	_	_
-18	sarkozy	_	NOUN	NOUN	_	17	CONTIN+DENOM	_	_
+16	Ump	_	NOUN	NOUN	_	15	ARG	_	_
+17	Nicolas	_	NOUN	NOUN	_	13	APPOSITION	_	_
+18	Sarkozy	_	NOUN	NOUN	_	17	CONTIN+DENOM	_	_
 19	,	_	PUNCT	PUNCT	_	13	SEPARATOR	_	_
 20	con	_	PREP	PREP	_	28	RMOD	_	_
-21	ile	_	ART	ART	_	20	ARG	_	_
+21	il	_	ART	ART	_	20	ARG	_	_
 22	quale	_	PRON	PRON	_	21	ARG	_	_
 23	si	_	PRON	PRON	_	28	SUBJ/SUBJ+IMPERS	_	_
 24	è	_	VERB	VERB	_	28	AUX+PASSIVE	_	_
@@ -3682,7 +3682,7 @@
 28	congratulato	_	VERB	VERB	_	13	RMOD+RELCL+REDUC	_	_
 29	"	_	PUNCT	PUNCT	_	30	OPEN+QUOTES	_	_
 30	per	_	PREP	PREP	_	28	RMOD	_	_
-31	ile	_	ART	ART	_	30	ARG	_	_
+31	il	_	ART	ART	_	30	ARG	_	_
 32	risultato	_	NOUN	NOUN	_	31	ARG	_	_
 33	del	_	PREP	PREP	_	32	SUBJ	_	_
 34	del	_	ART	ART	_	33	ARG	_	_
@@ -3694,7 +3694,7 @@
 40	presidenziali	_	ADJ	ADJ	_	39	ARG	_	_
 41	.	_	PUNCT	PUNCT	_	6	END	_	_
 
-1	le	_	PRON	PRON	_	3	SUBJ	_	_
+1	Lo	_	PRON	PRON	_	3	SUBJ	_	_
 2	hanno	_	VERB	VERB	_	3	AUX+TENSE	_	_
 3	riferito	_	VERB	VERB	_	0	TOP	_	_
 4	i	_	ART	ART	_	3	OBJ	_	_
@@ -3704,32 +3704,32 @@
 8	capo	_	NOUN	NOUN	_	7	ARG	_	_
 9	dello	_	PREP	PREP	_	8	RMOD	_	_
 10	dello	_	ART	ART	_	9	ARG	_	_
-11	stato	_	NOUN	NOUN	_	10	ARG	_	_
+11	Stato	_	NOUN	NOUN	_	10	ARG	_	_
 12	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	chirac	_	NOUN	NOUN	_	18	SUBJ	_	_
+1	Chirac	_	NOUN	NOUN	_	18	SUBJ	_	_
 2	,	_	PUNCT	PUNCT	_	1	SEPARATOR	_	_
 3	che	_	PRON	PRON	_	8	SUBJ	_	_
 4	ieri	_	ADV	ADV	_	8	RMOD	_	_
-5	serum	_	NOUN	NOUN	_	4	RMOD	_	_
+5	sera	_	NOUN	NOUN	_	4	RMOD	_	_
 6	aveva	_	VERB	VERB	_	8	AUX+TENSE	_	_
 7	già	_	ADV	ADV	_	8	RMOD	_	_
 8	telefonato	_	VERB	VERB	_	1	RMOD+RELCL+REDUC	_	_
 9	a	_	PREP	PREP	_	8	RMOD	_	_
-10	sarkozy	_	NOUN	NOUN	_	9	ARG	_	_
+10	Sarkozy	_	NOUN	NOUN	_	9	ARG	_	_
 11	per	_	PREP	PREP	_	8	RMOD	_	_
 12	complimentarsi	_	VERB	VERB	_	11	ARG	_	_
 13	complimentarsi	_	PRON	PRON	_	12	OBJ	_	_
 14	,	_	PUNCT	PUNCT	_	8	COORD+BASE	_	_
 15	"	_	PUNCT	PUNCT	_	1	CLOSE+QUOTES	_	_
-16	le	_	PRON	PRON	_	18	OBJ	_	_
+16	lo	_	PRON	PRON	_	18	OBJ	_	_
 17	ha	_	VERB	VERB	_	18	AUX+TENSE	_	_
 18	incoraggiato	_	VERB	VERB	_	0	TOP	_	_
 19	e	_	CONJ	CONJ	_	18	COORD+BASE	_	_
 20	gli	_	PRON	PRON	_	22	INDOBJ	_	_
 21	ha	_	VERB	VERB	_	22	AUX+TENSE	_	_
 22	confermato	_	VERB	VERB	_	19	COORD2ND+BASE	_	_
-23	ile	_	ART	ART	_	22	OBJ	_	_
+23	il	_	ART	ART	_	22	OBJ	_	_
 24	suo	_	ADJ	ADJ	_	25	RMOD	_	_
 25	sostegno	_	NOUN	NOUN	_	23	ARG	_	_
 26	al	_	PREP	PREP	_	25	RMOD	_	_
@@ -3741,15 +3741,15 @@
 32	hanno	_	VERB	VERB	_	33	AUX+TENSE	_	_
 33	aggiunto	_	VERB	VERB	_	25	RMOD+RELCL	_	_
 34	le	_	ART	ART	_	33	OBJ	_	_
-35	stes	_	ADJ	ADJ	_	36	RMOD	_	_
+35	stesse	_	ADJ	ADJ	_	36	RMOD	_	_
 36	fonti	_	NOUN	NOUN	_	34	ARG	_	_
 37	.	_	PUNCT	PUNCT	_	18	END	_	_
 
-1	nicolas	_	NOUN	NOUN	_	4	SUBJ	_	_
-2	sarkozy	_	NOUN	NOUN	_	1	CONTIN+DENOM	_	_
+1	Nicolas	_	NOUN	NOUN	_	4	SUBJ	_	_
+2	Sarkozy	_	NOUN	NOUN	_	1	CONTIN+DENOM	_	_
 3	ha	_	VERB	VERB	_	4	AUX+TENSE	_	_
 4	ottenuto	_	VERB	VERB	_	0	TOP	_	_
-5	ile	_	ART	ART	_	4	OBJ	_	_
+5	il	_	ART	ART	_	4	OBJ	_	_
 6	<num>	_	NUM	NUM	_	5	ARG	_	_
 7	%	_	SPECIAL	SPECIAL	_	6	ARG	_	_
 8	dei	_	PREP	PREP	_	6	ARG	_	_
@@ -3764,18 +3764,18 @@
 17	dalla	_	PREP	PREP	_	16	SUBJ/INDCOMPL	_	_
 18	dalla	_	ART	ART	_	17	ARG	_	_
 19	socialista	_	ADJ	ADJ	_	20	RMOD	_	_
-20	segolene	_	NOUN	NOUN	_	18	ARG	_	_
-21	royal	_	NOUN	NOUN	_	20	APPOSITION	_	_
+20	Segolene	_	NOUN	NOUN	_	18	ARG	_	_
+21	Royal	_	NOUN	NOUN	_	20	APPOSITION	_	_
 22	che	_	PRON	PRON	_	24	SUBJ	_	_
 23	ha	_	VERB	VERB	_	24	AUX+TENSE	_	_
 24	preso	_	VERB	VERB	_	21	RMOD+RELCL	_	_
-25	ile	_	ART	ART	_	24	OBJ	_	_
+25	il	_	ART	ART	_	24	OBJ	_	_
 26	<num>	_	NUM	NUM	_	25	ARG	_	_
 27	%	_	SPECIAL	SPECIAL	_	26	ARG	_	_
 28	.	_	PUNCT	PUNCT	_	4	END	_	_
 
 1	è	_	VERB	VERB	_	0	TOP	_	_
-2	die	_	PREP	PREP	_	1	PREDCOMPL+SUBJ	_	_
+2	di	_	PREP	PREP	_	1	PREDCOMPL+SUBJ	_	_
 3	almeno	_	ADV	ADV	_	4	RMOD	_	_
 4	<num>	_	NUM	NUM	_	2	ARG	_	_
 5	morti	_	NOUN	NOUN	_	4	ARG	_	_
@@ -3798,12 +3798,12 @@
 22	nelle	_	PREP	PREP	_	20	RMOD	_	_
 23	nelle	_	ART	ART	_	22	ARG	_	_
 24	città	_	NOUN	NOUN	_	23	ARG	_	_
-25	die	_	PREP	PREP	_	24	RMOD	_	_
-26	baghdad	_	NOUN	NOUN	_	25	ARG	_	_
+25	di	_	PREP	PREP	_	24	RMOD	_	_
+26	Baghdad	_	NOUN	NOUN	_	25	ARG	_	_
 27	,	_	PUNCT	PUNCT	_	24	SEPARATOR	_	_
-28	baquba	_	NOUN	NOUN	_	27	COORD2ND+BASE	_	_
+28	Baquba	_	NOUN	NOUN	_	27	COORD2ND+BASE	_	_
 29	e	_	CONJ	CONJ	_	28	COORD+BASE	_	_
-30	mosul	_	NOUN	NOUN	_	29	COORD2ND+BASE	_	_
+30	Mosul	_	NOUN	NOUN	_	29	COORD2ND+BASE	_	_
 31	,	_	PUNCT	PUNCT	_	24	SEPARATOR	_	_
 32	riferito	_	VERB	VERB	_	24	RMOD+RELCL+REDUC	_	_
 33	dalle	_	PREP	PREP	_	32	SUBJ/INDCOMPL	_	_
@@ -3812,26 +3812,26 @@
 36	irachene	_	ADJ	ADJ	_	35	RMOD	_	_
 37	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	un	_	ART	ART	_	5	OBJ/SUBJ	_	_
+1	Un	_	ART	ART	_	5	OBJ/SUBJ	_	_
 2	altro	_	ADJ	ADJ	_	3	RMOD	_	_
 3	kamikaze	_	NOUN	NOUN	_	1	ARG	_	_
 4	ha	_	VERB	VERB	_	5	AUX+TENSE	_	_
 5	preso	_	VERB	VERB	_	0	TOP	_	_
-6	die	_	PREP	PREP	_	5	INDCOMPL*LOCUT	_	_
+6	di	_	PREP	PREP	_	5	INDCOMPL*LOCUT	_	_
 7	mira	_	NOUN	NOUN	_	6	ARG	_	_
 8	una	_	ART	ART	_	5	OBJ	_	_
 9	stazione	_	NOUN	NOUN	_	8	ARG	_	_
-10	die	_	PREP	PREP	_	9	RMOD	_	_
+10	di	_	PREP	PREP	_	9	RMOD	_	_
 11	polizia	_	NOUN	NOUN	_	10	ARG	_	_
 12	a	_	PREP	PREP	_	9	RMOD	_	_
-13	baquba	_	NOUN	NOUN	_	12	ARG	_	_
+13	Baquba	_	NOUN	NOUN	_	12	ARG	_	_
 14	,	_	PUNCT	PUNCT	_	12	COORD+BASE	_	_
 15	<num>	_	NUM	NUM	_	14	COORD2ND+BASE	_	_
 16	chilometri	_	NOUN	NOUN	_	15	ARG	_	_
 17	a	_	PREP	PREP	_	15	RMOD	_	_
 18	nord-est	_	NOUN	NOUN	_	17	ARG	_	_
-19	die	_	PREP	PREP	_	18	RMOD	_	_
-20	baghdad	_	NOUN	NOUN	_	19	ARG	_	_
+19	di	_	PREP	PREP	_	18	RMOD	_	_
+20	Baghdad	_	NOUN	NOUN	_	19	ARG	_	_
 21	,	_	PUNCT	PUNCT	_	15	COORD+BASE	_	_
 22	uccidendo	_	VERB	VERB	_	21	COORD2ND+BASE	_	_
 23	<num>	_	NUM	NUM	_	22	OBJ	_	_
@@ -3839,11 +3839,11 @@
 25	e	_	CONJ	CONJ	_	15	COORD+BASE	_	_
 26	ferendone	_	VERB	VERB	_	25	COORD2ND+BASE	_	_
 27	ferendone	_	PRON	PRON	_	26	OBJ	_	_
-28	alter	_	ADJ	ADJ	_	26	OBJ	_	_
+28	altre	_	ADJ	ADJ	_	26	OBJ	_	_
 29	<num>	_	NUM	NUM	_	28	ARG	_	_
 30	.	_	PUNCT	PUNCT	_	5	END	_	_
 
-1	ile	_	ART	ART	_	6	SUBJ	_	_
+1	Il	_	ART	ART	_	6	SUBJ	_	_
 2	terzo	_	ADJ	ADJ	_	3	RMOD	_	_
 3	attentatore	_	NOUN	NOUN	_	1	ARG	_	_
 4	si	_	PRON	PRON	_	6	SUBJ/SUBJ+IMPERS	_	_
@@ -3856,11 +3856,11 @@
 11	nel	_	PREP	PREP	_	6	RMOD	_	_
 12	nel	_	ART	ART	_	11	ARG	_	_
 13	centro	_	NOUN	NOUN	_	12	ARG	_	_
-14	die	_	PREP	PREP	_	13	RMOD	_	_
-15	baghdad	_	NOUN	NOUN	_	14	ARG	_	_
+14	di	_	PREP	PREP	_	13	RMOD	_	_
+15	Baghdad	_	NOUN	NOUN	_	14	ARG	_	_
 16	,	_	PUNCT	PUNCT	_	6	SEPARATOR	_	_
 17	a	_	PREP	PREP	_	6	RMOD	_	_
-18	karradah	_	NOUN	NOUN	_	17	ARG	_	_
+18	Karradah	_	NOUN	NOUN	_	17	ARG	_	_
 19	,	_	PUNCT	PUNCT	_	6	SEPARATOR	_	_
 20	uccidendo	_	VERB	VERB	_	6	RMOD	_	_
 21	almeno	_	ADV	ADV	_	22	RMOD	_	_
@@ -3869,11 +3869,11 @@
 24	e	_	CONJ	CONJ	_	20	COORD+BASE	_	_
 25	ferendone	_	VERB	VERB	_	24	COORD2ND+BASE	_	_
 26	ferendone	_	PRON	PRON	_	25	OBJ	_	_
-27	alter	_	PRON	PRON	_	25	OBJ	_	_
+27	altre	_	PRON	PRON	_	25	OBJ	_	_
 28	<num>	_	NUM	NUM	_	27	APPOSITION	_	_
 29	.	_	PUNCT	PUNCT	_	6	END	_	_
 
-1	una	_	ART	ART	_	0	TOP	_	_
+1	Una	_	ART	ART	_	0	TOP	_	_
 2	seconda	_	ADJ	ADJ	_	3	RMOD	_	_
 3	esplosione	_	NOUN	NOUN	_	1	ARG	_	_
 4	a	_	PREP	PREP	_	3	RMOD	_	_
@@ -3883,13 +3883,13 @@
 8	dall'	_	ART	ART	_	7	ARG	_	_
 9	ambasciata	_	NOUN	NOUN	_	8	ARG	_	_
 10	d'	_	PREP	PREP	_	9	RMOD	_	_
-11	iran	_	NOUN	NOUN	_	10	ARG	_	_
+11	Iran	_	NOUN	NOUN	_	10	ARG	_	_
 12	:	_	PUNCT	PUNCT	_	1	END	_	_
 
 1	la	_	ART	ART	_	8	OBJ/SUBJ	_	_
 2	vettura	_	NOUN	NOUN	_	1	ARG	_	_
 3	imbottita	_	VERB	VERB	_	2	RMOD+RELCL+REDUC	_	_
-4	die	_	PREP	PREP	_	2	RMOD	_	_
+4	di	_	PREP	PREP	_	2	RMOD	_	_
 5	esplosivo	_	NOUN	NOUN	_	4	ARG	_	_
 6	era	_	VERB	VERB	_	7	AUX+TENSE	_	_
 7	stata	_	VERB	VERB	_	8	AUX+PASSIVE	_	_
@@ -3898,7 +3898,7 @@
 10	un	_	ART	ART	_	9	ARG	_	_
 11	parcheggio	_	NOUN	NOUN	_	10	ARG	_	_
 12	situato	_	VERB	VERB	_	11	RMOD+RELCL+REDUC	_	_
-13	die	_	PREP	PREP	_	12	RMOD	_	_
+13	di	_	PREP	PREP	_	12	RMOD	_	_
 14	fronte	_	PREP	PREP	_	13	CONTIN+LOCUT	_	_
 15	alla	_	PREP	PREP	_	14	CONTIN+LOCUT	_	_
 16	alla	_	ART	ART	_	15	ARG	_	_
@@ -3915,10 +3915,10 @@
 27	strada	_	NOUN	NOUN	_	25	ARG	_	_
 28	.	_	PUNCT	PUNCT	_	8	END	_	_
 
-1	ile	_	ART	ART	_	3	SUBJ	_	_
+1	Il	_	ART	ART	_	3	SUBJ	_	_
 2	bilancio	_	NOUN	NOUN	_	1	ARG	_	_
 3	è	_	VERB	VERB	_	0	TOP	_	_
-4	die	_	PREP	PREP	_	3	PREDCOMPL+SUBJ	_	_
+4	di	_	PREP	PREP	_	3	PREDCOMPL+SUBJ	_	_
 5	almeno	_	ADV	ADV	_	6	RMOD	_	_
 6	un	_	ART	ART	_	3	PREDCOMPL+SUBJ	_	_
 7	morto	_	NOUN	NOUN	_	6	ARG	_	_
@@ -3937,14 +3937,14 @@
 20	iraniana	_	ADJ	ADJ	_	19	RMOD	_	_
 21	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	ci	_	PRON	PRON	_	3	OBJ	_	_
+1	Ci	_	PRON	PRON	_	3	OBJ	_	_
 2	ha	_	VERB	VERB	_	3	AUX+TENSE	_	_
 3	messo	_	VERB	VERB	_	0	TOP	_	_
 4	rabbia	_	NOUN	NOUN	_	3	OBJ	_	_
 5	nello	_	PREP	PREP	_	3	RMOD	_	_
 6	nello	_	ART	ART	_	5	ARG	_	_
 7	scaraventare	_	VERB	VERB	_	6	ARG	_	_
-8	ile	_	ART	ART	_	7	OBJ	_	_
+8	il	_	ART	ART	_	7	OBJ	_	_
 9	pallone	_	NOUN	NOUN	_	8	ARG	_	_
 10	dell'	_	PREP	PREP	_	9	RMOD	_	_
 11	dell'	_	ART	ART	_	10	ARG	_	_
@@ -3952,20 +3952,20 @@
 13	-	_	PUNCT	PUNCT	_	12	SEPARATOR	_	_
 14	<num>	_	NUM	NUM	_	12	APPOSITION	_	_
 15	con	_	PREP	PREP	_	7	RMOD	_	_
-16	ile	_	ART	ART	_	15	ARG	_	_
+16	il	_	ART	ART	_	15	ARG	_	_
 17	rischio	_	NOUN	NOUN	_	16	ARG	_	_
-18	die	_	PREP	PREP	_	17	RMOD	_	_
+18	di	_	PREP	PREP	_	17	RMOD	_	_
 19	mandare	_	VERB	VERB	_	18	ARG	_	_
 20	oltre	_	PREP	PREP	_	19	RMOD	_	_
 21	la	_	ART	ART	_	20	ARG	_	_
 22	linea	_	NOUN	NOUN	_	21	ARG	_	_
-23	die	_	PREP	PREP	_	22	RMOD	_	_
+23	di	_	PREP	PREP	_	22	RMOD	_	_
 24	porta	_	NOUN	NOUN	_	23	ARG	_	_
-25	pur	_	ADV	ADV	_	26	RMOD	_	_
+25	pure	_	ADV	ADV	_	26	RMOD	_	_
 26	la	_	ART	ART	_	19	OBJ	_	_
 27	caviglia	_	NOUN	NOUN	_	26	ARG	_	_
-28	die	_	PREP	PREP	_	27	RMOD	_	_
-29	ibrahimovic	_	NOUN	NOUN	_	28	ARG	_	_
+28	di	_	PREP	PREP	_	27	RMOD	_	_
+29	Ibrahimovic	_	NOUN	NOUN	_	28	ARG	_	_
 30	,	_	PUNCT	PUNCT	_	27	SEPARATOR	_	_
 31	che	_	PRON	PRON	_	33	SUBJ	_	_
 32	aveva	_	VERB	VERB	_	33	AUX+TENSE	_	_
@@ -3978,14 +3978,14 @@
 39	decisiva	_	ADJ	ADJ	_	38	RMOD	_	_
 40	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	ci	_	PRON	PRON	_	3	OBJ	_	_
+1	Ci	_	PRON	PRON	_	3	OBJ	_	_
 2	ha	_	VERB	VERB	_	3	AUX+TENSE	_	_
 3	messo	_	VERB	VERB	_	0	TOP	_	_
 4	freddezza	_	NOUN	NOUN	_	3	OBJ	_	_
 5	nel	_	PREP	PREP	_	3	RMOD	_	_
 6	nel	_	ART	ART	_	5	ARG	_	_
 7	realizzare	_	VERB	VERB	_	6	ARG	_	_
-8	ile	_	ART	ART	_	7	OBJ	_	_
+8	il	_	ART	ART	_	7	OBJ	_	_
 9	rigore	_	NOUN	NOUN	_	8	ARG	_	_
 10	del	_	PREP	PREP	_	9	RMOD	_	_
 11	del	_	ART	ART	_	10	ARG	_	_
@@ -4001,7 +4001,7 @@
 21	del	_	PREP	PREP	_	20	RMOD	_	_
 22	del	_	ART	ART	_	21	ARG	_	_
 23	portiere	_	NOUN	NOUN	_	22	ARG	_	_
-24	manninger	_	NOUN	NOUN	_	23	APPOSITION	_	_
+24	Manninger	_	NOUN	NOUN	_	23	APPOSITION	_	_
 25	,	_	PUNCT	PUNCT	_	23	OPEN+PARENTHETICAL	_	_
 26	poi	_	ADV	ADV	_	27	RMOD	_	_
 27	sulla	_	PREP	PREP	_	23	RMOD	_	_
@@ -4021,8 +4021,8 @@
 41	area	_	NOUN	NOUN	_	40	ARG	_	_
 42	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	era	_	VERB	VERB	_	0	TOP	_	_
-2	ile	_	ART	ART	_	1	OBJ	_	_
+1	Era	_	VERB	VERB	_	0	TOP	_	_
+2	il	_	ART	ART	_	1	OBJ	_	_
 3	quarto	_	PRON	PRON	_	2	ARG	_	_
 4	d'	_	PREP	PREP	_	3	RMOD	_	_
 5	ora	_	ADV	ADV	_	4	ARG	_	_
@@ -4039,7 +4039,7 @@
 16	fosse	_	VERB	VERB	_	14	ARG	_	_
 17	la	_	ART	ART	_	16	OBJ	_	_
 18	fretta	_	NOUN	NOUN	_	17	ARG	_	_
-19	die	_	PREP	PREP	_	18	RMOD	_	_
+19	di	_	PREP	PREP	_	18	RMOD	_	_
 20	chiudere	_	VERB	VERB	_	19	ARG	_	_
 21	la	_	ART	ART	_	20	OBJ	_	_
 22	pratica	_	NOUN	NOUN	_	21	ARG	_	_
@@ -4052,20 +4052,20 @@
 29	più	_	ADV	ADV	_	28	RMOD	_	_
 30	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	materazzi	_	NOUN	NOUN	_	3	SUBJ	_	_
+1	Materazzi	_	NOUN	NOUN	_	3	SUBJ	_	_
 2	non	_	ADV	ADV	_	3	RMOD	_	_
 3	vincerà	_	VERB	VERB	_	0	TOP	_	_
 4	mai	_	ADV	ADV	_	3	RMOD	_	_
-5	ile	_	ART	ART	_	3	OBJ	_	_
-6	pallone	_	NOUN	NOUN	_	5	ARG	_	_
+5	il	_	ART	ART	_	3	OBJ	_	_
+6	Pallone	_	NOUN	NOUN	_	5	ARG	_	_
 7	d'	_	PREP	PREP	_	6	RMOD	_	_
-8	oro	_	NOUN	NOUN	_	7	ARG	_	_
+8	Oro	_	NOUN	NOUN	_	7	ARG	_	_
 9	:	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	ciascuno	_	PRON	PRON	_	3	SUBJ	_	_
+1	Ciascuno	_	PRON	PRON	_	3	SUBJ	_	_
 2	ne	_	PRON	PRON	_	3	RMOD	_	_
 3	tragga	_	VERB	VERB	_	0	TOP	_	_
-4	ile	_	ART	ART	_	3	OBJ	_	_
+4	il	_	ART	ART	_	3	OBJ	_	_
 5	significato	_	NOUN	NOUN	_	4	ARG	_	_
 6	che	_	PRON	PRON	_	7	SUBJ	_	_
 7	crede	_	VERB	VERB	_	5	RMOD+RELCL	_	_
@@ -4077,7 +4077,7 @@
 13	pallone	_	NOUN	NOUN	_	12	ARG	_	_
 14	.	_	PUNCT	PUNCT	_	7	END	_	_
 
-1	non	_	ADV	ADV	_	4	RMOD	_	_
+1	Non	_	ADV	ADV	_	4	RMOD	_	_
 2	si	_	PRON	PRON	_	4	SUBJ/SUBJ+IMPERS	_	_
 3	è	_	VERB	VERB	_	4	AUX+TENSE	_	_
 4	vista	_	VERB	VERB	_	0	TOP	_	_
@@ -4086,29 +4086,29 @@
 7	partita	_	NOUN	NOUN	_	5	ARG	_	_
 8	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	gli	_	ART	ART	_	8	SUBJ	_	_
+1	Gli	_	ART	ART	_	8	SUBJ	_	_
 2	appuntamenti	_	NOUN	NOUN	_	1	ARG	_	_
 3	con	_	PREP	PREP	_	2	RMOD	_	_
-4	le	_	ART	ART	_	3	ARG	_	_
+4	lo	_	ART	ART	_	3	ARG	_	_
 5	scudetto	_	NOUN	NOUN	_	4	ARG	_	_
 6	non	_	ADV	ADV	_	8	RMOD	_	_
-7	le	_	PRON	PRON	_	8	OBJ	_	_
+7	lo	_	PRON	PRON	_	8	OBJ	_	_
 8	sono	_	VERB	VERB	_	0	TOP	_	_
 9	mai	_	ADV	ADV	_	8	RMOD	_	_
 10	.	_	PUNCT	PUNCT	_	8	END	_	_
 
-1	l'	_	ART	ART	_	4	SUBJ	_	_
-2	inter	_	NOUN	NOUN	_	1	ARG	_	_
+1	L'	_	ART	ART	_	4	SUBJ	_	_
+2	Inter	_	NOUN	NOUN	_	1	ARG	_	_
 3	si	_	PRON	PRON	_	4	SUBJ/SUBJ+IMPERS	_	_
 4	portava	_	VERB	VERB	_	0	TOP	_	_
 5	dentro	_	ADV	ADV	_	4	RMOD	_	_
 6	la	_	ART	ART	_	4	OBJ	_	_
 7	delusione	_	NOUN	NOUN	_	6	ARG	_	_
-8	die	_	PREP	PREP	_	7	RMOD	_	_
+8	di	_	PREP	PREP	_	7	RMOD	_	_
 9	non	_	ADV	ADV	_	11	RMOD	_	_
-10	ave	_	VERB	VERB	_	11	AUX+TENSE	_	_
+10	aver	_	VERB	VERB	_	11	AUX+TENSE	_	_
 11	chiuso	_	VERB	VERB	_	8	ARG	_	_
-12	ile	_	ART	ART	_	11	OBJ/SUBJ	_	_
+12	il	_	ART	ART	_	11	OBJ/SUBJ	_	_
 13	campionato	_	NOUN	NOUN	_	12	ARG	_	_
 14	sul	_	PREP	PREP	_	13	RMOD	_	_
 15	sul	_	ART	ART	_	14	ARG	_	_
@@ -4117,8 +4117,8 @@
 18	ambito	_	ADJ	ADJ	_	16	RMOD	_	_
 19	,	_	PUNCT	PUNCT	_	14	SEPARATOR	_	_
 20	a	_	PREP	PREP	_	19	COORD2ND+BASE	_	_
-21	san	_	NOUN	NOUN	_	20	ARG	_	_
-22	siro	_	NOUN	NOUN	_	21	CONTIN+DENOM	_	_
+21	San	_	NOUN	NOUN	_	20	ARG	_	_
+22	Siro	_	NOUN	NOUN	_	21	CONTIN+DENOM	_	_
 23	,	_	PUNCT	PUNCT	_	14	SEPARATOR	_	_
 24	ed	_	CONJ	CONJ	_	11	COORD+BASE	_	_
 25	è	_	VERB	VERB	_	26	AUX+PASSIVE	_	_
@@ -4128,7 +4128,7 @@
 29	con	_	PREP	PREP	_	26	RMOD	_	_
 30	la	_	ART	ART	_	29	ARG	_	_
 31	necessità	_	NOUN	NOUN	_	30	ARG	_	_
-32	die	_	PREP	PREP	_	31	RMOD	_	_
+32	di	_	PREP	PREP	_	31	RMOD	_	_
 33	non	_	ADV	ADV	_	34	RMOD	_	_
 34	iniziare	_	VERB	VERB	_	32	ARG	_	_
 35	ad	_	PREP	PREP	_	34	INDCOMPL	_	_
@@ -4136,30 +4136,30 @@
 37	come	_	PREP	PREP	_	34	RMOD	_	_
 38	nelle	_	PREP	PREP	_	37	CONTIN+PREP	_	_
 39	nelle	_	ART	ART	_	38	ARG	_	_
-40	ultim	_	ADJ	ADJ	_	42	RMOD	_	_
+40	ultime	_	ADJ	ADJ	_	42	RMOD	_	_
 41	due	_	NUM	NUM	_	42	RMOD	_	_
 42	partite	_	NOUN	NOUN	_	39	ARG	_	_
 43	.	_	PUNCT	PUNCT	_	26	END	_	_
 
-1	ile	_	ART	ART	_	5	SUBJ	_	_
+1	Il	_	ART	ART	_	5	SUBJ	_	_
 2	colombiano	_	NOUN	NOUN	_	1	ARG	_	_
 3	ne	_	PRON	PRON	_	5	RMOD	_	_
 4	ha	_	VERB	VERB	_	5	AUX+TENSE	_	_
 5	spizzicati	_	VERB	VERB	_	0	TOP	_	_
 6	tanti	_	PRON	PRON	_	5	OBJ	_	_
-7	die	_	PREP	PREP	_	6	RMOD	_	_
+7	di	_	PREP	PREP	_	6	RMOD	_	_
 8	palloni	_	NOUN	NOUN	_	7	ARG	_	_
 9	.	_	PUNCT	PUNCT	_	5	END	_	_
 
-1	sul	_	PREP	PREP	_	12	RMOD	_	_
-2	sul	_	ART	ART	_	1	ARG	_	_
+1	Sul	_	PREP	PREP	_	12	RMOD	_	_
+2	Sul	_	ART	ART	_	1	ARG	_	_
 3	primo	_	PRON	PRON	_	2	ARG	_	_
 4	,	_	PUNCT	PUNCT	_	1	COORD+BASE	_	_
 5	al	_	PREP	PREP	_	12	RMOD	_	_
 6	al	_	ART	ART	_	5	ARG	_	_
 7	17'	_	NUM	NUM	_	6	ARG	_	_
 8	,	_	PUNCT	PUNCT	_	12	SEPARATOR	_	_
-9	manninger	_	NOUN	NOUN	_	12	SUBJ	_	_
+9	Manninger	_	NOUN	NOUN	_	12	SUBJ	_	_
 10	ci	_	PRON	PRON	_	12	RMOD	_	_
 11	ha	_	VERB	VERB	_	12	AUX+TENSE	_	_
 12	messo	_	VERB	VERB	_	0	TOP	_	_
@@ -4167,10 +4167,10 @@
 14	pezza	_	NOUN	NOUN	_	13	ARG	_	_
 15	.	_	PUNCT	PUNCT	_	12	END	_	_
 
-1	ma	_	CONJ	CONJ	_	0	TOP	_	_
+1	Ma	_	CONJ	CONJ	_	0	TOP	_	_
 2	è	_	VERB	VERB	_	3	AUX+TENSE	_	_
 3	stato	_	VERB	VERB	_	1	ARG	_	_
-4	ile	_	ART	ART	_	3	PREDCOMPL+SUBJ*CLEFT	_	_
+4	il	_	ART	ART	_	3	PREDCOMPL+SUBJ*CLEFT	_	_
 5	segnale	_	NOUN	NOUN	_	4	ARG	_	_
 6	della	_	PREP	PREP	_	5	RMOD	_	_
 7	della	_	ART	ART	_	6	ARG	_	_
@@ -4190,22 +4190,22 @@
 21	calcio	_	NOUN	NOUN	_	20	ARG	_	_
 22	d'	_	PREP	PREP	_	21	RMOD	_	_
 23	angolo	_	NOUN	NOUN	_	22	ARG	_	_
-24	die	_	PREP	PREP	_	23	RMOD	_	_
-25	stankovic	_	NOUN	NOUN	_	24	ARG	_	_
+24	di	_	PREP	PREP	_	23	RMOD	_	_
+25	Stankovic	_	NOUN	NOUN	_	24	ARG	_	_
 26	,	_	PUNCT	PUNCT	_	28	SEPARATOR	_	_
-27	maicon	_	NOUN	NOUN	_	28	SUBJ	_	_
+27	Maicon	_	NOUN	NOUN	_	28	SUBJ	_	_
 28	toccava	_	VERB	VERB	_	11	COORD2ND+BASE	_	_
-29	die	_	PREP	PREP	_	28	RMOD	_	_
+29	di	_	PREP	PREP	_	28	RMOD	_	_
 30	coscia	_	NOUN	NOUN	_	29	ARG	_	_
 31	,	_	PUNCT	PUNCT	_	30	COORD+BASE	_	_
-32	vergassola	_	NOUN	NOUN	_	30	APPOSITION	_	_
+32	Vergassola	_	NOUN	NOUN	_	30	APPOSITION	_	_
 33	vicino	_	PREP	PREP	_	28	RMOD	_	_
 34	al	_	PREP	PREP	_	33	CONTIN+PREP	_	_
 35	al	_	ART	ART	_	34	ARG	_	_
 36	palo	_	NOUN	NOUN	_	35	ARG	_	_
 37	respingeva	_	VERB	VERB	_	36	RMOD+RELCL+REDUC	_	_
 38	e	_	CONJ	CONJ	_	37	COORD+BASE	_	_
-39	materazzi	_	NOUN	NOUN	_	38	COORD2ND+BASE	_	_
+39	Materazzi	_	NOUN	NOUN	_	38	COORD2ND+BASE	_	_
 40	completava	_	VERB	VERB	_	38	COORD2ND+BASE	_	_
 41	l'	_	ART	ART	_	40	OBJ	_	_
 42	opera	_	NOUN	NOUN	_	41	ARG	_	_
@@ -4215,13 +4215,13 @@
 46	impetuosa	_	ADJ	ADJ	_	45	RMOD	_	_
 47	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	l'	_	ART	ART	_	10	OBJ/SUBJ	_	_
-2	inter	_	NOUN	NOUN	_	1	ARG	_	_
+1	L'	_	ART	ART	_	10	OBJ/SUBJ	_	_
+2	Inter	_	NOUN	NOUN	_	1	ARG	_	_
 3	delle	_	PREP	PREP	_	2	RMOD	_	_
 4	delle	_	ART	ART	_	3	ARG	_	_
 5	<num>	_	NUM	NUM	_	6	RMOD	_	_
 6	vittorie	_	NOUN	NOUN	_	4	ARG	_	_
-7	consecutiv	_	ADJ	ADJ	_	6	RMOD	_	_
+7	consecutive	_	ADJ	ADJ	_	6	RMOD	_	_
 8	ci	_	PRON	PRON	_	10	RMOD	_	_
 9	ha	_	VERB	VERB	_	10	AUX+TENSE	_	_
 10	abituato	_	VERB	VERB	_	0	TOP	_	_
@@ -4231,12 +4231,12 @@
 14	la	_	ART	ART	_	12	OBJ	_	_
 15	partita	_	NOUN	NOUN	_	14	ARG	_	_
 16	dopo	_	PREP	PREP	_	10	RMOD	_	_
-17	ile	_	ART	ART	_	16	ARG	_	_
+17	il	_	ART	ART	_	16	ARG	_	_
 18	primo	_	ADJ	ADJ	_	19	RMOD	_	_
 19	gol	_	NOUN	NOUN	_	17	ARG	_	_
 20	.	_	PUNCT	PUNCT	_	10	END	_	_
 
-1	però	_	CONJ	CONJ	_	0	TOP	_	_
+1	Però	_	CONJ	CONJ	_	0	TOP	_	_
 2	questa	_	PRON	PRON	_	3	SUBJ	_	_
 3	era	_	VERB	VERB	_	1	ARG	_	_
 4	una	_	ART	ART	_	3	SUBJ	_	_
@@ -4260,9 +4260,9 @@
 22	scorsi	_	ADJ	ADJ	_	21	RMOD	_	_
 23	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	che	_	CONJ	CONJ	_	30	RMOD	_	_
-2	ile	_	ART	ART	_	30	SUBJ	_	_
-3	siena	_	NOUN	NOUN	_	2	ARG	_	_
+1	Che	_	CONJ	CONJ	_	30	RMOD	_	_
+2	il	_	ART	ART	_	30	SUBJ	_	_
+3	Siena	_	NOUN	NOUN	_	2	ARG	_	_
 4	in	_	PREP	PREP	_	3	RMOD	_	_
 5	lotta	_	NOUN	NOUN	_	4	ARG	_	_
 6	per	_	PREP	PREP	_	3	RMOD	_	_
@@ -4276,7 +4276,7 @@
 14	rabberciata	_	VERB	VERB	_	13	RMOD+RELCL+REDUC	_	_
 15	e	_	CONJ	CONJ	_	11	COORD+BASE	_	_
 16	con	_	PREP	PREP	_	15	COORD2ND+BASE	_	_
-17	chiesa	_	NOUN	NOUN	_	16	ARG	_	_
+17	Chiesa	_	NOUN	NOUN	_	16	ARG	_	_
 18	costretto	_	VERB	VERB	_	15	COORD2ND+BASE	_	_
 19	alla	_	PREP	PREP	_	18	INDCOMPL	_	_
 20	alla	_	ART	ART	_	19	ARG	_	_
@@ -4290,7 +4290,7 @@
 28	più	_	ADV	ADV	_	27	RMOD	_	_
 29	,	_	PUNCT	PUNCT	_	30	CLOSE+PARENTHETICAL	_	_
 30	tenesse	_	VERB	VERB	_	0	TOP	_	_
-31	ile	_	ART	ART	_	30	OBJ	_	_
+31	il	_	ART	ART	_	30	OBJ	_	_
 32	campo	_	NOUN	NOUN	_	31	ARG	_	_
 33	alla	_	PREP	PREP	_	30	RMOD	_	_
 34	alla	_	ART	ART	_	33	ARG	_	_
@@ -4308,24 +4308,24 @@
 46	nerazzurro	_	ADJ	ADJ	_	44	RMOD	_	_
 47	.	_	PUNCT	PUNCT	_	30	END	_	_
 
-1	sarebbe	_	VERB	VERB	_	2	AUX+TENSE	_	_
+1	Sarebbe	_	VERB	VERB	_	2	AUX+TENSE	_	_
 2	stata	_	VERB	VERB	_	0	TOP	_	_
 3	probabilmente	_	ADV	ADV	_	2	RMOD	_	_
 4	un'	_	ART	ART	_	2	PREDCOMPL+SUBJ	_	_
 5	altra	_	ADJ	ADJ	_	6	RMOD	_	_
 6	storia	_	NOUN	NOUN	_	4	ARG	_	_
 7	se	_	CONJ	CONJ	_	6	RMOD	_	_
-8	negro	_	NOUN	NOUN	_	7	ARG	_	_
+8	Negro	_	NOUN	NOUN	_	7	ARG	_	_
 9	avesse	_	VERB	VERB	_	10	AUX+PASSIVE	_	_
 10	raddoppiato	_	VERB	VERB	_	7	ARG	_	_
 11	in	_	PREP	PREP	_	10	RMOD	_	_
 12	avvio	_	NOUN	NOUN	_	11	ARG	_	_
-13	die	_	PREP	PREP	_	12	RMOD	_	_
+13	di	_	PREP	PREP	_	12	RMOD	_	_
 14	ripresa	_	NOUN	NOUN	_	13	ARG	_	_
 15	con	_	PREP	PREP	_	10	RMOD	_	_
 16	un	_	ART	ART	_	15	ARG	_	_
 17	colpo	_	NOUN	NOUN	_	16	ARG	_	_
-18	die	_	PREP	PREP	_	17	RMOD	_	_
+18	di	_	PREP	PREP	_	17	RMOD	_	_
 19	tacco	_	NOUN	NOUN	_	18	ARG	_	_
 20	nell'	_	PREP	PREP	_	10	RMOD	_	_
 21	nell'	_	ART	ART	_	20	ARG	_	_
@@ -4333,8 +4333,8 @@
 23	basso	_	ADJ	ADJ	_	22	RMOD	_	_
 24	,	_	PUNCT	PUNCT	_	28	SEPARATOR	_	_
 25	dove	_	PRON	PRON	_	28	RMOD	_	_
-26	julio	_	NOUN	NOUN	_	28	SUBJ	_	_
-27	cesar	_	NOUN	NOUN	_	26	CONTIN+DENOM	_	_
+26	Julio	_	NOUN	NOUN	_	28	SUBJ	_	_
+27	Cesar	_	NOUN	NOUN	_	26	CONTIN+DENOM	_	_
 28	arrivava	_	VERB	VERB	_	22	RMOD+RELCL+REDUC	_	_
 29	miracolosamente	_	ADV	ADV	_	28	RMOD	_	_
 30	col	_	PREP	PREP	_	28	RMOD	_	_
@@ -4347,16 +4347,16 @@
 37	calcetto	_	NOUN	NOUN	_	36	ARG	_	_
 38	.	_	PUNCT	PUNCT	_	2	END	_	_
 
-1	ile	_	ART	ART	_	3	SUBJ	_	_
+1	Il	_	ART	ART	_	3	SUBJ	_	_
 2	salvataggio	_	NOUN	NOUN	_	1	ARG	_	_
 3	era	_	VERB	VERB	_	0	TOP	_	_
-4	ile	_	ART	ART	_	3	SUBJ	_	_
+4	il	_	ART	ART	_	3	SUBJ	_	_
 5	segno	_	NOUN	NOUN	_	4	ARG	_	_
-6	die	_	PREP	PREP	_	5	RMOD	_	_
+6	di	_	PREP	PREP	_	5	RMOD	_	_
 7	come	_	PRON	PRON	_	6	ARG	_	_
-8	ile	_	ART	ART	_	13	SUBJ	_	_
+8	il	_	ART	ART	_	13	SUBJ	_	_
 9	buon	_	ADJ	ADJ	_	10	RMOD	_	_
-10	dio	_	NOUN	NOUN	_	8	ARG	_	_
+10	Dio	_	NOUN	NOUN	_	8	ARG	_	_
 11	quest'	_	ADJ	ADJ	_	13	SUBJ	_	_
 12	anno	_	NOUN	NOUN	_	11	ARG	_	_
 13	sia	_	VERB	VERB	_	17	AUX+PASSIVE	_	_
@@ -4365,36 +4365,36 @@
 16	forse	_	ADV	ADV	_	17	RMOD	_	_
 17	istigato	_	VERB	VERB	_	5	RMOD+RELCL	_	_
 18	da	_	PREP	PREP	_	17	SUBJ/INDCOMPL	_	_
-19	facchetti	_	NOUN	NOUN	_	18	ARG	_	_
+19	Facchetti	_	NOUN	NOUN	_	18	ARG	_	_
 20	e	_	CONJ	CONJ	_	18	COORD+BASE	_	_
 21	dall'	_	PREP	PREP	_	20	COORD2ND+BASE	_	_
 22	dall'	_	ART	ART	_	21	ARG	_	_
 23	avvocato	_	NOUN	NOUN	_	22	ARG	_	_
-24	prisco	_	NOUN	NOUN	_	23	APPOSITION	_	_
+24	Prisco	_	NOUN	NOUN	_	23	APPOSITION	_	_
 25	:	_	PUNCT	PUNCT	_	3	END	_	_
 
 1	quando	_	CONJ	CONJ	_	3	RMOD	_	_
-2	gastaldello	_	NOUN	NOUN	_	3	SUBJ	_	_
+2	Gastaldello	_	NOUN	NOUN	_	3	SUBJ	_	_
 3	sporcava	_	VERB	VERB	_	0	TOP	_	_
 4	la	_	ART	ART	_	3	OBJ	_	_
 5	prestazione	_	NOUN	NOUN	_	4	ARG	_	_
 6	con	_	PREP	PREP	_	5	RMOD	_	_
 7	un	_	ART	ART	_	6	ARG	_	_
 8	appoggio	_	NOUN	NOUN	_	7	ARG	_	_
-9	inutil	_	ADJ	ADJ	_	8	RMOD	_	_
+9	inutile	_	ADJ	ADJ	_	8	RMOD	_	_
 10	e	_	CONJ	CONJ	_	9	COORD+BASE	_	_
 11	sballato	_	ADJ	ADJ	_	10	COORD2ND+BASE	_	_
 12	a	_	PREP	PREP	_	8	RMOD	_	_
-13	manninger	_	NOUN	NOUN	_	12	ARG	_	_
+13	Manninger	_	NOUN	NOUN	_	12	ARG	_	_
 14	costringendo	_	VERB	VERB	_	3	RMOD	_	_
-15	ile	_	ART	ART	_	14	OBJ	_	_
+15	il	_	ART	ART	_	14	OBJ	_	_
 16	portiere	_	NOUN	NOUN	_	15	ARG	_	_
 17	ad	_	PREP	PREP	_	14	RMOD	_	_
 18	entrare	_	VERB	VERB	_	17	ARG	_	_
 19	da	_	PREP	PREP	_	18	RMOD	_	_
 20	rigore	_	NOUN	NOUN	_	19	ARG	_	_
 21	su	_	PREP	PREP	_	18	RMOD	_	_
-22	cruz	_	NOUN	NOUN	_	21	ARG	_	_
+22	Cruz	_	NOUN	NOUN	_	21	ARG	_	_
 23	,	_	PUNCT	PUNCT	_	22	SEPARATOR	_	_
 24	mezzo	_	ADJ	ADJ	_	25	RMOD	_	_
 25	metro	_	NOUN	NOUN	_	22	APPOSITION	_	_
@@ -4409,7 +4409,7 @@
 34	decisiva	_	ADJ	ADJ	_	33	RMOD	_	_
 35	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	uno	_	ART	ART	_	0	TOP	_	_
+1	Uno	_	ART	ART	_	0	TOP	_	_
 2	spazio	_	NOUN	NOUN	_	1	ARG	_	_
 3	dedicato	_	VERB	VERB	_	2	RMOD+RELCL+REDUC	_	_
 4	per	_	PREP	PREP	_	3	RMOD	_	_
@@ -4424,44 +4424,44 @@
 13	rari	_	ADJ	ADJ	_	12	COORD2ND+BASE	_	_
 14	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	un'	_	ART	ART	_	0	TOP	_	_
+1	Un'	_	ART	ART	_	0	TOP	_	_
 2	area	_	NOUN	NOUN	_	1	ARG	_	_
 3	per	_	PREP	PREP	_	2	RMOD	_	_
-4	le	_	ART	ART	_	3	ARG	_	_
+4	lo	_	ART	ART	_	3	ARG	_	_
 5	sbarco	_	NOUN	NOUN	_	4	ARG	_	_
 6	a	_	PREP	PREP	_	5	RMOD	_	_
-7	librolandia	_	NOUN	NOUN	_	6	ARG	_	_
-8	die	_	PREP	PREP	_	5	RMOD	_	_
+7	Librolandia	_	NOUN	NOUN	_	6	ARG	_	_
+8	di	_	PREP	PREP	_	5	RMOD	_	_
 9	"	_	PUNCT	PUNCT	_	10	OPEN+QUOTES	_	_
-10	torino	_	NOUN	NOUN	_	8	ARG	_	_
-11	comics	_	NOUN	NOUN	_	10	CONTIN+DENOM	_	_
+10	Torino	_	NOUN	NOUN	_	8	ARG	_	_
+11	Comics	_	NOUN	NOUN	_	10	CONTIN+DENOM	_	_
 12	"	_	PUNCT	PUNCT	_	10	CLOSE+QUOTES	_	_
 13	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	e	_	CONJ	CONJ	_	0	TOP	_	_
+1	E	_	CONJ	CONJ	_	0	TOP	_	_
 2	poi	_	ADV	ADV	_	1	COORD2ND+BASE	_	_
 3	,	_	PUNCT	PUNCT	_	1	COORD2ND+BASE	_	_
 4	altri	_	ADJ	ADJ	_	3	COORD2ND+BASE	_	_
 5	debutti	_	NOUN	NOUN	_	4	ARG	_	_
 6	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	trabocca	_	VERB	VERB	_	0	TOP	_	_
+1	Trabocca	_	VERB	VERB	_	0	TOP	_	_
 2	novità	_	NOUN	NOUN	_	1	OBJ	_	_
 3	la	_	ART	ART	_	1	OBJ	_	_
-4	20`àû	_	ADJ	ADJ	_	5	RMOD	_	_
+4	20‚àû	_	ADJ	ADJ	_	5	RMOD	_	_
 5	edizione	_	NOUN	NOUN	_	3	ARG	_	_
 6	della	_	PREP	PREP	_	5	RMOD	_	_
 7	della	_	ART	ART	_	6	ARG	_	_
-8	fiera	_	NOUN	NOUN	_	7	ARG	_	_
+8	Fiera	_	NOUN	NOUN	_	7	ARG	_	_
 9	del	_	PREP	PREP	_	8	RMOD	_	_
 10	del	_	ART	ART	_	9	ARG	_	_
-11	libro	_	NOUN	NOUN	_	10	ARG	_	_
+11	Libro	_	NOUN	NOUN	_	10	ARG	_	_
 12	che	_	PRON	PRON	_	14	SUBJ	_	_
 13	s'	_	PRON	PRON	_	14	RMOD	_	_
 14	aprirà	_	VERB	VERB	_	11	RMOD+RELCL	_	_
 15	al	_	PREP	PREP	_	14	RMOD	_	_
 16	al	_	ART	ART	_	15	ARG	_	_
-17	lingotto	_	NOUN	NOUN	_	16	ARG	_	_
+17	Lingotto	_	NOUN	NOUN	_	16	ARG	_	_
 18	dal	_	PREP	PREP	_	14	RMOD	_	_
 19	dal	_	ART	ART	_	18	ARG	_	_
 20	<num>	_	NUM	NUM	_	19	ARG	_	_
@@ -4471,10 +4471,10 @@
 24	maggio	_	NOUN	NOUN	_	23	RMOD	_	_
 25	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	debutta	_	VERB	VERB	_	0	TOP	_	_
+1	Debutta	_	VERB	VERB	_	0	TOP	_	_
 2	quest'	_	ADJ	ADJ	_	1	SUBJ	_	_
 3	anno	_	NOUN	NOUN	_	2	ARG	_	_
-4	ile	_	ART	ART	_	1	SUBJ	_	_
+4	il	_	ART	ART	_	1	SUBJ	_	_
 5	"	_	PUNCT	PUNCT	_	6	OPEN+QUOTES	_	_
 6	padiglione	_	NOUN	NOUN	_	4	ARG	_	_
 7	<num>	_	NUM	NUM	_	6	APPOSITION	_	_
@@ -4485,27 +4485,27 @@
 12	accanto	_	PREP	PREP	_	11	RMOD	_	_
 13	alla	_	PREP	PREP	_	12	CONTIN+PREP	_	_
 14	alla	_	ART	ART	_	13	ARG	_	_
-15	sala	_	NOUN	NOUN	_	14	ARG	_	_
-16	gialla	_	ADJ	ADJ	_	15	RMOD	_	_
+15	Sala	_	NOUN	NOUN	_	14	ARG	_	_
+16	Gialla	_	ADJ	ADJ	_	15	RMOD	_	_
 17	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	qui	_	ADV	ADV	_	3	RMOD	_	_
+1	Qui	_	ADV	ADV	_	3	RMOD	_	_
 2	saranno	_	VERB	VERB	_	3	AUX+PASSIVE	_	_
 3	ospitati	_	VERB	VERB	_	0	TOP	_	_
 4	"	_	PUNCT	PUNCT	_	5	OPEN+QUOTES	_	_
-5	torino	_	NOUN	NOUN	_	3	APPOSITION	_	_
-6	comics	_	NOUN	NOUN	_	5	CONTIN+DENOM	_	_
+5	Torino	_	NOUN	NOUN	_	3	APPOSITION	_	_
+6	Comics	_	NOUN	NOUN	_	5	CONTIN+DENOM	_	_
 7	"	_	PUNCT	PUNCT	_	5	CLOSE+QUOTES	_	_
 8	e	_	CONJ	CONJ	_	5	COORD+BASE	_	_
 9	l'	_	ART	ART	_	8	COORD2ND+BASE	_	_
-10	international	_	NOUN	NOUN	_	9	ARG	_	_
-11	booke	_	NOUN	NOUN	_	10	APPOSITION	_	_
-12	forum	_	NOUN	NOUN	_	11	CONTIN+DENOM	_	_
+10	International	_	NOUN	NOUN	_	9	ARG	_	_
+11	Book	_	NOUN	NOUN	_	10	APPOSITION	_	_
+12	Forum	_	NOUN	NOUN	_	11	CONTIN+DENOM	_	_
 13	,	_	PUNCT	PUNCT	_	12	SEPARATOR	_	_
 14	la	_	ART	ART	_	12	APPOSITION	_	_
 15	piccola	_	ADJ	ADJ	_	14	RMOD	_	_
 16	"	_	PUNCT	PUNCT	_	17	OPEN+QUOTES	_	_
-17	buchmesse	_	NOUN	NOUN	_	14	ARG	_	_
+17	Buchmesse	_	NOUN	NOUN	_	14	ARG	_	_
 18	"	_	PUNCT	PUNCT	_	17	CLOSE+QUOTES	_	_
 19	per	_	PREP	PREP	_	3	RMOD	_	_
 20	la	_	ART	ART	_	19	ARG	_	_
@@ -4519,12 +4519,12 @@
 28	editori	_	NOUN	NOUN	_	27	COORD2ND+BASE	_	_
 29	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	nell'	_	PREP	PREP	_	5	RMOD	_	_
-2	nell'	_	ART	ART	_	1	ARG	_	_
+1	Nell'	_	PREP	PREP	_	5	RMOD	_	_
+2	Nell'	_	ART	ART	_	1	ARG	_	_
 3	'1	_	NUM	NUM	_	2	ARG	_	_
 4	si	_	PRON	PRON	_	5	SUBJ/SUBJ+IMPERS	_	_
 5	troveranno	_	VERB	VERB	_	0	TOP	_	_
-6	le	_	ART	ART	_	5	SUBJ	_	_
+6	lo	_	ART	ART	_	5	SUBJ	_	_
 7	stand	_	NOUN	NOUN	_	6	ARG	_	_
 8	del	_	PREP	PREP	_	7	RMOD	_	_
 9	del	_	ART	ART	_	8	ARG	_	_
@@ -4532,14 +4532,14 @@
 11	ospite	_	NOUN	NOUN	_	10	APPOSITION	_	_
 12	,	_	PUNCT	PUNCT	_	10	SEPARATOR	_	_
 13	la	_	ART	ART	_	10	APPOSITION	_	_
-14	lituania	_	NOUN	NOUN	_	13	ARG	_	_
+14	Lituania	_	NOUN	NOUN	_	13	ARG	_	_
 15	,	_	PUNCT	PUNCT	_	13	SEPARATOR	_	_
 16	e	_	CONJ	CONJ	_	13	COORD+BASE	_	_
 17	,	_	PUNCT	PUNCT	_	16	OPEN+PARENTHETICAL	_	_
 18	oltre	_	PREP	PREP	_	16	COORD2ND+BASE	_	_
 19	alla	_	PREP	PREP	_	18	CONTIN+PREP	_	_
 20	alla	_	ART	ART	_	19	ARG	_	_
-21	sala	_	NOUN	NOUN	_	20	ARG	_	_
+21	Sala	_	NOUN	NOUN	_	20	ARG	_	_
 22	rossa	_	ADJ	ADJ	_	21	RMOD	_	_
 23	,	_	PUNCT	PUNCT	_	13	COORD+BASE	_	_
 24	un'	_	ART	ART	_	7	APPOSITION	_	_
@@ -4556,7 +4556,7 @@
 
 1	l'	_	ART	ART	_	0	TOP	_	_
 2	"	_	PUNCT	PUNCT	_	3	OPEN+QUOTES	_	_
-3	incubatore	_	NOUN	NOUN	_	1	ARG	_	_
+3	Incubatore	_	NOUN	NOUN	_	1	ARG	_	_
 4	"	_	PUNCT	PUNCT	_	3	CLOSE+QUOTES	_	_
 5	,	_	PUNCT	PUNCT	_	1	SEPARATOR	_	_
 6	ovvero	_	CONJ	CONJ	_	1	COORD+BASE	_	_
@@ -4575,11 +4575,11 @@
 1	come	_	CONJ	CONJ	_	12	RMOD	_	_
 2	ha	_	VERB	VERB	_	3	AUX+TENSE	_	_
 3	spiegato	_	VERB	VERB	_	1	ARG	_	_
-4	maurizio	_	NOUN	NOUN	_	3	SUBJ	_	_
-5	poma	_	NOUN	NOUN	_	4	CONTIN+DENOM	_	_
+4	Maurizio	_	NOUN	NOUN	_	3	SUBJ	_	_
+5	Poma	_	NOUN	NOUN	_	4	CONTIN+DENOM	_	_
 6	(	_	PUNCT	PUNCT	_	4	OPEN+PARENTHETICAL	_	_
-7	biella	_	NOUN	NOUN	_	4	APPOSITION	_	_
-8	intraprendere	_	NOUN	NOUN	_	7	CONTIN+DENOM	_	_
+7	Biella	_	NOUN	NOUN	_	4	APPOSITION	_	_
+8	Intraprendere	_	NOUN	NOUN	_	7	CONTIN+DENOM	_	_
 9	)	_	PUNCT	PUNCT	_	4	CLOSE+PARENTHETICAL	_	_
 10	,	_	PUNCT	PUNCT	_	12	OPEN+PARENTHETICAL	_	_
 11	"	_	PUNCT	PUNCT	_	12	OPEN+QUOTES	_	_
@@ -4588,7 +4588,7 @@
 14	nati	_	VERB	VERB	_	13	RMOD+RELCL+REDUC	_	_
 15	da	_	PREP	PREP	_	14	SUBJ/INDCOMPL	_	_
 16	meno	_	PRON	PRON	_	15	ARG	_	_
-17	die	_	CONJ	CONJ	_	16	COORD+COMPAR	_	_
+17	di	_	CONJ	CONJ	_	16	COORD+COMPAR	_	_
 18	<num>	_	NUM	NUM	_	17	COORD2ND+COMPAR	_	_
 19	mesi	_	NOUN	NOUN	_	18	ARG	_	_
 20	,	_	PUNCT	PUNCT	_	19	SEPARATOR	_	_
@@ -4599,12 +4599,12 @@
 25	essere	_	VERB	VERB	_	24	INDCOMPL	_	_
 26	presenti	_	ADJ	ADJ	_	25	PREDCOMPL+SUBJ	_	_
 27	in	_	PREP	PREP	_	25	RMOD	_	_
-28	fiera	_	NOUN	NOUN	_	27	ARG	_	_
+28	Fiera	_	NOUN	NOUN	_	27	ARG	_	_
 29	"	_	PUNCT	PUNCT	_	12	CLOSE+QUOTES	_	_
 30	.	_	PUNCT	PUNCT	_	12	END	_	_
 
-1	anche	_	ADV	ADV	_	2	RMOD	_	_
-2	ile	_	ART	ART	_	5	SUBJ	_	_
+1	Anche	_	ADV	ADV	_	2	RMOD	_	_
+2	il	_	ART	ART	_	5	SUBJ	_	_
 3	padiglione	_	NOUN	NOUN	_	2	ARG	_	_
 4	<num>	_	NUM	NUM	_	3	APPOSITION	_	_
 5	accoglie	_	VERB	VERB	_	0	TOP	_	_
@@ -4615,9 +4615,9 @@
 10	debutto	_	NOUN	NOUN	_	9	ARG	_	_
 11	:	_	PUNCT	PUNCT	_	5	END	_	_
 
-1	e`	_	VERB	VERB	_	0	TOP	_	_
+1	E`	_	VERB	VERB	_	0	TOP	_	_
 2	"	_	PUNCT	PUNCT	_	3	OPEN+QUOTES	_	_
-3	libri	_	NOUN	NOUN	_	1	PREDCOMPL+SUBJ	_	_
+3	Libri	_	NOUN	NOUN	_	1	PREDCOMPL+SUBJ	_	_
 4	e	_	CONJ	CONJ	_	3	COORD+BASE	_	_
 5	cioccolato	_	NOUN	NOUN	_	4	COORD2ND+BASE	_	_
 6	"	_	PUNCT	PUNCT	_	3	CLOSE+QUOTES	_	_
@@ -4628,7 +4628,7 @@
 11	,	_	PUNCT	PUNCT	_	9	SEPARATOR	_	_
 12	dopo	_	PREP	PREP	_	9	RMOD	_	_
 13	anni	_	NOUN	NOUN	_	12	ARG	_	_
-14	die	_	PREP	PREP	_	13	RMOD	_	_
+14	di	_	PREP	PREP	_	13	RMOD	_	_
 15	lamentele	_	NOUN	NOUN	_	14	ARG	_	_
 16	,	_	PUNCT	PUNCT	_	9	SEPARATOR	_	_
 17	"	_	PUNCT	PUNCT	_	18	OPEN+QUOTES	_	_
@@ -4640,10 +4640,10 @@
 23	,	_	PUNCT	PUNCT	_	25	SEPARATOR	_	_
 24	ha	_	VERB	VERB	_	25	AUX+TENSE	_	_
 25	chiarito	_	VERB	VERB	_	18	ARG	_	_
-26	picchioni	_	NOUN	NOUN	_	25	OBJ	_	_
+26	Picchioni	_	NOUN	NOUN	_	25	OBJ	_	_
 27	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	i	_	ART	ART	_	9	SUBJ	_	_
+1	I	_	ART	ART	_	9	SUBJ	_	_
 2	biglietti	_	NOUN	NOUN	_	1	ARG	_	_
 3	per	_	PREP	PREP	_	2	RMOD	_	_
 4	questo	_	ADJ	ADJ	_	3	ARG	_	_
@@ -4659,10 +4659,10 @@
 14	<num>	_	NUM	NUM	_	13	ARG	_	_
 15	maggio	_	NOUN	NOUN	_	14	RMOD	_	_
 16	ad	_	PREP	PREP	_	12	ARG	_	_
-17	atrium	_	NOUN	NOUN	_	16	ARG	_	_
+17	Atrium	_	NOUN	NOUN	_	16	ARG	_	_
 18	.	_	PUNCT	PUNCT	_	9	END	_	_
 
-1	per	_	PREP	PREP	_	15	RMOD	_	_
+1	Per	_	PREP	PREP	_	15	RMOD	_	_
 2	evitare	_	VERB	VERB	_	1	ARG	_	_
 3	,	_	PUNCT	PUNCT	_	1	SEPARATOR	_	_
 4	o	_	CONJ	CONJ	_	1	COORD+BASE	_	_
@@ -4673,7 +4673,7 @@
 9	code	_	NOUN	NOUN	_	8	ARG	_	_
 10	durante	_	PREP	PREP	_	9	RMOD	_	_
 11	la	_	ART	ART	_	10	ARG	_	_
-12	fiera	_	NOUN	NOUN	_	11	ARG	_	_
+12	Fiera	_	NOUN	NOUN	_	11	ARG	_	_
 13	,	_	PUNCT	PUNCT	_	15	SEPARATOR	_	_
 14	saranno	_	VERB	VERB	_	15	AUX+PASSIVE	_	_
 15	potenziate	_	VERB	VERB	_	0	TOP	_	_
@@ -4690,11 +4690,11 @@
 26	(	_	PUNCT	PUNCT	_	20	OPEN+PARENTHETICAL	_	_
 27	sempre	_	ADV	ADV	_	28	RMOD	_	_
 28	ad	_	PREP	PREP	_	20	PREDCOMPL+SUBJ	_	_
-29	atrium	_	NOUN	NOUN	_	28	ARG	_	_
+29	Atrium	_	NOUN	NOUN	_	28	ARG	_	_
 30	)	_	PUNCT	PUNCT	_	20	CLOSE+PARENTHETICAL	_	_
 31	.	_	PUNCT	PUNCT	_	15	END	_	_
 
-1	quest'	_	ADJ	ADJ	_	3	SUBJ	_	_
+1	Quest'	_	ADJ	ADJ	_	3	SUBJ	_	_
 2	anno	_	NOUN	NOUN	_	1	ARG	_	_
 3	interesserà	_	VERB	VERB	_	0	TOP	_	_
 4	le	_	ART	ART	_	3	OBJ	_	_
@@ -4706,12 +4706,12 @@
 10	<num>	_	NUM	NUM	_	9	COORD2ND+BASE	_	_
 11	,	_	PUNCT	PUNCT	_	10	SEPARATOR	_	_
 12	quella	_	PRON	PRON	_	9	COORD2ND+BASE	_	_
-13	die	_	PREP	PREP	_	12	RMOD	_	_
-14	porta	_	NOUN	NOUN	_	13	ARG	_	_
-15	palazzo	_	NOUN	NOUN	_	14	CONTIN+DENOM	_	_
+13	di	_	PREP	PREP	_	12	RMOD	_	_
+14	Porta	_	NOUN	NOUN	_	13	ARG	_	_
+15	Palazzo	_	NOUN	NOUN	_	14	CONTIN+DENOM	_	_
 16	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	ile	_	ART	ART	_	4	SUBJ	_	_
+1	il	_	ART	ART	_	4	SUBJ	_	_
 2	<num>	_	NUM	NUM	_	1	ARG	_	_
 3	sarà	_	VERB	VERB	_	4	AUX+PASSIVE	_	_
 4	allestita	_	VERB	VERB	_	0	TOP	_	_
@@ -4724,7 +4724,7 @@
 11	del	_	PREP	PREP	_	10	RMOD	_	_
 12	del	_	ART	ART	_	11	ARG	_	_
 13	grattacielo	_	NOUN	NOUN	_	12	ARG	_	_
-14	lancia	_	NOUN	NOUN	_	13	APPOSITION	_	_
+14	Lancia	_	NOUN	NOUN	_	13	APPOSITION	_	_
 15	,	_	PUNCT	PUNCT	_	13	SEPARATOR	_	_
 16	dove	_	PRON	PRON	_	18	RMOD	_	_
 17	si	_	PRON	PRON	_	18	SUBJ/SUBJ+IMPERS	_	_
@@ -4741,19 +4741,19 @@
 28	all'	_	PREP	PREP	_	25	CONTIN+LOCUT	_	_
 29	all'	_	ART	ART	_	28	ARG	_	_
 30	ospedale	_	NOUN	NOUN	_	29	ARG	_	_
-31	martini	_	NOUN	NOUN	_	30	APPOSITION	_	_
+31	Martini	_	NOUN	NOUN	_	30	APPOSITION	_	_
 32	,	_	PUNCT	PUNCT	_	13	SEPARATOR	_	_
 33	al	_	PREP	PREP	_	32	COORD2ND+BASE	_	_
 34	al	_	ART	ART	_	33	ARG	_	_
-35	prinotti	_	NOUN	NOUN	_	34	ARG	_	_
+35	Prinotti	_	NOUN	NOUN	_	34	ARG	_	_
 36	e	_	CONJ	CONJ	_	33	COORD+BASE	_	_
 37	al	_	PREP	PREP	_	36	COORD2ND+BASE	_	_
 38	al	_	ART	ART	_	37	ARG	_	_
-39	gruppo	_	NOUN	NOUN	_	38	ARG	_	_
-40	arco	_	NOUN	NOUN	_	39	APPOSITION	_	_
+39	Gruppo	_	NOUN	NOUN	_	38	ARG	_	_
+40	Arco	_	NOUN	NOUN	_	39	APPOSITION	_	_
 41	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	la	_	ART	ART	_	3	SUBJ	_	_
+1	La	_	ART	ART	_	3	SUBJ	_	_
 2	rivincita	_	NOUN	NOUN	_	1	ARG	_	_
 3	ha	_	VERB	VERB	_	0	TOP	_	_
 4	sempre	_	ADV	ADV	_	3	RMOD	_	_
@@ -4767,18 +4767,18 @@
 12	vittoria	_	NOUN	NOUN	_	10	ARG	_	_
 13	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	dal	_	PREP	PREP	_	8	RMOD	_	_
-2	dal	_	ART	ART	_	1	ARG	_	_
-3	bahrein	_	NOUN	NOUN	_	2	ARG	_	_
+1	Dal	_	PREP	PREP	_	8	RMOD	_	_
+2	Dal	_	ART	ART	_	1	ARG	_	_
+3	Bahrein	_	NOUN	NOUN	_	2	ARG	_	_
 4	,	_	PUNCT	PUNCT	_	8	SEPARATOR	_	_
-5	ile	_	ART	ART	_	8	SUBJ	_	_
+5	il	_	ART	ART	_	8	SUBJ	_	_
 6	giovane	_	NOUN	NOUN	_	5	ARG	_	_
 7	brasiliano	_	ADJ	ADJ	_	6	RMOD	_	_
 8	torna	_	VERB	VERB	_	0	TOP	_	_
 9	a	_	PREP	PREP	_	8	INDCOMPL	_	_
 10	casa	_	NOUN	NOUN	_	9	ARG	_	_
 11	con	_	PREP	PREP	_	8	RMOD	_	_
-12	alcun	_	ADJ	ADJ	_	11	ARG	_	_
+12	alcune	_	ADJ	ADJ	_	11	ARG	_	_
 13	convinzioni	_	NOUN	NOUN	_	12	ARG	_	_
 14	che	_	PRON	PRON	_	15	SUBJ	_	_
 15	pesano	_	VERB	VERB	_	13	RMOD+RELCL	_	_
@@ -4786,19 +4786,19 @@
 
 1	a	_	PREP	PREP	_	6	RMOD	_	_
 2	parità	_	NOUN	NOUN	_	1	ARG	_	_
-3	die	_	PREP	PREP	_	2	RMOD	_	_
+3	di	_	PREP	PREP	_	2	RMOD	_	_
 4	monoposto	_	NOUN	NOUN	_	3	ARG	_	_
 5	ha	_	VERB	VERB	_	6	AUX+TENSE	_	_
 6	battuto	_	VERB	VERB	_	0	TOP	_	_
-7	ile	_	ART	ART	_	6	OBJ	_	_
+7	il	_	ART	ART	_	6	OBJ	_	_
 8	compagno	_	NOUN	NOUN	_	7	ARG	_	_
-9	die	_	PREP	PREP	_	8	RMOD	_	_
+9	di	_	PREP	PREP	_	8	RMOD	_	_
 10	squadra	_	NOUN	NOUN	_	9	ARG	_	_
 11	,	_	PUNCT	PUNCT	_	13	SEPARATOR	_	_
 12	ha	_	VERB	VERB	_	13	AUX+TENSE	_	_
 13	scoperto	_	VERB	VERB	_	8	RMOD+RELCL	_	_
 14	che	_	CONJ	CONJ	_	13	OBJ	_	_
-15	alonso	_	NOUN	NOUN	_	16	SUBJ	_	_
+15	Alonso	_	NOUN	NOUN	_	16	SUBJ	_	_
 16	può	_	VERB	VERB	_	14	ARG	_	_
 17	avere	_	VERB	VERB	_	16	INDCOMPL	_	_
 18	una	_	ART	ART	_	17	OBJ	_	_
@@ -4808,7 +4808,7 @@
 22	ha	_	VERB	VERB	_	23	AUX+TENSE	_	_
 23	tenuto	_	VERB	VERB	_	14	ARG	_	_
 24	dietro	_	ADV	ADV	_	23	RMOD	_	_
-25	hamilton	_	NOUN	NOUN	_	23	OBJ	_	_
+25	Hamilton	_	NOUN	NOUN	_	23	OBJ	_	_
 26	alla	_	PREP	PREP	_	23	INDCOMPL	_	_
 27	alla	_	ART	ART	_	26	ARG	_	_
 28	prima	_	ADJ	ADJ	_	27	RMOD	_	_
@@ -4822,7 +4822,7 @@
 36	seguite	_	VERB	VERB	_	33	RMOD+RELCL	_	_
 37	.	_	PUNCT	PUNCT	_	23	END	_	_
 
-1	bel	_	ADJ	ADJ	_	2	RMOD	_	_
+1	Bel	_	ADJ	ADJ	_	2	RMOD	_	_
 2	carattere	_	NOUN	NOUN	_	4	SUBJ	_	_
 3	,	_	PUNCT	PUNCT	_	4	SEPARATOR	_	_
 4	sarà	_	VERB	VERB	_	0	TOP	_	_
@@ -4836,7 +4836,7 @@
 12	anni	_	NOUN	NOUN	_	9	ARG	_	_
 13	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	un	_	ART	ART	_	0	TOP	_	_
+1	Un	_	ART	ART	_	0	TOP	_	_
 2	altro	_	ADJ	ADJ	_	3	RMOD	_	_
 3	errore	_	NOUN	NOUN	_	1	ARG	_	_
 4	e	_	CONJ	CONJ	_	1	COORD+BASE	_	_
@@ -4848,18 +4848,18 @@
 10	avrebbe	_	VERB	VERB	_	11	AUX+PASSIVE	_	_
 11	consegnato	_	VERB	VERB	_	1	ARG	_	_
 12	a	_	PREP	PREP	_	11	RMOD	_	_
-13	raikkonen	_	NOUN	NOUN	_	12	ARG	_	_
-14	ile	_	ART	ART	_	11	OBJ	_	_
+13	Raikkonen	_	NOUN	NOUN	_	12	ARG	_	_
+14	il	_	ART	ART	_	11	OBJ	_	_
 15	ruolo	_	NOUN	NOUN	_	14	ARG	_	_
-16	die	_	PREP	PREP	_	15	RMOD	_	_
+16	di	_	PREP	PREP	_	15	RMOD	_	_
 17	prima	_	ADJ	ADJ	_	18	RMOD	_	_
 18	guida	_	NOUN	NOUN	_	16	ARG	_	_
 19	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	se	_	CONJ	CONJ	_	11	RMOD	_	_
+1	Se	_	CONJ	CONJ	_	11	RMOD	_	_
 2	pensi	_	VERB	VERB	_	1	ARG	_	_
 3	a	_	PREP	PREP	_	2	RMOD	_	_
-4	quest	_	ADJ	ADJ	_	3	ARG	_	_
+4	queste	_	ADJ	ADJ	_	3	ARG	_	_
 5	cose	_	NOUN	NOUN	_	4	ARG	_	_
 6	,	_	PUNCT	PUNCT	_	2	SEPARATOR	_	_
 7	se	_	CONJ	CONJ	_	2	RMOD	_	_
@@ -4871,11 +4871,11 @@
 13	sbagliare	_	VERB	VERB	_	12	ARG	_	_
 14	.	_	PUNCT	PUNCT	_	11	END	_	_
 
-1	pronti	_	INTERJECTION	INTERJECTION	_	4	RMOD	_	_
+1	Pronti	_	INTERJECTION	INTERJECTION	_	4	RMOD	_	_
 2	via	_	INTERJECTION	INTERJECTION	_	4	RMOD	_	_
 3	,	_	PUNCT	PUNCT	_	2	COORD+BASE	_	_
 4	traiettoria	_	NOUN	NOUN	_	0	TOP	_	_
-5	ideal	_	ADJ	ADJ	_	4	RMOD	_	_
+5	ideale	_	ADJ	ADJ	_	4	RMOD	_	_
 6	e	_	CONJ	CONJ	_	4	COORD+BASE	_	_
 7	staccata	_	NOUN	NOUN	_	6	COORD2ND+BASE	_	_
 8	al	_	PREP	PREP	_	7	RMOD	_	_
@@ -4884,18 +4884,18 @@
 11	giusto	_	ADJ	ADJ	_	10	RMOD	_	_
 12	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	hamilton	_	NOUN	NOUN	_	2	SUBJ	_	_
+1	Hamilton	_	NOUN	NOUN	_	2	SUBJ	_	_
 2	è	_	VERB	VERB	_	0	TOP	_	_
 3	dietro	_	ADV	ADV	_	2	RMOD	_	_
 4	,	_	PUNCT	PUNCT	_	2	CLOSE+PARENTHETICAL	_	_
 5	anche	_	ADV	ADV	_	6	RMOD	_	_
 6	se	_	CONJ	CONJ	_	2	RMOD	_	_
-7	felipe	_	NOUN	NOUN	_	6	ARG	_	_
+7	Felipe	_	NOUN	NOUN	_	6	ARG	_	_
 8	riesce	_	VERB	VERB	_	6	ARG	_	_
 9	a	_	PREP	PREP	_	8	INDCOMPL	_	_
 10	vedergli	_	VERB	VERB	_	9	ARG	_	_
 11	vedergli	_	PRON	PRON	_	10	RMOD	_	_
-12	ile	_	ART	ART	_	10	OBJ	_	_
+12	il	_	ART	ART	_	10	OBJ	_	_
 13	colore	_	NOUN	NOUN	_	12	ARG	_	_
 14	degli	_	PREP	PREP	_	13	RMOD	_	_
 15	degli	_	ART	ART	_	14	ARG	_	_
@@ -4910,25 +4910,25 @@
 24	.	_	PUNCT	PUNCT	_	2	END	_	_
 
 1	le	_	ART	ART	_	3	SUBJ	_	_
-2	mclaren	_	NOUN	NOUN	_	1	ARG	_	_
+2	McLaren	_	NOUN	NOUN	_	1	ARG	_	_
 3	attaccano	_	VERB	VERB	_	0	TOP	_	_
 4	,	_	PUNCT	PUNCT	_	6	SEPARATOR	_	_
-5	alonso	_	NOUN	NOUN	_	6	SUBJ	_	_
+5	Alonso	_	NOUN	NOUN	_	6	SUBJ	_	_
 6	passa	_	VERB	VERB	_	0	TOP	_	_
 7	un	_	ART	ART	_	6	OBJ	_	_
-8	raikkonen	_	NOUN	NOUN	_	7	ARG	_	_
+8	Raikkonen	_	NOUN	NOUN	_	7	ARG	_	_
 9	in	_	PREP	PREP	_	6	RMOD	_	_
 10	cerca	_	PREP	PREP	_	9	CONTIN+LOCUT	_	_
-11	die	_	PREP	PREP	_	10	CONTIN+LOCUT	_	_
+11	di	_	PREP	PREP	_	10	CONTIN+LOCUT	_	_
 12	traiettorie	_	NOUN	NOUN	_	9	ARG	_	_
-13	alternativ	_	ADJ	ADJ	_	12	RMOD	_	_
+13	alternative	_	ADJ	ADJ	_	12	RMOD	_	_
 14	,	_	PUNCT	PUNCT	_	16	SEPARATOR	_	_
-15	hamilton	_	NOUN	NOUN	_	16	SUBJ	_	_
+15	Hamilton	_	NOUN	NOUN	_	16	SUBJ	_	_
 16	resta	_	VERB	VERB	_	0	TOP	_	_
 17	incollato	_	ADJ	ADJ	_	16	PREDCOMPL+SUBJ	_	_
 18	alla	_	PREP	PREP	_	17	ARG	_	_
 19	alla	_	ART	ART	_	18	ARG	_	_
-20	ferrari	_	NOUN	NOUN	_	19	ARG	_	_
+20	Ferrari	_	NOUN	NOUN	_	19	ARG	_	_
 21	del	_	PREP	PREP	_	20	RMOD	_	_
 22	del	_	ART	ART	_	21	ARG	_	_
 23	brasiliano	_	NOUN	NOUN	_	22	ARG	_	_
@@ -4937,9 +4937,9 @@
 26	questa	_	ADJ	ADJ	_	28	SUBJ	_	_
 27	volta	_	NOUN	NOUN	_	26	ARG	_	_
 28	manca	_	VERB	VERB	_	23	RMOD+RELCL+REDUC	_	_
-29	die	_	PREP	PREP	_	28	RMOD	_	_
+29	di	_	PREP	PREP	_	28	RMOD	_	_
 30	velocità	_	NOUN	NOUN	_	29	ARG	_	_
-31	die	_	PREP	PREP	_	30	RMOD	_	_
+31	di	_	PREP	PREP	_	30	RMOD	_	_
 32	punta	_	NOUN	NOUN	_	31	ARG	_	_
 33	:	_	PUNCT	PUNCT	_	16	END	_	_
 
@@ -4952,17 +4952,17 @@
 7	<num>	_	NUM	NUM	_	6	ARG	_	_
 8	della	_	PREP	PREP	_	4	RMOD	_	_
 9	della	_	ART	ART	_	8	ARG	_	_
-10	mclaren	_	NOUN	NOUN	_	9	ARG	_	_
+10	McLaren	_	NOUN	NOUN	_	9	ARG	_	_
 11	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	ogni	_	ADJ	ADJ	_	3	RMOD	_	_
+1	Ogni	_	ADJ	ADJ	_	3	RMOD	_	_
 2	rettilineo	_	NOUN	NOUN	_	1	ARG	_	_
 3	è	_	VERB	VERB	_	0	TOP	_	_
 4	un	_	ART	ART	_	3	PREDCOMPL+SUBJ	_	_
 5	incubo	_	NOUN	NOUN	_	4	ARG	_	_
 6	.	_	PUNCT	PUNCT	_	3	END	_	_
 
-1	scatta	_	VERB	VERB	_	0	TOP	_	_
+1	Scatta	_	VERB	VERB	_	0	TOP	_	_
 2	l'	_	ART	ART	_	1	OBJ	_	_
 3	attacco	_	NOUN	NOUN	_	2	ARG	_	_
 4	alla	_	PREP	PREP	_	3	RMOD	_	_
@@ -4970,7 +4970,7 @@
 6	curva	_	NOUN	NOUN	_	5	ARG	_	_
 7	<num>	_	NUM	NUM	_	6	APPOSITION	_	_
 8	,	_	PUNCT	PUNCT	_	14	SEPARATOR	_	_
-9	ile	_	ART	ART	_	14	SUBJ	_	_
+9	il	_	ART	ART	_	14	SUBJ	_	_
 10	campione	_	NOUN	NOUN	_	9	ARG	_	_
 11	del	_	PREP	PREP	_	10	RMOD	_	_
 12	del	_	ART	ART	_	11	ARG	_	_
@@ -5002,12 +5002,12 @@
 38	luglio	_	NOUN	NOUN	_	37	ARG	_	_
 39	scorso	_	ADJ	ADJ	_	38	RMOD	_	_
 40	a	_	PREP	PREP	_	36	ARG	_	_
-41	indianapolis	_	NOUN	NOUN	_	40	ARG	_	_
+41	Indianapolis	_	NOUN	NOUN	_	40	ARG	_	_
 42	)	_	PUNCT	PUNCT	_	1	CLOSE+PARENTHETICAL	_	_
 43	.	_	PUNCT	PUNCT	_	1	END	_	_
 
 1	"	_	PUNCT	PUNCT	_	2	OPEN+QUOTES	_	_
-2	quel	_	ADJ	ADJ	_	3	RMOD	_	_
+2	Quel	_	ADJ	ADJ	_	3	RMOD	_	_
 3	sorpasso	_	NOUN	NOUN	_	0	TOP	_	_
 4	mi	_	PRON	PRON	_	6	INDOBJ	_	_
 5	è	_	VERB	VERB	_	6	AUX+TENSE	_	_
@@ -5018,7 +5018,7 @@
 10	e	_	CONJ	CONJ	_	6	COORD+BASE	_	_
 11	arriverò	_	VERB	VERB	_	10	COORD2ND+BASE	_	_
 12	in	_	PREP	PREP	_	11	RMOD	_	_
-13	spagna	_	NOUN	NOUN	_	12	ARG	_	_
+13	Spagna	_	NOUN	NOUN	_	12	ARG	_	_
 14	ancora	_	ADV	ADV	_	11	RMOD	_	_
 15	in	_	PREP	PREP	_	11	RMOD	_	_
 16	testa	_	NOUN	NOUN	_	15	ARG	_	_
@@ -5028,7 +5028,7 @@
 20	"	_	PUNCT	PUNCT	_	11	CLOSE+QUOTES	_	_
 21	.	_	PUNCT	PUNCT	_	6	END	_	_
 
-1	eppure	_	CONJ	CONJ	_	0	TOP	_	_
+1	Eppure	_	CONJ	CONJ	_	0	TOP	_	_
 2	dietro	_	PREP	PREP	_	20	RMOD	_	_
 3	la	_	ART	ART	_	2	ARG	_	_
 4	resa	_	NOUN	NOUN	_	3	ARG	_	_
@@ -5041,10 +5041,10 @@
 11	nel	_	ART	ART	_	10	ARG	_	_
 12	confronto	_	NOUN	NOUN	_	11	ARG	_	_
 13	con	_	PREP	PREP	_	12	RMOD	_	_
-14	ile	_	ART	ART	_	13	ARG	_	_
+14	il	_	ART	ART	_	13	ARG	_	_
 15	suo	_	ADJ	ADJ	_	16	RMOD	_	_
 16	compagno	_	NOUN	NOUN	_	14	ARG	_	_
-17	hamilton	_	NOUN	NOUN	_	16	CONTIN+DENOM	_	_
+17	Hamilton	_	NOUN	NOUN	_	16	CONTIN+DENOM	_	_
 18	,	_	PUNCT	PUNCT	_	12	SEPARATOR	_	_
 19	si	_	PRON	PRON	_	20	SUBJ/SUBJ+IMPERS	_	_
 20	nascondono	_	VERB	VERB	_	1	COORD2ND+BASE	_	_
@@ -5053,10 +5053,10 @@
 23	:	_	PUNCT	PUNCT	_	1	END	_	_
 
 1	re	_	NOUN	NOUN	_	4	SUBJ	_	_
-2	fernando	_	NOUN	NOUN	_	1	CONTIN+LOCUT	_	_
+2	Fernando	_	NOUN	NOUN	_	1	CONTIN+LOCUT	_	_
 3	non	_	ADV	ADV	_	4	RMOD	_	_
 4	è	_	VERB	VERB	_	0	TOP	_	_
-5	invincibil	_	ADJ	ADJ	_	4	PREDCOMPL+SUBJ	_	_
+5	invincibile	_	ADJ	ADJ	_	4	PREDCOMPL+SUBJ	_	_
 6	,	_	PUNCT	PUNCT	_	4	SEPARATOR	_	_
 7	non	_	ADV	ADV	_	8	RMOD	_	_
 8	è	_	VERB	VERB	_	6	COORD2ND+BASE	_	_
@@ -5074,14 +5074,14 @@
 20	attenzione	_	NOUN	NOUN	_	19	ARG	_	_
 21	della	_	PREP	PREP	_	20	RMOD	_	_
 22	della	_	ART	ART	_	21	ARG	_	_
-23	mclaren	_	NOUN	NOUN	_	22	ARG	_	_
+23	McLaren	_	NOUN	NOUN	_	22	ARG	_	_
 24	e	_	CONJ	CONJ	_	14	COORD+BASE	_	_
 25	prima	_	PREP	PREP	_	24	COORD2ND+BASE	_	_
-26	die	_	PREP	PREP	_	25	CONTIN+PREP	_	_
+26	di	_	PREP	PREP	_	25	CONTIN+PREP	_	_
 27	affrontare	_	VERB	VERB	_	26	ARG	_	_
 28	la	_	ART	ART	_	27	OBJ	_	_
 29	gara	_	NOUN	NOUN	_	28	ARG	_	_
-30	die	_	PREP	PREP	_	29	RMOD	_	_
+30	di	_	PREP	PREP	_	29	RMOD	_	_
 31	casa	_	NOUN	NOUN	_	30	ARG	_	_
 32	si	_	PRON	PRON	_	34	SUBJ/SUBJ+IMPERS	_	_
 33	sarebbe	_	VERB	VERB	_	34	AUX+TENSE	_	_
@@ -5089,10 +5089,10 @@
 35	una	_	ART	ART	_	34	OBJ	_	_
 36	prestazione	_	NOUN	NOUN	_	35	ARG	_	_
 37	più	_	ADV	ADV	_	38	RMOD	_	_
-38	convincent	_	ADJ	ADJ	_	36	RMOD	_	_
+38	convincente	_	ADJ	ADJ	_	36	RMOD	_	_
 39	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	c'	_	PRON	PRON	_	2	SUBJ	_	_
+1	C'	_	PRON	PRON	_	2	SUBJ	_	_
 2	è	_	VERB	VERB	_	0	TOP	_	_
 3	tempo	_	NOUN	NOUN	_	2	PREDCOMPL+SUBJ	_	_
 4	per	_	PREP	PREP	_	2	RMOD	_	_
@@ -5100,50 +5100,50 @@
 6	:	_	PUNCT	PUNCT	_	2	END	_	_
 
 1	la	_	ART	ART	_	4	SUBJ	_	_
-2	formula	_	NOUN	NOUN	_	1	ARG	_	_
+2	Formula	_	NOUN	NOUN	_	1	ARG	_	_
 3	<num>	_	NUM	NUM	_	2	APPOSITION	_	_
 4	fa	_	VERB	VERB	_	0	TOP	_	_
 5	un	_	ART	ART	_	4	OBJ	_	_
 6	mese	_	NOUN	NOUN	_	5	ARG	_	_
-7	die	_	PREP	PREP	_	6	RMOD	_	_
+7	di	_	PREP	PREP	_	6	RMOD	_	_
 8	pausa	_	NOUN	NOUN	_	7	ARG	_	_
 9	prima	_	PREP	PREP	_	4	RMOD	_	_
-10	die	_	PREP	PREP	_	9	CONTIN+PREP	_	_
+10	di	_	PREP	PREP	_	9	CONTIN+PREP	_	_
 11	ripresentarsi	_	VERB	VERB	_	10	ARG	_	_
 12	ripresentarsi	_	PRON	PRON	_	11	OBJ	_	_
 13	in	_	PREP	PREP	_	11	RMOD	_	_
-14	europa	_	NOUN	NOUN	_	13	ARG	_	_
+14	Europa	_	NOUN	NOUN	_	13	ARG	_	_
 15	.	_	PUNCT	PUNCT	_	4	END	_	_
 
-1	intervallo	_	NOUN	NOUN	_	0	TOP	_	_
+1	Intervallo	_	NOUN	NOUN	_	0	TOP	_	_
 2	lunghissimo	_	ADJ	ADJ	_	1	RMOD	_	_
 3	,	_	PUNCT	PUNCT	_	1	SEPARATOR	_	_
 4	perché	_	CONJ	CONJ	_	1	RMOD	_	_
 5	in	_	PREP	PREP	_	9	RMOD	_	_
 6	origine	_	NOUN	NOUN	_	5	ARG	_	_
-7	ile	_	ART	ART	_	9	SUBJ	_	_
+7	il	_	ART	ART	_	9	SUBJ	_	_
 8	calendario	_	NOUN	NOUN	_	7	ARG	_	_
 9	prevedeva	_	VERB	VERB	_	4	ARG	_	_
-10	ile	_	ART	ART	_	9	OBJ	_	_
-11	gran	_	ADJ	ADJ	_	12	RMOD	_	_
+10	il	_	ART	ART	_	9	OBJ	_	_
+11	Gran	_	ADJ	ADJ	_	12	RMOD	_	_
 12	premio	_	NOUN	NOUN	_	10	ARG	_	_
-13	die	_	PREP	PREP	_	12	RMOD	_	_
-14	san	_	NOUN	NOUN	_	13	ARG	_	_
-15	marino	_	NOUN	NOUN	_	14	CONTIN+DENOM	_	_
+13	di	_	PREP	PREP	_	12	RMOD	_	_
+14	San	_	NOUN	NOUN	_	13	ARG	_	_
+15	Marino	_	NOUN	NOUN	_	14	CONTIN+DENOM	_	_
 16	.	_	PUNCT	PUNCT	_	1	END	_	_
 
-1	si	_	PRON	PRON	_	2	SUBJ/SUBJ+IMPERS	_	_
+1	Si	_	PRON	PRON	_	2	SUBJ/SUBJ+IMPERS	_	_
 2	riprenderà	_	VERB	VERB	_	0	TOP	_	_
-3	ile	_	ART	ART	_	2	OBJ	_	_
+3	il	_	ART	ART	_	2	OBJ	_	_
 4	<num>	_	NUM	NUM	_	3	ARG	_	_
 5	maggio	_	NOUN	NOUN	_	4	RMOD	_	_
 6	a	_	PREP	PREP	_	4	RMOD	_	_
-7	barcellona	_	NOUN	NOUN	_	6	ARG	_	_
+7	Barcellona	_	NOUN	NOUN	_	6	ARG	_	_
 8	.	_	PUNCT	PUNCT	_	2	END	_	_
 
-1	ferrari	_	NOUN	NOUN	_	8	SUBJ	_	_
+1	Ferrari	_	NOUN	NOUN	_	8	SUBJ	_	_
 2	e	_	CONJ	CONJ	_	1	COORD+BASE	_	_
-3	mclaren	_	NOUN	NOUN	_	2	COORD2ND+BASE	_	_
+3	McLaren	_	NOUN	NOUN	_	2	COORD2ND+BASE	_	_
 4	,	_	PUNCT	PUNCT	_	8	OPEN+PARENTHETICAL	_	_
 5	nel	_	ADV	ADV	_	8	RMOD	_	_
 6	frattempo	_	ADV	ADV	_	5	CONTIN+LOCUT	_	_
