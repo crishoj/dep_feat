@@ -1,0 +1,849 @@
+#LyX 1.6.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass report
+\use_default_options true
+\language english
+\inputencoding utf8
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Feature Engineering in Data-Driven Dependency Parsing
+\end_layout
+
+\begin_layout Author
+Christian Rishøj Jensen
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Standard
+Briefly: Dependency grammar.
+ Dependency parsing.
+ Data-driven parser generators.
+ State of the art.
+ Problems.
+ 
+\end_layout
+
+\begin_layout Standard
+Question: Is it possilbe to augment treebanks with additional or modified
+ features such that existing data-driven parsing systems generate better
+ dependency parsers?
+\end_layout
+
+\begin_layout Chapter
+An Overview of Data-Driven Dependency Parsing
+\end_layout
+
+\begin_layout Standard
+Background information.
+ 
+\end_layout
+
+\begin_layout Section
+Dependency Grammar.
+ 
+\end_layout
+
+\begin_layout Standard
+History.
+ 
+\end_layout
+
+\begin_layout Standard
+Appeal.
+ 
+\end_layout
+
+\begin_layout Standard
+Encoding of predicate-argument structure.
+ 
+\end_layout
+
+\begin_layout Standard
+Levels of analysis: Morphosyntactic, syntactic, semantic.
+ 
+\end_layout
+
+\begin_layout Standard
+Focus: Syntactic level.
+ 
+\end_layout
+
+\begin_layout Standard
+Dependency grammar vs.
+ phrase structure grammars.
+\end_layout
+
+\begin_layout Standard
+Formal definitions: Sentences, tokens, dependency relations.
+ 
+\end_layout
+
+\begin_layout Standard
+Dependency graphs.
+ 
+\end_layout
+
+\begin_layout Standard
+Well-formed dependency graphs: dependency trees.
+ 
+\end_layout
+
+\begin_layout Standard
+Projective/non-projective dependency trees.
+ 
+\end_layout
+
+\begin_layout Section
+Dependency Parsing
+\end_layout
+
+\begin_layout Standard
+Grammar-based versus data-driven models.
+ 
+\end_layout
+
+\begin_layout Standard
+Features.
+ 
+\end_layout
+
+\begin_layout Standard
+Learning.
+\end_layout
+
+\begin_layout Standard
+Formal definitions: Dependency parsing model, constraints, parameters and
+ algoritms.
+ The parsing problem.
+\end_layout
+
+\begin_layout Standard
+Transition-based models.
+ 
+\end_layout
+
+\begin_layout Standard
+Graph-based models.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kbler_dependency_2009"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+State of the Art
+\end_layout
+
+\begin_layout Standard
+CoNLL shared task.
+ 
+\end_layout
+
+\begin_layout Standard
+MSTParser and MaltParser.
+ 
+\end_layout
+
+\begin_layout Standard
+Languages and results.
+ 
+\end_layout
+
+\begin_layout Standard
+Errors.
+\end_layout
+
+\begin_layout Chapter
+Feature Engineering in Dependency Parsing
+\end_layout
+
+\begin_layout Section
+Research Question
+\end_layout
+
+\begin_layout Standard
+Possilbe to augment treebanks with additional or modified features such
+ that existing data-driven parsing systems generate better dependency parsers?
+\end_layout
+
+\begin_layout Standard
+In particular: Features to reduce errors from parentheticals.
+ Itemization.
+ Etc.
+\end_layout
+
+\begin_layout Section
+Review of literature and research
+\end_layout
+
+\begin_layout Standard
+What others have done.
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+Animacy
+\noun default
+ for disambiguation of subjects from objects.
+ 
+\noun on
+Definiteness
+\noun default
+ for disambiguation of subjects subject predicates.
+ Verbal features (
+\noun on
+finiteness
+\noun default
+, 
+\noun on
+voice
+\noun default
+) for verbal dependency relations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vrelid_finite_2008,vrelid_linguistic_2008,vrelid_when_2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Chunking-like preprocessing step, identifying 
+\begin_inset Quotes eld
+\end_inset
+
+blocks
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou_block-based_2000"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+quotation
+\noun default
+s and 
+\noun on
+inserted clause
+\noun default
+s in spontaneous speech.
+ Reduce dependencies erroneously crossing clause boundaries 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hamabe_detection_2006"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Semantic super tagging.
+ Segments: 
+\begin_inset Quotes eld
+\end_inset
+
+there is exactly one dependency connecting a token outside the segmentwith
+ a token inside the segment
+\begin_inset Quotes erd
+\end_inset
+
+, and 
+\begin_inset Quotes eld
+\end_inset
+
+segments tend to form units, with their own internal structure
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ciaramita_dependency_2007"
+
+\end_inset
+
+.
+ Second order feature maps.
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+Capitalized
+\noun default
+, 
+\noun on
+coordinable
+\noun default
+, technical sufﬁces given by the lemmatizer 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "novk_feature_2007"
+
+\end_inset
+
+.
+ Feature space reduction .
+\end_layout
+
+\begin_layout Standard
+Bharati 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "bharati_two_2008"
+
+\end_inset
+
+: 
+\noun on
+Human-nonhuman
+\noun default
+ and 
+\noun on
+animate-inanimate
+\noun default
+ for 
+\begin_inset Quotes eld
+\end_inset
+
+capturing argument structure of the verb, i.e.
+ certain verbs can take only human subjects, etc.
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Base-NP chunking 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tongchim_experiments_2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Chunking 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "attardi_chunking_2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Experiment Design
+\end_layout
+
+\begin_layout Standard
+What I will do.
+ Overview of proposed approach.
+ 
+\end_layout
+
+\begin_layout Subsection
+Treebanks
+\end_layout
+
+\begin_layout Standard
+Treebanks available: arabic bulgarian czech danish dutch english german
+ italian japanese portuguese slovene spanish swedish turkish.
+\end_layout
+
+\begin_layout Standard
+Qualities, statistics, appeal.
+\end_layout
+
+\begin_layout Subsection
+Experiment setup
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/flows/Experiment_Setup.svg
+	lyxscale 50
+	scale 50
+	BoundingBox 0bp 0bp 861bp 598bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Treebank augmentation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/flows/Augmentation.svg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+System evaluation
+\end_layout
+
+\begin_layout Standard
+Error analysis.
+ Attachment scoring.
+ Trouble with token-level scoring.
+ Sentence-level scoring.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Categorization.svg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/flows/Evaluation.svg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Focused evaluation
+\end_layout
+
+\begin_layout Standard
+Scoring categories of sentences: Those affected by augmentation, and those
+ left untouched by the augmentation.
+\end_layout
+
+\begin_layout Subsection
+Comparison to baseline
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename figures/flows/Comparison.svg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Statistical significance
+\end_layout
+
+\begin_layout Standard
+“Stratified shuffling” 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bikel_randomized_2004"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Feature Designs
+\end_layout
+
+\begin_layout Standard
+What I did.
+\end_layout
+
+\begin_layout Standard
+[Present and discuss motivation, feature design and results for each focus
+ area in turn]
+\end_layout
+
+\begin_layout Subsection
+Parentheticals
+\end_layout
+
+\begin_layout Standard
+Motivation: Word order in direct quoted speech 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "haberland_reported_1986"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+
+\noun on
+Quotation
+\end_layout
+
+\begin_layout Standard
+Feature designs: POS tags on quotation marks.
+ Features on quoted tokens.
+\end_layout
+
+\begin_layout Standard
+Results: Quotes in Danish, 
+\end_layout
+
+\begin_layout Standard
+Discussion.
+\end_layout
+
+\begin_layout Subsubsection
+
+\noun on
+Parenthesis
+\end_layout
+
+\begin_layout Standard
+Results: 
+\end_layout
+
+\begin_layout Subsubsection
+
+\noun on
+Colon
+\end_layout
+
+\begin_layout Standard
+Results: Talbanken.
+ Italian.
+\end_layout
+
+\begin_layout Subsection
+Apposition
+\end_layout
+
+\begin_layout Standard
+Results: Catalonian.
+\end_layout
+
+\begin_layout Subsection
+List items
+\end_layout
+
+\begin_layout Standard
+Results.
+ Discussion.
+\end_layout
+
+\begin_layout Subsection
+Coordinated enumerations
+\end_layout
+
+\begin_layout Standard
+Results.
+ Discussion.
+\end_layout
+
+\begin_layout Subsection
+Lemmatization
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bart_cst_2008"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Results: Danish.
+ 
+\end_layout
+
+\begin_layout Standard
+Discussion: Allows parser to generalize.
+\end_layout
+
+\begin_layout Subsection
+Animacy
+\end_layout
+
+\begin_layout Standard
+Results: Danish.
+\end_layout
+
+\begin_layout Standard
+Discussion: Coverage and quality of animacy data.
+ Head status of functional categories in DDT versus Talbanken.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vrelid_cross-lingual_2009"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/animacy/ddt-heads.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+DDT 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/animacy/talbanken05-heads.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Talbanken05
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Different treatment of functional categories in DDT and in Talbanken05.
+ In DDT, determiners -- such as 
+\begin_inset Quotes eld
+\end_inset
+
+et
+\begin_inset Quotes erd
+\end_inset
+
+ on the left hand side -- act as heads with nominal dependents, whereas
+ Talbanken05
+\emph on
+ 
+\emph default
+treats 
+\emph on
+nouns
+\emph default
+ as heads with functional dependents, as illustrated on the right hand side.
+ The dependency structure examples are from Lilja Øvrelid's report on porting
+ the animacy feature to Danish 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vrelid_cross-lingual_2009"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Feature combinations
+\end_layout
+
+\begin_layout Standard
+Effects of combining features.
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+Summarize results.
+\end_layout
+
+\begin_layout Chapter
+Conclusion
+\end_layout
+
+\begin_layout Section
+Future research
+\end_layout
+
+\begin_layout Chapter*
+Acknowledgements
+\end_layout
+
+\begin_layout Itemize
+Lilja Øvrelid (animacy tagger)
+\end_layout
+
+\begin_layout Itemize
+Bart Jongejan (danish lemmatizer)
+\end_layout
+
+\begin_layout Itemize
+Anders Søgaard (research idea, guidance)
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "export"
+options "bibtotoc,plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\start_of_appendix
+Source code
+\end_layout
+
+\begin_layout Standard
+Include?
+\end_layout
+
+\begin_layout Chapter
+Example runtime output
+\end_layout
+
+\begin_layout Standard
+Include?
+\end_layout
+
+\end_body
+\end_document
