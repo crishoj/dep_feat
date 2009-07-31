@@ -64,18 +64,180 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-Briefly: Dependency grammar.
- Dependency parsing.
- Data-driven parser generators.
- State of the art.
- Problems.
+Language competence might well be among the most impressive of cognitive
+ abilities, both with respect to the conceptual complexity conveyable in
+ the linguistic vehicle, and the effectiveness with which we are able to
+ grasp utterances and make sense of them.
+ Thanks to the generative quality of language, by which phrases and sentences
+ may be combined and embedded within each other recursively, the extension
+ of language is potentially limitless.
+ On the comprehension side, structureally ambigous and semantically underspecifi
+ed utterances are swiftly decoded and assigned with a likely interpretation.
+ A task that from a formal point of view has immense complexity is continually
+ carried out by the language user, seemingly without any effort.
+ During this process the comprehender presumably registers a variety of
+ phenomena in the uttered speech or written text in order to contruct the
+ proper interpretation.
+ As examplars of this, apart from the sequence and identity of the uttered
+ words themselves, the comprehender is likely to take of the 
+\emph on
+kind
+\emph default
+ of word being used, i.e.
+ the 
+\emph on
+part of speech
+\emph default
+ to which the word belongs, 
+\emph on
+morphological
+\emph default
+ structure of the words themselves, as well as grammatical pauses in between
+ words, and employ this information in interpretation.
+ I might not know the word 
+\emph on
+flocculation
+\emph default
+, but from its suffix of 
+\emph on
+-tion
+\emph default
+ I can tell that it is a noun, probably for an action or a condition, which
+ can help me get an idea of how it fits in a structural analysis of the
+ sentence.
+ Clarifying remarks in the middle of an utterence might be indicated by
+ a brief pause.
+ And when my mother reports on a heated discussion with a salesperson, a
+ clear change in tone of voice provides me with an indication of when she
+ is 
+\emph on
+directly reporting
+\emph default
+ the other person's speech.
+\end_layout
+
+\begin_layout Standard
+EXPAND: quotations in Danish?
+\end_layout
+
+\begin_layout Standard
+In the field of human language technology, a computer system that performs
+ a syntactic, semantic, or other level of structural analysis of a sentence
+ is referred to as a 
+\emph on
+parser
+\emph default
+.
+ Modern day parsing systems also benefit from information other than the
+ surface form of processed words.
+ A common step prior to parsing is to identify the part of speech for each
+ word.
+ Tense, case, number, gender and other inflectional information is often
+ also extracted and made explicit, in order to make the information carried
+ herein available for the parser to take advantage of it when making decisions
+ in the parsing process.
  
 \end_layout
 
 \begin_layout Standard
-Question: Is it possilbe to augment treebanks with additional or modified
- features such that existing data-driven parsing systems generate better
- dependency parsers?
+One approach to automatic syntactic analysis, referred to as 
+\emph on
+dependency parsing
+\emph default
+, has gained increasing interest in the last decade.
+ While neither dependency parsing nor the underlying formalism of 
+\emph on
+dependency grammer
+\emph default
+ are new inventions, the intense interest likely stems from the success
+ researches have had in constructing dependency parsers that do not rely
+ on hand-crafted grammatical rules and lexica, but rather 
+\emph on
+learn
+\emph default
+ from vast amounts of example analyses.
+ This training material, referred to as a 
+\emph on
+treebank,
+\emph default
+ consists of collections of sentences and corresponding structural analyses.
+ Such 
+\emph on
+data-driven dependency parsers
+\emph default
+ have quickly risen to become competitive with traditional grammar-based
+ systems in parsing accuracy, without the immensely time-consuming task
+ of manually crafting a grammar.
+ There is optimism in the research community that a hybrid of both worlds,
+ in which a combination of different parsers allows one to benefit from
+ the analysis of the other, will lead to even better results.
+\end_layout
+
+\begin_layout Standard
+While data-driven parsers are able to learn their trade from examples, they
+ are not cognitive models of human language ability, that is to say, approximati
+ons of human cognitive processes for the purpose of comprehension and prediction.
+ Parsing systems are constructed with other goals in mind, predominantly
+ automated language processing for such tasks as information retrieval,
+ document classification and summarization, machine translation and automated
+ dialog systems.
+\end_layout
+
+\begin_layout Standard
+However, as parsing systems already benefit from cues such as inflectional
+ features and part of speech, it does not seem far-fetched to assume that
+ parsing could benefit from other cues that are of use in human apprehension.
+\end_layout
+
+\begin_layout Standard
+The aim of this thesis shall be to investigate the following question: Is
+ it possible to augment treebanks with additional or modified features,
+ such that existing data-driven parsing systems generate better dependency
+ parsers?
+\end_layout
+
+\begin_layout Standard
+In parsing system research, there seems to be an emphasis on constructing
+ parsers for written text.
+ While noone would argue that a spoken utterence from a language user turns
+ into another language if she chooses to write it on a piece of paper, there
+ are however substantial differences.
+ Interpretational cues found in spoken language do not always have direct
+ equivalents in writing.
+ Variations in tone of voice for example is not obvious from a written accout.
+ Some cues are present in writing, though, and while the cues in speech
+ are often subtle, the cues that are present in writing stand out more clearly.
+ In particular, directly reported speech is conventionally marked with quotation
+ marks, and inserted supplementary remarks are typically surrounded by parenthes
+es, hyphens or -- more subtly -- commas.
+ Thus, there are plenty of potential features in written texts to choose
+ from as well.
+ 
+\end_layout
+
+\begin_layout Standard
+So, the focus area of this project is squarely investigating feature engineering
+ in data-driven parsing systems.
+ But conversely, such experiments with feature engineering in data-driven
+ parsing systems may also offer an interesting opportunity to investigate
+ which features of spoken or written utterances might be of value for comprehens
+ion in genereal -- including human.
+ Given a sufficiently capable and trainable parsing model, if we are interested
+ in whether for example capitalization of written text could play any role
+ in comprehension, we could train two models with the same training material,
+ but make word capitalization explicit to only one of them.
+ Once trained, let both models attempt an interpretation of the same text,
+ and see if the extra feature provided to the latter model had any significant
+ effect on the analytical performance.
+ 
+\end_layout
+
+\begin_layout Standard
+Of couse, an observed positive effect of a feature in a parsing system would
+ not entail the existence of a cognitive counterpart in use by language
+ users.
+ But it would provide evidence of the informational value of the cue with
+ respect to structural comprehension.
 \end_layout
 
 \begin_layout Chapter
@@ -83,48 +245,254 @@ An Overview of Data-Driven Dependency Parsing
 \end_layout
 
 \begin_layout Standard
-Background information.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/example_dependency_tree.eps
+	width 100text%
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Flo:dependency"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Dependency structure for a Danish sentence from the Danish Dependency Treebank
  
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kromann_danish_2003"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Dependency Grammar.
+Dependency Grammar
+\end_layout
+
+\begin_layout Standard
+By some estimates the tradition of dependency grammar can be traced as far
+ back as some of the earliest works of descriptive and generative linguistics,
+ namely the Sanskrit grammar of 
+\begin_inset Formula $Pāṇini$
+\end_inset
+
+ a few centuries before the Common Era.
+ The tradition includes a large and diverse family of grammatical theories
+ and formalisms, all sharing the basic assumption that syntactic structures
+ essentially consists of 
+\emph on
+words
+\emph default
+ that are related to each other by binary, assymmetrical relations called
+ 
+\emph on
+dependencies
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kbler_dependency_2009,nivre_dependency_2005"
+
+\end_inset
+
+, with one word in a dependency relation being the 
+\emph on
+head
+\emph default
+, and the other being the 
+\emph on
+dependent
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+With respect to this basic property, dependency structures can be contrasted
+ to 
+\emph on
+constituency structures
+\emph default
+, another dominant syntactic representation, in which words are not directly
+ related to each, but only indirectly through 
+\emph on
+non-terminal
+\emph default
+ nodes, each of which may in turn be related to another non-terminal node.
+ A non-terminal node in a constituency structure is not manifest in the
+ surface form of the sentence, but forms a group of words, or a 
+\emph on
+phrase
+\emph default
+, which stand together as a conceptual unit.
+\end_layout
+
+\begin_layout Standard
+The same conceptual units can be recognized in a dependency structure by
+ their heads: All words that transitively depend on a head are part of the
+ conceptual unit 
+\emph on
+governed
+\emph default
+ by the head.
+ Various criteria for identifying dependency relations have been proposed.
+ Some common criteria are 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nivre_dependency_2005"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+A head determines the syntactic category of the dependent and can often
+ replace the dependent.
+\end_layout
+
+\begin_layout Enumerate
+A head determines the semantic category of the dependent.
+\end_layout
+
+\begin_layout Enumerate
+Dependents provides semantic speciﬁcation.
+ 
+\end_layout
+
+\begin_layout Enumerate
+A head is obligatory, while dependents may be optional.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The head selects its dependent and determines whether the dependent is obligator
+y or optional.
+ 
+\end_layout
+
+\begin_layout Enumerate
+The form of the dependent is determined by the head (agreement or government).
+\end_layout
+
+\begin_layout Enumerate
+The linear position of a dependent is speciﬁed with reference to the head.
  
 \end_layout
 
 \begin_layout Standard
-History.
- 
+These criteria refer to a mix of phenomena on different levels of linguictics
+ analysis, from morphosyntax to semantics.
+ There seems to be no universally authoritative set of criteria for all
+ dependency relations 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kbler_dependency_2009"
+
+\end_inset
+
+.
+ Rather, several levels of dependency analysis can be made on a sentence,
+ and the criteria for identifying dependencies are chosen accordingly.
+ Levels of dependency analysis include: 
+\end_layout
+
+\begin_layout Description
+Morphosyntactic in which inflectional affixes are represented as separate
+ tokens (useful for highly inflected languages).
+\end_layout
+
+\begin_layout Description
+Syntactic where dependencies identify syntactic functions, including 
+\noun on
+predicate
+\noun default
+, 
+\noun on
+subject
+\noun default
+ and 
+\noun on
+object
+\noun default
+.
+\end_layout
+
+\begin_layout Description
+Semantic where semantic roles (including 
+\noun on
+agent
+\noun default
+, 
+\noun on
+patient
+\noun default
+ and 
+\noun on
+goal
+\noun default
+) are designated by dependencies.
 \end_layout
 
 \begin_layout Standard
-Appeal.
- 
+It is worth noting that dependency representation is not inherently limited
+ to these levels of analysis.
+ In principle, there is nothing that hinders the use of dependency analysis
+ for identifying other relations between tokens for which a consistent set
+ of criteria can be formulated.
+ For this project, the focus is exclusively on the level of syntactic analysis.
 \end_layout
 
 \begin_layout Standard
-Encoding of predicate-argument structure.
- 
+In comparison to constituency structures, dependency structures are a more
+ constrained representation, as the number of nodes to connect in the structure
+ is fixed by the number of words in the sentence, whereas the constituency
+ structure contains additional non-terminal nodes.
+ To many researchers in computational linguistics, working with dependency
+ representations has seemed more tractable and more apt for further semantic
+ processing, thanks to the relatively transparent encoding of the predicate-argu
+ment structure of a sentence through word dependencies 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "nivre_dependency_2005"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Formal definitions
 \end_layout
 
 \begin_layout Standard
-Levels of analysis: Morphosyntactic, syntactic, semantic.
- 
-\end_layout
-
-\begin_layout Standard
-Focus: Syntactic level.
- 
-\end_layout
-
-\begin_layout Standard
-Dependency grammar vs.
- phrase structure grammars.
-\end_layout
-
-\begin_layout Standard
-Formal definitions: Sentences, tokens, dependency relations.
- 
+Sentences, tokens, dependency relations.
 \end_layout
 
 \begin_layout Standard
@@ -404,6 +772,17 @@ key "attardi_chunking_2008"
 .
 \end_layout
 
+\begin_layout Standard
+Soft and hard constraints on dependency length 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "eisner_parsing_2005"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 Experiment Design
 \end_layout
@@ -432,11 +811,34 @@ Experiment setup
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/flows/Experiment_Setup.svg
+	filename figures/flows/Experiment_Setup.eps
 	lyxscale 50
 	scale 50
 	BoundingBox 0bp 0bp 861bp 598bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -448,10 +850,33 @@ Treebank augmentation
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/flows/Augmentation.svg
+	filename figures/flows/Augmentation.eps
 	lyxscale 50
 	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -470,8 +895,14 @@ Error analysis.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Categorization.svg
+	filename figures/flows/Categorization.eps
 	lyxscale 50
 	scale 50
 
@@ -480,11 +911,51 @@ Error analysis.
 
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/flows/Evaluation.svg
+	filename figures/flows/Evaluation.eps
 	lyxscale 50
 	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -505,10 +976,33 @@ Comparison to baseline
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/flows/Comparison.svg
+	filename figures/flows/Comparison.eps
 	lyxscale 50
 	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -673,7 +1167,7 @@ key "vrelid_cross-lingual_2009"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
