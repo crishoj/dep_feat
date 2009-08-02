@@ -3,10 +3,6 @@
 module Annotation
   class Animacy < Lemma
 
-    def feature
-      'anim'
-    end
-
     def pre_corpus
       # Prepare lemmatization
       super
@@ -18,9 +14,9 @@ module Annotation
         while (line = f.gets)
           animate, lemma = parse_line(line)
           if animate
-            @animate.push lemma
+            @animate.push lemma.downcase
           else
-            @dead.push lemma
+            @dead.push lemma.downcase
           end
         end
       end
@@ -34,9 +30,10 @@ module Annotation
       if ['N', 'P'].include? @token.cpos
         # Animacy data lacks special characters and accented characters
         if is_animate?
-          @token.features << feature
+          mark_animate
           @stats[:found] += 1
         elsif is_dead?
+          mark_dead
           @stats[:found] += 1
         else
           # Not found
@@ -64,12 +61,20 @@ module Annotation
       lookup @token, @dead
     end
 
+    def mark_animate
+      @token.features << 'anim=1'
+    end
+
+    def mark_dead
+      @token.features << 'anim=0'
+    end
+
     def lookup(token, list)
       list.include? lookup_key(token)
     end
 
     def lookup_key(token)
-      token.lemma.gsub(/[æøåé]/i, '')
+      token.lemma.gsub(/[æøåé]/i, '').downcase
     end
 
     def parse_line(line)
