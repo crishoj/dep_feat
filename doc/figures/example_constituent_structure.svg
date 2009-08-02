@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="714"
+   height="530"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.46+devel r21714"
+   sodipodi:docname="example_constituent_structure.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata346">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="950"
+     inkscape:window-height="741"
+     id="namedview344"
+     showgrid="false"
+     inkscape:zoom="1.2594506"
+     inkscape:cx="357"
+     inkscape:cy="265"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 265 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="714 : 265 : 1"
+       inkscape:persp3d-origin="357 : 176.66667 : 1"
+       id="perspective348" />
+  </defs>
+  <g
+     transform="translate(45.52499999999998,405.0) rotate(0 284.475 12.0)"
+     id="g8">
+    <g
+       transform="translate(0.0,18.0)"
+       id="g10">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="font-size:14px;text-anchor:start"
+         y="-2"
+         id="text12">
+        <tspan
+           id="tspan14"
+           style="font-size:15.35;fill:#000000;font-family:Arial">20 år senere table Indre Mission menighedsrådsvalget i Skjern .</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(51.556771048744494,361.24213096996533) rotate(0 7.5 10.75125389791565)"
+     id="g18">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g20">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text22">
+        <tspan
+           id="tspan24">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan26">A</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(58.0,400.0)"
+     id="g28">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="0"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line30" />
+    <g
+       transform="translate(10.0,-14.499999999999996)"
+       id="g32" />
+  </g>
+  <g
+     transform="translate(83.0,400.0)"
+     id="g34">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="0"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line36" />
+    <g
+       transform="translate(10.0,-14.499999999999996)"
+       id="g38" />
+  </g>
+  <g
+     transform="translate(119.0,400.0)"
+     id="g40">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="0"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line42" />
+    <g
+       transform="translate(10.0,-14.499999999999996)"
+       id="g44" />
+  </g>
+  <g
+     transform="translate(164.0,400.0)"
+     id="g46">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="0"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line48" />
+    <g
+       transform="translate(10.0,-14.499999999999996)"
+       id="g50" />
+  </g>
+  <g
+     transform="translate(201.0,400.0)"
+     id="g52">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="0"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line54" />
+    <g
+       transform="translate(10.0,-14.499999999999996)"
+       id="g56" />
+  </g>
+  <g
+     transform="translate(250.0,400.0)"
+     id="g58">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="0"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line60" />
+    <g
+       transform="translate(10.0,-14.499999999999996)"
+       id="g62" />
+  </g>
+  <g
+     transform="translate(343.0,400.0)"
+     id="g64">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="0"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line66" />
+    <g
+       transform="translate(10.0,-14.499999999999996)"
+       id="g68" />
+  </g>
+  <g
+     transform="translate(424.0,400.0)"
+     id="g70">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="0"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line72" />
+    <g
+       transform="translate(10.0,-14.499999999999996)"
+       id="g74" />
+  </g>
+  <g
+     transform="translate(455.0,400.0)"
+     id="g76">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="0"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line78" />
+    <g
+       transform="translate(10.0,-14.499999999999996)"
+       id="g80" />
+  </g>
+  <g
+     transform="translate(482.0,400.0)"
+     id="g82">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="0"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line84" />
+    <g
+       transform="translate(10.0,-14.499999999999996)"
+       id="g86" />
+  </g>
+  <g
+     transform="translate(58.69839591881375,318.95386563816436) rotate(0 12.54312954756825 10.75125389791565)"
+     id="g88">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g90">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text92">
+        <tspan
+           id="tspan94">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan96">NP</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(57.0,359.0)"
+     id="g98">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="7"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line100" />
+    <g
+       transform="translate(-2.116568831828898,-10.116568831828895)"
+       id="g102" />
+  </g>
+  <g
+     transform="translate(72.0,340.0)"
+     id="g104">
+    <line
+       x1="0"
+       y1="0"
+       x2="9"
+       y2="19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line106" />
+    <g
+       transform="translate(4.018689194467694,14.5)"
+       id="g108" />
+  </g>
+  <g
+     transform="translate(200.0,360.0)"
+     id="g110">
+    <line
+       x1="0"
+       y1="1.4210854715202e-14"
+       x2="19.95"
+       y2="-20"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line112" />
+    <g
+       transform="translate(2.054912163968602,-12.920087836031392)"
+       id="g114" />
+  </g>
+  <g
+     transform="translate(227.95,340.0)"
+     id="g116">
+    <line
+       x1="0"
+       y1="0"
+       x2="21"
+       y2="20"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line118" />
+    <g
+       transform="translate(3.2586206896551726,10.0)"
+       id="g120" />
+  </g>
+  <g
+     transform="translate(427.95,360.0)"
+     id="g122">
+    <line
+       x1="0"
+       y1="1.4210854715202e-14"
+       x2="9"
+       y2="-20"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line124" />
+    <g
+       transform="translate(-1.3807849482489356,-10.880784948248929)"
+       id="g126" />
+  </g>
+  <g
+     transform="translate(442.95,340.0)"
+     id="g128">
+    <line
+       x1="0"
+       y1="0"
+       x2="9"
+       y2="20"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line130" />
+    <g
+       transform="translate(4.059607525875531,15.0)"
+       id="g132" />
+  </g>
+  <g
+     transform="translate(83.78465501395074,279.5326013458063) rotate(0 12.54312954756825 10.75125389791565)"
+     id="g134">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g136">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text138">
+        <tspan
+           id="tspan140">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan142">AP</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(70.0,319.0)"
+     id="g144">
+    <line
+       x1="0"
+       y1="7.105427357601e-15"
+       x2="20"
+       y2="-19"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line146" />
+    <g
+       transform="translate(16.37500283202793,-14.499999999999996)"
+       id="g148" />
+  </g>
+  <g
+     transform="translate(99.0,299.0)"
+     id="g150">
+    <line
+       x1="0"
+       y1="0"
+       x2="19"
+       y2="60"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line152" />
+    <g
+       transform="translate(9.266711126753718,35.0)"
+       id="g154" />
+  </g>
+  <g
+     transform="translate(340.95,361.0)"
+     id="g156">
+    <line
+       x1="0"
+       y1="2.1316282072803e-14"
+       x2="49"
+       y2="-61"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line158" />
+    <g
+       transform="translate(17.296203601196552,-32.70379639880344)"
+       id="g160" />
+  </g>
+  <g
+     transform="translate(437.95,320.0)"
+     id="g162">
+    <line
+       x1="2.8421709430404e-14"
+       y1="1.4210854715202e-14"
+       x2="-40"
+       y2="-20"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line164" />
+    <g
+       transform="translate(-28.944271909999145,-9.999999999999993)"
+       id="g166" />
+  </g>
+  <g
+     transform="translate(176.0,240.0) rotate(0 75.0 12.0)"
+     id="g168">
+    <g
+       transform="translate(0.0,18.0)"
+       id="g170">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="75.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text172">
+        <tspan
+           id="tspan174">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan176">VP</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(227.0,320.0)"
+     id="g178">
+    <line
+       x1="0"
+       y1="1.4210854715202e-14"
+       x2="22.95"
+       y2="-54"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line180" />
+    <g
+       transform="translate(5.678309184584748,-27.796690815415246)"
+       id="g182" />
+  </g>
+  <g
+     transform="translate(392.0,279.0)"
+     id="g184">
+    <line
+       x1="2.8421709430404e-14"
+       y1="3.5527136788005e-15"
+       x2="-136.05"
+       y2="-15"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line186" />
+    <g
+       transform="translate(-77.96476930064735,-7.499999999999998)"
+       id="g188" />
+  </g>
+  <g
+     transform="translate(163.0,360.0)"
+     id="g190">
+    <line
+       x1="0"
+       y1="2.8421709430404e-14"
+       x2="81.95"
+       y2="-98"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line192" />
+    <g
+       transform="translate(33.64629398384289,-51.3287060161571)"
+       id="g194" />
+  </g>
+  <g
+     transform="translate(276.0,161.0) rotate(0 75.0 12.0)"
+     id="g196">
+    <g
+       transform="translate(0.0,18.0)"
+       id="g198">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="75.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text200">
+        <tspan
+           id="tspan202">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan204">S</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(97.0,280.0)"
+     id="g206">
+    <line
+       x1="0"
+       y1="2.8421709430404e-14"
+       x2="245.95"
+       y2="-98"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line208" />
+    <g
+       transform="translate(128.33014603458565,-53.999999999999986)"
+       id="g210" />
+  </g>
+  <g
+     transform="translate(245.0,243.0)"
+     id="g212">
+    <line
+       x1="0"
+       y1="2.8421709430404e-14"
+       x2="104.95"
+       y2="-59"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line214" />
+    <g
+       transform="translate(58.116512450950495,-34.499999999999986)"
+       id="g216" />
+  </g>
+  <g
+     transform="translate(482.0,360.0)"
+     id="g218">
+    <line
+       x1="4.2632564145606e-14"
+       y1="5.6843418860808e-14"
+       x2="-124.05"
+       y2="-175"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line220" />
+    <g
+       transform="translate(-62.94588566338673,-82.49999999999997)"
+       id="g222" />
+  </g>
+  <g
+     transform="translate(75.92627988402,361.9588812298263) rotate(0 7.5 10.75125389791565)"
+     id="g224">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g226">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text228">
+        <tspan
+           id="tspan230">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan232">N</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(111.763792877072,361.9588812298263) rotate(0 7.5 10.75125389791565)"
+     id="g234">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g236">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text238">
+        <tspan
+           id="tspan240">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan242">A</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(154.768808468735,361.9588812298263) rotate(0 7.5 10.75125389791565)"
+     id="g244">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g246">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text248">
+        <tspan
+           id="tspan250">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan252">V</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(194.190072761092,361.9588812298263) rotate(0 7.5 10.75125389791565)"
+     id="g254">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g256">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text258">
+        <tspan
+           id="tspan260">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan262">A</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(244.362590951365,361.9588812298263) rotate(0 7.5 10.75125389791565)"
+     id="g264">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g266">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text268">
+        <tspan
+           id="tspan270">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan272">N</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(333.956373433995,361.9588812298263) rotate(0 7.5 10.75125389791565)"
+     id="g274">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g276">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text278">
+        <tspan
+           id="tspan280">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan282">N</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(413.4897745500298,361.9588812298263) rotate(0 12.54312954756825 10.75125389791565)"
+     id="g284">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g286">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text288">
+        <tspan
+           id="tspan290">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan292">SP</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(448.636415011762,361.9588812298263) rotate(0 7.5 10.75125389791565)"
+     id="g294">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g296">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text298">
+        <tspan
+           id="tspan300">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan302">N</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(473.72267410689903,361.9588812298263) rotate(0 7.5 10.75125389791565)"
+     id="g304">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g306">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text308">
+        <tspan
+           id="tspan310">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan312">X</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(212.79970178893774,318.95386563816436) rotate(0 12.54312954756825 10.75125389791565)"
+     id="g314">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g316">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text318">
+        <tspan
+           id="tspan320">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan322">NP</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(427.8247797472508,318.95386563816436) rotate(0 12.54312954756825 10.75125389791565)"
+     id="g324">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g326">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text328">
+        <tspan
+           id="tspan330">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan332">PP</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(380.5192625964228,279.5326013458063) rotate(0 12.54312954756825 10.75125389791565)"
+     id="g334">
+    <g
+       transform="translate(0.0,16.75125389791565)"
+       id="g336">
+      <text
+         text-rendering="auto"
+         font-size="14px"
+         x="5"
+         style="text-anchor: start"
+         y="-2.0"
+         id="text338">
+        <tspan
+           id="tspan340">
+          <tspan
+             font-size="14"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan342">NP</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+</svg>

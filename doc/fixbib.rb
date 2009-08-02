@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-bib = File.read('export.bib')
+bib = File.read('Exported Items.bib')
 bib.gsub! '{\\textasciitilde}', '~'
 bib.gsub! '\\#', '#'
 bib.gsub! '#', '\\#'

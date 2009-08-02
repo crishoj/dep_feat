@@ -1,1 +1,1613 @@
-<svg xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/" xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="861" height="598"><defs></defs><rect stroke="#000000" stroke-width="1" fill="#ffffff" x="0" y="0" width="860" height="597"/><g transform='translate(34.0,45.5) rotate(0 50.0 37.5)'><defs><linearGradient id='g0' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><path d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><path d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z" stroke="#333333" stroke-width="2" style="fill:url(#g0)"/><g  transform='translate(0.0,34.5)'><text text-rendering='auto' font-size='12px' x='50.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' font-weight='bold' >Training</tspan><tspan font-size='12' font-family='Arial' fill='#000000' ></tspan></tspan></text><text text-rendering='auto' font-size='12px' x='50.0' style='text-anchor: middle' y='12.8'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' > Sentences</tspan></tspan></text></g></g><g transform='translate(106.0,165.5) rotate(0 50.0 37.5)'><defs><linearGradient id='g1' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><rect width="100.0" height="75.0" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><rect width="100.0" height="75.0" stroke="#333333" stroke-width="2" style="fill:url(#g1)"/><g  transform='translate(0.0,42.5)'><text text-rendering='auto' font-size='12px' x='50.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >MSTParser</tspan></tspan></text></g></g><g transform='translate(183.0,45.5) rotate(0 50.0 37.5)'><defs><linearGradient id='g2' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><path d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><path d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z" stroke="#333333" stroke-width="2" style="fill:url(#g2)"/><g  transform='translate(0.0,34.5)'><text text-rendering='auto' font-size='12px' x='50.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' font-weight='bold' >Test</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='50.0' style='text-anchor: middle' y='12.8'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Sentences</tspan></tspan></text></g></g><g transform='translate(156.0,241.0)'><line x1='0.0' y1='0.0' x2='0.0' y2='41.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(0.0,41.0) rotate(270.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(0.0,20.5)'></g></g><g transform='translate(84.0,120.5)'><line x1='0.0' y1='0.0' x2='0.0' y2='82.5' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='0.0' y1='82.5' x2='22.0' y2='82.5' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(22.0,82.5) rotate(180.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(0.0,41.25)'></g></g><g transform='translate(233.0,120.5)'><line x1='0.0' y1='0.0' x2='0.0' y2='82.5' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='0.0' y1='82.5' x2='-27.0' y2='82.5' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(-27.0,82.5) rotate(360.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(0.0,41.25)'></g></g><g transform='translate(111.0,282.0) rotate(0 45.0 45.0)'><defs><linearGradient id='g6' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><polygon points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><polygon points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0" stroke="#333333" stroke-width="2" style="fill:url(#g6)"/><g  transform='translate(0.0,35.0)'><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' font-weight='bold' >Baseline</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='12.8'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Parsed</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='27.6'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Sentences</tspan></tspan></text></g></g><g transform='translate(283.0,83.0)'><line x1='0.0' y1='1.4210854715202E-14' x2='43.0' y2='1.4210854715202E-14' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='43.0' y1='1.4210854715202E-14' x2='43.0' y2='1.4210854715202E-14' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='43.0' y1='1.4210854715202E-14' x2='58.0' y2='1.4210854715202E-14' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(58.0,1.4210854715202E-14) rotate(180.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(21.5,1.4210854715202E-14)'></g></g><g transform='translate(671.0,84.0)'><line x1='0.0' y1='0.0' x2='-15.0' y2='0.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='-15.0' y1='0.0' x2='-15.0' y2='-59.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='-15.0' y1='-59.0' x2='-195.0' y2='-59.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='-195.0' y1='-59.0' x2='-195.0' y2='-1.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='-195.0' y1='-1.0' x2='-210.0' y2='-1.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(0.0,0.0) rotate(180.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(-90.0,-59.0)'></g></g><g transform='translate(521.0,85.0)'><line x1='0.0' y1='0.0' x2='-45.0' y2='0.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='-45.0' y1='0.0' x2='-45.0' y2='0.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='-45.0' y1='0.0' x2='-60.0' y2='0.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(0.0,0.0) rotate(180.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(-22.5,0.0)'></g></g><g transform='translate(134.0,83.0)'><line x1='0.0' y1='0.0' x2='15.0' y2='0.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='15.0' y1='0.0' x2='15.0' y2='-57.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='15.0' y1='-57.0' x2='192.0' y2='-57.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='192.0' y1='-57.0' x2='192.0' y2='1.4210854715202E-14' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='192.0' y1='1.4210854715202E-14' x2='207.0' y2='1.4210854715202E-14' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(207.0,1.4210854715202E-14) rotate(180.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(88.5,-57.0)'></g></g><g transform='translate(591.0,165.5) rotate(0 50.0 37.5)'><defs><linearGradient id='g11' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><rect width="100.0" height="75.0" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><rect width="100.0" height="75.0" stroke="#333333" stroke-width="2" style="fill:url(#g11)"/><g  transform='translate(0.0,42.5)'><text text-rendering='auto' font-size='12px' x='50.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >MSTParser</tspan></tspan></text></g></g><g transform='translate(596.0,280.0) rotate(0 45.0 45.0)'><defs><linearGradient id='g12' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><polygon points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><polygon points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0" stroke="#333333" stroke-width="2" style="fill:url(#g12)"/><g  transform='translate(0.0,35.0)'><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' font-weight='bold' >System</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='12.8'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Parsed</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='27.6'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Sentences</tspan></tspan></text></g></g><g transform='translate(341.0,45.5) rotate(0 60.0 37.5)'><defs><linearGradient id='g13' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><rect width="120.0" height="75.0" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><rect width="120.0" height="75.0" stroke="#333333" stroke-width="2" style="fill:url(#g13)"/><line x1="10" y1="0" x2="10" y2="75.0"  stroke="#333333" stroke-width="2" style="fill:url(#g13)"/><line x1="110.0" y1="0" x2="110.0" y2="75.0"  stroke="#333333" stroke-width="2" style="fill:url(#g13)"/><g  transform='translate(0.0,42.5)'><text text-rendering='auto' font-size='12px' x='60.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Augmentation</tspan></tspan></text></g></g><g transform='translate(716.0,129.0)'><line x1='0.0' y1='0.0' x2='0.0' y2='74.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='0.0' y1='74.0' x2='-25.0' y2='74.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(-25.0,74.0) rotate(360.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(0.0,37.0)'></g></g><g transform='translate(566.0,130.0)'><line x1='0.0' y1='0.0' x2='0.0' y2='73.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='0.0' y1='73.0' x2='25.0' y2='73.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(25.0,73.0) rotate(180.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(0.0,36.5)'></g></g><g transform='translate(641.0,240.5)'><line x1='0.0' y1='0.0' x2='0.0' y2='39.5' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(0.0,39.5) rotate(270.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(0.0,19.75)'></g></g><g transform='translate(343.0,327.0)'><line x1='0.0' y1='0.0' x2='-142.0' y2='0.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(0.0,0.0) rotate(180.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(-71.0,0.0)'></g></g><g transform='translate(463.0,327.0)'><line x1='0.0' y1='0.0' x2='118.0' y2='0.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='118.0' y1='0.0' x2='118.0' y2='0.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='118.0' y1='0.0' x2='133.0' y2='0.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(0.0,0.0) rotate(0.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(59.0,0.0)'></g></g><g transform='translate(356.0,407.0) rotate(0 45.0 45.0)'><defs><linearGradient id='g19' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><polygon points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><polygon points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0" stroke="#333333" stroke-width="2" style="fill:url(#g19)"/><g  transform='translate(0.0,35.0)'><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' font-weight='bold' >Effect</tspan><tspan font-size='12' font-family='Arial' fill='#000000' > </tspan><tspan font-size='12' font-family='Arial' fill='#000000' >&amp;</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='12.8'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Significance of</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='27.6'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Augmentation</tspan></tspan></text></g></g><g transform='translate(401.0,407.0)'><line x1='2.0' y1='0.0' x2='2.0' y2='-42.5' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(2.0,0.0) rotate(-90.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(2.0,-21.25)'></g></g><g transform='translate(521.0,41.0) rotate(0 45.0 45.0)'><defs><linearGradient id='g21' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><polygon points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><polygon points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0" stroke="#333333" stroke-width="2" style="fill:url(#g21)"/><g  transform='translate(0.0,35.0)'><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' font-weight='bold' >Augmented</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='12.8'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Test</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='27.6'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Sentences</tspan></tspan></text></g></g><g transform='translate(346.5,291.5) rotate(0 57.5 37.5)'><defs><linearGradient id='g22' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><rect width="115.0" height="75.0" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><rect width="115.0" height="75.0" stroke="#333333" stroke-width="2" style="fill:url(#g22)"/><line x1="10" y1="0" x2="10" y2="75.0"  stroke="#333333" stroke-width="2" style="fill:url(#g22)"/><line x1="105.0" y1="0" x2="105.0" y2="75.0"  stroke="#333333" stroke-width="2" style="fill:url(#g22)"/><g  transform='translate(0.0,42.5)'><text text-rendering='auto' font-size='12px' x='57.5' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Evaluation</tspan></tspan></text></g></g><g transform='translate(671.0,41.0) rotate(0 45.0 45.0)'><defs><linearGradient id='g23' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><polygon points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><polygon points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0" stroke="#333333" stroke-width="2" style="fill:url(#g23)"/><g  transform='translate(0.0,35.0)'><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' font-weight='bold' >Augmented</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='12.8'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Training</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='45.0' style='text-anchor: middle' y='27.6'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Sentences</tspan></tspan></text></g></g><g transform='translate(356.0,160.5) rotate(0 50.0 37.5)'><defs><linearGradient id='g24' x1='50%' y1='-25%' x2='50%' y2='100%'><stop stop-color='white' offset='0%'/><stop stop-color='#d1d1d1' offset='100%'/></linearGradient></defs><g transform='translate(4.0,4.0)'><path d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z" stroke="#A8A8A8" stroke-width="0" stroke-opacity=".6" fill-opacity=".6" fill="#A8A8A8"/></g><path d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z" stroke="#333333" stroke-width="2" style="fill:url(#g24)"/><g  transform='translate(0.0,27.5)'><text text-rendering='auto' font-size='12px' x='50.0' style='text-anchor: middle' y='-2.0'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' font-weight='bold' >Gold</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='50.0' style='text-anchor: middle' y='12.8'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Standard</tspan></tspan></text><text text-rendering='auto' font-size='12px' x='50.0' style='text-anchor: middle' y='27.6'><tspan><tspan font-size='12' font-family='Arial' fill='#000000' >Sentences</tspan></tspan></text></g></g><g transform='translate(406.0,235.5)'><line x1='0.0' y1='0.0' x2='0.0' y2='41.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='0.0' y1='41.0' x2='0.0' y2='41.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><line x1='0.0' y1='41.0' x2='0.0' y2='56.0' stroke-dasharray='23, 0' stroke='#333333' stroke-width='2' /><g transform='translate(0.0,56.0) rotate(270.0)'><polygon points='1,0 7.0,-3.0 7.0,3.0' fill='#333333' stroke='#333333' stroke-width='2' /></g><g transform='translate(0.0,20.5)'></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="861"
+   height="598"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.46+devel r21714"
+   sodipodi:docname="Experiment_Setup.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata565">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="484"
+     id="namedview563"
+     showgrid="false"
+     inkscape:zoom="0.39464883"
+     inkscape:cx="430.5"
+     inkscape:cy="299"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 299 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="861 : 299 : 1"
+       inkscape:persp3d-origin="430.5 : 199.33333 : 1"
+       id="perspective567" />
+  </defs>
+  <g
+     transform="translate(34.0,45.5) rotate(0 50.0 37.5)"
+     id="g8">
+    <defs
+       id="defs10">
+      <linearGradient
+         id="g0"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop13" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop15" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g17">
+      <path
+         d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="path19" />
+    </g>
+    <path
+       d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g0)"
+       id="path21" />
+    <g
+       transform="translate(0.0,34.5)"
+       id="g23">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="50.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text25">
+        <tspan
+           id="tspan27">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             font-weight="bold"
+             id="tspan29">Training</tspan>
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan31" />
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="50.0"
+         style="text-anchor: middle"
+         y="12.8"
+         id="text33">
+        <tspan
+           id="tspan35">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan37"> Sentences</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(106.0,165.5) rotate(0 50.0 37.5)"
+     id="g39">
+    <defs
+       id="defs41">
+      <linearGradient
+         id="g1"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop44" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop46" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g48">
+      <rect
+         width="100.0"
+         height="75.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="rect50" />
+    </g>
+    <rect
+       width="100.0"
+       height="75.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g1)"
+       id="rect52" />
+    <g
+       transform="translate(0.0,42.5)"
+       id="g54">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="50.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text56">
+        <tspan
+           id="tspan58">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan60">MSTParser</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(183.0,45.5) rotate(0 50.0 37.5)"
+     id="g62">
+    <defs
+       id="defs64">
+      <linearGradient
+         id="g2"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop67" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop69" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g71">
+      <path
+         d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="path73" />
+    </g>
+    <path
+       d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g2)"
+       id="path75" />
+    <g
+       transform="translate(0.0,34.5)"
+       id="g77">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="50.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text79">
+        <tspan
+           id="tspan81">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             font-weight="bold"
+             id="tspan83">Test</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="50.0"
+         style="text-anchor: middle"
+         y="12.8"
+         id="text85">
+        <tspan
+           id="tspan87">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan89">Sentences</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(156.0,241.0)"
+     id="g91">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="0.0"
+       y2="41.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line93" />
+    <g
+       transform="translate(0.0,41.0) rotate(270.0)"
+       id="g95">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon97" />
+    </g>
+    <g
+       transform="translate(0.0,20.5)"
+       id="g99" />
+  </g>
+  <g
+     transform="translate(84.0,120.5)"
+     id="g101">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="0.0"
+       y2="82.5"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line103" />
+    <line
+       x1="0.0"
+       y1="82.5"
+       x2="22.0"
+       y2="82.5"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line105" />
+    <g
+       transform="translate(22.0,82.5) rotate(180.0)"
+       id="g107">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon109" />
+    </g>
+    <g
+       transform="translate(0.0,41.25)"
+       id="g111" />
+  </g>
+  <g
+     transform="translate(233.0,120.5)"
+     id="g113">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="0.0"
+       y2="82.5"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line115" />
+    <line
+       x1="0.0"
+       y1="82.5"
+       x2="-27.0"
+       y2="82.5"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line117" />
+    <g
+       transform="translate(-27.0,82.5) rotate(360.0)"
+       id="g119">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon121" />
+    </g>
+    <g
+       transform="translate(0.0,41.25)"
+       id="g123" />
+  </g>
+  <g
+     transform="translate(111.0,282.0) rotate(0 45.0 45.0)"
+     id="g125">
+    <defs
+       id="defs127">
+      <linearGradient
+         id="g6"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop130" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop132" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g134">
+      <polygon
+         points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="polygon136" />
+    </g>
+    <polygon
+       points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g6)"
+       id="polygon138" />
+    <g
+       transform="translate(0.0,35.0)"
+       id="g140">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text142">
+        <tspan
+           id="tspan144">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             font-weight="bold"
+             id="tspan146">Baseline</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="12.8"
+         id="text148">
+        <tspan
+           id="tspan150">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan152">Parsed</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="27.6"
+         id="text154">
+        <tspan
+           id="tspan156">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan158">Sentences</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(283.0,83.0)"
+     id="g160">
+    <line
+       x1="0.0"
+       y1="1.4210854715202E-14"
+       x2="43.0"
+       y2="1.4210854715202E-14"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line162" />
+    <line
+       x1="43.0"
+       y1="1.4210854715202E-14"
+       x2="43.0"
+       y2="1.4210854715202E-14"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line164" />
+    <line
+       x1="43.0"
+       y1="1.4210854715202E-14"
+       x2="58.0"
+       y2="1.4210854715202E-14"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line166" />
+    <g
+       transform="translate(58.0,1.4210854715202E-14) rotate(180.0)"
+       id="g168">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon170" />
+    </g>
+    <g
+       transform="translate(21.5,1.4210854715202E-14)"
+       id="g172" />
+  </g>
+  <g
+     transform="translate(671.0,84.0)"
+     id="g174">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="-15.0"
+       y2="0.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line176" />
+    <line
+       x1="-15.0"
+       y1="0.0"
+       x2="-15.0"
+       y2="-59.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line178" />
+    <line
+       x1="-15.0"
+       y1="-59.0"
+       x2="-195.0"
+       y2="-59.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line180" />
+    <line
+       x1="-195.0"
+       y1="-59.0"
+       x2="-195.0"
+       y2="-1.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line182" />
+    <line
+       x1="-195.0"
+       y1="-1.0"
+       x2="-210.0"
+       y2="-1.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line184" />
+    <g
+       transform="translate(0.0,0.0) rotate(180.0)"
+       id="g186">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon188" />
+    </g>
+    <g
+       transform="translate(-90.0,-59.0)"
+       id="g190" />
+  </g>
+  <g
+     transform="translate(521.0,85.0)"
+     id="g192">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="-45.0"
+       y2="0.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line194" />
+    <line
+       x1="-45.0"
+       y1="0.0"
+       x2="-45.0"
+       y2="0.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line196" />
+    <line
+       x1="-45.0"
+       y1="0.0"
+       x2="-60.0"
+       y2="0.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line198" />
+    <g
+       transform="translate(0.0,0.0) rotate(180.0)"
+       id="g200">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon202" />
+    </g>
+    <g
+       transform="translate(-22.5,0.0)"
+       id="g204" />
+  </g>
+  <g
+     transform="translate(134.0,83.0)"
+     id="g206">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="15.0"
+       y2="0.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line208" />
+    <line
+       x1="15.0"
+       y1="0.0"
+       x2="15.0"
+       y2="-57.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line210" />
+    <line
+       x1="15.0"
+       y1="-57.0"
+       x2="192.0"
+       y2="-57.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line212" />
+    <line
+       x1="192.0"
+       y1="-57.0"
+       x2="192.0"
+       y2="1.4210854715202E-14"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line214" />
+    <line
+       x1="192.0"
+       y1="1.4210854715202E-14"
+       x2="207.0"
+       y2="1.4210854715202E-14"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line216" />
+    <g
+       transform="translate(207.0,1.4210854715202E-14) rotate(180.0)"
+       id="g218">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon220" />
+    </g>
+    <g
+       transform="translate(88.5,-57.0)"
+       id="g222" />
+  </g>
+  <g
+     transform="translate(591.0,165.5) rotate(0 50.0 37.5)"
+     id="g224">
+    <defs
+       id="defs226">
+      <linearGradient
+         id="g11"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop229" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop231" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g233">
+      <rect
+         width="100.0"
+         height="75.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="rect235" />
+    </g>
+    <rect
+       width="100.0"
+       height="75.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g11)"
+       id="rect237" />
+    <g
+       transform="translate(0.0,42.5)"
+       id="g239">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="50.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text241">
+        <tspan
+           id="tspan243">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan245">MSTParser</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(596.0,280.0) rotate(0 45.0 45.0)"
+     id="g247">
+    <defs
+       id="defs249">
+      <linearGradient
+         id="g12"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop252" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop254" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g256">
+      <polygon
+         points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="polygon258" />
+    </g>
+    <polygon
+       points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g12)"
+       id="polygon260" />
+    <g
+       transform="translate(0.0,35.0)"
+       id="g262">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text264">
+        <tspan
+           id="tspan266">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             font-weight="bold"
+             id="tspan268">System</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="12.8"
+         id="text270">
+        <tspan
+           id="tspan272">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan274">Parsed</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="27.6"
+         id="text276">
+        <tspan
+           id="tspan278">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan280">Sentences</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(341.0,45.5) rotate(0 60.0 37.5)"
+     id="g282">
+    <defs
+       id="defs284">
+      <linearGradient
+         id="g13"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop287" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop289" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g291">
+      <rect
+         width="120.0"
+         height="75.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="rect293" />
+    </g>
+    <rect
+       width="120.0"
+       height="75.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g13)"
+       id="rect295" />
+    <line
+       x1="10"
+       y1="0"
+       x2="10"
+       y2="75.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g13)"
+       id="line297" />
+    <line
+       x1="110.0"
+       y1="0"
+       x2="110.0"
+       y2="75.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g13)"
+       id="line299" />
+    <g
+       transform="translate(0.0,42.5)"
+       id="g301">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="60.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text303">
+        <tspan
+           id="tspan305">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan307">Augmentation</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(716.0,129.0)"
+     id="g309">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="0.0"
+       y2="74.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line311" />
+    <line
+       x1="0.0"
+       y1="74.0"
+       x2="-25.0"
+       y2="74.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line313" />
+    <g
+       transform="translate(-25.0,74.0) rotate(360.0)"
+       id="g315">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon317" />
+    </g>
+    <g
+       transform="translate(0.0,37.0)"
+       id="g319" />
+  </g>
+  <g
+     transform="translate(566.0,130.0)"
+     id="g321">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="0.0"
+       y2="73.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line323" />
+    <line
+       x1="0.0"
+       y1="73.0"
+       x2="25.0"
+       y2="73.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line325" />
+    <g
+       transform="translate(25.0,73.0) rotate(180.0)"
+       id="g327">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon329" />
+    </g>
+    <g
+       transform="translate(0.0,36.5)"
+       id="g331" />
+  </g>
+  <g
+     transform="translate(641.0,240.5)"
+     id="g333">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="0.0"
+       y2="39.5"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line335" />
+    <g
+       transform="translate(0.0,39.5) rotate(270.0)"
+       id="g337">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon339" />
+    </g>
+    <g
+       transform="translate(0.0,19.75)"
+       id="g341" />
+  </g>
+  <g
+     transform="translate(343.0,327.0)"
+     id="g343">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="-142.0"
+       y2="0.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line345" />
+    <g
+       transform="translate(0.0,0.0) rotate(180.0)"
+       id="g347">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon349" />
+    </g>
+    <g
+       transform="translate(-71.0,0.0)"
+       id="g351" />
+  </g>
+  <g
+     transform="translate(463.0,327.0)"
+     id="g353">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="118.0"
+       y2="0.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line355" />
+    <line
+       x1="118.0"
+       y1="0.0"
+       x2="118.0"
+       y2="0.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line357" />
+    <line
+       x1="118.0"
+       y1="0.0"
+       x2="133.0"
+       y2="0.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line359" />
+    <g
+       transform="translate(0.0,0.0) rotate(0.0)"
+       id="g361">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon363" />
+    </g>
+    <g
+       transform="translate(59.0,0.0)"
+       id="g365" />
+  </g>
+  <g
+     transform="translate(356.0,407.0) rotate(0 45.0 45.0)"
+     id="g367">
+    <defs
+       id="defs369">
+      <linearGradient
+         id="g19"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop372" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop374" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g376">
+      <polygon
+         points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="polygon378" />
+    </g>
+    <polygon
+       points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g19)"
+       id="polygon380" />
+    <g
+       transform="translate(0.0,35.0)"
+       id="g382">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text384">
+        <tspan
+           id="tspan386">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             font-weight="bold"
+             id="tspan388">Effect</tspan>
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan390" />
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan392">&amp;</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="12.8"
+         id="text394">
+        <tspan
+           id="tspan396">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan398">Significance of</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="27.6"
+         id="text400">
+        <tspan
+           id="tspan402">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan404">Augmentation</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(401.0,407.0)"
+     id="g406">
+    <line
+       x1="2.0"
+       y1="0.0"
+       x2="2.0"
+       y2="-42.5"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line408" />
+    <g
+       transform="translate(2.0,0.0) rotate(-90.0)"
+       id="g410">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon412" />
+    </g>
+    <g
+       transform="translate(2.0,-21.25)"
+       id="g414" />
+  </g>
+  <g
+     transform="translate(521.0,41.0) rotate(0 45.0 45.0)"
+     id="g416">
+    <defs
+       id="defs418">
+      <linearGradient
+         id="g21"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop421" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop423" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g425">
+      <polygon
+         points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="polygon427" />
+    </g>
+    <polygon
+       points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g21)"
+       id="polygon429" />
+    <g
+       transform="translate(0.0,35.0)"
+       id="g431">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text433">
+        <tspan
+           id="tspan435">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             font-weight="bold"
+             id="tspan437">Augmented</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="12.8"
+         id="text439">
+        <tspan
+           id="tspan441">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan443">Test</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="27.6"
+         id="text445">
+        <tspan
+           id="tspan447">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan449">Sentences</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(346.5,291.5) rotate(0 57.5 37.5)"
+     id="g451">
+    <defs
+       id="defs453">
+      <linearGradient
+         id="g22"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop456" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop458" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g460">
+      <rect
+         width="115.0"
+         height="75.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="rect462" />
+    </g>
+    <rect
+       width="115.0"
+       height="75.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g22)"
+       id="rect464" />
+    <line
+       x1="10"
+       y1="0"
+       x2="10"
+       y2="75.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g22)"
+       id="line466" />
+    <line
+       x1="105.0"
+       y1="0"
+       x2="105.0"
+       y2="75.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g22)"
+       id="line468" />
+    <g
+       transform="translate(0.0,42.5)"
+       id="g470">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="57.5"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text472">
+        <tspan
+           id="tspan474">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan476">Evaluation</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(671.0,41.0) rotate(0 45.0 45.0)"
+     id="g478">
+    <defs
+       id="defs480">
+      <linearGradient
+         id="linearGradient482"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop484" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop486" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g488">
+      <polygon
+         points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="polygon490" />
+    </g>
+    <polygon
+       points="15.0,0 105.0,0 75.0,90.0 -15.0,90.0"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g23)"
+       id="polygon492" />
+    <g
+       transform="translate(0.0,35.0)"
+       id="g494">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text496">
+        <tspan
+           id="tspan498">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             font-weight="bold"
+             id="tspan500">Augmented</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="12.8"
+         id="text502">
+        <tspan
+           id="tspan504">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan506">Training</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="45.0"
+         style="text-anchor: middle"
+         y="27.6"
+         id="text508">
+        <tspan
+           id="tspan510">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan512">Sentences</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(356.0,160.5) rotate(0 50.0 37.5)"
+     id="g514">
+    <defs
+       id="defs516">
+      <linearGradient
+         id="g24"
+         x1="50%"
+         y1="-25%"
+         x2="50%"
+         y2="100%">
+        <stop
+           stop-color="white"
+           offset="0%"
+           id="stop519" />
+        <stop
+           stop-color="#d1d1d1"
+           offset="100%"
+           id="stop521" />
+      </linearGradient>
+    </defs>
+    <g
+       transform="translate(4.0,4.0)"
+       id="g523">
+      <path
+         d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z"
+         stroke="#A8A8A8"
+         stroke-width="0"
+         stroke-opacity=".6"
+         fill-opacity=".6"
+         fill="#A8A8A8"
+         id="path525" />
+    </g>
+    <path
+       d="M100.0,0 L100.0,75.0 Q75.0,56.25 50.0,75.0 Q25.0,93.75 0,75.0 L0,0 Q25.0,18.75 50.0,0 Q75.0,-18.75 100.0,0 Z"
+       stroke="#333333"
+       stroke-width="2"
+       style="fill:url(#g24)"
+       id="path527" />
+    <g
+       transform="translate(0.0,27.5)"
+       id="g529">
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="50.0"
+         style="text-anchor: middle"
+         y="-2.0"
+         id="text531">
+        <tspan
+           id="tspan533">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             font-weight="bold"
+             id="tspan535">Gold</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="50.0"
+         style="text-anchor: middle"
+         y="12.8"
+         id="text537">
+        <tspan
+           id="tspan539">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan541">Standard</tspan>
+        </tspan>
+      </text>
+      <text
+         text-rendering="auto"
+         font-size="12px"
+         x="50.0"
+         style="text-anchor: middle"
+         y="27.6"
+         id="text543">
+        <tspan
+           id="tspan545">
+          <tspan
+             font-size="12"
+             font-family="Arial"
+             fill="#000000"
+             id="tspan547">Sentences</tspan>
+        </tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     transform="translate(406.0,235.5)"
+     id="g549">
+    <line
+       x1="0.0"
+       y1="0.0"
+       x2="0.0"
+       y2="41.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line551" />
+    <line
+       x1="0.0"
+       y1="41.0"
+       x2="0.0"
+       y2="41.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line553" />
+    <line
+       x1="0.0"
+       y1="41.0"
+       x2="0.0"
+       y2="56.0"
+       stroke-dasharray="23, 0"
+       stroke="#333333"
+       stroke-width="2"
+       id="line555" />
+    <g
+       transform="translate(0.0,56.0) rotate(270.0)"
+       id="g557">
+      <polygon
+         points="1,0 7.0,-3.0 7.0,3.0"
+         fill="#333333"
+         stroke="#333333"
+         stroke-width="2"
+         id="polygon559" />
+    </g>
+    <g
+       transform="translate(0.0,20.5)"
+       id="g561" />
+  </g>
+</svg>

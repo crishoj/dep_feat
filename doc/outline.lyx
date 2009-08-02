@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass report
+\begin_preamble
+\usepackage{url}
+\end_preamble
 \use_default_options true
 \language english
 \inputencoding utf8
@@ -252,15 +255,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/example_dependency_tree.eps
+	filename /Users/christian/Projects/dep_feat/doc/figures/example_dependency_tree.eps
 	width 100text%
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "Flo:dependency"
 
 \end_inset
 
@@ -279,7 +275,56 @@ key "kromann_danish_2003"
 
 \end_inset
 
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "Flo:ex-dep"
 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/example_constituent_structure.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+A possible constituent structure for the sentence in figure
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "Flo:ex-dep"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -331,6 +376,7 @@ head
 dependent
 \emph default
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -361,7 +407,15 @@ The same conceptual units can be recognized in a dependency structure by
 governed
 \emph default
  by the head.
- Various criteria for identifying dependency relations have been proposed.
+ As a bit of additional nomenclature, dependents are said to 
+\emph on
+modify
+\emph default
+ their heads.
+\end_layout
+
+\begin_layout Standard
+Various criteria for identifying dependency relations have been proposed.
  Some common criteria are 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -370,6 +424,13 @@ key "nivre_dependency_2005"
 \end_inset
 
 :
+\begin_inset CommandInset label
+LatexCommand label
+name "Various-criteria"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -466,7 +527,13 @@ It is worth noting that dependency representation is not inherently limited
  In principle, there is nothing that hinders the use of dependency analysis
  for identifying other relations between tokens for which a consistent set
  of criteria can be formulated.
- For this project, the focus is exclusively on the level of syntactic analysis.
+ Additionally, theoretical frameworks for 
+\emph on
+multi-stratal
+\emph default
+ representations exist, in which several levels of analysis is represented
+ in the same structure.
+ For this project, the focus is exclusively on mono-stratal syntactic analysis.
 \end_layout
 
 \begin_layout Standard
@@ -492,22 +559,506 @@ Formal definitions
 \end_layout
 
 \begin_layout Standard
-Sentences, tokens, dependency relations.
+Following 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kbler_dependency_2009"
+
+\end_inset
+
+, let a sentence 
+\begin_inset Formula $S$
+\end_inset
+
+ be defined in formal terms as a sequence of tokens:
 \end_layout
 
 \begin_layout Standard
-Dependency graphs.
+\begin_inset Formula \[
+S=w_{0}w_{1}...w_{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dependency structure is defined on these tokens, so tokenization of the
+ sentence must have taken place prior to the dependency analysis.
+ Further, let 
+\begin_inset Formula $R$
+\end_inset
+
+ denote a finite set of dependency 
+\emph on
+relation types
+\emph default
+ -- or 
+\emph on
+arc labels
+\emph default
+ -- that can hold between tokens:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R=\left\{ r_{1},r_{2},...,r_{m}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A 
+\emph on
+dependency graph
+\emph default
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ is then defined as a 
+\emph on
+labeled, directed 
+\emph default
+graph of nodes 
+\begin_inset Formula $V$
+\end_inset
+
+ and arcs 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+G=(V,A)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The nodes 
+\begin_inset Formula $V$
+\end_inset
+
+ in the graph are comprised of sentence tokens, and the labeled arcs 
+\begin_inset Formula $A$
+\end_inset
+
+ connect these:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V & \subseteq & \left\{ w_{0},w_{1},...,w_{n}\right\} \\
+A & \subseteq & V\times R\times V\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In these terms, a dependency graph 
+\begin_inset Formula $G$
+\end_inset
+
+ represents a particular dependency analysis of the sentence 
+\begin_inset Formula $S$
+\end_inset
+
+, with the arcs 
+\begin_inset Formula $A$
+\end_inset
+
+ being the dependencies posited by the analysis.
+ For mono-stratal analysis, we only allow a single relation to hold from
+ one token to another:
+\begin_inset Formula \[
+(w_{i},r,w_{J})\in A\implies(w_{i},r',w_{J})\notin A\text{ for all }r'\neq r\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that the single arc restriction in this formulation is only refers
+ to one direction, namely from 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ to 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+ (denoted by 
+\begin_inset Formula $w_{i}\to w_{j}$
+\end_inset
+
+).
+ It does not prohibit another relation from going the other way, 
+\begin_inset Formula $w_{j}\to w_{i}$
+\end_inset
+
+.
+ Additionally, there is nothing that prohibits 
+\begin_inset Formula $cycles$
+\end_inset
+
+ from occurring in the the graph.
+ Thus, let a 
+\emph on
+well-formed dependency graph
+\emph default
+ be any dependency graph 
+\begin_inset Formula $G$
+\end_inset
+
+ of nodes 
+\begin_inset Formula $V$
+\end_inset
+
+ and arcs 
+\begin_inset Formula $A$
+\end_inset
+
+ that is a 
+\emph on
+directed tree
+\emph default
+ rooted in node 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ that has node set 
+\begin_inset Formula $V_{S}$
+\end_inset
+
+ which spans all nodes in the graph: 
+\begin_inset Formula $V=V_{S}$
+\end_inset
+
+.
+ Well-formed dependency graphs are also called 
+\emph on
+dependency trees
+\emph default
+.
+ The tree constraint is assumed by most mono-stratal dependency theories,
+ and also holds within each layer in most multi-stratal theories
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kbler_dependency_2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A property of dependency trees that follow from the tree constraint itself
+ is the 
+\emph on
+single-head property
+\emph default
+, which states that if a dependency relation 
+\begin_inset Formula $w_{i}\to w_{j}$
+\end_inset
+
+ holds between two tokens 
+\begin_inset Formula $w_{i},w_{j}\in V$
+\end_inset
+
+, then there can be no other 
+\begin_inset Formula $w_{i'}\in V$
+\end_inset
+
+ such that 
+\begin_inset Formula $i'\neq i$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{i'}\to w_{j}$
+\end_inset
+
+.
+ There is some controversy to this property, as there are cases where it
+ seems natural to have multiple heads on a dependent.
+ In particular, in sentences with coordinated verbs -- e.g.
+ 
+\emph on
+guests enter and exit through the lobby
+\emph default
+ -- it would appear reasonable to let the subject depend on both verbs.
+ Most formalisms deal with dependents of coordinated phrases by simply letting
+ the dependent modify the head of the coordinated phrase -- whether it is
+ chosen to be the coordination itself or one of the coordinated tokens.
+\end_layout
+
+\begin_layout Subsection
+Projectiveness
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement b
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/examples/non_projective.eps
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Non-projective dependency tree.
+ The dependency 
+\emph on
+den 
+\begin_inset Formula $\to$
+\end_inset
+
+ ordinerede
+\emph default
+ is crossing the dependency 
+\emph on
+viser
+\emph default
+ 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\emph on
+frem
+\emph default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+A further restriction on dependency trees is often assumed for reasons of
+ computational tractability, namely 
+\emph on
+projectiveness
+\emph default
+.
+ A dependency tree if projective if and only if it satisfies the 
+\emph on
+planar property
+\emph default
+, namely if it is possible to graphically configure all the dependency arcs
+ in a place above the sentence -- without any crossing arcs.
+ For such a depiction to be possible, the head 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ of all dependencies 
+\begin_inset Formula $w_{i}\to w_{j}$
+\end_inset
+
+ in the tree must dominate every node 
+\begin_inset Formula $w_{m}$
+\end_inset
+
+ which occurs between the endpoints 
+\begin_inset Formula $w_{i},w_{j}$
+\end_inset
+
+ in the linear order of the sentence.
+ 
+\emph on
+Dominate
+\emph default
+ here is the transitive and reflexive closure of the dependency relation,
+ so that a node is dominated by its head, the head of its head, and so forth
+ up until the root node of the tree.
  
 \end_layout
 
 \begin_layout Standard
-Well-formed dependency graphs: dependency trees.
+In formal terms, this amounts the following definitions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kbler_dependency_2009"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $w_{i}\twoheadrightarrow w_{j}$
+\end_inset
+
+ denote the reflexive and transitive closure of the dependency relation
+ in a tree 
+\begin_inset Formula $G=(V,A)$
+\end_inset
+
+: 
+\begin_inset Formula $w_{i}\twoheadrightarrow w_{j}$
+\end_inset
+
+ if and only if 
+\begin_inset Formula $i=j$
+\end_inset
+
+ (reflexive) or both 
+\begin_inset Formula $w_{i}\twoheadrightarrow w_{i'}$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{i}\to w_{j}$
+\end_inset
+
+ for some 
+\begin_inset Formula $w_{i'}\in V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+An arc 
+\begin_inset Formula $(w_{i},r,w_{j})\in A$
+\end_inset
+
+ in a dependency tree 
+\begin_inset Formula $G=(V,A)$
+\end_inset
+
+ is projective if and only if 
+\begin_inset Formula $w_{i}\twoheadrightarrow w_{k}$
+\end_inset
+
+ for all 
+\begin_inset Formula $i<k<j$
+\end_inset
+
+ when 
+\begin_inset Formula $i<j$
+\end_inset
+
+, or 
+\begin_inset Formula $j<k<i$
+\end_inset
+
+ when 
+\begin_inset Formula $j<i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+A dependency tree 
+\begin_inset Formula $G=(V,A)$
+\end_inset
+
+ is a projective dependency tree if all 
+\begin_inset Formula $(w_{i},r,w_{j})\in A$
+\end_inset
+
+ are projective.
  
 \end_layout
 
+\begin_layout Subsubsection
+Projectivization
+\end_layout
+
 \begin_layout Standard
-Projective/non-projective dependency trees.
- 
+Non-projective dependencies can be caused by wh-movement, which occurs naturally
+ in many languages with SVO as dominant order.
+ As such, projectiveness is not a linguistically plausible constraint.
+ In cases where it nonetheless is assumed, non-projective cases are normally
+ handled by having procedures for converting non-projective trees to projective
+ trees (
+\emph on
+projectivization
+\emph default
+) and back (
+\emph on
+de-projectivization
+\emph default
+) as steps of pre- and post-processing (see figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Projectivization"
+
+\end_inset
+
+).
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/examples/projectivization.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Projectivization of a non-projective dependency tree 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kbler_dependency_2009"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Projectivization"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -515,43 +1066,1069 @@ Dependency Parsing
 \end_layout
 
 \begin_layout Standard
-Grammar-based versus data-driven models.
+In this section I aim to outline of the problem dependency parsing, with
+ the emphasis on data-driven parsing and the learning process entailed.
+\end_layout
+
+\begin_layout Standard
+Simply put, dependency parsing is the task of constructing a dependency
+ tree for a sentence.
+ Approaches to the parsing problem can be characterized by being 
+\emph on
+grammar-based
+\emph default
+ or 
+\emph on
+data-driven
+\emph default
+.
+ An approach is grammar-based if a formally specified and often hand-crafted
+ grammar is employed in parsing, such that it makes sense to ask whether
+ a given sentence is producable by the grammar or not.
+ In most data-driven approaches, a method from 
+\emph on
+machine learning
+\emph default
+ is used to train a parsing model on a collection of example analyzed sentences,
+ resulting in some 
+\emph on
+learned parameters
+\emph default
+, which in turn is used by the parsing model to parse new sentences.
+ It is worth noting that these categories are not mutually exclusive, as
+ some approaches induce grammars from collections of analyzed sentences,
+ and this are indeed both data-driven and grammar-based.
+\end_layout
+
+\begin_layout Standard
+In formal terms, a dependency parsing model 
+\begin_inset Formula $M$
+\end_inset
+
+ consists of:
+\end_layout
+
+\begin_layout Enumerate
+a set of 
+\emph on
+constraints
+\emph default
+ 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ which define the space of possible dependency structures producable for
+ a sentence, 
+\end_layout
+
+\begin_layout Enumerate
+a fixed 
+\emph on
+algorithm
+\emph default
+ 
+\begin_inset Formula $h$
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Enumerate
+a -- possibly empty -- set of 
+\emph on
+parameters
+\emph default
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ that guide the parsing algorithm.
+\end_layout
+
+\begin_layout Standard
+For a grammar-based system, the constraints would include the rules of grammar
+ in use.
  
 \end_layout
 
 \begin_layout Standard
-Features.
- 
-\end_layout
+The parsing problem in formal terms is then to find the most likely dependency
+ tree 
+\begin_inset Formula $G=h(S,\Gamma,\lambda)$
+\end_inset
 
-\begin_layout Standard
-Learning.
-\end_layout
+ for a sentence 
+\begin_inset Formula $S$
+\end_inset
 
-\begin_layout Standard
-Formal definitions: Dependency parsing model, constraints, parameters and
- algoritms.
- The parsing problem.
-\end_layout
+.
+ Which tree is most likely depends, apart from the general criteria for
+ dependencies outlined 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "Various-criteria"
 
-\begin_layout Standard
-Transition-based models.
- 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-Graph-based models.
- 
-\end_layout
-
-\begin_layout Standard
+, on the specific dependency formalism in use.
+ In between formalisms there are various annotational conventions, not only
+ with respect to the set of dependency types used, but also differences
+ in treatmeant of such phenomena as coordination 
 \begin_inset CommandInset citation
-LatexCommand citet
-key "kbler_dependency_2009"
+LatexCommand citep
+key "nivre_dependency_2005"
+
+\end_inset
+
+, head-status of functional categories 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vrelid_cross-lingual_2009"
+
+\end_inset
+
+ and locutions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bosco_linguistic_2008"
+
+\end_inset
+
+, which are particularly open to interpretation from a dependency viewpoint.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/examples/coordination1.pdf
+	width 45text%
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Coordination as head
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/examples/coordination2.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Coordinated term as head
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Different conventions for annotating coordinated noun phrases 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nivre_dependency_2005"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A data-driven parser must learn these annotational conventions when presented
+ with the training material.
+ In formal terms, the training material 
+\begin_inset Formula $\mathcal{D}$
+\end_inset
+
+ is comprised of pairs of sentences and dependency trees 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kbler_dependency_2009"
+
+\end_inset
+
+:
+\begin_inset Formula \[
+\mathcal{D}=\left\{ (S_{d},G_{d})\right\} _{d=0}^{|\mathcal{D}|}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The core of the learning phase typically involves adjusting the parameters
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ in order to optimize some function over the training set 
+\begin_inset Formula $\mathcal{D}$
+\end_inset
+
+.
+ The nature of the parameters depend on the specific parsing model in use.
+ In one model, a parameter might represent the likelihood of a dependency
+ arc occurring in a sentence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/data-driven/Training_Phase.eps
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Learning phase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/data-driven/Parsing_Phase.eps
+	lyxscale 50
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parsing phase
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Phases of data-driven parsing.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+TODO: root token
+\end_layout
+
+\begin_layout Subsection
+Feature function
+\end_layout
+
+\begin_layout Standard
+Also involved in the learning phase is a 
+\emph on
+feature function
+\emph default
+ 
+\begin_inset Formula $f(x):\mathcal{X}\to\mathcal{Y}$
+\end_inset
+
+, that maps some input 
+\begin_inset Formula $x$
+\end_inset
+
+ into the feature space 
+\begin_inset Formula $\mathcal{Y}$
+\end_inset
+
+.
+ The specific input for the feature function depends on the parsing model,
+ but almost always includes a token from the sentence, and in some cases
+ the state of the parser.
+ In broad terms, the feature function takes information about a sentence
+ that is deemed useful for the purpose learning and parsing, and makes it
+ explicit to the machine learning component, typically in the form of a
+ high-dimensional real-valued feature vector.
+ 
+\end_layout
+
+\begin_layout Standard
+Example features for a given token include:
+\end_layout
+
+\begin_layout Itemize
+Word form.
+\end_layout
+
+\begin_layout Itemize
+Lemma.
+\end_layout
+
+\begin_layout Itemize
+Part of speech.
+\end_layout
+
+\begin_layout Itemize
+Morphological and inflectional properties.
+\end_layout
+
+\begin_layout Itemize
+Similar information about the other tokens surrounding the particular token.
+\end_layout
+
+\begin_layout Subsection
+Transition-based models
+\end_layout
+
+\begin_layout Standard
+Transition-based models process sentence tokens sequentially in a stepwise
+ manner, and construct a dependency tree for the sentence as a side-effect
+ of the 
+\emph on
+transitions
+\emph default
+ made in an 
+\emph on
+abstract machine
+\emph default
+ as the parsing proceeds.
+ At each step, the machine is in a certain 
+\emph on
+state
+\emph default
+ determined by the position in the sentencen and the 
+\emph on
+parsing history
+\emph default
+, ie.
+ the transitions performed prior to the current state.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Shift-reduce models
+\end_layout
+
+\begin_layout Standard
+Several transition-based models have been proposed 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nivre_conll_2007"
+
+\end_inset
+
+, many of which are inspired by traditional shift-reduce parsers
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nivre_efficient_2003,hall_single_2007"
+
+\end_inset
+
+.
+ In these, the state -- or 
+\emph on
+configuration -- 
+\emph default
+of the transition-based parser for a sentence 
+\begin_inset Formula $S$
+\end_inset
+
+ is a triple 
+\begin_inset Formula $c=(\sigma,\beta,A)$
+\end_inset
+
+ of:
+\end_layout
+
+\begin_layout Enumerate
+A stack 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ of tokens 
+\begin_inset Formula $w_{i}\in V_{S}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Enumerate
+a buffer 
+\begin_inset Formula $\beta$
+\end_inset
+
+ of tokens 
+\begin_inset Formula $w_{i}\in V_{S}$
+\end_inset
+
+ and
+\end_layout
+
+\begin_layout Enumerate
+a set 
+\begin_inset Formula $A$
+\end_inset
+
+ of dependency arcs 
+\begin_inset Formula $(w_{i},r,w_{j})\in V_{S}\times R\times V_{S}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As the transition-based parser proceeds, the state contains a partial analysis
+ of the sentence, where 
+\begin_inset Formula $A$
+\end_inset
+
+ contains arcs of the partially completed dependency tree, the buffer 
+\begin_inset Formula $\beta$
+\end_inset
+
+ contains tokens remaining to be processed and the stack 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ contains partially processed tokens.
+\end_layout
+
+\begin_layout Standard
+The transitions of one shift-reduce parser 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nivre_efficient_2003"
+
+\end_inset
+
+ are:
+\end_layout
+
+\begin_layout Description
+
+\noun on
+Shift
+\noun default
+ removes the ﬁrst word 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ in the buffer and pushes it on top of the stack.
+\end_layout
+
+\begin_layout Description
+
+\noun on
+Left-Arc(
+\begin_inset Formula $r$
+\end_inset
+
+)
+\noun default
+ for any dependency label 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ This transition has the effect of adding a dependency arc with label 
+\begin_inset Formula $r$
+\end_inset
+
+ from the first token on the buffer 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ to the token on the top of the stack 
+\begin_inset Formula $w_{j}$
+\end_inset
+
+, and removing the top token from the stack (
+\emph on
+popping 
+\emph default
+the stack).
+ 
+\end_layout
+
+\begin_layout Description
+
+\noun on
+Right-Arc(
+\begin_inset Formula $r$
+\end_inset
+
+)
+\noun default
+ again for any dependency label 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ This transition works as 
+\noun on
+Left-Arc(
+\begin_inset Formula $r$
+\end_inset
+
+)
+\noun default
+, except that in this case the introduced dependency arc goes the other
+ way, from the token on the top of the stack to the first token on the buffer.
+ In addition, the first token on the buffer is replaced by the token from
+ the top of the stack.
+\end_layout
+
+\begin_layout Standard
+The transitions have certain inevitable preconditions, e.g.
+ 
+\noun on
+Shift
+\noun default
+ is only permissible when the buffer is non-empty, and both 
+\noun on
+Arc
+\noun default
+ transitions only only makes sense when both the stack and the buffer are
+ non-empty.
+\end_layout
+
+\begin_layout Standard
+With an 
+\emph on
+initial state
+\emph default
+ 
+\begin_inset Formula $c_{0}=([w_{0}],[w_{1},w_{2},...,w_{n}],[])$
+\end_inset
+
+ with the first (artificial root) token on the stack, the rest of the sentence
+ in the buffer and no arcs, the shift-reduce parser proceeds through a sequence
+ of states 
+\begin_inset Formula $C_{0,m}=(c_{o},c_{1},...,c_{m})$
+\end_inset
+
+ until it reaches the 
+\emph on
+terminal state
+\emph default
+ where the buffer is empty.
+ At this point the dependency tree produced by the shift-reduce parser is
+ contained in 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Other transition-based approaches include list-based models 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "covington_fundamental_2001"
+
+\end_inset
+
+ and generalized LR-parsers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "watson_adaptingrasp_2007,sagae_dependency_2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For all transition-based models, the training phase essentially consists
+ of learning a model of what good transitions are given the parser state,
+ which -- to reiterate -- involces both features of the tokens currently
+ being processed and the previous transitions made.
+\end_layout
+
+\begin_layout Standard
+TODO: runtime
+\end_layout
+
+\begin_layout Subsection
+Graph-based models
+\end_layout
+
+\begin_layout Standard
+Turning to another successful approach, the class of graph-based models,
+ the learning task is concerned with what a good dependency graph is like,
+ rather than which transitions are good.
+\end_layout
+
+\begin_layout Standard
+Graph-based models define a scoring function over possible dependency graphs
+ for a sentence, which is used at parse time in conjunction with a search
+ algorithm to find for the highest-scoring graph.
+ This score function should provide a measure 
+\begin_inset Formula $\textrm{score}(G)$
+\end_inset
+
+ of the likelihood that a certain dependency graph 
+\begin_inset Formula $G$
+\end_inset
+
+ is the correct analysis for the sentence 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Arc-factored models
+\end_layout
+
+\begin_layout Standard
+In the training phase, graph based models learn the parameters of the scoring
+ function.
+ Different scoring functions and search algorithms have been proposed, all
+ sharing the common property that the scoring function is decomposed into
+ smaller functions that score local properties of the graph being evaluated,
+ namely single attachments (for 
+\emph on
+first-order
+\emph default
+ or 
+\emph on
+arc-factored
+\emph default
+ models) or pairs of attachments (for 
+\emph on
+second-order
+\emph default
+ models).
+ Typically, the score of a local property, be it a single arc or a pair,
+ is calculated as a the dot product of a weight vector and the feature vector
+ for the arc -- or in other words, a weighted sum of the arc features.
+ 
+\end_layout
+
+\begin_layout Standard
+The score for the whole graph is typically found by summing the local property
+ scores.
+ The particular way in which subgraph scores is combined to achieve the
+ score of the whole graph may differ between different graph-based models,
+ but they share the fundamental assumption that the score of a graph 
+\begin_inset Formula $G$
+\end_inset
+
+ factors through the scores of the subgraphs of 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kbler_dependency_2009"
+
+\end_inset
+
+.
+ In the case of arc-factored models, where each arc is scored individually
+ by the function 
+\begin_inset Formula $\lambda(w_{i},r,w_{j})$
+\end_inset
+
+, we can write
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Additionally, some models 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nakagawa_multilingual_2007"
+
+\end_inset
+
+ include global properties of the graph in the scoring function.
+ 
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\textrm{score}(G)=\sum\lambda(w_{i},r,w_{j})\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In formal terms, the parsing algorithm 
+\begin_inset Formula $h$
+\end_inset
+
+ in a graph-based model produces a dependency graph for a sentence 
+\begin_inset Formula $S$
+\end_inset
+
+ by finding the graph the maximizes the scoring function:
+\begin_inset Formula \[
+h(S,\Gamma,\lambda)=\arg\max_{G\in\mathcal{G_{S}}}\textrm{score}(G)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The graph-theoretic term 
+\emph on
+spanning tree
+\emph default
+ denotes a subgraph 
+\begin_inset Formula $G'=(V',A')$
+\end_inset
+
+ of a graph 
+\begin_inset Formula $G=(V,A)$
+\end_inset
+
+ which satisfies the following criteria:
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula $G'$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ is a directed tree.
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\begin_inset Formula $G'$
+\end_inset
+
+ spans all the nodes of 
+\begin_inset Formula $G$
+\end_inset
+
+, that is 
+\begin_inset Formula $V=V'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+With a scoring function for subgraphs in the graph, the 
+\emph on
+maximum spanning tree
+\emph default
+ (MST) for a graph 
+\begin_inset Formula $G$
+\end_inset
+
+ is simply the highest scoring spanning tree for 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ Graph theory provides several algorithms for finding maximum spanning trees,
+ which can be used if the parsing problem is cast as a graph search problem:
+ Given the sentence 
+\begin_inset Formula $S$
+\end_inset
+
+ and dependency types 
+\begin_inset Formula $R$
+\end_inset
+
+, let 
+\begin_inset Formula $G_{S}=(A_{S},V_{S})$
+\end_inset
+
+ denote the graph where the nodes 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $V_{S}$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ are the sentence tokens 
+\begin_inset Formula $\{w_{0},w_{1},...,w_{n}\}$
+\end_inset
+
+ and there is an arc of all possible dependency types between all pairs
+ of tokens, except for dependencies from the root token: 
+\begin_inset Formula \[
+A_{S}=\left\{ (w_{i},r,w_{j})\vert\textrm{ for all }w_{i},w_{j}\in S\textrm{ and }r\in R\textrm{ and }j\neq0\right\} \]
+
+\end_inset
+
+As 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+ has multiple arcs -- one for each dependency type 
+\begin_inset Formula $r\in R$
+\end_inset
+
+ -- between each pair of nodes, and in both directions, it is a 
+\emph on
+multi digraph
+\emph default
+.
+ However, in the case of arc-factored models, which score each arc individually,
+ we can safely remove all but the highest scoring arc between any two nodes,
+ thus reducing the multi digraph 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+ to a digraph 
+\begin_inset Formula $G'_{S}=(V'_{S},A'_{S})$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V'_{S} & = & V_{S}\\
+A'_{S} & = & \left\{ (w_{i},w_{j})\vert w_{i},w_{j}\in V_{S},j\neq0\right\} \\
+\lambda(w_{i},w_{j}) & = & \max_{r}\lambda(w_{i},r,w_{j})\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This reduction is risk-free with arc-factored models, for the maximum arc
+ scores we reduced to must include those of the maximum spanning tree.
+ Otherwise, it would be possible to get a higher scoring tree by substituting
+ arcs in it from 
+\begin_inset Formula $A'_{S}$
+\end_inset
+
+.
+ In order to recover the arc labels, it is necassary to keep track of the
+ label 
+\begin_inset Formula $r$
+\end_inset
+
+ that yielded the highest arc score 
+\begin_inset Formula $\lambda(w_{i},r,w_{j})$
+\end_inset
+
+ for each pair of nodes.
+\end_layout
+
+\begin_layout Standard
+The set of possible dependency trees for the sentence 
+\begin_inset Formula $S$
+\end_inset
+
+ is identical to the set of spanning trees for 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+, and with the scoring function 
+\begin_inset Formula $\textrm{score}(G)$
+\end_inset
+
+ we can get the best parse by finding the maximum spanning tree of 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+.
+ A maximum spanning tree finding algorithm is Chu-Liu-Edmons, which proceeds
+ in part with a greedy strategy by assigning the hightest scoring arcs to
+ each node, and in part with a recursive procedure for untying possible
+ loops produced in the greedy step.
+ Given a sentence of length 
+\begin_inset Formula $n$
+\end_inset
+
+, the Chu-Liu-Edmonds algorithm takes 
+\begin_inset Formula $O(n^{3})$
+\end_inset
+
+ steps to find the maximum spanning tree, but with some trickery 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tarjan_finding_1977"
+
+\end_inset
+
+ it can be made to run in 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+ steps.
+ The algorithm works on the digraph 
+\begin_inset Formula $G'_{S}$
+\end_inset
+
+ which must be constructed beforehand, yielding a total runtime of 
+\begin_inset Formula $O(|R|n^{2}+n^{2})=O(|R|n^{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+TODO: learning
 \end_layout
 
 \begin_layout Section
@@ -564,12 +2141,30 @@ CoNLL shared task.
 \end_layout
 
 \begin_layout Standard
-MSTParser and MaltParser.
+MSTParser 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcdonald_multilingual_2006"
+
+\end_inset
+
+ and MaltParser 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nivre_efficient_2003"
+
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Standard
-Languages and results.
+Languages.
+\end_layout
+
+\begin_layout Standard
+Results.
  
 \end_layout
 
@@ -602,6 +2197,50 @@ Review of literature and research
 
 \begin_layout Standard
 What others have done.
+\end_layout
+
+\begin_layout Standard
+In the original paper for the MSTParser, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mcdonald_multilingual_2006"
+
+\end_inset
+
+ note that the accuracy of verb and conjunction attachment for multiclause
+ sentences in Spanish is well below the average:
+\end_layout
+
+\begin_layout Quotation
+Although overall unlabeled accuracy is 86%, most verbs and some conjunctions
+ attach to their head words with much lower accuracy: 69% for main verbs,
+ 75% for the verb 
+\emph on
+ser
+\emph default
+, and 65% for coordinating conjunctions.
+ [...] These weaknesses are not surprising, since these decisions encode the
+ more global aspects of sentence structure: arrangement of clauses and adverbial
+ dependents in multi-clause sentences, and prepositional phrase attachment.
+ 
+\end_layout
+
+\begin_layout Standard
+They describe prelimenary experiments with engineering a feature to improve
+ the accuracy:
+\end_layout
+
+\begin_layout Quotation
+[...] we added features to count the number of commas and conjunctions between
+ a dependent verb and its candidate head.
+ Unlabeled accuracy for all verbs increases from 71% to 73% and for all
+ conjunctions from 71% to 74%.
+ Unfortunately, accuracy for other word types decreases somewhat, resulting
+ in no signiﬁcant net accuracy change.
+ Nevertheless, this very preliminary experiment suggests that wider-range
+ features may be useful in improv ing the recognition of overall sentence
+ structure.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1079,7 +2718,22 @@ Parenthesis
 \end_layout
 
 \begin_layout Standard
-Results: 
+Results: Italian.
+\end_layout
+
+\begin_layout Standard
+FOOTNOTE: Det her viser meget godt de metodiske vanskeligheder i ikke at
+ lave 10-fold CV på så lille en træbank: lemma only giver -.4% (forværring)
+ på first fold (law).
+ Du skal ikke bekymre dig om det, men kan måske skrive en fodnote om, at
+ der er tale om en meget lille træbank, og du vælger at evaluere på EVALITA'07-s
+etup'et for sammenlignelighed, selvom det er metodisk mistænkeligt.
+ Skriv noget i retning af Chanev (2006) (bortset fra at hans engelsk er
+ forfærdeligt): "Although the treebank is small and n-fold cross-validation
+ is usually used in such cases, here we report results on a test set of
+ 150 sentences (4,172 tokens) and a training set of 1,350 sentences (37,444
+ tokens) in order the TUT experiments not to differ from the experiments
+ on the other treebanks in this study."
 \end_layout
 
 \begin_layout Subsubsection
@@ -1293,6 +2947,17 @@ Conclusion
 
 \begin_layout Section
 Future research
+\end_layout
+
+\begin_layout Standard
+Expand on pronominalization, givenness and word order 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "weber_word_2004"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Chapter*
