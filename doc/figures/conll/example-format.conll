@@ -1,0 +1,9 @@
+1	Medardo_Fraile	Medardo_Fraile	n	np	_	2	SUJ	2	SUJ
+2	juega	jugar	v	vm	num=s|mod=i|per=3|tmp=p	0	ROOT	0	ROOT
+3	a	a	s	sp	for=s	2	CREG	2	CREG
+4	un	uno	d	di	gen=m|num=s	5	_	5	_
+5	cinismo	cinismo	n	nc	gen=m|num=s	3	_	3	_
+6	fácil	fácil	a	aq	num=s|gen=c	5	_	5	_
+7	y	y	c	cc	_	6	_	6	_
+8	divertido	divertido	a	aq	gen=m|num=s|pari=p	6	_	6	_
+9	.	.	F	Fp	_	2	PUNC	2	PUNC

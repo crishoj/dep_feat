@@ -1,4 +1,15 @@
 ﻿
+@article{rosenblatt_perceptron:probabilistic_1958,
+	title = {The perceptron: A probabilistic model for information storage and organization in the brain},
+	volume = {65},
+	shorttitle = {The perceptron},
+	number = {6},
+	journal = {Psychological review},
+	author = {Frank Rosenblatt},
+	year = {1958},
+	pages = {386–408}
+},
+
 @article{tarjan_finding_1977,
 	title = {Finding optimum branchings},
 	volume = {7},
@@ -128,6 +139,21 @@
 	pages = {71–77}
 },
 
+@article{civit_building_2004,
+	title = {Building {Cast3LB:} A Spanish Treebank},
+	volume = {2},
+	shorttitle = {Building {Cast3LB}},
+	url = {http://dx.doi.org.ep.fjernadgang.kb.dk/10.1007/s11168-004-7429-x},
+	doi = {10.1007/s11168-004-7429-x},
+	abstract = {In this paper we present and justify methodological principles and syntactic criteria to build {Cast3LB:} a treebank for Spanish. As a previous work necessary to develop it, some automatic and semiautomatic processes have been carried out: automatic morphological analysis and disambiguation; manual validation of the tagging process, which guarantees the quality of the data; and, finally, automatic shallow parsing. The syntactic annotation consists of the labelling of constituents, including some elliptical elements, and syntactic functions. In this paper we focus on the second phase, presenting the basic guidelines for syntactic annotation and the boundaries of the work being done.},
+	number = {4},
+	journal = {Research on Language and Computation},
+	author = {Montserrat Civit and Ma Antònia Martí},
+	month = dec,
+	year = {2004},
+	pages = {549--574}
+},
+
 @inproceedings{eisner_parsing_2005,
 	title = {Parsing with soft and hard constraints on dependency length},
 	booktitle = {Proc. of {IWPT}},
@@ -151,12 +177,40 @@
 	year = {2005}
 },
 
+@inproceedings{buchholz_conll-x_2006,
+	title = {{CoNLL-X} shared task on Multilingual Dependency Parsing},
+	booktitle = {Tenth Conference on Computational Natural Language Learning},
+	author = {Sabine Buchholz and Erwin Marsi},
+	year = {2006},
+	pages = {149}
+},
+
 @misc{buchholz_conll_2006,
 	title = {{CoNLL} 2006 Shared Task Website},
 	url = {http://nextens.uvt.nl/~conll/},
 	author = {Sabine Buchholz and Erwin Marci and Yuval Krymolowski and Amit Dubey},
 	year = {2006},
 	howpublished = {http://nextens.uvt.nl/{\textasciitilde}conll/}
+},
+
+@incollection{civit_cat3lb_2006,
+	title = {{Cat3LB} and {Cast3LB:} From Constituents to Dependencies},
+	shorttitle = {{Cat3LB} and {Cast3LB}},
+	url = {http://dx.doi.org.ep.fjernadgang.kb.dk/10.1007/11816508_16},
+	booktitle = {Advances in Natural Language Processing},
+	author = {Montserrat Civit and Ma. Martí and Núria Bufí},
+	year = {2006},
+	pages = {141--152}
+},
+
+@misc{hall_conll-x_2006,
+	address = {Gothenburg},
+	type = {Lecture Slides},
+	title = {{CoNLL-X} Shared Task: 
+Multi-lingual Dependency Parsing},
+	url = {http://w3.msi.vxu.se/users/jni/courses/ml2/ml2_jni_jha.pdf},
+	author = {Johan Hall and Jens Nilsson},
+	year = {2006}
 },
 
 @article{hamabe_detection_2006,
@@ -397,6 +451,20 @@
 	keywords = {read}
 },
 
+@article{nivre_algorithms_2008,
+	title = {Algorithms for Deterministic Incremental Dependency Parsing},
+	volume = {34},
+	url = {http://dx.doi.org/10.1162/coli.07-056-R1-07-027},
+	doi = {{10.1162/coli.07-056-R1-07-027}},
+	abstract = {Parsing algorithms that process the input from left to right and construct a single derivation have often been considered inadequate for natural language parsing because of the massive ambiguity typically found in natural language grammars. Nevertheless, it has been shown that such algorithms, combined with treebank-induced classifiers, can be used to build highly accurate disambiguating parsers, in particular for dependency-based syntactic representations. In this article, we first present a general framework for describing and analyzing algorithms for deterministic incremental dependency parsing, formalized as transition systems. We then describe and analyze two families of such algorithms: stack-based and list-based algorithms. In the former family, which is restricted to projective dependency structures, we describe an arc-eager and an arc-standard variant; in the latter family, we present a projective and a non-projective variant. For each of the four algorithms, we give proofs of correctness and complexity. In addition, we perform an experimental evaluation of all algorithms in combination with {SVM} classifiers for predicting the next parsing action, using data from thirteen languages. We show that all four algorithms give competitive accuracy, although the non-projective list-based algorithm generally outperforms the projective algorithms for languages with a non-negligible proportion of non-projective constructions. However, the projective algorithms often produce comparable results when combined with the technique known as pseudo-projective parsing. The linear time complexity of the stack-based algorithms gives them an advantage with respect to efficiency both in learning and in parsing, but the projective list-based algorithm turns out to be equally efficient in practice. Moreover, when the projective algorithms are used to implement pseudo-projective parsing, they sometimes become less efficient in parsing (but not in learning) than the non-projective list-based algorithm. Although most of the algorithms have been partially described in the literature before, this is the first comprehensive analysis and evaluation of the algorithms within a unified framework.},
+	number = {4},
+	journal = {Computational Linguistics},
+	author = {Joakim Nivre},
+	month = dec,
+	year = {2008},
+	pages = {513--553}
+},
+
 @article{kbler_dependency_2009,
 	title = {Dependency Parsing},
 	volume = {2},
@@ -428,13 +496,33 @@
 	howpublished = {http://code.google.com/p/whatswrong/}
 },
 
-@misc{nivre_conll-x_????,
-	title = {{CoNLL-X} Shared Task: 
-Multi-lingual Dependency Parsing},
-	author = {Joakim Nivre and Jens Nilsson}
-},
-
 @misc{sgaard_quotations_????,
 	title = {Quotations in dependency parsing of Danish (and Spanish)},
 	author = {Anders Søgaard}
+},
+
+@misc{_errors_????,
+	title = {Errors}
+},
+
+@misc{_motivation_????,
+	title = {Motivation}
+},
+
+@misc{_features_????,
+	title = {Features}
+},
+
+@misc{_husk_????,
+	title = {Husk}
+},
+
+@misc{_emner_????,
+	title = {Emner}
+},
+
+@misc{_evalita_????,
+	title = {{EVALITA} 2009 - Parsing Task},
+	url = {http://evalita.fbk.eu/parsing.html},
+	howpublished = {http://evalita.fbk.eu/parsing.html}
 }
