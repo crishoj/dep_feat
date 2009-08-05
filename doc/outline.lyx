@@ -8188,20 +8188,17 @@ for a parser trained on an augmented treebank.
 TODO: choice of parser?
 \end_layout
 
-\begin_layout Subsection
-Experiment setup
-\end_layout
-
 \begin_layout Standard
 \begin_inset Float figure
+placement t
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/flows/Experiment_Setup.pdf
-	width 100text%
+	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Experiment_Setup.eps
+	scale 60
 	BoundingBox 0bp 0bp 861bp 598bp
 
 \end_inset
@@ -8213,7 +8210,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Experiment setup overview
+Overview of experiment setup.
 \end_layout
 
 \end_inset
@@ -8223,6 +8220,14 @@ Experiment setup overview
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Subsection
+Experiment setup
+\end_layout
+
+\begin_layout Standard
 As a broad outline, an experiment proceeds in the following steps:
 \end_layout
 
@@ -8318,42 +8323,6 @@ Treebank augmentation
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figures/flows/Augmentation.eps
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Augmentation process for a treebank.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Augmentation"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
 In augmenting a treebank, new features may be added to sentence tokens,
  or existing properties (such as POS tags) modified.
  While some features can be added on a per-token basis, e.g.
@@ -8386,15 +8355,9 @@ Allow pre-processing of sentence.
 \end_layout
 
 \begin_layout Enumerate
-For each token:
+For each token: Allow processing of token.
 \end_layout
 
-\begin_deeper
-\begin_layout Enumerate
-Allow processing of token.
-\end_layout
-
-\end_deeper
 \begin_layout Enumerate
 Allow post-processing of sentence.
 \end_layout
@@ -8404,11 +8367,90 @@ Allow post-processing of sentence.
 Output augmented treebank.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Augmentation.eps
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Augmentation process for a treebank.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Augmentation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Parser evaluation
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Comparison.eps
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Evaluation and comparison of parser accuracy.
+ The system parse is first scored and compared to the baseline.
+ Then effect and statistical significance is measured.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Evaluation-and-comparison"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 Parsed sentences are obtained from both the baseline and the system parser
  (with the latter working on the augmented treebank), and predictive performance
  in terms of parsing accuracy of each is evaluated.
@@ -8449,98 +8491,6 @@ Focused evaluation
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Categorization.eps
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Evaluation.eps
-	lyxscale 50
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Comparison.eps
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
 Some features only directly affects part of a treebank.
  A feature related to quotations for example is only added to tokens involved
  in quoted phrases.
@@ -8620,6 +8570,98 @@ It is the hope that these ratios can cast light on the question of how valuable
  treatment and thus help unclutter the parsing model, or did it have an
  adverse effect by perhaps preventing a useful generalization in the parsing
  model?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Evaluation.eps
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Three separate evaluations occur: One for the overall effect of adding the
+ feature, one for the effect on affected sentences, and one for the effect
+ on sentences unaffected by the augmentation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Categorization.eps
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Procedure for categorizing sentences for focused evaluation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Procedures for focused evaluation of the effect of an augmentation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -8720,16 +8762,25 @@ vely expensive, the default number of iterations is 10,000.
 \end_layout
 
 \begin_layout Standard
-When reported, 
+Bikel's tool estimates two 
 \begin_inset Formula $p$
 \end_inset
 
--values in this project relate to the observed difference in 
+-values for the observed differences: One for precision and one for recall.
+ The 
+\begin_inset Formula $p$
+\end_inset
+
+-values reported in this project relate to the observed difference in 
 \emph on
 precision
 \emph default
 .
- The author also warns:
+ 
+\end_layout
+
+\begin_layout Standard
+The author also remarks:
 \end_layout
 
 \begin_layout Quotation
@@ -8743,12 +8794,176 @@ Treebanks
 \end_layout
 
 \begin_layout Standard
-TREEBANKS I WAS ABLE TO OBTAIN (licensing restrictions)
+Several of the treebanks used at CoNLL are subject to restrictive licensing
+ terms.
+ The treebanks I was able to obtain for this project are listed below.
+ Most
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In particular, the Italian treebank was not used at CoNLL.
 \end_layout
 
-\begin_layout Standard
-Treebanks available: arabic bulgarian czech danish dutch english german
- italian japanese portuguese slovene spanish swedish turkish.
+\end_inset
+
+ are identical to those used at CoNLL, and some are converted phrase structure
+ treebanks made specifically for CoNLL.
+ I refer to 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "buchholz_conll-x_2006"
+
+\end_inset
+
+ for details.
+\end_layout
+
+\begin_layout Description
+Arabic Prague Arabic Dependency Treebank (PADT) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "haji_prague_2004,smr_prague_2002"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Bulgarian Derivative of the Bulgarian HPSG Treebank 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "simov_design_2005,simov_practical_2003,simov_hpsg-based_2002"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Czech The Prague Dependency Treebank (PDT) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bhmov_pdt:3-level_2001"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Danish The Danish Dependency Treebank (DDT) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kromann_danish_2003"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Dutch The Alpino Dependency Treebank 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "beek_alpino_2002,beek_alpino_2002-1"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+English ???
+\end_layout
+
+\begin_layout Description
+German The TIGER Treebank 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brants_tiger_2002"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Italian Turin University Treebank (TUT) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bosco_linguistic_2008"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Japanese Verbmobil 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kawata_stylebook_2000"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Portuguese 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "afonso_floresta_2002"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Slovene 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "deroski_towardsslovene_2006"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Spanish Cast3LB 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "civit_cat3lb_2006,civit_building_2004,civit_issues_2003"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Swedish Talbanken05 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nilsson_mamba_2005,einarsson_talbankens_1976,teleman_manual_1974"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Turkish Metu Sabanci 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "oflazer_buildingturkish_2003,atalay_annotation_2003"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
