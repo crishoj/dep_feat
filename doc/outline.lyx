@@ -46,11 +46,27 @@
 \begin_body
 
 \begin_layout Title
-Feature Engineering in Data-Driven Dependency Parsing
+Feature Engineering for Data-Driven Dependency Parsing
 \end_layout
 
 \begin_layout Author
 Christian Rishøj Jensen
+\end_layout
+
+\begin_layout Standard
+Forsiden Følgende oplysninger skal fremgå af specialets forside eller siden
+ umiddelbart efter:
+\end_layout
+
+\begin_layout Standard
+Titel og evt.
+ undertitel Københavns Universitet Institut/Fag Dit navn Din vejleders navn
+ År og måned for aflevering.
+\end_layout
+
+\begin_layout Standard
+Alle specialer skal ved afleveringen have anført, hvor mange tegn inklusive
+ mellemrum det færdige speciale udgør.
 \end_layout
 
 \begin_layout Standard
@@ -251,7 +267,7 @@ An Overview of Data-Driven Dependency Parsing
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -294,13 +310,10 @@ name "Flo:ex-dep"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -821,7 +834,7 @@ Projectivity
 placement b
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7590,7 +7603,7 @@ key "mcdonald_characterizingerrors_2007"
 \end_layout
 
 \begin_layout Quotation
-[...] MaltParser tendst operform better on shorter sentences, which require
+[...] MaltParser tends to perform better on shorter sentences, which require
  the greedy inference algorithm to make less parsing decisions.
  [...]
 \end_layout
@@ -7675,7 +7688,7 @@ nt difference in accuracy of data-driven parsers.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -7729,14 +7742,47 @@ Research Question
 \end_layout
 
 \begin_layout Standard
-Possilbe to augment treebanks with additional or modified features such
- that existing data-driven parsing systems generate better dependency parsers?
+Data-driven dependency parsers presented at CoNLL generally perform well,
+ but with an average precision in labeled attachment across languages for
+ the top systems of about 81%, there is plenty of room for improvement.
+ Each parsing model has its strengths and weaknesses, and the averaged score
+ is of course also an average of the weaknesses.
+ What if we focus on the strengths of each model? To get a rough
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The oracle parser suffers from error propagation in the underlying parse
+ trees, so it is not a fair upper bound for hybrid systems employing an
+ ensemble of systems in its parsing decisions.
+\end_layout
+
+\end_inset
+
+ upper bound on how much improvement can be achieved by the strengths all
+ models in unison, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mcdonald_characterizingerrors_2007"
+
+\end_inset
+
+ simulated an 
+\emph on
+oracle parser
+\emph default
+ that chose the most accurate of all parses produced by the CoNLL systems.
+ Labeled attachment score with the oracle parser rose to 86.9%.
+ 
 \end_layout
 
 \begin_layout Standard
-In particular: Features to reduce errors from parentheticals.
- Itemization.
- Etc.
+In this project, instead of trying to improve parsing models themselves,
+ I will turn attention to the input data for the data-driven systems: treebanks.
+ Is it possilbe to augment treebanks with additional or modified features
+ such that existing data-driven parsing systems generate better dependency
+ parsers? In particular, can some linguistically motivated features reduce
+ errors of tricky constructions such as parentheticals?
 \end_layout
 
 \begin_layout Section
@@ -7744,7 +7790,15 @@ Review of literature and research
 \end_layout
 
 \begin_layout Standard
-What others have done.
+Feature engineering has already received a fair amount of interest.
+ Partly from parser creators, as they must choose which features of which
+ tokens -- and in which combinations -- to let their parser consider, and
+ partly from people researchers wanting to improve performance of existing
+ systems.
+\end_layout
+
+\begin_layout Subsection
+Phrase identifying features
 \end_layout
 
 \begin_layout Standard
@@ -7792,36 +7846,14 @@ They describe prelimenary experiments with engineering a feature to improve
 \end_layout
 
 \begin_layout Standard
-
-\noun on
-Animacy
-\noun default
- for disambiguation of subjects from objects.
- 
-\noun on
-Definiteness
-\noun default
- for disambiguation of subjects subject predicates.
- Verbal features (
-\noun on
-finiteness
-\noun default
-, 
-\noun on
-voice
-\noun default
-) for verbal dependency relations 
+In a chunking-like preprocessing step, 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "vrelid_finite_2008,vrelid_linguistic_2008,vrelid_when_2007"
+LatexCommand citet
+key "zhou_block-based_2000"
 
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-Chunking-like preprocessing step, identifying 
+ identifies 
 \begin_inset Quotes eld
 \end_inset
 
@@ -7829,18 +7861,95 @@ blocks
 \begin_inset Quotes erd
 \end_inset
 
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhou_block-based_2000"
-
-\end_inset
-
-.
+ in unrestricted Chinese text and reports successful usage in dependency
+ parsing, although no direct comparison to a baseline system without block
+ identification is reported.
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "attardi_chunking_2008"
 
+\end_inset
+
+, working with the English treebank, report of benefits from chunking text
+ and determining the head of each chunk (not unlike shallow parsing):
+\end_layout
+
+\begin_layout Quotation
+Knowledge about chunks can be helpful to a Shift/Reduce dependency parser,
+ since it typically operates with a limited lookahead and hence has only
+ a narrower vision of the phrase being analyzed than for instance a Maxi-
+ mum Spanning Tree parser [...].
+\end_layout
+
+\begin_layout Standard
+However, the chunking is done on the basis of gold standard (manual) annotation.
+ When they use a statistical chunker instead, the effect is reduced, likely
+ due to propagation of errors in the statistical chunking.
+ Thinking that the parser might as well perform the chunking task, they
+ then resort to only chunking 
+\emph on
+simple noun phrases
+\emph default
+, which can be done deterministically from patterns of POS tags:
+\end_layout
+
+\begin_layout Quotation
+Chunking exploits POS tags produced by previous process- ing steps and hence
+ using a chunker leads to a more com- plex layered parser architecture.
+ But since the parser it- self may have access to the same information that
+ the chun- ker uses to infer the chunks, one may wonder whether the parser
+ might itself subsume the task of the chunker.
+ We will show that indeed the addition of simple chunker-like features allows
+ the parser to achieve an accuracy close to that from using gold chunk data.
+ 
+\end_layout
+
+\begin_layout Standard
+Using the Thai part of a parallel Thai-Japanese corpus, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "tongchim_experiments_2008"
+
+\end_inset
+
+ also examine the use of a 
+\emph on
+base noun phrase
+\emph default
+ chunker as a preprocessing step to dependency parsing.
+ They report of relatively low chunking accuracy (due to ambiguities of
+ noun phrases in Thai), but nonetheless find that the chunk information
+ benefits the parser, yielding a gain in LAS of 3.34 percentage points.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset citation
+LatexCommand citet
+key "hamabe_detection_2006"
+
+\end_inset
+
+
+\noun on
+ 
+\noun default
+report of trouble parsing spontaneous Japanese speech:
+\end_layout
+
+\begin_layout Quotation
+[...] automatically detected dependencies often cross clause boundaries erroneously
+ because sentences including quotations or inserted clauses can have complicated
+ clause structures.
+ 
+\end_layout
+
+\begin_layout Standard
+They then employ a support vector machine (SVM) based chunker that considers
+ information on morphemes, pauses and ﬁllers in the transcribed spontaneous
+ speech to identify 
 \noun on
 quotation
 \noun default
@@ -7848,126 +7957,210 @@ s and
 \noun on
 inserted clause
 \noun default
-s in spontaneous speech.
- Reduce dependencies erroneously crossing clause boundaries 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hamabe_detection_2006"
-
-\end_inset
-
-.
+s, and find that the clause boundaries improve accurary of dependency structure
+ analysis.
 \end_layout
 
 \begin_layout Standard
-Semantic super tagging.
- Segments: 
-\begin_inset Quotes eld
-\end_inset
-
-there is exactly one dependency connecting a token outside the segmentwith
- a token inside the segment
-\begin_inset Quotes erd
-\end_inset
-
-, and 
-\begin_inset Quotes eld
-\end_inset
-
-segments tend to form units, with their own internal structure
-\begin_inset Quotes erd
-\end_inset
-
- 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "ciaramita_dependency_2007"
 
 \end_inset
 
-.
- Second order feature maps.
+ look at named, nominal and numerical entities, often occurring as segments
+ of multiple words, and note:
+\end_layout
+
+\begin_layout Quotation
+When we consider segments composed of several words there is exactly one
+ dependency connecting a token outside the segment with a token inside the
+ segment; e.g., “CBS Inc.” is connected outside only through the token “Inc.”,
+ the subject of the main verb.
+ With respect to the rest of the tree, segments tend to form units, with
+ their own internal structure.
+ Intuitively, this information seems relevant for parsing.
+ This locally-structured patterns could help particularly simple algorithms
+ like ours, which have limited knowledge of the global structure being built.
+ 
 \end_layout
 
 \begin_layout Standard
+As may be guessed from this, they are working with a shift-reduce model.
+ Introducing an 
+\noun on
+eos
+\noun default
+ feature on segment tokens, indicating the distance to the end of segments,
+ they achieve an improvement in LAS of 0.88 on the Wall Street Journal part
+ of the English CoNLL treebank.
+ They also find that a semantic feature indicating the broad ontological
+ category of a token (
+\emph on
+semantic super tagging
+\emph default
+) increase accuracy, and that both features in combination gain even more
+ when adopting 
+\emph on
+second order feature maps
+\emph default
+, which explicitly represent pairs of all features, essentially allowing
+ the model to learn correlations of feature co-occurrences.
+\end_layout
 
-\noun on
-Capitalized
-\noun default
-, 
-\noun on
-coordinable
-\noun default
-, technical sufﬁces given by the lemmatizer 
+\begin_layout Subsection
+Semantic features
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset citation
-LatexCommand citep
-key "novk_feature_2007"
+LatexCommand citet
+key "vrelid_when_2007"
 
 \end_inset
 
-.
- Feature space reduction .
+ note that parsing of Swedish poses special problems for the identiﬁcation
+ of subjects and objects due to limited case marking and ambiguous word
+ order patterns.
+ Referring to the survey work of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "de_swart_animacy_2008"
+
+\end_inset
+
+, Øvrelid 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "vrelid_linguistic_2008"
+
+\end_inset
+
+ remarks that the referential property 
+\emph on
+animacy
+\emph default
+ of nominal elements has been shown to play a role in argument disambiguation.
+ Introducing a feature of 
+\emph on
+\noun on
+animateness
+\emph default
+\noun default
+ in the Swedish treebank, she achieves modest but significant (
+\begin_inset Formula $p<0.01$
+\end_inset
+
+) improvement in overall accuracy, and notes:
+\end_layout
+
+\begin_layout Quotation
+We ﬁnd that animacy inﬂuences the disambiguation of sub- jects from objects,
+ objects from indirect objects as well as the general distinction of arguments
+ from non-arguments.
 \end_layout
 
 \begin_layout Standard
-Bharati 
+Øvrelid 
+\begin_inset CommandInset citation
+LatexCommand citeyearpar
+key "vrelid_finite_2008,vrelid_linguistic_2008"
+
+\end_inset
+
+ also finds that 
+\noun on
+definiteness
+\noun default
+ help disambiguate subjects and subject predicates, and that verbal features
+ (
+\noun on
+finiteness
+\noun default
+ and 
+\noun on
+voice
+\noun default
+) improve accuracy of dependency relations involving verbal elements.
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset citation
 LatexCommand citet
 key "bharati_two_2008"
 
 \end_inset
 
-: 
+ augment an Indian treebank with features to distinguish 
 \noun on
-Human-nonhuman
+human
+\noun default
+ from 
+\noun on
+nonhuman
 \noun default
  and 
 \noun on
-animate-inanimate
+animate
 \noun default
- for 
-\begin_inset Quotes eld
-\end_inset
-
-capturing argument structure of the verb, i.e.
- certain verbs can take only human subjects, etc.
-\begin_inset Quotes erd
-\end_inset
-
-.
+ from 
+\noun on
+inanimate
+\noun default
+ nominals (yielding three classes, as the combination
+\noun on
+ inanimate
+\noun default
+ and 
+\noun on
+human
+\noun default
+ is impossible).
+ They are motivated by the fact that certain Indian verbs only take human
+ subjects, and find that the feature helps capture argument structure in
+ dependency parsing.
 \end_layout
 
 \begin_layout Standard
-Base-NP chunking 
+Working with the Czech treebank, 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "tongchim_experiments_2008"
+LatexCommand citet
+key "novk_feature_2007"
 
 \end_inset
 
-.
+
+\noun on
+ 
+\noun default
+introduce a variety of features , indicating amount other things if tokens
+ are
+\noun on
+ capitalized
+\noun default
+ and 
+\noun on
+coordinable
+\noun default
+, as well as some technical sufﬁces given by the lemmatizer in use.
+ With all features in combination, they achieve an improvement in LAS of
+ 0.45.
+ Due to the relatively large number of feature introduced, the feature space
+ dimension in the model grows a lot, impairing the runtime of the system.
+ To counter this, they conduct some experiments in reducing dimensionaly,
+ resulting in a compromise with a much smaller feature space and fair improvemen
+t in accuracy.
 \end_layout
 
 \begin_layout Standard
-Chunking 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "attardi_chunking_2008"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Soft and hard constraints on dependency length 
+TODO: Soft and hard constraints on dependency length 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "eisner_parsing_2005"
 
 \end_inset
 
-.
+?
 \end_layout
 
 \begin_layout Section
@@ -8009,9 +8202,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/flows/Experiment_Setup.eps
-	lyxscale 50
-	scale 50
+	filename figures/flows/Experiment_Setup.pdf
+	width 100text%
 	BoundingBox 0bp 0bp 861bp 598bp
 
 \end_inset
@@ -8049,7 +8241,6 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename figures/flows/Augmentation.eps
-	lyxscale 50
 	scale 50
 
 \end_inset
@@ -8492,6 +8683,11 @@ Results
 
 \begin_layout Standard
 Summarize results.
+\end_layout
+
+\begin_layout Standard
+Can only do so much with this approach: Can't explicitly introduce features
+ for pairs of tokens.
 \end_layout
 
 \begin_layout Chapter
