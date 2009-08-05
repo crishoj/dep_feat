@@ -694,7 +694,7 @@ In these terms, a dependency graph
  For mono-stratal analysis, we only allow a single relation to hold from
  one token to another:
 \begin_inset Formula \[
-(w_{i},r,w_{J})\in A\implies(w_{i},r',w_{J})\notin A\text{ for all }r'\neq r\]
+(w_{i},r,w_{J})\in A\Longrightarrow(w_{i},r',w_{J})\in A\text{ for all }r'\neq r\]
 
 \end_inset
 
@@ -7795,6 +7795,9 @@ Feature engineering has already received a fair amount of interest.
  tokens -- and in which combinations -- to let their parser consider, and
  partly from people researchers wanting to improve performance of existing
  systems.
+ I will not attempt a systematic and exhaustive overview -- instead, I'll
+ treat the field a bit like a zoo and merely point out some of the interesting
+ animals.
 \end_layout
 
 \begin_layout Subsection
@@ -8055,7 +8058,7 @@ animateness
 \end_layout
 
 \begin_layout Quotation
-We ﬁnd that animacy inﬂuences the disambiguation of sub- jects from objects,
+We ﬁnd that animacy inﬂuences the disambiguation of subjects from objects,
  objects from indirect objects as well as the general distinction of arguments
  from non-arguments.
 \end_layout
@@ -8168,26 +8171,21 @@ Experiment Design
 \end_layout
 
 \begin_layout Standard
-What I will do.
- Overview of proposed approach.
- 
-\end_layout
-
-\begin_layout Subsection
-Treebanks
-\end_layout
-
-\begin_layout Standard
-TREEBANKS I WAS ABLE TO OBTAIN (licensing restrictions)
-\end_layout
-
-\begin_layout Standard
-Treebanks available: arabic bulgarian czech danish dutch english german
- italian japanese portuguese slovene spanish swedish turkish.
+In the following I will describe how I augment treebanks with new features,
+ and how I evaluate the effect of adding a feature.
+ I shall refer to parsers trained on original, unmodified treebanks as 
+\emph on
+baseline
+\emph default
+, and use the term 
+\emph on
+system 
+\emph default
+for a parser trained on an augmented treebank.
 \end_layout
 
 \begin_layout Standard
-Qualities, statistics, appeal.
+TODO: choice of parser?
 \end_layout
 
 \begin_layout Subsection
@@ -8215,7 +8213,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-
+Experiment setup overview
 \end_layout
 
 \end_inset
@@ -8225,9 +8223,96 @@ status open
 
 \end_inset
 
-
+As a broad outline, an experiment proceeds in the following steps:
 \end_layout
 
+\begin_layout Enumerate
+Obtain 
+\emph on
+baseline
+\emph default
+ parses:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Train a parser on the training part of the original treebank.
+\end_layout
+
+\begin_layout Enumerate
+Parse the test part of the original treebank using the trained parser.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Introduce feature:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Augment a copy of the original training part by adding the desired feature.
+\end_layout
+
+\begin_layout Enumerate
+Do the same for the original test part.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Obtain 
+\emph on
+system
+\emph default
+ parses:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Train a parser on the training part of the augmented treebank.
+\end_layout
+
+\begin_layout Enumerate
+Parse the test part of the augmented treebank using the newly trained parser.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Evalutate effect and significance:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Obtain accuracy scores for both baseline and system parses.
+\end_layout
+
+\begin_layout Enumerate
+Determine possible effect of the augmentation, and estimate statistical
+ significance of the observed effect
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+As outlined here, the parser is trained on one treebank partition and predictive
+ performance is estimated on the other partition.
+ In other words, only a single round of cross-validation is performed.
+ In general, and especially for small treebanks, it is considered good practice
+ to perform several rounds of cross-validation using different partitions
+ of the data set (
+\begin_inset Formula $K$
+\end_inset
+
+-fold cross-validation, with 10 folds commonly used).
+ However, as the treebanks I use come pre-partitioned, and are evalutated
+ with these splits in other research, I chose to report performance with
+ the existing train/test splits for reasons of comparability.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Treebank augmentation
 \end_layout
@@ -8236,7 +8321,7 @@ Treebank augmentation
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8252,6 +8337,13 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
+Augmentation process for a treebank.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Augmentation"
+
+\end_inset
+
 
 \end_layout
 
@@ -8262,87 +8354,94 @@ status open
 
 \end_inset
 
+In augmenting a treebank, new features may be added to sentence tokens,
+ or existing properties (such as POS tags) modified.
+ While some features can be added on a per-token basis, e.g.
+ 
+\emph on
+animacy
+\emph default
+ classification, addition of other features require an overview of the whole
+ sentence, as would be the case for determining open-ended quotations.
+ The procedure for augmenting a treebank allows for both token-level and
+ sentence-level processing, and proceeds with these steps:
+\end_layout
 
+\begin_layout Enumerate
+Initialization (e.g.
+ of a classifier to be used).
+\end_layout
+
+\begin_layout Enumerate
+Read treebank.
+\end_layout
+
+\begin_layout Enumerate
+For each sentence:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Allow pre-processing of sentence.
+\end_layout
+
+\begin_layout Enumerate
+For each token:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Allow processing of token.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Allow post-processing of sentence.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Output augmented treebank.
 \end_layout
 
 \begin_layout Subsection
-System evaluation
+Parser evaluation
 \end_layout
 
 \begin_layout Standard
-Error analysis.
- Attachment scoring.
- Score punctuation.
- Trouble with token-level scoring.
- Sentence-level scoring.
+Parsed sentences are obtained from both the baseline and the system parser
+ (with the latter working on the augmented treebank), and predictive performance
+ in terms of parsing accuracy of each is evaluated.
+ 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
+To this end, the standard CoNLL evaluation tool
+\begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename figures/flows/Categorization.eps
-	lyxscale 50
-	scale 50
+Available from the CoNLL Shared Task website 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "buchholz_conll_2006"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
+.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figures/flows/Evaluation.eps
-	lyxscale 50
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+ 
+\family typewriter
+eval.pl
+\family default
+ is used for each parser in turn to compare its predicted parses to the
+ gold standard (correct) parses given in the treebank.
+ The obtained labeled accuracy score (LAS) for the system is compared to
+ the baseline score, providing a measure of the overall effect on parsing
+ accuracy of adding the feature in question.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8350,23 +8449,14 @@ Focused evaluation
 \end_layout
 
 \begin_layout Standard
-Scoring categories of sentences: Those affected by augmentation, and those
- left untouched by the augmentation.
-\end_layout
-
-\begin_layout Subsection
-Comparison to baseline
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/flows/Comparison.eps
+	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Categorization.eps
 	lyxscale 50
 	scale 50
 
@@ -8390,6 +8480,174 @@ status open
 \end_inset
 
 
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Evaluation.eps
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Comparison.eps
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Some features only directly affects part of a treebank.
+ A feature related to quotations for example is only added to tokens involved
+ in quoted phrases.
+ This begs the question: What effect does the added feature have on the
+ affected tokens? And also interesting: What effect does it have on the
+ remaining, unaffected tokens in the treebank?
+\end_layout
+
+\begin_layout Standard
+With only a part of the tokens augmented, one option is to count dependency
+ errors for the affected tokens separately.
+ If for example one were to add a feature clearly marking tokens that occur
+ between parentheses, this would give a ratio of correct dependencies for
+ parenthesized tokens, as well as a ratio for the remainder.
+ However, this approach fails to clearly capture a potentially interesting
+ class of dependencies, namely those erroneoulsy 
+\emph on
+crossing
+\emph default
+ the boundary of e.g.
+ a parenthesized clause (as the crossing dependency might originate from
+ a token outside the clause).
+ 
+\end_layout
+
+\begin_layout Standard
+It is not impossible conceive a heuristic for counting these problematic
+ dependencies specifically, but it would be of little use when the objective
+ is to compare a baseline parse to another by the same standard.
+ The reason for this is simply that dependencies predicted for the baseline
+ and the system may differ, so one would likely be counting different things
+ in the baseline and the system, yielding incommensurable ratios.
+\end_layout
+
+\begin_layout Standard
+Given the apparent difficulties of token- and dependency-level categorization,
+ I have chosen to categorize on the 
+\emph on
+sentence-level
+\emph default
+ instead when estimating the effects of a feature on targeted versus untargeted
+ parts of the text.
+ I thus categorize 
+\emph on
+sentences
+\emph default
+ by whether the added feature applied to 
+\emph on
+any
+\emph default
+ token in the sentence, and evaluate each part separately, yielding two
+ ratios, namely one for
+\end_layout
+
+\begin_layout Description
+Affected
+\begin_inset space ~
+\end_inset
+
+sentences in which augmented tokens occur, and one for
+\end_layout
+
+\begin_layout Description
+Unaffected
+\begin_inset space ~
+\end_inset
+
+sentences which were left untouched by the augmentation.
+\end_layout
+
+\begin_layout Standard
+It is the hope that these ratios can cast light on the question of how valuable
+ a feature was in parsing the linguictics phenomena it was intended to cover,
+ and which effect the alteration in the parsing model had on the ability
+ to parse the rest of the sentences.
+ Did it enable the parser to clearly distinguish tokens that require different
+ treatment and thus help unclutter the parsing model, or did it have an
+ adverse effect by perhaps preventing a useful generalization in the parsing
+ model?
+\end_layout
+
+\begin_layout Subsubsection
+Punctuation
+\end_layout
+
+\begin_layout Standard
+Contrary to the convention of the CoNLL shared task 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "buchholz_conll-x_2006"
+
+\end_inset
+
+, I am including tokens considered punctuation when evaluating parser accuracy.
+ As several of the phenomena in my experiments involve constructions marked
+ by punctuation (e.g.
+ quotation marks and parentheses), I expect the inclusion of the punctuation
+ tokens themselves to contribute a valuable indication of a parsers ability
+ to correctly predict dependency structure.
+\end_layout
+
+\begin_layout Standard
+As long as I let the trained parsers work within the same treebanks, annotationa
+l conventions for punctuation should be consistent and possible to predict.
+ If one were to conduct experiments in domain adaptation using different
+ treebanks with inconsistent conventions, it would make sense to exclude
+ punctuation.
 \end_layout
 
 \begin_layout Subsection
@@ -8397,14 +8655,104 @@ Statistical significance
 \end_layout
 
 \begin_layout Standard
-“Stratified shuffling” 
+To quantify the likelihod of observed effects occurring merely by chance,
+ Dan Bikel's 
+\begin_inset Quotes eld
+\end_inset
+
+Randomized Parsing Evaluation Comparator
+\begin_inset Quotes erd
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "bikel_randomized_2004"
 
 \end_inset
 
+ is used to compute 
+\begin_inset Formula $p$
+\end_inset
+
+-values.
+ In the words of the author, the statistical significance test employed
+ 
+\end_layout
+
+\begin_layout Quotation
+[...] is a type of “stratified shuffling” (which in turn is a type of “compute-inte
+nsive randomized test”).
+ In this testing method, the null hypothesis is that the two models that
+ produced the observed results are the same, such that for each test instance
+ (sentence that was parsed), the two observed scores are equally likely.
+ This null hypothesis is tested by randomly shuffling individual sentences’
+ scores between the two models and then re-computing the evaluation metrics
+ (precision and recall, in this case).
+ If the difference in a particular metric after a shuffling is equal to
+ or greater than the original observed difference in that metric, then a
+ counter for that metric is incremented.
+ Ideally, one would perform all 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ shuffles, where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the number of test cases (sentences), but given that this is often prohibiti
+vely expensive, the default number of iterations is 10,000.
+ After all iterations, the likelihood of incorrectly rejecting the null
+ is simply 
+\begin_inset Formula $\frac{nc+1}{nt+1}$
+\end_inset
+
+, where 
+\begin_inset Formula $nc$
+\end_inset
+
+ is the number of random differences greater than the original observed
+ difference, and 
+\begin_inset Formula $nt$
+\end_inset
+
+ is the total number of iterations.
+\end_layout
+
+\begin_layout Standard
+When reported, 
+\begin_inset Formula $p$
+\end_inset
+
+-values in this project relate to the observed difference in 
+\emph on
+precision
+\emph default
 .
+ The author also warns:
+\end_layout
+
+\begin_layout Quotation
+This type of testing method assumes independence between test instances
+ (sentences).
+ This is not a bad assumption for parsing results, but is not correct, either.
+\end_layout
+
+\begin_layout Subsection
+Treebanks
+\end_layout
+
+\begin_layout Standard
+TREEBANKS I WAS ABLE TO OBTAIN (licensing restrictions)
+\end_layout
+
+\begin_layout Standard
+Treebanks available: arabic bulgarian czech danish dutch english german
+ italian japanese portuguese slovene spanish swedish turkish.
+\end_layout
+
+\begin_layout Standard
+Qualities, statistics, appeal.
 \end_layout
 
 \begin_layout Section
