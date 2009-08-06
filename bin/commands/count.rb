@@ -15,13 +15,19 @@ command :count do |c|
       files.each do |file|
         corpus = Conll::Corpus.parse(file)
         ts = corpus.sentences.size
+        tt = corpus.sentences.collect.reduce(0) { |sum,sent| sum += sent.tokens.length }
         next if ts == 0
         sc = 0
+        tc = 0
         corpus.grep(grep_args) do |sentence|
           sc += 1
+          sentence.grep(grep_args) do |token|
+            tc += 1
+          end
           puts "#{sentence}\n\n" if options.print
         end
         puts sprintf("%-50s: %d/%d sentences (%d%%)", file, sc, ts, sc.fdiv(ts)*100)
+        puts sprintf("%-50s: %d/%d tokens    (%d%%)", file, tc, tt, tc.fdiv(tt)*100)
       end
     else
       say "Invalid corpus directory"
