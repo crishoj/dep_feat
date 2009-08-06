@@ -5,6 +5,7 @@
 \textclass report
 \begin_preamble
 \usepackage{url}
+\usepackage{changepage}
 \end_preamble
 \use_default_options true
 \language english
@@ -8542,23 +8543,15 @@ sentences
 any
 \emph default
  token in the sentence, and evaluate each part separately, yielding two
- ratios, namely one for
-\end_layout
-
-\begin_layout Description
-Affected
-\begin_inset space ~
-\end_inset
-
-sentences in which augmented tokens occur, and one for
-\end_layout
-
-\begin_layout Description
-Unaffected
-\begin_inset space ~
-\end_inset
-
-sentences which were left untouched by the augmentation.
+ ratios, namely one for 
+\emph on
+affected sentences
+\emph default
+ in which augmented tokens occur, and one for 
+\emph on
+unaffected sentences
+\emph default
+ which were left untouched by the augmentation.
 \end_layout
 
 \begin_layout Standard
@@ -8795,7 +8788,14 @@ Treebanks
 
 \begin_layout Standard
 Several of the treebanks used at CoNLL are subject to restrictive licensing
- terms.
+ terms 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "buchholz_conll-x_2006"
+
+\end_inset
+
+.
  The treebanks I was able to obtain for this project are listed below.
  Most
 \begin_inset Foot
@@ -8809,14 +8809,6 @@ In particular, the Italian treebank was not used at CoNLL.
 
  are identical to those used at CoNLL, and some are converted phrase structure
  treebanks made specifically for CoNLL.
- I refer to 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "buchholz_conll-x_2006"
-
-\end_inset
-
- for details.
 \end_layout
 
 \begin_layout Description
@@ -8967,7 +8959,82 @@ key "oflazer_buildingturkish_2003,atalay_annotation_2003"
 \end_layout
 
 \begin_layout Standard
-Qualities, statistics, appeal.
+Several of the treebanks have a size which exceed the capacity of the computer
+ system I had available for experiments
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The system used was a 64 bit Intel® architecture server with 8GB of system
+ memory.
+ 4GB heap space was allocated to the Java virtual machine.
+\end_layout
+
+\end_inset
+
+ (treebank sizes are shows in table 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:Treebank-sizes"
+
+\end_inset
+
+).
+ In particular, I was not able to train a baseline parser and obtain baseline
+ scores for the German Tiger treebank, the Bulgarian treebank, the Czech
+ PDT and the Dutch Alpino treebank.
+ In order to be able to include these treebanks in experiments regardless,
+ I produced versions of a managable size by truncating the training part
+ to 6000 sentences.
+ When referring to these truncated treebanks, I will use a 
+\begin_inset Quotes eld
+\end_inset
+
+(6K)
+\begin_inset Quotes erd
+\end_inset
+
+ suffix.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename tables/baselines.pdf
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Treebank sizes and baseline parsing accuracies achieved.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Treebank-sizes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -8975,7 +9042,90 @@ Feature Designs
 \end_layout
 
 \begin_layout Standard
-What I did.
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename tables/occurences.pdf
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Prelimenary survey of the occurences of various punctuation and its potentially
+ adverse effect on parsing accuracy.
+ Green color indicates widespread usage.
+ 
+\begin_inset Formula $\Delta$
+\end_inset
+
+LAS shows the difference in LAS for the sentences in focus compared to the
+ baseline.
+ An apparent impact on parsing precision is indicated by red color.
+ Finally, a coarse indication of potentiality (for remedy) was calculated
+ using the heuristic: 
+\begin_inset Formula $\textrm{impact}\times\textrm{presence}$
+\end_inset
+
+ (rounded and scaled).
+ In order to be suitable for experiments, a particular phenomenon should
+ be both well represented in the treebank, and relatively poorly handled
+ by the baseline parser.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Prelimenary-survey"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+EXPAND: What I did.
 \end_layout
 
 \begin_layout Standard
@@ -8984,14 +9134,649 @@ What I did.
 \end_layout
 
 \begin_layout Subsection
-Parentheticals
+Quotation
 \end_layout
 
 \begin_layout Standard
-Motivation: Word order in direct quoted speech 
+A prelimenary survey (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:Prelimenary-survey"
+
+\end_inset
+
+) indicates that quotations occur in nearly a third of the Danish test.
+ Although the average LAS for these sentences is not far behind the overall
+ average for the treebank, manual inspection of baeline parses (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Danish-quoted"
+
+\end_inset
+
+) indicate that errors often involve dependencies erroneously crossing the
+ boundary of a quoted phrase, as well as incorrect attachment of quotation
+ marks themselves .
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/foci/quotation/baseline.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Baseline parse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/foci/quotation/system.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parse when augmented with a feature marking tokens in the quoted phrase
+ (the 
+\noun on
+QuotedPhrase
+\noun default
+ scheme)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Danish sentence with a quotation.
+ Black arcs were correctly predicted, red arcs erroneously predicted, and
+ blue arcs should have been predicted, but were not.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Danish-quoted"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intuitively, it seems reasonable that quotations require special treatment.
+ Quoted phrases are often complete in themselves, often containing a subject
+ and predicate, conveying a statement, question or exclamation, sometimes
+ comprising a main clause and one or more subordinate clauses.
+ 
+\end_layout
+
+\begin_layout Standard
+From a linguistics viewpoint, quoted phrases exhibit special behavior in
+ some languages.
+ Apart from having an internal structure on their own right,
+\begin_inset CommandInset citation
+LatexCommand citet
+key "haberland_reported_1986"
+
+\end_inset
+
+ notes that 
+\emph on
+indirect 
+\emph default
+(unquoted)
+\emph on
+ reported speech
+\emph default
+ in Danish exhibits slighty different word order than 
+\emph on
+direct reported speech
+\emph default
+.
+ Contrast these (condensed) sentences:
+\end_layout
+
+\begin_layout Description
+(1) Direct reported speech:
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+Og de tilføjede: 
+\begin_inset Quotes eld
+\end_inset
+
+Vi har end ikke et kim af civilt samfund
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+[And they added: 
+\begin_inset Quotes eld
+\end_inset
+
+We haven't even got a germ of civil society
+\begin_inset Quotes erd
+\end_inset
+
+.]
+\end_layout
+
+\begin_layout Description
+(2) Indirect reported speech:
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+Og de tilføjede, at vi end ikke har et kim af civilt samfund.
+\end_layout
+
+\begin_layout Quotation
+[And they added that we haven't even got a germ of civil society.]
+\end_layout
+
+\begin_layout Standard
+The complementizer 
+\emph on
+at 
+\emph default
+is dropped in the first sentence (direct report), and in the second sentence
+ (indirect report), the negation 
+\emph on
+ikke
+\emph default
+ is moved to a pre-verbal position.
+\end_layout
+
+\begin_layout Standard
+As quotation marks in the Danish treebank are categorized as the same part
+ of speech as all other punctuation, they are only sinlged out at the word
+ form level, even though quotation marks (and other symmetrical indicators
+ of parentheticals) do not share much behavior with other forms of punctuation,
+ such as point indicators (commas, colons, semicolons, dashes) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "haberland_reported_1986"
+key "nunberg_linguistics_1990"
+
+\end_inset
+
+.
+ Noting that quotation marks require special treatment, Søgaard (personal
+ communication) has experimented with 
+\begin_inset Quotes eld
+\end_inset
+
+amplifying
+\begin_inset Quotes erd
+\end_inset
+
+ the uniqueness of quotation marks by introducing a separate part of speech
+ tag for these, as well as for tokens in their vicinity, and saw an improvement
+ of 0.50 in LAS (
+\begin_inset Formula $p<0.1$
+\end_inset
+
+) for a truncated part of the Danish treebank.
+ This was achieved with a 0-1-2 window when modifying the POS tags, meaning
+ that the POS tag was changed for the quotation mark itself as well the
+ two tokens following it.
+ 
+\end_layout
+
+\begin_layout Standard
+A 0-1-2 window will inevitably mark some tokens immediately following a
+ quoted phrase, as well as tokes occuring in the beginning of these, so
+ this augmentation does not clearly indicate which tokens are actually quoted.
+ Intuitively, this would be valuable information.
+ As an attempt to clearly mark quoted phrases, I am using an augmentation
+ scheme which adds a 
+\noun on
+quote 
+\noun default
+feature not only to quotation marks themselves, but also to the quoted tokens.
+ This augmentation is not entirely trivial, as quotation marks do not always
+ occur in pairs, for several reasons:
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Quotation
+Here is what [George Kennan] had to say, and it's revealing: "
+\emph on
+[...] we have about 50% of the world's wealth but only 6.3% of its population.
+ 
+\emph default
+
+\begin_inset Formula $\blacktriangleright$
+\end_inset
+
+ [...] In this situation, we cannot fail to be the object of envy and resentment.
+ 
+\begin_inset Formula $\blacktriangleright$
+\end_inset
+
+
+\emph on
+ 
+\emph default
+Our real task in the coming period is to devise a pattern of relationships
+ which will permit us to maintain this position of disparity [...] 
+\begin_inset Formula $\blacktriangleright$
+\end_inset
+
+
+\emph on
+ 
+\emph default
+We need not deceive ourselves that we can afford today the luxury of altruism
+ and world-benefaction.
+ 
+\begin_inset Formula $\blacktriangleright$
+\end_inset
+
+
+\emph on
+ 
+\emph default
+We should cease to talk about vague and [...] unreal objectives such as human
+ rights, the raising of the living standards, and democratization.
+ 
+\begin_inset Formula $\blacktriangleright$
+\end_inset
+
+
+\emph on
+ 
+\emph default
+The day is not far off when we are going to have to deal in straight power
+ concepts.
+ 
+\begin_inset Formula $\blacktriangleright$
+\end_inset
+
+
+\emph on
+ 
+\emph default
+The less we are then hampered by idealistic slogans, the better."
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Multi-sentence quotation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "chomsky_u.s._1984"
+
+\end_inset
+
+, which in the treebank would occur as separate sentences (indicated here
+ by 
+\begin_inset Formula $\blacktriangleright$
+\end_inset
+
+).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Multi-sentence-quotation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+When beginning a multi-sentence quote begins, only the initial (
+\emph on
+opening
+\emph default
+) quotation mark is seen.
+ The 
+\emph on
+closing
+\emph default
+ quotation mark
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Contrary to the convention of certain other languages (e.g.
+ French), there is not a strong tradition for graphemic distinction between
+ opening and closing quotation marks in Danish.
+\end_layout
+
+\end_inset
+
+ occurs in a 
+\emph on
+following
+\emph default
+ sentence (see 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Multi-sentence-quotation"
+
+\end_inset
+
+ for an example).
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Graphic absorption rules
+\emph default
+ of written accounts 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "nunberg_linguistics_1990"
+
+\end_inset
+
+ mean that a closing quotation mark may be left out in certain cases.
+\end_layout
+
+\begin_layout Enumerate
+Typos.
+\end_layout
+
+\begin_layout Standard
+Instead of constructing a complex system to make sense of the unruly realization
+ of quotations, I focused on a few clear and unambigous cases, which cover
+ a good part (46%) of the cases encountered in the test set:
+\end_layout
+
+\begin_layout Itemize
+First part of multi-sentence quotations introduced with a colon preceeding
+ a quotation mark, which unambigously begins a quotation.
+ E.g.
+ (with 
+\begin_inset Formula $\blacktriangleright$
+\end_inset
+
+
+\emph on
+ 
+\emph default
+denoting the treebank sentence delimiter):
+\end_layout
+
+\begin_layout Quotation
+After some big slave revolts in Jamaica, the British basically said: "
+\emph on
+It's not paying anymore.
+ 
+\emph default
+
+\begin_inset Formula $\blacktriangleright$
+\end_inset
+
+
+\emph on
+ 
+\emph default
+Let's reconsider."
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+With the proposed augmentation scheme, a 
+\noun on
+quote 
+\noun default
+feature is added to the tokens marked by 
+\emph on
+italics
+\emph default
+, i.e.
+ only the first of the quoted sentences, which in the treebank would occur
+ as part of the outer (quoting) sentence.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Quotation marks which occur in pairs, anywhere in a sentence, e.g.:
+\end_layout
+
+\begin_layout Quotation
+So what everyone was asking in Parliament in London was, "
+\emph on
+How can we force them to keep working for us, even when they're no longer
+ enslaved into it?
+\emph default
+"
+\end_layout
+
+\begin_layout Standard
+For the Danish treebank, the schema for augmentation outlined above, which
+ I shall call 
+\noun on
+QuotedPhrase
+\noun default
+, yields a significant (
+\begin_inset Formula $p<0.002$
+\end_inset
+
+) improvement in LAS of 0.75, equivalent to a 4.40% reduction in error rate.
+ The improvement is greatest (1.21) for sentences matched by the schema,
+ yet substantial (0.64) and significant (
+\begin_inset Formula $p<0.02$
+\end_inset
+
+) for other sentences, indicating that the augmentation helped unclutter
+ the learned parsing model in general.
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/tables/results/quotes.pdf
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Results for the two schemes for quotation augmenting features, 
+\noun on
+QuotedPhrase
+\noun default
+ (which adds a feature to quoted tokens) and 
+\noun on
+QuotationMark
+\noun default
+ (which alters the POS tag of the quotation mark only).
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:quote-results"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For comparison, I also tried another scheme, 
+\noun on
+QuotationMark
+\noun default
+, which alters the POS tag of quotation marks, but leaves the quoted tokens
+ untouched.
+ This scheme yields a smaller but still significant (
+\begin_inset Formula $p<0.007$
+\end_inset
+
+) overall improvement of 0.67 on the Danish corpus.
+ 
+\noun on
+QuotationMark
+\noun default
+ is closer to that of Søgaard, although not identical
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Søgaard also used a truncated treebank for training, so the results are
+ not comparable.
+\end_layout
 
 \end_inset
 
@@ -8999,28 +9784,59 @@ key "haberland_reported_1986"
  
 \end_layout
 
-\begin_layout Subsubsection
-
+\begin_layout Standard
+A combination of both schemes (
 \noun on
-Quotation
-\end_layout
-
-\begin_layout Standard
-Feature designs: POS tags on quotation marks.
- Features on quoted tokens.
-\end_layout
-
-\begin_layout Standard
-Results: Quotes in Danish, 
-\end_layout
-
-\begin_layout Standard
-Discussion.
-\end_layout
-
-\begin_layout Subsubsection
-
+QuotedPhrase+QuotationMark
+\noun default
+) yields smaller improvement than that of 
 \noun on
+QuotedPhrase
+\noun default
+ alone.
+ This could mean that there is some overlap in the coverage of the two schemes,
+ or it could mean that the model starts overfitting.
+ 
+\end_layout
+
+\begin_layout Standard
+Significant improvements are also seen for the Slovene treebank, in which
+ quotations are also fairly common.
+ Less convincing or insignificant effects are seen in the Italian newspaper
+ corpus and the bulgarian corpus.
+ In the latter, 
+\noun on
+QuotedPhrase
+\noun default
+ actually has an 
+\emph on
+adverse
+\emph default
+ effect on precision.
+ 
+\end_layout
+
+\begin_layout Standard
+Results the remaining treebanks are not reported.
+ Conducting experiments is a computationally intensive task
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+On the relatively modern hardware used, training often took many hours,
+ and the parameters learnt by a parsing model easily takes up several GB
+ on disk.
+\end_layout
+
+\end_inset
+
+, and it was deemed futile to conduct experiments on treebanks containing
+ with very few quotations.
+ This principle also applies to the following experiments.
+ 
+\end_layout
+
+\begin_layout Subsection
 Parenthesis
 \end_layout
 
@@ -9043,9 +9859,7 @@ etup'et for sammenlignelighed, selvom det er metodisk mistænkeligt.
  on the other treebanks in this study."
 \end_layout
 
-\begin_layout Subsubsection
-
-\noun on
+\begin_layout Subsection
 Colon
 \end_layout
 
@@ -9240,6 +10054,18 @@ Feature combinations
 Effects of combining features.
 \end_layout
 
+\begin_layout Standard
+The precise effect of combining is unclear.
+\end_layout
+
+\begin_layout Standard
+Does not seem to be additive.
+\end_layout
+
+\begin_layout Standard
+FUTURE WORK
+\end_layout
+
 \begin_layout Section
 Results
 \end_layout
@@ -9282,6 +10108,19 @@ key "weber_word_2004"
 
 \begin_layout Standard
 Convert CCH annotation of conjunctions to (one of the other conventions).
+\end_layout
+
+\begin_layout Standard
+Mark italics (
+\emph on
+mention
+\emph default
+).
+\end_layout
+
+\begin_layout Standard
+FUTURE: Split out quotations (and other parenthethicals which are complete
+ on their on right) and parse them separately.
 \end_layout
 
 \begin_layout Chapter*
