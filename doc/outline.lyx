@@ -8311,6 +8311,13 @@ As outlined here, the parser is trained on one treebank partition and predictive
  However, as the treebanks I use come pre-partitioned, and are evalutated
  with these splits in other research, I chose to report performance with
  the existing train/test splits for reasons of comparability.
+\begin_inset CommandInset label
+LatexCommand label
+name "fn:cross-val"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -8972,7 +8979,7 @@ The system used was a 64 bit Intel® architecture server with 8GB of system
 
 \end_inset
 
- (treebank sizes are shows in table 
+ (treebank sizes are shown in table 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "tab:Treebank-sizes"
@@ -8983,9 +8990,9 @@ reference "tab:Treebank-sizes"
  In particular, I was not able to train a baseline parser and obtain baseline
  scores for the German Tiger treebank, the Bulgarian treebank, the Czech
  PDT and the Dutch Alpino treebank.
- In order to be able to include these treebanks in experiments regardless,
- I produced versions of a managable size by truncating the training part
- to 6000 sentences.
+ In order to be able to experiment with these languages regardless, I produced
+ versions of the treebanks with a managable size by truncating the training
+ part to 6000 sentences.
  When referring to these truncated treebanks, I will use a 
 \begin_inset Quotes eld
 \end_inset
@@ -9045,7 +9052,7 @@ Feature Designs
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -9125,12 +9132,10 @@ name "tab:Prelimenary-survey"
 
 \end_inset
 
-EXPAND: What I did.
-\end_layout
-
-\begin_layout Standard
-[Present and discuss motivation, feature design and results for each focus
- area in turn]
+EXPAND: What I will do.
+ A lot of it will have to do with punctuation.
+ Prelimenary survey.
+ Quantify suspicion.
 \end_layout
 
 \begin_layout Subsection
@@ -9138,7 +9143,7 @@ Quotation
 \end_layout
 
 \begin_layout Standard
-A prelimenary survey (
+The prelimenary survey (
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "tab:Prelimenary-survey"
@@ -9160,7 +9165,7 @@ reference "fig:Danish-quoted"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
@@ -9656,7 +9661,7 @@ How can we force them to keep working for us, even when they're no longer
 \end_layout
 
 \begin_layout Standard
-For the Danish treebank, the schema for augmentation outlined above, which
+For the Danish treebank, the scheme for augmentation outlined above, which
  I shall call 
 \noun on
 QuotedPhrase
@@ -9666,7 +9671,7 @@ QuotedPhrase
 \end_inset
 
 ) improvement in LAS of 0.75, equivalent to a 4.40% reduction in error rate.
- The improvement is greatest (1.21) for sentences matched by the schema,
+ The improvement is greatest (1.21) for sentences matched by the scheme,
  yet substantial (0.64) and significant (
 \begin_inset Formula $p<0.02$
 \end_inset
@@ -9730,6 +9735,17 @@ QuotedPhrase
 QuotationMark
 \noun default
  (which alters the POS tag of the quotation mark only).
+ For each augmentation scheme and language, the difference in labeled and
+ unlabeled attachment score is shown for sentences overall, as well as for
+ sentences affected by the augmentation scheme and for sentences to which
+ the augmentation scheme did not apply.
+ Finally, the effect is expressed in terms of 
+\emph on
+relative error reduction
+\emph default
+ of labeled attachment, and the statistical significance for the observed
+ difference in LAS is given.
+ 
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:quote-results"
@@ -9841,22 +9857,363 @@ Parenthesis
 \end_layout
 
 \begin_layout Standard
-Results: Italian.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/foci/parenthesis/baseline.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Baseline parse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/foci/parenthesis/system.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parse when augmented with a feature marking parenthesized tokens.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parses of a Swedish sentence with parentheses.
+ Black arcs were correctly predicted, red arcs erroneously predicted, and
+ blue arcs should have been predicted, but were not.
+ Comparing the system parse to the baseline, two erroneous dependencies,
+ both crossing the boundary of the parenthesized phrase, have been corrected.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:paren"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename tables/results/paren.pdf
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Results for the 
+\noun on
+Parenthesis
+\noun default
+ augmentation scheme, which marks parenthesized tokens with the feature
+ 
+\noun on
+paren
+\noun default
+.
+ 
+\emph on
+Newspaper
+\emph default
+ and 
+\emph on
+Law
+\emph default
+ are the Italian treebanks, and 
+\emph on
+Both
+\emph default
+ are the two concatenated.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:paren"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+The prelimenary survey of precision for sentences with various punctuation
+ (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:Prelimenary-survey"
+
+\end_inset
+
+) reveals that the average labeled attachment score for sentences in the
+ Swedish treebank in which parentheses occur is 8.41 -- or roughly 10% --
+ lower than the average for the treebank.
+ Parsing of sentences with parenthesis in the Italian 
+\emph on
+Newspaper
+\emph default
+ treebank also seem to suffer (5.36 worse), and the same goes for the Slovene
+ and Turkish treebanks (13.07 and 8.05 worse, respectively).
+ For the latter two treebanks, parenthesized tokens only occur in 1 and
+ 4 test sentences respectively -- i.e.
+ too sparsely for testing.
+ Relative to the treebank average, parentheses in the Italian 
+\emph on
+Law
+\emph default
+ treebank do not seem to impair parsing.
+ Nonetheless, this treebank was included in experiments, partly because
+ parentheses in this treebank are widespread (21% of sentence), and partly
+ for increasing the size of the critically small
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+As noted 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "fn:cross-val"
+
+\end_inset
+
+, it is not really methodically sound to base experiments on a small treebank
+ in a fixed train/test split.
+ The smaller the treebank, the greater the variance of results on different
+ treebank partitions.
+ Normally, in estimating the predictive accuracy, one would employ 10-fold
+ cross-validation or another technique to compensate somewhat for the large
+ variance.
+ However, for comparability, I have chosen to use the same setup as on the
+ EVALITA 2007 conference 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "magnini_evalita_2007"
+
+\end_inset
+
+ and keep the given train/test split.
+\end_layout
+
+\end_inset
+
+ Italian treebank in a trial where 
+\emph on
+Newspaper
+\emph default
+ and 
+\emph on
+Law
+\emph default
+ are concatenated to form a single treebank (
+\emph on
+Both
+\emph default
+).
+ 
 \end_layout
 
 \begin_layout Standard
-NOTE: Det her viser meget godt de metodiske vanskeligheder i ikke at lave
- 10-fold CV på så lille en træbank: lemma only giver -.4% (forværring) på
- first fold (law).
- Du skal ikke bekymre dig om det, men kan måske skrive en fodnote om, at
- der er tale om en meget lille træbank, og du vælger at evaluere på EVALITA'07-s
-etup'et for sammenlignelighed, selvom det er metodisk mistænkeligt.
- Skriv noget i retning af Chanev (2006) (bortset fra at hans engelsk er
- forfærdeligt): "Although the treebank is small and n-fold cross-validation
- is usually used in such cases, here we report results on a test set of
- 150 sentences (4,172 tokens) and a training set of 1,350 sentences (37,444
- tokens) in order the TUT experiments not to differ from the experiments
- on the other treebanks in this study."
+Augmenting parenthesized tokens with a 
+\noun on
+paren
+\noun default
+ feature yields a modest, yet statistically insignificant
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+With a 95% confidency interval.
+ Refer to table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:paren"
+
+\end_inset
+
+ for the 
+\begin_inset Formula $p$
+\end_inset
+
+-values of the observed effects.
+ 
+\end_layout
+
+\end_inset
+
+, improvement in overall labeled attachment score for both Italian treebanks,
+ and for the combined treebank.
+ For the 
+\emph on
+Newspaper
+\emph default
+ treebank, the augmentation has a positive effect on the sentences with
+ parentheses, and close to no effect on the rest.
+ The opposite is evident for the other Italian treebank (
+\emph on
+Law
+\emph default
+), where there is a modest positive effect on other sentences 
+\emph on
+without
+\emph default
+ parentheses, but the effect on augmented sentences is next to none.
+ This absence is perhaps due to the fact that on average, sentences with
+ parentheses in 
+\emph on
+Law
+\emph default
+ were already on par with the treebank overall.
+ Still, it seems the augmentation helped improve the learned model slightly
+ overall, also evident for the combined treebank (
+\emph on
+Both
+\emph default
+), but again not significantly so.
+\end_layout
+
+\begin_layout Standard
+For the Swedish treebank, there no or a slight adverse effect of the augmentatio
+n overall, but a marked increase in LAS of the sentences with parenthesis,
+ amounting to a reduction in error rate of 10%.
+ Yet none of the observed differences are statistically significant, with
+ 
+\begin_inset Formula $p=0.13$
+\end_inset
+
+ for the affected sentences being closest.
 \end_layout
 
 \begin_layout Subsection
@@ -9864,8 +10221,324 @@ Colon
 \end_layout
 
 \begin_layout Standard
-Results: Talbanken.
- Italian.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/colon/baseline.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Baseline parse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/colon/system.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parse when augmented with a feature marking tokens which occur after a colon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parses of a Slovene sentence where the latter half, which is a complete
+ sentence on its own part, is introduced with colon.
+ Black arcs were correctly predicted, red arcs erroneously predicted, and
+ blue arcs should have been predicted, but were not.
+ Comparing the system parse to the baseline, the seperation of the two sentences
+ is much better: No dependencies erroneously cross the boundary between
+ the two.
+ The system also correctly identifies the root token of the sentence, which
+ seems to be the source of much confusion for the baseline.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:colon"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/tables/results/colon.pdf
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Results for the 
+\noun on
+Colon
+\noun default
+ augmentation scheme, which marks tokens occurring after a colon with the
+ feature 
+\noun on
+colon
+\noun default
+.
+ Again, 
+\emph on
+Both
+\emph default
+ refers to a concatenation of the two Italian treebanks 
+\emph on
+Newspaper
+\emph default
+ and 
+\emph on
+Law
+\emph default
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:colon"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For several languages, colons seem to be correlated with poor parsing precision.
+ As with quotation marks and parenthesis, colons are often used to introduce
+ a parenthetical phrase within another sentence.
+ These parentheticals may be complete sentences on their own right, and
+ as such, should often not have its dependency structure mixed up with the
+ outer sentence.
+ Manual inspection of the baseline parses of sentences with colons indicate
+ that dependency errors often involve arcs erroneously crossing the boundary
+ to the outer sentence (see figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:colon"
+
+\end_inset
+
+ for an example).
+ In particular, in case a token in the nested sentence is mistakenly taken
+ to be head of the sentence as a whole, many derived errors will likely
+ follow from this.
+ 
+\end_layout
+
+\begin_layout Standard
+To help distinguish nested sentences introduced with a colon, the feature
+ scheme 
+\noun on
+Colon
+\noun default
+ simply adds the feature 
+\noun on
+colon
+\noun default
+ to tokens occurring 
+\emph on
+after
+\emph default
+ a colon.
+ The assumption is that singling out tokens after the colon is consistent
+ with the way colons are used (the nested sentence is never the one before
+ the colon).
+\end_layout
+
+\begin_layout Standard
+Some heuristics are employed to handle colons appearing within a pair of
+ parentheses.
+ Clearly, such a case should not result in tokens outside the parenthesis
+ being marked.
+\end_layout
+
+\begin_layout Standard
+Experiments with Swedish, Italian and Slovene show modest, although not
+ statistically significant, improvements in LAS, with Slovene topping by
+ an overall error reduction of 1.24% (
+\begin_inset Formula $p=0.15$
+\end_inset
+
+).
+ Focusing in on sentences with colons, we see the greatest improvement for
+ the Swedish treebank: 2.27, or a 4.89% reduction of the error rate, but again
+ not significant (
+\begin_inset Formula $p=0.37)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Colons are not exactly widely used in these treebanks, and in the cast of
+ the test part of the Italian treebank, they occur exclusively sentence
+ final.
+ No tokens occur after the colon in the sentence final case, and thus no
+ sentences in the test corpus are directly affected by the augmentation.
+ The small difference observed on the Italian treebank is solely caused
+ by augmentation of the training corpus
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The observation of this detail is the reason for including the outcome of
+ the Italian 
+\noun on
+Colon 
+\noun default
+experiment at all -- if not for this, it would be a pointless inclusion.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+I assume the sparsity of colons is partly to blame for the relatively poor
+ statistical significance of the observed effect, and I believe that a significa
+nt effect might be shown with a treebank where colons occur more frequently.
 \end_layout
 
 \begin_layout Subsection
@@ -10116,6 +10789,69 @@ Mark italics (
 mention
 \emph default
 ).
+\end_layout
+
+\begin_layout Standard
+FUTURE: Many of the feature schemes depend on the high-level segmentation
+ implied by the punctuation of a sentence.
+ Symmetrical markers of parentheticals (colon, quotation mark) introduce
+ a scope which often limit the extend of the augmentation desired.
+ As an example, if a colon occurs within a pair of parentheses, and we trying
+ to discriminate nested sentences, our augmentation should 
+\emph on
+only
+\emph default
+ apply as far as the closing parenthesis.
+ In augmentation, it would be extremely useful with a 
+\emph on
+(
+\emph default
+possibly
+\emph on
+ 
+\emph default
+syntactically
+\emph on
+ 
+\emph default
+agnostic) system for 
+\emph on
+high-level segmentation
+\emph default
+ of a sentence.
+ Also, if one were to design a feature which in general indicates whether
+ a token could potentially be head of the sentence as a whole, a high-level
+ structural analysis such as this would also be very handy for excluding
+ candidates for the sentence head.
+ The segmentation system could be punctuation-based
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+As augmentation takes place 
+\emph on
+before
+\emph default
+ the syntactic analysis, it cannot rely on a the syntactic analysis for
+ identifying the scopes to which the augmentation should apply.
+ Punctuation and other superficial properties could be a good basis for
+ the segmentation.
+ There will likely be cases of ambiguity which require a deeper analysis
+ to be resolved, so a joint segmentation and syntactic analysis could also
+ prove useful.
+\end_layout
+
+\end_inset
+
+, perhaps like the one discussed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kubon_linguistically-based_2006"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
