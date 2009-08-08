@@ -1,9 +1,8 @@
 
 module Annotation
-  class LemmaOnly < Lemma
+  class LemmaOnly < Base
 
     def mark_token
-      super
       @token.form = @token.lemma
       @token.lemma = nil
     end
