@@ -9274,6 +9274,20 @@ end{adjustwidth}
 Danish sentence with a quotation.
  Black arcs were correctly predicted, red arcs erroneously predicted, and
  blue arcs should have been predicted, but were not.
+ These and subsequent joint visualizations of baseline/system and gold standard
+ dependency structure were made using the excellent corpus visualization
+ tool 
+\emph on
+What's Wrong with my NLP?
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "riedel_whats_2009"
+
+\end_inset
+
+.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Danish-quoted"
@@ -9311,15 +9325,11 @@ key "haberland_reported_1986"
 
 \end_inset
 
- notes that 
+ notes that unquoted or 
 \emph on
-indirect 
+indirect reported speech
 \emph default
-(unquoted)
-\emph on
- reported speech
-\emph default
- in Danish exhibits slighty different word order than 
+ in Danish exhibits slighty different word order than quoted or 
 \emph on
 direct reported speech
 \emph default
@@ -10527,7 +10537,7 @@ The observation of this detail is the reason for including the outcome of
 \noun on
 Colon 
 \noun default
-experiment at all -- if not for this, it would be a pointless inclusion.
+experiment at all -- if not for this, it would have been unnecessary.
 \end_layout
 
 \end_inset
@@ -10536,45 +10546,17 @@ experiment at all -- if not for this, it would be a pointless inclusion.
 \end_layout
 
 \begin_layout Standard
-I assume the sparsity of colons is partly to blame for the relatively poor
- statistical significance of the observed effect, and I believe that a significa
-nt effect might be shown with a treebank where colons occur more frequently.
+I am assuming that the sparsity of colons is partly to blame for the relatively
+ poor statistical significance of the observed effect, and I believe that
+ a significant effect might be shown with a treebank where colons occur
+ more frequently.
 \end_layout
 
 \begin_layout Subsection
 Apposition
-\end_layout
-
-\begin_layout Standard
-Results: Catalonian.
-\end_layout
-
-\begin_layout Subsection
-List items
-\end_layout
-
-\begin_layout Standard
-Results.
- Discussion.
-\end_layout
-
-\begin_layout Subsection
-Coordinated enumerations
-\end_layout
-
-\begin_layout Standard
-Results.
- Discussion.
-\end_layout
-
-\begin_layout Subsection
-Lemmatization
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset citation
-LatexCommand citep
-key "bart_cst_2008"
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Apposition"
 
 \end_inset
 
@@ -10582,12 +10564,1412 @@ key "bart_cst_2008"
 \end_layout
 
 \begin_layout Standard
-Results: Danish.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/foci/apposition/trouble.pdf
+	width 100text%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Zooming in on some trouble with parsing a nominal apposition.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/tables/results/appos.pdf
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Results for the augmentation schemes for appositions.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:appos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Appositions are parallel constructions, in which two or more words or phrases
+ are syntactically parallel without an explicit conjunction, but often surrounde
+d by a pair of hyphens or commas.
+ They are commonly used to specify an alternate form or synonym for an entity
+ or a term which might be unfamiliar to the audience, as exampled by the
+ following (tokenized) sentence from the Spanish corpus:
+\end_layout
+
+\begin_layout Quotation
+\paragraph_spacing single
+\noindent
+\align left
+
+\family typewriter
+\size scriptsize
+Esta puntualización fue considerada como un " avance " por los sindicatos
+ Confederación\SpecialChar \-
+_Francesa\SpecialChar \-
+_del\SpecialChar \-
+_Trabajo - CFDT - , Fuerza Obrera - FO - , Confederac
+ión\SpecialChar \-
+_Francesa\SpecialChar \-
+_de\SpecialChar \-
+_Trabajadores\SpecialChar \-
+_Cristianos - CFTC - Confeder\SpecialChar \-
+_ación\SpecialChar \-
+_Francesa\SpecialChar \-
+_de\SpecialChar \-
+_Dire
+ctivos\SpecialChar \-
+_de\SpecialChar \-
+_Empresas - CFE-CGC - .
+\end_layout
+
+\begin_layout Standard
+Being syntactically parallel constructions, appositions involve some of
+ the same difficulties as other coordinated and syntactically parallel construct
+ions, which are notoriously troubled 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kbler_is_2006"
+
+\end_inset
+
+.
+ Being present in 19.9% of the sentences, hypens are higly frequent in the
+ Spanish corpus, which makes it a good candidate for trying to single out
+ appositions with an improvement of accuracy in mind.
+\end_layout
+
+\begin_layout Standard
+Hyphens and especially commas are used for other purposes than appositions,
+ so it is not entirely trivial to determine which cases an augmentation
+ should apply to.
+ Taking a simple but relatively safe approach, I use the heuristic of only
+ augmenting single, nominal
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+In the case of the Spanish corpus, tokens with a prefix of 
+\begin_inset Quotes eld
+\end_inset
+
+N
+\begin_inset Quotes erd
+\end_inset
+
+ in the part of speech tag are taken to be nominal.
+\end_layout
+
+\end_inset
+
+ tokens which are surrounded by a pair of hyphens or commas.
+ The chosen heuristic is likely too restrictive, thus sacrificing coverage.
+ Perhaps consequently, the observed effect is somewhat dubious.
+\end_layout
+
+\begin_layout Standard
+The augmentation scheme with commas, 
+\noun on
+CommaApposition
+\noun default
+, yields a large (2.15) and nearly significant (
+\begin_inset Formula $p\thickapprox0.066$
+\end_inset
+
+) improvement in LAS for sentences which were affected by the augmentation,
+ but a has a slight adverse effect on the remaining 96% of the sentences,
+ therefore yielding next to no effect on the overall average.
+\end_layout
+
+\begin_layout Standard
+Turning to the scheme for appositions marked by hypens, 
+\noun on
+DashApposition
+\noun default
+, an adverse effect (-1.80) is observed for the affected sentences, and a
+ small postive effect (0.41) for the rest.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:appos"
+
+\end_inset
+
+ also shows the outcome of a trial with both schemes applied, the result
+ of which is slightly more encouraging, though still not statistically significa
+nt.
+\end_layout
+
+\begin_layout Standard
+The chosen heuristic for identifying appositions is almost certainly bad,
+ and likely the cause of the unclear results.
+ It would be interesting to train a probabilistic model for labeling appositions
+ and conduct the same experiment with this driving the augmentation instead
+ of the heuristic.
+ Several treebanks (e.g.
+ Arabic and Czech) clearly indicate appositions in the dependency structure.
+ Deriving training data from these existing treebanks and training an HMM-
+ or CRF-based tagger 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jurafsky_speech_2008"
+
+\end_inset
+
+ to more reliably identify appositions in unparsed text seems feasible.
+\end_layout
+
+\begin_layout Subsection
+List items 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/foci/bullet/good/baseline.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Baseline parse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figures/foci/bullet/good/system.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parse when augmented with a 
+\noun on
+bullet 
+\noun default
+feature marking the list counter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parses of an itemized sentence from the Danish Dependency Treebank.
+ In this case, the augmented system correctly identifies the sentence head
+ and achieves 100% accuracy.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:list"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename figures/foci/bullet/concept/feature.pdf
+	width 80page%
+	clip
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Zooming in on the feature 
+\noun on
+bullet 
+\noun default
+as added to the tokens comprising the list counter.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:bullet-feature"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/tables/results/bullet.pdf
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Results for augmenting the Danish Dependency Treebank with a feature marking
+ list counters (
+\noun on
+NumericalBullet
+\noun default
+) and list bullets in general (
+\noun on
+Bullet
+\noun default
+).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:list"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Another phenomenon of written text posing a challenge to the baseline parser
+ is items in of a numbered or bulleted list.
+ In particular, 3% of the test part of the Danish Dependency Treebank are
+ sentences of the following kind:
+\end_layout
+
+\begin_layout Quotation
+3 ) Har ministeren løjet om sit og regeringens kendskab til virksomheden?
+\end_layout
+
+\begin_layout Standard
+Two-thirds of the itemized sentences in the DDT test set are numbered list
+ items like this, while the rest have the form of description lists, e.g.:
+\end_layout
+
+\begin_layout Quotation
+Foto : Palle Hedemann
+\begin_inset CommandInset label
+LatexCommand label
+name "quo:FotoPalle"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In these itemized sentences, the list counter -- e.g.
+ 
+\emph on
+3
+\emph default
+ -- acts as head of the sentence, with the token that would otherwise be
+ the head (commonly a finite verb) depending on the list counter.
+ The baseline parser rarely gets this right (an example of baseline error
+ is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:list"
+
+\end_inset
+
+).
  
 \end_layout
 
 \begin_layout Standard
-Discussion: Allows parser to generalize.
+A simple augmentation scheme (
+\noun on
+NumericalBullet
+\noun default
+) provides a remedy for this: Add a 
+\noun on
+bullet 
+\noun default
+feature to tokens forming list counters, e.g.
+ 
+\emph on
+3 
+\emph default
+and closing parenthesis in the example above (see figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:bullet-feature"
+
+\end_inset
+
+).
+ A significant (
+\begin_inset Formula $p<0.03$
+\end_inset
+
+) improvement in LAS is seen for sentences with numerical list counters,
+ specifically a gain of 9.01, equivalent to a 38.5% reduction in error rate.
+ A more modest improvement is seen for unaffected sentences (not significant).
+ 
+\end_layout
+
+\begin_layout Standard
+With an extended augmentation scheme (
+\noun on
+Bullet 
+\noun default
+in table 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:list"
+
+\end_inset
+
+) that includes list markers in general, e.g.
+ also 
+\emph on
+Foto 
+\emph default
+and the colon
+\emph on
+ 
+\emph default
+from the example 
+\begin_inset CommandInset ref
+LatexCommand vpageref
+reference "quo:FotoPalle"
+
+\end_inset
+
+, there is a significant (
+\begin_inset Formula $p<0.01$
+\end_inset
+
+) overall improvement in LAS of 0.69, equivalent to a reduction in overall
+ error rate of 4.0%.
+ Interestingly, while itemized sentences only account for 3% of the sentences
+ overall, there is a marked effect on other, non-itemized sentences, specificall
+y a 0.60 LAS gain (
+\begin_inset Formula $p<0.03$
+\end_inset
+
+).
+ Non-symmetrical usage of parentheses for itemization clearly requires another
+ treatment than the general symmetrical use of parentheses
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The same can be said of numerals used as list counters.
+\end_layout
+
+\end_inset
+
+, and this result could be construed as helping the parser discriminate
+ these.
+\end_layout
+
+\begin_layout Subsection
+Nominal enumerations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/enumeration/system.feats.pdf
+	width 80page%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The 
+\noun on
+Enumeration
+\noun default
+ scheme adds an 
+\noun on
+enum 
+\noun default
+feature to each token in the chained coordination.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/enumeration/system.with_pos.feats.pdf
+	width 80page%
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The 
+\noun on
+PosEnumeration
+\noun default
+ scheme also changes the POS of commas involved to that of the final coordinatin
+g conjunction.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Augmentation schemes for chains of enumerated nominals.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:enum-feat"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/enumeration/baseline.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Baseline parse.
+ Several dependencies erroneously rooted at the second conjunct.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Baseline-enum"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/enumeration/system.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Parse with the 
+\noun on
+Enumeration 
+\noun default
+sheme (tokens in the coordination are augmented with an 
+\noun on
+enum
+\noun default
+ feature).
+ Dependency arcs are in order now, but the parser still gets some labels
+ wrong.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/enumeration/system.pos.eps
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\noun on
+PosEnumeration 
+\noun default
+sheme parse (POS of commas changed to that of the conjunction).
+ Labels are correctly predicted now.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PosEnumeration-sheme-parse"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Baseline and system parses of an enumeration of nominals.
+ For this particular sentence, the augmentation scheme in subfigure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PosEnumeration-sheme-parse"
+
+\end_inset
+
+ (
+\noun on
+PosEnumeration
+\noun default
+) achives a LAS of 100 (perfect parse).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/tables/results/enum.pdf
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Results for the two simple schemes for augmenting enumerations (in the Bulgarian
+ treebank).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+When mentioning a number of things one by one, a coordinating conjunction
+ (e.g.
+ 
+\emph on
+and
+\emph default
+) would normally be used before the last thing mentioned, but left out before
+ this (or replaced by a comma in writing).
+ Depending on the annotational conventions of a treebank, enumerations can
+ have different dependency structure.
+ In the case of the Bulgarian treebank
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that the Bulgarian treebank is one of the large ones which brought
+ my experimental system to its knees.
+ The treebank used in experiments is a truncated version with only 6000
+ sentences in the training set (down from 12823 in the original CoNLL setup).
+\end_layout
+
+\end_inset
+
+, the initial conjunct acts as head for every other token in the coordination.
+ The baseline parser rarely get this right.
+ Instead, it builds locally rooted subtrees and mixes labels up (figure
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Baseline-enum"
+
+\end_inset
+
+).
+ Intuitively this is because the parser 
+\begin_inset Quotes eld
+\end_inset
+
+looses sight
+\begin_inset Quotes erd
+\end_inset
+
+ of the extent of the coordination.
+ Also, the commas involved are simply annotated as 
+\noun on
+Punct
+\noun default
+, although they are functionally quite different from clause-separating
+ commas.
+\end_layout
+
+\begin_layout Standard
+Two augmentation schemes are proposed: One (
+\noun on
+Enumeration
+\noun default
+) to indicate the extent of coordinations by introducing an 
+\noun on
+enum
+\noun default
+ feature on all tokens participating in an enumeration, and one (
+\noun on
+PosEnumeration)
+\noun default
+ to clarify the function of the commas involved, by simply changing their
+ part of speech tags to that of the final coordinating conjunction (as illustrat
+ed in figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:enum-feat"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+As with previous schemes, it can be non-trivial to robustly identify enumeration
+s.
+ A sequence of commas followed by a coordinating conjunction is to be expected,
+ but the conjuncts themselves can comprise multiple tokens and belong to
+ numerous parts of speech, let alone be small nonfinite verbal phrases.
+ 
+\end_layout
+
+\begin_layout Standard
+A cautious heuristic is employed, which matches nominal conjuncts consisting
+ of a single token only.
+ In the following example, this heuristic will cover the first emphasized
+ phrase:
+\end_layout
+
+\begin_layout Quotation
+Syncopation is used in many musical styles, if not all, and is fundamental
+ in such styles as 
+\emph on
+funk, ska, reggae, ragtime, rap, blues, jazz, breakbeat
+\emph default
+ and often in 
+\emph on
+dubstep, heavy metal, and classical music
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+The second emphasized phrase is only covered if 
+\emph on
+heavy metal
+\emph default
+ is tokenized as a single, composite token.
+ Obviously, as was the case with appositions in section
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Apposition"
+
+\end_inset
+
+, such a heuristic is really too simplistic.
+ However, for enumerations, results for this simple heuristic are quite
+ encouraging:
+\end_layout
+
+\begin_layout Standard
+Augmenting the (truncated) Bulgarian treebank with the 
+\noun on
+Enumeration 
+\noun default
+scheme results in a LAS gain of 6.45 for sentences with matches enumerations
+ (
+\begin_inset Formula $p\thickapprox0.06$
+\end_inset
+
+), or a 32.2% reduction in error rate.
+ The 
+\noun on
+PosEnumeration
+\noun default
+ scheme yields an even larger gain (10.97) for the affected sentences (
+\noun on
+
+\begin_inset Formula $p<0.04$
+\end_inset
+
+)
+\noun default
+, and apparently no effect on other sentences.
+\end_layout
+
+\begin_layout Standard
+Experiments with a better heuristic (or a probabilistic model) for identifying
+ enumerations is left for future research.
+\end_layout
+
+\begin_layout Subsection
+Lemmatization
+\end_layout
+
+\begin_layout Standard
+The CoNLL treebank format provides a column for specifying a token's 
+\emph on
+lemma
+\emph default
+, i.e.
+ the canonical form of a set of wordforms of the same abstract conceptual
+ form.
+ As such, it can be said that the lemma uniquely specifcies the conceptual
+ identity of a token, regardless of inflection.
+ 
+\end_layout
+
+\begin_layout Standard
+Presumably, language users identify token lemmas when interpreting an utterance.
+ 
+\emph on
+Laughing
+\emph default
+ refers to the same act as 
+\emph on
+laugh
+\emph default
+ or 
+\emph on
+laughed
+\emph default
+, regardless of inflection, and the very identity of this act (the laugh
+ 
+\emph on
+lemma
+\emph default
+) imposes restrictions on plausible interpretations in the contect of a
+ sentence.
+ It rarely makes sense for 
+\emph on
+cheese
+\emph default
+ to laugh, discrediting an analysis attaching 
+\emph on
+laughs 
+\emph default
+to it as subject.
+ Restrictions apply to word forms as well, but the lemmas allow for further
+ generalization -- resulting in a 
+\emph on
+simpler yet sufficient
+\emph default
+ model.
+ If the principle of parsimony
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The principle that things are usually connected or behave in the simplest
+ or most economical way.
+\end_layout
+
+\end_inset
+
+ applies to parser modelling, this would be also a 
+\emph on
+better
+\emph default
+ model, if one were to apply Occam's Razor.
+\end_layout
+
+\begin_layout Standard
+At least in the edition that was used at CoNLL, the Danish Dependency Treebank
+ does not contain lemmas, so with the hypothesis that these are valuable
+ for data-driven parsing, the treebank was augmented with lemmas obtained
+ with the CST Lemmatizer by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "jongejan_cst_2008"
+
+\end_inset
+
+.
+ To my great surprise, the 
+\noun on
+Lemma 
+\noun default
+augmentation had a rather strong 
+\emph on
+adverse
+\emph default
+ effect on parsing accuracy (-0.67), and significantly so (
+\begin_inset Formula $p<0.03$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+However, a second augmentation scheme (
+\noun on
+LemmaOnly
+\noun default
+), which simultaneously 
+\emph on
+strips
+\emph default
+ the token forms away, thus leaving only the lemmas in the treebank, yields
+ a substantial (0.79) and significant (
+\begin_inset Formula $p<0.02$
+\end_inset
+
+) 
+\emph on
+improvement
+\emph default
+ in parsing accuracy (see table 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:lemma"
+
+\end_inset
+
+).
+ 
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename tables/results/lemma.pdf
+	width 80page%
+	clip
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Results from the 
+\noun on
+Lemma
+\noun default
+ and 
+\noun on
+LemmaOnly
+\noun default
+ augmentation schemes.
+ Note that this augmentation scheme applies uniformly to every sentence,
+ so no focusing in on specific parts of the test set is done for this evaluation.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:lemma"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The adverse effect of introducing lemmas in the first place is rather surprising
+, but the significant gain in LAS achieved by simultanously removing word
+ forms is consistent with the hypothesis the lemmas provide a valuable opportuni
+ty for further generalization in the parsing model.
+ Note that virtually no information is lost by stripping word forms, as
+ all morphological information manifest in these surface forms is thoroughly
+ specified in the 
+\emph on
+features
+\emph default
+ column of DDT.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -10615,15 +11997,17 @@ key "vrelid_cross-lingual_2009"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename /Users/christian/Projects/dep_feat/doc/figures/foci/animacy/ddt-heads.pdf
 
@@ -10653,6 +12037,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename /Users/christian/Projects/dep_feat/doc/figures/foci/animacy/talbanken05-heads.pdf
 
@@ -10681,13 +12066,9 @@ Talbanken05
 \begin_layout Plain Layout
 Different treatment of functional categories in DDT and in Talbanken05.
  In DDT, determiners -- such as 
-\begin_inset Quotes eld
-\end_inset
-
+\emph on
 et
-\begin_inset Quotes erd
-\end_inset
-
+\emph default
  on the left hand side -- act as heads with nominal dependents, whereas
  Talbanken05
 \emph on
@@ -10792,6 +12173,10 @@ mention
 \end_layout
 
 \begin_layout Standard
+FUTURE: discriminate appositions and parentheticals.
+\end_layout
+
+\begin_layout Standard
 FUTURE: Many of the feature schemes depend on the high-level segmentation
  implied by the punctuation of a sentence.
  Symmetrical markers of parentheticals (colon, quotation mark) introduce
@@ -10875,6 +12260,10 @@ Bart Jongejan (danish lemmatizer)
 Anders Søgaard (idea, guidance)
 \end_layout
 
+\begin_layout Itemize
+Sebastian Riedel and Ivan Vladimir (What's Wrong with my NLP?)
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
@@ -10888,6 +12277,14 @@ options "bibtotoc,plainnat"
 
 \begin_layout Chapter
 \start_of_appendix
+Observations
+\end_layout
+
+\begin_layout Standard
+Include?
+\end_layout
+
+\begin_layout Chapter
 Source code
 \end_layout
 
