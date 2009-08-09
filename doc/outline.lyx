@@ -11756,6 +11756,13 @@ Experiments with a better heuristic (or a probabilistic model) for identifying
 
 \begin_layout Subsection
 Lemmatization
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Lemmatization"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -11977,16 +11984,156 @@ Animacy
 \end_layout
 
 \begin_layout Standard
-Results: Danish.
+In parsing the Swedish treebank, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "vrelid_when_2007"
+
+\end_inset
+
+ report of postive effects of including a number of linguistically motivated
+ features hypothesized to target certain consistent errors in dependency
+ assignments (stemming from word order ambiguity and lack of case marking
+ in Swedish).
+ Features include one denoting the 
+\emph on
+animacy
+\emph default
+ class of nouns, as well as 
+\emph on
+case
+\emph default
+ and 
+\emph on
+definiteness
+\emph default
+.
+ It is demonstrated that the animacy feature can be obtained for common
+ nouns by means of a classifier trained on distributional features of a
+ parsed corpus.
+ The feature space, which includes a number of syntactic and morphological
+ features, enables animacy classification of common nouns in general with
+ a pretty good accuracy 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "vrelid_linguistic_2008"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Discussion: Coverage and quality of animacy data.
- Head status of functional categories in DDT versus Talbanken.
- 
+Given the similarities of Swedish and Danish (lack of case marking, ambiguity
+ in word order), it is natural to assume that parsing of the Danish treebank
+ may benefit from a similar augmentation.
+ To our luck, 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "vrelid_cross-lingual_2009"
+
+\end_inset
+
+ reports of successfully applying the animacy tagger to Danish nouns, by
+ mapping them into the same space of distributional features used for Swedish.
+ In her experiment of porting the classifier, 18,240 Danish noun lemmas
+ was extracted from the Danish corpus Korpus2000
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+http://korpus.dsl.dk/korpus2000/
+\end_layout
+
+\end_inset
+
+ (using a frequency threshold of 10 to ensure sufficient distributional
+ data).
+ Distributional features for the lemmas were obtained by parsing Korpus2000
+ with a dependency parser trained on the Danish Dependency Treebank.
+ Subsequently, the lemmas were classified using the Swedish animacy classifier.
+ 
+\end_layout
+
+\begin_layout Standard
+The list of Danish noun lemmas and corresponding animacy classes (as kindly
+ provided by Øvrelid) enables augmentation schemes for marking animacy of
+ nouns and pronouns in the Danish Dependency Treebank.
+ The list provides animacy classes on the lemma-level, so the augmentation
+ is preceded by an invokation of the lemmatizer from section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Lemmatization"
+
+\end_inset
+
+.
+ Animacy class is then looked up for each noun and pronoun in DDT, and finally
+ lemmas are removed again (to prevent lemmatization of influencing the result).
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-8em}{-8em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename tables/results/anim.pdf
+	width 80page%
+	clip
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Results for 
+\noun on
+Animacy
+\noun default
+ augmentation.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:anim"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -11994,6 +12141,61 @@ key "vrelid_cross-lingual_2009"
 \end_layout
 
 \begin_layout Standard
+Thus augmented with 
+\noun on
+Animacy
+\noun default
+ a moderate overall improvement in LAS of 0.26 is achieved for the DDT (table
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:anim"
+
+\end_inset
+
+), but with a 
+\begin_inset Formula $p$
+\end_inset
+
+-value for the observed effect of about 0.21, it does not qualify as statisticall
+y significant.
+ The low significance (and relatively small effect) may in part be a result
+ of the different head status of functional categories used in DDT.
+ As observed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "vrelid_cross-lingual_2009"
+
+\end_inset
+
+, the DDT convention is to let the determiner act as head in a noun phrase,
+ with the noun itself modifying the determiner, whereas it goes the other
+ way around in the Swedish treebank (see figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:func"
+
+\end_inset
+
+).
+ Intuitively, with the animacy feature residing on the noun token, it occurs
+ to me that this information is somewhat 
+\begin_inset Quotes eld
+\end_inset
+
+stashed away
+\begin_inset Quotes erd
+\end_inset
+
+, at least for purposes of verb attachment.
+ Information about animacy may be significant for determining the syntactic
+ function of a noun phrase, but in DDT the information is not available
+ on the phrase head, whereas it would be in Talbanken05, because here the
+ 
+\emph on
+noun
+\emph default
+ acts as head.
 \begin_inset Float figure
 wide false
 sideways false
@@ -12088,7 +12290,9 @@ key "vrelid_cross-lingual_2009"
 \end_inset
 
 .
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:func"
 
 \end_inset
 
@@ -12098,6 +12302,81 @@ key "vrelid_cross-lingual_2009"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another factor reducing the observed effect is probably relatively poor
+ coverage of animacy tagging.
+ As I am using a fixed word list (rather than an actual tagger), many lemmas
+ (about 45%) are simply not found in the lookup list.
+ 
+\end_layout
+
+\begin_layout Standard
+Additionally, there is probably some error propagation from the Danish animacy
+ classification, which is not nearly as accurate as the Swedish.
+ In particular, Øvrelid reports a precision of 74.5, recall of 45.5 and F-score
+ of 56.5.
+\end_layout
+
+\begin_layout Standard
+Finally, in the animacy list used, many special and accented letters (including
+ the Danish vowels 
+\emph on
+æ
+\emph default
+, 
+\emph on
+ø 
+\emph default
+and
+\emph on
+ å
+\emph default
+) had been stripped
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+To be specific, all non-ASCII characters had been replaced by the byte sequence
+ "EF BF BD", corresponding to the UTF-8 
+\noun on
+Replacement Character
+\noun default
+, which according to http://www.fileformat.info/info/unicode/char/fffd/ is
+ "used to replace an incoming character whose value is unknown or unrepresentabl
+e in Unicode".
+\end_layout
+
+\end_inset
+
+, thus lowering the coverage further.
+\end_layout
+
+\begin_layout Standard
+In future research, it would be interesting to replace the list-based animacy
+ classification, either by mapping the danish lemmas into the feature space
+ of the Swedish classifier, or by bootstrapping an animacy tagger specifically
+ for Danish from the evolving Danish wordnet project 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pedersen_dannet_2006"
+
+\end_inset
+
+ -- using the methodology and feature space of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "vrelid_when_2007"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -12242,6 +12521,10 @@ key "kubon_linguistically-based_2006"
 \begin_layout Standard
 FUTURE: Split out quotations (and other parenthethicals which are complete
  on their on right) and parse them separately.
+\end_layout
+
+\begin_layout Standard
+FUTURE: hybrid dependency parsing & unification?
 \end_layout
 
 \begin_layout Chapter*
