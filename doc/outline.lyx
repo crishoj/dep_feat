@@ -54,20 +54,46 @@ Feature Engineering for Data-Driven Dependency Parsing
 Christian Rishøj Jensen
 \end_layout
 
-\begin_layout Standard
-Forsiden Følgende oplysninger skal fremgå af specialets forside eller siden
- umiddelbart efter:
+\begin_layout Address
+IT og Kognition
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
-\begin_layout Standard
-Titel og evt.
- undertitel Københavns Universitet Institut/Fag Dit navn Din vejleders navn
- År og måned for aflevering.
+\end_inset
+
+Institut for Nordiske Studier og Sprogvidenskab
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+
 \end_layout
 
-\begin_layout Standard
-Alle specialer skal ved afleveringen have anført, hvor mange tegn inklusive
- mellemrum det færdige speciale udgør.
+\end_inset
+
+Københavns Universitet
+\end_layout
+
+\begin_layout Address
+Under vejledning af Anders Østerskov Søgaard, Center for Sprogteknologi.
+\end_layout
+
+\begin_layout Address
+NNN.NNN tegn inklusive mellemrum.
 \end_layout
 
 \begin_layout Standard
@@ -352,7 +378,7 @@ reference "Flo:ex-dep"
 \end_layout
 
 \begin_layout Section
-Dependency Grammar
+Dependency grammar
 \end_layout
 
 \begin_layout Standard
@@ -1099,7 +1125,7 @@ name "fig:Projectivization"
 \end_layout
 
 \begin_layout Section
-Dependency Parsing
+Dependency parsing
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Dependency-Parsing"
@@ -2393,7 +2419,7 @@ key "witten_data_2005"
 \end_layout
 
 \begin_layout Section
-State of the Art
+State of the art
 \end_layout
 
 \begin_layout Standard
@@ -2531,7 +2557,7 @@ CoNLL format
 \end_layout
 
 \begin_layout Subsection
-CoNLL Format
+CoNLL format
 \end_layout
 
 \begin_layout Standard
@@ -2806,7 +2832,7 @@ DATA SPLITS?
 \end_layout
 
 \begin_layout Subsection
-Evaluation Metrics
+Evaluation metrics
 \end_layout
 
 \begin_layout Standard
@@ -2852,7 +2878,7 @@ recall
 \end_layout
 
 \begin_layout Subsection
-CoNLL Results
+CoNLL results
 \end_layout
 
 \begin_layout Standard
@@ -7739,7 +7765,7 @@ Feature Engineering in Dependency Parsing
 \end_layout
 
 \begin_layout Section
-Research Question
+Research question
 \end_layout
 
 \begin_layout Standard
@@ -8168,7 +8194,7 @@ key "eisner_parsing_2005"
 \end_layout
 
 \begin_layout Section
-Experiment Design
+Experiment design
 \end_layout
 
 \begin_layout Standard
@@ -9045,7 +9071,7 @@ name "tab:Treebank-sizes"
 \end_layout
 
 \begin_layout Section
-Feature Designs
+Feature designs
 \end_layout
 
 \begin_layout Standard
@@ -12355,24 +12381,28 @@ e in Unicode".
 
 \end_inset
 
-, thus lowering the coverage further.
+.
+ Accordingly, these were ignored in lookup, thus further lowering the coverage.
 \end_layout
 
 \begin_layout Standard
 In future research, it would be interesting to replace the list-based animacy
- classification, either by mapping the danish lemmas into the feature space
- of the Swedish classifier, or by bootstrapping an animacy tagger specifically
- for Danish from the evolving Danish wordnet project 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "pedersen_dannet_2006"
-
-\end_inset
-
- -- using the methodology and feature space of 
+ classification, possibly by mapping the danish lemmas into the feature
+ space of 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "vrelid_when_2007"
+
+\end_inset
+
+ and using the Swedish classifier, or by training an animacy tagger specifically
+ for Danish.
+ For the latter, animacy categories for a training corpus could possibly
+ be obtained by looking up hypernyms with a known animacy class in the evolving
+ Danish wordnet project 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pedersen_dannet_2006"
 
 \end_inset
 
@@ -12384,19 +12414,128 @@ Feature combinations
 \end_layout
 
 \begin_layout Standard
-Effects of combining features.
+When several different augmentation schemes give promising results for a
+ given language, it begs the question: What will the combined effect of
+ applying several augmentation schemes be? Or, in other words, will we see
+ a still greater improvement for each added scheme? And what can be said
+ of the way effects combine -- do they simply add up?
 \end_layout
 
 \begin_layout Standard
-The precise effect of combining is unclear.
+Due to the time-consuming nature of repeated experiments involving parser
+ training, the effects of feature combinations were not extensively examined
+ in this study.
+ However, a few prelimenary experiments of combining some of the promising
+ augmentation schemes for the Danish treebank provide some indications (table
+ 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:Accumulative"
+
+\end_inset
+
+), which I believe are telling of what can be expected of such combinations.
+ In particular, gains of different schemes that were tested do accumulate,
+ but not the combined effects were lower than simply a sum of the gains
+ of individual schemes.
+ 
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Accumulative effects of selected augmentation scheme combinations.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Accumulative"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Does not seem to be additive.
+When combining schemes targeted at the 
+\emph on
+same
+\emph default
+ phenomena, the accumulative effects are more dubious.
+ In particular, the combined effect of both 
+\noun on
+QuotationMark 
+\noun default
+and 
+\noun on
+QuotedPhrase
+\noun default
+ for Danish is 
+\emph on
+lower
+\emph default
+ than of each schema by itself.
 \end_layout
 
 \begin_layout Standard
-FUTURE WORK
+A concise account of the effects of combining augmentation schemes can probably
+ not be given.
+ It depends entirely on the nature of the augmentations in question.
+ Furthermore, the possibility of a synergistic case where the combined effect
+ is 
+\emph on
+greater
+\emph default
+ than the sum of the particular effects alone should not be ruled out.
+ Imagine for example that adding a gender feature on nouns and verbs yield
+ moderate effects individually.
+ The two in combination however would allow the parser to model agreement
+ in gender and likely yield a much greater effect.
+ 
+\end_layout
+
+\begin_layout Chapter
+Conclusions
+\end_layout
+
+\begin_layout Standard
+I set out to examine the possibility of enhancing state of the art data-driven
+ dependency parsing systems by augmenting treebanks.
+ After brief overview of dependency grammar and dependency parsing, a closer
+ look was taken on two data-driven approaches to the parsing problem.
+ MSTParser, a model of the graph-based approach, was chosen for augmentation
+ experiments.
+ A litterature review reveals that the idea of augmenting treebanks is not
+ entirely new.
+ Nonetheless, several novel augmentation schemes were proposed and tested
+ in this project, many of which were found to give significant improvements
+ in parsing accuracy of relevant treebanks.
+ Additionally, some previously proposed augmentations (or variations hereof)
+ were tested on new languages.
+ To quantify effects of treebank augmentation, an evaluation method involving
+ sentence-level categorization of treebank testsets is proposed and employed
+ in evaluating feature designs.
+\end_layout
+
+\begin_layout Standard
+In the following, I will briefly summarize the findings of the work with
+ applying proposed augmentation schemes to the various treebanks.
 \end_layout
 
 \begin_layout Section
@@ -12404,20 +12543,159 @@ Results
 \end_layout
 
 \begin_layout Standard
-Summarize results.
+Two augmentation schemes for quotations were evaluated: 
+\noun on
+QuotedPhrase
+\noun default
+, which focuses on the tokens quoted, and 
+\noun on
+QuotationMark
+\noun default
+, which modifies the punctuation tokens that indicate quotations.
+ Both were found to significantly improve parsing accuracy of the Danish
+ Dependency Treebank, with the former showing the strongest effect.
+ 
+\noun on
+QuotedPhrase
+\noun default
+ had a significant effect for Slovene as well, but the improvements for
+ Bulgarian and Italian were insignificant.
 \end_layout
 
 \begin_layout Standard
-Can only do so much with this approach: Can't explicitly introduce features
- for pairs of tokens.
+Enhancements in parsing accuracy from the 
+\noun on
+Parenthesis
+\noun default
+ scheme were observed for Swedish and Italian, but were not significant.
+ The same goes for the 
+\noun on
+Colon 
+\noun default
+scheme, aimed at secondary phrases occurring after a colon.
 \end_layout
 
-\begin_layout Chapter
-Conclusion
+\begin_layout Standard
+A scheme targeting nominal appositions (
+\noun on
+CommaApposition
+\noun default
+) was found to improve parsing of the sentences with appositions, but the
+ observed effect was bordering on the 0.05-level of statistical significance.
+ The approach seems promising, but could benefit from a better method of
+ identifying appositions for augmentation.
+\end_layout
+
+\begin_layout Standard
+Parsing of the Danish treebank was significantly improved by an augmentation
+ scheme targeting list items arranged as sentences with prefixed list bullets
+ (
+\noun on
+Bullet
+\noun default
+).
+\end_layout
+
+\begin_layout Standard
+The parser coped with intra-sentencial enumerations of nominals significantly
+ better when these were marked as such, and the commas separating list items
+ were given a conjunctional part of speech (
+\noun on
+PosEnumeration
+\noun default
+).
+\end_layout
+
+\begin_layout Standard
+Introducing lemmas in the Danish treebank had an 
+\emph on
+adverse effect
+\emph default
+ on accuracy (
+\noun on
+Lemma
+\noun default
+), but if word forms were simultaneously stripped off (
+\noun on
+LemmaOnly
+\noun default
+), parsing accuracy rose significantly.
+\end_layout
+
+\begin_layout Standard
+An attempt of augmenting nominals in the Danish treebank with ported animacy
+ catetegories resulted in a small but insignificant improvement, most likely
+ due to a number of weaknesses in the chain of procedures for obtained the
+ animacy class.
+\end_layout
+
+\begin_layout Section
+Considerations of applicability
+\end_layout
+
+\begin_layout Standard
+While the treebank augmentations explored clearly has potential, they also
+ come with apparent problems.
+ It might be objected that the rules driving the augmentations are often
+ language specific, or more precisely, highly specific to the punctuational
+ and annotational conventions in use in the treebank, as well as being specific
+ to the kind of text in the treebank.
+ An augmentation for quotations for example must be able to handle the quotation
+ style of the text, and will not be of much use when an unexpected quotation
+ style is used -- or when there are very few or no quotations at all, for
+ that matter.
+\end_layout
+
+\begin_layout Standard
+That being said, it seems only fair to regard this as a task to be handled
+ by augmentation systems, if they are to be of any value in production grade
+ data-driven systems.
+ In other words, augmentation systems for use in data-driven parsing should
+ be sensitive to and detect punctuational and annotational conventions,
+ and be able to accomodate.
+ As a trivial example, an augmentation scheme for quotations should detect
+ whether guillements occur as 
+\emph on
+« ...
+ » 
+\emph default
+or as
+\emph on
+ » ...
+ « 
+\emph default
+or even as
+\emph on
+ » ...
+ » 
+\emph default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The second being predominantly a Danish and Slavic convention, and the last
+ being used in Finnish, according to a Wikipedia entry on the matter: http://en.w
+ikipedia.org/wiki/Quotation_mark,_non-English_usage
+\end_layout
+
+\end_inset
+
+
+\emph on
+.
 \end_layout
 
 \begin_layout Section
 Future research
+\end_layout
+
+\begin_layout Standard
+FUTURE: Other parsers.
+\end_layout
+
+\begin_layout Standard
+FUTURE: Investigate the effect of DDT convention for functional categories.
 \end_layout
 
 \begin_layout Standard
