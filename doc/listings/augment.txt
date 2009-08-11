@@ -1,0 +1,12 @@
+Christians-MacBook% bin/corpus.rb annotate --kind bullet german/tiger
+     [mkdir] german/tiger-bullet
+  [baseline] german/tiger/system/out.conll
+     [mkdir] german/tiger-bullet/baseline
+  [annotate] german/tiger/system/out.conll (bullet)
+      [save] german/tiger/system/out.conll => german/tiger-bullet/baseline/out.conll
+     [mkdir] german/tiger-bullet/test
+  [annotate] german/tiger/test/german_tiger_test.conll (bullet)
+      [save] german/tiger/test/german_tiger_test.conll => german/tiger-bullet/test/german_tiger_test.conll
+     [mkdir] german/tiger-bullet/train
+  [annotate] german/tiger/train/german_tiger_train.conll (bullet)
+      [save] german/tiger/train/german_tiger_train.conll => german/tiger-bullet/train/german_tiger_train.conll

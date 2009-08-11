@@ -54,6 +54,10 @@ Feature Engineering for Data-Driven Dependency Parsing
 Christian Rishøj Jensen
 \end_layout
 
+\begin_layout Date
+August 2009
+\end_layout
+
 \begin_layout Address
 IT og Kognition
 \begin_inset ERT
@@ -93,7 +97,9 @@ Under vejledning af Anders Østerskov Søgaard, Center for Sprogteknologi.
 \end_layout
 
 \begin_layout Address
-NNN.NNN tegn inklusive mellemrum.
+141.983 tegn (inkl.
+ mellemrum, eksl.
+ appendiks).
 \end_layout
 
 \begin_layout Standard
@@ -868,7 +874,7 @@ dependency trees
 .
  The constraints of well-formedness are assumed by most mono-stratal dependency
  theories, and in most cases also holds within each layer of a multi-stratal
- theory
+ theory 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kbler_dependency_2009"
@@ -1191,6 +1197,13 @@ name "fig:Projectivization"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Dependency parsing
 \begin_inset CommandInset label
@@ -1348,12 +1361,21 @@ key "nivre_dependency_2005"
 
 \end_inset
 
-, which are particularly open to interpretation from a dependency viewpoint.
+, which are particularly open to interpretation from a dependency viewpoint
+ (figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:conventions-for-coord"
+
+\end_inset
+
+ illustrates this for a coordinated phrase).
  
 \begin_inset Float figure
+placement b
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1428,6 +1450,13 @@ key "nivre_dependency_2005"
 \end_inset
 
 .
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:conventions-for-coord"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -1481,7 +1510,7 @@ The core of the learning phase typically involves adjusting the parameters
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2570,6 +2599,13 @@ key "witten_data_2005"
  outweigh the maximum spanning tree algorithm itself in terms of complexity.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 State of the art
 \end_layout
@@ -2587,15 +2623,15 @@ key "buchholz_conll-x_2006,nivre_conll_2007"
 
 , teams of researchers gathered in a friendly competition in multi-lingual
  data-driven dependency parsing.
- Several transtition- and graph-based models parsing systems were submitted,
- including the graph-based MSTParser 
+ Several transtition-based and graph-based parsing systems were submitted,
+ including the arc-factored MSTParser 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mcdonald_multilingual_2006"
 
 \end_inset
 
- and the transition-based MaltParser 
+ and the shift-reduce based MaltParser 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "nivre_efficient_2003"
@@ -2642,6 +2678,7 @@ key "hall_conll-x_2006"
 
 
 \begin_inset Float table
+placement b
 wide false
 sideways false
 status open
@@ -2749,6 +2786,128 @@ key "buchholz_conll_2006"
 \end_inset
 
 , lines are divided into a number of fields :
+\begin_inset Float figure
+placement !b
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-7em}{-7em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/conll/example-format.pdf
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Annotated sentence as represented in the corpus file
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/conll/example-structure.eps
+	lyxscale 50
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Visualization of the implicit dependency structure 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Example sentence from the Spanish corpus Cast3LB 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "civit_building_2004,civit_cat3lb_2006"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Description
@@ -2901,130 +3060,6 @@ Dependency relation to the PHEAD, or an underscore if not available.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustwidth}{-8em}{-8em}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align left
-\begin_inset Graphics
-	filename figures/conll/example-format.pdf
-	width 80page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Annotated sentence as represented in the corpus file
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename figures/conll/example-structure.eps
-	lyxscale 50
-	width 80page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Visualization of the implicit dependency structure 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustwidth}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Example sentence from the Spanish corpus Cast3LB 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "civit_building_2004,civit_cat3lb_2006"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 For the shared task at the conference, each treebank was split into a training
  set and a test set.
  While both parts contain parse trees, the parse trees of the test sets
@@ -3086,6 +3121,13 @@ recall
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 CoNLL results
 \begin_inset CommandInset label
@@ -3099,6 +3141,7 @@ name "sub:CoNLL-results"
 
 \begin_layout Standard
 \begin_inset Float table
+placement !b
 wide false
 sideways false
 status open
@@ -3710,7 +3753,193 @@ name "tab:conll-top"
 
 \end_inset
 
+Scores achieved by the participating systems are shown in table 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:conll-las"
 
+\end_inset
+
+.
+ It is worth noting that while there is some variation in scores in between
+ the different systems, there is no clear winner.
+ Indeed, the top two systems -- the graph-based MSTParser by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mcdonald_multilingual_2006"
+
+\end_inset
+
+ and the transition-based MaltParser by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "nivre_efficient_2003"
+
+\end_inset
+
+ -- are more or less on par, as shown in table 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "tab:conll-top"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+These two top scoring systems represent both of the general approaches to
+ data-driven parsing outlined in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Dependency-Parsing"
+
+\end_inset
+
+.
+ While it is tempting to conclude that there does not seem to be much empirical
+ difference between them, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mcdonald_characterizingerrors_2007"
+
+\end_inset
+
+ find several substantial differences in a detailed error analysis, with
+ respect to the types of errors made:
+\end_layout
+
+\begin_layout Quotation
+[...] MaltParser tends to perform better on shorter sentences, which require
+ the greedy inference algorithm to make less parsing decisions.
+ [...]
+\end_layout
+
+\begin_layout Quotation
+MSTParser is far more precise for longer dependency arcs, whereas MaltParser
+ does better for shorter dependency arcs.
+ This behaviour can be explained using the same reasoning as above: shorter
+ arcs are created before longer arcs in the greedy parsing procedure of
+ MaltParser and are less prone to error propagation.
+ Theoretically, MSTParser should not perform better or worse for edges of
+ any length, which appears to be the case.
+ [...]
+\end_layout
+
+\begin_layout Quotation
+MSTParser’s precision degrades as the distance to the root increases whereas
+ MaltParser’s precision increases.
+ [...] Dependency arcs further away from the root are usually constructed early
+ in the parsing algorithm of MaltParser.
+ Again a reduced likelihood of error propagation coupled with a rich feature
+ representation beneﬁts that parser substantially.
+ Furthermore, MaltParser tends to overpredict root modiﬁers, because all
+ words that the parser fails to attach as modiﬁers are automatically connected
+ to the root [...]
+\end_layout
+
+\begin_layout Standard
+The authors also find differences in accuracy in relation to linguistic
+ categories of tokens (part of speech) and dependency types, but explain
+ most of these differences in terms of the inherent strengths and weaknesses
+ of the two models pointed out above.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/conll/conjunction-precision.pdf
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Precision across different annotational conventions for coordination 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mcdonald_characterizingerrors_2007"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Precision-coord"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+They do find a marked difference in how well a specific annotational convention
+ for coordinations is handled, namely the 
+\emph on
+coordinating conjunction as head
+\emph default
+ (CCH) convention, which MSTParser predicts nearly 20 percentage points
+ more accurately (figure 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Precision-coord"
+
+\end_inset
+
+).
+ As briefly described in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Dependency-Parsing"
+
+\end_inset
+
+, this is the convention where the conjunction itself it head of the coordinatio
+n, thus somewhat occluding the function of the conjuncts themselves in the
+ larger syntactic structure.
+ The CCH convention is contrasted to CCD, CJCJ and CJCC, in which one of
+ the conjuncts act as head of the coordination.
+\end_layout
+
+\begin_layout Standard
+Interestingly, the CCH convention seems to have a substantially lower precision
+ 
+\emph on
+regardless
+\emph default
+ of parsing model.
+ If such a difference is not entirely attributable to 
+\begin_inset Quotes eld
+\end_inset
+
+prior
+\begin_inset Quotes erd
+\end_inset
+
+ difference in average treebank precision, it would support a central hypothesis
+ of this project: that explicitness in treebank annotation can cause a significa
+nt difference in accuracy of data-driven parsers.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -7779,194 +8008,6 @@ name "tab:conll-las"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-Scores achieved by the participating systems are shown in table 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "tab:conll-las"
-
-\end_inset
-
-.
- It is worth noting that while there is some variation in scores in between
- the different systems, there is no clear winner.
- Indeed, the top two systems -- the graph-based MSTParser by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "mcdonald_multilingual_2006"
-
-\end_inset
-
- and the transition-based MaltParser by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "nivre_efficient_2003"
-
-\end_inset
-
- -- are more or less on par, as shown in table 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "tab:conll-top"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-These two top scoring systems represent both of the general approaches to
- data-driven parsing outlined in section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Dependency-Parsing"
-
-\end_inset
-
-.
- While it is tempting to conclude that there does not seem to be much empirical
- difference between them, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "mcdonald_characterizingerrors_2007"
-
-\end_inset
-
- find several substantial differences in a detailed error analysis, with
- respect to the types of errors made:
-\end_layout
-
-\begin_layout Quotation
-[...] MaltParser tends to perform better on shorter sentences, which require
- the greedy inference algorithm to make less parsing decisions.
- [...]
-\end_layout
-
-\begin_layout Quotation
-MSTParser is far more precise for longer dependency arcs, whereas MaltParser
- does better for shorter dependency arcs.
- This behaviour can be explained using the same reasoning as above: shorter
- arcs are created before longer arcs in the greedy parsing procedure of
- MaltParser and are less prone to error propagation.
- Theoretically, MSTParser should not perform better or worse for edges of
- any length, which appears to be the case.
- [...]
-\end_layout
-
-\begin_layout Quotation
-MSTParser’s precision degrades as the distance to the root increases whereas
- MaltParser’s precision increases.
- [...] Dependency arcs further away from the root are usually constructed early
- in the parsing algorithm of MaltParser.
- Again a reduced likelihood of error propagation coupled with a rich feature
- representation beneﬁts that parser substantially.
- Furthermore, MaltParser tends to overpredict root modiﬁers, because all
- words that the parser fails to attach as modiﬁers are automatically connected
- to the root [...]
-\end_layout
-
-\begin_layout Standard
-The authors also find differences in accuracy in relation to linguistic
- categories of tokens (part of speech) and dependency types, but explain
- most of these differences in terms of the inherent strengths and weaknesses
- of the two models pointed out above.
-\end_layout
-
-\begin_layout Standard
-They do find a marked difference in how well a specific annotational convention
- for coordinations is handled, namely the 
-\emph on
-coordinating conjunction as head
-\emph default
- (CCH) convention, which MSTParser predicts nearly 20 percentage points
- more accurately (figure 
-\begin_inset CommandInset ref
-LatexCommand vref
-reference "fig:Precision-coord"
-
-\end_inset
-
-).
- As briefly described in section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Dependency-Parsing"
-
-\end_inset
-
-, this is the convention where the conjunction itself it head of the coordinatio
-n, thus somewhat occluding the function of the conjuncts themselves in the
- larger syntactic structure.
- The CCH convention is contrasted to CCD, CJCJ and CJCC, in which one of
- the conjuncts act as head of the coordination.
-\end_layout
-
-\begin_layout Standard
-Interestingly, the CCH convention seems to have a substantially lower precision
- 
-\emph on
-regardless
-\emph default
- of parsing model.
- If such a difference is not entirely attributable to 
-\begin_inset Quotes eld
-\end_inset
-
-prior
-\begin_inset Quotes erd
-\end_inset
-
- difference in average treebank precision, it would support a central hypothesis
- of this project: that explicitness in treebank annotation can cause a significa
-nt difference in accuracy of data-driven parsers.
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figures/conll/conjunction-precision.pdf
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Precision across different annotational conventions for coordination 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mcdonald_characterizingerrors_2007"
-
-\end_inset
-
-.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Precision-coord"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_inset
 
 
@@ -8458,6 +8499,13 @@ The distance feature applies to dependencies rather than tokens.
  engineering lies beyond pure treebank augmentation.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Experiment design
 \end_layout
@@ -8495,7 +8543,6 @@ Two systems gave the best results in the CoNLL shared task: The graph-based
 
 \begin_layout Standard
 \begin_inset Float figure
-placement t
 wide false
 sideways false
 status open
@@ -8508,7 +8555,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-6em}{-6em}
 \end_layout
 
 \end_inset
@@ -9246,10 +9293,10 @@ key "beek_alpino_2002,beek_alpino_2002-1"
 \end_layout
 
 \begin_layout Description
-English Wall Street Journal (WSJ) section of the Penn Treebank 
+English Treebank for the BioNLP'09 shared task 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "marcus_buildinglarge_1994"
+key "tsujii_bionlp09_2009"
 
 \end_inset
 
@@ -9449,6 +9496,13 @@ name "tab:Treebank-sizes"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Feature designs
 \end_layout
@@ -9467,7 +9521,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -9546,17 +9600,11 @@ reference "tab:Prelimenary-survey"
 
 \end_inset
 
-).
- Taking for example parentheses, the survey gives an indication of how widesprea
-d parenthesized phrases are in each treebank, and how well sentences with
- parentheses were parsed in comparison to the treebank average.
+) in order to quantify the suspicion.
+ Taking for example quotation marks, the survey gives an indication of how
+ widespread quotations are in each treebank, and how well sentences with
+ quotations were parsed in comparison to the treebank average.
  
-\end_layout
-
-\begin_layout Standard
-EXPAND: What I will do.
- Prelimenary survey.
- Quantify suspicion.
 \end_layout
 
 \begin_layout Subsection
@@ -9564,7 +9612,7 @@ Quotation
 \end_layout
 
 \begin_layout Standard
-The prelimenary survey (
+The prelimenary survey (table 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "tab:Prelimenary-survey"
@@ -9573,16 +9621,107 @@ reference "tab:Prelimenary-survey"
 
 ) indicates that quotations occur in nearly a third of the Danish test.
  Although the average LAS for these sentences is not far behind the overall
- average for the treebank, manual inspection of baeline parses (
+ average for the treebank, manual inspection of baseline parses indicate
+ that errors often involve dependencies erroneously crossing the boundary
+ of a quoted phrase, as well as incorrect attachment of quotation marks
+ themselves (an example baseline parse is shown on figure 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "fig:Danish-quoted"
 
 \end_inset
 
-) indicate that errors often involve dependencies erroneously crossing the
- boundary of a quoted phrase, as well as incorrect attachment of quotation
- marks themselves .
+).
+\end_layout
+
+\begin_layout Standard
+Intuitively, it seems reasonable that quotations require special treatment.
+ Quoted phrases are often complete in themselves: Frequenly containing a
+ subject and predicate, conveying a statement, question or exclamation,
+ and sometimes comprising a main clause and one or more subordinate clauses.
+ 
+\end_layout
+
+\begin_layout Standard
+From a linguistic viewpoint, quoted phrases exhibit special behavior in
+ some languages.
+ Apart from having an internal structure on their own right,
+\begin_inset CommandInset citation
+LatexCommand citet
+key "haberland_reported_1986"
+
+\end_inset
+
+ notes that unquoted or 
+\emph on
+indirect reported speech
+\emph default
+ in Danish exhibits slighty different word order than quoted or 
+\emph on
+direct reported speech
+\emph default
+.
+ Contrast these (condensed) sentences:
+\end_layout
+
+\begin_layout Description
+(1) Direct reported speech:
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+Og de tilføjede: 
+\begin_inset Quotes eld
+\end_inset
+
+Vi har end ikke et kim af civilt samfund
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Quotation
+[And they added: 
+\begin_inset Quotes eld
+\end_inset
+
+We haven't even got a germ of civil society
+\begin_inset Quotes erd
+\end_inset
+
+.]
+\end_layout
+
+\begin_layout Description
+(2) Indirect reported speech:
+\end_layout
+
+\begin_layout Quotation
+
+\emph on
+Og de tilføjede, at vi end ikke har et kim af civilt samfund.
+\end_layout
+
+\begin_layout Quotation
+[And they added that we haven't even got a germ of civil society.]
+\end_layout
+
+\begin_layout Standard
+The complementizer 
+\emph on
+at 
+\emph default
+is dropped in the first sentence (direct report), and in the second sentence
+ (indirect report), the negation 
+\emph on
+ikke
+\emph default
+ is moved to a pre-verbal position.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -9596,7 +9735,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -9609,7 +9748,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/foci/quotation/baseline.eps
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/quotation/baseline.eps
 	width 80page%
 
 \end_inset
@@ -9642,7 +9781,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename figures/foci/quotation/system.eps
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/quotation/system.eps
 	width 80page%
 
 \end_inset
@@ -9729,98 +9868,12 @@ name "fig:Danish-quoted"
 \end_layout
 
 \begin_layout Standard
-Intuitively, it seems reasonable that quotations require special treatment.
- Quoted phrases are often complete in themselves, often containing a subject
- and predicate, conveying a statement, question or exclamation, sometimes
- comprising a main clause and one or more subordinate clauses.
- 
-\end_layout
-
-\begin_layout Standard
-From a linguistics viewpoint, quoted phrases exhibit special behavior in
- some languages.
- Apart from having an internal structure on their own right,
-\begin_inset CommandInset citation
-LatexCommand citet
-key "haberland_reported_1986"
-
-\end_inset
-
- notes that unquoted or 
-\emph on
-indirect reported speech
-\emph default
- in Danish exhibits slighty different word order than quoted or 
-\emph on
-direct reported speech
-\emph default
-.
- Contrast these (condensed) sentences:
-\end_layout
-
-\begin_layout Description
-(1) Direct reported speech:
-\end_layout
-
-\begin_layout Quotation
-
-\emph on
-Og de tilføjede: 
-\begin_inset Quotes eld
-\end_inset
-
-Vi har end ikke et kim af civilt samfund
-\begin_inset Quotes erd
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Quotation
-[And they added: 
-\begin_inset Quotes eld
-\end_inset
-
-We haven't even got a germ of civil society
-\begin_inset Quotes erd
-\end_inset
-
-.]
-\end_layout
-
-\begin_layout Description
-(2) Indirect reported speech:
-\end_layout
-
-\begin_layout Quotation
-
-\emph on
-Og de tilføjede, at vi end ikke har et kim af civilt samfund.
-\end_layout
-
-\begin_layout Quotation
-[And they added that we haven't even got a germ of civil society.]
-\end_layout
-
-\begin_layout Standard
-The complementizer 
-\emph on
-at 
-\emph default
-is dropped in the first sentence (direct report), and in the second sentence
- (indirect report), the negation 
-\emph on
-ikke
-\emph default
- is moved to a pre-verbal position.
-\end_layout
-
-\begin_layout Standard
 As quotation marks in the Danish treebank are categorized as the same part
- of speech as all other punctuation, they are only sinlged out at the word
- form level, even though quotation marks (and other symmetrical indicators
- of parentheticals) do not share much behavior with other forms of punctuation,
- such as point indicators (commas, colons, semicolons, dashes) 
+ of speech as all other punctuation, they are only singled out at the word
+ form level.
+ The quotation marks (and other symmetrical indicators of parentheticals)
+ do not share much behavior with other forms of punctuation, such as point
+ indicators (commas, colons, semicolons, dashes) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "nunberg_linguistics_1990"
@@ -9838,31 +9891,35 @@ amplifying
 \end_inset
 
  the uniqueness of quotation marks by introducing a separate part of speech
- tag for these, as well as for tokens in their vicinity, and saw an improvement
- of 0.50 in LAS (
+ tag for these, as well as for tokens in their vicinity.
+ This gave rise to an improvement of 0.50 in LAS (
 \begin_inset Formula $p<0.1$
 \end_inset
 
 ) for a truncated part of the Danish treebank.
- This was achieved with a 0-1-2 window when modifying the POS tags, meaning
- that the POS tag was changed for the quotation mark itself as well the
- two tokens following it.
  
 \end_layout
 
 \begin_layout Standard
-A 0-1-2 window will inevitably mark some tokens immediately following a
- quoted phrase, as well as tokes occuring in the beginning of these, so
- this augmentation does not clearly indicate which tokens are actually quoted.
- Intuitively, this would be valuable information.
- As an attempt to clearly mark quoted phrases, I am using an augmentation
+A 0-1-2 window was used when modifying the POS tags, meaning that the POS
+ tag was changed for the quotation mark itself as well the two tokens following
+ it.
+ Such a window will inevitably mark some tokens immediately following a
+ quoted phrase, as well as tokes occuring in the beginning of one, so this
+ augmentation does not clearly indicate which tokens are actually quoted.
+ Intuitively, a clear indication would be valuable information to the parser.
+ 
+\end_layout
+
+\begin_layout Standard
+As an attempt to clearly mark quoted phrases, I am using an augmentation
  scheme which adds a 
 \noun on
 quote 
 \noun default
 feature not only to quotation marks themselves, but also to the quoted tokens.
- This augmentation is not entirely trivial, as quotation marks do not always
- occur in pairs, for several reasons:
+ Determining which tokens to augment is not entirely trivial, as quotation
+ marks do not always occur in pairs, for several reasons:
 \begin_inset Float figure
 wide false
 sideways false
@@ -9991,7 +10048,7 @@ Contrary to the convention of certain other languages (e.g.
 \emph on
 following
 \emph default
- sentence (see 
+ sentence (see figure 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "fig:Multi-sentence-quotation"
@@ -10017,7 +10074,35 @@ key "nunberg_linguistics_1990"
 \end_layout
 
 \begin_layout Enumerate
-Typos.
+
+\emph on
+Incontinuity
+\emph default
+.
+ In at least one case, the a sentence in the Danish treebank with an open-ended
+ quotation was followed by an unrelated sentence
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This incontinuity is entirely expectable: Treebanks sample sentences from
+ a variety of sources, and treebank authors inevitably have to 
+\begin_inset Quotes eld
+\end_inset
+
+cut
+\begin_inset Quotes erd
+\end_inset
+
+ somewhere.
+ Additional cuts are made when introducing train/test splits.
+ The bottom line is that intra-sentential continuity is not a valid assumption.
+\end_layout
+
+\end_inset
+
+, which did not continue the quotation.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -10027,9 +10112,9 @@ Instead of constructing a complex system to make sense of the unruly realization
 \end_layout
 
 \begin_layout Itemize
-First part of multi-sentence quotations introduced with a colon preceeding
- a quotation mark, which unambigously begins a quotation.
- E.g.
+First parts of multi-sentence quotations, when introduced with a colon preceedin
+g a quotation mark.
+ This unambigously begins a quotation, e.g.
  (with 
 \begin_inset Formula $\blacktriangleright$
 \end_inset
@@ -10122,7 +10207,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -10212,17 +10297,17 @@ QuotationMark
 \end_inset
 
 ) overall improvement of 0.67 on the Danish corpus.
- 
+ The
 \noun on
-QuotationMark
+ QuotationMark
 \noun default
- is closer to that of Søgaard, although not identical
+ scheme is similar to that of Søgaard, although not identical
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Søgaard also used a truncated treebank for training, so the results are
- not comparable.
+In addition to this, Søgaard used a truncated treebank for training, so
+ the results are not comparable.
 \end_layout
 
 \end_inset
@@ -10242,7 +10327,7 @@ QuotedPhrase
 \noun default
  alone.
  This could mean that there is some overlap in the coverage of the two schemes,
- or it could mean that the model starts overfitting.
+ or perhaps that the model starts overfitting.
  
 \end_layout
 
@@ -10250,7 +10335,7 @@ QuotedPhrase
 Significant improvements are also seen for the Slovene treebank, in which
  quotations are also fairly common.
  Less convincing or insignificant effects are seen in the Italian newspaper
- corpus and the bulgarian corpus.
+ corpus and the Bulgarian corpus.
  In the latter, 
 \noun on
 QuotedPhrase
@@ -10264,7 +10349,7 @@ adverse
 \end_layout
 
 \begin_layout Standard
-Results the remaining treebanks are not reported.
+Results for the remaining treebanks were not obtained.
  Conducting experiments is a computationally intensive task
 \begin_inset Foot
 status open
@@ -10278,9 +10363,16 @@ On the relatively modern hardware used, training often took many hours,
 \end_inset
 
 , and it was deemed futile to conduct experiments on treebanks containing
- with very few quotations.
+ very few quotations.
  This principle also applies to the following experiments.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -10301,7 +10393,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -10359,7 +10451,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Parse when augmented with a feature marking parenthesized tokens.
+Parse when augmented with a feature marking parenthesized tokens
 \end_layout
 
 \end_inset
@@ -10395,8 +10487,8 @@ end{adjustwidth}
 Parses of a Swedish sentence with parentheses.
  Black arcs were correctly predicted, red arcs erroneously predicted, and
  blue arcs should have been predicted, but were not.
- Comparing the system parse to the baseline, two erroneous dependencies,
- both crossing the boundary of the parenthesized phrase, have been corrected.
+ Comparing the system parse to the baseline, two erroneous dependencies
+ (both crossing the boundary of the parenthesized phrase) have been corrected.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:paren"
@@ -10427,7 +10519,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -10502,7 +10594,7 @@ name "tab:paren"
 \end_inset
 
 The prelimenary survey of precision for sentences with various punctuation
- (
+ (table
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "tab:Prelimenary-survey"
@@ -10516,7 +10608,7 @@ reference "tab:Prelimenary-survey"
 \emph on
 Newspaper
 \emph default
- treebank also seem to suffer (5.36 worse), and the same goes for the Slovene
+ treebank also seems to suffer (5.36 worse), and the same goes for the Slovene
  and Turkish treebanks (13.07 and 8.05 worse, respectively).
  For the latter two treebanks, parenthesized tokens only occur in 1 and
  4 test sentences respectively -- i.e.
@@ -10541,9 +10633,9 @@ reference "fn:cross-val"
 \end_inset
 
 , it is not really methodically sound to base experiments on a small treebank
- in a fixed train/test split.
- The smaller the treebank, the greater the variance of results on different
- treebank partitions.
+ with a fixed train/test split.
+ The smaller the treebank, the greater the variance of results obtainable
+ with the different treebank partitions.
  Normally, in estimating the predictive accuracy, one would employ 10-fold
  cross-validation or another technique to compensate somewhat for the large
  variance.
@@ -10586,7 +10678,7 @@ paren
 status open
 
 \begin_layout Plain Layout
-With a 95% confidency interval.
+With a 95% confidence interval.
  Refer to table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -10616,19 +10708,19 @@ Newspaper
 \emph on
 Law
 \emph default
-), where there is a modest positive effect on other sentences 
+), where there is a modest positive effect on sentences 
 \emph on
 without
 \emph default
- parentheses, but the effect on augmented sentences is next to none.
- This absence is perhaps due to the fact that on average, sentences with
- parentheses in 
+ parentheses, but the effect on the augmented sentences is next to none.
+ This absence of effect is perhaps due to the fact that, on average, sentences
+ with parentheses in 
 \emph on
 Law
 \emph default
  were already on par with the treebank overall.
  Still, it seems the augmentation helped improve the learned model slightly
- overall, also evident for the combined treebank (
+ overall (also evident for the combined treebank 
 \emph on
 Both
 \emph default
@@ -10636,8 +10728,8 @@ Both
 \end_layout
 
 \begin_layout Standard
-For the Swedish treebank, there no or a slight adverse effect of the augmentatio
-n overall, but a marked increase in LAS of the sentences with parenthesis,
+For the Swedish treebank, there is practically no overall effect of the
+ augmentation, but a marked increase in LAS of the sentences with parenthesis,
  amounting to a reduction in error rate of 10%.
  Yet none of the observed differences are statistically significant, with
  
@@ -10645,6 +10737,13 @@ n overall, but a marked increase in LAS of the sentences with parenthesis,
 \end_inset
 
  for the affected sentences being closest.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -10665,7 +10764,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -10757,10 +10856,10 @@ end{adjustwidth}
 
 \begin_layout Plain Layout
 Parses of a Slovene sentence where the latter half, which is a complete
- sentence on its own part, is introduced with colon.
- Black arcs were correctly predicted, red arcs erroneously predicted, and
- blue arcs should have been predicted, but were not.
- Comparing the system parse to the baseline, the seperation of the two sentences
+ sentence on its own right, is introduced with colon.
+ Again, black arcs were correctly predicted by the system, red arcs erroneously
+ predicted, and blue arcs should have been predicted, but were not.
+ Comparing the system parse to the baseline, the separation of the two sentences
  is much better: No dependencies erroneously cross the boundary between
  the two.
  The system also correctly identifies the root token of the sentence, which
@@ -10796,7 +10895,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -10876,10 +10975,10 @@ name "tab:colon"
 \begin_layout Standard
 For several languages, colons seem to be correlated with poor parsing precision.
  As with quotation marks and parenthesis, colons are often used to introduce
- a parenthetical phrase within another sentence.
+ a parenthetical phrase.
  These parentheticals may be complete sentences on their own right, and
- as such, should often not have its dependency structure mixed up with the
- outer sentence.
+ as such, should most often not have its dependency structure mixed up with
+ the outer sentence.
  Manual inspection of the baseline parses of sentences with colons indicate
  that dependency errors often involve arcs erroneously crossing the boundary
  to the outer sentence (see figure 
@@ -10892,7 +10991,7 @@ reference "fig:colon"
  for an example).
  In particular, in case a token in the nested sentence is mistakenly taken
  to be head of the sentence as a whole, many derived errors will likely
- follow from this.
+ follow.
  
 \end_layout
 
@@ -10912,7 +11011,10 @@ after
 \emph default
  a colon.
  The assumption is that singling out tokens after the colon is consistent
- with the way colons are used (the nested sentence is never the one before
+ with the way colons are used (the nested sentence is never the one 
+\emph on
+before
+\emph default
  the colon).
 \end_layout
 
@@ -10921,6 +11023,27 @@ Some heuristics are employed to handle colons appearing within a pair of
  parentheses.
  Clearly, such a case should not result in tokens outside the parenthesis
  being marked.
+ Consider the following Swedish example:
+\end_layout
+
+\begin_layout Quotation
+[...] lön, pension, livränta, undantagsförmåner och övrig tjänsteinkomst (undantag:
+ 
+\emph on
+periodiskt understöd eller därmed jämförlig periodisk inkomst
+\emph default
+), inkomst av jordbruksfastighet - om den skattskyldige arbetat i jordbruket
+ i ej blott ringa omfattning [...]
+\end_layout
+
+\begin_layout Standard
+In this particular example, only tokens within the parenthesis should be
+ considered.
+ Tokens thus marked by the scheme are shown in 
+\emph on
+italics
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -10942,13 +11065,12 @@ Experiments with Swedish, Italian and Slovene show modest, although not
 \end_layout
 
 \begin_layout Standard
-Colons are not exactly widely used in these treebanks, and in the cast of
- the test part of the Italian treebank, they occur exclusively sentence
- final.
+Colons are not exactly widely used in these treebanks, and in the test part
+ of the Italian treebank, they occur exclusively in a sentence final position.
  No tokens occur after the colon in the sentence final case, and thus no
  sentences in the test corpus are directly affected by the augmentation.
  The small difference observed on the Italian treebank is solely caused
- by augmentation of the training corpus
+ by cases in training corpus where the augmentation applied
 \begin_inset Foot
 status open
 
@@ -10968,9 +11090,13 @@ experiment at all -- if not for this, it would have been unnecessary.
 
 \begin_layout Standard
 I am assuming that the sparsity of colons is partly to blame for the relatively
- poor statistical significance of the observed effect, and I believe that
+ poor statistical significance of the observed effect, and I expect that
  a significant effect might be shown with a treebank where colons occur
  more frequently.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -10998,7 +11124,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -11077,8 +11203,8 @@ _Empresas - CFE-CGC - .
 
 \begin_layout Standard
 Being syntactically parallel constructions, appositions involve some of
- the same difficulties as other coordinated and syntactically parallel construct
-ions, which are notoriously troubled 
+ the same difficulties as other syntactically parallel constructions (e.g.
+ coordinations), which are notoriously troubled 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kbler_is_2006"
@@ -11114,7 +11240,7 @@ N
 
 \end_inset
 
- tokens which are surrounded by a pair of hyphens or commas.
+ tokens, that are surrounded by a pair of hyphens or commas.
  The chosen heuristic is likely too restrictive, thus sacrificing coverage.
  Perhaps consequently, the observed effect is somewhat dubious.
 \end_layout
@@ -11144,7 +11270,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -11219,15 +11345,15 @@ nt.
 \end_layout
 
 \begin_layout Standard
-The chosen heuristic for identifying appositions is almost certainly bad,
+The chosen heuristic for identifying appositions is certainly too simplistic,
  and likely the cause of the unclear results.
  It would be interesting to train a probabilistic model for labeling appositions
  and conduct the same experiment with this driving the augmentation instead
  of the heuristic.
  Several treebanks (e.g.
  Arabic and Czech) clearly indicate appositions in the dependency structure.
- Deriving training data from these existing treebanks and training an HMM-
- or CRF-based tagger 
+ For these treebanks, deriving training data from the dependency structure
+ and training an HMM- or CRF-based tagger 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "jurafsky_speech_2008"
@@ -11235,6 +11361,10 @@ key "jurafsky_speech_2008"
 \end_inset
 
  to more reliably identify appositions in unparsed text seems feasible.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -11243,7 +11373,6 @@ List items
 
 \begin_layout Standard
 \begin_inset Float figure
-placement b
 wide false
 sideways false
 status open
@@ -11256,118 +11385,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /Users/christian/Projects/dep_feat/doc/figures/foci/bullet/concept/feature.pdf
-	width 80page%
-	clip
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{adjustwidth}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Zooming in on the feature 
-\noun on
-bullet 
-\noun default
-as added to the tokens comprising the list counter.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:bullet-feature"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-Another phenomenon of written text posing a challenge to the baseline parser
- is items in of a numbered or bulleted list.
- In particular, 3% of the test part of the Danish Dependency Treebank are
- sentences of the following kind:
-\end_layout
-
-\begin_layout Quotation
-3 ) Har ministeren løjet om sit og regeringens kendskab til virksomheden?
-\end_layout
-
-\begin_layout Standard
-Two-thirds of the itemized sentences in the DDT test set are numbered list
- items like this, while the rest have the form of description lists, e.g.:
-\end_layout
-
-\begin_layout Quotation
-Foto : Palle Hedemann
-\begin_inset CommandInset label
-LatexCommand label
-name "quo:FotoPalle"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In these itemized sentences, the list counter -- e.g.
- 
-\emph on
-3
-\emph default
- -- acts as head of the sentence, with the token that would otherwise be
- the head (commonly a finite verb) depending on the list counter.
- The baseline parser rarely gets this right (an example of baseline error
- is shown in figure 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:list"
-
-\end_inset
-
-).
- 
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -11482,6 +11500,119 @@ name "fig:list"
 \end_inset
 
 
+\begin_inset Float figure
+placement b
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{adjustwidth}{-7em}{-7em}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/christian/Projects/dep_feat/doc/figures/foci/bullet/concept/feature.pdf
+	width 80page%
+	clip
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{adjustwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Zooming in on the feature 
+\noun on
+bullet 
+\noun default
+as added to the tokens comprising the list counter.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:bullet-feature"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Another challenge to the baseline parser is posed by items of numbered or
+ bulleted lists.
+ In particular, 3% of the test part of the Danish Dependency Treebank are
+ sentences of the following kind:
+\end_layout
+
+\begin_layout Quotation
+3 ) Har ministeren løjet om sit og regeringens kendskab til virksomheden?
+\end_layout
+
+\begin_layout Standard
+Two-thirds of these itemized sentences in the DDT test set are numbered
+ list items like this, while the rest have the form of description lists,
+ e.g.:
+\end_layout
+
+\begin_layout Quotation
+Foto : Palle Hedemann
+\begin_inset CommandInset label
+LatexCommand label
+name "quo:FotoPalle"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In these itemized sentences, the list counter -- e.g.
+ 
+\emph on
+3
+\emph default
+ -- acts as head of the sentence, with the token that would otherwise be
+ the head (commonly a finite verb) being a dependant of the list counter.
+ The baseline parser rarely gets this right (an example of baseline error
+ is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:list"
+
+\end_inset
+
+).
+ 
 \end_layout
 
 \begin_layout Standard
@@ -11528,7 +11659,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -11646,7 +11777,11 @@ The same can be said of numerals used as list counters.
 \end_inset
 
 , and this result could be construed as helping the parser discriminate
- these.
+ these use cases.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -11668,7 +11803,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -11802,7 +11937,7 @@ When mentioning a number of things one by one, a coordinating conjunction
 and
 \emph default
 ) would normally be used before the last thing mentioned, but left out before
- this (or replaced by a comma in writing).
+ this (and replaced by a comma instead in writing).
  Depending on the annotational conventions of a treebank, enumerations can
  have different dependency structure.
  In the case of the Bulgarian treebank
@@ -11818,10 +11953,10 @@ Note that the Bulgarian treebank is one of the large ones which brought
 
 \end_inset
 
-, the initial conjunct acts as head for every other token in the coordination.
- The baseline parser rarely get this right.
- Instead, it builds locally rooted subtrees and mixes labels up (figure
- 
+, the initial conjunct acts as head for every other tokens in the coordination.
+ The baseline parser rarely gets this right.
+ Instead, it seems to build locally rooted subtrees and mix dependency labels
+ up (figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Baseline-enum"
@@ -11829,7 +11964,7 @@ reference "fig:Baseline-enum"
 \end_inset
 
 ).
- Intuitively this is because the parser 
+ Intuitively, this is because the parser 
 \begin_inset Quotes eld
 \end_inset
 
@@ -11838,7 +11973,11 @@ looses sight
 \end_inset
 
  of the extent of the coordination.
- Also, the commas involved are simply annotated as 
+ 
+\end_layout
+
+\begin_layout Standard
+The commas involved are simply annotated as 
 \noun on
 Punct
 \noun default
@@ -11857,7 +11996,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -12050,21 +12189,25 @@ enum
 PosEnumeration)
 \noun default
  to clarify the function of the commas involved, by simply changing their
- part of speech tags to that of the final coordinating conjunction (as illustrat
-ed in figure 
+ part of speech tags to that of the final coordinating conjunction (e.g.
+ 
+\emph on
+and
+\emph default
+), as illustrated in figure 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "fig:enum-feat"
 
 \end_inset
 
-).
+.
  
 \end_layout
 
 \begin_layout Standard
-As with previous schemes, it can be non-trivial to robustly identify enumeration
-s.
+As with previous schemes, it can be non-trivial to identify enumerations
+ for augmentation in a reliable way.
  A sequence of commas followed by a coordinating conjunction is to be expected,
  but the conjuncts themselves can comprise multiple tokens and belong to
  numerous parts of speech, let alone be small nonfinite verbal phrases.
@@ -12074,8 +12217,8 @@ s.
 \begin_layout Standard
 A cautious heuristic is employed, which matches nominal conjuncts consisting
  of a single token only.
- In the following example, this heuristic will cover the first emphasized
- phrase:
+ In the following example, this heuristic will match only the first of the
+ two emphasized phrases:
 \end_layout
 
 \begin_layout Quotation
@@ -12105,7 +12248,7 @@ reference "sub:Apposition"
 \end_inset
 
 , such a heuristic is really too simplistic.
- However, for enumerations, results for this simple heuristic are quite
+ However, for enumerations, results with this simple heuristic are quite
  encouraging:
 \end_layout
 
@@ -12119,7 +12262,7 @@ scheme results in a LAS gain of 6.45 for sentences with matches enumerations
 \begin_inset Formula $p\thickapprox0.06$
 \end_inset
 
-), or a 32.2% reduction in error rate.
+), equivalent to a 32.2% reduction in error rate.
  The 
 \noun on
 PosEnumeration
@@ -12132,7 +12275,7 @@ PosEnumeration
 
 )
 \noun default
-, and apparently no effect on other sentences.
+, and apparently has no effect on other sentences.
 \begin_inset Float table
 wide false
 sideways false
@@ -12146,7 +12289,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -12198,6 +12341,10 @@ Results for the two simple schemes for augmenting enumerations (in the Bulgarian
 \begin_layout Standard
 Experiments with a better heuristic (or a probabilistic model) for identifying
  enumerations is left for future research.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -12217,10 +12364,10 @@ The CoNLL treebank format provides a column for specifying a token's
 lemma
 \emph default
 , i.e.
- the canonical form of a set of wordforms of the same abstract conceptual
- form.
+ the canonical form of a set of wordforms being realizations of the same
+ abstract conceptual form.
  As such, it can be said that the lemma uniquely specifcies the conceptual
- identity of a token, regardless of inflection.
+ identity of a token, regardless of inflection and other contextual influence.
  
 \end_layout
 
@@ -12230,7 +12377,7 @@ Presumably, language users identify token lemmas when interpreting an utterance.
 \emph on
 Laughing
 \emph default
- refers to the same act as 
+ refers to the same sort of act as 
 \emph on
 laugh
 \emph default
@@ -12243,19 +12390,28 @@ laughed
 \emph on
 lemma
 \emph default
-) imposes restrictions on plausible interpretations in the contect of a
+) imposes restrictions on plausible interpretations in the context of a
  sentence.
  It rarely makes sense for 
 \emph on
 cheese
 \emph default
- to laugh, discrediting an analysis attaching 
+ to laugh, and this insight discredits an analysis attaching 
+\emph on
+cheese 
+\emph default
+to 
 \emph on
 laughs 
 \emph default
-to it as subject.
- Restrictions apply to word forms as well, but the lemmas allow for further
- generalization -- resulting in a 
+as subject.
+ 
+\end_layout
+
+\begin_layout Standard
+Lemma restrictions apply to realizations of the lemma (word forms) as well,
+ but focusing on the lemmas allow for further generalization -- resulting
+ in a 
 \emph on
 simpler yet sufficient
 \emph default
@@ -12280,11 +12436,11 @@ better
 
 \begin_layout Standard
 At least in the edition that was used at CoNLL, the Danish Dependency Treebank
- does not contain lemmas, so with the hypothesis that these are valuable
- for data-driven parsing, the treebank was augmented with lemmas obtained
- with the CST Lemmatizer by 
+ does not contain lemmas.
+ With the hypothesis that lemmas are valuable for data-driven parsing, I
+ augmented the treebank with lemmas obtained with the CST Lemmatizer 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "jongejan_cst_2008"
 
 \end_inset
@@ -12315,7 +12471,7 @@ LemmaOnly
 \emph on
 strips
 \emph default
- the token forms away, thus leaving only the lemmas in the treebank, yields
+ the word forms away, thus leaving only the lemmas in the treebank, yields
  a substantial (0.79) and significant (
 \begin_inset Formula $p<0.02$
 \end_inset
@@ -12346,7 +12502,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -12411,8 +12567,8 @@ name "tab:lemma"
 \end_layout
 
 \begin_layout Standard
-The adverse effect of introducing lemmas in the first place is rather surprising
-, but the significant gain in LAS achieved by simultanously removing word
+The adverse effect of introducing lemmas in the first place was rather surprisin
+g, but the significant gain in LAS achieved by simultanously removing word
  forms is consistent with the hypothesis the lemmas provide a valuable opportuni
 ty for further generalization in the parsing model.
  Note that virtually no information is lost by stripping word forms, as
@@ -12423,6 +12579,10 @@ features
 \emph default
  column of DDT.
  
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -12444,11 +12604,11 @@ key "vrelid_when_2007"
 
 \end_inset
 
- report of postive effects of including a number of linguistically motivated
+ report of positive effects of including a number of linguistically motivated
  features hypothesized to target certain consistent errors in dependency
  assignments (stemming from word order ambiguity and lack of case marking
  in Swedish).
- Features include one denoting the 
+ These features include one denoting the 
 \emph on
 animacy
 \emph default
@@ -12487,10 +12647,15 @@ key "vrelid_cross-lingual_2009"
 
 \end_inset
 
- reports of successfully applying the animacy tagger to Danish nouns, by
- mapping them into the same space of distributional features used for Swedish.
- In her experiment of porting the classifier, 18,240 Danish noun lemmas
- was extracted from the Danish corpus Korpus2000
+ reports of successfully applying the Swedish animacy tagger to Danish nouns,
+ by mapping the Danish nouns into the same space of distributional features
+ used for Swedish.
+ 
+\end_layout
+
+\begin_layout Standard
+In her experiment of porting the classifier, 18,240 Danish noun lemmas was
+ extracted from the Danish corpus Korpus2000
 \begin_inset Foot
 status open
 
@@ -12521,8 +12686,10 @@ reference "sub:Lemmatization"
 \end_inset
 
 .
- Animacy class is then looked up for each noun and pronoun in DDT, and finally
- lemmas are removed again (to prevent lemmatization of influencing the result).
+ For each noun and pronoun in DDT, the animacy class is looked up and inserted
+ as a feature.
+ Finally, lemmas are removed again (to prevent lemmatization of influencing
+ the result).
 \begin_inset Float table
 wide false
 sideways false
@@ -12536,7 +12703,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -12596,9 +12763,9 @@ name "tab:anim"
 \begin_layout Standard
 Thus augmented with 
 \noun on
-Animacy
+Animacy,
 \noun default
- a moderate overall improvement in LAS of 0.26 is achieved for the DDT (table
+ a moderate overall improvement in LAS of 0.26 is achieved for DDT (table
  
 \begin_inset CommandInset ref
 LatexCommand vref
@@ -12610,10 +12777,14 @@ reference "tab:anim"
 \begin_inset Formula $p$
 \end_inset
 
--value for the observed effect of about 0.21, it does not qualify as statisticall
-y significant.
- The low significance (and relatively small effect) may in part be a result
- of the different head status of functional categories used in DDT.
+-value of about 0.21, the observed effect does not qualify as statistically
+ significant.
+ 
+\end_layout
+
+\begin_layout Standard
+The low significance (and relatively small effect) may in part be a result
+ of the different head status that functional categories have in DDT.
  As observed by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -12621,9 +12792,10 @@ key "vrelid_cross-lingual_2009"
 
 \end_inset
 
-, the DDT convention is to let the determiner act as head in a noun phrase,
- with the noun itself modifying the determiner, whereas it goes the other
- way around in the Swedish treebank (see figure 
+, the DDT convention is to let the determiner of a noun phrase act as head,
+ while having the noun itself as a dependent of the determiner.
+ In the Swedish treebank, it goes the other way around, so nouns act as
+ heads (see figure 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "fig:func"
@@ -12640,15 +12812,11 @@ stashed away
 \begin_inset Quotes erd
 \end_inset
 
-, at least for purposes of verb attachment.
+ in DDT, at least for purposes of verb attachment.
  Information about animacy may be significant for determining the syntactic
  function of a noun phrase, but in DDT the information is not available
  on the phrase head, whereas it would be in Talbanken05, because here the
- 
-\emph on
-noun
-\emph default
- acts as head.
+ noun acts as head.
 \begin_inset Float figure
 wide false
 sideways false
@@ -12763,8 +12931,8 @@ name "fig:func"
 \end_layout
 
 \begin_layout Standard
-Another factor reducing the observed effect is probably relatively poor
- coverage of animacy tagging.
+A factor that which is certainly reducing the observed effect is the relatively
+ low coverage of animacy tagging obtained for Danish.
  As I am using a fixed word list (rather than an actual tagger), many lemmas
  (about 45%) are simply not found in the lookup list.
  
@@ -12773,13 +12941,13 @@ Another factor reducing the observed effect is probably relatively poor
 \begin_layout Standard
 Additionally, there is probably some error propagation from the Danish animacy
  classification, which is not nearly as accurate as the Swedish.
- In particular, Øvrelid reports a precision of 74.5, recall of 45.5 and F-score
- of 56.5.
+ In particular, Øvrelid reports a precision of 74.5 and recall of 45.5 (F-score
+ 56.5).
 \end_layout
 
 \begin_layout Standard
-Finally, in the animacy list used, many special and accented letters (including
- the Danish vowels 
+Finally, in the animacy list I was able to obtain, many special and accented
+ letters (including the Danish vowels 
 \emph on
 æ
 \emph default
@@ -12804,6 +12972,7 @@ Replacement Character
 , which according to http://www.fileformat.info/info/unicode/char/fffd/ is
  "used to replace an incoming character whose value is unknown or unrepresentabl
 e in Unicode".
+ 
 \end_layout
 
 \end_inset
@@ -12814,19 +12983,20 @@ e in Unicode".
 
 \begin_layout Standard
 In future research, it would be interesting to replace the list-based animacy
- classification, possibly by mapping the danish lemmas into the feature
- space of 
+ classification with a proper classifier, as in the Swedish case.
+ One approach is to map the danish lemmas into the feature space used by
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "vrelid_when_2007"
 
 \end_inset
 
- and using the Swedish classifier, or by training an animacy tagger specifically
- for Danish.
- For the latter, animacy categories for a training corpus could possibly
- be obtained by looking up hypernyms with a known animacy class in the evolving
- Danish wordnet project 
+ and then use the Swedish classifier.
+ Another approach is to traini an animacy tagger specifically for Danish.
+ For the latter approach, animacy categories for a training corpus could
+ possibly be obtained by looking for hypernyms with a known animacy class
+ in the evolving Danish wordnet project 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "pedersen_dannet_2006"
@@ -12834,6 +13004,10 @@ key "pedersen_dannet_2006"
 \end_inset
 
 .
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -12843,28 +13017,33 @@ Feature combinations
 \begin_layout Standard
 When several different augmentation schemes give promising results for a
  given language, it begs the question: What will the combined effect of
- applying several augmentation schemes be? Or, in other words, will we see
- a still greater improvement for each added scheme? And what can be said
- of the way effects combine -- do they simply add up?
+ applying multiple schemes simultaneously be? Or, in other words, will we
+ see a still greater improvement for each added scheme? And what can be
+ said of the way effects combine -- do they simply add up?
 \end_layout
 
 \begin_layout Standard
-Due to the time-consuming nature of repeated experiments involving parser
- training, the effects of feature combinations were not extensively examined
- in this study.
- However, a few prelimenary experiments of combining some of the promising
- augmentation schemes for the Danish treebank provide some indications (table
- 
+Due to the time-consuming nature of the experiments (all involve training
+ a parser from scratch), the effects of feature combinations were not extensivel
+y examined in this study.
+ However, I did carry out a few prelimenary experiments of combining some
+ of the more promising augmentation schemes for the Danish treebank.
+ The results (table 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "tab:Accumulative"
 
 \end_inset
 
-), which I believe are telling of what can be expected of such combinations.
- In particular, gains of different schemes that were tested do accumulate,
- but not the combined effects were lower than simply a sum of the gains
- of individual schemes.
+) provide some indications which might be telling of what can be expected
+ of further combinations.
+ 
+\end_layout
+
+\begin_layout Standard
+In particular, in the combinations tested, gains of the different schemes
+ did accumulate, but the combined effects were lower than simply a sum of
+ the gains of individual schemes.
  
 \begin_inset Float table
 wide false
@@ -12879,7 +13058,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-8em}{-8em}
+begin{adjustwidth}{-7em}{-7em}
 \end_layout
 
 \end_inset
@@ -12969,9 +13148,23 @@ greater
  than the sum of the particular effects alone should not be ruled out.
  Imagine for example that adding a gender feature on nouns and verbs yield
  moderate effects individually.
- The two in combination however would allow the parser to model agreement
+ The two in combination, however, would allow the parser to model agreement
  in gender and likely yield a much greater effect.
  
+\end_layout
+
+\begin_layout Section
+Unreported features
+\end_layout
+
+\begin_layout Standard
+A number of other augmentation schemes were explored, including features
+ indicating capitalization, verb-counting features and features with 
+\begin_inset Formula $n$
+\end_inset
+
+-gram suffixes of word forms.
+ These schemes did not yield convincing results, and are not reported.
 \end_layout
 
 \begin_layout Chapter
@@ -12985,15 +13178,19 @@ I set out to examine the possibility of enhancing state of the art data-driven
  look was taken on two data-driven approaches to the parsing problem.
  MSTParser, a model of the graph-based approach, was chosen for augmentation
  experiments.
- A litterature review reveals that the idea of augmenting treebanks is not
+ 
+\end_layout
+
+\begin_layout Standard
+A litterature review revealed that the idea of augmenting treebanks is not
  entirely new.
- Nonetheless, several novel augmentation schemes were proposed and tested
- in this project, many of which were found to give significant improvements
- in parsing accuracy of relevant treebanks.
+ Nonetheless, in this project, several novel augmentation schemes were proposed
+ and tested, several of which were found to significantly improveme parsing
+ accuracy of relevant treebanks.
  Additionally, some previously proposed augmentations (or variations hereof)
  were tested on new languages.
  To quantify effects of treebank augmentation, an evaluation method involving
- sentence-level categorization of treebank testsets is proposed and employed
+ sentence-level categorization of treebank test sets was proposed, and employed
  in evaluating feature designs.
 \end_layout
 
@@ -13011,11 +13208,11 @@ Two augmentation schemes for quotations were evaluated:
 \noun on
 QuotedPhrase
 \noun default
-, which focuses on the tokens quoted, and 
+, which focuses on the tokens that are quoted, and 
 \noun on
 QuotationMark
 \noun default
-, which modifies the punctuation tokens that indicate quotations.
+, which instead modifies the punctuation tokens indicating quotations.
  Both were found to significantly improve parsing accuracy of the Danish
  Dependency Treebank, with the former showing the strongest effect.
  
@@ -13031,7 +13228,8 @@ Enhancements in parsing accuracy from the
 \noun on
 Parenthesis
 \noun default
- scheme were observed for Swedish and Italian, but were not significant.
+ scheme were observed for Swedish and Italian, but were not statistically
+ significant.
  The same goes for the 
 \noun on
 Colon 
@@ -13044,8 +13242,8 @@ A scheme targeting nominal appositions (
 \noun on
 CommaApposition
 \noun default
-) was found to improve parsing of the sentences with appositions, but the
- observed effect was bordering on the 0.05-level of statistical significance.
+) was found to improve parsing of Spanish sentences with appositions, but
+ the observed effect was bordering on the 0.05-level of statistical significance.
  The approach seems promising, but could benefit from a better method of
  identifying appositions for augmentation.
 \end_layout
@@ -13083,7 +13281,7 @@ Lemma
 \noun on
 LemmaOnly
 \noun default
-), parsing accuracy rose significantly.
+), parsing accuracy increased significantly over the baseline.
 \end_layout
 
 \begin_layout Standard
@@ -13106,8 +13304,8 @@ While the treebank augmentations explored clearly have potential, they also
  to the kind of text in the treebank.
  An augmentation for quotations for example must be able to handle the quotation
  style of the text, and will not be of much use when an unexpected quotation
- style is used -- or when there are very few or no quotations at all, for
- that matter.
+ style is encountered -- or when there are very few or no quotations at
+ all, for that matter.
 \end_layout
 
 \begin_layout Standard
@@ -13115,8 +13313,15 @@ That being said, it seems only fair to regard this as a task to be handled
  by augmentation systems, if they are to be of any value in production grade
  data-driven systems.
  In other words, augmentation systems for use in data-driven parsing should
- be sensitive to and detect punctuational and annotational conventions,
- and be able to accomodate.
+ be sensitive to and 
+\emph on
+detect
+\emph default
+ punctuational and annotational conventions, and be able to 
+\emph on
+accommodate
+\emph default
+.
  As a trivial example, an augmentation scheme for quotations should detect
  whether guillemets occur as 
 \emph on
@@ -13171,8 +13376,8 @@ parsing
 systems Working exclusively with the graph-based MSTParser really begs the
  question: How would the proposed augmentation schemes work with a transition-ba
 sed parser, such as the MaltParser? It would be straight forward to plug
- the MaltParser into to the augmentation and evaluation pipeline set up
- for this project and see how the obtained effects compare.
+ the MaltParser into to the experimental pipeline set up for this project,
+ and see how the obtained effects compare.
 \end_layout
 
 \begin_layout Description
@@ -13186,8 +13391,8 @@ parser
 
 configurations While the MSTParser was the highest scoring system at CoNLL
  for several of the languages, the results at the conference were obtained
- with a version of the MSTParser which only predicts unlabeled dependencies.
- Dependency arcs were then labeled using a separate component.
+ with a version of the MSTParser which predicts unlabeled dependencies only.
+ Dependencies were then labeled using a separate component.
  This configuration lead to slightly better results than those obtainable
  with the publicly available MSTParser.
  As such, the 
@@ -13198,10 +13403,19 @@ baseline
  in standard configuration) are -- regrettably -- not comparable to those
  at CoNLL.
  It could be interesting to use the actual CoNLL setup, so that the results
- reported at CoNLL could be reproduced and bring the baselines on par with
- the state of the art.
- For direct comparison to CoNLL results, one would also have to disregard
- punctuation in the evalutation.
+ reported at CoNLL could be reproduced, and the baselines of experiments
+ brought on par with the state of the art
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For direct comparison to CoNLL results, one would also have to disregard
+ punctuation in the evalutation
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Description
@@ -13247,12 +13461,12 @@ coordination
 \begin_inset space ~
 \end_inset
 
-structure Along similar lines, converting the 
+structure Along similar lines, it could prove efficacious to transform coordinat
+ions using the 
 \emph on
 coordinated conjunction as head
 \emph default
- (CCH) convention for coordinations in a treebank that uses this into one
- of the other conventions could prove efficacious.
+ (CCH) convention into using one of the other conventions.
  As discussed in relation to the CoNLL results in section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -13260,8 +13474,7 @@ reference "sub:CoNLL-results"
 
 \end_inset
 
-, the CCH convention for coordinations could seem to cause difficulties
- in parsing.
+, the CCH convention for coordinations seems to cause difficulties in parsing.
  An augmentation scheme for transforming this annotational convention would
  allow an attempt to substantiate this suspicion without having to compare
  across treebanks
@@ -13311,7 +13524,18 @@ key "vrelid_when_2007"
  Although highly related to definiteness, the givenness essentially reflects
  the information status of an entity: Has it been introduced previously,
  or is this the first mention in the discourse? It could be interesting
- to obtain givenness automatically by examining a window of preceding sentences.
+ to obtain givenness automatically by examining a window of preceding sentences
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For this to be feasible, one would have to use a treebank where continuity
+ of sentences is a reasonable assumption.
+\end_layout
+
+\end_inset
+
+.
  One would probably have to employ a WordNet or other lexical database and
  traverse hyponymy relations in identifying previous mentions of an entity.
  
@@ -13336,7 +13560,7 @@ are often used for emphasis, but also to
 \emph on
 mention
 \emph default
- word or phrase, as opposed to 
+ a word or a phrase, as opposed to 
 \emph on
 using
 \emph default
@@ -13349,7 +13573,7 @@ key "saka_quotation_1998"
 
 .
  Mentioned words do not participate in sentence structure in quite the same
- way as used words.
+ way as words that are actually being used.
  As an example of this, the mentioned verb in 
 \begin_inset Quotes eld
 \end_inset
@@ -13399,10 +13623,10 @@ agnostic) system for
 high-level segmentation
 \emph default
  of a sentence.
- Also, if one were to design a feature which in general indicates whether
- a token could potentially be head of the sentence as a whole, a high-level
- structural analysis such as this would also be very handy for excluding
- candidates for the sentence head.
+ Also, if one were to design a feature indicating whether a token could
+ potentially be head of the sentence as a whole, a high-level structural
+ analysis such as this would also be very handy for excluding e.g.
+ parenthetical tokens from being candidates for the sentence head.
  The segmentation system could be punctuation-based
 \begin_inset Foot
 status open
@@ -13412,12 +13636,12 @@ As augmentation takes place
 \emph on
 before
 \emph default
- the syntactic analysis, it cannot rely on a the syntactic analysis for
+ the syntactic analysis, it cannot rely on the dependency structure for
  identifying the scopes to which the augmentation should apply.
  Punctuation and other superficial properties could be a good basis for
- the segmentation.
+ a high-level segmentation.
  There will likely be cases of ambiguity which require a deeper analysis
- to be resolved, so a joint segmentation and syntactic analysis could also
+ to be resolved, so a joint segmentation and dependency analysis could also
  prove useful.
 \end_layout
 
@@ -13451,11 +13675,20 @@ parentheticals Pairs of hyphens and commas can introduce appositions as
  well as parentheticals.
  While appositions function in parallel to another sentence element, parenthetic
 al remarks exhibit a more varied attachment.
- The proposed augmentations do not clearly distinguish the two (although
- the simple heuristic used for identifying appositions matches single tokens
- only, thus effectively ruling out parenthetical use).
+ The proposed augmentations do not clearly distinguish the two (
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Although the simple heuristic used for identifying appositions matches single
+ tokens only, thus effectively ruling out most parentheticals.
+\end_layout
+
+\end_inset
+
+.
  It might be feasible to discriminate the different usages of hyphen or
- comma pairs.
+ comma pairs, thus allowing differentiated treatment by the parser.
 \end_layout
 
 \begin_layout Description
@@ -13464,7 +13697,11 @@ Separate
 \end_inset
 
 parsing Quotations and other parenthethicals which are complete on their
- own right, might benefit from being parsed out of context, i.e.
+ own right, might benefit from being parsed 
+\emph on
+out of context
+\emph default
+, i.e.
  as separate sentences, without interference from (and interfering with)
  the outer sentence.
 \end_layout
@@ -13484,9 +13721,10 @@ out of reach
 \begin_inset Quotes erd
 \end_inset
 
- for the parser deep within a subtree, it might be beneficial to expose
- these to the parser, possibly through a unification-like process similar
- to that of LFG 
+ for the parser (e.g.
+ deep within a subtree), it might be beneficial to expose such features
+ to the parser, possibly through a unification-like process similar to that
+ of LFG 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kaplan_lexical_1982"
@@ -13505,6 +13743,24 @@ key "sag_head-driven_1994"
  Depending on the dependency relations of the subtree, it could make sense
  for the whole subtree to assume e.g.
  a semantic feature such a animacy or givenness from the noun.
+ Of course, such unification-like processes are not achievable by treebank
+ augmentation.
+ It would require modification of the parsing algorithm, and a small grammar-lik
+e set set of rules stating in which cases feature should propagate upward.
+ As such, it borders on a hybrid between a data-driven and a grammar-based
+ system.
+\end_layout
+
+\begin_layout Section
+Final thoughts
+\end_layout
+
+\begin_layout Standard
+Overall, several of the proposed augmentation schemes were shown to be effective.
+ Occurring as a pre-processing step to training and parsing, the augmentations
+ are highly modular and practically independent of the parsing system used.
+ As such, the proposed augmentations provide an immediate opportunity to
+ increase parsing accuracy of existing parsing systems.
 \end_layout
 
 \begin_layout Chapter*
@@ -13517,9 +13773,9 @@ I would like to thank Bart Jongejan for kindly granting access to the Danish
  This not only led to interesting observations in regard to lemmatization,
  but also made experiments with Lilja Øvrelids ported animacy classification
  possible.
- I am grateful to her for letting me use her ported animacy classification
+ I am grateful to Lilja for letting me use her ported animacy classification
  and for providing guidelines for usage.
- Furthermore, I would like to extend my gratitude to all treebanks authors,
+ Furthermore, I would like to extend my gratitude to all treebank authors,
  especially those who made the results their efforts publicly available,
  and to Sebastian Riedel and Ivan Vladimir for the utility 
 \emph on
@@ -13528,6 +13784,26 @@ What's Wrong with my NLP?
 , which has been very handy for inspecting parse trees.
  Finally, a big trank you to Anders Søgaard, who not only gave invaluable
  guidance, but also provided the research idea and lots of encouraging feedback.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+renewcommand
+\backslash
+bibname{
+References
+\lang english
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -13543,27 +13819,470 @@ options "bibtotoc,plainnat"
 
 \begin_layout Chapter
 \start_of_appendix
-Observations
+Example runtime session
 \end_layout
 
 \begin_layout Standard
-Include?
+What follows here is a few examples to illustrate the usage of the augmentation
+ tools.
+ 
 \end_layout
 
-\begin_layout Chapter
-Source code
-\end_layout
-
-\begin_layout Standard
-Include?
-\end_layout
-
-\begin_layout Chapter
-Example runtime output
+\begin_layout Section
+Augmentation
 \end_layout
 
 \begin_layout Standard
-Include?
+With a treebank laid out in two or three subdirectories containing a training
+ part, a test part and possibly system output, we can apply e.g.
+ the 
+\noun on
+Bullet
+\noun default
+ augmentation to all parts as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Christians-MacBook% bin/corpus.rb annotate --kind bullet danish/ddt
+\end_layout
+
+\begin_layout Plain Layout
+
+     [mkdir] danish/ddt-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+  [baseline] danish/ddt/system/out.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+     [mkdir] danish/ddt-bullet/baseline
+\end_layout
+
+\begin_layout Plain Layout
+
+   [augment] danish/ddt/system/out.conll (bullet)
+\end_layout
+
+\begin_layout Plain Layout
+
+      [save] danish/ddt/system/out.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+              => danish/ddt-bullet/baseline/out.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+     [mkdir] danish/ddt-bullet/test
+\end_layout
+
+\begin_layout Plain Layout
+
+   [augment] danish/ddt/test/danish_ddt_test.conll (bullet)
+\end_layout
+
+\begin_layout Plain Layout
+
+      [save] danish/ddt/test/danish_ddt_test.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+              => danish/ddt-bullet/test/danish_ddt_test.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+     [mkdir] danish/ddt-bullet/train
+\end_layout
+
+\begin_layout Plain Layout
+
+   [augment] danish/ddt/train/danish_ddt_train.conll (bullet)
+\end_layout
+
+\begin_layout Plain Layout
+
+      [save] danish/ddt/train/danish_ddt_train.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+              => danish/ddt-bullet/train/danish_ddt_train.conll
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This results in a new directory (
+\family typewriter
+danish-bullet
+\family default
+) being created, containing augmented copies of the treebank files.
+ Several augmentations can also be applied using the option 
+\family typewriter
+--kinds scheme1,scheme2[,...
+\family default
+].
+\end_layout
+
+\begin_layout Section
+Training and testing
+\end_layout
+
+\begin_layout Standard
+We can now train and test a parser on the augmented treebank:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Christians-MacBook% bin/experiment/run danish/ddt-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+Creating Alphabet ...
+\end_layout
+
+\begin_layout Plain Layout
+
+[...lots of output...]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Depending on the size of the treebank and the feature space, training can
+ take several hours.
+ Parsed sentences are placed in the file 
+\family typewriter
+danish-bullet/system/out.conll
+\family default
+.
+ 
+\end_layout
+
+\begin_layout Section
+Comparison to baseline
+\end_layout
+
+\begin_layout Standard
+Let us compare the performance of the system to the baseline:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Christians-MacBook% bin/corpus.rb compare danish/ddt-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+[gold] danish/ddt-bullet/test/danish_ddt_test.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+[eval] danish/ddt-bullet/baseline/out.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+  Labeled   attachment score: 4851 / 5852 * 100 = 82.89 %
+\end_layout
+
+\begin_layout Plain Layout
+
+  Unlabeled attachment score: 5157 / 5852 * 100 = 88.12 %
+\end_layout
+
+\begin_layout Plain Layout
+
+  Label accuracy score:       5269 / 5852 * 100 = 90.04 %
+\end_layout
+
+\begin_layout Plain Layout
+
+[eval] danish/ddt-bullet/system/out.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+  Labeled   attachment score: 4891 / 5852 * 100 = 83.58 %
+\end_layout
+
+\begin_layout Plain Layout
+
+  Unlabeled attachment score: 5182 / 5852 * 100 = 88.55 %
+\end_layout
+
+\begin_layout Plain Layout
+
+  Label accuracy score:       5284 / 5852 * 100 = 90.29 %
+\end_layout
+
+\begin_layout Plain Layout
+
+[evalb] danish/ddt-bullet/baseline/out.conll 
+\end_layout
+
+\begin_layout Plain Layout
+
+         => danish/ddt-bullet/baseline/evalb.out
+\end_layout
+
+\begin_layout Plain Layout
+
+[evalb] danish/ddt-bullet/system/out.conll 
+\end_layout
+
+\begin_layout Plain Layout
+
+         => danish/ddt-bullet/system/evalb.out
+\end_layout
+
+\begin_layout Plain Layout
+
+[compare] danish/ddt-bullet/baseline/evalb.out danish/ddt-bullet/system/evalb.out
+\end_layout
+
+\begin_layout Plain Layout
+
+model1: recall=89.3285013399299, precision=82.8947812713602
+\end_layout
+
+\begin_layout Plain Layout
+
+model2: recall=89.7542404416275, precision=83.5782501708817
+\end_layout
+
+\begin_layout Plain Layout
+
+model2 recall - model1 recall = 0.425739101697587
+\end_layout
+
+\begin_layout Plain Layout
+
+model2 precision - model1 precision = 0.683468899521529
+\end_layout
+
+\begin_layout Plain Layout
+
+number of random recall diferences equal to or greater than
+\end_layout
+
+\begin_layout Plain Layout
+
+	original observed difference: 581
+\end_layout
+
+\begin_layout Plain Layout
+
+number of random precision diferences equal to or greater than
+\end_layout
+
+\begin_layout Plain Layout
+
+	original observed difference: 107
+\end_layout
+
+\begin_layout Plain Layout
+
+p-value for recall diff: 0.0581941805819418
+\end_layout
+
+\begin_layout Plain Layout
+
+p-value for precision diff: 0.0107989201079892
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This applies the CoNLL eval script to both the system and the baseline,
+ and uses the produced evalb to estimate statistical significance using
+ Dan Bikel's Randomized Parsing Evaluation Comparator.
+ 
+\end_layout
+
+\begin_layout Section
+Focused evaluation
+\end_layout
+
+\begin_layout Standard
+If we wish to evaluate performance on only the sentences that were affected
+ by the augmentation, we first need to categorize the baseline, system and
+ gold standard sentences based on the augmentation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\scriptsize\ttfamily},breaklines=true"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Christians-MacBook% bin/corpus.rb categorize --kind bullet danish/ddt-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+      [gold] danish/ddt-bullet/test/danish_ddt_test.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+[categorize] danish/ddt-bullet/baseline/out.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+     [mkdir] danish/ddt-bullet/baseline/no-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+      [part] no-bullet 
+\end_layout
+
+\begin_layout Plain Layout
+
+              => danish/ddt-bullet/baseline/no-bullet/out.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+     [mkdir] danish/ddt-bullet/baseline/has-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+      [part] has-bullet 
+\end_layout
+
+\begin_layout Plain Layout
+
+              => danish/ddt-bullet/baseline/has-bullet/out.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+[categorize] danish/ddt-bullet/test/danish_ddt_test.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+     [mkdir] danish/ddt-bullet/test/no-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+      [part] no-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+              => danish/ddt-bullet/test/no-bullet/danish_ddt_test.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+     [mkdir] danish/ddt-bullet/test/has-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+      [part] has-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+              => danish/ddt-bullet/test/has-bullet/danish_ddt_test.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+[categorize] danish/ddt-bullet/system/out.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+     [mkdir] danish/ddt-bullet/system/no-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+      [part] no-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+              => danish/ddt-bullet/system/no-bullet/out.conll
+\end_layout
+
+\begin_layout Plain Layout
+
+     [mkdir] danish/ddt-bullet/system/has-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+      [part] has-bullet
+\end_layout
+
+\begin_layout Plain Layout
+
+              => danish/ddt-bullet/system/has-bullet/out.conll
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can now repeat the comparison procedure for each of the categories 
+\emph on
+has-bullet
+\emph default
+ and 
+\emph on
+no-bullet
+\emph default
+.
 \end_layout
 
 \end_body

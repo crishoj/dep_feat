@@ -1,0 +1,17 @@
+Christians-MacBook% bin/corpus.rb categorize --kind bullet danish/ddt-bullet
+      [gold] danish/ddt-bullet/test/danish_ddt_test.conll
+[categorize] danish/ddt-bullet/baseline/out.conll
+     [mkdir] danish/ddt-bullet/baseline/no-bullet
+      [part] no-bullet => danish/ddt-bullet/baseline/no-bullet/out.conll
+     [mkdir] danish/ddt-bullet/baseline/has-bullet
+      [part] has-bullet => danish/ddt-bullet/baseline/has-bullet/out.conll
+[categorize] danish/ddt-bullet/test/danish_ddt_test.conll
+     [mkdir] danish/ddt-bullet/test/no-bullet
+      [part] no-bullet => danish/ddt-bullet/test/no-bullet/danish_ddt_test.conll
+     [mkdir] danish/ddt-bullet/test/has-bullet
+      [part] has-bullet => danish/ddt-bullet/test/has-bullet/danish_ddt_test.conll
+[categorize] danish/ddt-bullet/system/out.conll
+     [mkdir] danish/ddt-bullet/system/no-bullet
+      [part] no-bullet => danish/ddt-bullet/system/no-bullet/out.conll
+     [mkdir] danish/ddt-bullet/system/has-bullet
+      [part] has-bullet => danish/ddt-bullet/system/has-bullet/out.conll

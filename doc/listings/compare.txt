@@ -1,0 +1,24 @@
+Christians-MacBook% bin/corpus.rb compare danish/ddt-bullet
+[gold] danish/ddt-bullet/test/danish_ddt_test.conll
+[eval] danish/ddt-bullet/baseline/out.conll
+  Labeled   attachment score: 4851 / 5852 * 100 = 82.89 %
+  Unlabeled attachment score: 5157 / 5852 * 100 = 88.12 %
+  Label accuracy score:       5269 / 5852 * 100 = 90.04 %
+[eval] danish/ddt-bullet/system/out.conll
+  Labeled   attachment score: 4891 / 5852 * 100 = 83.58 %
+  Unlabeled attachment score: 5182 / 5852 * 100 = 88.55 %
+  Label accuracy score:       5284 / 5852 * 100 = 90.29 %
+[evalb] danish/ddt-bullet/baseline/out.conll => danish/ddt-bullet/baseline/evalb.out
+[evalb] danish/ddt-bullet/system/out.conll => danish/ddt-bullet/system/evalb.out
+[compare] danish/ddt-bullet/baseline/evalb.out danish/ddt-bullet/system/evalb.out
+5852
+model1: recall=89.3285013399299, precision=82.8947812713602
+model2: recall=89.7542404416275, precision=83.5782501708817
+model2 recall - model1 recall = 0.425739101697587
+model2 precision - model1 precision = 0.683468899521529
+number of random recall diferences equal to or greater than
+	original observed difference: 581
+number of random precision diferences equal to or greater than
+	original observed difference: 107
+p-value for recall diff: 0.0581941805819418
+p-value for precision diff: 0.0107989201079892
