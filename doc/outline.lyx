@@ -23,7 +23,7 @@
 \paperfontsize default
 \spacing single
 \use_hyperref false
-\papersize default
+\papersize a4paper
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
@@ -135,26 +135,26 @@ r, volder i mange tilfælde problemer for de datadrevne systemer, antageligvis
 
 \begin_layout Abstract
 Hypotesen for undersøgelsen er den, at tilføjelse af træk strategiske steder
- i træbanker kan tillade det datadrevne system at tilse disse problematiske
- konstruktioner en særlig behandling i den indlærte model, og derved højne
- parserens analytiske nøjagtighed.
+ i træbanker kan tillade det datadrevne system at tilse problematiske konstrukti
+oner en særlig behandling i den indlærte model, og derved højne parserens
+ analytiske nøjagtighed.
 \end_layout
 
 \begin_layout Abstract
 \paragraph_spacing single
-En indledende undersøgelse af en referenceparsers behandling af træbanker
- på forskellige sprog anvendes til at udpege nogle mulige indsatsområder.
+I en indledende undersøgelse af en referenceparsers behandling af træbanker
+ på forskellige sprog identificeres nogle mulige indsatsområder.
  En række konkrete muligheder for berigelse af træbankerne foreslås og afprøves.
- I adskillige tilfælde opnås signifikante forbedringer ved berigelserne
+ I adskillige tilfælde opnås ved berigelserne signifikante forbedringer
  i forhold til referenceparseren, særligt i forbindelse med inskydninger
  som citationer og parentesiske bemærkninger, men også ved indførsel af
- træk, der markerer atypisk brug af tegnsætning, eksempelvis i listeopstillinger.
+ træk rettet mod atypisk brug af tegnsætning, eksempelvis i listeopstillinger.
 \end_layout
 
 \begin_layout Abstract
 Tilgangen er lovende, men også forbundet med visse udfordringer, herunder
- specificitet for sprog, konventioner for tegnsætning og den anvendte opmærkning
- i træbankerne.
+ specificitet for sprog, konventioner for tegnsætning og i nogle tilfælde
+ den anvendte opmærkning i træbankerne.
  Ikke desto mindre rummer flere af de foreslåede træk umiddelbar mulighed
  for at forbedre de mest avancerede af dagens datadrevne dependensparsere.
 \end_layout
@@ -180,8 +180,8 @@ Language competence might well be among the most impressive of cognitive
  Thanks to the generative quality of language, by which phrases and sentences
  may be combined and embedded within each other recursively, the extension
  of language is potentially limitless.
- On the comprehension side, structureally ambigous and semantically underspecifi
-ed utterances are swiftly decoded and assigned with a likely interpretation.
+ On the comprehension side, structurally ambigous and semantically underspecifie
+d utterances are swiftly decoded and assigned with a likely interpretation.
  A task that from a formal point of view has immense complexity is continually
  carried out by the language user, seemingly without any effort.
  During this process the comprehender presumably registers a variety of
@@ -216,17 +216,13 @@ flocculation
  sentence.
  Clarifying remarks in the middle of an utterence might be indicated by
  a brief pause.
- And when my mother reports on a heated discussion with a salesperson, a
- clear change in tone of voice provides me with an indication of when she
- is 
+ And -- with a practical example -- when my mother reports on a heated discussio
+n with a salesperson, a clear change in the tone of her voice provides me
+ with an indication of when she is 
 \emph on
 directly reporting
 \emph default
  the other person's speech.
-\end_layout
-
-\begin_layout Standard
-EXPAND: quotations in Danish?
 \end_layout
 
 \begin_layout Standard
@@ -253,10 +249,10 @@ One approach to automatic syntactic analysis, referred to as
 \emph on
 dependency parsing
 \emph default
-, has gained increasing interest in the last decade.
+, has seen an increasing interest in the last decade.
  While neither dependency parsing nor the underlying formalism of 
 \emph on
-dependency grammer
+dependency grammar
 \emph default
  are new inventions, the intense interest likely stems from the success
  researches have had in constructing dependency parsers that do not rely
@@ -329,8 +325,8 @@ So, the focus area of this project is squarely investigating feature engineering
  in data-driven parsing systems.
  But conversely, such experiments with feature engineering in data-driven
  parsing systems may also offer an interesting opportunity to investigate
- which features of spoken or written utterances might be of value for comprehens
-ion in genereal -- including human.
+ which features of spoken or written utterances might be of value for analyses
+ in genereal -- including human comprehension.
  Given a sufficiently capable and trainable parsing model, if we are interested
  in whether for example capitalization of written text could play any role
  in comprehension, we could train two models with the same training material,
@@ -357,7 +353,7 @@ An Overview of Data-Driven Dependency Parsing
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -403,7 +399,7 @@ name "Flo:ex-dep"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -453,8 +449,8 @@ By some estimates the tradition of dependency grammar can be traced as far
 
  a few centuries before the Common Era.
  The tradition includes a large and diverse family of grammatical theories
- and formalisms, all sharing the basic assumption that syntactic structures
- essentially consists of 
+ and formalisms, all sharing the basic assumption that the syntactic structure
+ of sentences essentially consists of 
 \emph on
 words
 \emph default
@@ -495,7 +491,7 @@ non-terminal
 \emph default
  nodes, each of which may in turn be related to another non-terminal node.
  A non-terminal node in a constituency structure is not manifest in the
- surface form of the sentence, but forms a group of words, or a 
+ surface form of the sentence, but represents a group of words, or a 
 \emph on
 phrase
 \emph default
@@ -574,7 +570,7 @@ The linear position of a dependent is speciﬁed with reference to the head.
 These criteria refer to a mix of phenomena on different levels of linguictics
  analysis, from morphosyntax to semantics.
  There seems to be no universally authoritative set of criteria for all
- dependency relations 
+ dependency formalisms 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "kbler_dependency_2009"
@@ -636,7 +632,11 @@ multi-stratal
 \emph default
  representations exist, in which several levels of analysis is represented
  in the same structure.
- For this project, the focus is exclusively on mono-stratal syntactic analysis.
+ For this project, the focus is exclusively on 
+\emph on
+mono-stratal syntactic analysis
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
@@ -686,8 +686,11 @@ S=w_{0}w_{1}...w_{n}\]
 \end_layout
 
 \begin_layout Standard
-Dependency structure is defined on these tokens, so tokenization of the
- sentence must have taken place prior to the dependency analysis.
+Dependency structure is defined on these tokens, so 
+\emph on
+tokenization
+\emph default
+ of the sentence must have taken place prior to the dependency analysis.
  Further, let 
 \begin_inset Formula $R$
 \end_inset
@@ -910,9 +913,10 @@ single-head property
 guests enter and exit through the lobby
 \emph default
  -- it would appear reasonable to let the subject depend on both verbs.
- Most formalisms deal with dependents of coordinated phrases by simply letting
- the dependent modify the head of the coordinated phrase -- whether it is
- chosen to be the coordination itself or one of the coordinated tokens.
+ Most formalisms maintain the single head constraint and deal with dependents
+ of coordinated phrases by simply letting the dependent modify the head
+ of the coordinated phrase -- whether it is chosen to be the conjunction
+ itself or one of the coordinated tokens.
 \end_layout
 
 \begin_layout Subsection
@@ -924,7 +928,7 @@ Projectivity
 placement b
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -977,12 +981,12 @@ A further restriction on dependency trees is often assumed for reasons of
 projectiveness
 \emph default
 .
- A dependency tree if projective if and only if it satisfies the 
+ A dependency tree is projective if and only if it satisfies the 
 \emph on
 planar property
 \emph default
-, namely if it is possible to graphically configure all the dependency arcs
- in a place above the sentence -- without any crossing arcs.
+, namely that it is possible to graphically configure all the dependency
+ arcs in a plane above the sentence -- without any crossing arcs.
  For such a depiction to be possible, the head 
 \begin_inset Formula $w_{i}$
 \end_inset
@@ -995,11 +999,11 @@ planar property
 \begin_inset Formula $w_{m}$
 \end_inset
 
- which occurs between the endpoints 
+ which occurs between its own endpoints 
 \begin_inset Formula $w_{i},w_{j}$
 \end_inset
 
- in the linear order of the sentence.
+ -- when regarding the linear order of tokens as they occur in the sentence.
  
 \emph on
 Dominate
@@ -1117,11 +1121,11 @@ Projectivization
 
 \begin_layout Standard
 Non-projective dependencies can be caused by wh-movement, which occurs naturally
- in many languages with SVO as dominant order.
+ in many languages with SVO as dominant word order.
  As such, projectivity is not a linguistically plausible constraint.
  In cases where it nonetheless is assumed, non-projective cases are normally
  handled by having procedures for converting non-projective trees to projective
- trees (
+ ones (
 \emph on
 projectivization
 \emph default
@@ -1141,7 +1145,7 @@ reference "fig:Projectivization"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1217,8 +1221,16 @@ data-driven
 .
  An approach is grammar-based if a formally specified and often hand-crafted
  grammar is employed in parsing, such that it makes sense to ask whether
- a given sentence is producable by the grammar or not.
- In most data-driven approaches, a method from 
+ a given sentence is 
+\emph on
+producable
+\emph default
+ by the grammar or not.
+ 
+\end_layout
+
+\begin_layout Standard
+In most data-driven approaches on the other hand, a method from 
 \emph on
 machine learning
 \emph default
@@ -1227,14 +1239,23 @@ machine learning
 \emph on
 learned parameters
 \emph default
-, which in turn is used by the parsing model to parse new sentences.
+.
+ The learned parameters are in turn used by the parsing model to parse new
+ sentences.
  It is worth noting that these categories are not mutually exclusive, as
  some approaches induce grammars from collections of analyzed sentences,
- and this are indeed both data-driven and grammar-based.
+ and thus are indeed both data-driven and grammar-based.
 \end_layout
 
 \begin_layout Standard
-In formal terms, a dependency parsing model 
+In the terminology of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "kbler_dependency_2009"
+
+\end_inset
+
+, a dependency parsing model 
 \begin_inset Formula $M$
 \end_inset
 
@@ -1306,10 +1327,10 @@ reference "Various-criteria"
 , on the specific dependency formalism in use.
  In between formalisms there are various annotational conventions, not only
  with respect to the set of dependency types used, but also differences
- in treatmeant of such phenomena as coordination 
+ in treatmeant of such phenomena as locutions 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "nivre_dependency_2005"
+key "bosco_linguistic_2008"
 
 \end_inset
 
@@ -1320,10 +1341,10 @@ key "vrelid_cross-lingual_2009"
 
 \end_inset
 
- and locutions 
+ and coordinations 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "bosco_linguistic_2008"
+key "nivre_dependency_2005"
 
 \end_inset
 
@@ -1454,8 +1475,8 @@ The core of the learning phase typically involves adjusting the parameters
 
 .
  The nature of the parameters depend on the specific parsing model in use.
- In one model, a parameter might represent the likelihood of a dependency
- arc occurring in a sentence.
+ In one model, a parameter might represent the likelihood of a specific
+ dependency arc occurring in a sentence.
  
 \begin_inset Float figure
 wide false
@@ -1573,8 +1594,12 @@ Phases of data-driven parsing.
 
 \begin_layout Standard
 For reasons of notational and computational convenience, it is common to
- introduce an artificial headless root token.
- 
+ introduce an artificial token in the beginning of the sentence, denoted
+ by 
+\noun on
+root
+\noun default
+, which has the special property of being headless.
 \end_layout
 
 \begin_layout Subsection
@@ -1600,8 +1625,8 @@ feature function
 
 .
  The specific input for the feature function depends on the parsing model,
- but almost always includes a token from the sentence, and in some cases
- the state of the parser.
+ but almost always includes one or more tokens from the sentence, and in
+ some cases the state of the parser.
  In broad terms, the feature function takes information about a sentence
  that is deemed useful for the purpose learning and parsing, and makes it
  explicit to the machine learning component, typically in the form of a
@@ -1636,7 +1661,7 @@ Similar information about adjacent tokens.
 \begin_layout Standard
 Features like these are mostly categorical, so it may not be obvious how
  to represent them in a real-valued vector space.
- The method of choice is to represent a 
+ The method of choice is to represent an 
 \begin_inset Formula $m$
 \end_inset
 
@@ -1668,12 +1693,11 @@ abstract machine
 \emph on
 state
 \emph default
- determined by the position in the sentencen and the 
+ determined by the position in the sentence and the 
 \emph on
 parsing history
 \emph default
-, ie.
- the transitions performed prior to the current state.
+, i.e., the transitions performed prior to the current state.
  
 \end_layout
 
@@ -1697,7 +1721,7 @@ key "nivre_efficient_2003,hall_single_2007"
 \end_inset
 
 .
- In these, the state -- or 
+ In shift-reduce models, the state -- or 
 \emph on
 configuration -- 
 \emph default
@@ -1758,7 +1782,7 @@ As the transition-based parser proceeds, the state contains a partial analysis
 \begin_inset Formula $\beta$
 \end_inset
 
- contains tokens remaining to be processed and the stack 
+ contains tokens remaining to be processed, and the stack 
 \begin_inset Formula $\sigma$
 \end_inset
 
@@ -1860,8 +1884,7 @@ Shift
 \noun on
 Arc
 \noun default
- transitions only only makes sense when both the stack and the buffer are
- non-empty.
+ transitions only makes sense when both the stack and the buffer are non-empty.
 \end_layout
 
 \begin_layout Standard
@@ -1881,7 +1904,7 @@ initial state
 
  until it reaches the 
 \emph on
-terminal state
+terminal state,
 \emph default
  where the buffer is empty.
  At this point the dependency tree produced by the shift-reduce parser is
@@ -1903,13 +1926,13 @@ acyclic
 \emph default
 , 
 \emph on
-spanning
+single-headed
 \emph default
  and 
 \emph on
-single-headed
+spanning 
 \emph default
-, but for some transition sequences, 
+(all tokens), but for some transition sequences, 
 \begin_inset Formula $A$
 \end_inset
 
@@ -1925,7 +1948,7 @@ key "nivre_efficient_2003"
 
 \end_inset
 
- parser, possibly disconnected trees in 
+ parser, such disconnected trees in 
 \begin_inset Formula $A$
 \end_inset
 
@@ -1934,12 +1957,28 @@ key "nivre_efficient_2003"
 \end_layout
 
 \begin_layout Standard
-As with other transition-based approaches relying on a 
-\emph on
-stack
-\emph default
- for partially processed tokens, the model outlined here is restricted to
- produce projective dependency trees 
+With a sentence of 
+\begin_inset Formula $n$
+\end_inset
+
+ tokens, the number of transitions needed for this shift-reduce parser to
+ complete is bounded by 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ If determining the transition to take can be done in a constant time, the
+ parser operates with linear time complexity 
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As with other transition-based approaches relying on a stack for partially
+ processed tokens, the model outlined here is restricted to produce projective
+ dependency trees 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "nivre_algorithms_2008"
@@ -1959,10 +1998,6 @@ ng projective dependency trees
 .
  Non-projective parses can be achieved either by modication of the parsing
  model, or by steps of pre- and post-processing.
-\end_layout
-
-\begin_layout Standard
-TODO: runtime
 \end_layout
 
 \begin_layout Standard
@@ -1989,7 +2024,7 @@ s on any of the partially processed tokens -- rather than just the most
 
 \begin_layout Standard
 For all transition-based models, the training phase essentially consists
- of learning a model of what good transitions are given the parser state,
+ of learning a model of what good transitions are, given the parser state,
  which -- to reiterate -- both involves features of the tokens currently
  being processed and the previous transitions made.
 \end_layout
@@ -1999,7 +2034,7 @@ Graph-based models
 \end_layout
 
 \begin_layout Standard
-Turning to another successful approach, the class of graph-based models,
+Turning to another popular approach, namely the class of graph-based models,
  the learning task is concerned with what a good dependency graph is like,
  rather than which transitions are good.
 \end_layout
@@ -2007,7 +2042,7 @@ Turning to another successful approach, the class of graph-based models,
 \begin_layout Standard
 Graph-based models define a scoring function over possible dependency graphs
  for a sentence, which is used at parse time in conjunction with a search
- algorithm to find for the highest-scoring graph.
+ algorithm to find the highest-scoring graph.
  This score function should provide a measure 
 \begin_inset Formula $\textrm{score}(G)$
 \end_inset
@@ -2031,10 +2066,10 @@ Arc-factored models
 \begin_layout Standard
 In the training phase, graph based models learn the parameters of the scoring
  function.
- Different scoring functions and search algorithms have been proposed, all
- sharing the common property that the scoring function is decomposed into
- smaller functions that score local properties of the graph being evaluated,
- namely single attachments (for 
+ Different scoring functions and search algorithms have been proposed, but
+ a common property is that the scoring function is decomposed into smaller
+ functions that score local properties of the graph being evaluated.
+ For for 
 \emph on
 first-order
 \emph default
@@ -2042,11 +2077,11 @@ first-order
 \emph on
 arc-factored
 \emph default
- models) or pairs of attachments (for 
+ models, the scored properties are single attachments, whereas 
 \emph on
 second-order
 \emph default
- models).
+ models score pairs of attachments.
  Typically, the score of a local property, be it a single arc or a pair,
  is calculated as a the dot product of a weight vector and the feature vector
  for the arc -- or in other words, a weighted sum of the arc features.
@@ -2061,32 +2096,7 @@ name "sub:weights"
 \end_layout
 
 \begin_layout Standard
-The score for the whole graph is typically found by summing the local property
- scores.
- The particular way in which subgraph scores is combined to achieve the
- score of the whole graph may differ between different graph-based models,
- but they share the fundamental assumption that the score of a graph 
-\begin_inset Formula $G$
-\end_inset
-
- factors through the scores of the subgraphs of 
-\begin_inset Formula $G$
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "kbler_dependency_2009"
-
-\end_inset
-
-.
- In the case of arc-factored models, where each arc is scored individually
- by the function 
-\begin_inset Formula $\lambda(w_{i},r,w_{j})$
-\end_inset
-
-, we can write
+The score for the whole graph is found by combining the local property scores
 \begin_inset Foot
 status collapsed
 
@@ -2104,12 +2114,37 @@ key "nakagawa_multilingual_2007"
 
 \end_inset
 
-:
+.
+ The particular way in which subgraph scores are combined may differ between
+ graph-based models, but a fundamental assumption is shared among all: The
+ score of a graph 
+\begin_inset Formula $G$
+\end_inset
+
+ factors through the scores of the subgraphs of 
+\begin_inset Formula $G$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kbler_dependency_2009"
+
+\end_inset
+
+.
+ Let us assume local property scores are combined by summation.
+ Then, for an arc-factored model, in which each arc is scored individually
+ by the function 
+\begin_inset Formula $\lambda(w_{i},r,w_{j})$
+\end_inset
+
+, we can write:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula \[
-\textrm{score}(G)=\sum\lambda(w_{i},r,w_{j})\]
+\textrm{score}(G)=\sum_{(w_{i},r,w_{j})\in A}\lambda(w_{i},r,w_{j})\]
 
 \end_inset
 
@@ -2134,88 +2169,12 @@ h(S,\Gamma,\lambda)=\arg\max_{G\in\mathcal{G_{S}}}\textrm{score}(G)\]
 
 \end_layout
 
-\begin_layout Standard
-The graph-theoretic term 
-\emph on
-spanning tree
-\emph default
- denotes a subgraph 
-\begin_inset Formula $G'=(V',A')$
-\end_inset
-
- of a graph 
-\begin_inset Formula $G=(V,A)$
-\end_inset
-
- which satisfies the following criteria:
-\end_layout
-
-\begin_layout Enumerate
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\noun off
-\color none
-\begin_inset Formula $G'$
-\end_inset
-
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\noun default
-\color inherit
- is a directed tree.
-\end_layout
-
-\begin_layout Enumerate
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\noun off
-\color none
-\begin_inset Formula $G'$
-\end_inset
-
- spans all the nodes of 
-\begin_inset Formula $G$
-\end_inset
-
-, that is 
-\begin_inset Formula $V=V'$
-\end_inset
-
-.
+\begin_layout Subsubsection
+Parsing as a graph search problem
 \end_layout
 
 \begin_layout Standard
-With a scoring function for subgraphs in the graph, the 
-\emph on
-maximum spanning tree
-\emph default
- (MST) for a graph 
-\begin_inset Formula $G$
-\end_inset
-
- is simply the highest scoring spanning tree for 
-\begin_inset Formula $G$
-\end_inset
-
-.
- Graph theory provides several algorithms for finding maximum spanning trees,
- which can be used if the parsing problem is cast as a graph search problem:
- Given the sentence 
+Given the sentence 
 \begin_inset Formula $S$
 \end_inset
 
@@ -2223,11 +2182,13 @@ maximum spanning tree
 \begin_inset Formula $R$
 \end_inset
 
-, let 
+, let us construct a graph 
 \begin_inset Formula $G_{S}=(A_{S},V_{S})$
 \end_inset
 
- denote the graph where the nodes 
+ which contains all possible of all possible dependency types between all
+ pairs of tokens.
+ 
 \family roman
 \series medium
 \shape up
@@ -2236,7 +2197,7 @@ maximum spanning tree
 \bar no
 \noun off
 \color none
-
+For this purpose, 
 \begin_inset Formula $V_{S}$
 \end_inset
 
@@ -2249,17 +2210,20 @@ maximum spanning tree
 \bar default
 \noun default
 \color inherit
- are the sentence tokens 
+ is the original set of tokens 
 \begin_inset Formula $\{w_{0},w_{1},...,w_{n}\}$
 \end_inset
 
- and there is an arc of all possible dependency types between all pairs
- of tokens, except for dependencies from the root token: 
+, and we want a full set of arcs for all but the root token: 
 \begin_inset Formula \[
 A_{S}=\left\{ (w_{i},r,w_{j})\vert\textrm{ for all }w_{i},w_{j}\in S\textrm{ and }r\in R\textrm{ and }j\neq0\right\} \]
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 As 
 \begin_inset Formula $G_{S}$
 \end_inset
@@ -2273,9 +2237,73 @@ As
 multi digraph
 \emph default
 .
- However, in the case of arc-factored models, which score each arc individually,
- we can safely remove all but the highest scoring arc between any two nodes,
- thus reducing the multi digraph 
+ Implicitly, 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+ contains all possible parse trees for 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ In 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+, each possible parse tree is a 
+\emph on
+spanning tree
+\emph default
+, that is, a subgraph which is forms a directed tree and 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+all the nodes of 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Using the scoring function from before to assign scores to spanning trees,
+ the 
+\emph on
+maximum spanning tree
+\emph default
+ (MST) for graph 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+ is simply the highest scoring spanning tree for 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+.
+ Or, in other words, the highest scoring parse tree.
+ Parsing the sentence is then a matter of finding the maximum spanning tree
+ of 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As arc-factored models score each arc individually, we can simplify the
+ search problem a bit by removing all but the highest scoring arc between
+ any two nodes in 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+.
+ This will effectively reduce the multi digraph 
 \begin_inset Formula $G_{S}$
 \end_inset
 
@@ -2298,16 +2326,45 @@ A'_{S} & = & \left\{ (w_{i},w_{j})\vert w_{i},w_{j}\in V_{S},j\neq0\right\} \\
 \end_layout
 
 \begin_layout Standard
-This reduction is risk-free with arc-factored models, for the maximum arc
- scores we reduced to must include those of the maximum spanning tree.
- Otherwise, it would be possible to get a higher scoring tree by substituting
+This reduction is risk-free with arc-factored models, because the arcs kept
+ in the reduced graph 
+\begin_inset Formula $G'_{S}$
+\end_inset
+
+ must include those of the maximum spanning tree.
+ This can be shown by contradiction: If a maximum spanning tree of 
+\begin_inset Formula $G_{S}$
+\end_inset
+
+ contains an arc not in 
+\begin_inset Formula $A'_{S}$
+\end_inset
+
+, then it would be possible to get a higher scoring tree by substituting
  arcs in it from 
 \begin_inset Formula $A'_{S}$
 \end_inset
 
-.
- In order to recover the arc labels, it is necassary to keep track of the
- label 
+, as 
+\begin_inset Formula $A'_{S}$
+\end_inset
+
+ by definition contains the highest scoring arcs between all pairs of nodes.
+ 
+\end_layout
+
+\begin_layout Standard
+When reducing 
+\begin_inset Formula $G{}_{S}$
+\end_inset
+
+ to the digraph 
+\begin_inset Formula $G'_{S}$
+\end_inset
+
+, we stripped the arc labels.
+ In order to recover these again, it is necassary to keep track of them,
+ simply by noting the label 
 \begin_inset Formula $r$
 \end_inset
 
@@ -2319,28 +2376,39 @@ This reduction is risk-free with arc-factored models, for the maximum arc
 \end_layout
 
 \begin_layout Standard
-The set of possible dependency trees for the sentence 
+Now, with the set of possible dependency trees for the sentence 
 \begin_inset Formula $S$
 \end_inset
 
- is identical to the set of spanning trees for 
-\begin_inset Formula $G_{S}$
+ being identical to the set of spanning trees for 
+\begin_inset Formula $G'_{S}$
 \end_inset
 
-, and with the scoring function 
+, we can use the scoring function 
 \begin_inset Formula $\textrm{score}(G)$
 \end_inset
 
- we can get the best parse by finding the maximum spanning tree of 
+ in a search for the maximum spanning tree of 
 \begin_inset Formula $G_{S}$
 \end_inset
 
-.
- A maximum spanning tree finding algorithm is Chu-Liu-Edmons, which proceeds
- in part with a greedy strategy by assigning the hightest scoring arcs to
- each node, and in part with a recursive procedure for untying possible
- loops produced in the greedy step.
- Given a sentence of length 
+ (best parse).
+ Graph theory provides several maximum spanning tree finding algorithms.
+ One such algorithm is Chu-Liu-Edmons, which proceeds by iteratively
+\end_layout
+
+\begin_layout Enumerate
+selecting the highest scoring arc for each node in greedy fashion, and
+\end_layout
+
+\begin_layout Enumerate
+using a recursive procedure for untying possible loops produced in the greedy
+ step.
+ 
+\end_layout
+
+\begin_layout Standard
+Given a sentence of length 
 \begin_inset Formula $n$
 \end_inset
 
@@ -2355,7 +2423,7 @@ key "tarjan_finding_1977"
 
 \end_inset
 
- it can be made to run in 
+, it can be made to run in 
 \begin_inset Formula $O(n^{2})$
 \end_inset
 
@@ -2379,7 +2447,7 @@ reference "sub:weights"
 
 \end_inset
 
-, arcs scores are a weighted sum of arc features 
+, an arc score is a weighted sum of arc features 
 \family roman
 \series medium
 \shape up
@@ -2411,11 +2479,11 @@ reference "sub:weights"
 \end_layout
 
 \begin_layout Standard
-For a whole dependency graph 
+For the whole dependency graph 
 \begin_inset Formula $G=(V,A)$
 \end_inset
 
- the score amounts to the sum of the arc scores:
+ the score amounts to the sum of arc scores:
 \end_layout
 
 \begin_layout Standard
@@ -2440,7 +2508,7 @@ And the dependency tree for a sentence
 \begin_inset Formula $ $
 \end_inset
 
- yielding the highest score:
+ which has the highest score:
 \end_layout
 
 \begin_layout Standard
@@ -2453,20 +2521,21 @@ h(S,\Gamma,\lambda)=\arg\max_{G\in\mathcal{G_{S}}}\textrm{score}(G)=\arg\max_{G\
 \end_layout
 
 \begin_layout Standard
-At training time, the graph-based model must learn the weight vector 
+So at training time, the graph-based model must learn the weight vector
+ 
 \begin_inset Formula $\mathbf{w}$
 \end_inset
 
  from training data.
- In the simplest case, a perceptron 
+ A simple approach is to use a perceptron 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "rosenblatt_perceptron:probabilistic_1958"
 
 \end_inset
 
- can be used to construct the weights.
- With the percepron, learning proceeds by iteratively looking at the sentences
+.
+ With the perceptron, learning proceeds by iteratively looking at sentences
  in the training data, and for each sentence:
 \end_layout
 
@@ -2518,8 +2587,8 @@ key "buchholz_conll-x_2006,nivre_conll_2007"
 
 , teams of researchers gathered in a friendly competition in multi-lingual
  data-driven dependency parsing.
- The parsing systems submitted includes several transtition- and graph-based
- models, including the graph-based MSTParser 
+ Several transtition- and graph-based models parsing systems were submitted,
+ including the graph-based MSTParser 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "mcdonald_multilingual_2006"
@@ -2533,7 +2602,8 @@ key "nivre_efficient_2003"
 
 \end_inset
 
-, jointly ranking as the best performing systems.
+.
+ These two jointly ranked as the best performing systems.
 \begin_inset Float table
 wide false
 sideways false
@@ -2553,7 +2623,7 @@ status open
 \begin_inset Caption
 
 \begin_layout Plain Layout
-Treebanks at the CoNLL shared task 
+Treebanks used at the CoNLL shared task 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hall_conll-x_2006"
@@ -2653,16 +2723,16 @@ key "buchholz_conll-x_2006"
 \end_inset
 
 .
- Treebanks used differ not only in language, but also type of text (news
- reports, academic texts, dialogue transcripts, etc.), annotational conventions
- and richness as well as in size.
- All were converted into the same flat file format format (referred to as
- 
+ The treebanks used differ not only in language, but also in type of text
+ (news reports, academic texts, dialogue transcripts, etc.), annotational
+ conventions and richness as well as in size.
+ All were converted into the same flat file format format (the 
 \emph on
 CoNLL format
 \emph default
-), allowing comparison of different systems across the whole spectrum of
- corpora.
+).
+ Having a common file format was instrumental for comparing systems across
+ the whole spectrum of corpora.
 \end_layout
 
 \begin_layout Subsection
@@ -2671,14 +2741,14 @@ CoNLL format
 
 \begin_layout Standard
 The CoNLL format has one token per line, with a blank line separating sentences.
- Lines are divided into a number of fields 
+ As described by the organizers 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "buchholz_conll_2006"
 
 \end_inset
 
-:
+, lines are divided into a number of fields :
 \end_layout
 
 \begin_layout Description
@@ -2955,7 +3025,18 @@ key "civit_building_2004,civit_cat3lb_2006"
 \end_layout
 
 \begin_layout Standard
-DATA SPLITS?
+For the shared task at the conference, each treebank was split into a training
+ set and a test set.
+ While both parts contain parse trees, the parse trees of the test sets
+ were not revealed until after the teams had finished development of their
+ systems.
+ The term 
+\emph on
+gold standard
+\emph default
+ refers to the parse trees of a test set which the systems are meant to
+ predict.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -2963,13 +3044,14 @@ Evaluation metrics
 \end_layout
 
 \begin_layout Standard
-Systems were evaluated by the 
+Systems were evaluated by comparing predicted parse trees to the gold standard,
+ and calculating the 
 \emph on
 labeled accuracy score
 \emph default
- (LAS) of the predicted parse trees, i.e.
- the percentage of dependencies where both the dependendy and its type is
- consistent with those of the gold standard parse trees.
+ (LAS), i.e.
+ the percentage of tokens in where both the predicted dependendy and its
+ type is consistent with those of the gold standard parse trees.
  Additionally, 
 \emph on
 unlabeled attachment score
@@ -3019,7 +3101,7 @@ name "sub:CoNLL-results"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align left
@@ -3632,7 +3714,7 @@ name "tab:conll-top"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align left
@@ -7756,7 +7838,7 @@ key "mcdonald_characterizingerrors_2007"
 \end_inset
 
  find several substantial differences in a detailed error analysis, with
- respect to the types of error made by each system:
+ respect to the types of errors made:
 \end_layout
 
 \begin_layout Quotation
@@ -7791,18 +7873,18 @@ MSTParser’s precision degrades as the distance to the root increases whereas
 \begin_layout Standard
 The authors also find differences in accuracy in relation to linguistic
  categories of tokens (part of speech) and dependency types, but explain
- most in terms of the inherent strengths and weaknesses of the two models
- pointed out above.
+ most of these differences in terms of the inherent strengths and weaknesses
+ of the two models pointed out above.
 \end_layout
 
 \begin_layout Standard
 They do find a marked difference in how well a specific annotational convention
- for coordinations is handled, namely 
+ for coordinations is handled, namely the 
 \emph on
 coordinating conjunction as head
 \emph default
- (CCH), which MSTParser predicts nearly 20 percentage points more accurately
- (figure 
+ (CCH) convention, which MSTParser predicts nearly 20 percentage points
+ more accurately (figure 
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "fig:Precision-coord"
@@ -7818,7 +7900,7 @@ reference "sec:Dependency-Parsing"
 \end_inset
 
 , this is the convention where the conjunction itself it head of the coordinatio
-n, thus somewhat occluding the function of the coordinate structure in the
+n, thus somewhat occluding the function of the conjuncts themselves in the
  larger syntactic structure.
  The CCH convention is contrasted to CCD, CJCJ and CJCC, in which one of
  the conjuncts act as head of the coordination.
@@ -7894,6 +7976,14 @@ name "fig:Precision-coord"
 Feature Engineering in Dependency Parsing
 \end_layout
 
+\begin_layout Standard
+In this chapter I will start out by elaborating on the intentions of this
+ project, and then proceed to take a look at similar endeavors of others.
+ Finally, I will present the main work of this project: A number of schemes
+ for augmenting treebanks.
+ 
+\end_layout
+
 \begin_layout Section
 Research question
 \end_layout
@@ -7904,7 +7994,23 @@ Data-driven dependency parsers presented at CoNLL generally perform well,
  the top systems of about 81%, there is plenty of room for improvement.
  Each parsing model has its strengths and weaknesses, and the averaged score
  is of course also an average of the weaknesses.
- What if we focus on the strengths of each model? To get a rough
+ What if we focus exclusively on the strengths of each model? To this end,
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "mcdonald_characterizingerrors_2007"
+
+\end_inset
+
+ simulated an 
+\emph on
+oracle parser
+\emph default
+, which for each sentence chose the most accurate parse of all the CoNLL
+ systems.
+ With the best parses achieved for each sentence, the labeled attachment
+ score rose to 86.9%.
+ This can be taken as a rough
 \begin_inset Foot
 status collapsed
 
@@ -7917,29 +8023,17 @@ The oracle parser suffers from error propagation in the underlying parse
 \end_inset
 
  upper bound on how much improvement can be achieved by the strengths all
- models in unison, 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "mcdonald_characterizingerrors_2007"
-
-\end_inset
-
- simulated an 
-\emph on
-oracle parser
-\emph default
- that chose the most accurate of all parses produced by the CoNLL systems.
- Labeled attachment score with the oracle parser rose to 86.9%.
- 
+ models in unison.
 \end_layout
 
 \begin_layout Standard
 In this project, instead of trying to improve parsing models themselves,
- I will turn attention to the input data for the data-driven systems: treebanks.
- Is it possilbe to augment treebanks with additional or modified features
+ I will turn attention to the input data for the data-driven systems, namely
+ the treebanks.
+ Is it possilbe to augment treebanks with additional or modified features,
  such that existing data-driven parsing systems generate better dependency
  parsers? In particular, can some linguistically motivated features reduce
- errors of tricky constructions such as parentheticals?
+ errors of tricky constructions such as quotations and parentheticals?
 \end_layout
 
 \begin_layout Section
@@ -7948,11 +8042,10 @@ Review of literature and research
 
 \begin_layout Standard
 Feature engineering has already received a fair amount of interest.
- Partly from parser creators, as they must choose which features of which
+ Partly from parser creators, as they must choose what features of which
  tokens -- and in which combinations -- to let their parser consider, and
- partly from people researchers wanting to improve performance of existing
- systems.
- I will not attempt a systematic and exhaustive overview -- instead, I'll
+ partly from researchers wanting to improve performance of existing systems.
+ I will not attempt a systematic and exhaustive overview -- instead, I will
  treat the field a bit like a zoo and merely point out some of the interesting
  animals.
 \end_layout
@@ -8000,7 +8093,7 @@ They describe prelimenary experiments with engineering a feature to improve
  Unfortunately, accuracy for other word types decreases somewhat, resulting
  in no signiﬁcant net accuracy change.
  Nevertheless, this very preliminary experiment suggests that wider-range
- features may be useful in improv ing the recognition of overall sentence
+ features may be useful in improving the recognition of overall sentence
  structure.
  
 \end_layout
@@ -8040,16 +8133,20 @@ key "attardi_chunking_2008"
 \begin_layout Quotation
 Knowledge about chunks can be helpful to a Shift/Reduce dependency parser,
  since it typically operates with a limited lookahead and hence has only
- a narrower vision of the phrase being analyzed than for instance a Maxi-
- mum Spanning Tree parser [...].
+ a narrower vision of the phrase being analyzed than for instance a Maximum
+ Spanning Tree parser [...].
 \end_layout
 
 \begin_layout Standard
 However, the chunking is done on the basis of gold standard (manual) annotation.
- When they use a statistical chunker instead, the effect is reduced, likely
- due to propagation of errors in the statistical chunking.
- Thinking that the parser might as well perform the chunking task, they
- then resort to only chunking 
+ When using a statistical chunker instead, the effect is reduced, likely
+ due to propagation of errors from the statistical chunking.
+ Thinking that the 
+\emph on
+parser
+\emph default
+ might as well perform the chunking task, they then resort to only chunking
+ 
 \emph on
 simple noun phrases
 \emph default
@@ -8057,10 +8154,10 @@ simple noun phrases
 \end_layout
 
 \begin_layout Quotation
-Chunking exploits POS tags produced by previous process- ing steps and hence
- using a chunker leads to a more com- plex layered parser architecture.
- But since the parser it- self may have access to the same information that
- the chun- ker uses to infer the chunks, one may wonder whether the parser
+Chunking exploits POS tags produced by previous processing steps and hence
+ using a chunker leads to a more complex layered parser architecture.
+ But since the parser itself may have access to the same information that
+ the chunker uses to infer the chunks, one may wonder whether the parser
  might itself subsume the task of the chunker.
  We will show that indeed the addition of simple chunker-like features allows
  the parser to achieve an accuracy close to that from using gold chunk data.
@@ -8109,7 +8206,7 @@ report of trouble parsing spontaneous Japanese speech:
 \begin_layout Standard
 They then employ a support vector machine (SVM) based chunker that considers
  information on morphemes, pauses and ﬁllers in the transcribed spontaneous
- speech to identify 
+ speech, in order to identify 
 \noun on
 quotation
 \noun default
@@ -8117,8 +8214,8 @@ s and
 \noun on
 inserted clause
 \noun default
-s, and find that the clause boundaries improve accurary of dependency structure
- analysis.
+s, and find that augmenting the treebank with clause boundaries improve
+ accurary of dependency structure analysis.
 \end_layout
 
 \begin_layout Standard
@@ -8164,8 +8261,12 @@ semantic super tagging
 \emph on
 second order feature maps
 \emph default
-, which explicitly represent pairs of all features, essentially allowing
- the model to learn correlations of feature co-occurrences.
+, which explicitly represent 
+\emph on
+pairs
+\emph default
+ of all features, essentially allowing the model to learn correlations of
+ feature co-occurrences.
 \end_layout
 
 \begin_layout Subsection
@@ -8179,10 +8280,10 @@ key "vrelid_when_2007"
 
 \end_inset
 
- note that parsing of Swedish poses special problems for the identiﬁcation
- of subjects and objects due to limited case marking and ambiguous word
- order patterns.
- Referring to the survey work of 
+ note that in parsing of Swedish, identiﬁcation of subjects and objects
+ is problematic, due to limited case marking and ambiguous word order patterns
+ in Swedish.
+ Referring to a statistical corpus study by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "de_swart_animacy_2008"
@@ -8204,7 +8305,7 @@ animacy
  Introducing a feature of 
 \emph on
 \noun on
-animateness
+animacy
 \emph default
 \noun default
  in the Swedish treebank, she achieves modest but significant (
@@ -8245,6 +8346,7 @@ voice
 \end_layout
 
 \begin_layout Standard
+Along similar lines,
 \begin_inset CommandInset citation
 LatexCommand citet
 key "bharati_two_2008"
@@ -8267,7 +8369,12 @@ animate
 \noun on
 inanimate
 \noun default
- nominals (yielding three classes, as the combination
+ nominals 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Yielding a total of three classes, as the combination of
 \noun on
  inanimate
 \noun default
@@ -8275,10 +8382,15 @@ inanimate
 \noun on
 human
 \noun default
- is impossible).
+ is impossible
+\end_layout
+
+\end_inset
+
+.
  They are motivated by the fact that certain Indian verbs only take human
- subjects, and find that the feature helps capture argument structure in
- dependency parsing.
+ subjects, and find that introducing these features in the treebank helps
+ capture argument structure in dependency parsing.
 \end_layout
 
 \begin_layout Standard
@@ -8293,7 +8405,7 @@ key "novk_feature_2007"
 \noun on
  
 \noun default
-introduce a variety of features , indicating amount other things if tokens
+introduce a variety of features, indicating amount other things if tokens
  are
 \noun on
  capitalized
@@ -8308,19 +8420,42 @@ coordinable
  Due to the relatively large number of feature introduced, the feature space
  dimension in the model grows a lot, impairing the runtime of the system.
  To counter this, they conduct some experiments in reducing dimensionaly,
- resulting in a compromise with a much smaller feature space and fair improvemen
-t in accuracy.
+ resulting in a pragmatic compromise with a fair improvement in accuracy
+ and a much smaller feature space.
+\end_layout
+
+\begin_layout Subsection
+Structural features
 \end_layout
 
 \begin_layout Standard
-TODO: Soft and hard constraints on dependency length 
+Another class of features relate to the structure of dependency graphs,
+ most commonly dependency length.
+ Noting that a word's modifiers tend to fall near it in the sentence, 
 \begin_inset CommandInset citation
-LatexCommand citep
+LatexCommand citet
 key "eisner_parsing_2005"
 
 \end_inset
 
-?
+ experiment with introducing soft and hard constraints on dependency lengths.
+ The distance measure used is simply the number of words between two tokens,
+ but they also note:
+\end_layout
+
+\begin_layout Quotation
+Other distance measures could be substituted or added (following the literature
+ on heavy-shift and sentence comprehension), including the phonological,
+ morphological, syntactic, or referential (given/new) complexity of the
+ intervening material.
+\end_layout
+
+\begin_layout Standard
+The distance feature applies to dependencies rather than tokens.
+ As such, it must be introduced in the parsing process by the parser itself,
+ and cannot be regarded as a treebank augmentation.
+ I am mentioning it here just to point out that an interesting class feature
+ engineering lies beyond pure treebank augmentation.
 \end_layout
 
 \begin_layout Section
@@ -8328,8 +8463,8 @@ Experiment design
 \end_layout
 
 \begin_layout Standard
-In the following I will describe how I augment treebanks with new features,
- and how I evaluate the effect of adding a feature.
+In the following I will describe how I intend to augment treebanks with
+ new features, and how I will evaluate the effect of adding a feature.
  I shall refer to parsers trained on original, unmodified treebanks as 
 \emph on
 baseline
@@ -8341,8 +8476,21 @@ system
 for a parser trained on an augmented treebank.
 \end_layout
 
+\begin_layout Subsection
+Choice of parser
+\end_layout
+
 \begin_layout Standard
-TODO: choice of parser?
+Two systems gave the best results in the CoNLL shared task: The graph-based
+ MSTParser and the transition-based MaltParser.
+ Of all the systems, it would be most satisfactory to improve the performance
+ of one of these two.
+ Most of the proposed feature designs involve longer dependencies, which
+ the graph-based of the two systems appears to handle better.
+ Therefore, I am focusing on this system.
+ However, the case for the MSTParser in relation to this work is not empirically
+ founded, and it would be natural to conduct the same experiments with the
+ MaltParser in future work.
 \end_layout
 
 \begin_layout Standard
@@ -8490,7 +8638,7 @@ As outlined here, the parser is trained on one treebank partition and predictive
 \begin_inset Formula $K$
 \end_inset
 
--fold cross-validation, with 10 folds commonly used).
+-fold cross-validation, with 10 folds being a common choice).
  However, as the treebanks I use come pre-partitioned, and are evalutated
  with these splits in other research, I chose to report performance with
  the existing train/test splits for reasons of comparability.
@@ -8515,14 +8663,16 @@ Treebank augmentation
 
 \begin_layout Standard
 In augmenting a treebank, new features may be added to sentence tokens,
- or existing properties (such as POS tags) modified.
+ or existing properties (such as POS tags) may be modified.
  While some features can be added on a per-token basis, e.g.
  
 \emph on
 animacy
 \emph default
  classification, addition of other features require an overview of the whole
- sentence, as would be the case for determining open-ended quotations.
+ sentence, as would be the case for matching pairs of symmetrical punctuation
+ (e.g.
+ quotation marks).
  The procedure for augmenting a treebank allows for both token-level and
  sentence-level processing, and proceeds with these steps:
 \end_layout
@@ -8607,7 +8757,7 @@ Parser evaluation
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8645,11 +8795,7 @@ name "fig:Evaluation-and-comparison"
 Parsed sentences are obtained from both the baseline and the system parser
  (with the latter working on the augmented treebank), and predictive performance
  in terms of parsing accuracy of each is evaluated.
- 
-\end_layout
-
-\begin_layout Standard
-To this end, the standard CoNLL evaluation tool
+ To this end, the standard CoNLL evaluation tool
 \begin_inset Foot
 status open
 
@@ -8670,11 +8816,12 @@ key "buchholz_conll_2006"
 \family typewriter
 eval.pl
 \family default
- is used for each parser in turn to compare its predicted parses to the
- gold standard (correct) parses given in the treebank.
+ is used.
+ For each parser in turn, its predicted parses of the test set are compared
+ to the gold standard (correct) parses given in the treebank.
  The obtained labeled accuracy score (LAS) for the system is compared to
- the baseline score, providing a measure of the overall effect on parsing
- accuracy of adding the feature in question.
+ the score of the baseline parser, resulting in a measure of the overall
+ effect on parsing accuracy of adding the feature in question.
 \end_layout
 
 \begin_layout Subsubsection
@@ -8685,14 +8832,22 @@ Focused evaluation
 Some features only directly affects part of a treebank.
  A feature related to quotations for example is only added to tokens involved
  in quoted phrases.
- This begs the question: What effect does the added feature have on the
- affected tokens? And also interesting: What effect does it have on the
- remaining, unaffected tokens in the treebank?
+ This begs the question: What effect does the added feature have on tokens
+ 
+\emph on
+affected
+\emph default
+ by the augmentation? And also interesting: What effect does it have on
+ the remaining, 
+\emph on
+unaffected
+\emph default
+ tokens in the treebank?
 \end_layout
 
 \begin_layout Standard
-With only a part of the tokens augmented, one option is to count dependency
- errors for the affected tokens separately.
+With only a part of the tokens affected by the augmention, one option is
+ to count dependency errors for these affected tokens separately.
  If for example one were to add a feature clearly marking tokens that occur
  between parentheses, this would give a ratio of correct dependencies for
  parenthesized tokens, as well as a ratio for the remainder.
@@ -8702,53 +8857,63 @@ With only a part of the tokens augmented, one option is to count dependency
 crossing
 \emph default
  the boundary of e.g.
- a parenthesized clause (as the crossing dependency might originate from
- a token outside the clause).
+ a parenthesized clause, because the crossing dependency might originate
+ from a token 
+\emph on
+outside
+\emph default
+ the clause.
  
 \end_layout
 
 \begin_layout Standard
 It is not impossible conceive a heuristic for counting these problematic
  dependencies specifically, but it would be of little use when the objective
- is to compare a baseline parse to another by the same standard.
+ is to compare a baseline parse to another by the 
+\emph on
+same standard
+\emph default
+.
  The reason for this is simply that dependencies predicted for the baseline
  and the system may differ, so one would likely be counting different things
  in the baseline and the system, yielding incommensurable ratios.
 \end_layout
 
 \begin_layout Standard
-Given the apparent difficulties of token- and dependency-level categorization,
- I have chosen to categorize on the 
+Given the apparent difficulties of evaluation with token- or dependency-level
+ categorization, I have chosen to categorize on the 
 \emph on
 sentence-level
 \emph default
- instead when estimating the effects of a feature on targeted versus untargeted
+ instead when estimating effects of a feature on targeted versus untargeted
  parts of the text.
- I thus categorize 
-\emph on
-sentences
-\emph default
- by whether the added feature applied to 
+ I thus categorize a given sentence by whether the added feature applied
+ to 
 \emph on
 any
 \emph default
- token in the sentence, and evaluate each part separately, yielding two
- ratios, namely one for 
+ token of the sentence.
+ I then evaluate each category separately, yielding two ratios, namely one
+ for 
 \emph on
 affected sentences
 \emph default
- in which augmented tokens occur, and one for 
+ (in which augmented tokens occur), and one for 
 \emph on
 unaffected sentences
 \emph default
- which were left untouched by the augmentation.
+ (which were left untouched by the augmentation).
 \end_layout
 
 \begin_layout Standard
 It is the hope that these ratios can cast light on the question of how valuable
- a feature was in parsing the linguictics phenomena it was intended to cover,
+ a feature was in parsing the linguistic phenomena it was intended to cover,
  and which effect the alteration in the parsing model had on the ability
- to parse the rest of the sentences.
+ to parse the 
+\emph on
+rest
+\emph default
+ of the sentences.
  Did it enable the parser to clearly distinguish tokens that require different
  treatment and thus help unclutter the parsing model, or did it have an
  adverse effect by perhaps preventing a useful generalization in the parsing
@@ -8796,8 +8961,8 @@ status open
 
 \begin_layout Plain Layout
 Three separate evaluations occur: One for the overall effect of adding the
- feature, one for the effect on affected sentences, and one for the effect
- on sentences unaffected by the augmentation.
+ feature, one for the effect on affected sentences, and finally one for
+ the effect on sentences unaffected by the augmentation.
 \end_layout
 
 \end_inset
@@ -8885,11 +9050,15 @@ key "buchholz_conll-x_2006"
 
 \end_inset
 
-, I am including tokens considered punctuation when evaluating parser accuracy.
+, I am 
+\emph on
+including
+\emph default
+ punctuation tokens when evaluating parser accuracy.
  As several of the phenomena in my experiments involve constructions marked
  by punctuation (e.g.
  quotation marks and parentheses), I expect the inclusion of the punctuation
- tokens themselves to contribute a valuable indication of a parsers ability
+ tokens themselves to contribute a valuable indication of a parser's ability
  to correctly predict dependency structure.
 \end_layout
 
@@ -8897,8 +9066,9 @@ key "buchholz_conll-x_2006"
 As long as I let the trained parsers work within the same treebanks, annotationa
 l conventions for punctuation should be consistent and possible to predict.
  If one were to conduct experiments in domain adaptation using different
- treebanks with inconsistent conventions, it would make sense to exclude
- punctuation.
+ treebanks with inconsistent conventions for punctuation -- as was the case
+ at the second of the CoNLL shared tasks in dependency parsing -- it would
+ perhaps make sense to exclude punctuation when scoring.
 \end_layout
 
 \begin_layout Subsection
@@ -8906,8 +9076,8 @@ Statistical significance
 \end_layout
 
 \begin_layout Standard
-To quantify the likelihod of observed effects occurring merely by chance,
- Dan Bikel's 
+To quantify the likelihod of observed effects occurring as a result of the
+ augmentation, and not merely by chance, Dan Bikel's 
 \begin_inset Quotes eld
 \end_inset
 
@@ -8926,7 +9096,7 @@ key "bikel_randomized_2004"
 \begin_inset Formula $p$
 \end_inset
 
--values.
+-values if the differences in parsing accurary.
  In the words of the author, the statistical significance test employed
  
 \end_layout
@@ -9015,7 +9185,7 @@ key "buchholz_conll-x_2006"
  The treebanks I was able to obtain for this project are listed below.
  Except for the Italian treebank, they are all identical to those that were
  used at CoNLL.
- Some of the treebanks are originally phrase structure treebanks converted
+ Some of the treebanks were originally phrase structure treebanks converted
  that were converted to dependency treebanks, either specifically for CoNLL
  or for other purporses.
 \end_layout
@@ -9175,8 +9345,8 @@ key "oflazer_buildingturkish_2003,atalay_annotation_2003"
 \end_layout
 
 \begin_layout Standard
-Several of the treebanks have a size which exceed the capacity of the computer
- system I had available for experiments
+Several of the treebanks have a size which made the training task exceed
+ the capacity of the computer system I had available for experiments
 \begin_inset Foot
 status open
 
@@ -9200,7 +9370,7 @@ reference "tab:Treebank-sizes"
  scores for the German Tiger treebank, the Bulgarian treebank, the Czech
  PDT and the Dutch Alpino treebank.
  In order to be able to experiment with these languages regardless, I produced
- versions of the treebanks with a managable size by truncating the training
+ versions of the treebanks in a managable size by truncating the training
  part to 6000 sentences.
  When referring to these truncated treebanks, I will use a 
 \begin_inset Quotes eld
@@ -9367,8 +9537,24 @@ name "tab:Prelimenary-survey"
 
 \end_inset
 
+Acting on the hunch that problematic constructions will involve punctuation,
+ a coarse grained survey of the treebanks with the focus on various punctuation
+ was made (table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Prelimenary-survey"
+
+\end_inset
+
+).
+ Taking for example parentheses, the survey gives an indication of how widesprea
+d parenthesized phrases are in each treebank, and how well sentences with
+ parentheses were parsed in comparison to the treebank average.
+ 
+\end_layout
+
+\begin_layout Standard
 EXPAND: What I will do.
- A lot of it will have to do with punctuation.
  Prelimenary survey.
  Quantify suspicion.
 \end_layout
