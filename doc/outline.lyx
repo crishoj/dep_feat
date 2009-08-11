@@ -22,7 +22,16 @@
 \graphics default
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize a4paper
 \use_geometry false
 \use_amsmath 1
@@ -56,6 +65,29 @@ Christian Rishøj Jensen
 
 \begin_layout Date
 August 2009
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Address
@@ -103,6 +135,13 @@ Under vejledning af Anders Østerskov Søgaard, Center for Sprogteknologi.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -131,9 +170,16 @@ Dependensgrammatik til syntaktisk analyse er ingen ny opfindelse, men har
 
 \begin_layout Abstract
 I dette speciale undersøges mulighederne for at forbedre de datadrevne dependens
-parsere gennem berigelse af træbanker med simple, lingvistisk motiverede
+parsere gennem berigelse af træbanker med simple, lingvistisk mo\SpecialChar \-
+ti\SpecialChar \-
+ve\SpecialChar \-
+re\SpecialChar \-
+de
  træk.
- Visse sproglige konstruktioner, herunder citationer og parentesiske bemærkninge
+ Visse sproglige konstruktioner, herunder citationer og parentesiske be\SpecialChar \-
+mærk\SpecialChar \-
+ning\SpecialChar \-
+e
 r, volder i mange tilfælde problemer for de datadrevne systemer, antageligvis
  fordi sådanne konstruktioner ofte er strukturelt afvigende fra den typiske
  sætning.
@@ -150,10 +196,15 @@ oner en særlig behandling i den indlærte model, og derved højne parserens
 \paragraph_spacing single
 I en indledende undersøgelse af en referenceparsers behandling af træbanker
  på forskellige sprog identificeres nogle mulige indsatsområder.
- En række konkrete muligheder for berigelse af træbankerne foreslås og afprøves.
+ En række kon\SpecialChar \-
+kre\SpecialChar \-
+te muligheder for berigelse af træbankerne foreslås og afprøves.
  I adskillige tilfælde opnås ved berigelserne signifikante forbedringer
  i forhold til referenceparseren, særligt i forbindelse med inskydninger
- som citationer og parentesiske bemærkninger, men også ved indførsel af
+ som citationer og parentesiske be\SpecialChar \-
+mærk\SpecialChar \-
+ning\SpecialChar \-
+er, men også ved indførsel af
  træk rettet mod atypisk brug af tegnsætning, eksempelvis i listeopstillinger.
 \end_layout
 
@@ -1742,7 +1793,7 @@ key "nivre_conll_2007"
 
 \end_inset
 
-, many of which are inspired by traditional shift-reduce parsers
+, many of which are inspired by traditional shift-reduce parsers 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "nivre_efficient_2003,hall_single_2007"
@@ -8981,7 +9032,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{-6em}{-6em}
+begin{adjustwidth}{-4em}{-4em}
 \end_layout
 
 \end_inset
@@ -8993,6 +9044,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align right
 \begin_inset Graphics
 	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Evaluation.eps
 	lyxscale 50
@@ -9029,6 +9081,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align right
 \begin_inset Graphics
 	filename /Users/christian/Projects/dep_feat/doc/figures/flows/Categorization.eps
 	width 70page%
@@ -13792,13 +13845,11 @@ status open
 
 \begin_layout Plain Layout
 
+
 \backslash
 renewcommand
 \backslash
-bibname{
-References
-\lang english
-}
+bibname{References}
 \end_layout
 
 \end_inset
