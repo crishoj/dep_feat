@@ -2,12 +2,12 @@
 # encoding: UTF-8
 
 require 'rubygems'
-require 'commander'
-require 'activesupport'
+require 'active_support'
+require 'commander/import'
 require 'terminal-table/import'
 
-program :description, 'Process a corpus in different ways'
 program :version, '0.1'
+program :description, 'Process a corpus in different ways'
 
 # Autoloading
 ActiveSupport::Dependencies.load_paths << File.join(File.dirname(File.dirname(__FILE__)), 'lib')
