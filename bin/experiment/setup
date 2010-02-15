@@ -1,6 +1,6 @@
 #!/bin/sh
 set -o nounset -o errexit
 bin/corpus.rb annotate --kinds $1 $2
-git add $2-$1
-git commit -m experiment
-git push
+#git add $2-$1
+#git commit -m experiment
+#git push
