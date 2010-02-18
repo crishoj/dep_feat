@@ -1,0 +1,37 @@
+#!/bin/sh
+
+if [ $# -ne 1 ]; then
+    echo 1>&2 Usage: $0 DIR
+    exit 127
+fi
+
+CORPUS_DIR=$1
+MODEL_DIR=models/$CORPUS_DIR
+SYSTEM_DIR=$CORPUS_DIR/system
+LANGUAGE=`basename ${CORPUS_DIR%/*}`
+FEATURE_MODEL=config/malt/features/$LANGUAGE.par
+
+SVM_OPTS_swedish="-s_0_-t_1_-d_2_-g_0.2_-c_0.4_-r_0_-e_0.1_-S_0"
+SVM_OPTS_danish="-s_0_-t_1_-d_2_-g_0.2_-c_0.6_-r_0.3_-e_1.0_-S_0"
+SVM_OPTS_slovene="-s_0_-t_1_-d_2_-g_0.20_-c_0.1_-r_0.8_-e_0.1_-S_2_-F_C1_-T_600"
+
+# Do a lookup using indirection
+REF="SVM_OPTS_$LANGUAGE"
+SVM_OPTS=${!REF}
+
+OPTS="-jar $MALTPARSER_DIR/dist/malt/malt.jar
+  -w $MODEL_DIR 
+  -c malt 
+  -F $FEATURE_MODEL 
+  -lso $SVM_OPTS"
+
+mkdir -p $MODEL_DIR
+mkdir -p $SYSTEM_DIR
+
+java $OPTS \
+  -i $(echo $CORPUS_DIR/train/*.conll) \
+  -m learn
+java $OPTS \
+  -i $(echo $CORPUS_DIR/test/*.conll) \
+  -o $SYSTEM_DIR/out.conll \
+  -m parse

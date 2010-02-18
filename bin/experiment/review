@@ -4,3 +4,9 @@ set -o nounset -o errexit
 bin/corpus.rb categorize --kind $1 $2
 bin/corpus.rb count --recursive $2
 bin/corpus.rb compare $2
+echo "Enter feature for narrow evalutation:"
+read FEAT
+bin/corpus.rb compare $2 has-$FEAT
+echo "Press enter to continue"
+read
+bin/corpus.rb compare $2 no-$FEAT

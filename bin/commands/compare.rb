@@ -13,8 +13,8 @@ command :compare do |c|
       gold = Dir.glob("#{dir}/test/#{cat}/*.conll").first
       say "[gold] #{gold}"
       contenders = %w{baseline system}.collect { |name|
-        Dir.glob("#{dir}/#{name}/#{cat}/*.conll").first
-      }
+        matches = Dir.glob("#{dir}/#{name}/#{cat}/*.conll").first
+      }.compact
       evalbs = []
       for file in contenders
         say "[eval] #{file}"
