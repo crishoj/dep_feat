@@ -176,12 +176,12 @@ public final class ParserOptions {
 	try {
 	    File tmpDir = new File("/tmp");
 	    if (null != trainfile) {
-		trainforest = File.createTempFile("train", ".forest");
+		trainforest = File.createTempFile("train", ".forest", tmpDir);
 		trainforest.deleteOnExit();
 	    }
 
 	    if (null != testfile) {
-		testforest = File.createTempFile("test", ".forest");
+		testforest = File.createTempFile("test", ".forest", tmpDir);
 		testforest.deleteOnExit();
 	    }
 
