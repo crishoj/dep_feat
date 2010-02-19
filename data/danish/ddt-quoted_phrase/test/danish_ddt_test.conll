@@ -16,9 +16,9 @@
 16	udvikles	_	V	VA	mood=infin|voice=passive	15	vobj	_	_
 17	uden	_	SP	SP	_	15	mod	_	_
 18	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	17	nobj	_	_
-19	"	_	X	XP	_	20	pnct	_	_
+19	"	_	X	XP	quote	20	pnct	_	_
 20	jernnæve	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	18	nobj	_	_
-21	"	_	X	XP	_	20	pnct	_	_
+21	"	_	X	XP	quote	20	pnct	_	_
 22	.	_	X	XP	_	10	pnct	_	_
 
 1	De	_	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked	2	subj	_	_
@@ -272,7 +272,7 @@
 14	sammenstød	_	N	NC	gender=neuter|number=plur|case=unmarked|def=indef	12	conj	_	_
 15	.	_	X	XP	_	3	pnct	_	_
 
-1	"	_	X	XP	_	3	pnct	_	_
+1	"	_	X	XP	quote	3	pnct	_	_
 2	Vi	_	P	PP	person=1|gender=common|number=plur|case=nom|reflexive=no|register=unmarked|quote	3	subj	_	_
 3	vil	_	V	VA	mood=indic|tense=present|voice=active|quote	18	qobj	_	_
 4	ikke	_	RG	RG	degree=unmarked|quote	3	mod	_	_
@@ -288,7 +288,7 @@
 14	i	_	SP	SP	quote	13	lobj	_	_
 15	Danmark	_	N	NP	case=unmarked|quote	14	nobj	_	_
 16	,	_	X	XP	quote	12	pnct	_	_
-17	"	_	X	XP	_	3	pnct	_	_
+17	"	_	X	XP	quote	3	pnct	_	_
 18	siger	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 19	hun	_	P	PP	person=3|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	18	subj	_	_
 20	.	_	X	XP	_	18	pnct	_	_
@@ -356,11 +356,11 @@
 24	tage	_	V	VA	mood=infin|voice=active	23	vobj	_	_
 25	stilling	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	24	dobj	_	_
 26	:	_	X	XP	_	20	pnct	_	_
-27	"	_	X	XP	_	29	pnct	_	_
+27	"	_	X	XP	quote	29	pnct	_	_
 28	Hvem	_	P	PT	gender=common|number=sing/plur|case=unmarked|register=unmarked|quote	29	dobj	_	_
 29	støtter	_	V	VA	mood=indic|tense=present|voice=active|quote	33	subj	_	_
 30	du	_	P	PP	person=2|gender=common|number=sing|case=nom|reflexive=no|register=unmarked|quote	29	subj	_	_
-31	"	_	X	XP	_	29	pnct	_	_
+31	"	_	X	XP	quote	29	pnct	_	_
 32	,	_	X	XP	_	29	pnct	_	_
 33	er	_	V	VA	mood=indic|tense=present|voice=active	20	xpl	_	_
 34	teksten	_	N	NC	gender=common|number=sing|case=unmarked|def=def	33	pred	_	_
@@ -376,7 +376,7 @@
 44	pige	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	41	nobj	_	_
 45	.	_	X	XP	_	2	pnct	_	_
 
-1	"	_	X	XP	_	3	pnct	_	_
+1	"	_	X	XP	quote	3	pnct	_	_
 2	Det	_	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked|quote	3	subj	_	_
 3	er	_	V	VA	mood=indic|tense=present|voice=active|quote	18	qobj	_	_
 4	første	_	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked|quote	5	mod	_	_
@@ -392,7 +392,7 @@
 14	fra	_	SP	SP	quote	9	mod	_	_
 15	Socialdemokratiet	_	N	NC	gender=neuter|number=sing|case=unmarked|def=def|quote	14	nobj	_	_
 16	,	_	X	XP	quote	8	pnct	_	_
-17	"	_	X	XP	_	3	pnct	_	_
+17	"	_	X	XP	quote	3	pnct	_	_
 18	siger	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 19	Hans	_	N	NP	case=unmarked	20	namef	_	_
 20	Stavnsager	_	N	NP	case=unmarked	18	subj	_	_
@@ -472,7 +472,7 @@
 11	byen	_	N	NC	gender=common|number=sing|case=unmarked|def=def	10	nobj	_	_
 12	.	_	X	XP	_	2	pnct	_	_
 
-1	"	_	X	XP	_	2	pnct	_	_
+1	"	_	X	XP	quote	2	pnct	_	_
 2	Men	_	C	CC	quote	14	qobj	_	_
 3	der	_	U	U	quote	4	expl	_	_
 4	er	_	V	VA	mood=indic|tense=present|voice=active|quote	2	conj	_	_
@@ -484,7 +484,7 @@
 10	to	_	A	AC	case=unmarked|quote	9	nobj	_	_
 11	ting	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|quote	10	nobj	_	_
 12	,	_	X	XP	quote	4	pnct	_	_
-13	"	_	X	XP	_	2	pnct	_	_
+13	"	_	X	XP	quote	2	pnct	_	_
 14	understreger	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 15	han	_	P	PP	person=3|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	14	subj	_	_
 16	.	_	X	XP	_	14	pnct	_	_
@@ -734,10 +734,10 @@
 12	sagen	_	N	NC	gender=common|number=sing|case=unmarked|def=def	11	dobj	_	_
 13	?	_	X	XP	_	2	pnct	_	_
 
-1	"	_	X	XP	_	3	pnct	_	_
-2	Det	_	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked	3	subj	_	_
-3	virker	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
-4	"	_	X	XP	_	5	pnct	_	_
+1	"	_	X	XP	quote	3	pnct	_	_
+2	Det	_	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked|quote	3	subj	_	_
+3	virker	_	V	VA	mood=indic|tense=present|voice=active|quote	0	ROOT	_	_
+4	"	_	X	XP	quote	5	pnct	_	_
 5	fåret	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=indef|transcat=unmarked	3	pred	_	_
 6	"	_	X	XP	_	5	pnct	_	_
 7	,	_	X	XP	_	3	pnct	_	_
@@ -974,7 +974,7 @@
 7	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	5	pred	_	_
 8	anden	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	7	nobj	_	_
 9	:	_	X	XP	_	5	pnct	_	_
-10	"	_	X	XP	_	12	pnct	_	_
+10	"	_	X	XP	quote	12	pnct	_	_
 11	Vi	_	P	PP	person=1|gender=common|number=plur|case=nom|reflexive=no|register=unmarked|quote	12	subj	_	_
 12	vil	_	V	VA	mood=indic|tense=present|voice=active|quote	5	xpl	_	_
 13	ikke	_	RG	RG	degree=unmarked|quote	12	mod	_	_
@@ -986,7 +986,7 @@
 19	skal	_	V	VA	mood=indic|tense=present|voice=active|quote	15	rel	_	_
 20	fyres	_	V	VA	mood=infin|voice=passive|quote	19	vobj	_	_
 21	.	_	X	XP	quote	12	pnct	_	_
-22	"	_	X	XP	_	12	pnct	_	_
+22	"	_	X	XP	quote	12	pnct	_	_
 
 1	og	_	C	CC	_	0	ROOT	_	_
 2	synet	_	N	NC	gender=neuter|number=sing|case=unmarked|def=def	6	subj	_	_
@@ -1347,7 +1347,7 @@
 1	NEDSAT	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject|case=unmarked	2	mod	_	_
 2	MOMS	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	0	ROOT	_	_
 
-1	"	_	X	XP	_	3	pnct	_	_
+1	"	_	X	XP	quote	3	pnct	_	_
 2	Jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked|quote	3	subj	_	_
 3	tvivler	_	V	VA	mood=indic|tense=present|voice=active|quote	28	qobj	_	_
 4	oprigtig	_	A	AN	degree=pos|transcat=adverbial|quote	5	mod	_	_
@@ -1373,7 +1373,7 @@
 24	og	_	C	CC	quote	23	coord	_	_
 25	afgifter	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|quote	24	conj	_	_
 26	,	_	X	XP	quote	21	pnct	_	_
-27	"	_	X	XP	_	3	pnct	_	_
+27	"	_	X	XP	quote	3	pnct	_	_
 28	siger	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 29	Henning	_	N	NP	case=unmarked	30	namef	_	_
 30	Dyremose	_	N	NP	case=unmarked	28	subj	_	_
@@ -1589,7 +1589,7 @@
 12	flugt	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	11	nobj	_	_
 13	.	_	X	XP	_	2	pnct	_	_
 
-1	"	_	X	XP	_	3	pnct	_	_
+1	"	_	X	XP	quote	3	pnct	_	_
 2	Jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked|quote	3	subj	_	_
 3	forsøgte	_	V	VA	mood=indic|tense=past|voice=active|quote	22	qobj	_	_
 4	at	_	U	U	quote	3	dobj	_	_
@@ -1609,7 +1609,7 @@
 18	fredelig	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked|quote	17	mod	_	_
 19	måde	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	17	nobj	_	_
 20	,	_	X	XP	quote	12	pnct	_	_
-21	"	_	X	XP	_	3	pnct	_	_
+21	"	_	X	XP	quote	3	pnct	_	_
 22	sagde	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
 23	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	22	subj	_	_
 24	kvæstet	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=indef|transcat=unmarked	23	mod	_	_
@@ -1679,7 +1679,7 @@
 2	andet	_	P	PI	gender=neuter|number=sing|case=unmarked|register=unmarked	1	nobj	_	_
 3	øjenvidne	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	2	nobj	_	_
 4	:	_	X	XP	_	1	pnct	_	_
-5	"	_	X	XP	_	7	pnct	_	_
+5	"	_	X	XP	quote	7	pnct	_	_
 6	De	_	P	PP	person=3|gender=common/neuter|number=plur|case=nom|reflexive=no|register=unmarked|quote	7	subj	_	_
 7	begyndte	_	V	VA	mood=indic|tense=past|voice=active|quote	1	xpl	_	_
 8	at	_	U	U	quote	7	dobj	_	_
@@ -1698,7 +1698,7 @@
 21	eller	_	C	CC	quote	18	coord	_	_
 22	mænd	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|quote	21	conj	_	_
 23	.	_	X	XP	quote	7	pnct	_	_
-24	"	_	X	XP	_	7	pnct	_	_
+24	"	_	X	XP	quote	7	pnct	_	_
 
 1	To	_	A	AC	case=unmarked	4	subj	_	_
 2	spanske	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked	1	mod	_	_
@@ -2159,26 +2159,26 @@
 17	:	_	X	XP	_	2	pnct	_	_
 
 1	"	_	X	XP	_	3	pnct	_	_
-2	Jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked|quote	3	subj	_	_
-3	ringede	_	V	VA	mood=indic|tense=past|voice=active|quote	0	ROOT	_	_
-4	også	_	RG	RG	degree=unmarked|quote	3	mod	_	_
-5	til	_	SP	SP	quote	3	pobj	_	_
-6	hans	_	P	PO	person=3|gender=common/neuter|number=sing/plur|case=unmarked|possessor=sing|reflexive=no|register=unmarked|quote	5	nobj	_	_
-7	far	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	6	possd	_	_
-8	og	_	C	CC	quote	3	coord	_	_
-9	fortalte	_	V	VA	mood=indic|tense=past|voice=active|quote	8	conj	_	_
-10	,	_	X	XP	quote	9	pnct	_	_
-11	at	_	C	CS	quote	9	dobj	_	_
-12	den	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked|quote	13	subj	_	_
-13	var	_	V	VA	mood=indic|tense=past|voice=active|quote	11	vobj	_	_
-14	gruelig	_	A	AN	degree=pos|transcat=adverbial|quote	15	mod	_	_
-15	gal	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked|quote	13	pred	_	_
-16	-	_	X	XP	quote	13	pnct	_	_
-17	drengen	_	N	NC	gender=common|number=sing|case=unmarked|def=def|quote	18	subj	_	_
-18	havde	_	V	VA	mood=indic|tense=past|voice=active|quote	13	conj	_	_
-19	fået	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked|quote	18	vobj	_	_
-20	krampe	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	19	dobj	_	_
-21	.	_	X	XP	quote	3	pnct	_	_
+2	Jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	3	subj	_	_
+3	ringede	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
+4	også	_	RG	RG	degree=unmarked	3	mod	_	_
+5	til	_	SP	SP	_	3	pobj	_	_
+6	hans	_	P	PO	person=3|gender=common/neuter|number=sing/plur|case=unmarked|possessor=sing|reflexive=no|register=unmarked	5	nobj	_	_
+7	far	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	6	possd	_	_
+8	og	_	C	CC	_	3	coord	_	_
+9	fortalte	_	V	VA	mood=indic|tense=past|voice=active	8	conj	_	_
+10	,	_	X	XP	_	9	pnct	_	_
+11	at	_	C	CS	_	9	dobj	_	_
+12	den	_	P	PP	person=3|gender=common|number=sing|case=unmarked|reflexive=no|register=unmarked	13	subj	_	_
+13	var	_	V	VA	mood=indic|tense=past|voice=active	11	vobj	_	_
+14	gruelig	_	A	AN	degree=pos|transcat=adverbial	15	mod	_	_
+15	gal	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	13	pred	_	_
+16	-	_	X	XP	_	13	pnct	_	_
+17	drengen	_	N	NC	gender=common|number=sing|case=unmarked|def=def	18	subj	_	_
+18	havde	_	V	VA	mood=indic|tense=past|voice=active	13	conj	_	_
+19	fået	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	18	vobj	_	_
+20	krampe	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	19	dobj	_	_
+21	.	_	X	XP	_	3	pnct	_	_
 22	"	_	X	XP	_	3	pnct	_	_
 
 1	"	_	X	XP	_	3	pnct	_	_
@@ -2209,9 +2209,9 @@
 13	Brøndbys	_	N	NP	case=gen	15	subj	_	_
 14	ledelse	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	13	possd	_	_
 15	vil	_	V	VA	mood=indic|tense=present|voice=active	12	vobj	_	_
-16	"	_	X	XP	_	17	pnct	_	_
-17	forgylde	_	V	VA	mood=infin|voice=active	15	vobj	_	_
-18	"	_	X	XP	_	17	pnct	_	_
+16	"	_	X	XP	quote	17	pnct	_	_
+17	forgylde	_	V	VA	mood=infin|voice=active|quote	15	vobj	_	_
+18	"	_	X	XP	quote	17	pnct	_	_
 19	mig	_	P	PP	person=1|gender=common|number=sing|case=unmarked|reflexive=yes/no|register=unmarked	17	dobj	_	_
 20	på	_	SP	SP	_	17	mod	_	_
 21	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	20	nobj	_	_
@@ -2418,7 +2418,7 @@
 38	havnen	_	N	NC	gender=common|number=sing|case=unmarked|def=def	37	nobj	_	_
 39	.	_	X	XP	_	17	pnct	_	_
 
-1	"	_	X	XP	_	3	pnct	_	_
+1	"	_	X	XP	quote	3	pnct	_	_
 2	Alligevel	_	RG	RG	degree=unmarked|quote	3	mod	_	_
 3	blev	_	V	VA	mood=indic|tense=past|voice=active|quote	10	qobj	_	_
 4	oplysningen	_	N	NC	gender=common|number=sing|case=unmarked|def=def|quote	3	subj	_	_
@@ -2426,7 +2426,7 @@
 6	skrevet	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked|quote	3	vobj	_	_
 7	ned	_	RG	RG	degree=unmarked|quote	6	part	_	_
 8	,	_	X	XP	quote	3	pnct	_	_
-9	"	_	X	XP	_	3	pnct	_	_
+9	"	_	X	XP	quote	3	pnct	_	_
 10	fastslog	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
 11	DR-Dokumentar	_	N	NP	case=unmarked	12	nobj	_	_
 12	gruppen	_	N	NC	gender=common|number=sing|case=unmarked|def=def	10	subj	_	_
@@ -2443,16 +2443,16 @@
 23	.	_	X	XP	_	10	pnct	_	_
 
 1	"	_	X	XP	_	6	pnct	_	_
-2	Rapporten	_	N	NC	gender=common|number=sing|case=unmarked|def=def|quote	10	dobj	_	_
-3	med	_	SP	SP	quote	2	mod	_	_
-4	nummeret	_	N	NC	gender=neuter|number=sing|case=unmarked|def=def|quote	3	nobj	_	_
-5	0-22	_	A	AC	case=unmarked|quote	4	appr	_	_
-6	fik	_	V	VA	mood=indic|tense=past|voice=active|quote	0	ROOT	_	_
-7	Jane	_	N	NP	case=unmarked|quote	8	namef	_	_
-8	Nielsen	_	N	NP	case=unmarked|quote	6	subj	_	_
-9	aldrig	_	RG	RG	degree=unmarked|quote	6	mod	_	_
-10	forelagt	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked|quote	6	vobj	_	_
-11	.	_	X	XP	quote	6	pnct	_	_
+2	Rapporten	_	N	NC	gender=common|number=sing|case=unmarked|def=def	10	dobj	_	_
+3	med	_	SP	SP	_	2	mod	_	_
+4	nummeret	_	N	NC	gender=neuter|number=sing|case=unmarked|def=def	3	nobj	_	_
+5	0-22	_	A	AC	case=unmarked	4	appr	_	_
+6	fik	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
+7	Jane	_	N	NP	case=unmarked	8	namef	_	_
+8	Nielsen	_	N	NP	case=unmarked	6	subj	_	_
+9	aldrig	_	RG	RG	degree=unmarked	6	mod	_	_
+10	forelagt	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked	6	vobj	_	_
+11	.	_	X	XP	_	6	pnct	_	_
 12	"	_	X	XP	_	6	pnct	_	_
 
 1	TVs	_	N	NC	gender=neuter|number=sing|case=gen|def=indef	4	subj	_	_
@@ -2483,13 +2483,13 @@
 26	og	_	C	CC	_	17	coord	_	_
 27	spørge	_	V	VA	mood=infin|voice=active	26	conj	_	_
 28	:	_	X	XP	_	27	pnct	_	_
-29	"	_	X	XP	_	31	pnct	_	_
+29	"	_	X	XP	quote	31	pnct	_	_
 30	Hvor	_	RG	RG	degree=unmarked|quote	31	pred	_	_
 31	er	_	V	VA	mood=indic|tense=present|voice=active|quote	27	vobj	_	_
 32	anden	_	A	AO	case=unmarked|quote	33	mod	_	_
 33	del	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	31	subj	_	_
 34	?	_	X	XP	quote	31	pnct	_	_
-35	"	_	X	XP	_	31	pnct	_	_
+35	"	_	X	XP	quote	31	pnct	_	_
 
 1	Underforstået	_	A	AN	degree=pos|transcat=adverbial	0	ROOT	_	_
 2	,	_	X	XP	_	1	pnct	_	_
@@ -2562,7 +2562,7 @@
 52	drabsdagen	_	N	NC	gender=common|number=sing|case=unmarked|def=def	51	nobj	_	_
 53	.	_	X	XP	_	4	pnct	_	_
 
-1	"	_	X	XP	_	4	pnct	_	_
+1	"	_	X	XP	quote	4	pnct	_	_
 2	Min	_	P	PO	person=1|gender=common|number=sing|case=unmarked|possessor=sing|reflexive=no|register=unmarked|quote	4	subj	_	_
 3	far	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	2	possd	_	_
 4	har	_	V	VA	mood=indic|tense=present|voice=active|quote	13	qobj	_	_
@@ -2573,7 +2573,7 @@
 9	i	_	SP	SP	quote	8	mod	_	_
 10	mig	_	P	PP	person=1|gender=common|number=sing|case=unmarked|reflexive=yes/no|register=unmarked|quote	9	nobj	_	_
 11	,	_	X	XP	quote	4	pnct	_	_
-12	"	_	X	XP	_	4	pnct	_	_
+12	"	_	X	XP	quote	4	pnct	_	_
 13	meddelte	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
 14	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	13	subj	_	_
 15	åndssvag	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	14	mod	_	_
@@ -2641,13 +2641,13 @@
 32	med	_	SP	SP	_	31	pobj	_	_
 33	de	_	P	PD	gender=common/neuter|number=plur|case=unmarked|register=unmarked	32	nobj	_	_
 34	såkaldt	_	A	AN	degree=pos|transcat=adverbial	40	mod	_	_
-35	"	_	X	XP	_	40	pnct	_	_
+35	"	_	X	XP	quote	40	pnct	_	_
 36	vidtgående	_	A	AN	degree=pos|transcat=adverbial|quote	37	mod	_	_
 37	fysisk	_	A	AN	degree=pos|transcat=adverbial|quote	40	mod	_	_
 38	og	_	C	CC	quote	37	coord	_	_
 39	psykisk	_	A	AN	degree=pos|transcat=adverbial|quote	38	conj	_	_
 40	handicappede	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked|quote	33	mod	_	_
-41	"	_	X	XP	_	40	pnct	_	_
+41	"	_	X	XP	quote	40	pnct	_	_
 42	.	_	X	XP	_	8	pnct	_	_
 
 1	MED	_	SP	SP	_	0	ROOT	_	_
@@ -3123,7 +3123,7 @@
 28	hunden	_	N	NC	gender=common|number=sing|case=unmarked|def=def|quote	27	nobj	_	_
 29	.	_	X	XP	quote	17	pnct	_	_
 
-1	"	_	X	XP	_	2	pnct	_	_
+1	"	_	X	XP	quote	2	pnct	_	_
 2	Se	_	V	VA	mood=imper|quote	11	qobj	_	_
 3	mor	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	2	voc	_	_
 4	,	_	X	XP	quote	2	pnct	_	_
@@ -3132,7 +3132,7 @@
 7	ikke	_	RG	RG	degree=unmarked|quote	5	mod	_	_
 8	sød	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked|quote	5	pred	_	_
 9	,	_	X	XP	quote	5	pnct	_	_
-10	"	_	X	XP	_	2	pnct	_	_
+10	"	_	X	XP	quote	2	pnct	_	_
 11	læspede	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
 12	han	_	P	PP	person=3|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	11	subj	_	_
 13	.	_	X	XP	_	11	pnct	_	_
@@ -3157,7 +3157,7 @@
 18	og	_	C	CC	_	14	coord	_	_
 19	fortsatte	_	V	VA	mood=indic|tense=past|voice=active	18	conj	_	_
 20	:	_	X	XP	_	19	pnct	_	_
-21	"	_	X	XP	_	22	pnct	_	_
+21	"	_	X	XP	quote	22	pnct	_	_
 22	Se	_	V	VA	mood=imper|quote	19	xpl	_	_
 23	mor	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	22	voc	_	_
 24	,	_	X	XP	quote	22	pnct	_	_
@@ -3166,7 +3166,7 @@
 27	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked|quote	26	dobj	_	_
 28	hund	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	27	nobj	_	_
 29	.	_	X	XP	quote	22	pnct	_	_
-30	"	_	X	XP	_	22	pnct	_	_
+30	"	_	X	XP	quote	22	pnct	_	_
 
 1	Han	_	P	PP	person=3|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	2	subj	_	_
 2	skulle	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
@@ -3185,10 +3185,10 @@
 15	publikum	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	13	nobj	_	_
 16	med	_	SP	SP	_	9	mod	_	_
 17	albummet	_	N	NC	gender=neuter|number=sing|case=unmarked|def=def	16	nobj	_	_
-18	"	_	X	XP	_	19	pnct	_	_
+18	"	_	X	XP	quote	19	pnct	_	_
 19	The	_	N	NP	case=unmarked|quote	17	appr	_	_
 20	Healer	_	N	NP	case=unmarked|quote	19	nobj	_	_
-21	"	_	X	XP	_	19	pnct	_	_
+21	"	_	X	XP	quote	19	pnct	_	_
 22	.	_	X	XP	_	2	pnct	_	_
 
 1	Hans	_	P	PO	person=3|gender=common/neuter|number=sing/plur|case=unmarked|possessor=sing|reflexive=no|register=unmarked	3	subj	_	_
@@ -3225,10 +3225,10 @@
 15	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	14	dobj	_	_
 16	Grammy	_	N	NP	case=unmarked	15	nobj	_	_
 17	for	_	SP	SP	_	14	pobj	_	_
-18	"	_	X	XP	_	19	pnct	_	_
+18	"	_	X	XP	quote	19	pnct	_	_
 19	The	_	N	NP	case=unmarked|quote	17	nobj	_	_
 20	Healer	_	N	NP	case=unmarked|quote	19	nobj	_	_
-21	"	_	X	XP	_	19	pnct	_	_
+21	"	_	X	XP	quote	19	pnct	_	_
 22	,	_	X	XP	_	14	pnct	_	_
 23	men	_	C	CC	_	3	coord	_	_
 24	elskere	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	50	subj	_	_
@@ -3561,7 +3561,7 @@
 11	forfatteren	_	N	NC	gender=common|number=sing|case=unmarked|def=def	10	subj	_	_
 12	.	_	X	XP	_	10	pnct	_	_
 
-1	"	_	X	XP	_	7	pnct	_	_
+1	"	_	X	XP	quote	7	pnct	_	_
 2	HVERKEN	_	RG	RG	degree=unmarked|quote	4	mod	_	_
 3	digtende	_	V	VA	mood=partic|tense=present|number=sing/plur|gender=common/neuter|definiteness=def/indef|transcat=adject|case=unmarked|quote	6	mod	_	_
 4	eller	_	C	CC	quote	3	coord	_	_
@@ -3581,7 +3581,7 @@
 18	i	_	SP	SP	quote	15	mod	_	_
 19	medierne	_	N	NC	gender=neuter|number=plur|case=unmarked|def=def|quote	18	nobj	_	_
 20	,	_	X	XP	quote	7	pnct	_	_
-21	"	_	X	XP	_	7	pnct	_	_
+21	"	_	X	XP	quote	7	pnct	_	_
 22	skriver	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 23	Anders	_	N	NP	case=unmarked	25	namef	_	_
 24	Rou	_	N	NP	case=unmarked	25	namel	_	_
@@ -3605,7 +3605,7 @@
 15	og	_	C	CC	_	14	coord	_	_
 16	aviser	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	15	conj	_	_
 17	med	_	SP	SP	_	9	mod	_	_
-18	"	_	X	XP	_	19	pnct	_	_
+18	"	_	X	XP	quote	19	pnct	_	_
 19	den	_	P	PD	gender=common|number=sing|case=unmarked|register=unmarked|quote	17	nobj	_	_
 20	specielle	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked|quote	19	mod	_	_
 21	form	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	19	nobj	_	_
@@ -3631,7 +3631,7 @@
 41	ærlige	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked|quote	36	mod	_	_
 42	og	_	C	CC	quote	41	coord	_	_
 43	oprigtige	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked|quote	42	conj	_	_
-44	"	_	X	XP	_	19	pnct	_	_
+44	"	_	X	XP	quote	19	pnct	_	_
 45	.	_	X	XP	_	1	pnct	_	_
 
 1	"	_	X	XP	_	3	pnct	_	_
@@ -4413,9 +4413,9 @@
 13	som	_	U	U	_	17	mod	_	_
 14	nr.	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	13	nobj	_	_
 15	syv	_	A	AC	case=unmarked	14	nobj	_	_
-16	"	_	X	XP	_	17	pnct	_	_
+16	"	_	X	XP	quote	17	pnct	_	_
 17	Z	_	N	NP	case=unmarked|quote	10	conj	_	_
-18	"	_	X	XP	_	17	pnct	_	_
+18	"	_	X	XP	quote	17	pnct	_	_
 19	med	_	SP	SP	_	17	mod	_	_
 20	Lemond	_	N	NP	case=unmarked	19	nobj	_	_
 21	.	_	X	XP	_	2	pnct	_	_
@@ -4631,17 +4631,17 @@
 26	,	_	X	XP	_	20	pnct	_	_
 27	pop	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	20	conj	_	_
 28	,	_	X	XP	_	20	pnct	_	_
-29	"	_	X	XP	_	30	pnct	_	_
-30	Orientering	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	20	conj	_	_
-31	"	_	X	XP	_	30	pnct	_	_
+29	"	_	X	XP	quote	30	pnct	_	_
+30	Orientering	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	20	conj	_	_
+31	"	_	X	XP	quote	30	pnct	_	_
 32	og	_	C	CC	_	20	coord	_	_
-33	"	_	X	XP	_	35	pnct	_	_
-34	De	_	P	PP	person=2|gender=common|number=sing/plur|case=nom|reflexive=no|register=polite	35	subj	_	_
-35	ringer	_	V	VA	mood=indic|tense=present|voice=active	32	conj	_	_
-36	,	_	X	XP	_	35	pnct	_	_
-37	vi	_	P	PP	person=1|gender=common|number=plur|case=nom|reflexive=no|register=unmarked	38	subj	_	_
-38	spiller	_	V	VA	mood=indic|tense=present|voice=active	35	conj	_	_
-39	"	_	X	XP	_	35	pnct	_	_
+33	"	_	X	XP	quote	35	pnct	_	_
+34	De	_	P	PP	person=2|gender=common|number=sing/plur|case=nom|reflexive=no|register=polite|quote	35	subj	_	_
+35	ringer	_	V	VA	mood=indic|tense=present|voice=active|quote	32	conj	_	_
+36	,	_	X	XP	quote	35	pnct	_	_
+37	vi	_	P	PP	person=1|gender=common|number=plur|case=nom|reflexive=no|register=unmarked|quote	38	subj	_	_
+38	spiller	_	V	VA	mood=indic|tense=present|voice=active|quote	35	conj	_	_
+39	"	_	X	XP	quote	35	pnct	_	_
 40	.	_	X	XP	_	1	pnct	_	_
 
 1	For	_	C	CC	_	0	ROOT	_	_
@@ -4695,10 +4695,10 @@
 14	til	_	SP	SP	_	12	pobj	_	_
 15	at	_	U	U	_	14	nobj	_	_
 16	tage	_	V	VA	mood=infin|voice=active	15	vobj	_	_
-17	"	_	X	XP	_	18	pnct	_	_
+17	"	_	X	XP	quote	18	pnct	_	_
 18	det	_	P	PD	gender=neuter|number=sing|case=unmarked|register=unmarked|quote	16	dobj	_	_
 19	lette	_	A	AN	degree=pos|gender=common/neuter|number=sing|case=unmarked|def=def|transcat=unmarked|quote	18	mod	_	_
-20	"	_	X	XP	_	18	pnct	_	_
+20	"	_	X	XP	quote	18	pnct	_	_
 21	alvorligt	_	A	AN	degree=pos|transcat=adverbial	16	aobj	_	_
 22	og	_	C	CC	_	16	coord	_	_
 23	behandle	_	V	VA	mood=infin|voice=active	22	conj	_	_
@@ -5360,10 +5360,10 @@
 13	begyndende	_	V	VA	mood=partic|tense=present|number=sing/plur|gender=common/neuter|definiteness=def/indef|transcat=adject|case=unmarked	14	mod	_	_
 14	tendens	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	12	nobj	_	_
 15	til	_	SP	SP	_	14	pobj	_	_
-16	"	_	X	XP	_	18	pnct	_	_
+16	"	_	X	XP	quote	18	pnct	_	_
 17	høj	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked|quote	18	mod	_	_
 18	pande	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	15	nobj	_	_
-19	"	_	X	XP	_	18	pnct	_	_
+19	"	_	X	XP	quote	18	pnct	_	_
 20	.	_	X	XP	_	1	pnct	_	_
 
 1	Men	_	C	CC	_	0	ROOT	_	_
@@ -5407,10 +5407,10 @@
 11	Astrid	_	N	NP	case=unmarked	12	namef	_	_
 12	Lindgrens	_	N	NP	case=gen	10	nobj	_	_
 13	eventyr	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	12	possd	_	_
-14	"	_	X	XP	_	15	pnct	_	_
+14	"	_	X	XP	quote	15	pnct	_	_
 15	Brødrene	_	N	NC	gender=common|number=plur|case=unmarked|def=def|quote	12	appr	_	_
 16	Løvehjerte	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef|quote	15	nobj	_	_
-17	"	_	X	XP	_	15	pnct	_	_
+17	"	_	X	XP	quote	15	pnct	_	_
 18	.	_	X	XP	_	2	pnct	_	_
 
 1	Kim	_	N	NP	case=unmarked	2	namef	_	_
@@ -5470,7 +5470,7 @@
 15	gled	_	N	NC	gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef	14	nobj	_	_
 16	.	_	X	XP	_	1	pnct	_	_
 
-1	"	_	X	XP	_	2	pnct	_	_
+1	"	_	X	XP	quote	2	pnct	_	_
 2	Ja	_	I	I	quote	18	qobj	_	_
 3	,	_	X	XP	quote	2	pnct	_	_
 4	for	_	C	CC	quote	2	conj	_	_
@@ -5486,7 +5486,7 @@
 14	år	_	N	NC	gender=neuter|number=plur|case=unmarked|def=indef|quote	13	nobj	_	_
 15	gamle	_	A	AN	degree=pos|gender=common/neuter|number=plur|case=unmarked|def=def/indef|transcat=unmarked|quote	12	pred	_	_
 16	,	_	X	XP	quote	6	pnct	_	_
-17	"	_	X	XP	_	2	pnct	_	_
+17	"	_	X	XP	quote	2	pnct	_	_
 18	siger	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 19	Kim	_	N	NP	case=unmarked	20	namef	_	_
 20	Harris	_	N	NP	case=unmarked	18	subj	_	_
@@ -5522,7 +5522,7 @@
 1	FØRSTE	_	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	2	mod	_	_
 2	SMØGER	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	0	ROOT	_	_
 
-1	"	_	X	XP	_	3	pnct	_	_
+1	"	_	X	XP	quote	3	pnct	_	_
 2	Det	_	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked|quote	3	subj	_	_
 3	var	_	V	VA	mood=indic|tense=past|voice=active|quote	14	qobj	_	_
 4	dengang	_	C	CS	quote	3	pred	_	_
@@ -5534,7 +5534,7 @@
 10	smøger	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|quote	8	possd	_	_
 11	sammen	_	RG	RG	degree=unmarked|quote	7	mod	_	_
 12	,	_	X	XP	quote	7	pnct	_	_
-13	"	_	X	XP	_	3	pnct	_	_
+13	"	_	X	XP	quote	3	pnct	_	_
 14	husker	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 15	Kim	_	N	NP	case=unmarked	14	subj	_	_
 16	og	_	C	CC	_	14	coord	_	_
@@ -5592,12 +5592,12 @@
 15	oplag	_	N	NC	gender=neuter|number=sing|case=unmarked|def=indef	13	dobj	_	_
 16	af	_	SP	SP	_	15	pobj	_	_
 17	bogen	_	N	NC	gender=common|number=sing|case=unmarked|def=def	16	nobj	_	_
-18	"	_	X	XP	_	19	pnct	_	_
+18	"	_	X	XP	quote	19	pnct	_	_
 19	Retfærdighed	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	17	appr	_	_
 20	-	_	X	XP	quote	19	pnct	_	_
 21	ikke	_	RG	RG	degree=unmarked|quote	22	mod	_	_
 22	hævn	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	19	conj	_	_
-23	"	_	X	XP	_	19	pnct	_	_
+23	"	_	X	XP	quote	19	pnct	_	_
 24	,	_	X	XP	_	17	pnct	_	_
 25	der	_	U	U	_	28	subj	_	_
 26	af	_	SP	SP	_	28	mod	_	_
@@ -5645,37 +5645,37 @@
 8	:	_	X	XP	_	4	pnct	_	_
 
 1	"	_	X	XP	_	3	pnct	_	_
-2	Jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked|quote	3	subj	_	_
-3	er	_	V	VA	mood=indic|tense=present|voice=active|quote	0	ROOT	_	_
-4	nu	_	RG	RG	degree=unmarked|quote	3	mod	_	_
-5	engang	_	RG	RG	degree=unmarked|quote	4	mod	_	_
-6	optimist	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	3	pred	_	_
-7	,	_	X	XP	quote	3	pnct	_	_
-8	og	_	C	CC	quote	3	coord	_	_
-9	jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked|quote	10	subj	_	_
-10	tror	_	V	VA	mood=indic|tense=present|voice=active|quote	8	conj	_	_
-11	,	_	X	XP	quote	10	pnct	_	_
-12	at	_	C	CS	quote	10	dobj	_	_
-13	intolerancen	_	N	NC	gender=common|number=sing|case=unmarked|def=def|quote	17	subj	_	_
-14	kun	_	RG	RG	degree=unmarked|quote	15	mod	_	_
-15	i	_	SP	SP	quote	17	mod	_	_
-16	perioder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|quote	15	nobj	_	_
-17	er	_	V	VA	mood=indic|tense=present|voice=active|quote	12	vobj	_	_
-18	i	_	SP	SP	quote	17	pred	_	_
-19	stand	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	18	nobj	_	_
-20	til	_	SP	SP	quote	19	pobj	_	_
-21	at	_	U	U	quote	20	nobj	_	_
-22	dominere	_	V	VA	mood=infin|voice=active|quote	21	vobj	_	_
-23	vores	_	P	PO	person=1|gender=common/neuter|number=sing/plur|case=unmarked|possessor=plur|reflexive=no|register=unmarked|quote	22	dobj	_	_
-24	liv	_	N	NC	gender=neuter|number=plur|case=unmarked|def=indef|quote	23	possd	_	_
-25	-	_	X	XP	quote	17	pnct	_	_
-26	i	_	SP	SP	quote	29	mod	_	_
-27	sidste	_	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked|quote	28	mod	_	_
-28	ende	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	26	nobj	_	_
-29	vil	_	V	VA	mood=indic|tense=present|voice=active|quote	17	conj	_	_
-30	tolerancen	_	N	NC	gender=common|number=sing|case=unmarked|def=def|quote	29	subj	_	_
-31	sejre	_	V	VA	mood=infin|voice=active|quote	29	vobj	_	_
-32	.	_	X	XP	quote	3	pnct	_	_
+2	Jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	3	subj	_	_
+3	er	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
+4	nu	_	RG	RG	degree=unmarked	3	mod	_	_
+5	engang	_	RG	RG	degree=unmarked	4	mod	_	_
+6	optimist	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	3	pred	_	_
+7	,	_	X	XP	_	3	pnct	_	_
+8	og	_	C	CC	_	3	coord	_	_
+9	jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	10	subj	_	_
+10	tror	_	V	VA	mood=indic|tense=present|voice=active	8	conj	_	_
+11	,	_	X	XP	_	10	pnct	_	_
+12	at	_	C	CS	_	10	dobj	_	_
+13	intolerancen	_	N	NC	gender=common|number=sing|case=unmarked|def=def	17	subj	_	_
+14	kun	_	RG	RG	degree=unmarked	15	mod	_	_
+15	i	_	SP	SP	_	17	mod	_	_
+16	perioder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	15	nobj	_	_
+17	er	_	V	VA	mood=indic|tense=present|voice=active	12	vobj	_	_
+18	i	_	SP	SP	_	17	pred	_	_
+19	stand	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	18	nobj	_	_
+20	til	_	SP	SP	_	19	pobj	_	_
+21	at	_	U	U	_	20	nobj	_	_
+22	dominere	_	V	VA	mood=infin|voice=active	21	vobj	_	_
+23	vores	_	P	PO	person=1|gender=common/neuter|number=sing/plur|case=unmarked|possessor=plur|reflexive=no|register=unmarked	22	dobj	_	_
+24	liv	_	N	NC	gender=neuter|number=plur|case=unmarked|def=indef	23	possd	_	_
+25	-	_	X	XP	_	17	pnct	_	_
+26	i	_	SP	SP	_	29	mod	_	_
+27	sidste	_	A	AN	degree=pos|gender=common/neuter|number=sing/plur|case=unmarked|def=def/indef|transcat=unmarked	28	mod	_	_
+28	ende	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	26	nobj	_	_
+29	vil	_	V	VA	mood=indic|tense=present|voice=active	17	conj	_	_
+30	tolerancen	_	N	NC	gender=common|number=sing|case=unmarked|def=def	29	subj	_	_
+31	sejre	_	V	VA	mood=infin|voice=active	29	vobj	_	_
+32	.	_	X	XP	_	3	pnct	_	_
 33	"	_	X	XP	_	3	pnct	_	_
 
 1	At	_	C	CS	_	6	subj	_	_
@@ -5739,7 +5739,7 @@
 24	fronten	_	N	NC	gender=common|number=sing|case=unmarked|def=def	23	nobj	_	_
 25	.	_	X	XP	_	1	pnct	_	_
 
-1	"	_	X	XP	_	8	pnct	_	_
+1	"	_	X	XP	quote	8	pnct	_	_
 2	Når	_	C	CS	quote	8	xtop	_	_
 3	boligministeren	_	N	NC	gender=common|number=sing|case=unmarked|def=def|quote	5	subj	_	_
 4	ikke	_	RG	RG	degree=unmarked|quote	5	mod	_	_
@@ -5751,7 +5751,7 @@
 10	gøre	_	V	VA	mood=infin|voice=active|quote	8	vobj	_	_
 11	det	_	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked|quote	10	dobj	_	_
 12	,	_	X	XP	quote	8	pnct	_	_
-13	"	_	X	XP	_	8	pnct	_	_
+13	"	_	X	XP	quote	8	pnct	_	_
 14	siger	_	V	VA	mood=indic|tense=present|voice=active	0	ROOT	_	_
 15	Kirsten	_	N	NP	case=unmarked	16	namef	_	_
 16	Jacobsen	_	N	NP	case=unmarked	14	subj	_	_
@@ -5807,7 +5807,7 @@
 24	TV_2-Nyhederne	_	N	NC	gender=common|number=plur|case=unmarked|def=def	23	nobj	_	_
 25	,	_	X	XP	_	22	pnct	_	_
 26	at	_	C	CS	_	22	dobj	_	_
-27	"	_	X	XP	_	29	pnct	_	_
+27	"	_	X	XP	quote	29	pnct	_	_
 28	det	_	P	PP	person=3|gender=neuter|number=sing|case=unmarked|reflexive=no|register=unmarked|quote	29	subj	_	_
 29	er	_	V	VA	mood=indic|tense=present|voice=active|quote	26	vobj	_	_
 30	op	_	RG	RG	degree=unmarked|quote	29	pred	_	_
@@ -5826,7 +5826,7 @@
 43	Ungbos	_	N	NP	case=gen|quote	42	nobj	_	_
 44	administration	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	43	possd	_	_
 45	.	_	X	XP	quote	29	pnct	_	_
-46	"	_	X	XP	_	29	pnct	_	_
+46	"	_	X	XP	quote	29	pnct	_	_
 
 1	Kirsten	_	N	NP	case=unmarked	2	namef	_	_
 2	Jacobsen	_	N	NP	case=unmarked	3	subj	_	_
@@ -5973,9 +5973,9 @@
 5	der	_	U	U	_	6	subj	_	_
 6	mentes	_	V	VA	mood=indic|tense=past|voice=passive	3	rel	_	_
 7	med	_	SP	SP	_	6	pobj	_	_
-8	"	_	X	XP	_	9	pnct	_	_
+8	"	_	X	XP	quote	9	pnct	_	_
 9	kunder	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|quote	7	nobj	_	_
-10	"	_	X	XP	_	9	pnct	_	_
+10	"	_	X	XP	quote	9	pnct	_	_
 11	.	_	X	XP	_	2	pnct	_	_
 
 1	Klokken	_	N	NC	gender=common|number=sing|case=unmarked|def=def	3	mod	_	_
@@ -6004,9 +6004,9 @@
 4	dum	_	A	AN	degree=pos|gender=common|number=sing|case=unmarked|def=indef|transcat=unmarked	3	mod	_	_
 5	telefon	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	3	nobj	_	_
 6	,	_	X	XP	_	2	pnct	_	_
-7	"	_	X	XP	_	2	pnct	_	_
-8	sagde	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
-9	"	_	X	XP	_	10	pnct	_	_
+7	"	_	X	XP	quote	2	pnct	_	_
+8	sagde	_	V	VA	mood=indic|tense=past|voice=active|quote	0	ROOT	_	_
+9	"	_	X	XP	quote	10	pnct	_	_
 10	Mercedesmanden	_	N	NC	gender=common|number=sing|case=unmarked|def=def	8	subj	_	_
 11	"	_	X	XP	_	10	pnct	_	_
 12	.	_	X	XP	_	8	pnct	_	_
@@ -6039,7 +6039,7 @@
 26	senere	_	A	AN	degree=comp|transcat=adverbial	22	mod	_	_
 27	.	_	X	XP	_	1	pnct	_	_
 
-1	"	_	X	XP	_	2	pnct	_	_
+1	"	_	X	XP	quote	2	pnct	_	_
 2	Havde	_	V	VA	mood=indic|tense=past|voice=active|quote	13	qobj	_	_
 3	I	_	P	PP	person=2|gender=common|number=plur|case=nom|reflexive=no|register=unmarked|quote	2	subj	_	_
 4	mistanke	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	2	dobj	_	_
@@ -6050,7 +6050,7 @@
 9	blev	_	V	VA	mood=indic|tense=past|voice=active|quote	7	vobj	_	_
 10	aflyttet	_	V	VA	mood=partic|tense=past|number=sing|gender=common/neuter|definiteness=indef|transcat=adject/adverb/unmarked|case=unmarked|quote	9	pred	_	_
 11	?	_	X	XP	quote	2	pnct	_	_
-12	"	_	X	XP	_	2	pnct	_	_
+12	"	_	X	XP	quote	2	pnct	_	_
 13	spurgte	_	V	VA	mood=indic|tense=past|voice=active	0	ROOT	_	_
 14	anklager	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	16	title	_	_
 15	Annette	_	N	NP	case=unmarked	16	namef	_	_
@@ -6106,30 +6106,30 @@
 22	.	_	X	XP	_	2	pnct	_	_
 23	"	_	X	XP	_	2	pnct	_	_
 
-1	"	_	X	XP	_	2	pnct	_	_
-2	Mercedes-manden	_	N	NC	gender=common|number=sing|case=unmarked|def=def	0	ROOT	_	_
-3	"	_	X	XP	_	2	pnct	_	_
+1	"	_	X	XP	quote	2	pnct	_	_
+2	Mercedes-manden	_	N	NC	gender=common|number=sing|case=unmarked|def=def|quote	0	ROOT	_	_
+3	"	_	X	XP	quote	2	pnct	_	_
 4	:	_	X	XP	_	2	pnct	_	_
-5	"	_	X	XP	_	7	pnct	_	_
-6	Jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	7	subj	_	_
-7	skulle	_	V	VA	mood=indic|tense=past|voice=active	2	qobj	_	_
-8	gå	_	V	VA	mood=infin|voice=active	7	vobj	_	_
-9	til	_	SP	SP	_	8	lobj	_	_
-10	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	9	nobj	_	_
-11	anden	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	10	nobj	_	_
-12	telefon	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	11	nobj	_	_
-13	,	_	X	XP	_	7	pnct	_	_
-14	fordi	_	C	CS	_	7	mod	_	_
-15	han	_	P	PP	person=3|gender=common|number=sing|case=nom|reflexive=no|register=unmarked	16	subj	_	_
-16	skulle	_	V	VA	mood=indic|tense=past|voice=active	14	vobj	_	_
-17	fortælle	_	V	VA	mood=infin|voice=active	16	vobj	_	_
-18	om	_	SP	SP	_	17	pobj	_	_
-19	sine	_	P	PO	person=3|gender=common/neuter|number=plur|case=unmarked|possessor=sing|reflexive=yes|register=unmarked	18	nobj	_	_
-20	udskejelser	_	N	NC	gender=common|number=plur|case=unmarked|def=indef	19	possd	_	_
-21	i	_	SP	SP	_	19	mod	_	_
-22	Holland	_	N	NP	case=unmarked	21	nobj	_	_
-23	.	_	X	XP	_	2	pnct	_	_
-24	"	_	X	XP	_	7	pnct	_	_
+5	"	_	X	XP	quote	7	pnct	_	_
+6	Jeg	_	P	PP	person=1|gender=common|number=sing|case=nom|reflexive=no|register=unmarked|quote	7	subj	_	_
+7	skulle	_	V	VA	mood=indic|tense=past|voice=active|quote	2	qobj	_	_
+8	gå	_	V	VA	mood=infin|voice=active|quote	7	vobj	_	_
+9	til	_	SP	SP	quote	8	lobj	_	_
+10	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked|quote	9	nobj	_	_
+11	anden	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked|quote	10	nobj	_	_
+12	telefon	_	N	NC	gender=common|number=sing|case=unmarked|def=indef|quote	11	nobj	_	_
+13	,	_	X	XP	quote	7	pnct	_	_
+14	fordi	_	C	CS	quote	7	mod	_	_
+15	han	_	P	PP	person=3|gender=common|number=sing|case=nom|reflexive=no|register=unmarked|quote	16	subj	_	_
+16	skulle	_	V	VA	mood=indic|tense=past|voice=active|quote	14	vobj	_	_
+17	fortælle	_	V	VA	mood=infin|voice=active|quote	16	vobj	_	_
+18	om	_	SP	SP	quote	17	pobj	_	_
+19	sine	_	P	PO	person=3|gender=common/neuter|number=plur|case=unmarked|possessor=sing|reflexive=yes|register=unmarked|quote	18	nobj	_	_
+20	udskejelser	_	N	NC	gender=common|number=plur|case=unmarked|def=indef|quote	19	possd	_	_
+21	i	_	SP	SP	quote	19	mod	_	_
+22	Holland	_	N	NP	case=unmarked|quote	21	nobj	_	_
+23	.	_	X	XP	quote	2	pnct	_	_
+24	"	_	X	XP	quote	7	pnct	_	_
 
 1	Inden	_	C	CS	_	7	mod	_	_
 2	computermanden	_	N	NC	gender=common|number=sing|case=unmarked|def=def	3	subj	_	_
@@ -6144,9 +6144,9 @@
 11	en	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	10	nobj	_	_
 12	samtale	_	N	NC	gender=common|number=sing|case=unmarked|def=indef	11	nobj	_	_
 13	fra	_	SP	SP	_	11	mod	_	_
-14	"	_	X	XP	_	15	pnct	_	_
+14	"	_	X	XP	quote	15	pnct	_	_
 15	Mercedes-manden	_	N	NC	gender=common|number=sing|case=unmarked|def=def|quote	13	nobj	_	_
-16	"	_	X	XP	_	15	pnct	_	_
+16	"	_	X	XP	quote	15	pnct	_	_
 17	til	_	SP	SP	_	13	pobj	_	_
 18	én	_	P	PI	gender=common|number=sing|case=unmarked|register=unmarked	17	nobj	_	_
 19	af	_	SP	SP	_	18	pobj	_	_
@@ -6171,4 +6171,3 @@
 15	blev	_	V	VA	mood=indic|tense=past|voice=active	13	vobj	_	_
 16	mørkt	_	A	AN	degree=pos|gender=neuter|number=sing|case=unmarked|def=indef|transcat=unmarked	15	pred	_	_
 17	.	_	X	XP	_	2	pnct	_	_
-
