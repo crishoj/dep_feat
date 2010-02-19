@@ -164,8 +164,8 @@ Dependensgrammatik til syntaktisk analyse er ingen ny opfindelse, men har
  været genstand for en øget interesse de senere år, særligt på grund af
  fremkomsten af datadrevne systemer, der forholdsvist let kan optrænes til
  at analysere sætninger med en nøjagtighed, der kan måle sig med systemer
- af den traditionelle traditionelle slags, som drives af omfattende grammatikker
-, udfærdiget af eksperter ved håndkraft gennem års arbejde.
+ af den traditionelle slags, som drives af omfattende grammatikker, udfærdiget
+ af eksperter ved håndkraft gennem års arbejde.
 \end_layout
 
 \begin_layout Abstract
@@ -200,7 +200,7 @@ I en indledende undersøgelse af en referenceparsers behandling af træbanker
 kre\SpecialChar \-
 te muligheder for berigelse af træbankerne foreslås og afprøves.
  I adskillige tilfælde opnås ved berigelserne signifikante forbedringer
- i forhold til referenceparseren, særligt i forbindelse med inskydninger
+ i forhold til referenceparseren, særligt i forbindelse med indskydninger
  som citationer og parentesiske be\SpecialChar \-
 mærk\SpecialChar \-
 ning\SpecialChar \-
@@ -245,7 +245,7 @@ d utterances are swiftly decoded and assigned with a likely interpretation.
  phenomena in the uttered speech or written text in order to contruct the
  proper interpretation.
  As examplars of this, apart from the sequence and identity of the uttered
- words themselves, the comprehender is likely to take of the 
+ words themselves, the comprehender is likely to take note of the 
 \emph on
 kind
 \emph default
@@ -395,8 +395,8 @@ So, the focus area of this project is squarely investigating feature engineering
 \end_layout
 
 \begin_layout Standard
-Of couse, an observed positive effect of a feature in a parsing system would
- not entail the existence of a cognitive counterpart in use by language
+Of course, an observed positive effect of a feature in a parsing system
+ would not entail the existence of a cognitive counterpart in use by language
  users.
  But it would provide evidence of the informational value of the cue with
  respect to structural comprehension.
@@ -629,7 +629,7 @@ These criteria refer to a mix of phenomena on different levels of linguictics
  There seems to be no universally authoritative set of criteria for all
  dependency formalisms 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "kbler_dependency_2009"
 
 \end_inset
@@ -706,7 +706,7 @@ In comparison to constituency structures, dependency structures are a more
  processing, thanks to the relatively transparent encoding of the predicate-argu
 ment structure of a sentence through word dependencies 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citep
 key "nivre_dependency_2005"
 
 \end_inset
