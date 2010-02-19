@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/usr0/dipanjan/work/fall2008/stackedParsing/MSTParserStacked/lib/ant.jar"/>
+	<classpathentry kind="lib" path="/usr0/dipanjan/work/fall2008/stackedParsing/MSTParserStacked/lib/mallet.jar"/>
+	<classpathentry kind="lib" path="/usr0/dipanjan/work/fall2008/stackedParsing/MSTParserStacked/lib/mallet-deps.jar"/>
+	<classpathentry kind="lib" path="/usr0/dipanjan/work/fall2008/stackedParsing/MSTParserStacked/lib/trove.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

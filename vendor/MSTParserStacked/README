@@ -1,0 +1,294 @@
+Stacked Parser version 1.0
+==========================
+
+This is the README for the stacked parser that uses the output of one parser 
+as features for another level of parsing. This package has been built upon 
+the available MSTParser version 0.4.3b, originally developed by Ryan McDonald 
+and subsequently modified by Jason Baldridge.
+
+This package has been developed by Andre Martins (afm@cs.cmu.edu) and Dipanjan 
+Das (dipanjan@cs.cmu.edu).
+
+---------------------------------------------------
+
+Code contained in this package has been described by the following paper:
+
+[1] André F.T. Martins, Dipanjan Das, Noah A. Smith and Eric P. Xing.
+Stacking Dependency Parsers. EMNLP 2008.
+
+Similar work has also been described in:
+
+[2] Joakim Nivre and Ryan McDonald.
+Integrating Graph-based and Transition-based Dependency Parsers. ACL 2008.
+
+The original MST parser work has been described in the following papers:
+
+[3] Ryan McDonald, Fernando Pereira, Kiril Ribarov and Jan Hajic.
+Non-Projective Dependency Parsing using Spanning Tree Algorithms. HLT-EMNLP 2005
+
+[4] Ryan McDonald, Koby Crammer and Fernando Pereira.
+Online Large-Margin Training of Dependency Parsers. ACL 2005
+
+[5] Ryan McDonald and Fernando Pereira.
+Online Learning of Approximate Dependency Parsing Algorithms. EACL 2006
+
+See the MSTParser README file for more details. (http://sourceforge.net/projects/mstparser)
+
+-------------------------------------------------------
+
+--------
+Contents
+--------
+
+1. Compiling
+
+2. Additional features over MSTParser
+   2.1  Backward Compatibility
+   2.2  Separate Labeling
+   2.3	Using Stemming and Feature composition with POS tags
+   2.4  Stacking configurations
+   
+3. Reproducing the EMNLP 2008 experiments   
+ 
+-------------------------------------------------------
+
+----------------
+1. Compiling
+----------------
+
+The parser should work for Java version >= 1.5
+
+To compile the code, first decompress the package:
+
+> tar -xvzf MSTParserStacked.tgz
+> cd MSTParserStacked
+> javac -classpath ".:lib/trove.jar:lib/mallet.jar:lib/mallet-deps.jar" mst/DependencyParser.java
+
+
+-------------------------------------
+2. Additional features over MSTParser
+-------------------------------------
+
+This version of the stacked parser provides several additional functionalities 
+over MSTParser v0.4.3b, as described below.
+
+
+-------------------------------------
+2.1 Backward Compatibility
+-------------------------------------
+
+The old parameters for MSTParser as described in the original README still work.
+
+To train the parser in the same way as the original MSTParser, use the following command:
+
+java -classpath ".:lib/trove.jar:lib/mallet.jar:lib/mallet-deps.jar" \
+-Xmx8000m -Xms8000m \
+mst.DependencyParser \
+train iters:10 decode-type:non-proj order:2 \
+train-file:trainfile.CONLL \
+model-name:modelname.model \
+format:CONLL
+
+Here, decode-type can be proj or non-proj, order can be 1 or 2, and format can be MST or CONLL 
+like the previous version.
+
+For testing as before, use the following comand:
+
+java -classpath ".:lib/trove.jar:lib/mallet.jar:lib/mallet-deps.jar" \
+-Xmx8000m -Xms8000m \
+mst.DependencyParser \
+test model-name:modelname.model decode-type:non-proj order:2 \
+test-file:testfile.CONLL output-file:out.CONLL format:CONLL
+
+
+
+-------------------------------------
+2.2 Separate Labeling
+-------------------------------------
+
+This version of the parser can perform parsing and labeling the dependency arcs in two separate steps.
+This can be ensured by including "separate-lab" as an argument to the train or test steps. 
+The labeling step in such a case is performed by a log-linear classifier from the Mallet toolkit. The 
+total number of features used by this classifier explodes if the dataset is large, and out of memory 
+exceptions can occur. For this, one may specify a cut-off value, which forces the labeler to ignore
+features that appear in the training data below that cut-off. The default cut-off value is 0. 
+An example training procedure using separate labeling and cut off is as follows:
+
+java -classpath ".:lib/trove.jar:lib/mallet.jar:lib/mallet-deps.jar" \
+-Xmx8000m -Xms8000m \
+mst.DependencyParser \
+train iters:10 decode-type:non-proj order:2 \
+train-file:trainfile.CONLL \
+model-name:modelname.model \
+separate-lab \
+separate-lab-cutoff:2 \
+output-file:out.CONLL format:CONLL
+
+If the flag separate-lab is used during training, it must also be used for 
+testing (in which case no cut-off needs to be provided).
+
+---------------------------------------------------------------
+2.3 Using Stemming and Feature composition with POS information
+---------------------------------------------------------------
+
+There are two flags "use-stemming-if-lemmas-absent" and "compose-features-with-pos" 
+that may be included in the training or testing commands as arguments.
+
+The first flag, if present, makes the system use word stems instead of lemmas 
+while calculating various features, if no lemmas are provided in the 
+CONLL formatted dataset. If lemmas are provided, this flag has no effect. 
+This is especially relevant for the CONLL datasets, where there are languages 
+that do not contain lemmas. 
+
+The second flag, if present, changes the way syntactic/morphological 
+information (the FEATS column in CONLL formatted files) is used to build 
+features. In MSTParser v0.4.3b, the FEATS values are composed with lemmas 
+and words, which for some languages dramatically increases the number of 
+features without any performance gain. For this reason, this flag allows 
+FEATS to be composed only with part-of-speech (POS) tags, which gives rise to
+much less features without a significant drop in performance. 
+
+
+---------------------------
+2.4 Stacking Configurations
+---------------------------
+
+A stacked parser, as described in [1] has two levels of parsing, which we
+refer to as "level 0" and "level 1" respectively. The output of the level 0
+parser is used as features in the level 1 parser.
+
+In the examples that follow, the files that are produced as output from level 0 parser
+are called "train_pred.CONLL" (for training) and "test_pred.CONLL" (for testing).
+
+Using this code for both the level 0 and level 1 parser will reproduce the "MST+MST"
+architecture. To use another parser at level 0 (e.g. the MaltParser), one needs to
+externally provide the above files ("train_pred.CONLL" and "test_pred.CONLL") during
+training and test stages of the level 1 parser.
+
+
+---------------------------------------------
+2.4.1 Training and testing the level 0 parser
+---------------------------------------------
+
+To use this parser as a level 0 parser, one needs to provide one extra argument 
+to the training and test commands cited above, namely the flag "stacked-level0". 
+For training, one may also specify the number of partitions to be used through the
+argument "augment-nparts:<N>". Example:
+
+Training (level 0):
+
+java -classpath ".:lib/trove.jar:lib/mallet.jar:lib/mallet-deps.jar" \
+-Xmx8000m -Xms8000m \
+mst.DependencyParser \
+train iters:10 decode-type:non-proj order:2 \
+separate-lab separate-lab-cutoff:0 \
+use-stemming-if-lemmas-absent compose-features-with-pos \
+stacked-level0 \
+augment-nparts:5 \
+train-file:train.CONLL \
+model-name:modelname_level0.model \
+output-file:train_pred.CONLL format:CONLL
+
+Testing (level 0):
+
+java -classpath ".:lib/trove.jar:lib/mallet.jar:lib/mallet-deps.jar" \
+-Xmx8000m -Xms8000m \
+mst.DependencyParser \
+test decode-type:non-proj order:2 \
+separate-lab \
+use-stemming-if-lemmas-absent compose-features-with-pos \
+stacked-level0 \
+test-file:test.CONLL \
+model-name:modelname_level0.model \
+output-file:test_pred.CONLL format:CONLL
+
+In the above example for training level 0, the training data will be split into 
+5 partitions and a cross-validation type framework will be employed to train on 
+4 partitions and label the remaining one partition. The default value of
+augment-nparts is 2. The output-file argument provides the name of the file where 
+the output of this stage is produced. Note that this works only for CONLL formatted data.
+
+The format of this output file is like the CONLL format, but including 2 more columns 
+that contain the predicted head (PHEAD) and predicted dependency label (PDEPREL) respectively,
+as illustrated by the following line:
+
+26      gehe    _       VVFIN   VVFIN   _       17      MO      14      RE      -       -
+
+Here, columns 7 and 8 are inserted, denoting the predicted PHEAD and PDEPREL, respectively.
+All other columns are inherited from the original CONLL formatted file that was provided as 
+input (in particular, columns 9 and 10 denote the gold standard PHEAD and PDEPREL, respectively.)
+
+The model that is produced by training level 0 (in the above example, "modelname_level0.model") 
+will be used as input for testing level 0. At test time, the level 0 parser will output a file 
+with the format above (in this example, "test_pred.CONLL".)
+
+
+---------------------------------------------
+2.4.2 Training and testing the level 1 parser
+---------------------------------------------
+
+This file can then be provided as input to the level 1 parser.
+To run the level 1 parser, one needs to provide one extra argument to the training command above, 
+namely the flag "stacked-level1". Several stacked feature configurations may also be provided, via pairs
+"stackedfeat-<feature name>:<0|1>". Example:
+
+Training a level 1 parser:
+
+java -classpath ".:lib/trove.jar:lib/mallet.jar:lib/mallet-deps.jar" \
+-Xmx8000m -Xms8000m \
+mst.DependencyParser \
+train stacked-level1 \
+separate-lab \
+separate-lab-cutoff:0 \
+use-stemming-if-lemmas-absent compose-features-with-pos \
+iters:10 decode-type:non-proj order:2 \
+train-file:train_pred.CONLL \
+model-name:modelname_level1.model \
+stackedfeat-pred-edge:1 stackedfeat-prev-sibl:1 stackedfeat-next-sibl:1 stackedfeat-grandparents:1 \
+stackedfeat-allchildren:1 stackedfeat-pred-head:1 \
+format:CONLL
+
+Testing a level 1 parser:
+
+java -classpath ".:lib/trove.jar:lib/mallet.jar:lib/mallet-deps.jar" \
+-Xmx8000m -Xms8000m \
+mst.DependencyParser \
+test stacked-level1 \
+separate-lab \
+use-stemming-if-lemmas-absent compose-features-with-pos \
+decode-type:non-proj order:2 \
+test-file:test_pred.CONLL \
+model-name:modelname_level1.model \
+stackedfeat-pred-edge:1 stackedfeat-prev-sibl:1 stackedfeat-next-sibl:1 stackedfeat-grandparents:1 \
+stackedfeat-allchildren:1 stackedfeat-pred-head:1 \
+output-file:out.CONLL format:CONLL
+
+The meaning of each stacked feature is explained in detail in [1]. To disable features, the 1s should be replaced by 0s. All the above features will default to 1.
+
+
+-----------------------------------------
+3. Reproducing the EMNLP 2008 experiments
+-----------------------------------------
+
+The MST+MST experiments mentioned in [1] can be reproduced using the aforementioned 
+train and test commands, and by using different combinations of the stacked features 
+mentioned above.
+
+For reproducing experiments using Malt as the level 0 parser, one needs to run the MaltParser v0.4 (available at http://w3.msi.vxu.se/~nivre/research/MaltParser.html) with the settings mentioned in http://w3.msi.vxu.se/users/jha/conllx/ for every language. The number of partitions for training the level 0 parser should be 2.   
+
+
+We used different cut-offs (the separate-lab-cutoff flag in training the parser) for different languages. These cut-off values are the following:
+
+Arabic:0
+Bulgarian:0
+Chinese:5
+Danish:0
+Dutch:1
+German:5
+Japanese:0
+Portuguese:1
+Slovene:0
+Spanish:0
+Swedish:1
+Turkish:0
+
