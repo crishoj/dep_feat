@@ -26,7 +26,7 @@ command :grep do |c|
       corpus.grep(options) do |sentence|
         sc += 1
         target << "#{sentence}\n\n" if options.save
-        puts sentence.forms.join(' ') if options.show
+        puts sentence.tokens.forms.join(' ') if options.show
       end
       puts sprintf("%-50s: %d/%d sentences (%d%%)", file, sc, ts, sc.fdiv(ts)*100)
       if options.save
